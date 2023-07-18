@@ -1,0 +1,578 @@
+/*!
+ * backend/style.css
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+
+body.light {
+  color: #000;
+  background: #fcfcfc;
+}
+@keyframes loading--light {
+  0% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 0.89;
+  }
+}
+body.light [data-loading] {
+  animation-name: loading--light;
+}
+body.light th {
+  background: #fff;
+}
+body.light th,
+body.light td {
+  border-color: #aaa;
+}
+body.light tbody tr[data-href] {
+  background: #f9f9f9;
+}
+body.light tbody tr[data-href]:hover td {
+  background: #fff;
+}
+body.light tbody tr[data-href]:focus td {
+  background: #cef;
+}
+body.light input,
+body.light textarea,
+body.light select,
+body.light .input,
+body.light .textarea,
+body.light .select,
+body.light .inline-edit {
+  color: #000;
+  background: #fff;
+  border-color: #444;
+}
+body.light input,
+body.light textarea,
+body.light select,
+body.light .input,
+body.light .textarea,
+body.light .select,
+body.light .inline-edit {
+  box-shadow: 0 0 3px 0 transparent;
+}
+body.light input:hover,
+body.light textarea:hover,
+body.light select:hover,
+body.light .input:hover,
+body.light .textarea:hover,
+body.light .select:hover,
+body.light .inline-edit:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light input:focus,
+body.light textarea:focus,
+body.light select:focus,
+body.light .input:focus,
+body.light .textarea:focus,
+body.light .select:focus,
+body.light .inline-edit:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+body.dark {
+  color: #fff;
+  background: #1a1a1a;
+}
+@keyframes loading--dark {
+  0% {
+    opacity: 0.77;
+  }
+  100% {
+    opacity: 0.89;
+  }
+}
+body.dark [data-loading] {
+  animation-name: loading--dark;
+}
+body.dark th {
+  background: #202020;
+}
+body.dark th,
+body.dark td {
+  border-color: #333;
+}
+body.dark tbody tr[data-href] {
+  background: #222;
+}
+body.dark tbody tr[data-href]:hover td {
+  background: #202020;
+}
+body.dark tbody tr[data-href]:focus td {
+  background: #000;
+}
+body.dark input,
+body.dark textarea,
+body.dark select,
+body.dark .input,
+body.dark .textarea,
+body.dark .select,
+body.dark .inline-edit {
+  color: #fff;
+  background: #303030;
+  border-color: #000;
+}
+body.dark input,
+body.dark textarea,
+body.dark select,
+body.dark .input,
+body.dark .textarea,
+body.dark .select,
+body.dark .inline-edit {
+  box-shadow: 0 0 3px 0 transparent;
+}
+body.dark input:hover,
+body.dark textarea:hover,
+body.dark select:hover,
+body.dark .input:hover,
+body.dark .textarea:hover,
+body.dark .select:hover,
+body.dark .inline-edit:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.dark input:focus,
+body.dark textarea:focus,
+body.dark select:focus,
+body.dark .input:focus,
+body.dark .textarea:focus,
+body.dark .select:focus,
+body.dark .inline-edit:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+  background: #1a1a1a;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.77;
+  }
+  100% {
+    opacity: 0.89;
+  }
+}
+:focus {
+  outline: 0;
+  -webkit-tap-highlight: transparent;
+}
+
+.placeholder {
+  visibility: hidden;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+[disabled] {
+  opacity: 0.89;
+}
+
+[readonly] {
+  opacity: 0.93;
+}
+
+[data-loading] {
+  animation: infinite loading 600ms linear alternate;
+}
+
+.actions {
+  position: sticky;
+  right: -1px;
+}
+
+.action > a {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  clear: both;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 2rem 0;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+
+nav {
+  margin: 1rem -1rem 2rem -1rem;
+}
+
+nav > a {
+  padding: 0.2rem 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+nav > a {
+  opacity: 0.9;
+}
+nav > a:hover {
+  opacity: 0.95;
+}
+nav > a:focus {
+  opacity: 0.97;
+}
+
+
+main {
+  margin: auto;
+  padding: 0 0.5rem;
+  text-align: left;
+}
+
+main div > nav {
+  padding: 1rem 0 2rem 0;
+}
+
+main h2 {
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  main {
+    padding: 5rem;
+  }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  background: #202020;
+  font-weight: normal;
+}
+
+th,
+td {
+  padding: 1rem;
+  border: 0 solid #333;
+  border-width: 1px 0;
+  font-size: 0.8rem;
+}
+
+td {
+  transition: background ease 0.1s;
+}
+
+tbody tr[data-href] {
+  background: #222;
+  cursor: pointer;
+}
+tbody tr[data-href]:hover td {
+  background: #202020;
+}
+tbody tr[data-href]:focus td {
+  background: #000;
+}
+
+.table {
+  position: relative;
+  display: block;
+  margin: 0 -0.5rem;
+  border: 0;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.table > table {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .table {
+    margin: 0;
+  }
+}
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+form {
+  margin: 0 0 4rem 0;
+  padding: 0 1rem;
+}
+
+fieldset,
+fieldset > div {
+  margin: 0 0 1.5rem 0;
+}
+
+legend,
+fieldset > p {
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.7rem;
+}
+
+input,
+textarea,
+select,
+.input {
+  display: inline-block;
+  width: 100%;
+  padding: 0.6rem 0.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  background: #303030;
+  border: 1px solid #000;
+  border-radius: 0;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+}
+input,
+textarea,
+select,
+.input {
+  box-shadow: 0 0 3px 0 transparent;
+  opacity: 0.97;
+}
+input:hover,
+textarea:hover,
+select:hover,
+.input:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+input:focus,
+textarea:focus,
+select:focus,
+.input:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+input[placeholder],
+textarea[placeholder] {
+  padding: 1.1rem 0.5rem;
+  margin: 0 0 0.4rem 0;
+}
+
+textarea {
+  min-height: 6rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.input[dir=rtl] {
+  text-align: right;
+}
+
+button,
+.button {
+  display: inline-block;
+  margin: auto;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #505050;
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+button,
+.button {
+  box-shadow: 0 0 3px 0 transparent;
+}
+button:hover,
+.button:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+button:focus,
+.button:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+a.button {
+  text-decoration: none;
+}
+
+button.big,
+.button.big {
+  padding: 0.95rem 1.75rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.01rem;
+}
+
+button[type=submit],
+.button.primary {
+  color: #fff;
+  background: dodgerblue;
+}
+
+input + *,
+textarea + *,
+select + *,
+.input + *,
+button + *,
+.button + * {
+  margin-left: 2rem;
+}
+
+
+.message,
+.warning,
+.error,
+.info {
+  display: block;
+  min-height: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+}
+
+
+.nav a:last-child {
+  float: right;
+  font-size: 80%;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+th {
+  text-transform: uppercase;
+}
+th {
+  font-weight: normal;
+}
+th:last-of-type {
+  font-weight: bold;
+}
+
+.table {
+  position: relative;
+  display: block;
+  width: 100%;
+  border: 0;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.table > table {
+  width: 100%;
+}
+
+.actions {
+  position: sticky;
+  right: -1px;
+}
+
+.action > a {
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+body input:hover, body textarea:hover, body select:hover {
+  background: #333;
+}
+
+body.light input:hover, body.light textarea:hover, body.light select:hover {
+  background: #fff;
+}
+
+body.dark input:hover, body.dark textarea:hover, body.dark select:hover {
+  background: #333;
+}
+
+#main div > nav {
+  padding: 0;
+}
+
+#main nav {
+  font-size: 1.2rem;
+}
+
+#main nav a {
+  display: block;
+  margin: 1rem 2rem;
+  padding: 1rem 2rem;
+}
+
+#signin {
+  max-width: 55vmax;
+  padding: 15vh 10vw;
+}
+
+@media (min-width: 992px) {
+  #signin {
+    padding: 20vh 15vw 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  #signin {
+    padding: 25vh 30vw 0 0;
+  }
+}

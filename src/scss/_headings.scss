@@ -1,0 +1,31 @@
+/*
+ * scss/_heading.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  display: block;
+  clear: both;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 2rem 0;
+  font-weight: normal;
+}
+
+h1 { font-size: 1.4rem; }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1.2rem; }
+h4 { font-size: 1.1rem; }
+h5 { font-size: 1rem; }
+h6 { font-size: .9rem; }

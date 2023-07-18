@@ -1,0 +1,47 @@
+/*
+ * scss/_table.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+table {
+  border-collapse: collapse;
+}
+th {
+  background: $th-background;
+  font-weight: normal;
+}
+th,
+td {
+  padding: 1rem;
+  border: 0 solid $table-border-color;
+  border-width: 1px 0;
+  font-size: .8rem;
+}
+td {
+  transition: background ease .1s;
+}
+
+tbody tr {
+  &[data-href] { background: $tr-href-background; cursor: pointer; }
+  &[data-href]:hover td { background: $tr-href-background-hover; }
+  &[data-href]:focus td { background: $tr-href-background-focus; }
+}
+
+.table {
+  position: relative;
+  display: block;
+  margin: 0 -0.5rem;
+  border: 0;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+
+  > table { width: 100%; }
+}
+
+@media (min-width: 992px) {
+  .table {
+    margin: 0;
+  }
+}

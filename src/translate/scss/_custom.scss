@@ -1,0 +1,27 @@
+/*
+ * translate/_custom.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+table.placeholder {
+  visibility: visible;
+}
+table.placeholder thead,
+table.placeholder tbody tr:not(tbody:first-child) {
+  visibility: hidden;
+}
+
+#edit-translate .inline-edit {
+  display: block;
+  min-height: 42px;
+  margin: 0 -0.5rem;
+}
+
+#edit-translate table td:nth-child(2) {
+  min-width: 13vw;
+}
+#edit-translate table td:nth-child(3) {
+  min-width: 22vw;
+}

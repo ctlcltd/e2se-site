@@ -1,0 +1,24 @@
+/*
+ * scss/_main.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+main {
+  margin: auto;
+  padding: 0 .5rem;
+  text-align: left;
+}
+main div > nav {
+  padding: 1rem 0 2rem 0;
+}
+main h2 {
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  main {
+    padding: 5rem;
+  }
+}

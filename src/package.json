@@ -1,0 +1,26 @@
+{
+  "name": "e2se-site",
+  "version": "1.0.0",
+  "description": "Static files builder for e2se-site",
+  "scripts": {
+    "watch": "node build.js translate watch",
+    "watch-js": "node build.js translate watch js",
+    "watch-scss": "node build.js translate watch scss",
+    "build": "node build.js translate",
+    "build-js": "node build.js translate js",
+    "build-scss": "node build.js translate scss",
+    "backend-watch": "node build.js backend watch",
+    "backend-watch-js": "node build.js backend watch js",
+    "backend-watch-scss": "node build.js backend watch scss",
+    "backend-build": "node build.js backend",
+    "backend-build-js": "node build.js backend js",
+    "backend-build-scss": "node build.js backend scss"
+  },
+  "author": "Leonardo Laureti",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css": "^5.2.2",
+    "sass": "^1.49.0",
+    "uglify-js": "^3.14.5"
+  }
+}

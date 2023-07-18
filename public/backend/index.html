@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<link rel="stylesheet" href="style.css">
+<title>Backend</title>
+</head>
+<body>
+<main id="signin" hidden>
+  <div>
+    <form id="sign_login" action method="post">
+      <legend>Login</legend>
+      <div class="placeholder message"></div>
+      <fieldset>
+        <div>
+          <label for="user_name" hidden>Email address or User name</label>
+          <input type="text" name="user_name" placeholder="Email address or User name" required>
+        </div>
+        <div>
+          <label for="user_password" hidden>Password</label>
+          <input type="password" name="user_password" placeholder="Password" required>
+        </div>
+      </fieldset>
+      <fieldset>
+        <button type="submit" class="big">Login</button>
+      </fieldset>
+    </form>
+  </div>
+</main>
+<main id="main" hidden>
+  <div>
+    <div class="placeholder nav"></div>
+  </div>
+</main>
+<main class="view-service" hidden>
+  <div>
+    <div class="placeholder nav"></div>
+    <h2 class="placeholder">Service</h2>
+    <div class="table">
+      <table class="placeholder view-list_table">
+        <thead>
+          <tr>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+<main class="view-list" hidden>
+  <div>
+    <div class="placeholder nav"></div>
+    <h2 class="placeholder">List</h2>
+    <div class="table">
+      <table class="placeholder view-list_table">
+        <thead>
+          <tr>
+            <th class="actions" colspan="2">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="actions">
+              <span class="action action-edit"><a href="?edit">Edit</a></span>
+              <span class="action action-delete"><a href="?delete">Delete</a></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</main>
+<main class="view-edit" hidden>
+  <div>
+    <div class="placeholder nav"></div>
+    <h2 class="placeholder">Edit</h2>
+    <form class="placeholder view-edit_form" action>
+      <fieldset>
+        <button type="submit">Save</button>
+        <button type="reset">Reset</button>
+      </fieldset>
+    </form>
+  </div>
+</main>
+<main id="api-test" hidden>
+  <div>
+    <div class="placeholder nav"></div>
+    <h2>API Test</h2>
+    <form id="api_request" action method="post">
+      <legend>Request</legend>
+      <fieldset>
+        <div>
+          <label for="endpoint">Endpoint</label>
+          <select name="endpoint"></select>
+        </div>
+        <div>
+          <label for="method">Request method</label>
+          <select name="method"></select>
+        </div>
+        <div>
+          <label for="route">Route</label>
+          <select type="text" name="route"></select>
+        </div>
+        <div>
+          <label for="body">Request body</label>
+          <textarea name="body"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <button type="submit" class="big">Test</button>
+        <button type="reset" class="tiny">Reset</button>
+      </fieldset>
+    </form>
+    <form id="api_response">
+      <legend>Response</legend>
+      <fieldset>
+        <div>
+          <label for="response-status">Response Status</label>
+          <input name="response-status" readonly>
+        </div>
+        <div>
+          <label for="response-body">Response Body</label>
+          <textarea name="response-body" rows="7" readonly></textarea>
+        </div>
+        <div>
+          <label for="response-headers">Response Headers</label>
+          <textarea name="response-headers" rows="3" readonly></textarea>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</main>
+<nav id="nav" class="nav" hidden>
+  <a href="">Main</a>
+  <a href="?service">Service</a>
+  <a href="?inspect">Inspect</a>
+  <a href="?test">API Test</a>
+  <a href="?logout">Logout</a>
+</nav>
+<script src="script.js"></script>
+</body>
+</html>

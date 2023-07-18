@@ -1,0 +1,96 @@
+/*
+ * scss/_dark.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+$color: #fff;
+$background: #1a1a1a;
+
+$loading-animation-opacity-0: .77; 
+$loading-animation-opacity-100: .89;
+
+
+// table
+
+$table-border-color: #333;
+$th-background: #202020;
+
+$tr-href-background: #222;
+$tr-href-background-hover: #202020;
+$tr-href-background-focus: #000;
+
+
+// form
+
+$input-color: #fff;
+$input-background: #303030;
+$input-border-color: #000;
+$input-shadow-color: transparent;
+$input-shadow-color-hover: rgba(0, 0, 0, .2);
+$input-shadow-color-focus: rgba(0, 0, 0, .2);
+
+$button-color: #505050;
+$button-background: #fff;
+$button-shadow-color: transparent;
+$button-shadow-color-hover: rgba(0, 0, 0, .1);
+$button-shadow-color-focus: rgba(0, 0, 0, .1);
+
+$button-primary-color: #fff;
+$button-primary-background: dodgerblue;
+
+$button-secondary-color: #fff;
+$button-secondary-background: #ccc;
+
+
+
+
+body.dark {
+  color: $color;
+  background: $background;
+
+  @keyframes loading--dark {
+    0% { opacity: $loading-animation-opacity-0; }
+    100% { opacity: $loading-animation-opacity-100; }
+  }
+
+  [data-loading] {
+    animation-name: loading--dark;
+  }
+
+
+  // table
+
+  th {
+    background: $th-background;
+  }
+  th,
+  td {
+    border-color: $table-border-color;
+  }
+  tbody tr {
+    &[data-href] { background: $tr-href-background; }
+    &[data-href]:hover td { background: $tr-href-background-hover; }
+    &[data-href]:focus td { background: $tr-href-background-focus; }
+  }
+
+
+  // form
+
+  input,
+  textarea,
+  select,
+  .input,
+  .textarea,
+  .select,
+  .inline-edit {
+    color: $input-color;
+    background: $input-background;
+    border-color: $input-border-color;
+
+    & { box-shadow: 0 0 3px 0 $input-shadow-color; }
+    &:hover { box-shadow: 0 0 3px 0 $input-shadow-color-hover; }
+    &:focus { box-shadow: 0 .1rem 3px 0 $input-shadow-color-focus; }
+  }
+}
