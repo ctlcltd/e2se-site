@@ -3,27 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow,noarchive">
 <link rel="stylesheet" href="style.css">
-<title>E2SE Translations</title>
+<title>Edit - E2SE Translations</title>
+<meta name="description" content="Edit translation strings of a language">
 </head>
 <body>
+<div id="head">
+  <div>
+    <button type="button" id="switch-color">switch to dark</button>
+  </div>
+</div>
 <main class="view-list">
-  <div class="placeholder nav"></div>
   <div>
     <h2 class="placeholder">List</h2>
     <div class="table">
       <table class="placeholder view-list_table">
         <thead data-rendered>
           <tr>
-            <th>Context</th>
+            <th>Node</th>
             <th>Source</th>
             <th>Translation</th>
             <th>Disambigua</th>
-            <th>Comment</th>
-            <th>Status</th>
             <th>Notes</th>
-            <th>Revised</th>
+            <th>Comment</th>
+            <th>Context</th>
+            <th>Status</th>
           </tr>
         </thead>
         <tbody>
@@ -36,13 +40,11 @@
   </div>
 </main>
 <main id="main" hidden>
-  <div class="placeholder nav"></div>
   <div>
     <h1>Translations</h1>
     <p>Welcome to <strong>e2 SAT Editor translation website</strong>.</p>
   </div>
   <div>
-    <div class="placeholder nav"></div>
     <h2>Language List</h2>
     <div class="table">
       <table class="placeholder view-list_table">
@@ -53,16 +55,17 @@
             <th>Translated name</th>
             <th>Completed</th>
             <th>Revised</th>
-            <th class="actions" colspan="2">Actions</th>
+            <th class="actions">Actions</th>
           </tr>
         </thead>
         <tbody>
           <tr class="loading">
-            <td colspan="7"></td>
+            <td colspan="6"></td>
           </tr>
           <tr class="placeholder" hidden>
+            <td colspan="5"></td>
             <td class="actions">
-              <span class="action action-edit"><a href="edit.html">Edit</a></span>
+              <span class="action action-edit"><a class="button tiny secondary" href="edit.html">Edit</a></span>
             </td>
           </tr>
         </tbody>
@@ -74,10 +77,9 @@
   </div>
 </main>
 <main class="view-edit" hidden>
-  <div class="placeholder nav"></div>
   <div>
     <h2 class="placeholder">Edit</h2>
-    <form class="placeholder view-edit_form" action>
+    <form class="placeholder view-edit_form" action="?">
       <fieldset>
         <button type="submit">Save</button>
         <button type="reset">Reset</button>
@@ -85,9 +87,6 @@
     </form>
   </div>
 </main>
-<nav id="nav" class="nav" hidden>
-  <a href="">Main</a>
-</nav>
 <script src="script.js"></script>
 </body>
 </html>

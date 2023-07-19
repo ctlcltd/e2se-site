@@ -40,10 +40,7 @@ body.light tbody tr[data-href]:focus td {
 body.light input,
 body.light textarea,
 body.light select,
-body.light .input,
-body.light .textarea,
-body.light .select,
-body.light .inline-edit {
+body.light .input {
   color: #000;
   background: #fff;
   border-color: #444;
@@ -51,29 +48,48 @@ body.light .inline-edit {
 body.light input,
 body.light textarea,
 body.light select,
-body.light .input,
-body.light .textarea,
-body.light .select,
-body.light .inline-edit {
+body.light .input {
   box-shadow: 0 0 3px 0 transparent;
 }
 body.light input:hover,
 body.light textarea:hover,
 body.light select:hover,
-body.light .input:hover,
-body.light .textarea:hover,
-body.light .select:hover,
-body.light .inline-edit:hover {
+body.light .input:hover {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 body.light input:focus,
 body.light textarea:focus,
 body.light select:focus,
-body.light .input:focus,
-body.light .textarea:focus,
-body.light .select:focus,
-body.light .inline-edit:focus {
+body.light .input:focus {
   box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light button,
+body.light .button {
+  color: #505050;
+  background: #fff;
+}
+body.light button,
+body.light .button {
+  box-shadow: 0 0 3px 0 transparent;
+}
+body.light button:hover,
+body.light .button:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light button:focus,
+body.light .button:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light button[type=submit], body.light button.primary,
+body.light .button[type=submit],
+body.light .button.primary {
+  color: #fff;
+  background: dodgerblue;
+}
+body.light button.secondary,
+body.light .button.secondary {
+  color: #fff;
+  background: dimgray;
 }
 
 
@@ -97,7 +113,7 @@ body.dark th {
 }
 body.dark th,
 body.dark td {
-  border-color: #333;
+  border-color: #3d3d3d;
 }
 body.dark tbody tr[data-href] {
   background: #222;
@@ -111,10 +127,7 @@ body.dark tbody tr[data-href]:focus td {
 body.dark input,
 body.dark textarea,
 body.dark select,
-body.dark .input,
-body.dark .textarea,
-body.dark .select,
-body.dark .inline-edit {
+body.dark .input {
   color: #fff;
   background: #303030;
   border-color: #000;
@@ -122,29 +135,48 @@ body.dark .inline-edit {
 body.dark input,
 body.dark textarea,
 body.dark select,
-body.dark .input,
-body.dark .textarea,
-body.dark .select,
-body.dark .inline-edit {
+body.dark .input {
   box-shadow: 0 0 3px 0 transparent;
 }
 body.dark input:hover,
 body.dark textarea:hover,
 body.dark select:hover,
-body.dark .input:hover,
-body.dark .textarea:hover,
-body.dark .select:hover,
-body.dark .inline-edit:hover {
+body.dark .input:hover {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 body.dark input:focus,
 body.dark textarea:focus,
 body.dark select:focus,
-body.dark .input:focus,
-body.dark .textarea:focus,
-body.dark .select:focus,
-body.dark .inline-edit:focus {
+body.dark .input:focus {
   box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.dark button,
+body.dark .button {
+  color: #fff;
+  background: #101010;
+}
+body.dark button,
+body.dark .button {
+  box-shadow: 0 0 3px 0 transparent;
+}
+body.dark button:hover,
+body.dark .button:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+body.dark button:focus,
+body.dark .button:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.1);
+}
+body.dark button[type=submit], body.dark button.primary,
+body.dark .button[type=submit],
+body.dark .button.primary {
+  color: #fff;
+  background: dodgerblue;
+}
+body.dark button.secondary,
+body.dark .button.secondary {
+  color: #fff;
+  background: dimgray;
 }
 
 
@@ -158,7 +190,6 @@ body {
   font-family: -system-ui, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  text-align: center;
   color: #fff;
   background: #1a1a1a;
 }
@@ -199,6 +230,7 @@ body {
 .actions {
   position: sticky;
   right: -1px;
+  text-align: center;
 }
 
 .action > a {
@@ -273,9 +305,7 @@ nav > a:focus {
 
 
 main {
-  margin: auto;
   padding: 0 0.5rem;
-  text-align: left;
 }
 
 main div > nav {
@@ -286,11 +316,6 @@ main h2 {
   text-transform: uppercase;
 }
 
-@media (min-width: 992px) {
-  main {
-    padding: 5rem;
-  }
-}
 
 table {
   border-collapse: collapse;
@@ -299,12 +324,13 @@ table {
 th {
   background: #202020;
   font-weight: normal;
+  text-align: start;
 }
 
 th,
 td {
   padding: 1rem;
-  border: 0 solid #333;
+  border: 0 solid #3d3d3d;
   border-width: 1px 0;
   font-size: 0.8rem;
 }
@@ -431,8 +457,8 @@ button,
   font-size: 0.9rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #505050;
-  background: #fff;
+  color: #fff;
+  background: #101010;
   border: 0;
   border-radius: 0;
   cursor: pointer;
@@ -450,22 +476,32 @@ button:focus,
 .button:focus {
   box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.1);
 }
-
-a.button {
-  text-decoration: none;
+button.tiny,
+.button.tiny {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.02rem;
 }
-
 button.big,
 .button.big {
   padding: 0.95rem 1.75rem;
   font-size: 0.95rem;
   letter-spacing: 0.01rem;
 }
-
-button[type=submit],
+button[type=submit], button.primary,
+.button[type=submit],
 .button.primary {
   color: #fff;
   background: dodgerblue;
+}
+button.secondary,
+.button.secondary {
+  color: #fff;
+  background: dimgray;
+}
+
+a.button {
+  text-decoration: none;
 }
 
 input + *,
@@ -490,6 +526,15 @@ button + *,
 }
 
 
+main {
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 992px) {
+  main {
+    padding: 5rem;
+  }
+}
 .nav a:last-child {
   float: right;
   font-size: 80%;

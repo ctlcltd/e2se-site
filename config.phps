@@ -15,8 +15,7 @@ define('backend_password', '0123456789');
 
 define('routes', [
 	'' => [ '' => 'main' ],
-	'service' => [ '' => 'service' ],
-	'inspect' => [ '' => 'list', 'add' => 'edit', 'edit' => 'edit' ],
+	// 'example' => [ '' => 'example' ],
 	'test' => [ '' => 'api_test' ],
 	'login' => [ '' => 'signin' ],
 	'logout' => [ '' => 'signout' ]

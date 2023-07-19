@@ -5,6 +5,15 @@
  * @license MIT License
  */
 
+main {
+  padding: 0 .5rem;
+}
+@media (min-width: 992px) {
+  main {
+    padding: 5rem;
+  }
+}
+
 .nav a:last-child {
   float: right;
   font-size: 80%;

@@ -17,31 +17,21 @@ if (! defined('authorized')) {
 	return;
 }
 
+
 require_once __DIR__ . '/' . 'languages.php';
 
 
-// first lang in array
-$src_ts_lang = 'ar';
+use \api\db_connect;
+use \api\db_insert;
 
 
 function decode_entities($str) {
 	return str_replace('&apos;', '\'', html_entity_decode($str));
 }
 
-function db_insert($dbh, $table_name, $arr) {
-	$_var_transfunc = function($key) {
-		return ":{$key}";
-	};
 
-	$cols = array_keys($arr);
-	$vars = array_map($_var_transfunc, $cols);
-
-	$sql = "INSERT INTO %s (%s) VALUES(%s)";
-	$sql = sprintf($sql, $table_name, implode(',', $cols), implode(',', $vars));
-
-	$sth = $dbh->prepare($sql);
-	return $sth->execute(array_combine($vars, $arr));
-}
+// first lang in array
+$src_ts_lang = 'ar';
 
 
 $index = [];
@@ -49,7 +39,7 @@ $order = [];
 $langs = [];
 $strings = [];
 $translated = [];
-$disambigua = [];
+$disambiguation = [];
 
 
 foreach ($ts_files as $ts_file) {
@@ -66,7 +56,6 @@ foreach ($ts_files as $ts_file) {
 	$id = 0;
 
 	$lang_id = $enum;
-	$lang_iso = '';
 	$name = '';
 	$key = '';
 	$guid = '';
@@ -86,7 +75,7 @@ foreach ($ts_files as $ts_file) {
 		'lang_id' => $lang_id,
 		'lang_guid' => md5($lang),
 		'lang_code' => $lang,
-		'lang_iso' => $languages_table[$lang]['iso'],
+		'lang_locale' => $languages_table[$lang]['locale'],
 		'lang_sourced' => 0,
 		'lang_dir' => $languages_table[$lang]['dir'],
 		'lang_numerus' => $languages_table[$lang]['numerus'],
@@ -202,7 +191,7 @@ foreach ($ts_files as $ts_file) {
 					'ts_line' => $src_line
 				];
 
-				$disambigua[$key][] = $id;
+				$disambiguation[$key][] = $id;
 			}
 
 			// vanished
@@ -229,6 +218,37 @@ foreach ($ts_files as $ts_file) {
 
 }
 
+foreach ($order as $lang => &$table) {
+	asort($table);
+}
+
+$disambigua = [];
+
+foreach ($disambiguation as $arr) {
+	if (count($arr) < 2) {
+		continue;
+	}
+
+	$ts_id = $arr[0];
+
+	foreach ($arr as $i => $id) {
+		if ($i == 0) {
+			continue;
+		}
+
+		$guid = $strings[$id]['ts_guid'];
+		$disambigua[$ts_id][$id] = $guid;
+	}
+}
+
+
+// var_dump($langs);
+// var_dump($disambigua);
+// var_dump($strings);
+// var_dump($translated);
+
+
+
 
 $status = 502;
 $response = [];
@@ -240,26 +260,15 @@ try {
 }
 
 
-// var_dump($langs);
-// var_dump($disambigua);
-// var_dump($strings);
-// var_dump($translated);
-
-
-foreach ($order as $lang => &$table) {
-	asort($table);
-}
-
-
 $dbh->beginTransaction();
 
 $json = [];
 
 foreach ($langs as $code => $lang) {
-	$json[$code] = [
+	$arr = [
 		'guid' => $lang['lang_guid'],
 		'code' => $lang['lang_code'],
-		'iso' => $lang['lang_iso'],
+		'locale' => $lang['lang_locale'],
 		'name' => $lang['lang_name'],
 		'tr_name' => $lang['lang_tr_name'],
 		'dir' => $lang['lang_dir'],
@@ -268,12 +277,14 @@ foreach ($langs as $code => $lang) {
 		'revised' => $lang['lang_revised']
 	];
 
-	db_insert($dbh, 'e2se_langs', $lang);
+	$json[$code] = $arr;
+
+	\api\db_insert($dbh, 'e2se_langs', $lang);
 }
 
 $dbh->commit();
 
-file_put_contents($tr_path . '/' . 'e2se-ts-langs.json', json_encode($json));
+file_put_contents($sources_path . '/' . 'e2se-ts-langs.json', json_encode($json));
 
 $response['langs'] = [
 	'count' => count($langs),
@@ -286,22 +297,14 @@ $response['langs'] = [
 
 $dbh->beginTransaction();
 
-foreach ($disambigua as $ts_id) {
-	if (count($ts_id) < 2) {
-		continue;
-	}
-
-	foreach ($ts_id as $i => $id) {
-		if ($i == 0) {
-			continue;
-		}
-
-		$d = [
-			'ts_id' => $ts_id[0],
+foreach ($disambigua as $ts_id => $arr) {
+	foreach ($arr as $id => $guid) {
+		$dis = [
+			'ts_id' => $ts_id,
 			'disambigua' => $id
 		];
 
-		db_insert($dbh, 'e2se_disambigua', $d);
+		\api\db_insert($dbh, 'e2se_disambigua', $dis);
 	}
 }
 
@@ -321,7 +324,7 @@ $dbh->beginTransaction();
 $json = [];
 
 foreach ($strings as $ts) {
-	$json[] = [
+	$arr = [
 		'guid' => $ts['ts_guid'],
 		'ctx_name' => $ts['ts_ctx_name'],
 		'msg_src' => $ts['ts_msg_src'],
@@ -329,12 +332,18 @@ foreach ($strings as $ts) {
 		'msg_extra' => $ts['ts_msg_extra']
 	];
 
-	db_insert($dbh, 'e2se_ts', $ts);
+	if (isset($disambigua[$ts['ts_id']])) {
+		$arr['disambigua'] = array_values($disambigua[$ts['ts_id']]);
+	}
+
+	$json[] = $arr;
+
+	\api\db_insert($dbh, 'e2se_ts', $ts);
 }
 
 $dbh->commit();
 
-file_put_contents($tr_path . '/' . 'e2se-ts-src.json', json_encode($json));
+file_put_contents($sources_path . '/' . 'e2se-ts-src.json', json_encode($json));
 
 $response['strings'] = [
 	'count' => count($strings),
@@ -352,12 +361,12 @@ foreach ($order as $lang => $table) {
 
 	$json = [];
 
-	foreach ($table as $id) {
+	foreach ($table as $id => $ts_id) {
 		$tr = $translated[$lang][$id];
 
 		// vanished
 		if ($tr['ts_id'] == 0) {
-			db_insert($dbh, 'e2se_tr', $tr);
+			\api\db_insert($dbh, 'e2se_tr', $tr);
 
 			continue;
 		}
@@ -365,7 +374,7 @@ foreach ($order as $lang => $table) {
 		$ts = $strings[$tr['ts_id']];
 		$guid = $ts['ts_guid'];
 
-		$json[] = [
+		$arr = [
 			'guid' => $guid,
 			'msg_tr' => $tr['ts_msg_tr'],
 			'status' => $tr['ts_status'],
@@ -373,12 +382,14 @@ foreach ($order as $lang => $table) {
 			'revised' => $tr['ts_revised']
 		];
 
-		db_insert($dbh, 'e2se_tr', $tr);
+		$json[] = $arr;
+
+		\api\db_insert($dbh, 'e2se_tr', $tr);
 	}
 
 	$dbh->commit();
 
-	file_put_contents($tr_path . '/' . 'e2se-ts-' . $lang . '-tr.json', json_encode($json));
+	file_put_contents($sources_path . '/' . 'e2se-ts-' . $lang . '-tr.json', json_encode($json));
 
 	$sizes['e2se-ts-' . $lang . '-tr.json'] = strlen(json_encode($json));
 }

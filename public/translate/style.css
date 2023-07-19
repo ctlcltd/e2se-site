@@ -26,7 +26,7 @@ body.dark th {
 }
 body.dark th,
 body.dark td {
-  border-color: #333;
+  border-color: #3d3d3d;
 }
 body.dark tbody tr[data-href] {
   background: #222;
@@ -40,10 +40,7 @@ body.dark tbody tr[data-href]:focus td {
 body.dark input,
 body.dark textarea,
 body.dark select,
-body.dark .input,
-body.dark .textarea,
-body.dark .select,
-body.dark .inline-edit {
+body.dark .input {
   color: #fff;
   background: #303030;
   border-color: #000;
@@ -51,29 +48,48 @@ body.dark .inline-edit {
 body.dark input,
 body.dark textarea,
 body.dark select,
-body.dark .input,
-body.dark .textarea,
-body.dark .select,
-body.dark .inline-edit {
+body.dark .input {
   box-shadow: 0 0 3px 0 transparent;
 }
 body.dark input:hover,
 body.dark textarea:hover,
 body.dark select:hover,
-body.dark .input:hover,
-body.dark .textarea:hover,
-body.dark .select:hover,
-body.dark .inline-edit:hover {
+body.dark .input:hover {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 body.dark input:focus,
 body.dark textarea:focus,
 body.dark select:focus,
-body.dark .input:focus,
-body.dark .textarea:focus,
-body.dark .select:focus,
-body.dark .inline-edit:focus {
+body.dark .input:focus {
   box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.dark button,
+body.dark .button {
+  color: #fff;
+  background: #101010;
+}
+body.dark button,
+body.dark .button {
+  box-shadow: 0 0 3px 0 transparent;
+}
+body.dark button:hover,
+body.dark .button:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+body.dark button:focus,
+body.dark .button:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.1);
+}
+body.dark button[type=submit], body.dark button.primary,
+body.dark .button[type=submit],
+body.dark .button.primary {
+  color: #fff;
+  background: dodgerblue;
+}
+body.dark button.secondary,
+body.dark .button.secondary {
+  color: #fff;
+  background: dimgray;
 }
 
 
@@ -111,10 +127,7 @@ body.light tbody tr[data-href]:focus td {
 body.light input,
 body.light textarea,
 body.light select,
-body.light .input,
-body.light .textarea,
-body.light .select,
-body.light .inline-edit {
+body.light .input {
   color: #000;
   background: #fff;
   border-color: #444;
@@ -122,29 +135,48 @@ body.light .inline-edit {
 body.light input,
 body.light textarea,
 body.light select,
-body.light .input,
-body.light .textarea,
-body.light .select,
-body.light .inline-edit {
+body.light .input {
   box-shadow: 0 0 3px 0 transparent;
 }
 body.light input:hover,
 body.light textarea:hover,
 body.light select:hover,
-body.light .input:hover,
-body.light .textarea:hover,
-body.light .select:hover,
-body.light .inline-edit:hover {
+body.light .input:hover {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
 }
 body.light input:focus,
 body.light textarea:focus,
 body.light select:focus,
-body.light .input:focus,
-body.light .textarea:focus,
-body.light .select:focus,
-body.light .inline-edit:focus {
+body.light .input:focus {
   box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light button,
+body.light .button {
+  color: #505050;
+  background: #fff;
+}
+body.light button,
+body.light .button {
+  box-shadow: 0 0 3px 0 transparent;
+}
+body.light button:hover,
+body.light .button:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light button:focus,
+body.light .button:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light button[type=submit], body.light button.primary,
+body.light .button[type=submit],
+body.light .button.primary {
+  color: #fff;
+  background: dodgerblue;
+}
+body.light button.secondary,
+body.light .button.secondary {
+  color: #fff;
+  background: dimgray;
 }
 
 
@@ -158,7 +190,6 @@ body {
   font-family: -system-ui, sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  text-align: center;
   color: #000;
   background: #fcfcfc;
 }
@@ -199,6 +230,7 @@ body {
 .actions {
   position: sticky;
   right: -1px;
+  text-align: center;
 }
 
 .action > a {
@@ -273,9 +305,7 @@ nav > a:focus {
 
 
 main {
-  margin: auto;
   padding: 0 0.5rem;
-  text-align: left;
 }
 
 main div > nav {
@@ -286,11 +316,6 @@ main h2 {
   text-transform: uppercase;
 }
 
-@media (min-width: 992px) {
-  main {
-    padding: 5rem;
-  }
-}
 
 table {
   border-collapse: collapse;
@@ -299,6 +324,7 @@ table {
 th {
   background: #fff;
   font-weight: normal;
+  text-align: start;
 }
 
 th,
@@ -450,22 +476,32 @@ button:focus,
 .button:focus {
   box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
 }
-
-a.button {
-  text-decoration: none;
+button.tiny,
+.button.tiny {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.02rem;
 }
-
 button.big,
 .button.big {
   padding: 0.95rem 1.75rem;
   font-size: 0.95rem;
   letter-spacing: 0.01rem;
 }
-
-button[type=submit],
+button[type=submit], button.primary,
+.button[type=submit],
 .button.primary {
   color: #fff;
   background: dodgerblue;
+}
+button.secondary,
+.button.secondary {
+  color: #fff;
+  background: dimgray;
+}
+
+a.button {
+  text-decoration: none;
 }
 
 input + *,
@@ -475,6 +511,67 @@ select + *,
 button + *,
 .button + * {
   margin-left: 2rem;
+}
+
+
+.toggler {
+  position: relative;
+  padding: 0.75rem 1.5rem 0.75rem 1rem;
+  font-size: 0.8rem;
+  z-index: 0;
+}
+.toggler:after {
+  content: "";
+  position: absolute;
+  margin: 0 4px;
+  margin-top: 5px;
+  border: 5px solid transparent;
+  border-top-color: currentColor;
+}
+.toggler.opened:after {
+  margin-top: 0;
+  border-top-color: transparent;
+  border-bottom-color: currentColor;
+}
+
+.dropdown {
+  position: absolute;
+  min-width: 120px;
+  margin-left: 0;
+  padding: 0.5rem;
+  background: #fff;
+  border: 1px solid #aaa;
+  z-index: 10;
+}
+
+.dropdown ul {
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown li {
+  margin: 0.5rem 0;
+  padding: 0 0.5rem;
+}
+
+.dropdown a {
+  color: #000;
+}
+
+body.dark .dropdown {
+  background: #202020;
+  border-color: #333;
+}
+body.dark .dropdown a {
+  color: #fff;
+}
+
+body.light .dropdown {
+  background: #fff;
+  border-color: #aaa;
+}
+body.light .dropdown a {
+  color: #000;
 }
 
 
@@ -490,6 +587,64 @@ button + *,
 }
 
 
+main {
+  padding: 0 0.5rem;
+}
+
+main > div {
+  padding: 1rem 0;
+}
+
+main > div:first-child {
+  margin: 0 0 0.5rem;
+}
+
+@media (min-width: 992px) {
+  main {
+    padding: 0 5rem 5rem;
+  }
+
+  #head {
+    padding: 0 5rem;
+  }
+}
+#head {
+  text-align: end;
+}
+
+button#switch-color {
+  position: relative;
+  padding: 0.75rem 0.75rem 0.75rem 2.25rem;
+  text-transform: none;
+}
+button#switch-color:before, button#switch-color:after {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid;
+  border-radius: 16px;
+  overflow: hidden;
+}
+button#switch-color:after {
+  width: 0;
+  margin: 1px 0;
+  border-width: 0 9px;
+  border-right-color: transparent;
+}
+
+body.light button#switch-color:after {
+  border-right-color: transparent;
+  border-left-color: currentColor;
+}
+
+body.dark button#switch-color:after {
+  border-right-color: currentColor;
+  border-left-color: transparent;
+}
+
 table.placeholder {
   visibility: visible;
 }
@@ -499,10 +654,28 @@ table.placeholder tbody tr:not(tbody:first-child) {
   visibility: hidden;
 }
 
+#main th:last-of-type {
+  font-weight: bold;
+}
+
+tbody tr.highlight {
+  background: #dff;
+}
+
 #edit-translate .inline-edit {
   display: block;
   min-height: 42px;
   margin: 0 -0.5rem;
+}
+
+#edit-translate table td:nth-child(1),
+#edit-translate table td:nth-child(5),
+#edit-translate table td:nth-child(7) {
+  opacity: 0.6;
+}
+
+#edit-translate table td:nth-child(6) {
+  opacity: 0.7;
 }
 
 #edit-translate table td:nth-child(2) {
@@ -511,4 +684,29 @@ table.placeholder tbody tr:not(tbody:first-child) {
 
 #edit-translate table td:nth-child(3) {
   min-width: 22vw;
+}
+
+#edit-translate table td:nth-child(7) {
+  white-space: nowrap;
+}
+
+label {
+  font-size: 0.9rem;
+}
+
+.status {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.status-unfinished {
+  color: dimgray;
+}
+
+.status-completed {
+  color: seagreen;
+}
+
+.status-vanished {
+  color: lightsteelblue;
 }

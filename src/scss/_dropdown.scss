@@ -1,0 +1,66 @@
+/*
+ * scss/_dropdown.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+.toggler {
+  position: relative;
+  padding: .75rem 1.5rem .75rem 1rem;
+  font-size: .8rem;
+  z-index: 0;
+
+  &:after {
+    content: "";
+    position: absolute;
+    margin: 0 4px;
+    margin-top: 5px;
+    border: 5px solid transparent;
+    border-top-color: currentColor;
+  }
+  &.opened:after {
+    margin-top: 0;
+    border-top-color: transparent;
+    border-bottom-color: currentColor;
+  }
+}
+
+.dropdown {
+  position: absolute;
+  min-width: 120px;
+  margin-left: 0;
+  padding: .5rem;
+  background: $th-background;
+  border: 1px solid $table-border-color;
+  z-index: 10;
+}
+.dropdown ul {
+  padding: 0;
+  list-style: none;
+}
+.dropdown li {
+  margin: .5rem 0;
+  padding: 0 .5rem;
+}
+.dropdown a {
+  color: $color;
+}
+body.dark {
+  .dropdown {
+    background: #202020;
+    border-color: #333;
+  }
+  .dropdown a {
+    color: #fff;
+  }
+}
+body.light {
+  .dropdown {
+    background: #fff;
+    border-color: #aaa;
+  }
+  .dropdown a {
+    color: #000;
+  }
+}

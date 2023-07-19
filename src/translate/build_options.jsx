@@ -1,7 +1,7 @@
 {
   "projectName": "translate",
   "contents": {
-    "js": ["config", "main", "edit_translate", "add_language", "api_request", "source_request", "nav", "route", "init"],
+    "js": ["config", "main", "edit_translate", "add_language", "api_request", "source_request", "route", "init"],
     "scss": ["index"]
   },
   "js_banner": true,

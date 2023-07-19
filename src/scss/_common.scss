@@ -15,7 +15,6 @@ body {
   font-family: $font-family;
   font-size: $font-size;
   line-height: $line-height;
-  text-align: center;
   color: $color;
   background: $background;
 }
@@ -51,6 +50,7 @@ body {
 .actions {
   position: sticky;
   right: -1px;
+  text-align: center;
 }
 .action > a {
   color: $color;

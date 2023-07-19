@@ -6,10 +6,13 @@
  */
 
 function main() {
+  document.title = 'E2SE Translations';
+  document.querySelector('meta[name="description"]').setAttribute('content', 'Translation website for e2 SAT Editor');
+
   const view = document.getElementById('main');
 
   const fields = {
-    'iso': 'Language',
+    'locale': 'Language',
     'name': 'Name',
     'tr_name': 'Translated name',
     'completed': 'Completed',
@@ -29,14 +32,17 @@ function main() {
   }
 
   function render_row(td, field, text) {
-    td.innerText = text ? text.toString() : '';
-
-    //
-    if (text && field == 'completed') {
-      td.style = 'color: gray;';
-      td.innerHTML = td.innerText + '% <abbr style="border-bottom: 1px dotted">?</abbr>';
-    } else if (text && field == 'revised') {
+    if (field == 'completed') {
+      if (! td.querySelector('span')) {
+        const status = document.createElement('span');
+        status.className = 'status';
+        status.innerText = text.toString() + '%';
+        td.append(status);
+      }
+    } else if (field == 'revised') {
       td.innerText = text ? 'yes' : 'none';
+    } else if (text) {
+      td.innerText = text.toString();
     }
   }
 
@@ -86,7 +92,9 @@ function main() {
       if (! el_tr) {
         if (tr_tpl) {
           for (const td of tr_tpl.children) {
-            tr.append(td.cloneNode(true));
+            if (td != tr_tpl.firstElementChild) {
+              tr.append(td.cloneNode(true));
+            }
           }
         }
 

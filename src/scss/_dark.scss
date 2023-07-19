@@ -14,7 +14,7 @@ $loading-animation-opacity-100: .89;
 
 // table
 
-$table-border-color: #333;
+$table-border-color: #3d3d3d;
 $th-background: #202020;
 
 $tr-href-background: #222;
@@ -31,8 +31,8 @@ $input-shadow-color: transparent;
 $input-shadow-color-hover: rgba(0, 0, 0, .2);
 $input-shadow-color-focus: rgba(0, 0, 0, .2);
 
-$button-color: #505050;
-$button-background: #fff;
+$button-color: #fff;
+$button-background: #101010;
 $button-shadow-color: transparent;
 $button-shadow-color-hover: rgba(0, 0, 0, .1);
 $button-shadow-color-focus: rgba(0, 0, 0, .1);
@@ -41,7 +41,7 @@ $button-primary-color: #fff;
 $button-primary-background: dodgerblue;
 
 $button-secondary-color: #fff;
-$button-secondary-background: #ccc;
+$button-secondary-background: dimgray;
 
 
 
@@ -81,10 +81,7 @@ body.dark {
   input,
   textarea,
   select,
-  .input,
-  .textarea,
-  .select,
-  .inline-edit {
+  .input {
     color: $input-color;
     background: $input-background;
     border-color: $input-border-color;
@@ -92,5 +89,24 @@ body.dark {
     & { box-shadow: 0 0 3px 0 $input-shadow-color; }
     &:hover { box-shadow: 0 0 3px 0 $input-shadow-color-hover; }
     &:focus { box-shadow: 0 .1rem 3px 0 $input-shadow-color-focus; }
+  }
+  button,
+  .button {
+    color: $button-color;
+    background: $button-background;
+
+    & { box-shadow: 0 0 3px 0 $button-shadow-color; }
+    &:hover { box-shadow: 0 0 3px 0 $button-shadow-color-hover; }
+    &:focus { box-shadow: 0 .1rem 3px 0 $button-shadow-color-focus; }
+
+    &[type="submit"],
+    &.primary {
+      color: $button-primary-color;
+      background: $button-primary-background;
+    }
+    &.secondary {
+      color: $button-secondary-color;
+      background: $button-secondary-background;
+    }
   }
 }

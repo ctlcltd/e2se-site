@@ -16,12 +16,11 @@ function init() {
 
   document.cookie = 'backend-test=' + tc_value + tc_path + tc_expires + tc_secured + 'samesite=strict';
 
-  if (document.cookie.indexOf('backend-test') != -1) {
+  if (document.cookie.indexOf('backend-test') == -1) {
     return;
   }
 
   function popState(evt) {
-    console.log('popState()', evt);
     route();
   }
 

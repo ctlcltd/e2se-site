@@ -42,11 +42,12 @@ function authentication($user_name, $user_password) {
 
 function db_connect() {
 	try {
-		$dsn = db_driver . ':dbname=' . db_dbname . ';host=' . db_address;
+		$dsn = db_driver . ':dbname=' . db_dbname . ';host=' . db_host;
 		return new PDO($dsn, db_username, db_password);
 	} catch (PDOException $e) {
 		throw new Exception('Connection Error');
 	} catch (Error $e) {
+		var_dump($e);
 		throw new Exception('Connection Error');
 	}
 }
@@ -56,6 +57,21 @@ function db_error() {
 		'status' => 503,
 		'response' => 0
 	];
+}
+
+function db_insert($dbh, $table_name, $arr) {
+	/*$_var_transfunc = function($key) {
+		return ":{$key}";
+	};
+
+	$cols = array_keys($arr);
+	$vars = array_map($_var_transfunc, $cols);
+
+	$sql = 'INSERT INTO %s (%s) VALUES(%s)';
+	$sql = sprintf($sql, $table_name, implode(',', $cols), implode(',', $vars));
+
+	$sth = $dbh->prepare($sql);
+	return $sth->execute(array_combine($vars, $arr));*/
 }
 
 function deny($status = 400) {
@@ -159,9 +175,8 @@ if (($endpoint == NULL || $endpoint == 'login') && $method == 'post') {
 
 // test
 } else if ($endpoint == NULL && $method == 'get') {
-	$status = 200;
-
 	if ($authorized) {
+		$status = 200;
 		$response = routes;
 	}
 

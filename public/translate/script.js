@@ -18,10 +18,13 @@ const routes = {
 
 
 function main() {
+  document.title = 'E2SE Translations';
+  document.querySelector('meta[name="description"]').setAttribute('content', 'Translation website for e2 SAT Editor');
+
   const view = document.getElementById('main');
 
   const fields = {
-    'iso': 'Language',
+    'locale': 'Language',
     'name': 'Name',
     'tr_name': 'Translated name',
     'completed': 'Completed',
@@ -41,14 +44,17 @@ function main() {
   }
 
   function render_row(td, field, text) {
-    td.innerText = text ? text.toString() : '';
-
-    //
-    if (text && field == 'completed') {
-      td.style = 'color: gray;';
-      td.innerHTML = td.innerText + '% <abbr style="border-bottom: 1px dotted">?</abbr>';
-    } else if (text && field == 'revised') {
+    if (field == 'completed') {
+      if (! td.querySelector('span')) {
+        const status = document.createElement('span');
+        status.className = 'status';
+        status.innerText = text.toString() + '%';
+        td.append(status);
+      }
+    } else if (field == 'revised') {
       td.innerText = text ? 'yes' : 'none';
+    } else if (text) {
+      td.innerText = text.toString();
     }
   }
 
@@ -98,7 +104,9 @@ function main() {
       if (! el_tr) {
         if (tr_tpl) {
           for (const td of tr_tpl.children) {
-            tr.append(td.cloneNode(true));
+            if (td != tr_tpl.firstElementChild) {
+              tr.append(td.cloneNode(true));
+            }
           }
         }
 
@@ -131,6 +139,9 @@ function main() {
 
 
 function edit_translate(uri, key, value) {
+  document.title = 'Edit - E2SE Translations';
+  document.querySelector('meta[name="description"]').setAttribute('content', 'Edit translation strings of a language');
+
   const source = document.querySelector('.view-list');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
@@ -142,14 +153,14 @@ function edit_translate(uri, key, value) {
   const heading = view.querySelector('h2');
 
   const fields = {
-    'ctx_name': 'Context',
+    'ctx_name': 'Node',
     'msg_src': 'Source',
     'msg_tr': 'Translation',
-    'msg_comment': 'Disambigua',
-    'msg_extra': 'Comment',
-    'status': 'Status',
+    'disambigua': 'Disambigua',
     'notes': 'Notes',
-    'revised': 'Revised'
+    'msg_extra': 'Comment',
+    'msg_comment': 'Context',
+    'status': 'Status'
   };
 
   const lang = value.split('=')[1];
@@ -157,6 +168,7 @@ function edit_translate(uri, key, value) {
 
   const ts_src = 'src';
   const tr_src = lang + '-tr';
+  const tr_key = 'tr-' + lang;
 
   if (languages && languages[lang]) {
     lang_dir = languages[lang]['dir'];
@@ -165,32 +177,176 @@ function edit_translate(uri, key, value) {
     heading.className = '';
   }
 
+  let storage = window.localStorage.getItem(tr_key);
+
+  try {
+    if (storage) {
+      storage = JSON.parse(storage);
+    } else {
+      storage = {};
+    }
+  } catch (err) {
+    storage = {};
+
+    error(null, err);
+  }
+
   const request = source_request(ts_src);
   const subrequest = source_request(tr_src);
+
+  let disambigua = {};
 
   const table = view.querySelector('table');
   const thead = table.querySelector('thead');
   const tbody = table.querySelector('tbody');
 
-  function actionEdit(evt) {
-    evt && evt.preventDefault();
+  function disambiguation(data) {
+      if (Object.keys(disambigua).length == 0) {
+        for (const idx in data) {
+          const guid = data[idx]['guid'];
+          disambigua[guid] = idx;
+        }
+      }
+  }
 
-    route(this.dataset.href);
+  function scrollToRow(evt) {
+    const el = evt.target;
 
-    return false;
+    if (el.hasAttribute('data-scroll-row')) {
+      const idx = el.getAttribute('data-scroll-row');
+      const i = parseInt(idx) - 1;
+      const tr = tbody.rows.item(i);
+      const offset = tr.previousElementSibling ? tr.previousElementSibling.offsetTop : tr.offsetTop;
+
+      window.scrollTo(0, offset);
+      tr.classList.add('highlight');
+      window.setTimeout(function() {
+        tr.classList.remove('highlight');
+      }, 2e3);
+    }
+  }
+
+  function toggler(evt) {
+    const el = evt.target;
+
+    if (el.classList.contains('toggler')) {
+      if (el.nextElementSibling.hasAttribute('hidden')) {
+        el.nextElementSibling.removeAttribute('hidden');
+        el.classList.add('opened');
+      } else {
+        el.nextElementSibling.setAttribute('hidden', '');
+        el.classList.remove('opened');
+        window.setTimeout(function() {
+          el.blur();
+        }, 100);
+      }
+    } else {
+      document.querySelectorAll('.toggler').forEach(function(el) {
+        if (! el.nextElementSibling.hasAttribute('hidden')) {
+          el.nextElementSibling.setAttribute('hidden', '');
+          el.classList.remove('opened');
+          window.setTimeout(function() {
+            el.blur();
+          }, 100);
+        }
+      });
+    }
+  }
+
+  function textInput(evt) {
+    const el = evt.target;
+
+    if (el.classList.contains('input')) {
+      const tr = el.parentElement.closest('[data-guid]');
+      console.log(evt);
+
+      try {
+        const guid = tr.dataset.guid;
+        if (el.srcText != '' && el.srcText === el.textContent) {
+          delete storage[guid];
+        } else {
+          storage[guid] = el.textContent;
+        }
+        console.log(storage);
+        window.localStorage.setItem(tr_key, JSON.stringify(storage));
+      } catch (err) {
+        error(null, err);
+      }
+    }
   }
 
   function render_row(td, field, text) {
     if (field == 'msg_tr') {
       if (td.querySelector('span')) {
+        const parent = td.closest('[data-guid]');
+        const guid = parent.dataset.guid;
         const input = td.querySelector('span');
-        input.innerText = text.toString();
+        if (storage[guid]) {
+          input.srcText = text.toString();
+          input.innerText = storage[guid];
+          input.dataset.changed = '';
+        } else {
+          input.innerText = input.srcText = text.toString();
+        }
       } else {
         const input = document.createElement('span');
         input.className = 'input inline-edit';
-        input.contentEditable = true;
+        input.contentEditable = 'plaintext-only';
         input.dir = lang_dir;
+        // input.innerText = text ? text.toString() : '';
         td.append(input);
+      }
+    } else if (field == 'disambigua') {
+      if (text && typeof text === 'object' && Object.keys(text).length != 0) {
+        const toggler = document.createElement('button');
+        toggler.className = 'toggler';
+        toggler.type = 'button';
+        toggler.innerText = Object.keys(text).length;
+        const list = document.createElement('ul');
+        const dropdown = document.createElement('div');
+        dropdown.className = 'dropdown';
+        dropdown.setAttribute('hidden', '');
+        dropdown.append(list);
+
+        td.append(toggler);
+        td.append(dropdown);
+
+        for (const guid of text) {
+          const i = disambigua[guid];
+          const item = document.createElement('li');
+          const anchor = document.createElement('a');
+          anchor.href = 'javascript:';
+          anchor.innerText = i.toString();
+          anchor.setAttribute('data-scroll-row', i);
+          item.append(anchor);
+          list.append(item);
+        }
+      }
+    } else if (field == 'status') {
+      if (td.querySelector('span')) {
+        const status = td.querySelector('span');
+        if (text !== '') {
+          let val;
+          if (text == 0) {
+            val = 'unfinished';
+          } else if (text == 1) {
+            val = 'completed';
+          } else if (text == 2) {
+            val = 'vanished';
+          }
+          status.className += ' status-' + val;
+          status.innerText = val;
+        }
+      } else {
+        const status = document.createElement('span');
+        status.className = 'status';
+        td.append(status);
+      }
+    } else if (field == 'msg_extra') {
+      if (text) {
+        let val = text.toString();
+        val = val.replace(' | ', '\n');
+        td.innerText = val.toString();
       }
     } else if (text) {
       td.innerText = text.toString();
@@ -212,6 +368,7 @@ function edit_translate(uri, key, value) {
 
     for (const idx in data) {
       const guid = data[idx]['guid'].toString();
+      // completed + revised
 
       const el_tr = tbody.querySelector('[data-guid="' + guid + '"]');
       const tr = el_tr ?? document.createElement('tr');
@@ -246,6 +403,7 @@ function edit_translate(uri, key, value) {
         }
 
         tr.setAttribute('data-guid', guid);
+        tr.title = idx;
 
         tbody.append(tr);
       }
@@ -259,15 +417,16 @@ function edit_translate(uri, key, value) {
     table.classList.remove('placeholder');
   }
 
-  var i = 0;
+  // var i = 0;
   function load(xhr) {
-    console.log('load', i++, xhr);
+    // console.log('load', i++, xhr);
     try {
       const obj = JSON.parse(xhr.response);
 
+      disambiguation(obj);
       render_table(obj);
     } catch (err) {
-      console.error('edit_translate()', 'load()', err);
+      // console.error('edit_translate()', 'load()', err);
 
       error(null, err);
     }
@@ -283,10 +442,17 @@ function edit_translate(uri, key, value) {
     subrequest.then(load).catch(error);
   }).catch(error);
   view.removeAttribute('hidden');
+
+  tbody.addEventListener('click', toggler);
+  tbody.addEventListener('click', scrollToRow);
+  tbody.addEventListener('input', textInput);
 }
 
 
 function add_language(uri, key, value) {
+  document.title = 'Add language - E2SE Translations';
+  document.querySelector('meta[name="description"]').setAttribute('content', 'Add a new language to translations');
+
   const source = document.querySelector('.view-edit');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
@@ -298,8 +464,8 @@ function add_language(uri, key, value) {
   const heading = view.querySelector('h2');
 
   const fields = {
-    'lang_code': 'ISO code (2)',
-    'lang_iso': 'ISO code (2_2)',
+    'lang_code': 'ISO 639-1 language code (eg. xz)',
+    'lang_locale': 'Language locale code (eg. xz_XA)',
     'lang_dir': 'Direction',
     'lang_name': 'Name',
     'lang_tr_name': 'Translated name',
@@ -307,7 +473,7 @@ function add_language(uri, key, value) {
   };
   const data = {
     'lang_code': null,
-    'lang_iso': null,
+    'lang_locale': null,
     'lang_dir': {'type': 'select', 'options': {'ltr': 'LTR (Left To Right)', 'rtl': 'RTL (Right To Left)'}},
     'lang_name': null,
     'lang_tr_name': null,
@@ -412,38 +578,6 @@ function source_request(name) {
 }
 
 
-function nav(menu) {
-  const nav = document.getElementById('nav').cloneNode(true);
-  const nav_items = nav.querySelectorAll('a');
-
-  function click(evt) {
-    evt && evt.preventDefault();
-
-    route(this.href);
-
-    return false;
-  }
-
-  for (const el of nav_items) {
-    el.href = basepath + '/' + el.getAttribute('href');
-    el.onclick = click;
-  }
-
-  nav.removeAttribute('id');
-  nav.removeAttribute('hidden');
-
-  navigation = nav;
-
-  if (menu) {
-    const nav = navigation.cloneNode(true);
-
-    menu.replaceWith(navigation);
-  }
-
-  return navigation;
-}
-
-
 function route(href, title) {
   const views = document.querySelectorAll('main');
   const history = href ? true : false;
@@ -490,12 +624,56 @@ function route(href, title) {
 }
 
 
-let languages;
-let navigation;
+var languages;
 
 function init() {
   const name = 'langs';
   const request = source_request(name);
+
+  function resumeColor() {
+    const color = window.sessionStorage.getItem('preferred-color');
+
+    if (color == 'light' || color == 'dark') {
+      document.body.setAttribute('data-color', color);
+      if (color == 'dark') {
+        document.body.classList.add('dark');
+      } else {
+        document.body.classList.remove('dark');
+      }
+
+      const button = document.getElementById('switch-color');
+      button.innerText = 'switch to ' + (color == 'light' ? 'dark' : 'light');
+    }
+  }
+
+  function switchColor(evt) {
+    const el = evt.target;
+    if (el.id == 'switch-color') {
+      let color = document.body.hasAttribute('data-color') ? document.body.getAttribute('data-color') : 'light';
+
+      if (color == 'light') {
+        color = 'dark';
+        el.innerText = 'switch to light';
+        document.body.setAttribute('data-color', 'dark');
+        document.body.classList.add('dark');
+        window.setTimeout(function() {
+          el.blur();
+        }, 100);
+      } else if (color == 'dark') {
+        color = 'light';
+        el.innerText = 'switch to dark';
+        document.body.setAttribute('data-color', 'light');
+        document.body.classList.remove('dark');
+        window.setTimeout(function() {
+          el.blur();
+        }, 100);
+      }
+
+      if (color == 'light' || color == 'dark') {
+        window.sessionStorage.setItem('preferred-color', color);
+      }
+    }
+  }
 
   function load(xhr) {
     try {
@@ -503,7 +681,7 @@ function init() {
 
       route();
     } catch (err) {
-      console.error('init()', 'load()', err);
+      // console.error('init()', 'load()', err);
 
       error(null, err);
     }
@@ -514,7 +692,6 @@ function init() {
   }
 
   function popState(evt) {
-    console.log('popState()', evt);
     route();
   }
 
@@ -522,6 +699,8 @@ function init() {
     console.error('init()', 'error()', xhr || '', err || '');
   }
 
+  resumeColor();
+  document.getElementById('head').addEventListener('click', switchColor);
   request.then(load).catch(error);
   window.addEventListener('popstate', popState);
 }

@@ -5,6 +5,68 @@
  * @license MIT License
  */
 
+main {
+  padding: 0 .5rem;
+}
+
+main > div {
+  padding: 1rem 0;
+}
+
+main > div:first-child {
+  margin: 0 0 .5rem;
+}
+
+@media (min-width: 992px) {
+  main {
+    padding: 0 5rem 5rem;
+  }
+  #head {
+    padding: 0 5rem;
+  }
+}
+
+#head {
+  text-align: end;
+}
+
+button#switch-color {
+  position: relative;
+  padding: .75rem .75rem .75rem 2.25rem;
+  text-transform: none;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    left: .75rem;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  &:after {
+    width: 0;
+    margin: 1px 0;
+    border-width: 0 9px;
+    border-right-color: transparent;
+  }
+}
+body.light {
+  button#switch-color:after {
+    border-right-color: transparent;
+    border-left-color: currentColor;
+  }
+}
+body.dark {
+  button#switch-color:after {
+    border-right-color: currentColor;
+    border-left-color: transparent;
+  }
+}
+
 table.placeholder {
   visibility: visible;
 }
@@ -13,15 +75,45 @@ table.placeholder tbody tr:not(tbody:first-child) {
   visibility: hidden;
 }
 
+#main th:last-of-type {
+  font-weight: bold;
+}
+
+tbody tr.highlight {
+  background: #dff;
+}
+
 #edit-translate .inline-edit {
   display: block;
   min-height: 42px;
   margin: 0 -0.5rem;
 }
-
+#edit-translate table td:nth-child(1),
+#edit-translate table td:nth-child(5),
+#edit-translate table td:nth-child(7) {
+  opacity: .6;
+}
+#edit-translate table td:nth-child(6) {
+  opacity: .7;
+}
 #edit-translate table td:nth-child(2) {
   min-width: 13vw;
 }
 #edit-translate table td:nth-child(3) {
   min-width: 22vw;
 }
+#edit-translate table td:nth-child(7) {
+  white-space: nowrap;
+}
+
+label {
+  font-size: .9rem;
+}
+
+.status {
+  font-size: .7rem;
+  font-weight: bold;
+}
+.status-unfinished { color: dimgray; }
+.status-completed { color: seagreen; }
+.status-vanished { color: lightsteelblue; }

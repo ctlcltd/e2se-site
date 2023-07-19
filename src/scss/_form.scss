@@ -48,6 +48,7 @@ select,
 
   & { box-shadow: 0 0 3px 0 $input-shadow-color; opacity: .97; }
   &:hover { box-shadow: 0 0 3px 0 $input-shadow-color-hover; }
+  // .input:focus
   &:focus { box-shadow: 0 .1rem 3px 0 $input-shadow-color-focus; opacity: 1; }
 }
 input[placeholder],
@@ -82,20 +83,29 @@ button,
   & { box-shadow: 0 0 3px 0 $button-shadow-color; }
   &:hover { box-shadow: 0 0 3px 0 $button-shadow-color-hover; }
   &:focus { box-shadow: 0 .1rem 3px 0 $button-shadow-color-focus; }
+
+  &.tiny {
+    padding: .5rem .75rem;
+    font-size: .75rem;
+    letter-spacing: .02rem;
+  }
+  &.big {
+    padding: .95rem 1.75rem;
+    font-size: .95rem;
+    letter-spacing: .01rem;
+  }
+  &[type="submit"],
+  &.primary {
+    color: $button-primary-color;
+    background: $button-primary-background;
+  }
+  &.secondary {
+    color: $button-secondary-color;
+    background: $button-secondary-background;
+  }
 }
 a.button {
   text-decoration: none;
-}
-button.big,
-.button.big {
-  padding: .95rem 1.75rem;
-  font-size: .95rem;
-  letter-spacing: .01rem;
-}
-button[type="submit"],
-.button.primary {
-  color: $button-primary-color;
-  background: $button-primary-background;
 }
 
 input,

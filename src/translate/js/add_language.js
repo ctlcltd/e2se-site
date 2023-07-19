@@ -6,6 +6,9 @@
  */
 
 function add_language(uri, key, value) {
+  document.title = 'Add language - E2SE Translations';
+  document.querySelector('meta[name="description"]').setAttribute('content', 'Add a new language to translations');
+
   const source = document.querySelector('.view-edit');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
@@ -17,8 +20,8 @@ function add_language(uri, key, value) {
   const heading = view.querySelector('h2');
 
   const fields = {
-    'lang_code': 'ISO code (2)',
-    'lang_iso': 'ISO code (2_2)',
+    'lang_code': 'ISO 639-1 language code (eg. xz)',
+    'lang_locale': 'Language locale code (eg. xz_XA)',
     'lang_dir': 'Direction',
     'lang_name': 'Name',
     'lang_tr_name': 'Translated name',
@@ -26,7 +29,7 @@ function add_language(uri, key, value) {
   };
   const data = {
     'lang_code': null,
-    'lang_iso': null,
+    'lang_locale': null,
     'lang_dir': {'type': 'select', 'options': {'ltr': 'LTR (Left To Right)', 'rtl': 'RTL (Right To Left)'}},
     'lang_name': null,
     'lang_tr_name': null,
