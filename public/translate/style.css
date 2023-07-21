@@ -710,3 +710,22 @@ label {
 .status-vanished {
   color: lightsteelblue;
 }
+
+.level {
+  position: relative;
+  display: block;
+  width: 70px;
+  height: 18px;
+  background: currentColor;
+  box-shadow: inset 0 0 1px currentColor;
+}
+.level:before {
+  content: "";
+  position: relative;
+  top: 1px;
+  display: block;
+  width: 90%;
+  height: 16px;
+  margin: 1px;
+  background: ivory;
+}

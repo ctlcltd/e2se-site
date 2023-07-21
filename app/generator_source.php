@@ -213,7 +213,22 @@ foreach ($ts_files as $ts_file) {
 	$total = count($strings);
 
 	if ($total) {
-		$langs[$lang]['lang_completed'] = (int) round($completed / $total * 100);
+		$x = $completed / $total * 100;
+
+		if ($x !== 100.0) {
+			if ($x > 99.5)
+				$x -= 4;
+			else if ($x > 99.0)
+				$x -= 6;
+			else if ($x > 98.5)
+				$x -= 2;
+			else if ($x > 98.0)
+				$x -= 3;
+			else
+				$x -= 1;
+		}
+
+		$langs[$lang]['lang_completed'] = (int) round($x);
 	}
 
 }

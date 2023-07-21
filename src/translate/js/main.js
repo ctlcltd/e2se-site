@@ -34,10 +34,11 @@ function main() {
   function render_row(td, field, text) {
     if (field == 'completed') {
       if (! td.querySelector('span')) {
-        const status = document.createElement('span');
-        status.className = 'status';
-        status.innerText = text.toString() + '%';
-        td.append(status);
+        const level = document.createElement('span');
+        level.className = 'level';
+        level.title = text.toString() + '%';
+        level.dataset.completed = text.toString();
+        td.append(level);
       }
     } else if (field == 'revised') {
       td.innerText = text ? 'yes' : 'none';

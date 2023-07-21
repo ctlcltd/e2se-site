@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `e2se_langs` (
   `lang_id` bigint(21) UNSIGNED NOT NULL,
   `lang_guid` varchar(32) NOT NULL,
   `lang_code` varchar(8) NOT NULL,
-  `lang_iso` varchar(8) NOT NULL,
+  `lang_locale` varchar(8) NOT NULL,
   `lang_sourced` tinyint(1) UNSIGNED NOT NULL,
   `lang_dir` varchar(3) NOT NULL,
   `lang_numerus` tinyint(1) UNSIGNED NOT NULL,

@@ -21,7 +21,7 @@ function add_language(uri, key, value) {
 
   const fields = {
     'lang_code': 'ISO 639-1 language code (eg. xz)',
-    'lang_locale': 'Language locale code (eg. xz_XA)',
+    'lang_locale': 'Locale language code (eg. xz_XA)',
     'lang_dir': 'Direction',
     'lang_name': 'Name',
     'lang_tr_name': 'Translated name',

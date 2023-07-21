@@ -608,6 +608,7 @@ body.dark input:hover, body.dark textarea:hover, body.dark select:hover {
 
 #signin {
   max-width: 55vmax;
+  margin: auto;
   padding: 15vh 10vw;
 }
 
