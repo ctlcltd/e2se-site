@@ -52,15 +52,61 @@ function db_connect() {
 	}
 }
 
-function db_error() {
-	return [
-		'status' => 503,
-		'response' => 0
-	];
+function db_select(object $dbh, string $table_name, mixed $select, array $where) {
+	$_var_transfunc = function($key) {
+		return "{$key}=:{$key}";
+	};
+	$_where_transfunc = function(&$param, $key, $where) {
+		$params = [];
+		$sql = $param[0];
+		if (isset($param[1]) && ($param[1] == '=' || $param[1] == '!=')) {
+			$sql .= $param[1];
+		}
+		if (isset($param[2])) {
+			$sql .= empty($param[2]) ? ":{$param[0]}" : ":{$param[2]}";
+			$params = [ ":{$param[0]}" => $param[2] ];
+		}
+		if (isset($param[3]) && ($param[3] == 'and' || $param[3] == 'or')) {
+			$sql .= ' ' . strtoupper($param[3]) . ' ';
+		} else if (count($where) > 1) {
+			$sql .= ' AND ';
+		}
+		$param = [
+			0 => $params,
+			1 => $sql
+		];
+	};
+	if (! count($where)) {
+		return false;
+	}
+
+	$select_sql = '*';
+
+	if (is_array($select)) {
+		$select_sql = implode(',', $select);
+	} else if ($select && strpos($select, 'DISTINCT') === 0) {
+		$select_sql = $select;
+	}
+
+	array_walk($where, $_where_transfunc, $where);
+	$where_params = [];
+	$where_sql = '';
+	foreach ($where as $value) {
+		$where_params += $value[0];
+		$where_sql .= $value[1];
+	}
+	$where_sql = $where_sql ? 'WHERE' . ' ' . $where_sql : '';
+
+	$sql = 'SELECT %s FROM %s %s';
+	$sql = sprintf($sql, $select_sql, $table_name, $where_sql);
+
+	$sth = $dbh->prepare($sql);
+	$sth->execute($where_params);
+	return $sth;
 }
 
-function db_insert($dbh, $table_name, $arr) {
-	/*$_var_transfunc = function($key) {
+function db_insert(object $dbh, string $table_name, array $arr) {
+	$_var_transfunc = function($key) {
 		return ":{$key}";
 	};
 
@@ -71,7 +117,105 @@ function db_insert($dbh, $table_name, $arr) {
 	$sql = sprintf($sql, $table_name, implode(',', $cols), implode(',', $vars));
 
 	$sth = $dbh->prepare($sql);
-	return $sth->execute(array_combine($vars, $arr));*/
+	$sth->execute(array_combine($vars, $arr));
+	return $sth;
+}
+
+function db_update(object $dbh, string $table_name, array $arr, array $where) {
+	$_var_transfunc = function($key) {
+		return "{$key}=:{$key}";
+	};
+	$_where_transfunc = function(&$param, $key, $where) {
+		$params = [];
+		$sql = $param[0];
+		if (isset($param[1]) && ($param[1] == '=' || $param[1] == '!=')) {
+			$sql .= $param[1];
+		}
+		if (isset($param[2])) {
+			$sql .= empty($param[2]) ? ":{$param[0]}" : ":{$param[2]}";
+			$params = [ ":{$param[0]}" => $param[2] ];
+		}
+		if (isset($param[3]) && ($param[3] == 'and' || $param[3] == 'or')) {
+			$sql .= ' ' . strtoupper($param[3]) . ' ';
+		} else if (count($where) > 1) {
+			$sql .= ' AND ';
+		}
+		$param = [
+			0 => $params,
+			1 => $sql
+		];
+	};
+	if (! count($where)) {
+		return false;
+	}
+
+	array_walk($where, $_where_transfunc, $where);
+	$where_params = [];
+	$where_sql = '';
+	foreach ($where as $value) {
+		$where_params[] += $value[0];
+		$where_sql .= $value[1];
+	}
+	$where_sql = $where_sql ? 'WHERE' . ' ' . $where_sql : '';
+
+	$sql = 'UPDATE %s SET %s %s';
+	$sql = sprintf($sql, $table_name, implode(',', $vars), $where_sql);
+
+	$vars += array_keys($where_params);
+	$arr += array_values($where_params);
+
+	$sth = $dbh->prepare($sql);
+	$sth->execute(array_combine($vars, $arr));
+	return $sth;
+}
+
+function db_delete(object $dbh, string $table_name, array $where) {
+	$_where_transfunc = function(&$param, $key, $where) {
+		$params = [];
+		$sql = $param[0];
+		if (isset($param[1]) && ($param[1] == '=' || $param[1] == '!=')) {
+			$sql .= $param[1];
+		}
+		if (isset($param[2])) {
+			$sql .= empty($param[2]) ? ":{$param[0]}" : ":{$param[2]}";
+			$params = [ ":{$param[0]}" => $param[2] ];
+		}
+		if (isset($param[3]) && ($param[3] == 'and' || $param[3] == 'or')) {
+			$sql .= ' ' . strtoupper($param[3]) . ' ';
+		} else if (count($where) > 1) {
+			$sql .= ' AND ';
+		}
+		$param = [
+			0 => $params,
+			1 => $sql
+		];
+	};
+	if (! count($where)) {
+		return false;
+	}
+
+	array_walk($where, $_where_transfunc, $where);
+	$where_params = [];
+	$where_sql = '';
+	foreach ($where as $value) {
+		$where_params[] += $value[0];
+		$where_sql .= $value[1];
+	}
+	$where_sql = $where_sql ? 'WHERE' . ' ' . $where_sql : '';
+
+	$sql = 'DELETE FROM %s %s';
+	$sql = sprintf($sql, $table_name, $where_sql);
+
+	$sth = $dbh->prepare($sql);
+	$sth->execute($where_params);
+	return $sth;
+}
+
+function error() {
+	return [
+		'status' => 503,
+		'response' => 0
+	];
 }
 
 function deny($status = 400) {
@@ -104,14 +248,17 @@ $method = strtolower($_SERVER['REQUEST_METHOD']);
 $request = [];
 
 
+if ($method != 'get' && $method != 'post'):
+
+$status = 405;
+
+else:
+
 if ($authorized) {
 	if (! empty($_POST)) {
 		$request = (array) $_POST;
 	} else if (! empty($_GET)) {
 		$request = (array) $_GET;
-	} else if ($method == 'put') {
-		$bodyraw = file_get_contents('php://input');
-		parse_str($bodyraw, $request);
 	}
 } else {
 	if (! empty($_POST)) {
@@ -184,6 +331,8 @@ if (($endpoint == NULL || $endpoint == 'login') && $method == 'post') {
 } else {
 	$status = 400;
 }
+
+endif;
 
 
 header('Content-Type: application/json');

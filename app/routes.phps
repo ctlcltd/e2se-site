@@ -10,9 +10,9 @@ if (! defined('API')) {
 
 define('ROUTES', __NAMESPACE__);
 
+use \api\error;
 use \api\deny;
 use \api\db_connect;
-use \api\db_error;
 
 
 /*function route_example($authorized, $request, $method) {

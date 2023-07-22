@@ -17,9 +17,9 @@ if (! defined('API')) {
 
 define('ROUTES', __NAMESPACE__);
 
+use \api\error;
 use \api\deny;
 use \api\db_connect;
-use \api\db_error;
 
 
 function route_service($authorized, $request, $method) {
@@ -51,7 +51,7 @@ function route_inspect($authorized, $request, $method) {
 		try {
 			$dbh = \api\db_connect();
 		} catch (Exception $e) {
-			return \api\db_error();
+			return \api\error();
 		}
 	}
 

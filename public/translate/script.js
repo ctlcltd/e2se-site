@@ -163,6 +163,14 @@ function edit_translate(uri, key, value) {
     'msg_comment': 'Context',
     'status': 'Status'
   };
+  const notes = {
+    '0': 'No translate',
+    '1': 'Maybe wrong', // type: 1
+    '2': 'Maybe wrong', // type: 2
+    '3': 'Maybe wrong',
+    '6': 'System string | Maybe wrong',
+    '8': 'Conventional | Maybe wrong'
+  };
 
   const lang = value.split('=')[1];
   let lang_dir;
@@ -348,6 +356,16 @@ function edit_translate(uri, key, value) {
         let val = text.toString();
         val = val.replace(' | ', '\n');
         td.innerText = val.toString();
+      }
+    } else if (field == 'notes') {
+      if (text) {
+        if (text in notes) {
+          // const parent = td.closest('[data-guid]');
+          // parent.setAttribute('data-notes', text);
+          td.innerText = notes[text].replace(' | ', '\n');
+        } else {
+          td.innerText = text.toString();
+        }
       }
     } else if (text) {
       td.innerText = text.toString();
