@@ -15,7 +15,7 @@ use \PDOException;
 
 if (! defined('API')) {
 	http_response_code(503);
-	exit();
+	exit;
 }
 
 if (! defined('authorized')) {
@@ -35,6 +35,9 @@ function decode_entities($str) {
 	return str_replace('&apos;', '\'', html_entity_decode($str));
 }
 
+
+$status = 502;
+$response = [];
 
 $read_db = isset($generator['read_db']) ? (bool) $generator['read_db'] : true;
 $write_db = isset($generator['write_db']) ? (bool) $generator['write_db'] : true;
@@ -354,10 +357,6 @@ foreach ($disambiguation as $arr) {
 // var_dump($translated);
 
 
-
-
-$status = 502;
-$response = [];
 
 
 if ($write_db)

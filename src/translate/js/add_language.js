@@ -6,6 +6,8 @@
  */
 
 function add_language(uri, key, value) {
+  console.log('add_language()');
+
   document.title = 'Add language - E2SE Translations';
   document.querySelector('meta[name="description"]').setAttribute('content', 'Add a new language to translations');
 
@@ -14,7 +16,7 @@ function add_language(uri, key, value) {
   clone.removeAttribute('class');
   clone.setAttribute('id', 'add-language');
   clone.cloned = true;
-  document.body.insertBefore(clone, source);
+  document.getElementById('page').insertBefore(clone, source);
 
   const view = document.getElementById('add-language');
   const heading = view.querySelector('h2');
@@ -87,6 +89,8 @@ function add_language(uri, key, value) {
 
     form.classList.remove('placeholder');
   }
+
+  document.querySelector('.submit-form').classList.add('placeholder');
 
   render_form(data);
 

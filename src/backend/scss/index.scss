@@ -6,8 +6,10 @@
  */
 
 @import "../../scss/_setup.scss";
+@import "../../scss/_variant.scss";
 @import "../../scss/_light.scss";
 @import "../../scss/_dark.scss";
+@include variant_dark();
 @import "../../scss/_common.scss";
 @import "../../scss/_headings.scss";
 @import "../../scss/_nav.scss";
@@ -16,3 +18,7 @@
 @import "../../scss/_form.scss";
 @import "../../scss/_message.scss";
 @import "custom";
+
+body.light {
+    @include variant_light($print: true);
+}

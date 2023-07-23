@@ -12,7 +12,7 @@ use \Exception;
 
 if (! defined('API')) {
 	http_response_code(503);
-	exit();
+	exit;
 }
 
 define('ROUTES', __NAMESPACE__);

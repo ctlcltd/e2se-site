@@ -62,11 +62,6 @@ body.light {
     &:hover { background: #fff; }
   }
 }
-body.dark {
-  input, textarea, select {
-    &:hover { background: #333; }
-  }
-}
 
 #main div > nav {
   padding: 0;

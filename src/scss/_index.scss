@@ -6,6 +6,7 @@
  */
 
 @import "_setup";
+@import "_variant";
 @import "_light";
 @import "_dark";
 @import "_common";
@@ -15,4 +16,10 @@
 @import "_table";
 @import "_form";
 @import "_message";
-@import "custom";
+
+body.light {
+    @include variant_light($print: true);
+}
+body.dark {
+    @include variant_dark($print: true);
+}

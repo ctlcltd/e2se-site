@@ -6,178 +6,7 @@
  */
 
 
-body.light {
-  color: #000;
-  background: #fcfcfc;
-}
-@keyframes loading--light {
-  0% {
-    opacity: 0.33;
-  }
-  100% {
-    opacity: 0.89;
-  }
-}
-body.light [data-loading] {
-  animation-name: loading--light;
-}
-body.light th {
-  background: #fff;
-}
-body.light th,
-body.light td {
-  border-color: #aaa;
-}
-body.light tbody tr[data-href] {
-  background: #f9f9f9;
-}
-body.light tbody tr[data-href]:hover td {
-  background: #fff;
-}
-body.light tbody tr[data-href]:focus td {
-  background: #cef;
-}
-body.light input,
-body.light textarea,
-body.light select,
-body.light .input {
-  color: #000;
-  background: #fff;
-  border-color: #444;
-}
-body.light input,
-body.light textarea,
-body.light select,
-body.light .input {
-  box-shadow: 0 0 3px 0 transparent;
-}
-body.light input:hover,
-body.light textarea:hover,
-body.light select:hover,
-body.light .input:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.light input:focus,
-body.light textarea:focus,
-body.light select:focus,
-body.light .input:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.light button,
-body.light .button {
-  color: #505050;
-  background: #fff;
-}
-body.light button,
-body.light .button {
-  box-shadow: 0 0 3px 0 transparent;
-}
-body.light button:hover,
-body.light .button:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.light button:focus,
-body.light .button:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.light button[type=submit], body.light button.primary,
-body.light .button[type=submit],
-body.light .button.primary {
-  color: #fff;
-  background: dodgerblue;
-}
-body.light button.secondary,
-body.light .button.secondary {
-  color: #fff;
-  background: dimgray;
-}
 
-
-body.dark {
-  color: #fff;
-  background: #1a1a1a;
-}
-@keyframes loading--dark {
-  0% {
-    opacity: 0.77;
-  }
-  100% {
-    opacity: 0.89;
-  }
-}
-body.dark [data-loading] {
-  animation-name: loading--dark;
-}
-body.dark th {
-  background: #202020;
-}
-body.dark th,
-body.dark td {
-  border-color: #3d3d3d;
-}
-body.dark tbody tr[data-href] {
-  background: #222;
-}
-body.dark tbody tr[data-href]:hover td {
-  background: #202020;
-}
-body.dark tbody tr[data-href]:focus td {
-  background: #000;
-}
-body.dark input,
-body.dark textarea,
-body.dark select,
-body.dark .input {
-  color: #fff;
-  background: #303030;
-  border-color: #000;
-}
-body.dark input,
-body.dark textarea,
-body.dark select,
-body.dark .input {
-  box-shadow: 0 0 3px 0 transparent;
-}
-body.dark input:hover,
-body.dark textarea:hover,
-body.dark select:hover,
-body.dark .input:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.dark input:focus,
-body.dark textarea:focus,
-body.dark select:focus,
-body.dark .input:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.dark button,
-body.dark .button {
-  color: #fff;
-  background: #101010;
-}
-body.dark button,
-body.dark .button {
-  box-shadow: 0 0 3px 0 transparent;
-}
-body.dark button:hover,
-body.dark .button:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-}
-body.dark button:focus,
-body.dark .button:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.1);
-}
-body.dark button[type=submit], body.dark button.primary,
-body.dark .button[type=submit],
-body.dark .button.primary {
-  color: #fff;
-  background: dodgerblue;
-}
-body.dark button.secondary,
-body.dark .button.secondary {
-  color: #fff;
-  background: dimgray;
-}
 
 
 * {
@@ -588,10 +417,6 @@ body.light input:hover, body.light textarea:hover, body.light select:hover {
   background: #fff;
 }
 
-body.dark input:hover, body.dark textarea:hover, body.dark select:hover {
-  background: #333;
-}
-
 #main div > nav {
   padding: 0;
 }
@@ -621,4 +446,89 @@ body.dark input:hover, body.dark textarea:hover, body.dark select:hover {
   #signin {
     padding: 25vh 30vw 0 0;
   }
+}
+body.light {
+  color: #000;
+  background: #fcfcfc;
+}
+@keyframes dark_loading {
+  0% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 0.89;
+  }
+}
+body.light [data-loading] {
+  animation-name: dark_loading;
+}
+body.light th {
+  background: #fff;
+}
+body.light th,
+body.light td {
+  border-color: #aaa;
+}
+body.light tbody tr[data-href] {
+  background: #f9f9f9;
+}
+body.light tbody tr[data-href]:hover td {
+  background: #fff;
+}
+body.light tbody tr[data-href]:focus td {
+  background: #cef;
+}
+body.light input,
+body.light textarea,
+body.light select,
+body.light .input {
+  color: #000;
+  background: #fff;
+  border-color: #444;
+}
+body.light input,
+body.light textarea,
+body.light select,
+body.light .input {
+  box-shadow: 0 0 3px 0 transparent;
+}
+body.light input:hover,
+body.light textarea:hover,
+body.light select:hover,
+body.light .input:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light input:focus,
+body.light textarea:focus,
+body.light select:focus,
+body.light .input:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light button,
+body.light .button {
+  color: #505050;
+  background: #fff;
+}
+body.light button,
+body.light .button {
+  box-shadow: 0 0 3px 0 transparent;
+}
+body.light button:hover,
+body.light .button:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light button:focus,
+body.light .button:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.light button[type=submit], body.light button.primary,
+body.light .button[type=submit],
+body.light .button.primary {
+  color: #fff;
+  background: dodgerblue;
+}
+body.light button.secondary,
+body.light .button.secondary {
+  color: #fff;
+  background: dimgray;
 }

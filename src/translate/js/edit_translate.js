@@ -6,6 +6,8 @@
  */
 
 function edit_translate(uri, key, value) {
+  console.log('edit_translate()');
+
   document.title = 'Edit - E2SE Translations';
   document.querySelector('meta[name="description"]').setAttribute('content', 'Edit translation strings of a language');
 
@@ -14,7 +16,7 @@ function edit_translate(uri, key, value) {
   clone.removeAttribute('class');
   clone.setAttribute('id', 'edit-translate');
   clone.cloned = true;
-  document.body.insertBefore(clone, source);
+  document.getElementById('page').insertBefore(clone, source);
 
   const view = document.getElementById('edit-translate');
   const heading = view.querySelector('h2');
@@ -133,7 +135,7 @@ function edit_translate(uri, key, value) {
 
     if (el.classList.contains('input')) {
       const tr = el.parentElement.closest('[data-guid]');
-      console.log(evt);
+      // console.log(evt);
 
       try {
         const guid = tr.dataset.guid;
@@ -142,7 +144,7 @@ function edit_translate(uri, key, value) {
         } else {
           storage[guid] = el.textContent;
         }
-        console.log(storage);
+        // console.log(storage);
         window.localStorage.setItem(tr_key, JSON.stringify(storage));
       } catch (err) {
         error(null, err);
@@ -307,6 +309,8 @@ function edit_translate(uri, key, value) {
     // console.log('load', i++, xhr);
     try {
       const obj = JSON.parse(xhr.response);
+
+      document.querySelector('.submit-form').classList.remove('placeholder');
 
       disambiguation(obj);
       render_table(obj);

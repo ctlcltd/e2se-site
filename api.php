@@ -8,10 +8,10 @@
 
 namespace api;
 
-use \PDO;
-use \PDOException;
 use \Exception;
 use \Error;
+use \PDO;
+use \PDOException;
 
 define('API', __NAMESPACE__);
 
@@ -158,7 +158,7 @@ require_once __DIR__ . '/' . 'app/routes.php';
 
 if (! defined('CONFIG') || ! defined('ROUTES')) {
 	http_response_code(503);
-	exit();
+	exit;
 }
 
 if (isset($_COOKIE['PHPSESSID'])) {

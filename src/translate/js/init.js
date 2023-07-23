@@ -12,7 +12,7 @@ function init() {
   const request = source_request(name);
 
   function resumeColor() {
-    const color = window.sessionStorage.getItem('preferred-color');
+    const color = window.localStorage.getItem('preferred-color');
 
     if (color == 'light' || color == 'dark') {
       document.body.setAttribute('data-color', color);
@@ -51,7 +51,7 @@ function init() {
       }
 
       if (color == 'light' || color == 'dark') {
-        window.sessionStorage.setItem('preferred-color', color);
+        window.localStorage.setItem('preferred-color', color);
       }
     }
   }

@@ -6,178 +6,7 @@
  */
 
 
-body.dark {
-  color: #fff;
-  background: #1a1a1a;
-}
-@keyframes loading--dark {
-  0% {
-    opacity: 0.77;
-  }
-  100% {
-    opacity: 0.89;
-  }
-}
-body.dark [data-loading] {
-  animation-name: loading--dark;
-}
-body.dark th {
-  background: #202020;
-}
-body.dark th,
-body.dark td {
-  border-color: #3d3d3d;
-}
-body.dark tbody tr[data-href] {
-  background: #222;
-}
-body.dark tbody tr[data-href]:hover td {
-  background: #202020;
-}
-body.dark tbody tr[data-href]:focus td {
-  background: #000;
-}
-body.dark input,
-body.dark textarea,
-body.dark select,
-body.dark .input {
-  color: #fff;
-  background: #303030;
-  border-color: #000;
-}
-body.dark input,
-body.dark textarea,
-body.dark select,
-body.dark .input {
-  box-shadow: 0 0 3px 0 transparent;
-}
-body.dark input:hover,
-body.dark textarea:hover,
-body.dark select:hover,
-body.dark .input:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.dark input:focus,
-body.dark textarea:focus,
-body.dark select:focus,
-body.dark .input:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.dark button,
-body.dark .button {
-  color: #fff;
-  background: #101010;
-}
-body.dark button,
-body.dark .button {
-  box-shadow: 0 0 3px 0 transparent;
-}
-body.dark button:hover,
-body.dark .button:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-}
-body.dark button:focus,
-body.dark .button:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.1);
-}
-body.dark button[type=submit], body.dark button.primary,
-body.dark .button[type=submit],
-body.dark .button.primary {
-  color: #fff;
-  background: dodgerblue;
-}
-body.dark button.secondary,
-body.dark .button.secondary {
-  color: #fff;
-  background: dimgray;
-}
 
-
-body.light {
-  color: #000;
-  background: #fcfcfc;
-}
-@keyframes loading--light {
-  0% {
-    opacity: 0.33;
-  }
-  100% {
-    opacity: 0.89;
-  }
-}
-body.light [data-loading] {
-  animation-name: loading--light;
-}
-body.light th {
-  background: #fff;
-}
-body.light th,
-body.light td {
-  border-color: #aaa;
-}
-body.light tbody tr[data-href] {
-  background: #f9f9f9;
-}
-body.light tbody tr[data-href]:hover td {
-  background: #fff;
-}
-body.light tbody tr[data-href]:focus td {
-  background: #cef;
-}
-body.light input,
-body.light textarea,
-body.light select,
-body.light .input {
-  color: #000;
-  background: #fff;
-  border-color: #444;
-}
-body.light input,
-body.light textarea,
-body.light select,
-body.light .input {
-  box-shadow: 0 0 3px 0 transparent;
-}
-body.light input:hover,
-body.light textarea:hover,
-body.light select:hover,
-body.light .input:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.light input:focus,
-body.light textarea:focus,
-body.light select:focus,
-body.light .input:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.light button,
-body.light .button {
-  color: #505050;
-  background: #fff;
-}
-body.light button,
-body.light .button {
-  box-shadow: 0 0 3px 0 transparent;
-}
-body.light button:hover,
-body.light .button:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.light button:focus,
-body.light .button:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
-}
-body.light button[type=submit], body.light button.primary,
-body.light .button[type=submit],
-body.light .button.primary {
-  color: #fff;
-  background: dodgerblue;
-}
-body.light button.secondary,
-body.light .button.secondary {
-  color: #fff;
-  background: dimgray;
-}
 
 
 * {
@@ -587,6 +416,10 @@ body.light .dropdown a {
 }
 
 
+#page {
+  padding: 2.5rem 0 5rem;
+}
+
 main {
   padding: 0 0.5rem;
 }
@@ -599,17 +432,112 @@ main > div:first-child {
   margin: 0 0 0.5rem;
 }
 
-@media (min-width: 992px) {
-  main {
-    padding: 0 5rem 5rem;
-  }
-
-  #head {
-    padding: 0 5rem;
-  }
+.ctrbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-#head {
-  text-align: end;
+
+input#token {
+  height: 40.5px;
+}
+
+.ctrbar-head,
+.ctrbar-foot {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background: #fff;
+}
+
+body.dark .ctrbar-head,
+body.dark .ctrbar-foot {
+  background: #101010;
+}
+
+.ctrbar-head {
+  top: 0;
+  padding: 0.05rem 0.1rem 0.1rem;
+}
+
+.ctrbar-foot {
+  bottom: 0;
+  padding: 0.1rem 0.1rem 0.05rem;
+}
+
+.ctrbar form,
+.ctrbar fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+.ctrbar fieldset {
+  position: relative;
+}
+
+.ctrbar fieldset > p {
+  display: none;
+  margin: 0 1rem;
+  padding: 0 0.25rem;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+body.dark .ctrbar fieldset > p {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.what-this {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  top: 4px;
+  right: 0;
+  text-align: center;
+  border-radius: 100%;
+  cursor: help;
+}
+.what-this:before {
+  content: "?";
+  position: relative;
+  top: 1px;
+  line-height: 32px;
+  font-weight: bold;
+  text-rendering: geometricPrecision;
+}
+.what-this:hover ~ .what-this-area, .what-this:focus ~ .what-this-area {
+  opacity: 1;
+  visibility: visible;
+}
+
+.what-this-area {
+  position: absolute;
+  min-width: 75vw;
+  padding: 1rem 0.5rem;
+  transition: all ease-out 200ms;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.1);
+}
+.what-this-area h5 {
+  margin: 0 0 0.5rem;
+}
+.what-this-area p {
+  margin: 0 0 0.25rem;
+}
+
+body.dark .what-this-area {
+  background: #000;
+}
+
+input#token {
+  width: auto;
+  min-width: 240px;
+  margin: 0;
+  padding: 0.5rem;
+  padding-inline-end: 22px;
 }
 
 button#switch-color {
@@ -632,10 +560,6 @@ button#switch-color:after {
   width: 0;
   margin: 1px 0;
   border-width: 0 9px;
-  border-right-color: transparent;
-}
-
-body.light button#switch-color:after {
   border-right-color: transparent;
   border-left-color: currentColor;
 }
@@ -672,6 +596,7 @@ tbody tr.highlight {
 #edit-translate table td:nth-child(5),
 #edit-translate table td:nth-child(7) {
   opacity: 0.6;
+  white-space: pre;
 }
 
 #edit-translate table td:nth-child(6) {
@@ -716,7 +641,7 @@ label {
   display: block;
   width: 70px;
   height: 18px;
-  background: currentColor;
+  background: #eee;
   box-shadow: inset 0 0 1px currentColor;
 }
 .level:before {
@@ -724,8 +649,142 @@ label {
   position: relative;
   top: 1px;
   display: block;
-  width: 90%;
+  width: 0;
   height: 16px;
   margin: 1px;
-  background: ivory;
+  background: linear-gradient(90deg, lightseagreen, limegreen);
+  transition: width ease 0.5s;
+  transition-delay: var(--delay);
+}
+[data-animated] .level:before {
+  width: 0 !important;
+}
+[data-rendered] .level:before {
+  width: calc(0.8 * var(--completed));
+}
+
+body.dark .level {
+  background: #404040;
+}
+
+@media (min-width: 992px) {
+  main {
+    padding: 0 5rem 5rem;
+  }
+
+  .ctrbar {
+    padding: 0 5rem;
+  }
+
+  .ctrbar-head {
+    background: #fff;
+  }
+
+  .ctrbar-foot {
+    background: none;
+  }
+
+  body.dark .ctrbar-head {
+    background: #101010;
+  }
+  body.dark .ctrbar-foot {
+    background: none;
+  }
+
+  .ctrbar-foot > div {
+    padding: 0 0 2rem;
+  }
+
+  .ctrbar fieldset > p {
+    display: inline-block;
+  }
+
+  .what-this-area {
+    min-width: 33vw;
+  }
+}
+body.dark {
+  color: #fff;
+  background: #1a1a1a;
+}
+@keyframes dark_loading {
+  0% {
+    opacity: 0.77;
+  }
+  100% {
+    opacity: 0.89;
+  }
+}
+body.dark [data-loading] {
+  animation-name: dark_loading;
+}
+body.dark th {
+  background: #202020;
+}
+body.dark th,
+body.dark td {
+  border-color: #3d3d3d;
+}
+body.dark tbody tr[data-href] {
+  background: #222;
+}
+body.dark tbody tr[data-href]:hover td {
+  background: #202020;
+}
+body.dark tbody tr[data-href]:focus td {
+  background: #000;
+}
+body.dark input,
+body.dark textarea,
+body.dark select,
+body.dark .input {
+  color: #fff;
+  background: #303030;
+  border-color: #000;
+}
+body.dark input,
+body.dark textarea,
+body.dark select,
+body.dark .input {
+  box-shadow: 0 0 3px 0 transparent;
+}
+body.dark input:hover,
+body.dark textarea:hover,
+body.dark select:hover,
+body.dark .input:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.dark input:focus,
+body.dark textarea:focus,
+body.dark select:focus,
+body.dark .input:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+}
+body.dark button,
+body.dark .button {
+  color: #fff;
+  background: #101010;
+}
+body.dark button,
+body.dark .button {
+  box-shadow: 0 0 3px 0 transparent;
+}
+body.dark button:hover,
+body.dark .button:hover {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+}
+body.dark button:focus,
+body.dark .button:focus {
+  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.1);
+}
+body.dark button[type=submit], body.dark button.primary,
+body.dark .button[type=submit],
+body.dark .button.primary {
+  color: #fff;
+  background: dodgerblue;
+}
+body.dark button.secondary,
+body.dark .button.secondary {
+  color: #fff;
+  background: dimgray;
 }

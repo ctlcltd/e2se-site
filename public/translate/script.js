@@ -18,6 +18,8 @@ const routes = {
 
 
 function main() {
+  console.log('main()');
+
   document.title = 'E2SE Translations';
   document.querySelector('meta[name="description"]').setAttribute('content', 'Translation website for e2 SAT Editor');
 
@@ -50,12 +52,22 @@ function main() {
         level.className = 'level';
         level.title = text.toString() + '%';
         level.dataset.completed = text.toString();
+        level.style = '--completed: ' + text.toString() + '%;';
         td.append(level);
       }
     } else if (field == 'revised') {
       td.innerText = text ? 'yes' : 'none';
     } else if (text) {
       td.innerText = text.toString();
+    }
+  }
+
+  function animation() {
+    var i = tbody.rows.length;
+
+    while (i--) {
+      tbody.rows.item(i).removeAttribute('data-animated');
+      tbody.rows.item(i).style = '--delay: ' + (i * 20) + 'ms;';
     }
   }
 
@@ -115,6 +127,7 @@ function main() {
         action_edit.href += '?lang=' + code;
         tr.setAttribute('data-guid', guid);
         tr.setAttribute('data-href', action_edit.href);
+        tr.setAttribute('data-animated', '');
         tr.onclick = actionEdit;
 
         tbody.append(tr);
@@ -130,16 +143,24 @@ function main() {
     table.setAttribute('data-rendered', '');
   }
 
+  document.querySelector('.submit-form').classList.add('placeholder');
+
   if (! table.hasAttribute('data-rendered') && languages) {
     table.setAttribute('data-loading', '');
     render_table(languages);
   }
 
   view.removeAttribute('hidden');
+
+  window.setTimeout(function() {
+    animation();
+  }, 300);
 }
 
 
 function edit_translate(uri, key, value) {
+  console.log('edit_translate()');
+
   document.title = 'Edit - E2SE Translations';
   document.querySelector('meta[name="description"]').setAttribute('content', 'Edit translation strings of a language');
 
@@ -148,7 +169,7 @@ function edit_translate(uri, key, value) {
   clone.removeAttribute('class');
   clone.setAttribute('id', 'edit-translate');
   clone.cloned = true;
-  document.body.insertBefore(clone, source);
+  document.getElementById('page').insertBefore(clone, source);
 
   const view = document.getElementById('edit-translate');
   const heading = view.querySelector('h2');
@@ -267,7 +288,7 @@ function edit_translate(uri, key, value) {
 
     if (el.classList.contains('input')) {
       const tr = el.parentElement.closest('[data-guid]');
-      console.log(evt);
+      // console.log(evt);
 
       try {
         const guid = tr.dataset.guid;
@@ -276,7 +297,7 @@ function edit_translate(uri, key, value) {
         } else {
           storage[guid] = el.textContent;
         }
-        console.log(storage);
+        // console.log(storage);
         window.localStorage.setItem(tr_key, JSON.stringify(storage));
       } catch (err) {
         error(null, err);
@@ -442,6 +463,8 @@ function edit_translate(uri, key, value) {
     try {
       const obj = JSON.parse(xhr.response);
 
+      document.querySelector('.submit-form').classList.remove('placeholder');
+
       disambiguation(obj);
       render_table(obj);
     } catch (err) {
@@ -469,6 +492,8 @@ function edit_translate(uri, key, value) {
 
 
 function add_language(uri, key, value) {
+  console.log('add_language()');
+
   document.title = 'Add language - E2SE Translations';
   document.querySelector('meta[name="description"]').setAttribute('content', 'Add a new language to translations');
 
@@ -477,7 +502,7 @@ function add_language(uri, key, value) {
   clone.removeAttribute('class');
   clone.setAttribute('id', 'add-language');
   clone.cloned = true;
-  document.body.insertBefore(clone, source);
+  document.getElementById('page').insertBefore(clone, source);
 
   const view = document.getElementById('add-language');
   const heading = view.querySelector('h2');
@@ -551,10 +576,24 @@ function add_language(uri, key, value) {
     form.classList.remove('placeholder');
   }
 
+  document.querySelector('.submit-form').classList.add('placeholder');
+
   render_form(data);
 
   view.removeAttribute('hidden');
 }
+
+
+function styles() {
+  const what_this_areas = document.querySelectorAll('.what-this-area');
+  if (what_this_areas.length) {
+    for (const el of what_this_areas) {
+      el.removeAttribute('hidden');
+    }
+  }
+}
+
+styles();
 
 
 function api_request(method, endpoint, body) {
@@ -650,7 +689,7 @@ function init() {
   const request = source_request(name);
 
   function resumeColor() {
-    const color = window.sessionStorage.getItem('preferred-color');
+    const color = window.localStorage.getItem('preferred-color');
 
     if (color == 'light' || color == 'dark') {
       document.body.setAttribute('data-color', color);
@@ -689,7 +728,7 @@ function init() {
       }
 
       if (color == 'light' || color == 'dark') {
-        window.sessionStorage.setItem('preferred-color', color);
+        window.localStorage.setItem('preferred-color', color);
       }
     }
   }

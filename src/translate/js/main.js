@@ -6,6 +6,8 @@
  */
 
 function main() {
+  console.log('main()');
+
   document.title = 'E2SE Translations';
   document.querySelector('meta[name="description"]').setAttribute('content', 'Translation website for e2 SAT Editor');
 
@@ -38,12 +40,22 @@ function main() {
         level.className = 'level';
         level.title = text.toString() + '%';
         level.dataset.completed = text.toString();
+        level.style = '--completed: ' + text.toString() + '%;';
         td.append(level);
       }
     } else if (field == 'revised') {
       td.innerText = text ? 'yes' : 'none';
     } else if (text) {
       td.innerText = text.toString();
+    }
+  }
+
+  function animation() {
+    var i = tbody.rows.length;
+
+    while (i--) {
+      tbody.rows.item(i).removeAttribute('data-animated');
+      tbody.rows.item(i).style = '--delay: ' + (i * 20) + 'ms;';
     }
   }
 
@@ -103,6 +115,7 @@ function main() {
         action_edit.href += '?lang=' + code;
         tr.setAttribute('data-guid', guid);
         tr.setAttribute('data-href', action_edit.href);
+        tr.setAttribute('data-animated', '');
         tr.onclick = actionEdit;
 
         tbody.append(tr);
@@ -118,10 +131,16 @@ function main() {
     table.setAttribute('data-rendered', '');
   }
 
+  document.querySelector('.submit-form').classList.add('placeholder');
+
   if (! table.hasAttribute('data-rendered') && languages) {
     table.setAttribute('data-loading', '');
     render_table(languages);
   }
 
   view.removeAttribute('hidden');
+
+  window.setTimeout(function() {
+    animation();
+  }, 300);
 }
