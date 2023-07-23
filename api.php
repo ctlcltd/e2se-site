@@ -47,167 +47,93 @@ function db_connect() {
 	} catch (PDOException $e) {
 		throw new Exception('Connection Error');
 	} catch (Error $e) {
-		var_dump($e);
 		throw new Exception('Connection Error');
 	}
 }
 
-function db_select(object $dbh, string $table_name, mixed $select, array $where) {
-	$_var_transfunc = function($key) {
-		return "{$key}=:{$key}";
+function db_select(PDO $dbh, string $table_name, mixed $select = '*', mixed $clauses = '', mixed $params = NULL) {
+	$_param_transfunc = function($key) {
+		return ":{$key}";
 	};
-	$_where_transfunc = function(&$param, $key, $where) {
-		$params = [];
-		$sql = $param[0];
-		if (isset($param[1]) && ($param[1] == '=' || $param[1] == '!=')) {
-			$sql .= $param[1];
-		}
-		if (isset($param[2])) {
-			$sql .= empty($param[2]) ? ":{$param[0]}" : ":{$param[2]}";
-			$params = [ ":{$param[0]}" => $param[2] ];
-		}
-		if (isset($param[3]) && ($param[3] == 'and' || $param[3] == 'or')) {
-			$sql .= ' ' . strtoupper($param[3]) . ' ';
-		} else if (count($where) > 1) {
-			$sql .= ' AND ';
-		}
-		$param = [
-			0 => $params,
-			1 => $sql
-		];
-	};
-	if (! count($where)) {
-		return false;
-	}
-
-	$select_sql = '*';
 
 	if (is_array($select)) {
-		$select_sql = implode(',', $select);
-	} else if ($select && strpos($select, 'DISTINCT') === 0) {
-		$select_sql = $select;
+		$select = implode(',', $select);
 	}
-
-	array_walk($where, $_where_transfunc, $where);
-	$where_params = [];
-	$where_sql = '';
-	foreach ($where as $value) {
-		$where_params += $value[0];
-		$where_sql .= $value[1];
-	}
-	$where_sql = $where_sql ? 'WHERE' . ' ' . $where_sql : '';
 
 	$sql = 'SELECT %s FROM %s %s';
-	$sql = sprintf($sql, $select_sql, $table_name, $where_sql);
+	$sql = sprintf($sql, $select, $table_name, $clauses);
+
+	if (is_array($params)) {
+		$cols = array_keys($params);
+		$vars = array_map($_param_transfunc, $cols);
+		$params = array_combine($vars, $params);
+	}
 
 	$sth = $dbh->prepare($sql);
-	$sth->execute($where_params);
+	$sth->execute($params);
 	return $sth;
 }
 
-function db_insert(object $dbh, string $table_name, array $arr) {
-	$_var_transfunc = function($key) {
+function db_insert(PDO $dbh, string $table_name, array $arr) {
+	$_param_transfunc = function($key) {
 		return ":{$key}";
 	};
 
 	$cols = array_keys($arr);
-	$vars = array_map($_var_transfunc, $cols);
+	$vars = array_map($_param_transfunc, $cols);
 
 	$sql = 'INSERT INTO %s (%s) VALUES(%s)';
 	$sql = sprintf($sql, $table_name, implode(',', $cols), implode(',', $vars));
 
+	$params = array_combine($vars, $arr);
+
 	$sth = $dbh->prepare($sql);
-	$sth->execute(array_combine($vars, $arr));
+	$sth->execute($params);
 	return $sth;
 }
 
-function db_update(object $dbh, string $table_name, array $arr, array $where) {
-	$_var_transfunc = function($key) {
+function db_update(PDO $dbh, string $table_name, array $arr, mixed $clauses, mixed $params = NULL) {
+	$_param_transfunc = function($key) {
+		return ":{$key}";
+	};
+	$_assign_transfunc = function($key) {
 		return "{$key}=:{$key}";
 	};
-	$_where_transfunc = function(&$param, $key, $where) {
-		$params = [];
-		$sql = $param[0];
-		if (isset($param[1]) && ($param[1] == '=' || $param[1] == '!=')) {
-			$sql .= $param[1];
-		}
-		if (isset($param[2])) {
-			$sql .= empty($param[2]) ? ":{$param[0]}" : ":{$param[2]}";
-			$params = [ ":{$param[0]}" => $param[2] ];
-		}
-		if (isset($param[3]) && ($param[3] == 'and' || $param[3] == 'or')) {
-			$sql .= ' ' . strtoupper($param[3]) . ' ';
-		} else if (count($where) > 1) {
-			$sql .= ' AND ';
-		}
-		$param = [
-			0 => $params,
-			1 => $sql
-		];
-	};
-	if (! count($where)) {
-		return false;
-	}
 
-	array_walk($where, $_where_transfunc, $where);
-	$where_params = [];
-	$where_sql = '';
-	foreach ($where as $value) {
-		$where_params[] += $value[0];
-		$where_sql .= $value[1];
-	}
-	$where_sql = $where_sql ? 'WHERE' . ' ' . $where_sql : '';
+	$cols = array_keys($arr);
+	$vars = array_map($_assign_transfunc, $cols);
 
 	$sql = 'UPDATE %s SET %s %s';
-	$sql = sprintf($sql, $table_name, implode(',', $vars), $where_sql);
+	$sql = sprintf($sql, $table_name, implode(',', $vars), $clauses);
 
-	$vars += array_keys($where_params);
-	$arr += array_values($where_params);
+	if (is_array($params)) {
+		$cols += array_keys($params);
+		$arr += array_values($params);
+		$vars = array_map($_param_transfunc, $cols);
+		$params = array_combine($vars, $arr);
+	}
 
 	$sth = $dbh->prepare($sql);
-	$sth->execute(array_combine($vars, $arr));
+	$sth->execute($params);
 	return $sth;
 }
 
-function db_delete(object $dbh, string $table_name, array $where) {
-	$_where_transfunc = function(&$param, $key, $where) {
-		$params = [];
-		$sql = $param[0];
-		if (isset($param[1]) && ($param[1] == '=' || $param[1] == '!=')) {
-			$sql .= $param[1];
-		}
-		if (isset($param[2])) {
-			$sql .= empty($param[2]) ? ":{$param[0]}" : ":{$param[2]}";
-			$params = [ ":{$param[0]}" => $param[2] ];
-		}
-		if (isset($param[3]) && ($param[3] == 'and' || $param[3] == 'or')) {
-			$sql .= ' ' . strtoupper($param[3]) . ' ';
-		} else if (count($where) > 1) {
-			$sql .= ' AND ';
-		}
-		$param = [
-			0 => $params,
-			1 => $sql
-		];
+function db_delete(PDO $dbh, string $table_name, mixed $clauses, mixed $params = NULL) {
+	$_param_transfunc = function($key) {
+		return ":{$key}";
 	};
-	if (! count($where)) {
-		return false;
-	}
-
-	array_walk($where, $_where_transfunc, $where);
-	$where_params = [];
-	$where_sql = '';
-	foreach ($where as $value) {
-		$where_params[] += $value[0];
-		$where_sql .= $value[1];
-	}
-	$where_sql = $where_sql ? 'WHERE' . ' ' . $where_sql : '';
 
 	$sql = 'DELETE FROM %s %s';
-	$sql = sprintf($sql, $table_name, $where_sql);
+	$sql = sprintf($sql, $table_name, $clauses);
+
+	if (is_array($params)) {
+		$cols = array_keys($params);
+		$vars = array_map($_param_transfunc, $cols);
+		$params = array_combine($vars, $params);
+	}
 
 	$sth = $dbh->prepare($sql);
-	$sth->execute($where_params);
+	$sth->execute($params);
 	return $sth;
 }
 

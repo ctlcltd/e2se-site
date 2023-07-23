@@ -69,16 +69,12 @@ if ($read_db) {
 	$language = array_flip($languages);
 
 	try {
-		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id', 'ts_guid', 'ts_notes'], ['1']);
+		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id', 'ts_guid', 'ts_notes'], 'WHERE ts_notes!=""');
 		$results = $sth->fetchAll(PDO::FETCH_ASSOC|PDO::FETCH_GROUP);
 
 		foreach ($results as $ts_id => $arr) {
 			$guid = $arr[0]['ts_guid'];
-			$index[$ts_id] = $guid;
-
-			if (! empty($arr[0]['ts_notes'])) {
-				$notes['ts'][$guid] = $arr[0]['ts_notes'];
-			}
+			$notes['ts'][$guid] = $arr[0]['ts_notes'];
 		}
 	} catch (PDOException $e) {
 		return false;
@@ -87,25 +83,21 @@ if ($read_db) {
 	}
 
 	try {
-		$sth = \api\db_select($dbh, 'e2se_tr', ['ts_id', 'lang_id', 'tr_notes'], [['tr_notes', '!=', '']]);
+		$sth = \api\db_select($dbh, 'e2se_tr', ['e2se_tr.ts_id', 'ts_guid', 'lang_id', 'tr_notes'], 'INNER JOIN e2se_ts WHERE tr_notes!=""');
 		$results = $sth->fetchAll(PDO::FETCH_ASSOC|PDO::FETCH_GROUP);
 
 		foreach ($results as $ts_id => $arr) {
-			if (! empty($arr[0]['tr_notes'])) {
-				$guid = $index[$ts_id];
-				$lang_id = $arr[0]['lang_id'];
-				$lang = $language[$lang_id];
+			$guid = $arr[0]['ts_guid'];
+			$lang_id = $arr[0]['lang_id'];
+			$lang = $language[$lang_id];
 
-				$notes[$lang][$guid] = $arr[0]['tr_notes'];
-			}
+			$notes[$lang][$guid] = $arr[0]['tr_notes'];
 		}
 	} catch (PDOException $e) {
 		return false;
 	} catch (Error $e) {
 		return false;
 	}
-
-	$index = [];
 }
 
 
