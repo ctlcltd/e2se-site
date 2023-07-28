@@ -58,7 +58,7 @@ body {
 
 .actions {
   position: sticky;
-  right: -1px;
+  inset-inline-end: 0;
   text-align: center;
 }
 
@@ -80,12 +80,20 @@ h6 {
   clear: both;
 }
 
+h1 {
+  margin: 0 0 1.5rem;
+}
+
 h2,
 h3,
 h4,
 h5 {
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
   font-weight: normal;
+}
+
+h6 {
+  margin: 0 0 1rem;
 }
 
 h1 {
@@ -114,7 +122,7 @@ h6 {
 
 
 nav {
-  margin: 1rem -1rem 2rem -1rem;
+  margin: 1rem -1rem 2rem;
 }
 
 nav > a {
@@ -138,7 +146,7 @@ main {
 }
 
 main div > nav {
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 2rem;
 }
 
 main h2 {
@@ -178,6 +186,9 @@ tbody tr[data-href]:hover td {
 tbody tr[data-href]:focus td {
   background: #cef;
 }
+tbody tr.highlight {
+  background: #dff;
+}
 
 .table {
   position: relative;
@@ -205,24 +216,24 @@ fieldset {
 }
 
 form {
-  margin: 0 0 4rem 0;
+  margin: 0 0 4rem;
   padding: 0 1rem;
 }
 
 fieldset,
 fieldset > div {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.5rem;
 }
 
 legend,
 fieldset > p {
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
   font-size: 1rem;
 }
 
 label {
   display: block;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem;
   font-size: 0.7rem;
 }
 
@@ -236,7 +247,7 @@ select,
   font-size: 0.9rem;
   color: #000;
   background: #fff;
-  border: 1px solid #444;
+  border: 1px solid #505050;
   border-radius: 0;
   -webkit-appearance: none;
   box-sizing: border-box;
@@ -245,20 +256,20 @@ input,
 textarea,
 select,
 .input {
-  box-shadow: 0 0 3px 0 transparent;
+  box-shadow: 0 0 0.11rem transparent;
   opacity: 0.97;
 }
 input:hover,
 textarea:hover,
 select:hover,
 .input:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.11rem rgba(0, 0, 0, 0.2);
 }
 input:focus,
 textarea:focus,
 select:focus,
 .input:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.022rem 0.18rem rgba(0, 0, 0, 0.15);
   opacity: 1;
 }
 
@@ -286,7 +297,7 @@ button,
   font-size: 0.9rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #505050;
+  color: #4b4b4b;
   background: #fff;
   border: 0;
   border-radius: 0;
@@ -295,15 +306,15 @@ button,
 }
 button,
 .button {
-  box-shadow: 0 0 3px 0 transparent;
+  box-shadow: 0 0 0.18rem transparent;
 }
 button:hover,
 .button:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.18rem rgba(0, 0, 0, 0.25);
 }
 button:focus,
 .button:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
 }
 button.tiny,
 .button.tiny {
@@ -321,12 +332,12 @@ button[type=submit], button.primary,
 .button[type=submit],
 .button.primary {
   color: #fff;
-  background: dodgerblue;
+  background: #2895ff;
 }
 button.secondary,
 .button.secondary {
   color: #fff;
-  background: dimgray;
+  background: #5a5a5a;
 }
 
 a.button {
@@ -339,13 +350,14 @@ select + *,
 .input + *,
 button + *,
 .button + * {
-  margin-left: 2rem;
+  margin-inline-start: 2rem;
 }
 
 
 .toggler {
   position: relative;
-  padding: 0.75rem 1.5rem 0.75rem 1rem;
+  padding: 0.75rem 1rem 0.75rem;
+  padding-inline-end: 1.5rem;
   font-size: 0.8rem;
   z-index: 0;
 }
@@ -366,7 +378,7 @@ button + *,
 .dropdown {
   position: absolute;
   min-width: 120px;
-  margin-left: 0;
+  margin-inline-start: 0;
   padding: 0.5rem;
   background: #fff;
   border: 1px solid #aaa;
@@ -410,7 +422,7 @@ body.light .dropdown a {
 .info {
   display: block;
   min-height: 1.2rem;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem;
   padding: 0.5rem 0;
   font-size: 0.8rem;
 }
@@ -430,16 +442,13 @@ main > div {
 
 main > div:first-child {
   margin: 0 0 0.5rem;
+  padding: 1.5rem 0 0.5rem;
 }
 
 .ctrbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-input#token {
-  height: 40.5px;
 }
 
 .ctrbar-head,
@@ -453,7 +462,7 @@ input#token {
 
 body.dark .ctrbar-head,
 body.dark .ctrbar-foot {
-  background: #101010;
+  background: #181818;
 }
 
 .ctrbar-head {
@@ -487,24 +496,43 @@ body.dark .ctrbar fieldset > p {
   background: rgba(0, 0, 0, 0.75);
 }
 
+#ctrbar-add-language {
+  margin-inline-end: auto;
+}
+
+#ctrbar-submit-form {
+  margin-inline-start: auto;
+}
+
 .what-this {
   position: absolute;
   width: 32px;
   height: 32px;
   margin: 0;
   top: 4px;
-  right: 0;
+  inset-inline-end: 1px;
   text-align: center;
-  border-radius: 100%;
   cursor: help;
 }
 .what-this:before {
   content: "?";
   position: relative;
-  top: 1px;
+  top: 0.5px;
   line-height: 32px;
+  font-size: 15px;
   font-weight: bold;
   text-rendering: geometricPrecision;
+  opacity: 0.72;
+}
+.what-this:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  box-shadow: 0 0 0.116rem currentColor;
 }
 .what-this:hover ~ .what-this-area, .what-this:focus ~ .what-this-area {
   opacity: 1;
@@ -518,8 +546,10 @@ body.dark .ctrbar fieldset > p {
   transition: all ease-out 200ms;
   opacity: 0;
   visibility: hidden;
+  color: #101010;
   background: #fff;
-  box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.1em 1rem 0.5rem rgba(0, 0, 0, 0.1);
+  z-index: -1;
 }
 .what-this-area h5 {
   margin: 0 0 0.5rem;
@@ -529,26 +559,30 @@ body.dark .ctrbar fieldset > p {
 }
 
 body.dark .what-this-area {
-  background: #000;
+  color: #fcfcfc;
+  background: #222;
+  box-shadow: 0 0.1em 1rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
 input#token {
   width: auto;
   min-width: 240px;
+  height: 40.5px;
   margin: 0;
   padding: 0.5rem;
-  padding-inline-end: 22px;
+  padding-inline-end: 32px;
 }
 
 button#switch-color {
   position: relative;
-  padding: 0.75rem 0.75rem 0.75rem 2.25rem;
+  padding: 0.75rem;
+  padding-inline-start: 2.25rem;
   text-transform: none;
 }
 button#switch-color:before, button#switch-color:after {
   content: "";
   position: absolute;
-  left: 0.75rem;
+  inset-inline-start: 0.75rem;
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -582,8 +616,28 @@ table.placeholder tbody tr:not(tbody:first-child) {
   font-weight: bold;
 }
 
-tbody tr.highlight {
-  background: #dff;
+tbody td:nth-child(2) {
+  font-size: 0.82rem;
+}
+
+tbody tr[data-type="2"] td:nth-child(3) {
+  font-size: 0.85rem;
+}
+
+tbody tr[data-type="2"][data-dir=rtl] td:nth-child(3) {
+  font-size: 1.1rem;
+}
+
+#edit-translate table td:nth-child(2) {
+  font-size: 0.86rem;
+}
+
+#edit-translate table[data-type="2"] td:nth-child(3) .input {
+  font-size: 0.93rem;
+}
+
+#edit-translate table[data-type="2"][data-dir=rtl] td:nth-child(3) .input {
+  font-size: 1rem;
 }
 
 #edit-translate .inline-edit {
@@ -625,15 +679,15 @@ label {
 }
 
 .status-unfinished {
-  color: dimgray;
+  color: gray;
 }
 
 .status-completed {
-  color: seagreen;
+  color: #32965e;
 }
 
 .status-vanished {
-  color: lightsteelblue;
+  color: #6189bd;
 }
 
 .level {
@@ -641,7 +695,7 @@ label {
   display: block;
   width: 70px;
   height: 18px;
-  background: #eee;
+  background: #f0f0f0;
   box-shadow: inset 0 0 1px currentColor;
 }
 .level:before {
@@ -652,7 +706,7 @@ label {
   width: 0;
   height: 16px;
   margin: 1px;
-  background: linear-gradient(90deg, lightseagreen, limegreen);
+  background: linear-gradient(90deg, #30dad1, #30c530);
   transition: width ease 0.5s;
   transition-delay: var(--delay);
 }
@@ -664,12 +718,16 @@ label {
 }
 
 body.dark .level {
-  background: #404040;
+  background: #222;
 }
 
 @media (min-width: 992px) {
   main {
     padding: 0 5rem 5rem;
+  }
+
+  main > div:first-child {
+    padding: 3rem 0 1.5rem;
   }
 
   .ctrbar {
@@ -685,7 +743,7 @@ body.dark .level {
   }
 
   body.dark .ctrbar-head {
-    background: #101010;
+    background: #181818;
   }
   body.dark .ctrbar-foot {
     background: none;
@@ -705,7 +763,7 @@ body.dark .level {
 }
 body.dark {
   color: #fff;
-  background: #1a1a1a;
+  background: #101010;
 }
 @keyframes dark_loading {
   0% {
@@ -719,72 +777,77 @@ body.dark [data-loading] {
   animation-name: dark_loading;
 }
 body.dark th {
-  background: #202020;
+  background: #1a1a1a;
 }
 body.dark th,
 body.dark td {
-  border-color: #3d3d3d;
+  border-color: #383838;
 }
 body.dark tbody tr[data-href] {
-  background: #222;
+  background: #141414;
 }
 body.dark tbody tr[data-href]:hover td {
-  background: #202020;
+  background: #1e1e1e;
 }
 body.dark tbody tr[data-href]:focus td {
-  background: #000;
+  background: #023;
+}
+body.dark tbody tr.highlight {
+  background: #034;
 }
 body.dark input,
 body.dark textarea,
 body.dark select,
 body.dark .input {
   color: #fff;
-  background: #303030;
-  border-color: #000;
+  background: #141414;
+  border-color: #3a3a3a;
 }
 body.dark input,
 body.dark textarea,
 body.dark select,
 body.dark .input {
-  box-shadow: 0 0 3px 0 transparent;
+  box-shadow: 0 0 0.11rem transparent;
+  opacity: 0.97;
 }
 body.dark input:hover,
 body.dark textarea:hover,
 body.dark select:hover,
 body.dark .input:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.11rem rgba(80, 80, 80, 0.7);
 }
 body.dark input:focus,
 body.dark textarea:focus,
 body.dark select:focus,
 body.dark .input:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.022rem 0.18rem rgba(50, 50, 50, 0.5);
+  opacity: 1;
 }
 body.dark button,
 body.dark .button {
   color: #fff;
-  background: #101010;
+  background: #1e1e1e;
 }
 body.dark button,
 body.dark .button {
-  box-shadow: 0 0 3px 0 transparent;
+  box-shadow: 0 0 0.18rem transparent;
 }
 body.dark button:hover,
 body.dark .button:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.18rem rgba(150, 150, 150, 0.4);
 }
 body.dark button:focus,
 body.dark .button:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.03rem 0.3rem black;
 }
 body.dark button[type=submit], body.dark button.primary,
 body.dark .button[type=submit],
 body.dark .button.primary {
   color: #fff;
-  background: dodgerblue;
+  background: #007cf4;
 }
 body.dark button.secondary,
 body.dark .button.secondary {
   color: #fff;
-  background: dimgray;
+  background: #393939;
 }

@@ -20,7 +20,7 @@ body {
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
-  background: #1a1a1a;
+  background: #101010;
 }
 
 @keyframes loading {
@@ -58,7 +58,7 @@ body {
 
 .actions {
   position: sticky;
-  right: -1px;
+  inset-inline-end: 0;
   text-align: center;
 }
 
@@ -80,12 +80,20 @@ h6 {
   clear: both;
 }
 
+h1 {
+  margin: 0 0 1.5rem;
+}
+
 h2,
 h3,
 h4,
 h5 {
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
   font-weight: normal;
+}
+
+h6 {
+  margin: 0 0 1rem;
 }
 
 h1 {
@@ -114,7 +122,7 @@ h6 {
 
 
 nav {
-  margin: 1rem -1rem 2rem -1rem;
+  margin: 1rem -1rem 2rem;
 }
 
 nav > a {
@@ -138,7 +146,7 @@ main {
 }
 
 main div > nav {
-  padding: 1rem 0 2rem 0;
+  padding: 1rem 0 2rem;
 }
 
 main h2 {
@@ -151,7 +159,7 @@ table {
 }
 
 th {
-  background: #202020;
+  background: #1a1a1a;
   font-weight: normal;
   text-align: start;
 }
@@ -159,7 +167,7 @@ th {
 th,
 td {
   padding: 1rem;
-  border: 0 solid #3d3d3d;
+  border: 0 solid #383838;
   border-width: 1px 0;
   font-size: 0.8rem;
 }
@@ -169,14 +177,17 @@ td {
 }
 
 tbody tr[data-href] {
-  background: #222;
+  background: #141414;
   cursor: pointer;
 }
 tbody tr[data-href]:hover td {
-  background: #202020;
+  background: #1e1e1e;
 }
 tbody tr[data-href]:focus td {
-  background: #000;
+  background: #023;
+}
+tbody tr.highlight {
+  background: #034;
 }
 
 .table {
@@ -205,24 +216,24 @@ fieldset {
 }
 
 form {
-  margin: 0 0 4rem 0;
+  margin: 0 0 4rem;
   padding: 0 1rem;
 }
 
 fieldset,
 fieldset > div {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.5rem;
 }
 
 legend,
 fieldset > p {
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
   font-size: 1rem;
 }
 
 label {
   display: block;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem;
   font-size: 0.7rem;
 }
 
@@ -235,8 +246,8 @@ select,
   padding: 0.6rem 0.5rem;
   font-size: 0.9rem;
   color: #fff;
-  background: #303030;
-  border: 1px solid #000;
+  background: #141414;
+  border: 1px solid #3a3a3a;
   border-radius: 0;
   -webkit-appearance: none;
   box-sizing: border-box;
@@ -245,20 +256,20 @@ input,
 textarea,
 select,
 .input {
-  box-shadow: 0 0 3px 0 transparent;
+  box-shadow: 0 0 0.11rem transparent;
   opacity: 0.97;
 }
 input:hover,
 textarea:hover,
 select:hover,
 .input:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.11rem rgba(80, 80, 80, 0.7);
 }
 input:focus,
 textarea:focus,
 select:focus,
 .input:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.022rem 0.18rem rgba(50, 50, 50, 0.5);
   opacity: 1;
 }
 
@@ -287,7 +298,7 @@ button,
   font-weight: bold;
   text-transform: uppercase;
   color: #fff;
-  background: #101010;
+  background: #1e1e1e;
   border: 0;
   border-radius: 0;
   cursor: pointer;
@@ -295,15 +306,15 @@ button,
 }
 button,
 .button {
-  box-shadow: 0 0 3px 0 transparent;
+  box-shadow: 0 0 0.18rem transparent;
 }
 button:hover,
 .button:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.18rem rgba(150, 150, 150, 0.4);
 }
 button:focus,
 .button:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.03rem 0.3rem black;
 }
 button.tiny,
 .button.tiny {
@@ -321,12 +332,12 @@ button[type=submit], button.primary,
 .button[type=submit],
 .button.primary {
   color: #fff;
-  background: dodgerblue;
+  background: #007cf4;
 }
 button.secondary,
 .button.secondary {
   color: #fff;
-  background: dimgray;
+  background: #393939;
 }
 
 a.button {
@@ -339,7 +350,7 @@ select + *,
 .input + *,
 button + *,
 .button + * {
-  margin-left: 2rem;
+  margin-inline-start: 2rem;
 }
 
 
@@ -349,7 +360,7 @@ button + *,
 .info {
   display: block;
   min-height: 1.2rem;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem;
   padding: 0.5rem 0;
   font-size: 0.8rem;
 }
@@ -393,18 +404,6 @@ th:last-of-type {
   width: 100%;
 }
 
-.actions {
-  position: sticky;
-  right: -1px;
-}
-
-.action > a {
-  color: #fff;
-  font-size: 0.7rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 label {
   text-transform: uppercase;
 }
@@ -434,17 +433,19 @@ body.light input:hover, body.light textarea:hover, body.light select:hover {
 #signin {
   max-width: 55vmax;
   margin: auto;
-  padding: 15vh 10vw;
+  padding: 15vh 10vw 0;
 }
 
 @media (min-width: 992px) {
   #signin {
-    padding: 20vh 15vw 0 0;
+    padding: 20vh 15vw 0;
+    padding-inline-start: 0;
   }
 }
 @media (min-width: 1200px) {
   #signin {
-    padding: 25vh 30vw 0 0;
+    padding: 25vh 30vw 0;
+    padding-inline-start: 0;
   }
 }
 body.light {
@@ -478,57 +479,62 @@ body.light tbody tr[data-href]:hover td {
 body.light tbody tr[data-href]:focus td {
   background: #cef;
 }
+body.light tbody tr.highlight {
+  background: #dff;
+}
 body.light input,
 body.light textarea,
 body.light select,
 body.light .input {
   color: #000;
   background: #fff;
-  border-color: #444;
+  border-color: #505050;
 }
 body.light input,
 body.light textarea,
 body.light select,
 body.light .input {
-  box-shadow: 0 0 3px 0 transparent;
+  box-shadow: 0 0 0.11rem transparent;
+  opacity: 0.97;
 }
 body.light input:hover,
 body.light textarea:hover,
 body.light select:hover,
 body.light .input:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.11rem rgba(0, 0, 0, 0.2);
 }
 body.light input:focus,
 body.light textarea:focus,
 body.light select:focus,
 body.light .input:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.022rem 0.18rem rgba(0, 0, 0, 0.15);
+  opacity: 1;
 }
 body.light button,
 body.light .button {
-  color: #505050;
+  color: #4b4b4b;
   background: #fff;
 }
 body.light button,
 body.light .button {
-  box-shadow: 0 0 3px 0 transparent;
+  box-shadow: 0 0 0.18rem transparent;
 }
 body.light button:hover,
 body.light .button:hover {
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.18rem rgba(0, 0, 0, 0.25);
 }
 body.light button:focus,
 body.light .button:focus {
-  box-shadow: 0 0.1rem 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.03rem 0.3rem rgba(0, 0, 0, 0.2);
 }
 body.light button[type=submit], body.light button.primary,
 body.light .button[type=submit],
 body.light .button.primary {
   color: #fff;
-  background: dodgerblue;
+  background: #2895ff;
 }
 body.light button.secondary,
 body.light .button.secondary {
   color: #fff;
-  background: dimgray;
+  background: #5a5a5a;
 }

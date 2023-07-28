@@ -28,12 +28,13 @@ tbody tr {
   &[data-href] { background: $tr-href-background; cursor: pointer; }
   &[data-href]:hover td { background: $tr-href-background-hover; }
   &[data-href]:focus td { background: $tr-href-background-focus; }
+  &.highlight { background: $tr-background-highlight; }
 }
 
 .table {
   position: relative;
   display: block;
-  margin: 0 -0.5rem;
+  margin: 0 -.5rem;
   border: 0;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;

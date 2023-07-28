@@ -86,7 +86,8 @@ function main() {
 
     for (const idx in data) {
       const guid = data[idx]['guid'].toString();
-      const code = data[idx]['code'].toString();
+      const lang_code = data[idx]['code'].toString();
+      const lang_type = data[idx]['type'].toString();
       const lang_dir = data[idx]['dir'].toString();
 
       const el_tr = tbody.querySelector('[data-guid="' + guid + '"]');
@@ -124,8 +125,10 @@ function main() {
         }
 
         const action_edit = tr.querySelector('span.action-edit > a');
-        action_edit.href += '?lang=' + code;
+        action_edit.href += '?lang=' + lang_code;
         tr.setAttribute('data-guid', guid);
+        tr.setAttribute('data-type', lang_type);
+        tr.setAttribute('data-dir', lang_dir);
         tr.setAttribute('data-href', action_edit.href);
         tr.setAttribute('data-animated', '');
         tr.onclick = actionEdit;
@@ -143,7 +146,13 @@ function main() {
     table.setAttribute('data-rendered', '');
   }
 
-  document.querySelector('.submit-form').classList.add('placeholder');
+  function styles() {
+    document.getElementById('ctrbar-add-language').removeAttribute('hidden');
+    document.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
+    document.querySelector('.submit-form').classList.add('placeholder');
+  }
+
+  styles();
 
   if (! table.hasAttribute('data-rendered') && languages) {
     table.setAttribute('data-loading', '');
@@ -193,7 +202,15 @@ function edit_translate(uri, key, value) {
     '8': 'Conventional | Maybe wrong'
   };
 
+  const table = view.querySelector('table');
+  const thead = table.querySelector('thead');
+  const tbody = table.querySelector('tbody');
+
+  let disambigua = {};
+
   const lang = value.split('=')[1];
+  let lang_code;
+  let lang_type;
   let lang_dir;
 
   const ts_src = 'src';
@@ -201,10 +218,15 @@ function edit_translate(uri, key, value) {
   const tr_key = 'tr-' + lang;
 
   if (languages && languages[lang]) {
-    lang_dir = languages[lang]['dir'];
+    lang_code = languages[lang]['code'].toString();
+    lang_type = languages[lang]['type'].toString();
+    lang_dir = languages[lang]['dir'].toString();
 
     heading.innerText = 'Edit ' + languages[lang]['name'];
     heading.className = '';
+    table.setAttribute('data-lang', lang_code);
+    table.setAttribute('data-type', lang_type);
+    table.setAttribute('data-dir', lang_dir);
   }
 
   let storage = window.localStorage.getItem(tr_key);
@@ -223,12 +245,6 @@ function edit_translate(uri, key, value) {
 
   const request = source_request(ts_src);
   const subrequest = source_request(tr_src);
-
-  let disambigua = {};
-
-  const table = view.querySelector('table');
-  const thead = table.querySelector('thead');
-  const tbody = table.querySelector('tbody');
 
   function disambiguation(data) {
       if (Object.keys(disambigua).length == 0) {
@@ -457,13 +473,20 @@ function edit_translate(uri, key, value) {
     table.classList.remove('placeholder');
   }
 
+  function styles() {
+    document.getElementById('ctrbar-add-language').setAttribute('hidden', '');
+    document.getElementById('ctrbar-submit-form').removeAttribute('hidden');
+    document.querySelector('.submit-form').classList.remove('placeholder');
+  }
+
   // var i = 0;
   function load(xhr) {
     // console.log('load', i++, xhr);
+
+    styles();
+
     try {
       const obj = JSON.parse(xhr.response);
-
-      document.querySelector('.submit-form').classList.remove('placeholder');
 
       disambiguation(obj);
       render_table(obj);
@@ -576,8 +599,13 @@ function add_language(uri, key, value) {
     form.classList.remove('placeholder');
   }
 
-  document.querySelector('.submit-form').classList.add('placeholder');
+  function styles() {
+    document.getElementById('ctrbar-add-language').setAttribute('hidden', '');
+    document.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
+    document.querySelector('.submit-form').classList.add('placeholder');
+  }
 
+  styles();
   render_form(data);
 
   view.removeAttribute('hidden');

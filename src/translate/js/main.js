@@ -74,7 +74,8 @@ function main() {
 
     for (const idx in data) {
       const guid = data[idx]['guid'].toString();
-      const code = data[idx]['code'].toString();
+      const lang_code = data[idx]['code'].toString();
+      const lang_type = data[idx]['type'].toString();
       const lang_dir = data[idx]['dir'].toString();
 
       const el_tr = tbody.querySelector('[data-guid="' + guid + '"]');
@@ -112,8 +113,10 @@ function main() {
         }
 
         const action_edit = tr.querySelector('span.action-edit > a');
-        action_edit.href += '?lang=' + code;
+        action_edit.href += '?lang=' + lang_code;
         tr.setAttribute('data-guid', guid);
+        tr.setAttribute('data-type', lang_type);
+        tr.setAttribute('data-dir', lang_dir);
         tr.setAttribute('data-href', action_edit.href);
         tr.setAttribute('data-animated', '');
         tr.onclick = actionEdit;
@@ -131,7 +134,13 @@ function main() {
     table.setAttribute('data-rendered', '');
   }
 
-  document.querySelector('.submit-form').classList.add('placeholder');
+  function styles() {
+    document.getElementById('ctrbar-add-language').removeAttribute('hidden');
+    document.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
+    document.querySelector('.submit-form').classList.add('placeholder');
+  }
+
+  styles();
 
   if (! table.hasAttribute('data-rendered') && languages) {
     table.setAttribute('data-loading', '');

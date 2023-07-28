@@ -6,7 +6,7 @@
  */
 
 $dark_color: #fff;
-$dark_background: #1a1a1a;
+$dark_background: #101010;
 
 $dark_loading-animation-opacity-0: .77; 
 $dark_loading-animation-opacity-100: .89;
@@ -14,34 +14,35 @@ $dark_loading-animation-opacity-100: .89;
 
 // table
 
-$dark_table-border-color: #3d3d3d;
-$dark_th-background: #202020;
+$dark_table-border-color: #383838;
+$dark_th-background: #1a1a1a;
 
-$dark_tr-href-background: #222;
-$dark_tr-href-background-hover: #202020;
-$dark_tr-href-background-focus: #000;
+$dark_tr-href-background: #141414;
+$dark_tr-href-background-hover: #1e1e1e;
+$dark_tr-href-background-focus: #023;
+$dark_tr-background-highlight: #034;
 
 
 // form
 
 $dark_input-color: #fff;
-$dark_input-background: #303030;
-$dark_input-border-color: #000;
+$dark_input-background: #141414;
+$dark_input-border-color: #3a3a3a;
 $dark_input-shadow-color: transparent;
-$dark_input-shadow-color-hover: rgba(0, 0, 0, .2);
-$dark_input-shadow-color-focus: rgba(0, 0, 0, .2);
+$dark_input-shadow-color-hover: rgba(80, 80, 80, .7);
+$dark_input-shadow-color-focus: rgba(50, 50, 50, .5);
 
 $dark_button-color: #fff;
-$dark_button-background: #101010;
+$dark_button-background: #1e1e1e;
 $dark_button-shadow-color: transparent;
-$dark_button-shadow-color-hover: rgba(0, 0, 0, .1);
-$dark_button-shadow-color-focus: rgba(0, 0, 0, .1);
+$dark_button-shadow-color-hover: rgba(150, 150, 150, .4);
+$dark_button-shadow-color-focus: rgba(0, 0, 0, 1);
 
 $dark_button-primary-color: #fff;
-$dark_button-primary-background: dodgerblue;
+$dark_button-primary-background: darken(dodgerblue, 8%);
 
 $dark_button-secondary-color: #fff;
-$dark_button-secondary-background: dimgray;
+$dark_button-secondary-background: darken(dimgray, 19%);
 
 
 
@@ -57,6 +58,7 @@ $dark_button-secondary-background: dimgray;
   $tr-href-background: $dark_tr-href-background !global;
   $tr-href-background-hover: $dark_tr-href-background-hover !global;
   $tr-href-background-focus: $dark_tr-href-background-focus !global;
+  $tr-background-highlight: $dark_tr-background-highlight !global;
   $input-color: $dark_input-color !global;
   $input-background: $dark_input-background !global;
   $input-border-color: $dark_input-border-color !global;

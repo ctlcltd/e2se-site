@@ -7,7 +7,8 @@
 
 .toggler {
   position: relative;
-  padding: .75rem 1.5rem .75rem 1rem;
+  padding: .75rem 1rem .75rem;
+  padding-inline-end: 1.5rem;
   font-size: .8rem;
   z-index: 0;
 
@@ -29,7 +30,7 @@
 .dropdown {
   position: absolute;
   min-width: 120px;
-  margin-left: 0;
+  margin-inline-start: 0;
   padding: .5rem;
   background: $th-background;
   border: 1px solid $table-border-color;

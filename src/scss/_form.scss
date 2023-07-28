@@ -12,22 +12,22 @@ fieldset {
   border: 0;
 }
 form {
-  margin: 0 0 4rem 0;
+  margin: 0 0 4rem;
   padding: 0 1rem;
 }
 fieldset,
 fieldset > div {
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1.5rem;
 }
 legend,
 fieldset > p {
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
   font-size: 1rem;
 }
 
 label {
   display: block;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 .5rem;
   font-size: .7rem;
 }
 
@@ -46,10 +46,9 @@ select,
   -webkit-appearance: none;
   box-sizing: border-box;
 
-  & { box-shadow: 0 0 3px 0 $input-shadow-color; opacity: .97; }
-  &:hover { box-shadow: 0 0 3px 0 $input-shadow-color-hover; }
-  // .input:focus
-  &:focus { box-shadow: 0 .1rem 3px 0 $input-shadow-color-focus; opacity: 1; }
+  & { box-shadow: 0 0 .11rem $input-shadow-color; opacity: .97; }
+  &:hover { box-shadow: 0 0 .11rem $input-shadow-color-hover; }
+  &:focus { box-shadow: 0 .022rem .18rem $input-shadow-color-focus; opacity: 1; }
 }
 input[placeholder],
 textarea[placeholder] {
@@ -80,9 +79,9 @@ button,
   cursor: pointer;
   -webkit-appearance: none;
 
-  & { box-shadow: 0 0 3px 0 $button-shadow-color; }
-  &:hover { box-shadow: 0 0 3px 0 $button-shadow-color-hover; }
-  &:focus { box-shadow: 0 .1rem 3px 0 $button-shadow-color-focus; }
+  & { box-shadow: 0 0 .18rem $button-shadow-color; }
+  &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
+  &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
 
   &.tiny {
     padding: .5rem .75rem;
@@ -114,5 +113,5 @@ select,
 .input,
 button,
 .button {
-  & + * { margin-left: 2rem; }
+  & + * { margin-inline-start: 2rem; }
 }

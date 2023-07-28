@@ -37,16 +37,6 @@ th {
 
   > table { width: 100%; }
 }
-.actions {
-  position: sticky;
-  right: -1px;
-}
-.action > a {
-  color: #fff;
-  font-size: .7rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
 
 label {
   text-transform: uppercase;
@@ -78,16 +68,18 @@ body.light {
 #signin {
   max-width: 55vmax;
   margin: auto;
-  padding: 15vh 10vw;
+  padding: 15vh 10vw 0;
 }
 
 @media (min-width: 992px) {
   #signin {
-    padding: 20vh 15vw 0 0;
+    padding: 20vh 15vw 0;
+    padding-inline-start: 0;
   }
 }
 @media (min-width: 1200px) {
   #signin {
-    padding: 25vh 30vw 0 0;
+    padding: 25vh 30vw 0;
+    padding-inline-start: 0;
   }
 }

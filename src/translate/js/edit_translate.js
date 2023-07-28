@@ -40,7 +40,15 @@ function edit_translate(uri, key, value) {
     '8': 'Conventional | Maybe wrong'
   };
 
+  const table = view.querySelector('table');
+  const thead = table.querySelector('thead');
+  const tbody = table.querySelector('tbody');
+
+  let disambigua = {};
+
   const lang = value.split('=')[1];
+  let lang_code;
+  let lang_type;
   let lang_dir;
 
   const ts_src = 'src';
@@ -48,10 +56,15 @@ function edit_translate(uri, key, value) {
   const tr_key = 'tr-' + lang;
 
   if (languages && languages[lang]) {
-    lang_dir = languages[lang]['dir'];
+    lang_code = languages[lang]['code'].toString();
+    lang_type = languages[lang]['type'].toString();
+    lang_dir = languages[lang]['dir'].toString();
 
     heading.innerText = 'Edit ' + languages[lang]['name'];
     heading.className = '';
+    table.setAttribute('data-lang', lang_code);
+    table.setAttribute('data-type', lang_type);
+    table.setAttribute('data-dir', lang_dir);
   }
 
   let storage = window.localStorage.getItem(tr_key);
@@ -70,12 +83,6 @@ function edit_translate(uri, key, value) {
 
   const request = source_request(ts_src);
   const subrequest = source_request(tr_src);
-
-  let disambigua = {};
-
-  const table = view.querySelector('table');
-  const thead = table.querySelector('thead');
-  const tbody = table.querySelector('tbody');
 
   function disambiguation(data) {
       if (Object.keys(disambigua).length == 0) {
@@ -304,13 +311,20 @@ function edit_translate(uri, key, value) {
     table.classList.remove('placeholder');
   }
 
+  function styles() {
+    document.getElementById('ctrbar-add-language').setAttribute('hidden', '');
+    document.getElementById('ctrbar-submit-form').removeAttribute('hidden');
+    document.querySelector('.submit-form').classList.remove('placeholder');
+  }
+
   // var i = 0;
   function load(xhr) {
     // console.log('load', i++, xhr);
+
+    styles();
+
     try {
       const obj = JSON.parse(xhr.response);
-
-      document.querySelector('.submit-form').classList.remove('placeholder');
 
       disambiguation(obj);
       render_table(obj);

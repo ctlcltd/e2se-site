@@ -49,7 +49,7 @@ body {
 
 .actions {
   position: sticky;
-  right: -1px;
+  inset-inline-end: 0;
   text-align: center;
 }
 .action > a {

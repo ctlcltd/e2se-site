@@ -90,8 +90,13 @@ function add_language(uri, key, value) {
     form.classList.remove('placeholder');
   }
 
-  document.querySelector('.submit-form').classList.add('placeholder');
+  function styles() {
+    document.getElementById('ctrbar-add-language').setAttribute('hidden', '');
+    document.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
+    document.querySelector('.submit-form').classList.add('placeholder');
+  }
 
+  styles();
   render_form(data);
 
   view.removeAttribute('hidden');

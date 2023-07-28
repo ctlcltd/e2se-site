@@ -32,6 +32,7 @@
     &[data-href] { background: $tr-href-background; }
     &[data-href]:hover td { background: $tr-href-background-hover; }
     &[data-href]:focus td { background: $tr-href-background-focus; }
+    &.highlight { background: $tr-background-highlight; }
   }
 
 
@@ -45,18 +46,18 @@
     background: $input-background;
     border-color: $input-border-color;
 
-    & { box-shadow: 0 0 3px 0 $input-shadow-color; }
-    &:hover { box-shadow: 0 0 3px 0 $input-shadow-color-hover; }
-    &:focus { box-shadow: 0 .1rem 3px 0 $input-shadow-color-focus; }
+    & { box-shadow: 0 0 .11rem $input-shadow-color; opacity: .97; }
+    &:hover { box-shadow: 0 0 .11rem $input-shadow-color-hover; }
+    &:focus { box-shadow: 0 .022rem .18rem $input-shadow-color-focus; opacity: 1; }
   }
   button,
   .button {
     color: $button-color;
     background: $button-background;
 
-    & { box-shadow: 0 0 3px 0 $button-shadow-color; }
-    &:hover { box-shadow: 0 0 3px 0 $button-shadow-color-hover; }
-    &:focus { box-shadow: 0 .1rem 3px 0 $button-shadow-color-focus; }
+    & { box-shadow: 0 0 .18rem $button-shadow-color; }
+    &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
+    &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
 
     &[type="submit"],
     &.primary {

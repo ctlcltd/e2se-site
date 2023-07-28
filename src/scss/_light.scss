@@ -20,28 +20,29 @@ $light_th-background:  #fff;
 $light_tr-href-background: #f9f9f9;
 $light_tr-href-background-hover: #fff;
 $light_tr-href-background-focus: #cef;
+$light_tr-background-highlight: #dff;
 
 
 // form
 
 $light_input-color: #000;
 $light_input-background: #fff;
-$light_input-border-color: #444;
+$light_input-border-color: #505050;
 $light_input-shadow-color: transparent;
 $light_input-shadow-color-hover: rgba(0, 0, 0, .2);
-$light_input-shadow-color-focus: rgba(0, 0, 0, .2);
+$light_input-shadow-color-focus: rgba(0, 0, 0, .15);
 
-$light_button-color: #505050;
+$light_button-color: #4b4b4b;
 $light_button-background: #fff;
 $light_button-shadow-color: transparent;
-$light_button-shadow-color-hover: rgba(0, 0, 0, .2);
+$light_button-shadow-color-hover: rgba(0, 0, 0, .25);
 $light_button-shadow-color-focus: rgba(0, 0, 0, .2);
 
 $light_button-primary-color: #fff;
-$light_button-primary-background: dodgerblue;
+$light_button-primary-background: lighten(dodgerblue, 2%);
 
 $light_button-secondary-color: #fff;
-$light_button-secondary-background: dimgray;
+$light_button-secondary-background: darken(dimgray, 6%);
 
 
 
@@ -57,6 +58,7 @@ $light_button-secondary-background: dimgray;
   $tr-href-background: $light_tr-href-background !global;
   $tr-href-background-hover: $light_tr-href-background-hover !global;
   $tr-href-background-focus: $light_tr-href-background-focus !global;
+  $tr-background-highlight: $light_tr-background-highlight !global;
   $input-color: $light_input-color !global;
   $input-background: $light_input-background !global;
   $input-border-color: $light_input-border-color !global;
