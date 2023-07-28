@@ -275,6 +275,32 @@ body.dark {
   .level { background: #222; }
 }
 
+.message-box {
+  position: fixed;
+  inset: auto 50% 30%;
+  width: 60ch;
+  max-width: 80%;
+  padding: 2rem 1.5rem;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0 .2rem 2.2rem .2rem rgba(0, 0, 0, .11);
+  transform: translateX(-50%);
+
+  p {
+    font-size: 14px;
+    margin: 0 0 .5rem;
+    opacity: .7;
+
+    &:last-child { margin: 0; }
+  }
+}
+body.dark {
+  .message-box {
+    background: #262626;
+    box-shadow: 0 .2rem 2.2rem .2rem rgba(0, 0, 0, .33);
+  }
+}
+
 @media (min-width: 992px) {
   main {
     padding: 0 5rem 5rem;
