@@ -42,17 +42,6 @@ label {
   text-transform: uppercase;
 }
 
-body {
-  input, textarea, select {
-    &:hover { background: #333; }
-  }
-}
-body.light {
-  input, textarea, select {
-    &:hover { background: #fff; }
-  }
-}
-
 #main div > nav {
   padding: 0;
 }

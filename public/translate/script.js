@@ -20,10 +20,11 @@ const routes = {
 function main() {
   console.log('main()');
 
-  document.title = 'E2SE Translations';
-  document.querySelector('meta[name="description"]').setAttribute('content', 'Translation website for e2 SAT Editor');
+  const doc = document;
+  doc.title = 'E2SE Translations';
+  doc.description.setAttribute('content', 'Translation website for e2 SAT Editor');
 
-  const view = document.getElementById('main');
+  const view = doc.getElementById('main');
 
   const fields = {
     'locale': 'Language',
@@ -45,15 +46,34 @@ function main() {
     return false;
   }
 
+  function allowSubmit() {
+    try {
+      let storage;
+      for (const lang in languages) {
+        if (storage = localStorage.getItem(lang)) {
+          storage = JSON.parse(storage);
+          if (storage.length > 1) {
+            doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
+            doc.querySelector('.submit-form').classList.remove('placeholder');
+            break;
+          }
+        }
+      }
+    } catch (err) {
+      console.error('allowSubmit', err);
+    }
+  }
+
   function render_row(td, field, text) {
     if (field == 'completed') {
-      if (! td.querySelector('span')) {
-        const level = document.createElement('span');
+      if (! td._element) {
+        const level = doc.createElement('span');
         level.className = 'level';
         level.title = text.toString() + '%';
         level.dataset.completed = text.toString();
         level.style = '--completed: ' + text.toString() + '%;';
         td.append(level);
+        td._element = level;
       }
     } else if (field == 'revised') {
       td.innerText = text ? 'yes' : 'none';
@@ -77,7 +97,7 @@ function main() {
 
     if (! thead.hasAttribute('data-rendered')) {
       for (const field in fields) {
-        const th = document.createElement('th');
+        const th = doc.createElement('th');
         th.innerText = fields[field] ?? field;
         thead.firstElementChild.insertBefore(th, thead.firstElementChild.lastElementChild);
       }
@@ -91,7 +111,7 @@ function main() {
       const lang_dir = data[idx]['dir'].toString();
 
       const el_tr = tbody.querySelector('[data-guid="' + guid + '"]');
-      const tr = el_tr ? el_tr : document.createElement('tr');
+      const tr = el_tr ? el_tr : doc.createElement('tr');
 
       for (const field in fields) {
         if (field in fields) {
@@ -100,9 +120,10 @@ function main() {
           const i = Object.keys(fields).indexOf(field);
           const el_td = tr.children.item(i);
 
-          const td = el_td ?? document.createElement('td');
+          const td = el_td ?? doc.createElement('td');
 
           if (! td.hasAttribute('data-rendered')) {
+            td._parent = tr;
             render_row(td, field, text);
             td.setAttribute('data-rendered', '');
           } else if (field in data[idx]) {
@@ -146,41 +167,45 @@ function main() {
     table.setAttribute('data-rendered', '');
   }
 
-  function styles() {
-    document.getElementById('ctrbar-add-language').removeAttribute('hidden');
-    document.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
-    document.querySelector('.submit-form').classList.add('placeholder');
+  function load() {
+    doc.getElementById('ctrbar-add-language').removeAttribute('hidden');
+    doc.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
+    doc.querySelector('.submit-form').classList.add('placeholder');
+
+    if (! languages) {
+      return false;
+    }
+    if (! table.hasAttribute('data-rendered')) {
+      table.setAttribute('data-loading', '');
+      render_table(languages);
+    }
+    allowSubmit();
+    setTimeout(function() {
+      animation();
+    }, 300);
   }
 
-  styles();
-
-  if (! table.hasAttribute('data-rendered') && languages) {
-    table.setAttribute('data-loading', '');
-    render_table(languages);
-  }
-
+  load();
   view.removeAttribute('hidden');
-
-  window.setTimeout(function() {
-    animation();
-  }, 300);
 }
 
 
 function edit_translate(uri, key, value) {
   console.log('edit_translate()');
 
-  document.title = 'Edit - E2SE Translations';
-  document.querySelector('meta[name="description"]').setAttribute('content', 'Edit translation strings of a language');
+  const doc = document;
+  doc.title = 'Edit - E2SE Translations';
+  doc.description.setAttribute('content', 'Edit translation strings of a language');
 
-  const source = document.querySelector('.view-list');
+  const page = doc.getElementById('page');
+  const source = doc.querySelector('.view-list');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'edit-translate');
   clone.cloned = true;
-  document.getElementById('page').insertBefore(clone, source);
+  page.insertBefore(clone, source);
 
-  const view = document.getElementById('edit-translate');
+  const view = doc.getElementById('edit-translate');
   const heading = view.querySelector('h2');
 
   const fields = {
@@ -229,7 +254,7 @@ function edit_translate(uri, key, value) {
     table.setAttribute('data-dir', lang_dir);
   }
 
-  let storage = window.localStorage.getItem(tr_key);
+  let storage = localStorage.getItem(tr_key);
 
   try {
     if (storage) {
@@ -239,12 +264,10 @@ function edit_translate(uri, key, value) {
     }
   } catch (err) {
     storage = {};
-
-    error(null, err);
+    console.error(err);
   }
 
   const request = source_request(ts_src);
-  const subrequest = source_request(tr_src);
 
   function disambiguation(data) {
       if (Object.keys(disambigua).length == 0) {
@@ -264,9 +287,9 @@ function edit_translate(uri, key, value) {
       const tr = tbody.rows.item(i);
       const offset = tr.previousElementSibling ? tr.previousElementSibling.offsetTop : tr.offsetTop;
 
-      window.scrollTo(0, offset);
+      scrollTo(0, offset);
       tr.classList.add('highlight');
-      window.setTimeout(function() {
+      setTimeout(function() {
         tr.classList.remove('highlight');
       }, 2e3);
     }
@@ -282,16 +305,16 @@ function edit_translate(uri, key, value) {
       } else {
         el.nextElementSibling.setAttribute('hidden', '');
         el.classList.remove('opened');
-        window.setTimeout(function() {
+        setTimeout(function() {
           el.blur();
         }, 100);
       }
     } else {
-      document.querySelectorAll('.toggler').forEach(function(el) {
+      doc.querySelectorAll('.toggler').forEach(function(el) {
         if (! el.nextElementSibling.hasAttribute('hidden')) {
           el.nextElementSibling.setAttribute('hidden', '');
           el.classList.remove('opened');
-          window.setTimeout(function() {
+          setTimeout(function() {
             el.blur();
           }, 100);
         }
@@ -304,7 +327,6 @@ function edit_translate(uri, key, value) {
 
     if (el.classList.contains('input')) {
       const tr = el.parentElement.closest('[data-guid]');
-      // console.log(evt);
 
       try {
         const guid = tr.dataset.guid;
@@ -313,54 +335,61 @@ function edit_translate(uri, key, value) {
         } else {
           storage[guid] = el.textContent;
         }
-        // console.log(storage);
-        window.localStorage.setItem(tr_key, JSON.stringify(storage));
+        localStorage.setItem(tr_key, JSON.stringify(storage));
       } catch (err) {
-        error(null, err);
+        console.error('textInput', err);
       }
     }
   }
 
-  function render_row(td, field, text) {
+  function allowSubmit(evt) {
+    if (storage.length > 1) {
+      doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
+      doc.querySelector('.submit-form').classList.remove('placeholder');
+    }
+  }
+
+  function render_row(td, field, obj) {
     if (field == 'msg_tr') {
-      if (td.querySelector('span')) {
-        const parent = td.closest('[data-guid]');
-        const guid = parent.dataset.guid;
-        const input = td.querySelector('span');
+      if (td._element) {
+        const guid = td._parent.dataset.guid;
+        const input = td._element;
         if (storage[guid]) {
-          input.srcText = text.toString();
+          input.srcText = obj.toString();
           input.innerText = storage[guid];
           input.dataset.changed = '';
         } else {
-          input.innerText = input.srcText = text.toString();
+          input.innerText = input.srcText = obj.toString();
         }
       } else {
-        const input = document.createElement('span');
+        const input = doc.createElement('span');
         input.className = 'input inline-edit';
         input.contentEditable = 'plaintext-only';
         input.dir = lang_dir;
-        // input.innerText = text ? text.toString() : '';
+        // input.innerText = obj ? obj.toString() : '';
         td.append(input);
+        td._element = input;
       }
     } else if (field == 'disambigua') {
-      if (text && typeof text === 'object' && Object.keys(text).length != 0) {
-        const toggler = document.createElement('button');
+      if (! td._element && obj && typeof obj === 'object' && Object.keys(obj).length != 0) {
+        const toggler = doc.createElement('button');
         toggler.className = 'toggler';
         toggler.type = 'button';
-        toggler.innerText = Object.keys(text).length;
-        const list = document.createElement('ul');
-        const dropdown = document.createElement('div');
+        toggler.innerText = Object.keys(obj).length;
+        const list = doc.createElement('ul');
+        const dropdown = doc.createElement('div');
         dropdown.className = 'dropdown';
         dropdown.setAttribute('hidden', '');
         dropdown.append(list);
 
         td.append(toggler);
         td.append(dropdown);
+        td._element = toggler;
 
-        for (const guid of text) {
+        for (const guid of obj) {
           const i = disambigua[guid];
-          const item = document.createElement('li');
-          const anchor = document.createElement('a');
+          const item = doc.createElement('li');
+          const anchor = doc.createElement('a');
           anchor.href = 'javascript:';
           anchor.innerText = i.toString();
           anchor.setAttribute('data-scroll-row', i);
@@ -369,43 +398,43 @@ function edit_translate(uri, key, value) {
         }
       }
     } else if (field == 'status') {
-      if (td.querySelector('span')) {
-        const status = td.querySelector('span');
-        if (text !== '') {
-          let val;
-          if (text == 0) {
-            val = 'unfinished';
-          } else if (text == 1) {
-            val = 'completed';
-          } else if (text == 2) {
-            val = 'vanished';
+      if (td._element) {
+        const status = td._element;
+        if (obj !== '') {
+          let text;
+          if (obj == 0) {
+            text = 'unfinished';
+          } else if (obj == 1) {
+            text = 'completed';
+          } else if (obj == 2) {
+            text = 'vanished';
           }
-          status.className += ' status-' + val;
-          status.innerText = val;
+          status.className += ' status-' + text;
+          status.innerText = text;
         }
       } else {
-        const status = document.createElement('span');
+        const status = doc.createElement('span');
         status.className = 'status';
         td.append(status);
+        td._element = status;
       }
     } else if (field == 'msg_extra') {
-      if (text) {
-        let val = text.toString();
-        val = val.replace(' | ', '\n');
-        td.innerText = val.toString();
+      if (obj) {
+        let text = obj.toString();
+        text = text.replace(' | ', '\n');
+        td.innerText = text.toString();
       }
     } else if (field == 'notes') {
-      if (text) {
-        if (text in notes) {
-          // const parent = td.closest('[data-guid]');
-          // parent.setAttribute('data-notes', text);
-          td.innerText = notes[text].replace(' | ', '\n');
+      if (obj) {
+        if (obj in notes) {
+          // td._parent.setAttribute('data-notes', obj);
+          td.innerText = notes[obj].replace(' | ', '\n');
         } else {
-          td.innerText = text.toString();
+          td.innerText = obj.toString();
         }
       }
-    } else if (text) {
-      td.innerText = text.toString();
+    } else if (obj) {
+      td.innerText = obj.toString();
     }
   }
 
@@ -415,7 +444,7 @@ function edit_translate(uri, key, value) {
 
     if (! thead.hasAttribute('data-rendered')) {
       for (const field in fields) {
-        const th = document.createElement('th');
+        const th = doc.createElement('th');
         th.innerText = fields[field] ?? field;
         thead.firstElementChild.insertBefore(th, thead.firstElementChild.lastElementChild);
       }
@@ -427,22 +456,23 @@ function edit_translate(uri, key, value) {
       // completed + revised
 
       const el_tr = tbody.querySelector('[data-guid="' + guid + '"]');
-      const tr = el_tr ?? document.createElement('tr');
+      const tr = el_tr ?? doc.createElement('tr');
 
       for (const field in fields) {
         if (field in fields) {
-          const text = data[idx][field];
+          const obj = data[idx][field];
 
           const i = Object.keys(fields).indexOf(field);
           const el_td = tr.children.item(i);
 
-          const td = el_td ?? document.createElement('td');
+          const td = el_td ?? doc.createElement('td');
 
           if (! td.hasAttribute('data-rendered')) {
-            render_row(td, field, text);
+            td._parent = tr;
+            render_row(td, field, obj);
             td.setAttribute('data-rendered', '');
           } else if (field in data[idx]) {
-            render_row(td, field, text);
+            render_row(td, field, obj);
           }
 
           if (! el_td) {
@@ -459,7 +489,7 @@ function edit_translate(uri, key, value) {
         }
 
         tr.setAttribute('data-guid', guid);
-        tr.title = idx;
+        tr.title = parseInt(idx) + 1;
 
         tbody.append(tr);
       }
@@ -473,61 +503,78 @@ function edit_translate(uri, key, value) {
     table.classList.remove('placeholder');
   }
 
-  function styles() {
-    document.getElementById('ctrbar-add-language').setAttribute('hidden', '');
-    document.getElementById('ctrbar-submit-form').removeAttribute('hidden');
-    document.querySelector('.submit-form').classList.remove('placeholder');
-  }
-
-  // var i = 0;
-  function load(xhr) {
-    // console.log('load', i++, xhr);
-
-    styles();
-
+  function loader(xhr, begin) {
     try {
       const obj = JSON.parse(xhr.response);
 
-      disambiguation(obj);
+      if (begin) {
+        disambiguation(obj);
+      }
       render_table(obj);
+      if (! begin) {
+        allowSubmit();
+      }
     } catch (err) {
-      // console.error('edit_translate()', 'load()', err);
-
-      error(null, err);
+      console.error('loader', err);
     }
   }
 
-  function error(xhr, err) {
-    console.error('edit_translate()', 'error()', xhr || '', err || '');
+  function error(xhr) {
+    // console.warn(xhr);
   }
 
-  table.setAttribute('data-loading', '');
-  request.then(function(xhr) {
-    load(xhr);
-    subrequest.then(load).catch(error);
-  }).catch(error);
-  view.removeAttribute('hidden');
+  function load() {
+    doc.getElementById('ctrbar-add-language').setAttribute('hidden', '');
+    doc.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
+    doc.querySelector('.submit-form').classList.add('placeholder');
 
-  tbody.addEventListener('click', toggler);
-  tbody.addEventListener('click', scrollToRow);
-  tbody.addEventListener('input', textInput);
+    table.setAttribute('data-loading', '');
+    request.then(function(xhr) {
+      loader(xhr, true);
+      if (true) {
+        const request = source_request(tr_src);
+        request.then(loader).catch(error);
+      } else {
+        loader(xhr);
+      }
+    }).catch(error);
+
+    tbody.addEventListener('click', toggler);
+    tbody.addEventListener('click', scrollToRow);
+    tbody.addEventListener('input', textInput);
+    tbody.addEventListener('blur', allowSubmit);
+  }
+
+  function unload() {
+    tbody.removeEventListener('click', toggler);
+    tbody.removeEventListener('click', scrollToRow);
+    tbody.removeEventListener('input', textInput);
+    tbody.removeEventListener('blur', allowSubmit);
+    page.removeEventListener('unload', unload);
+  }
+
+  load();
+  page.addEventListener('unload', unload);
+  view.removeAttribute('hidden');
 }
 
 
 function add_language(uri, key, value) {
   console.log('add_language()');
 
-  document.title = 'Add language - E2SE Translations';
-  document.querySelector('meta[name="description"]').setAttribute('content', 'Add a new language to translations');
+  const doc = document;
+  doc.title = 'Add language - E2SE Translations';
+  doc.description.setAttribute('content', 'Add a new language to translations');
 
-  const source = document.querySelector('.view-edit');
+  const page = doc.getElementById('page');
+  const source = doc.querySelector('.view-edit');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'add-language');
   clone.cloned = true;
-  document.getElementById('page').insertBefore(clone, source);
+  page.insertBefore(clone, source);
 
-  const view = document.getElementById('add-language');
+  const view = doc.getElementById('add-language');
   const heading = view.querySelector('h2');
 
   const fields = {
@@ -539,11 +586,11 @@ function add_language(uri, key, value) {
     'lang_numerus': 'Numerus'
   };
   const data = {
-    'lang_code': null,
-    'lang_locale': null,
-    'lang_dir': {'type': 'select', 'options': {'ltr': 'LTR (Left To Right)', 'rtl': 'RTL (Right To Left)'}},
-    'lang_name': null,
-    'lang_tr_name': null,
+    'lang_code': {'pattern': '[a-z]{2}', 'required': true},
+    'lang_locale': {'pattern': '[a-z]{2}_[A-Z]{2}', 'required': true},
+    'lang_dir': {'type': 'select', 'options': {'ltr': 'LTR (Left To Right)', 'rtl': 'RTL (Right To Left)'}, 'required': true},
+    'lang_name': {'required': true},
+    'lang_tr_name': {'required': true},
     'lang_numerus': {'type': 'number'}
   };
 
@@ -551,63 +598,223 @@ function add_language(uri, key, value) {
   heading.className = '';
 
   const form = view.querySelector('form');
-  const fieldset_ph = form.firstElementChild;
+  const fieldset_lh = form.firstElementChild;
 
-  function render_form(data) {
-    const fieldset = document.createElement('fieldset');
+  function submit(evt) {
+    const form = this;
 
-    for (const field in data) {
-      const row = data[field];
+    let obj = {};
 
-      const div = document.createElement('div');
-      const label = document.createElement('label');
-      let el;
+    for (const input of form.elements) {
+      if (input.nodeName == 'INPUT' || input.nodeName == 'TEXTAREA' || input.nodeName == 'SELECT') {
+        if (input.name != '') {
+          obj[input.name] = input.value;
+        }
+      }
+    }
 
-      label.innerText = fields[field] ?? field;
+    const lang = obj.lang_code;
+    let storage = localStorage.getItem('languages');
 
-      if (row) {
-        if (typeof row == 'object') {
-          if (row.type == 'select') {
-            el = document.createElement('select');
+    try {
+      if (storage) {
+        storage = JSON.parse(storage);
+      } else {
+        throw 'Storage Error';
+      }
+      if (lang in storage) {
+        // 
+        throw 'Language already exists';
+      }
+    } catch (err) {
+      console.error('submit', err);
+      return;
+    }
 
-            for (const option in row.options) {
-              const subel = document.createElement('option');
-              subel.value = option;
-              subel.innerText = row.options[option];
-              el.append(subel);
+    const language = {
+      'guid': '',
+      'code': obj.lang_code,
+      'locale': obj.lang_locale,
+      'name': obj.lang_name,
+      'tr_name': obj.lang_tr_name,
+      'dir': obj.lang_dir,
+      'type': 0,
+      'numerus': parseInt(obj.lang_numerus),
+      'completed': 0,
+      'revised': 0
+    };
+
+    try {
+      storage[lang] = language;
+      localStorage.setItem('languages', JSON.stringify(storage));
+      route('');
+    } catch (err) {
+      console.error('submit', err);
+    }
+  }
+
+  function submit_form(evt) {
+    const form = this;
+
+    evt.preventDefault();
+
+    if (! form.hasAttribute('novalidate') && 'checkValidity' in form && typeof form.checkValidity === 'function') {
+      if (form.checkValidity() === true) {
+        submit.call(form, evt);
+      }
+    } else {
+      let pass = true;
+
+      for (const input of form.elements) {
+        if (input.nodeName == 'INPUT' || input.nodeName == 'TEXTAREA' || input.nodeName == 'SELECT') {
+          let valid = false;
+          let message = 'Required field';
+          if (input.nextElementSibling && input.nextElementSibling.classList.contains('novalid')) {
+            input.nextElementSibling.remove();
+          }
+          if (input.hasAttribute('pattern')) {
+            const pattern = input.getAttribute('pattern');
+            const regex = new RegExp(pattern);
+
+            if (input.hasAttribute('required') && input == '') {
+              input.classList.add('novalid');
+            } else if (regex && regex.test(input.value) === true) {
+              input.classList.remove('novalid');
+              valid = true;
+            } else {
+              input.classList.add('novalid');
+              message = 'No valid input';
             }
-          } else if (row.type == 'textarea') {
-            el = document.createElement('textarea');
+          } else if (input.hasAttribute('required')) {
+            if (input.value != '') {
+              input.classList.remove('novalid');
+              valid = true;
+            } else {
+              input.classList.add('novalid');
+            }
           } else {
-            el = document.createElement('input');
-            el.type = row.type;
+            valid = true;
+          }
+          if (! valid) {
+            pass = false;
+            const node = doc.createElement('span');
+            node.className = 'novalid';
+            node.innerText = message;
+            input.parentElement.append(node);
           }
         }
-      } else {
-        el = document.createElement('input');
-        el.setAttribute('type', 'text');
       }
-      
+
+      if (pass) {
+        submit.call(form, evt);
+      }
+    }
+  }
+
+  function reset_form(evt) {
+    const form = this;
+
+    if (! form.hasAttribute('novalidate') && 'checkValidity' in form && typeof form.checkValidity === 'function') {
+    } else {
+      evt.preventDefault();
+
+      for (const input of form.elements) {
+        if (input.nodeName == 'INPUT' || input.nodeName == 'TEXTAREA' || input.nodeName == 'SELECT') {
+          input.classList.remove('novalid');
+          if (input.nextElementSibling && input.nextElementSibling.classList.contains('novalid')) {
+            input.nextElementSibling.remove();
+          }
+        }
+      }
+
+      form.reset();
+    }
+  }
+
+  function render_label(field, obj) {
+    const label = doc.createElement('label');
+    label.innerText = obj ?? field;
+    return label;
+  }
+
+  function render_input(field, obj) {
+    let input;
+    if (obj) {
+      if (typeof obj == 'object') {
+        if (obj.type == 'select') {
+          input = doc.createElement('select');
+          input.name = field;
+
+          for (const option in obj.options) {
+            const sub = doc.createElement('option');
+            sub.value = option;
+            sub.innerText = obj.options[option];
+            input.append(sub);
+          }
+        } else if (obj.type == 'textarea') {
+          input = doc.createElement('textarea');
+          input.name = field;
+        } else {
+          input = doc.createElement('input');
+          input.name = field;
+          input.setAttribute('type', 'text');
+        }
+
+        if (obj.pattern) {
+          input.setAttribute('pattern', obj.pattern);
+        }
+        if (obj.required) {
+          input.setAttribute('required', '');
+        }
+      }
+    } else {
+      input = doc.createElement('input');
+      input.setAttribute('type', 'text');
+      input.name = field;
+    }
+    return input;
+  }
+
+  function render_form(data) {
+    const fieldset = doc.createElement('fieldset');
+
+    for (const field in data) {
+      const obj = data[field];
+
+      const div = doc.createElement('div');
+
+      const label = render_label(field, fields[field]);
+      const input = render_input(field, obj);
+
       div.append(label);
-      div.append(el);
+      div.append(input);
 
       fieldset.append(div);
 
-      form.insertBefore(fieldset, fieldset_ph);
+      form.insertBefore(fieldset, fieldset_lh);
     }
 
     form.classList.remove('placeholder');
+    form.addEventListener('submit', submit_form);
+    form.addEventListener('reset', reset_form);
   }
 
-  function styles() {
-    document.getElementById('ctrbar-add-language').setAttribute('hidden', '');
-    document.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
-    document.querySelector('.submit-form').classList.add('placeholder');
+  function load() {
+    doc.getElementById('ctrbar-add-language').setAttribute('hidden', '');
+    doc.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
+    doc.querySelector('.submit-form').classList.add('placeholder');
+
+    render_form(data);
   }
 
-  styles();
-  render_form(data);
+  function unload() {
+    form.removeEventListener('submit', submit_form);
+    form.removeEventListener('reset', reset_form);
+    page.removeEventListener('unload', unload);
+  }
 
+  load();
+  page.addEventListener('unload', unload);
   view.removeAttribute('hidden');
 }
 
@@ -695,11 +902,12 @@ function source_request(name) {
 
 
 function route(href, title) {
+  const page = document.getElementById('page');
   const views = document.querySelectorAll('main');
   const history = href ? true : false;
 
-  href = href ? href : window.location.href;
-  title = title ? title : document.title;
+  href = href ?? window.location.href;
+  title = title ?? document.title;
 
   if (href.indexOf(basepath) === -1) {
     throw 'Wrong base path';
@@ -710,9 +918,9 @@ function route(href, title) {
   const uri = path[0].split('/')[2];
   const qs = path[1] ? path[1].split('&') : '';
   const key = '';
-  const value = qs[0] ? qs[0] : '';
+  const value = qs[0] ?? '';
 
-  console.info('route()', { path, uri, qs, key, value });
+  // console.info('route()', { path, uri, qs, key, value });
 
   for (const view of views) {
     if (view.cloned) {
@@ -729,8 +937,11 @@ function route(href, title) {
     throw 'Wrong QueryString Route';
   }
   if (typeof routes[uri][key] != 'function') {
-    throw 'Callable Function';
+    throw 'No Function Route';
   }
+
+  const e = new Event('unload');
+  page.dispatchEvent(e);
 
   if (history) {
     window.history.pushState('', title, url);
@@ -743,21 +954,40 @@ function route(href, title) {
 var languages;
 
 function init() {
-  const name = 'langs';
-  const request = source_request(name);
+  const doc = document;
+  const body = doc.body;
+  const request = source_request('langs');
 
-  function resumeColor() {
-    const color = window.localStorage.getItem('preferred-color');
+  function requiredStorage() {
+    try {
+      if (! localStorage.getItem('_time')) {
+        localStorage.setItem('_time', new Date().toJSON());
+      }
+      if (! localStorage.getItem('_time')) {
+        throw 'Storage Error';
+      }
+    } catch (err) {
+      console.error('requiredStorage', err);
+
+      const box = doc.createElement('div');
+      box.className = 'message-box';
+      box.innerHTML = '<p><b>WebStorage is required</b></p><p>localStorage seems to be unavailable<br>Please reload your browser and try again</p>';
+      body.append(box);
+    }
+  }
+
+  function preferredColor() {
+    const color = localStorage.getItem('preferred-color');
 
     if (color == 'light' || color == 'dark') {
-      document.body.setAttribute('data-color', color);
+      body.setAttribute('data-color', color);
       if (color == 'dark') {
-        document.body.classList.add('dark');
+        body.classList.add('dark');
       } else {
-        document.body.classList.remove('dark');
+        body.classList.remove('dark');
       }
 
-      const button = document.getElementById('switch-color');
+      const button = doc.getElementById('switch-color');
       button.innerText = 'switch to ' + (color == 'light' ? 'dark' : 'light');
     }
   }
@@ -765,60 +995,71 @@ function init() {
   function switchColor(evt) {
     const el = evt.target;
     if (el.id == 'switch-color') {
-      let color = document.body.hasAttribute('data-color') ? document.body.getAttribute('data-color') : 'light';
+      let color = body.hasAttribute('data-color') ? body.getAttribute('data-color') : 'light';
 
       if (color == 'light') {
         color = 'dark';
         el.innerText = 'switch to light';
-        document.body.setAttribute('data-color', 'dark');
-        document.body.classList.add('dark');
-        window.setTimeout(function() {
+        body.setAttribute('data-color', 'dark');
+        body.classList.add('dark');
+        setTimeout(function() {
           el.blur();
         }, 100);
       } else if (color == 'dark') {
         color = 'light';
         el.innerText = 'switch to dark';
-        document.body.setAttribute('data-color', 'light');
-        document.body.classList.remove('dark');
-        window.setTimeout(function() {
+        body.setAttribute('data-color', 'light');
+        body.classList.remove('dark');
+        setTimeout(function() {
           el.blur();
         }, 100);
       }
 
       if (color == 'light' || color == 'dark') {
-        window.localStorage.setItem('preferred-color', color);
+        localStorage.setItem('preferred-color', color);
       }
     }
   }
 
-  function load(xhr) {
+  function loader(xhr) {
+    let storage;
     try {
-      languages = JSON.parse(xhr.response);
-
+      languages = storage = JSON.parse(xhr.response);
       route();
+      localStorage.setItem('languages', JSON.stringify(languages));
     } catch (err) {
-      // console.error('init()', 'load()', err);
-
-      error(null, err);
+      console.error('loader', err);
     }
   }
 
   function resume() {
-
+    let storage = localStorage.getItem('languages');
+    try {
+      if (storage) {
+        languages = storage = JSON.parse(storage);
+        route();
+      } else {
+        request.then(loader).catch(error);
+      }
+    } catch (err) {
+      console.error('resume', err);
+    }
   }
 
   function popState(evt) {
     route();
   }
 
-  function error(xhr, err) {
-    console.error('init()', 'error()', xhr || '', err || '');
+  function error(xhr) {
+    // console.warn(xhr);
   }
 
-  resumeColor();
-  document.getElementById('head').addEventListener('click', switchColor);
-  request.then(load).catch(error);
+  doc.description = doc.querySelector('meta[name="description"]');
+  requiredStorage();
+  preferredColor();
+  doc.getElementById('head').addEventListener('click', switchColor);
   window.addEventListener('popstate', popState);
+  resume();
 }
 
 init();

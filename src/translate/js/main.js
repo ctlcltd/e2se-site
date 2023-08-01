@@ -8,10 +8,11 @@
 function main() {
   console.log('main()');
 
-  document.title = 'E2SE Translations';
-  document.querySelector('meta[name="description"]').setAttribute('content', 'Translation website for e2 SAT Editor');
+  const doc = document;
+  doc.title = 'E2SE Translations';
+  doc.description.setAttribute('content', 'Translation website for e2 SAT Editor');
 
-  const view = document.getElementById('main');
+  const view = doc.getElementById('main');
 
   const fields = {
     'locale': 'Language',
@@ -33,15 +34,34 @@ function main() {
     return false;
   }
 
+  function allowSubmit() {
+    try {
+      let storage;
+      for (const lang in languages) {
+        if (storage = localStorage.getItem(lang)) {
+          storage = JSON.parse(storage);
+          if (storage.length > 1) {
+            doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
+            doc.querySelector('.submit-form').classList.remove('placeholder');
+            break;
+          }
+        }
+      }
+    } catch (err) {
+      console.error('allowSubmit', err);
+    }
+  }
+
   function render_row(td, field, text) {
     if (field == 'completed') {
-      if (! td.querySelector('span')) {
-        const level = document.createElement('span');
+      if (! td._element) {
+        const level = doc.createElement('span');
         level.className = 'level';
         level.title = text.toString() + '%';
         level.dataset.completed = text.toString();
         level.style = '--completed: ' + text.toString() + '%;';
         td.append(level);
+        td._element = level;
       }
     } else if (field == 'revised') {
       td.innerText = text ? 'yes' : 'none';
@@ -65,7 +85,7 @@ function main() {
 
     if (! thead.hasAttribute('data-rendered')) {
       for (const field in fields) {
-        const th = document.createElement('th');
+        const th = doc.createElement('th');
         th.innerText = fields[field] ?? field;
         thead.firstElementChild.insertBefore(th, thead.firstElementChild.lastElementChild);
       }
@@ -79,7 +99,7 @@ function main() {
       const lang_dir = data[idx]['dir'].toString();
 
       const el_tr = tbody.querySelector('[data-guid="' + guid + '"]');
-      const tr = el_tr ? el_tr : document.createElement('tr');
+      const tr = el_tr ? el_tr : doc.createElement('tr');
 
       for (const field in fields) {
         if (field in fields) {
@@ -88,9 +108,10 @@ function main() {
           const i = Object.keys(fields).indexOf(field);
           const el_td = tr.children.item(i);
 
-          const td = el_td ?? document.createElement('td');
+          const td = el_td ?? doc.createElement('td');
 
           if (! td.hasAttribute('data-rendered')) {
+            td._parent = tr;
             render_row(td, field, text);
             td.setAttribute('data-rendered', '');
           } else if (field in data[idx]) {
@@ -134,22 +155,24 @@ function main() {
     table.setAttribute('data-rendered', '');
   }
 
-  function styles() {
-    document.getElementById('ctrbar-add-language').removeAttribute('hidden');
-    document.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
-    document.querySelector('.submit-form').classList.add('placeholder');
+  function load() {
+    doc.getElementById('ctrbar-add-language').removeAttribute('hidden');
+    doc.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
+    doc.querySelector('.submit-form').classList.add('placeholder');
+
+    if (! languages) {
+      return false;
+    }
+    if (! table.hasAttribute('data-rendered')) {
+      table.setAttribute('data-loading', '');
+      render_table(languages);
+    }
+    allowSubmit();
+    setTimeout(function() {
+      animation();
+    }, 300);
   }
 
-  styles();
-
-  if (! table.hasAttribute('data-rendered') && languages) {
-    table.setAttribute('data-loading', '');
-    render_table(languages);
-  }
-
+  load();
   view.removeAttribute('hidden');
-
-  window.setTimeout(function() {
-    animation();
-  }, 300);
 }

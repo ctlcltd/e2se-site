@@ -115,3 +115,10 @@ button,
 .button {
   & + * { margin-inline-start: 2rem; }
 }
+
+.novalid {
+  display: block;
+  margin: 0.5rem 0 0;
+  font-weight: bold;
+  opacity: .7;
+}

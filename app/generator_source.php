@@ -40,9 +40,9 @@ $status = 502;
 $response = [];
 
 $read_db = isset($generator['read_db']) ? (bool) $generator['read_db'] : true;
-$write_db = isset($generator['write_db']) ? (bool) $generator['write_db'] : true;
+$write_db = isset($generator['write_db']) ? (bool) $generator['write_db'] : false;
 $read_files = isset($generator['read_files']) ? (bool) $generator['read_files'] : true;
-$write_files = isset($generator['write_files']) ? (bool) $generator['write_files'] : true;
+$write_files = isset($generator['write_files']) ? (bool) $generator['write_files'] : false;
 
 
 

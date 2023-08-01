@@ -6,11 +6,12 @@
  */
 
 function route(href, title) {
+  const page = document.getElementById('page');
   const views = document.querySelectorAll('main');
   const history = href ? true : false;
 
-  href = href ? href : window.location.href;
-  title = title ? title : document.title;
+  href = href ?? window.location.href;
+  title = title ?? document.title;
 
   if (href.indexOf(basepath) === -1) {
     throw 'Wrong base path';
@@ -21,9 +22,9 @@ function route(href, title) {
   const uri = path[0].split('/')[2];
   const qs = path[1] ? path[1].split('&') : '';
   const key = '';
-  const value = qs[0] ? qs[0] : '';
+  const value = qs[0] ?? '';
 
-  console.info('route()', { path, uri, qs, key, value });
+  // console.info('route()', { path, uri, qs, key, value });
 
   for (const view of views) {
     if (view.cloned) {
@@ -40,8 +41,11 @@ function route(href, title) {
     throw 'Wrong QueryString Route';
   }
   if (typeof routes[uri][key] != 'function') {
-    throw 'Callable Function';
+    throw 'No Function Route';
   }
+
+  const e = new Event('unload');
+  page.dispatchEvent(e);
 
   if (history) {
     window.history.pushState('', title, url);
