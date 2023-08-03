@@ -10,7 +10,7 @@ function nav(menu) {
   const nav_items = nav.querySelectorAll('a');
 
   function click(evt) {
-    evt && evt.preventDefault();
+    evt.preventDefault();
 
     route(this.href);
 

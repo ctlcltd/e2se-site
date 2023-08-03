@@ -6,14 +6,15 @@
  */
 
 function edit(uri, key, value) {
-  const source = document.querySelector('.view-edit');
+  const doc = document;
+  const source = doc.querySelector('.view-edit');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-edit');
   clone.cloned = true;
-  document.body.insertBefore(clone, source);
+  doc.body.insertBefore(clone, source);
 
-  const view = document.getElementById('view-edit');
+  const view = doc.getElementById('view-edit');
   const menu = view.querySelector('.nav.placeholder');
   const heading = view.querySelector('h2');
 
@@ -29,19 +30,19 @@ function edit(uri, key, value) {
   const form = view.querySelector('form');
   const fieldset_ph = form.firstElementChild;
 
-  function render(data) {
-    const fieldset = document.createElement('fieldset');
+  function render_form(data) {
+    const fieldset = doc.createElement('fieldset');
 
     for (const field in data) {
-      const row = data[field];
+      const obj = data[field];
 
-      const div = document.createElement('div');
-      const label = document.createElement('label');
-      const input = document.createElement('input');
+      const div = doc.createElement('div');
+      const label = doc.createElement('label');
+      const input = doc.createElement('input');
 
       label.innerText = field;        
       input.setAttribute('type', 'text');
-      input.value = row ? row.toString() : '';
+      input.value = obj ? obj.toString() : '';
 
       div.append(label);
       div.append(input);
@@ -54,29 +55,27 @@ function edit(uri, key, value) {
     form.classList.remove('placeholder');
   }
 
-  function load(xhr) {
+  function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
 
       if (! obj.status) {
-        return error(obj.data);
+        return error(xhr);
       }
 
       if (obj.data) {
-        render(obj.data);
+        render_form(obj.data);
       }
     } catch (err) {
-      console.error('edit()', 'load()', err);
-
-      error(false, err);
+      console.error('loader', err);
     }
   }
 
-  function error(xhr, err) {
-    console.error('edit()', 'error()', xhr || '', err || '');
+  function error(xhr) {
+    console.warn(xhr);
   }
 
-  request.then(load).catch(error);
+  request.then(loader).catch(error);
 
   view.removeAttribute('hidden');
 }

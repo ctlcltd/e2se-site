@@ -156,6 +156,10 @@ require_once __DIR__ . '/' . 'config.php';
 require_once __DIR__ . '/' . 'app/routes.php';
 
 
+if (defined('date_timezone')) {
+	date_default_timezone_set(date_timezone);
+}
+
 if (! defined('CONFIG') || ! defined('ROUTES')) {
 	http_response_code(503);
 	exit;
@@ -193,9 +197,9 @@ if ($authorized) {
 }
 
 // route
-if ($authorized && isset($request['body'])) {
+if (isset($request['body'])) {
 	$body = substr($request['body'], 0, 32);
-	$body = trim($body);
+	$body = preg_replace('/[^a-z0-9]/', '', $body);
 
 	if (! empty($body) && array_key_exists($body, routes)) {
 		$endpoint = $body;
@@ -204,7 +208,7 @@ if ($authorized && isset($request['body'])) {
 
 
 // login
-if (($endpoint == NULL || $endpoint == 'login') && $method == 'post') {
+if ($endpoint == 'login' && $method == 'post') {
 	$auth = false;
 
 	if (! empty($request['user_name']) && ! empty($request['user_password'])) {
@@ -238,8 +242,8 @@ if (($endpoint == NULL || $endpoint == 'login') && $method == 'post') {
 	$response = 1;
 
 // call
-} else if (! empty($endpoint) && function_exists('\app\\' . "route_{$endpoint}")) {
-	$called = call_user_func('\app\\' . "route_{$endpoint}", $authorized, $request, $method);
+} else if (! empty($endpoint) && function_exists("\app\\route_{$endpoint}")) {
+	$called = call_user_func("\app\\route_{$endpoint}", $authorized, $request, $method);
 
 	if (isset($called['status']) && isset($called['response'])) {
 		$status = $called['status'];

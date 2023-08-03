@@ -6,5 +6,7 @@
  */
 
 function signout() {
+  sessionStorage.clear();
+
   return route(basepath + '/?login');
 }

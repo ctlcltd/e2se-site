@@ -6,14 +6,15 @@
  */
 
 function service(uri, key, value) {
-  const source = document.querySelector('.view-service');
+  const doc = document;
+  const source = doc.querySelector('.view-service');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-list');
   clone.cloned = true;
-  document.body.insertBefore(clone, source);
+  doc.body.insertBefore(clone, source);
 
-  const view = document.getElementById('view-list');
+  const view = doc.getElementById('view-list');
   const menu = view.querySelector('.nav.placeholder');
   const heading = view.querySelector('h2');
 
@@ -37,7 +38,7 @@ function service(uri, key, value) {
     return false;
   }
 
-  function render(data) {
+  function render_table(data) {
     var i = 0;
     let action_href;
 
@@ -45,22 +46,22 @@ function service(uri, key, value) {
     tbody.firstElementChild.remove();
 
     for (const idx in data) {
-      const tr = document.createElement('tr');
+      const tr = doc.createElement('tr');
 
       for (const field in data[idx]) {
-        const row = data[idx][field];
+        const obj = data[idx][field];
 
         if (i == 0) {
-            const th = document.createElement('th');
+            const th = doc.createElement('th');
             th.innerText = field;
             thead.firstElementChild.insertBefore(th, thead.firstElementChild.lastElementChild);
         }
 
-        const td = document.createElement('td');
-        td.innerText = row ? row.toString() : '';
+        const td = doc.createElement('td');
+        td.innerText = obj ? obj.toString() : '';
         tr.insertBefore(td, tr.lastElementChild);
 
-        action_href = '?row=' + row;
+        action_href = '?row=' + obj;
       }
 
       tr.setAttribute('data-href', action_href);
@@ -73,29 +74,27 @@ function service(uri, key, value) {
     table.classList.remove('placeholder');
   }
 
-  function load(xhr) {
+  function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
 
       if (! obj.status) {
-        return error(obj.data);
+        return error(xhr);
       }
 
       if (obj.data) {
-        render(obj.data);
+        render_table(obj.data);
       }
     } catch (err) {
-      console.error('service()', 'load()', err);
-
-      error(null, err);
+      console.error('loader', err);
     }
   }
 
   function error(xhr, err) {
-    console.error('service()', 'error()', xhr || '', err || '');
+    console.warn(xhr);
   }
 
-  request.then(load).catch(error);
+  request.then(loader).catch(error);
 
   view.removeAttribute('hidden');
 }

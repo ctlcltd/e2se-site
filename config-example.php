@@ -17,6 +17,7 @@ define('routes', [
 	'' => [ '' => 'main' ],
 	'service' => [ '' => 'service' ],
 	'inspect' => [ '' => 'list', 'add' => 'edit', 'edit' => 'edit' ],
+	'userland' => [ 'resume' => 'resume', 'history' => 'history', 'submit' => 'submit' ],
 	'test' => [ '' => 'api_test' ],
 	'login' => [ '' => 'signin' ],
 	'logout' => [ '' => 'signout' ]
@@ -29,3 +30,5 @@ define('db_dbname', 'database');
 define('db_username', 'username');
 define('db_password', 'password');
 define('db_table_prefix', '');
+
+// define('date_timezone', 'UTC');

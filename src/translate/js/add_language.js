@@ -26,7 +26,8 @@ function add_language(uri, key, value) {
   const fields = {
     'lang_code': 'ISO 639-1 language code (eg. xz)',
     'lang_locale': 'Locale language code (eg. xz_XA)',
-    'lang_dir': 'Direction',
+    'lang_dir': 'Text directionality',
+    'lang_type': 'Text type',
     'lang_name': 'Name',
     'lang_tr_name': 'Translated name',
     'lang_numerus': 'Numerus'
@@ -34,6 +35,7 @@ function add_language(uri, key, value) {
   const data = {
     'lang_code': {'pattern': '[a-z]{2}', 'required': true},
     'lang_locale': {'pattern': '[a-z]{2}_[A-Z]{2}', 'required': true},
+    'lang_type': {'type': 'select', 'options': {1: 'Type I (latin / ASCII)', 2: 'Type II (other alphabet)'}, 'required': true},
     'lang_dir': {'type': 'select', 'options': {'ltr': 'LTR (Left To Right)', 'rtl': 'RTL (Right To Left)'}, 'required': true},
     'lang_name': {'required': true},
     'lang_tr_name': {'required': true},

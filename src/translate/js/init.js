@@ -76,10 +76,17 @@ function init() {
   }
 
   function loader(xhr) {
-    let storage;
     try {
-      languages = storage = JSON.parse(xhr.response);
+      const obj = JSON.parse(xhr.response);
+
+      if (! obj.status) {
+        return error(xhr);
+      }
+
+      languages = obj;
+
       route();
+
       localStorage.setItem('languages', JSON.stringify(languages));
     } catch (err) {
       console.error('loader', err);
@@ -87,10 +94,14 @@ function init() {
   }
 
   function resume() {
-    let storage = localStorage.getItem('languages');
     try {
+      const storage = localStorage.getItem('languages');
+
       if (storage) {
-        languages = storage = JSON.parse(storage);
+        const obj = JSON.parse(storage);
+
+        languages = storage;
+
         route();
       } else {
         request.then(loader).catch(error);
@@ -100,12 +111,12 @@ function init() {
     }
   }
 
-  function popState(evt) {
-    route();
-  }
-
   function error(xhr) {
     // console.warn(xhr);
+  }
+
+  function popState(evt) {
+    route();
   }
 
   doc.description = doc.querySelector('meta[name="description"]');

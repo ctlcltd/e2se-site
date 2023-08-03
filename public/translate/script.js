@@ -507,6 +507,10 @@ function edit_translate(uri, key, value) {
     try {
       const obj = JSON.parse(xhr.response);
 
+      if (! obj.status) {
+        return error(xhr);
+      }
+
       if (begin) {
         disambiguation(obj);
       }
@@ -580,7 +584,8 @@ function add_language(uri, key, value) {
   const fields = {
     'lang_code': 'ISO 639-1 language code (eg. xz)',
     'lang_locale': 'Locale language code (eg. xz_XA)',
-    'lang_dir': 'Direction',
+    'lang_dir': 'Text directionality',
+    'lang_type': 'Text type',
     'lang_name': 'Name',
     'lang_tr_name': 'Translated name',
     'lang_numerus': 'Numerus'
@@ -588,6 +593,7 @@ function add_language(uri, key, value) {
   const data = {
     'lang_code': {'pattern': '[a-z]{2}', 'required': true},
     'lang_locale': {'pattern': '[a-z]{2}_[A-Z]{2}', 'required': true},
+    'lang_type': {'type': 'select', 'options': {1: 'Type I (latin / ASCII)', 2: 'Type II (other alphabet)'}, 'required': true},
     'lang_dir': {'type': 'select', 'options': {'ltr': 'LTR (Left To Right)', 'rtl': 'RTL (Right To Left)'}, 'required': true},
     'lang_name': {'required': true},
     'lang_tr_name': {'required': true},
@@ -844,7 +850,7 @@ function token() {
     let n;
     let i = Math.floor(Math.random() * 4);
     if (i == 3 && Math.random() * 100 < 50) {
-      i -= parseInt(Math.random() * 3);
+      i = parseInt(Math.random() * 3);
     }
     if (i == 3) {
       n = Math.floor(Math.random() * a[i].length);
@@ -861,17 +867,24 @@ function token() {
 window.token = token;
 
 
-function api_request(method, endpoint, body) {
+function api_request(method, endpoint, route, body) {
   const xhr = new XMLHttpRequest();
-  let url = apipath + endpoint;
+  let url = apipath + '/';
 
-  if (url.substr(-1) != '/') {
-    url += '/';
-  }
+  if (method === 'get') {
+    url += endpoint ? '?body=' + endpoint : '';
+    url += endpoint && route ? '&call=' + route : '';
 
-  if (body && method === 'get') {
-    url += '?' + body;
-    body = null;
+    if (body) {
+      url += '&' + body;
+      body = null;
+    }
+  } else if (method === 'post') {
+    body = 'body=' + endpoint + route ? '&call=' + route : '' + '&' + body;
+  } else {
+    return new Promise(function(resolve, reject) {
+      reject('Request Error');
+    });
   }
 
   xhr.open(method, url);
@@ -1022,10 +1035,17 @@ function init() {
   }
 
   function loader(xhr) {
-    let storage;
     try {
-      languages = storage = JSON.parse(xhr.response);
+      const obj = JSON.parse(xhr.response);
+
+      if (! obj.status) {
+        return error(xhr);
+      }
+
+      languages = obj;
+
       route();
+
       localStorage.setItem('languages', JSON.stringify(languages));
     } catch (err) {
       console.error('loader', err);
@@ -1033,10 +1053,14 @@ function init() {
   }
 
   function resume() {
-    let storage = localStorage.getItem('languages');
     try {
+      const storage = localStorage.getItem('languages');
+
       if (storage) {
-        languages = storage = JSON.parse(storage);
+        const obj = JSON.parse(storage);
+
+        languages = storage;
+
         route();
       } else {
         request.then(loader).catch(error);
@@ -1046,12 +1070,12 @@ function init() {
     }
   }
 
-  function popState(evt) {
-    route();
-  }
-
   function error(xhr) {
     // console.warn(xhr);
+  }
+
+  function popState(evt) {
+    route();
   }
 
   doc.description = doc.querySelector('meta[name="description"]');

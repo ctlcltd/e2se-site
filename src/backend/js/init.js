@@ -5,26 +5,25 @@
  * @license MIT License
  */
 
-let apiroutes;
-let navigation;
+var apiroutes;
+var navigation;
 
 function init() {
-  var tc_value = '1; ';
-  var tc_path = 'path=' + basepath + '; ';
-  var tc_secured = ''; //'secure; ';
-  var tc_expires = 'expires=' + new Date(new Date().getTime() + (60 * 1e3)).toGMTString() + '; ';
-
-  document.cookie = 'backend-test=' + tc_value + tc_path + tc_expires + tc_secured + 'samesite=strict';
-
-  if (document.cookie.indexOf('backend-test') == -1) {
-    return;
+  try {
+    sessionStorage.setItem('backendTest', '1');
+    if (! sessionStorage.getItem('backendTest')) {
+      throw 'Storage Error';
+    }
+    sessionStorage.removeItem('backendTest');
+  } catch (err) {
+    console.error(err);
   }
 
   function popState(evt) {
     route();
   }
 
-  if (document.cookie.indexOf('backend-sign') != -1) {
+  if (sessionStorage.getItem('backendSign')) {
     nav();
     route();
   } else {

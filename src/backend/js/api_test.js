@@ -6,12 +6,15 @@
  */
 
 function api_test() {
-  const view = document.getElementById('api-test');
+  const doc = document;
+  const view = doc.getElementById('api-test');
   const menu = view.querySelector('.nav');
-  const request_form = document.getElementById('api_request');
-  const response_form = document.getElementById('api_response');
+  const request_form = doc.getElementById('api_request');
+  const response_form = doc.getElementById('api_response');
+
   const methods = ['get', 'post'];
-  const request = api_request('get', '', '');
+  const request = api_request('get');
+
   const endpoint_select = request_form.querySelector('[name="endpoint"]');
   const method_select = request_form.querySelector('[name="method"]');
   const route_select = request_form.querySelector('[name="route"]');
@@ -22,73 +25,36 @@ function api_test() {
 
   nav(menu);
 
-  function response(xhr) {
-    console.log('api_test()', 'response()', xhr);
-
-    response_form.removeAttribute('data-loading');
-
-    response_status.value = xhr.status;
-    response_body.value = xhr.response;
-    response_headers.value = xhr.getAllResponseHeaders();
-  }
-
-  function load(xhr) {
-    console.log('api_test()', 'load()', xhr);
-
+  function endpointChange() {
     try {
-      view.removeAttribute('hidden');
-
-      const obj = JSON.parse(xhr.response);
-
-      if (! obj.status) {
-        return error();
+      if (! apiroutes) {
+        return false;
       }
 
-      apiroutes = obj.data;
+      const endpoint = endpoint_select.value;
 
-      for (const method of methods) {
-        let option;
-        option = document.createElement('option'), option.value = method, option.innerText = method.toUpperCase();
-        method_select.appendChild(option);
+      route_select.innerHTML = '';
+
+      for (const route in apiroutes[endpoint]) {
+        const sub = doc.createElement('option');
+        sub.value = route;
+        sub.innerText = route;
+        route_select.appendChild(sub);
       }
-      for (const endpoint in obj.data) {
-        let option;
-        option = document.createElement('option'), option.value = endpoint, option.innerText = endpoint;
-        endpoint_select.appendChild(option);
-      }
-
-      view.setAttribute('data-render', true);
-
-      endpointChange();
     } catch (err) {
-      console.error('api_test()', 'load()', err);
+      console.error('endpointChange', err);
     }
   }
 
-  function error() {
-    view.setAttribute('hidden', '');
-
-    return route(basepath + '/?login');
-  }
-
-  function resume() {
-    console.log('api_test()', 'resume()');
-
-    if (! apiroutes) throw 0;
-
-    view.removeAttribute('hidden');
-
-    requestReset();
-  }
-
   function requestSubmit(evt) {
-    evt && evt.preventDefault();
+    evt.preventDefault();
 
     const method = method_select.value;
     const endpoint = endpoint_select.value;
+    const route = route_select.value;
     const body = body_input.value;
 
-    const request = api_request(method, endpoint, body);
+    const request = api_request(method, endpoint, route, body);
 
     response_form.setAttribute('data-loading', '');
 
@@ -108,22 +74,59 @@ function api_test() {
     route_select.value = route_select.options[0].value;
   }
 
-  function endpointChange() {
-    try {
-      if (! apiroutes) throw 0;
+  function response(xhr) {
+    response_form.removeAttribute('data-loading');
 
-      const endpoint = endpoint_select.value;
+    response_status.value = xhr.status;
+    response_body.value = xhr.response;
+    response_headers.value = xhr.getAllResponseHeaders();
+  }
 
-      route_select.innerHTML = '';
-
-      for (const route in apiroutes[endpoint]) {
-        let option;
-        option = document.createElement('option'), option.value = route, option.innerText = route;
-        route_select.appendChild(option);
-      }
-    } catch (err) {
-      console.error('api_test()', 'endpointChange()', err);
+  function resume() {
+    if (! apiroutes) {
+      return false;
     }
+
+    view.removeAttribute('hidden');
+
+    requestReset();
+  }
+
+  function loader(xhr) {
+    try {
+      view.removeAttribute('hidden');
+
+      const obj = JSON.parse(xhr.response);
+
+      if (! obj.status) {
+        return error(xhr);
+      }
+
+      apiroutes = obj.data;
+
+      for (const method of methods) {
+        const sub = doc.createElement('option');
+        sub.value = method;
+        sub.innerText = method.toUpperCase();
+        method_select.appendChild(sub);
+      }
+      for (const endpoint in obj.data) {
+        const sub = doc.createElement('option');
+        sub.value = endpoint;
+        sub.innerText = endpoint;
+        endpoint_select.appendChild(sub);
+      }
+
+      view.setAttribute('data-render', '');
+
+      endpointChange();
+    } catch (err) {
+      console.error('loader', err);
+    }
+  }
+
+  function error(xhr) {
+    console.warn(xhr);
   }
 
   request_form.addEventListener('submit', requestSubmit);
@@ -133,6 +136,6 @@ function api_test() {
   if (view.hasAttribute('data-render')) {
     resume();
   } else {
-    request.then(load).catch(error);
+    request.then(loader).catch(error);
   }
 }

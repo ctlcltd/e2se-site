@@ -31,14 +31,15 @@ function main() {
 
 
 function list(uri, key, value) {
-  const source = document.querySelector('.view-list');
+  const doc = document;
+  const source = doc.querySelector('.view-list');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-list');
   clone.cloned = true;
-  document.body.insertBefore(clone, source);
+  doc.body.insertBefore(clone, source);
 
-  const view = document.getElementById('view-list');
+  const view = doc.getElementById('view-list');
   const menu = view.querySelector('.nav.placeholder');
   const heading = view.querySelector('h2');
 
@@ -56,7 +57,7 @@ function list(uri, key, value) {
   const tbody = table.querySelector('tbody');
 
   function actionEdit(evt) {
-    evt && evt.preventDefault();
+    evt.preventDefault();
 
     if (evt.target.parentElement.classList.contains('action-edit') || evt.target.tagName == 'SPAN') {
       route(this.dataset.href);
@@ -66,7 +67,7 @@ function list(uri, key, value) {
   }
 
   function actionDelete(evt) {
-    evt && evt.preventDefault();
+    evt.preventDefault();
 
     if (window.confirm('Are you sure to delete this item?')) {
       route(this.href);
@@ -75,7 +76,7 @@ function list(uri, key, value) {
     return false;
   }
 
-  function render(data) {
+  function render_table(data) {
     var i = 0;
 
     let get_id;
@@ -90,28 +91,23 @@ function list(uri, key, value) {
       for (const field in data[idx]) {
         const row = data[idx][field];
 
-        //-TEMP
         if (! get_id && field.indexOf('_id') != -1) {
           get_id = '&' + field + '=' + row.toString();
         }
 
         if (i === 0) {
-          const th = document.createElement('th');
+          const th = doc.createElement('th');
           th.innerText = field;
           thead.firstElementChild.insertBefore(th, thead.firstElementChild.lastElementChild);
         }
-        //-TEMP
 
-        const td = document.createElement('td');
+        const td = doc.createElement('td');
         td.innerText = row ? row.toString() : '';
         tr.insertBefore(td, tr_ph);
       }
 
-      //-TEMP
       action_edit.href += get_id;
       action_delete.href += get_id;
-      //-TEMP
-
       action_delete.onclick = actionDelete;
 
       tr.setAttribute('data-href', action_edit.href);
@@ -126,43 +122,42 @@ function list(uri, key, value) {
     table.classList.remove('placeholder');
   }
 
-  function load(xhr) {
+  function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
 
       if (! obj.status) {
-        return error(obj.data);
+        return error(xhr);
       }
 
       if (obj.data) {
-        render(obj.data);
+        render_table(obj.data);
       }
     } catch (err) {
-      console.error('list()', 'load()', err);
-
-      error(null, err);
+      console.error('loader', err);
     }
   }
 
-  function error(xhr, err) {
-    console.error('list()', 'error()', xhr || '', err || '');
+  function error(xhr) {
+    console.warn(xhr);
   }
 
-  request.then(load).catch(error);
+  request.then(loader).catch(error);
 
   view.removeAttribute('hidden');
 }
 
 
 function edit(uri, key, value) {
-  const source = document.querySelector('.view-edit');
+  const doc = document;
+  const source = doc.querySelector('.view-edit');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-edit');
   clone.cloned = true;
-  document.body.insertBefore(clone, source);
+  doc.body.insertBefore(clone, source);
 
-  const view = document.getElementById('view-edit');
+  const view = doc.getElementById('view-edit');
   const menu = view.querySelector('.nav.placeholder');
   const heading = view.querySelector('h2');
 
@@ -178,19 +173,19 @@ function edit(uri, key, value) {
   const form = view.querySelector('form');
   const fieldset_ph = form.firstElementChild;
 
-  function render(data) {
-    const fieldset = document.createElement('fieldset');
+  function render_form(data) {
+    const fieldset = doc.createElement('fieldset');
 
     for (const field in data) {
-      const row = data[field];
+      const obj = data[field];
 
-      const div = document.createElement('div');
-      const label = document.createElement('label');
-      const input = document.createElement('input');
+      const div = doc.createElement('div');
+      const label = doc.createElement('label');
+      const input = doc.createElement('input');
 
       label.innerText = field;        
       input.setAttribute('type', 'text');
-      input.value = row ? row.toString() : '';
+      input.value = obj ? obj.toString() : '';
 
       div.append(label);
       div.append(input);
@@ -203,43 +198,42 @@ function edit(uri, key, value) {
     form.classList.remove('placeholder');
   }
 
-  function load(xhr) {
+  function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
 
       if (! obj.status) {
-        return error(obj.data);
+        return error(xhr);
       }
 
       if (obj.data) {
-        render(obj.data);
+        render_form(obj.data);
       }
     } catch (err) {
-      console.error('edit()', 'load()', err);
-
-      error(false, err);
+      console.error('loader', err);
     }
   }
 
-  function error(xhr, err) {
-    console.error('edit()', 'error()', xhr || '', err || '');
+  function error(xhr) {
+    console.warn(xhr);
   }
 
-  request.then(load).catch(error);
+  request.then(loader).catch(error);
 
   view.removeAttribute('hidden');
 }
 
 
 function service(uri, key, value) {
-  const source = document.querySelector('.view-service');
+  const doc = document;
+  const source = doc.querySelector('.view-service');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-list');
   clone.cloned = true;
-  document.body.insertBefore(clone, source);
+  doc.body.insertBefore(clone, source);
 
-  const view = document.getElementById('view-list');
+  const view = doc.getElementById('view-list');
   const menu = view.querySelector('.nav.placeholder');
   const heading = view.querySelector('h2');
 
@@ -263,7 +257,7 @@ function service(uri, key, value) {
     return false;
   }
 
-  function render(data) {
+  function render_table(data) {
     var i = 0;
     let action_href;
 
@@ -271,22 +265,22 @@ function service(uri, key, value) {
     tbody.firstElementChild.remove();
 
     for (const idx in data) {
-      const tr = document.createElement('tr');
+      const tr = doc.createElement('tr');
 
       for (const field in data[idx]) {
-        const row = data[idx][field];
+        const obj = data[idx][field];
 
         if (i == 0) {
-            const th = document.createElement('th');
+            const th = doc.createElement('th');
             th.innerText = field;
             thead.firstElementChild.insertBefore(th, thead.firstElementChild.lastElementChild);
         }
 
-        const td = document.createElement('td');
-        td.innerText = row ? row.toString() : '';
+        const td = doc.createElement('td');
+        td.innerText = obj ? obj.toString() : '';
         tr.insertBefore(td, tr.lastElementChild);
 
-        action_href = '?row=' + row;
+        action_href = '?row=' + obj;
       }
 
       tr.setAttribute('data-href', action_href);
@@ -299,72 +293,83 @@ function service(uri, key, value) {
     table.classList.remove('placeholder');
   }
 
-  function load(xhr) {
+  function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
 
       if (! obj.status) {
-        return error(obj.data);
+        return error(xhr);
       }
 
       if (obj.data) {
-        render(obj.data);
+        render_table(obj.data);
       }
     } catch (err) {
-      console.error('service()', 'load()', err);
-
-      error(null, err);
+      console.error('loader', err);
     }
   }
 
   function error(xhr, err) {
-    console.error('service()', 'error()', xhr || '', err || '');
+    console.warn(xhr);
   }
 
-  request.then(load).catch(error);
+  request.then(loader).catch(error);
 
   view.removeAttribute('hidden');
 }
 
 
 function signin() {
-  const view = document.getElementById('signin');
-  const form = document.getElementById('sign_login');
+  const doc = document;
+  const view = doc.getElementById('signin');
+  const form = doc.getElementById('sign_login');
   const placeholder = form.querySelector('.placeholder').cloneNode();
   const attempts_limit = 3;
-  let attempts = 0, err_log = null;
+  let attempts = 0;
+  let msg = null;
 
   function submit(evt) {
-    evt && evt.preventDefault();
+    evt.preventDefault();
 
     form.setAttribute('disabled', '');
     form.setAttribute('data-loading', '');
 
-    err_log && err_log.replaceWith(placeholder);
+    if (msg) {
+      msg.replaceWith(placeholder);
+    }
 
-    let body = [];
+    let obj = [];
 
     for (const el of this.elements) {
       if (el.tagName != 'FIELDSET' && el.tagName != 'BUTTON' && ! (el.type && el.type === 'button')) {
-        body.push(el.name + '=' + el.value);
+        obj.push(el.name + '=' + el.value);
       }
     }
 
-    if (body.length) {
-      body = body.join('&');
+    if (obj.length) {
+      obj = obj.join('&');
     } else {
       form.removeAttribute('disabled');
       form.removeAttribute('data-loading');
+      form.reset();
 
-      return error(null, 'Please enter your credentials.');
+      return message('Please enter your credentials.');
     }
 
-    const login = api_request('post', '', body);
+    const request = api_request('post', 'login', obj);
 
-    login.then(next).catch(error);
+    request.then(loader).catch(error);
   }
 
-  function next(xhr) {
+  function message(text) {
+    msg = doc.createElement('div');
+    msg.className = 'error';
+    msg.innerText = text;
+
+    form.querySelector('.placeholder').replaceWith(msg);
+  }
+
+  function loader(xhr) {
     form.reset();
 
     try {
@@ -376,14 +381,7 @@ function signin() {
 
         view.setAttribute('hidden', '');
 
-        var session_value = '1; ';
-        var session_path = 'path=' + basepath + '; ';
-        var session_secured = ''; //'secure; ';
-        var session_expires = 'expires=' + new Date(new Date().getTime() + (60 * 60 * 24 * 1e3)).toGMTString() + '; ';
-
-        console.log('signin()', 'next()', 'backend-sign=' + session_value + session_path + session_expires + session_secured + 'samesite=strict');
-
-        document.cookie = 'backend-sign=' + session_value + session_path + session_expires + session_secured + 'samesite=strict';
+        sessionStorage.setItem('backendSign', new Date().toJSON());
 
         return route(basepath + '/');
       } else {
@@ -391,32 +389,24 @@ function signin() {
           form.removeAttribute('disabled');
         }
 
-        throw 'Wrong credentials.';
+        message('Wrong credentials.');
       }
     } catch (err) {
       form.removeAttribute('data-loading');
+      form.reset();
+      
+      message('An error occurred.');
 
-      error(xhr, err);
+      console.error('loader', err);
     }
   }
 
-  function error(xhr, msg) {
+  function error(xhr) {
     form.reset();
-
-    if (xhr && ! msg && xhr.status) {
-      msg = 'An error occurred.';
-    }
-
-    err_log = document.createElement('div');
-    err_log.className = 'error';
-    err_log.innerText = msg;
-
-    form.querySelector('.placeholder').replaceWith(err_log);
-
-    console.error('signin()', 'error()', msg);
+    console.warn(xhr);
   }
 
-  document.cookie = 'backend-sign=; expires=' + new Date(0).toGMTString() + ', samesite=strict';
+  sessionStorage.clear();
 
   form.addEventListener('submit', submit);
 
@@ -425,17 +415,30 @@ function signin() {
 
 
 function signout() {
+  sessionStorage.clear();
+
   return route(basepath + '/?login');
 }
 
 
-function api_request(method, endpoint, body) {
+function api_request(method, endpoint, route, body) {
   const xhr = new XMLHttpRequest();
-  let url = apipath + '/' + (endpoint ? '?body=' + endpoint : '');
+  let url = apipath + '/';
 
-  if (body && method === 'get') {
-    url += '&' + body;
-    body = null;
+  if (method === 'get') {
+    url += endpoint ? '?body=' + endpoint : '';
+    url += endpoint && route ? '&call=' + route : '';
+
+    if (body) {
+      url += '&' + body;
+      body = null;
+    }
+  } else if (method === 'post') {
+    body = 'body=' + endpoint + (route ? '&call=' + route : '') + '&' + body;
+  } else {
+    return new Promise(function(resolve, reject) {
+      reject('Request Error');
+    });
   }
 
   xhr.open(method, url);
@@ -450,12 +453,15 @@ function api_request(method, endpoint, body) {
 
 
 function api_test() {
-  const view = document.getElementById('api-test');
+  const doc = document;
+  const view = doc.getElementById('api-test');
   const menu = view.querySelector('.nav');
-  const request_form = document.getElementById('api_request');
-  const response_form = document.getElementById('api_response');
+  const request_form = doc.getElementById('api_request');
+  const response_form = doc.getElementById('api_response');
+
   const methods = ['get', 'post'];
-  const request = api_request('get', '', '');
+  const request = api_request('get');
+
   const endpoint_select = request_form.querySelector('[name="endpoint"]');
   const method_select = request_form.querySelector('[name="method"]');
   const route_select = request_form.querySelector('[name="route"]');
@@ -466,73 +472,36 @@ function api_test() {
 
   nav(menu);
 
-  function response(xhr) {
-    console.log('api_test()', 'response()', xhr);
-
-    response_form.removeAttribute('data-loading');
-
-    response_status.value = xhr.status;
-    response_body.value = xhr.response;
-    response_headers.value = xhr.getAllResponseHeaders();
-  }
-
-  function load(xhr) {
-    console.log('api_test()', 'load()', xhr);
-
+  function endpointChange() {
     try {
-      view.removeAttribute('hidden');
-
-      const obj = JSON.parse(xhr.response);
-
-      if (! obj.status) {
-        return error();
+      if (! apiroutes) {
+        return false;
       }
 
-      apiroutes = obj.data;
+      const endpoint = endpoint_select.value;
 
-      for (const method of methods) {
-        let option;
-        option = document.createElement('option'), option.value = method, option.innerText = method.toUpperCase();
-        method_select.appendChild(option);
+      route_select.innerHTML = '';
+
+      for (const route in apiroutes[endpoint]) {
+        const sub = doc.createElement('option');
+        sub.value = route;
+        sub.innerText = route;
+        route_select.appendChild(sub);
       }
-      for (const endpoint in obj.data) {
-        let option;
-        option = document.createElement('option'), option.value = endpoint, option.innerText = endpoint;
-        endpoint_select.appendChild(option);
-      }
-
-      view.setAttribute('data-render', true);
-
-      endpointChange();
     } catch (err) {
-      console.error('api_test()', 'load()', err);
+      console.error('endpointChange', err);
     }
   }
 
-  function error() {
-    view.setAttribute('hidden', '');
-
-    return route(basepath + '/?login');
-  }
-
-  function resume() {
-    console.log('api_test()', 'resume()');
-
-    if (! apiroutes) throw 0;
-
-    view.removeAttribute('hidden');
-
-    requestReset();
-  }
-
   function requestSubmit(evt) {
-    evt && evt.preventDefault();
+    evt.preventDefault();
 
     const method = method_select.value;
     const endpoint = endpoint_select.value;
+    const route = route_select.value;
     const body = body_input.value;
 
-    const request = api_request(method, endpoint, body);
+    const request = api_request(method, endpoint, route, body);
 
     response_form.setAttribute('data-loading', '');
 
@@ -552,22 +521,59 @@ function api_test() {
     route_select.value = route_select.options[0].value;
   }
 
-  function endpointChange() {
-    try {
-      if (! apiroutes) throw 0;
+  function response(xhr) {
+    response_form.removeAttribute('data-loading');
 
-      const endpoint = endpoint_select.value;
+    response_status.value = xhr.status;
+    response_body.value = xhr.response;
+    response_headers.value = xhr.getAllResponseHeaders();
+  }
 
-      route_select.innerHTML = '';
-
-      for (const route in apiroutes[endpoint]) {
-        let option;
-        option = document.createElement('option'), option.value = route, option.innerText = route;
-        route_select.appendChild(option);
-      }
-    } catch (err) {
-      console.error('api_test()', 'endpointChange()', err);
+  function resume() {
+    if (! apiroutes) {
+      return false;
     }
+
+    view.removeAttribute('hidden');
+
+    requestReset();
+  }
+
+  function loader(xhr) {
+    try {
+      view.removeAttribute('hidden');
+
+      const obj = JSON.parse(xhr.response);
+
+      if (! obj.status) {
+        return error(xhr);
+      }
+
+      apiroutes = obj.data;
+
+      for (const method of methods) {
+        const sub = doc.createElement('option');
+        sub.value = method;
+        sub.innerText = method.toUpperCase();
+        method_select.appendChild(sub);
+      }
+      for (const endpoint in obj.data) {
+        const sub = doc.createElement('option');
+        sub.value = endpoint;
+        sub.innerText = endpoint;
+        endpoint_select.appendChild(sub);
+      }
+
+      view.setAttribute('data-render', '');
+
+      endpointChange();
+    } catch (err) {
+      console.error('loader', err);
+    }
+  }
+
+  function error(xhr) {
+    console.warn(xhr);
   }
 
   request_form.addEventListener('submit', requestSubmit);
@@ -577,7 +583,7 @@ function api_test() {
   if (view.hasAttribute('data-render')) {
     resume();
   } else {
-    request.then(load).catch(error);
+    request.then(loader).catch(error);
   }
 }
 
@@ -587,7 +593,7 @@ function nav(menu) {
   const nav_items = nav.querySelectorAll('a');
 
   function click(evt) {
-    evt && evt.preventDefault();
+    evt.preventDefault();
 
     route(this.href);
 
@@ -660,26 +666,25 @@ function route(href, title) {
 }
 
 
-let apiroutes;
-let navigation;
+var apiroutes;
+var navigation;
 
 function init() {
-  var tc_value = '1; ';
-  var tc_path = 'path=' + basepath + '; ';
-  var tc_secured = ''; //'secure; ';
-  var tc_expires = 'expires=' + new Date(new Date().getTime() + (60 * 1e3)).toGMTString() + '; ';
-
-  document.cookie = 'backend-test=' + tc_value + tc_path + tc_expires + tc_secured + 'samesite=strict';
-
-  if (document.cookie.indexOf('backend-test') == -1) {
-    return;
+  try {
+    sessionStorage.setItem('backendTest', '1');
+    if (! sessionStorage.getItem('backendTest')) {
+      throw 'Storage Error';
+    }
+    sessionStorage.removeItem('backendTest');
+  } catch (err) {
+    console.error(err);
   }
 
   function popState(evt) {
     route();
   }
 
-  if (document.cookie.indexOf('backend-sign') != -1) {
+  if (sessionStorage.getItem('backendSign')) {
     nav();
     route();
   } else {

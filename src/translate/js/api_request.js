@@ -5,17 +5,24 @@
  * @license MIT License
  */
 
-function api_request(method, endpoint, body) {
+function api_request(method, endpoint, route, body) {
   const xhr = new XMLHttpRequest();
-  let url = apipath + endpoint;
+  let url = apipath + '/';
 
-  if (url.substr(-1) != '/') {
-    url += '/';
-  }
+  if (method === 'get') {
+    url += endpoint ? '?body=' + endpoint : '';
+    url += endpoint && route ? '&call=' + route : '';
 
-  if (body && method === 'get') {
-    url += '?' + body;
-    body = null;
+    if (body) {
+      url += '&' + body;
+      body = null;
+    }
+  } else if (method === 'post') {
+    body = 'body=' + endpoint + route ? '&call=' + route : '' + '&' + body;
+  } else {
+    return new Promise(function(resolve, reject) {
+      reject('Request Error');
+    });
   }
 
   xhr.open(method, url);

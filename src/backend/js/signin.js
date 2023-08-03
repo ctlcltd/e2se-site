@@ -6,43 +6,56 @@
  */
 
 function signin() {
-  const view = document.getElementById('signin');
-  const form = document.getElementById('sign_login');
+  const doc = document;
+  const view = doc.getElementById('signin');
+  const form = doc.getElementById('sign_login');
   const placeholder = form.querySelector('.placeholder').cloneNode();
   const attempts_limit = 3;
-  let attempts = 0, err_log = null;
+  let attempts = 0;
+  let msg = null;
 
   function submit(evt) {
-    evt && evt.preventDefault();
+    evt.preventDefault();
 
     form.setAttribute('disabled', '');
     form.setAttribute('data-loading', '');
 
-    err_log && err_log.replaceWith(placeholder);
+    if (msg) {
+      msg.replaceWith(placeholder);
+    }
 
-    let body = [];
+    let obj = [];
 
     for (const el of this.elements) {
       if (el.tagName != 'FIELDSET' && el.tagName != 'BUTTON' && ! (el.type && el.type === 'button')) {
-        body.push(el.name + '=' + el.value);
+        obj.push(el.name + '=' + el.value);
       }
     }
 
-    if (body.length) {
-      body = body.join('&');
+    if (obj.length) {
+      obj = obj.join('&');
     } else {
       form.removeAttribute('disabled');
       form.removeAttribute('data-loading');
+      form.reset();
 
-      return error(null, 'Please enter your credentials.');
+      return message('Please enter your credentials.');
     }
 
-    const login = api_request('post', '', body);
+    const request = api_request('post', 'login', obj);
 
-    login.then(next).catch(error);
+    request.then(loader).catch(error);
   }
 
-  function next(xhr) {
+  function message(text) {
+    msg = doc.createElement('div');
+    msg.className = 'error';
+    msg.innerText = text;
+
+    form.querySelector('.placeholder').replaceWith(msg);
+  }
+
+  function loader(xhr) {
     form.reset();
 
     try {
@@ -54,14 +67,7 @@ function signin() {
 
         view.setAttribute('hidden', '');
 
-        var session_value = '1; ';
-        var session_path = 'path=' + basepath + '; ';
-        var session_secured = ''; //'secure; ';
-        var session_expires = 'expires=' + new Date(new Date().getTime() + (60 * 60 * 24 * 1e3)).toGMTString() + '; ';
-
-        console.log('signin()', 'next()', 'backend-sign=' + session_value + session_path + session_expires + session_secured + 'samesite=strict');
-
-        document.cookie = 'backend-sign=' + session_value + session_path + session_expires + session_secured + 'samesite=strict';
+        sessionStorage.setItem('backendSign', new Date().toJSON());
 
         return route(basepath + '/');
       } else {
@@ -69,32 +75,24 @@ function signin() {
           form.removeAttribute('disabled');
         }
 
-        throw 'Wrong credentials.';
+        message('Wrong credentials.');
       }
     } catch (err) {
       form.removeAttribute('data-loading');
+      form.reset();
+      
+      message('An error occurred.');
 
-      error(xhr, err);
+      console.error('loader', err);
     }
   }
 
-  function error(xhr, msg) {
+  function error(xhr) {
     form.reset();
-
-    if (xhr && ! msg && xhr.status) {
-      msg = 'An error occurred.';
-    }
-
-    err_log = document.createElement('div');
-    err_log.className = 'error';
-    err_log.innerText = msg;
-
-    form.querySelector('.placeholder').replaceWith(err_log);
-
-    console.error('signin()', 'error()', msg);
+    console.warn(xhr);
   }
 
-  document.cookie = 'backend-sign=; expires=' + new Date(0).toGMTString() + ', samesite=strict';
+  sessionStorage.clear();
 
   form.addEventListener('submit', submit);
 

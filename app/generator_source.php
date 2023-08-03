@@ -18,7 +18,11 @@ if (! defined('API')) {
 	exit;
 }
 
+$status = 502;
+$response = [];
+
 if (! defined('authorized')) {
+	$status = 401;
 	return;
 }
 
@@ -36,8 +40,7 @@ function decode_entities($str) {
 }
 
 
-$status = 502;
-$response = [];
+
 
 $read_db = isset($generator['read_db']) ? (bool) $generator['read_db'] : true;
 $write_db = isset($generator['write_db']) ? (bool) $generator['write_db'] : false;

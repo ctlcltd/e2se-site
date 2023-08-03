@@ -322,6 +322,10 @@ function edit_translate(uri, key, value) {
     try {
       const obj = JSON.parse(xhr.response);
 
+      if (! obj.status) {
+        return error(xhr);
+      }
+
       if (begin) {
         disambiguation(obj);
       }

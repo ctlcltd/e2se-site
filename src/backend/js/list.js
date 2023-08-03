@@ -6,14 +6,15 @@
  */
 
 function list(uri, key, value) {
-  const source = document.querySelector('.view-list');
+  const doc = document;
+  const source = doc.querySelector('.view-list');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-list');
   clone.cloned = true;
-  document.body.insertBefore(clone, source);
+  doc.body.insertBefore(clone, source);
 
-  const view = document.getElementById('view-list');
+  const view = doc.getElementById('view-list');
   const menu = view.querySelector('.nav.placeholder');
   const heading = view.querySelector('h2');
 
@@ -31,7 +32,7 @@ function list(uri, key, value) {
   const tbody = table.querySelector('tbody');
 
   function actionEdit(evt) {
-    evt && evt.preventDefault();
+    evt.preventDefault();
 
     if (evt.target.parentElement.classList.contains('action-edit') || evt.target.tagName == 'SPAN') {
       route(this.dataset.href);
@@ -41,7 +42,7 @@ function list(uri, key, value) {
   }
 
   function actionDelete(evt) {
-    evt && evt.preventDefault();
+    evt.preventDefault();
 
     if (window.confirm('Are you sure to delete this item?')) {
       route(this.href);
@@ -50,7 +51,7 @@ function list(uri, key, value) {
     return false;
   }
 
-  function render(data) {
+  function render_table(data) {
     var i = 0;
 
     let get_id;
@@ -65,28 +66,23 @@ function list(uri, key, value) {
       for (const field in data[idx]) {
         const row = data[idx][field];
 
-        //-TEMP
         if (! get_id && field.indexOf('_id') != -1) {
           get_id = '&' + field + '=' + row.toString();
         }
 
         if (i === 0) {
-          const th = document.createElement('th');
+          const th = doc.createElement('th');
           th.innerText = field;
           thead.firstElementChild.insertBefore(th, thead.firstElementChild.lastElementChild);
         }
-        //-TEMP
 
-        const td = document.createElement('td');
+        const td = doc.createElement('td');
         td.innerText = row ? row.toString() : '';
         tr.insertBefore(td, tr_ph);
       }
 
-      //-TEMP
       action_edit.href += get_id;
       action_delete.href += get_id;
-      //-TEMP
-
       action_delete.onclick = actionDelete;
 
       tr.setAttribute('data-href', action_edit.href);
@@ -101,29 +97,27 @@ function list(uri, key, value) {
     table.classList.remove('placeholder');
   }
 
-  function load(xhr) {
+  function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
 
       if (! obj.status) {
-        return error(obj.data);
+        return error(xhr);
       }
 
       if (obj.data) {
-        render(obj.data);
+        render_table(obj.data);
       }
     } catch (err) {
-      console.error('list()', 'load()', err);
-
-      error(null, err);
+      console.error('loader', err);
     }
   }
 
-  function error(xhr, err) {
-    console.error('list()', 'error()', xhr || '', err || '');
+  function error(xhr) {
+    console.warn(xhr);
   }
 
-  request.then(load).catch(error);
+  request.then(loader).catch(error);
 
   view.removeAttribute('hidden');
 }

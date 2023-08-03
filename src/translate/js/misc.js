@@ -30,7 +30,7 @@ function token() {
     let n;
     let i = Math.floor(Math.random() * 4);
     if (i == 3 && Math.random() * 100 < 50) {
-      i -= parseInt(Math.random() * 3);
+      i = parseInt(Math.random() * 3);
     }
     if (i == 3) {
       n = Math.floor(Math.random() * a[i].length);

@@ -28,3 +28,5 @@ define('db_dbname', 'database');
 define('db_username', 'username');
 define('db_password', 'password');
 define('db_table_prefix', '');
+
+// define('date_timezone', 'UTC');

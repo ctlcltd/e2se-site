@@ -46,6 +46,21 @@ function route_service($authorized, $request, $method) {
 	}
 }
 
+function route_userland($authorized, $request, $method) {
+	if (isset($request['call'])) {
+		if ($method == 'post' && in_array($request['call'], [ 'resume', 'history', 'submit' ])) {
+			require_once __DIR__ . '/' . 'userland.php';
+
+			return [
+				'status' => $status,
+				'response' => $response
+			];
+		}
+	}
+
+	return \api\deny();
+}
+
 function route_inspect($authorized, $request, $method) {
 	if ($authorized) {
 		try {
