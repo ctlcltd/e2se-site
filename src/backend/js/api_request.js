@@ -5,20 +5,30 @@
  * @license MIT License
  */
 
-function api_request(method, endpoint, route, body) {
+function api_request(method, endpoint, route, data) {
   const xhr = new XMLHttpRequest();
   let url = apipath + '/';
+  let body = null;
 
   if (method === 'get') {
-    url += endpoint ? '?body=' + endpoint : '';
-    url += endpoint && route ? '&call=' + route : '';
-
-    if (body) {
-      url += '&' + body;
-      body = null;
+    if (endpoint) {
+      url += '?data=' + endpoint;
+    }
+    if (route) {
+      url += endpoint ? '&' : '?' + '&call=' + route;
+    }
+    if (data) {
+      url += endpoint || route ? '&' : '?' + data;
     }
   } else if (method === 'post') {
-    body = 'body=' + endpoint + (route ? '&call=' + route : '') + '&' + body;
+    body = 'body=' + endpoint;
+
+    if (route) {
+      body += '&call=' + route;
+    }
+    if (data) {
+      body += '&' + data;
+    }
   } else {
     return new Promise(function(resolve, reject) {
       reject('Request Error');

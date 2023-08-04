@@ -51,26 +51,22 @@ function init() {
     if (el.id == 'switch-color') {
       let color = body.hasAttribute('data-color') ? body.getAttribute('data-color') : 'light';
 
-      if (color == 'light') {
-        color = 'dark';
-        el.innerText = 'switch to light';
-        body.setAttribute('data-color', 'dark');
-        body.classList.add('dark');
-        setTimeout(function() {
-          el.blur();
-        }, 100);
-      } else if (color == 'dark') {
-        color = 'light';
-        el.innerText = 'switch to dark';
-        body.setAttribute('data-color', 'light');
-        body.classList.remove('dark');
-        setTimeout(function() {
-          el.blur();
-        }, 100);
-      }
-
       if (color == 'light' || color == 'dark') {
-        localStorage.setItem('preferred-color', color);
+        const switched = color == 'light' ? 'dark' : 'light';
+        el.innerText = 'switch to ' + color;
+        body.setAttribute('data-color', switched);
+
+        if (color == 'light') {
+          body.classList.add('dark');
+        } else {
+          body.classList.remove('dark');
+        }
+
+        setTimeout(function() {
+          el.blur();
+        }, 100);
+
+        localStorage.setItem('preferred-color', switched);
       }
     }
   }
@@ -78,10 +74,6 @@ function init() {
   function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
-
-      if (! obj.status) {
-        return error(xhr);
-      }
 
       languages = obj;
 
@@ -100,7 +92,7 @@ function init() {
       if (storage) {
         const obj = JSON.parse(storage);
 
-        languages = storage;
+        languages = obj;
 
         route();
       } else {

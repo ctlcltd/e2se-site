@@ -40,6 +40,12 @@ function authentication($user_name, $user_password) {
 	return backend_username === $user_name && backend_password === $user_password;
 }
 
+function sanitize_uri(string $uri, int $limit = 16) {
+	$uri = substr($uri, 0, $limit);
+	$uri = preg_replace('/[^a-z0-9]/', '', $uri);
+	return $uri;
+}
+
 function db_connect() {
 	try {
 		$dsn = db_driver . ':dbname=' . db_dbname . ';host=' . db_host;
@@ -198,11 +204,10 @@ if ($authorized) {
 
 // route
 if (isset($request['body'])) {
-	$body = substr($request['body'], 0, 32);
-	$body = preg_replace('/[^a-z0-9]/', '', $body);
+	$request['body'] = sanitize_uri($request['body']);
 
-	if (! empty($body) && array_key_exists($body, routes)) {
-		$endpoint = $body;
+	if (! empty($request['body']) && array_key_exists($request['body'], routes)) {
+		$endpoint = $request['body'];
 	}
 }
 
@@ -243,6 +248,10 @@ if ($endpoint == 'login' && $method == 'post') {
 
 // call
 } else if (! empty($endpoint) && function_exists("\app\\route_{$endpoint}")) {
+	if (isset($request['call'])) {
+		$request['call'] = sanitize_uri($request['call']);
+	}
+
 	$called = call_user_func("\app\\route_{$endpoint}", $authorized, $request, $method);
 
 	if (isset($called['status']) && isset($called['response'])) {

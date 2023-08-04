@@ -63,7 +63,7 @@ function validate_language(array $content) {
 		return false;
 }
 
-function validate_translation(array $content) {
+function validate_translation(PDO $dbh, array $content) {
 	if (empty($content))
 		return false;
 
@@ -217,7 +217,7 @@ function ul_submit(PDO $dbh, array $request) {
 			throw new Exception('Not a valid language submit');
 		}
 
-		if (! validate_translation($data['translation'])) {
+		if (! validate_translation($dbh, $data['translation'])) {
 			throw new Exception('Not a valid translation submit');
 		}
 

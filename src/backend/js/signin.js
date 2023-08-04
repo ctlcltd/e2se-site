@@ -42,7 +42,7 @@ function signin() {
       return message('Please enter your credentials.');
     }
 
-    const request = api_request('post', 'login', obj);
+    const request = api_request('post', 'login', '', obj);
 
     request.then(loader).catch(error);
   }
@@ -67,7 +67,7 @@ function signin() {
 
         view.setAttribute('hidden', '');
 
-        sessionStorage.setItem('backendSign', new Date().toJSON());
+        sessionStorage.setItem('backend', new Date().toJSON());
 
         return route(basepath + '/');
       } else {

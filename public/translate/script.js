@@ -507,10 +507,6 @@ function edit_translate(uri, key, value) {
     try {
       const obj = JSON.parse(xhr.response);
 
-      if (! obj.status) {
-        return error(xhr);
-      }
-
       if (begin) {
         disambiguation(obj);
       }
@@ -524,7 +520,7 @@ function edit_translate(uri, key, value) {
   }
 
   function error(xhr) {
-    // console.warn(xhr);
+    console.warn(xhr);
   }
 
   function load() {
@@ -597,7 +593,7 @@ function add_language(uri, key, value) {
     'lang_dir': {'type': 'select', 'options': {'ltr': 'LTR (Left To Right)', 'rtl': 'RTL (Right To Left)'}, 'required': true},
     'lang_name': {'required': true},
     'lang_tr_name': {'required': true},
-    'lang_numerus': {'type': 'number'}
+    'lang_numerus': {'type': 'number', 'min': 1, 'max': 8, 'default': 1}
   };
 
   heading.innerText = 'Add new language';
@@ -661,16 +657,13 @@ function add_language(uri, key, value) {
 
   function submit_form(evt) {
     const form = this;
+    let pass;
 
     evt.preventDefault();
 
     if (! form.hasAttribute('novalidate') && 'checkValidity' in form && typeof form.checkValidity === 'function') {
-      if (form.checkValidity() === true) {
-        submit.call(form, evt);
-      }
+      pass = form.checkValidity();
     } else {
-      let pass = true;
-
       for (const input of form.elements) {
         if (input.nodeName == 'INPUT' || input.nodeName == 'TEXTAREA' || input.nodeName == 'SELECT') {
           let valid = false;
@@ -678,30 +671,37 @@ function add_language(uri, key, value) {
           if (input.nextElementSibling && input.nextElementSibling.classList.contains('novalid')) {
             input.nextElementSibling.remove();
           }
+
+          const type = input.getAttribute('type');
+          let pattern;
+
           if (input.hasAttribute('pattern')) {
-            const pattern = input.getAttribute('pattern');
+            pattern = input.getAttribute('pattern');
+          } else if (input.nodeName == 'INPUT' && (type == 'number' || type == 'range')) {
+            pattern = '^[0-9]$';
+          }
+
+          if (pattern && input.value != '') {
             const regex = new RegExp(pattern);
 
-            if (input.hasAttribute('required') && input == '') {
-              input.classList.add('novalid');
-            } else if (regex && regex.test(input.value) === true) {
-              input.classList.remove('novalid');
+            if (regex && regex.test(input.value) === true) {
               valid = true;
             } else {
-              input.classList.add('novalid');
               message = 'No valid input';
             }
-          } else if (input.hasAttribute('required')) {
-            if (input.value != '') {
-              input.classList.remove('novalid');
-              valid = true;
-            } else {
-              input.classList.add('novalid');
-            }
+          } else if (input.hasAttribute('required') && input.value != '') {
+            valid = true;
           } else {
             valid = true;
           }
-          if (! valid) {
+
+          if (valid) {
+            input.classList.remove('novalid');
+
+            pass = true;
+          } else {
+            input.classList.add('novalid');
+
             pass = false;
             const node = doc.createElement('span');
             node.className = 'novalid';
@@ -710,30 +710,40 @@ function add_language(uri, key, value) {
           }
         }
       }
+    }
 
-      if (pass) {
-        submit.call(form, evt);
-      }
+    if (pass) {
+      submit.call(form, evt);
     }
   }
 
   function reset_form(evt) {
     const form = this;
+    let novalidate;
 
     if (! form.hasAttribute('novalidate') && 'checkValidity' in form && typeof form.checkValidity === 'function') {
+      novalidate = false;
     } else {
       evt.preventDefault();
 
-      for (const input of form.elements) {
-        if (input.nodeName == 'INPUT' || input.nodeName == 'TEXTAREA' || input.nodeName == 'SELECT') {
+      novalidate = true;
+
+      form.reset();
+    }
+
+    for (const input of form.elements) {
+      if (input.nodeName == 'INPUT' || input.nodeName == 'TEXTAREA' || input.nodeName == 'SELECT') {
+        if (novalidate) {
           input.classList.remove('novalid');
           if (input.nextElementSibling && input.nextElementSibling.classList.contains('novalid')) {
             input.nextElementSibling.remove();
           }
         }
-      }
 
-      form.reset();
+        if (input._value) {
+          input.setAttribute('value', input._value);
+        }
+      }
     }
   }
 
@@ -743,7 +753,7 @@ function add_language(uri, key, value) {
     return label;
   }
 
-  function render_input(field, obj) {
+  function render_input(field, obj, value) {
     let input;
     if (obj) {
       if (typeof obj == 'object') {
@@ -763,14 +773,39 @@ function add_language(uri, key, value) {
         } else {
           input = doc.createElement('input');
           input.name = field;
-          input.setAttribute('type', 'text');
+          input.setAttribute('type', obj.type);
+
+          if (obj.min) {
+            input.setAttribute('min', parseInt(obj.min));
+          }
+          if (obj.max) {
+            input.setAttribute('max', parseInt(obj.max));
+          }
+          if (obj.step) {
+            input.setAttribute('step', parseInt(obj.step));
+          }
         }
 
+        if (obj.placeholder) {
+          input.setAttribute('placeholder', obj.placeholder);
+        }
         if (obj.pattern) {
           input.setAttribute('pattern', obj.pattern);
         }
         if (obj.required) {
           input.setAttribute('required', '');
+        }
+        if (obj.readonly) {
+          input.setAttribute('readonly', '');
+        }
+
+        if (value) {
+          input.value = input._value = value;
+        } else if (obj.default) {
+          input.value = input._value = obj.default;
+        }
+        if (input._value && obj.type != 'select' && obj.type != 'textarea') {
+          input.setAttribute('value', input._value);
         }
       }
     } else {
@@ -867,20 +902,30 @@ function token() {
 window.token = token;
 
 
-function api_request(method, endpoint, route, body) {
+function api_request(method, endpoint, route, data) {
   const xhr = new XMLHttpRequest();
   let url = apipath + '/';
+  let body = null;
 
   if (method === 'get') {
-    url += endpoint ? '?body=' + endpoint : '';
-    url += endpoint && route ? '&call=' + route : '';
-
-    if (body) {
-      url += '&' + body;
-      body = null;
+    if (endpoint) {
+      url += '?data=' + endpoint;
+    }
+    if (route) {
+      url += endpoint ? '&' : '?' + '&call=' + route;
+    }
+    if (data) {
+      url += endpoint || route ? '&' : '?' + data;
     }
   } else if (method === 'post') {
-    body = 'body=' + endpoint + route ? '&call=' + route : '' + '&' + body;
+    body = 'body=' + endpoint;
+
+    if (route) {
+      body += '&call=' + route;
+    }
+    if (data) {
+      body += '&' + data;
+    }
   } else {
     return new Promise(function(resolve, reject) {
       reject('Request Error');
@@ -1010,26 +1055,22 @@ function init() {
     if (el.id == 'switch-color') {
       let color = body.hasAttribute('data-color') ? body.getAttribute('data-color') : 'light';
 
-      if (color == 'light') {
-        color = 'dark';
-        el.innerText = 'switch to light';
-        body.setAttribute('data-color', 'dark');
-        body.classList.add('dark');
-        setTimeout(function() {
-          el.blur();
-        }, 100);
-      } else if (color == 'dark') {
-        color = 'light';
-        el.innerText = 'switch to dark';
-        body.setAttribute('data-color', 'light');
-        body.classList.remove('dark');
-        setTimeout(function() {
-          el.blur();
-        }, 100);
-      }
-
       if (color == 'light' || color == 'dark') {
-        localStorage.setItem('preferred-color', color);
+        const switched = color == 'light' ? 'dark' : 'light';
+        el.innerText = 'switch to ' + color;
+        body.setAttribute('data-color', switched);
+
+        if (color == 'light') {
+          body.classList.add('dark');
+        } else {
+          body.classList.remove('dark');
+        }
+
+        setTimeout(function() {
+          el.blur();
+        }, 100);
+
+        localStorage.setItem('preferred-color', switched);
       }
     }
   }
@@ -1037,10 +1078,6 @@ function init() {
   function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
-
-      if (! obj.status) {
-        return error(xhr);
-      }
 
       languages = obj;
 
@@ -1059,7 +1096,7 @@ function init() {
       if (storage) {
         const obj = JSON.parse(storage);
 
-        languages = storage;
+        languages = obj;
 
         route();
       } else {

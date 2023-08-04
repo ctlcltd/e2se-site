@@ -356,7 +356,7 @@ function signin() {
       return message('Please enter your credentials.');
     }
 
-    const request = api_request('post', 'login', obj);
+    const request = api_request('post', 'login', '', obj);
 
     request.then(loader).catch(error);
   }
@@ -381,7 +381,7 @@ function signin() {
 
         view.setAttribute('hidden', '');
 
-        sessionStorage.setItem('backendSign', new Date().toJSON());
+        sessionStorage.setItem('backend', new Date().toJSON());
 
         return route(basepath + '/');
       } else {
@@ -421,20 +421,30 @@ function signout() {
 }
 
 
-function api_request(method, endpoint, route, body) {
+function api_request(method, endpoint, route, data) {
   const xhr = new XMLHttpRequest();
   let url = apipath + '/';
+  let body = null;
 
   if (method === 'get') {
-    url += endpoint ? '?body=' + endpoint : '';
-    url += endpoint && route ? '&call=' + route : '';
-
-    if (body) {
-      url += '&' + body;
-      body = null;
+    if (endpoint) {
+      url += '?data=' + endpoint;
+    }
+    if (route) {
+      url += endpoint ? '&' : '?' + '&call=' + route;
+    }
+    if (data) {
+      url += endpoint || route ? '&' : '?' + data;
     }
   } else if (method === 'post') {
-    body = 'body=' + endpoint + (route ? '&call=' + route : '') + '&' + body;
+    body = 'body=' + endpoint;
+
+    if (route) {
+      body += '&call=' + route;
+    }
+    if (data) {
+      body += '&' + data;
+    }
   } else {
     return new Promise(function(resolve, reject) {
       reject('Request Error');
@@ -671,11 +681,11 @@ var navigation;
 
 function init() {
   try {
-    sessionStorage.setItem('backendTest', '1');
-    if (! sessionStorage.getItem('backendTest')) {
+    sessionStorage.setItem('_test', '1');
+    if (! sessionStorage.getItem('_test')) {
       throw 'Storage Error';
     }
-    sessionStorage.removeItem('backendTest');
+    sessionStorage.removeItem('_test');
   } catch (err) {
     console.error(err);
   }
@@ -684,7 +694,7 @@ function init() {
     route();
   }
 
-  if (sessionStorage.getItem('backendSign')) {
+  if (sessionStorage.getItem('backend')) {
     nav();
     route();
   } else {

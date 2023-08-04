@@ -39,7 +39,7 @@ function add_language(uri, key, value) {
     'lang_dir': {'type': 'select', 'options': {'ltr': 'LTR (Left To Right)', 'rtl': 'RTL (Right To Left)'}, 'required': true},
     'lang_name': {'required': true},
     'lang_tr_name': {'required': true},
-    'lang_numerus': {'type': 'number'}
+    'lang_numerus': {'type': 'number', 'min': 1, 'max': 8, 'default': 1}
   };
 
   heading.innerText = 'Add new language';
@@ -103,16 +103,13 @@ function add_language(uri, key, value) {
 
   function submit_form(evt) {
     const form = this;
+    let pass;
 
     evt.preventDefault();
 
     if (! form.hasAttribute('novalidate') && 'checkValidity' in form && typeof form.checkValidity === 'function') {
-      if (form.checkValidity() === true) {
-        submit.call(form, evt);
-      }
+      pass = form.checkValidity();
     } else {
-      let pass = true;
-
       for (const input of form.elements) {
         if (input.nodeName == 'INPUT' || input.nodeName == 'TEXTAREA' || input.nodeName == 'SELECT') {
           let valid = false;
@@ -120,30 +117,37 @@ function add_language(uri, key, value) {
           if (input.nextElementSibling && input.nextElementSibling.classList.contains('novalid')) {
             input.nextElementSibling.remove();
           }
+
+          const type = input.getAttribute('type');
+          let pattern;
+
           if (input.hasAttribute('pattern')) {
-            const pattern = input.getAttribute('pattern');
+            pattern = input.getAttribute('pattern');
+          } else if (input.nodeName == 'INPUT' && (type == 'number' || type == 'range')) {
+            pattern = '^[0-9]$';
+          }
+
+          if (pattern && input.value != '') {
             const regex = new RegExp(pattern);
 
-            if (input.hasAttribute('required') && input == '') {
-              input.classList.add('novalid');
-            } else if (regex && regex.test(input.value) === true) {
-              input.classList.remove('novalid');
+            if (regex && regex.test(input.value) === true) {
               valid = true;
             } else {
-              input.classList.add('novalid');
               message = 'No valid input';
             }
-          } else if (input.hasAttribute('required')) {
-            if (input.value != '') {
-              input.classList.remove('novalid');
-              valid = true;
-            } else {
-              input.classList.add('novalid');
-            }
+          } else if (input.hasAttribute('required') && input.value != '') {
+            valid = true;
           } else {
             valid = true;
           }
-          if (! valid) {
+
+          if (valid) {
+            input.classList.remove('novalid');
+
+            pass = true;
+          } else {
+            input.classList.add('novalid');
+
             pass = false;
             const node = doc.createElement('span');
             node.className = 'novalid';
@@ -152,30 +156,40 @@ function add_language(uri, key, value) {
           }
         }
       }
+    }
 
-      if (pass) {
-        submit.call(form, evt);
-      }
+    if (pass) {
+      submit.call(form, evt);
     }
   }
 
   function reset_form(evt) {
     const form = this;
+    let novalidate;
 
     if (! form.hasAttribute('novalidate') && 'checkValidity' in form && typeof form.checkValidity === 'function') {
+      novalidate = false;
     } else {
       evt.preventDefault();
 
-      for (const input of form.elements) {
-        if (input.nodeName == 'INPUT' || input.nodeName == 'TEXTAREA' || input.nodeName == 'SELECT') {
+      novalidate = true;
+
+      form.reset();
+    }
+
+    for (const input of form.elements) {
+      if (input.nodeName == 'INPUT' || input.nodeName == 'TEXTAREA' || input.nodeName == 'SELECT') {
+        if (novalidate) {
           input.classList.remove('novalid');
           if (input.nextElementSibling && input.nextElementSibling.classList.contains('novalid')) {
             input.nextElementSibling.remove();
           }
         }
-      }
 
-      form.reset();
+        if (input._value) {
+          input.setAttribute('value', input._value);
+        }
+      }
     }
   }
 
@@ -185,7 +199,7 @@ function add_language(uri, key, value) {
     return label;
   }
 
-  function render_input(field, obj) {
+  function render_input(field, obj, value) {
     let input;
     if (obj) {
       if (typeof obj == 'object') {
@@ -205,14 +219,39 @@ function add_language(uri, key, value) {
         } else {
           input = doc.createElement('input');
           input.name = field;
-          input.setAttribute('type', 'text');
+          input.setAttribute('type', obj.type);
+
+          if (obj.min) {
+            input.setAttribute('min', parseInt(obj.min));
+          }
+          if (obj.max) {
+            input.setAttribute('max', parseInt(obj.max));
+          }
+          if (obj.step) {
+            input.setAttribute('step', parseInt(obj.step));
+          }
         }
 
+        if (obj.placeholder) {
+          input.setAttribute('placeholder', obj.placeholder);
+        }
         if (obj.pattern) {
           input.setAttribute('pattern', obj.pattern);
         }
         if (obj.required) {
           input.setAttribute('required', '');
+        }
+        if (obj.readonly) {
+          input.setAttribute('readonly', '');
+        }
+
+        if (value) {
+          input.value = input._value = value;
+        } else if (obj.default) {
+          input.value = input._value = obj.default;
+        }
+        if (input._value && obj.type != 'select' && obj.type != 'textarea') {
+          input.setAttribute('value', input._value);
         }
       }
     } else {

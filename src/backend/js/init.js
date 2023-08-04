@@ -10,11 +10,11 @@ var navigation;
 
 function init() {
   try {
-    sessionStorage.setItem('backendTest', '1');
-    if (! sessionStorage.getItem('backendTest')) {
+    sessionStorage.setItem('_test', '1');
+    if (! sessionStorage.getItem('_test')) {
       throw 'Storage Error';
     }
-    sessionStorage.removeItem('backendTest');
+    sessionStorage.removeItem('_test');
   } catch (err) {
     console.error(err);
   }
@@ -23,7 +23,7 @@ function init() {
     route();
   }
 
-  if (sessionStorage.getItem('backendSign')) {
+  if (sessionStorage.getItem('backend')) {
     nav();
     route();
   } else {
