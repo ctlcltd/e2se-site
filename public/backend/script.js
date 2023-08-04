@@ -30,13 +30,13 @@ function main() {
 }
 
 
-function list(uri, key, value) {
+function list(uri, path, search) {
   const doc = document;
   const source = doc.querySelector('.view-list');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-list');
-  clone.cloned = true;
+  clone._cloned = true;
   doc.body.insertBefore(clone, source);
 
   const view = doc.getElementById('view-list');
@@ -48,9 +48,7 @@ function list(uri, key, value) {
   heading.innerText = uri + ' list';
   heading.className = '';
 
-  const endpoint = uri;
-  const method = 'get';
-  const request = api_request(method, endpoint);
+  const request = api_request('get', uri);
 
   const table = view.querySelector('table');
   const thead = table.querySelector('thead');
@@ -148,13 +146,13 @@ function list(uri, key, value) {
 }
 
 
-function edit(uri, key, value) {
+function edit(uri, path, search) {
   const doc = document;
   const source = doc.querySelector('.view-edit');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-edit');
-  clone.cloned = true;
+  clone._cloned = true;
   doc.body.insertBefore(clone, source);
 
   const view = doc.getElementById('view-edit');
@@ -166,9 +164,10 @@ function edit(uri, key, value) {
   heading.innerText = uri + ' edit';
   heading.className = '';
 
-  const endpoint = uri;
-  const body = value;
-  const request = api_request(method, endpoint, body);
+  // 
+  // { key: value } > 'key=value'
+  const body = search;
+  const request = api_request('get', uri, body);
 
   const form = view.querySelector('form');
   const fieldset_ph = form.firstElementChild;
@@ -224,13 +223,13 @@ function edit(uri, key, value) {
 }
 
 
-function service(uri, key, value) {
+function service(uri, path, search) {
   const doc = document;
   const source = doc.querySelector('.view-service');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-list');
-  clone.cloned = true;
+  clone._cloned = true;
   doc.body.insertBefore(clone, source);
 
   const view = doc.getElementById('view-list');
@@ -241,9 +240,7 @@ function service(uri, key, value) {
 
   heading.className = '';
 
-  const endpoint = uri;
-  const method = 'get';
-  const request = api_request(method, endpoint);
+  const request = api_request('get', uri);
 
   const table = view.querySelector('table');
   const thead = table.querySelector('thead');
@@ -634,24 +631,31 @@ function route(href, title) {
   const views = document.querySelectorAll('main');
   const history = href ? true : false;
 
-  href = href ? href : window.location.href;
-  title = title ? title : document.title;
+  href = href ?? window.location.href;
+  title = title ?? document.title;
 
   if (href.indexOf(basepath) === -1) {
     throw 'Wrong base path';
   }
 
   const url = href.replace(window.location.protocol + '//' + window.location.host, '');
-  const path = url.split('?');
-  const uri = path[1] && /&/.test(path[1]) == false ? path[1].split('&')[0] : '';
-  const qs = path[1] ? path[1].split('&') : '';
-  const key = qs[1] && qs[1] != uri ? qs[1] : '';
-  const value = qs[2] && qs[1] != uri ? qs[2] : '';
+  const root = url.split('?');
+  const uri = root[1] && /&/.test(root[1]) == false ? root[1].split('&')[0] : '';
+  const qs = root[1] ? root[1].split('&') : '';
+  const path = qs[1] && qs[1] != uri ? qs[1] : '';
+  let search = {};
 
-  console.info('route()', { path, uri, qs, key, value });
+  if (qs[2] && qs[1] != uri) {
+    for (let c in qs[2].slice(1)) {
+      c = c.split('=');
+      search[c[0]] = c[1];
+    }
+  }
+
+  console.info('route', { qs, uri, path, search });
 
   for (const view of views) {
-    if (view.cloned) {
+    if (view._cloned) {
       view.remove();
     }
 
@@ -661,10 +665,10 @@ function route(href, title) {
   if (uri != undefined && uri in routes === false) {
     throw 'Wrong URI Route';
   }
-  if (key != undefined && key in routes[uri] === false) {
-    throw 'Wrong QueryString Route';
+  if (path != undefined && path in routes[uri] === false) {
+    throw 'Wrong Path Route';
   }
-  if (typeof routes[uri][key] != 'function') {
+  if (typeof routes[uri][path] != 'function') {
     throw 'Callable Function';
   }
 
@@ -672,7 +676,7 @@ function route(href, title) {
     window.history.pushState('', title, url);
   }
 
-  routes[uri][key].call(this, uri, key, value);
+  routes[uri][path].call(this, uri, path, search);
 }
 
 

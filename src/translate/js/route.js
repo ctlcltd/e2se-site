@@ -18,16 +18,22 @@ function route(href, title) {
   }
 
   const url = href.replace(window.location.protocol + '//' + window.location.host, '');
-  const path = url.split('?');
-  const uri = path[0].split('/')[2];
-  const qs = path[1] ? path[1].split('&') : '';
-  const key = '';
-  const value = qs[0] ?? '';
+  const root = url.split('?');
+  const uri = root[0].split('/')[2];
+  const qs = root[1] ? root[1].split('&') : '';
+  let search = {};
 
-  // console.info('route()', { path, uri, qs, key, value });
+  if (qs) {
+    for (let c of qs) {
+      c = c.split('=');
+      search[c[0]] = c[1];
+    }
+  }
+
+  console.info('route', { qs, uri, search });
 
   for (const view of views) {
-    if (view.cloned) {
+    if (view._cloned) {
       view.remove();
     }
 
@@ -37,10 +43,7 @@ function route(href, title) {
   if (uri != undefined && uri in routes === false) {
     throw 'Wrong URI Route';
   }
-  if (key != undefined && key in routes[uri] === false) {
-    throw 'Wrong QueryString Route';
-  }
-  if (typeof routes[uri][key] != 'function') {
+  if (typeof routes[uri] != 'function') {
     throw 'No Function Route';
   }
 
@@ -51,5 +54,5 @@ function route(href, title) {
     window.history.pushState('', title, url);
   }
 
-  routes[uri][key].call(this, uri, key, value);
+  routes[uri].call(this, uri, search);
 }

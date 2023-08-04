@@ -83,10 +83,10 @@ function validate_user(string $content) {
 function token_generator() {
 	$w = 10;
 	$a = [
-		[ 48, 57 ],			// 0-9
-		[ 97, 122 ],		// a-z
-		[ 65, 90 ],			// A-Z
-		[ 36, 38, 61, 64 ]	// $,&,=,@
+		[ 48, 57 ],         // 0-9
+		[ 97, 122 ],        // a-z
+		[ 65, 90 ],         // A-Z
+		[ 36, 38, 61, 64 ]  // $,&,=,@
 	];
 	$str = '';
 
@@ -122,6 +122,21 @@ function get_saved_id(PDO $dbh, string $token, bool $check) {
 	}
 
 	return $saved_id;
+}
+
+function get_lang_guid(string $guid, bool $check) {
+	if (empty($guid)) {
+		throw new Exception('Not a valid language');
+	}
+
+	$sth = \api\db_select($dbh, 'e2se_langs', ['lang_id'], 'WHERE lang_guid=:lang_guid', ['lang_guid' => $guid]);
+	$lang_id = $sth->fetchColumn();
+
+	if ($check && ! $lang_id) {
+		throw new Exception('Not a valid language');
+	}
+
+	return $lang_id;
 }
 
 
@@ -209,12 +224,16 @@ function ul_submit(PDO $dbh, array $request) {
 
 		$data = json_decode($data, true);
 
-		if (! isset($data['language']) || ! isset($data['translation'])) {
+		if (! isset($data['translation']) && ! (isset($data['lang']) || isset($data['language']))) {
 			throw new Exception('Malformed data');
 		}
 
-		if (! validate_language($data['language'])) {
+		$lang_id = NULL;
+
+		if (isset($data['language']) && ! validate_language($data['language'])) {
 			throw new Exception('Not a valid language submit');
+		} else if (isset($data['lang'])) {
+			$lang_id = get_lang_guid($data['lang'], true);
 		}
 
 		if (! validate_translation($dbh, $data['translation'])) {
@@ -225,15 +244,20 @@ function ul_submit(PDO $dbh, array $request) {
 			throw new Exception('Not a valid user submit');
 		}
 
-		// 
-		$lang_id = -1;
+		$content = [];
+
+		if (isset($data['language'])) {
+			$content['language'] = $data['language'];
+		}
+		$content['translation'] = $data['translation'];
+
 
 		$saved = [
 			'saved_token' => $token,
 			'lang_id' => $lang_id,
 			'saved_user' => $data['user'],
 			'saved_time' => date('Y-m-d H:i:s'),
-			'saved_content' => json_encode([ 'language' => $data['language'], 'translation' => $data['translation'] ])
+			'saved_content' => json_encode($content)
 		];
 
 		$sth = \api\db_insert($dbh, 'e2se_saved', $saved);

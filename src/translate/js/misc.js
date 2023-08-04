@@ -5,7 +5,7 @@
  * @license MIT License
  */
 
-function styles() {
+function what_this() {
   const what_this_areas = document.querySelectorAll('.what-this-area');
   if (what_this_areas.length) {
     for (const el of what_this_areas) {
@@ -14,7 +14,38 @@ function styles() {
   }
 }
 
-styles();
+function send_translation() {
+  const doc = document;
+  const form = doc.querySelector('.submit-form');
+
+  function submit_form(evt) {
+    try {
+      let valid = false;
+      let storage;
+
+      for (const lang in languages) {
+        if (storage = localStorage.getItem(lang)) {
+          storage = JSON.parse(storage);
+          if (Object.keys(storage).length > 1) {
+            valid = true;
+            break;
+          }
+        }
+      }
+
+      if (! valid) {
+        throw 'Not a valid submit';
+      }
+
+      
+
+    } catch (err) {
+      console.error('submit_form', err);
+    }
+  }
+
+  form.addEventListener('submit', submit_form);
+}
 
 function token() {
   var w = 10;
@@ -44,4 +75,5 @@ function token() {
   return s;
 }
 
-window.token = token;
+what_this();
+send_translation();

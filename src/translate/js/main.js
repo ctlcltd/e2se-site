@@ -9,7 +9,7 @@ function main() {
   console.log('main()');
 
   const doc = document;
-  doc.title = 'E2SE Translations';
+  doc.title = 'Translations';
   doc.description.setAttribute('content', 'Translation website for e2 SAT Editor');
 
   const view = doc.getElementById('main');
@@ -35,12 +35,16 @@ function main() {
   }
 
   function allowSubmit() {
+    if (! doc.getElementById('ctrbar-submit-form').hasAttribute('hidden')) {
+      return;
+    }
     try {
       let storage;
+
       for (const lang in languages) {
         if (storage = localStorage.getItem(lang)) {
           storage = JSON.parse(storage);
-          if (storage.length > 1) {
+          if (Object.keys(storage).length > 1) {
             doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
             doc.querySelector('.submit-form').classList.remove('placeholder');
             break;

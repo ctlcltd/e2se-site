@@ -5,13 +5,13 @@
  * @license MIT License
  */
 
-function list(uri, key, value) {
+function list(uri, path, search) {
   const doc = document;
   const source = doc.querySelector('.view-list');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-list');
-  clone.cloned = true;
+  clone._cloned = true;
   doc.body.insertBefore(clone, source);
 
   const view = doc.getElementById('view-list');
@@ -23,9 +23,7 @@ function list(uri, key, value) {
   heading.innerText = uri + ' list';
   heading.className = '';
 
-  const endpoint = uri;
-  const method = 'get';
-  const request = api_request(method, endpoint);
+  const request = api_request('get', uri);
 
   const table = view.querySelector('table');
   const thead = table.querySelector('thead');

@@ -280,6 +280,7 @@ foreach ($ts_files as $ts_file) {
 					'ts_notes' => ! empty($notes['ts'][$guid]) ? $notes['ts'][$guid] : ''
 				];
 
+				// FIXME
 				$disambiguation[$key][] = $id;
 			} else {
 

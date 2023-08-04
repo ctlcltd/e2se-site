@@ -5,11 +5,11 @@
  * @license MIT License
  */
 
-function edit_translate(uri, key, value) {
+function edit_translate(uri, search) {
   console.log('edit_translate()');
 
   const doc = document;
-  doc.title = 'Edit - E2SE Translations';
+  doc.title = 'Edit - Translations';
   doc.description.setAttribute('content', 'Edit translation strings of a language');
 
   const page = doc.getElementById('page');
@@ -17,7 +17,7 @@ function edit_translate(uri, key, value) {
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'edit-translate');
-  clone.cloned = true;
+  clone._cloned = true;
   page.insertBefore(clone, source);
 
   const view = doc.getElementById('edit-translate');
@@ -35,8 +35,8 @@ function edit_translate(uri, key, value) {
   };
   const notes = {
     '0': 'No translate',
-    '1': 'Maybe wrong', // type: 1
-    '2': 'Maybe wrong', // type: 2
+    '1': 'Maybe wrong', // type I
+    '2': 'Maybe wrong', // type II
     '3': 'Maybe wrong',
     '6': 'System string | Maybe wrong',
     '8': 'Conventional | Maybe wrong'
@@ -48,10 +48,11 @@ function edit_translate(uri, key, value) {
 
   let disambigua = {};
 
-  const lang = value.split('=')[1];
+  const lang = search['lang'];
   let lang_code;
   let lang_type;
   let lang_dir;
+  let lang_user;
 
   const ts_src = 'src';
   const tr_src = lang + '-tr';
@@ -61,6 +62,7 @@ function edit_translate(uri, key, value) {
     lang_code = languages[lang]['code'].toString();
     lang_type = languages[lang]['type'].toString();
     lang_dir = languages[lang]['dir'].toString();
+    lang_user = languages[lang]['guid'] ? false : true;
 
     heading.innerText = 'Edit ' + languages[lang]['name'];
     heading.className = '';
@@ -151,6 +153,7 @@ function edit_translate(uri, key, value) {
           storage[guid] = el.textContent;
         }
         localStorage.setItem(tr_key, JSON.stringify(storage));
+        allowSubmit(evt);
       } catch (err) {
         console.error('textInput', err);
       }
@@ -158,35 +161,52 @@ function edit_translate(uri, key, value) {
   }
 
   function allowSubmit(evt) {
-    if (storage.length > 1) {
+    console.log('allowSubmit');
+    if (doc.getElementById('ctrbar-submit-form').hasAttribute('hidden') && Object.keys(storage).length > 1) {
       doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
       doc.querySelector('.submit-form').classList.remove('placeholder');
+    }
+
+    let edited = false;
+
+    for (const lang in languages) {
+      if (localStorage.getItem(lang)) {
+        edited = true;
+        break;
+      }
+    }
+
+    if (edited) {
+      if (window.confirm('You have a previous translation edit that was not sent.\nDo you want to discard the previous edit?')) {
+        // 
+      }
     }
   }
 
   function render_row(td, field, obj) {
     if (field == 'msg_tr') {
       if (td._element) {
-        const guid = td._parent.dataset.guid;
-        const input = td._element;
-        if (storage[guid]) {
-          input.srcText = obj.toString();
-          input.innerText = storage[guid];
-          input.dataset.changed = '';
-        } else {
-          input.innerText = input.srcText = obj.toString();
+        if (obj) {
+          const guid = td._parent.dataset.guid;
+          const input = td._element;
+          if (storage[guid]) {
+            input.srcText = obj.toString();
+            input.innerText = storage[guid];
+            input.dataset.changed = '';
+          } else {
+            input.innerText = input.srcText = obj.toString();
+          }
         }
       } else {
         const input = doc.createElement('span');
         input.className = 'input inline-edit';
         input.contentEditable = 'plaintext-only';
         input.dir = lang_dir;
-        // input.innerText = obj ? obj.toString() : '';
         td.append(input);
         td._element = input;
       }
     } else if (field == 'disambigua') {
-      if (! td._element && obj && typeof obj === 'object' && Object.keys(obj).length != 0) {
+      if (! td._element && obj) {
         const toggler = doc.createElement('button');
         toggler.className = 'toggler';
         toggler.type = 'button';
@@ -215,8 +235,8 @@ function edit_translate(uri, key, value) {
     } else if (field == 'status') {
       if (td._element) {
         const status = td._element;
-        if (obj !== '') {
-          let text;
+        let text;
+        if (obj) {
           if (obj == 0) {
             text = 'unfinished';
           } else if (obj == 1) {
@@ -224,9 +244,11 @@ function edit_translate(uri, key, value) {
           } else if (obj == 2) {
             text = 'vanished';
           }
-          status.className += ' status-' + text;
-          status.innerText = text;
+        } else {
+          text = 'unfinished';
         }
+        status.className += ' status-' + text;
+        status.innerText = text;
       } else {
         const status = doc.createElement('span');
         status.className = 'status';
@@ -240,9 +262,8 @@ function edit_translate(uri, key, value) {
         td.innerText = text.toString();
       }
     } else if (field == 'notes') {
-      if (obj) {
+      if (obj && (lang_user && obj == '0' || ! lang_user)) {
         if (obj in notes) {
-          // td._parent.setAttribute('data-notes', obj);
           td.innerText = notes[obj].replace(' | ', '\n');
         } else {
           td.innerText = obj.toString();
@@ -286,7 +307,9 @@ function edit_translate(uri, key, value) {
             td._parent = tr;
             render_row(td, field, obj);
             td.setAttribute('data-rendered', '');
-          } else if (field in data[idx]) {
+          } else if (field == 'msg_tr' && storage[guid]) {
+            render_row(td, field, storage[guid]);
+          } else if (field in data[idx] || lang_user) {
             render_row(td, field, obj);
           }
 
@@ -346,25 +369,24 @@ function edit_translate(uri, key, value) {
     table.setAttribute('data-loading', '');
     request.then(function(xhr) {
       loader(xhr, true);
-      if (true) {
+      if (! lang_user) {
         const request = source_request(tr_src);
         request.then(loader).catch(error);
       } else {
         loader(xhr);
       }
+      allowSubmit();
     }).catch(error);
 
     tbody.addEventListener('click', toggler);
     tbody.addEventListener('click', scrollToRow);
     tbody.addEventListener('input', textInput);
-    tbody.addEventListener('blur', allowSubmit);
   }
 
   function unload() {
     tbody.removeEventListener('click', toggler);
     tbody.removeEventListener('click', scrollToRow);
     tbody.removeEventListener('input', textInput);
-    tbody.removeEventListener('blur', allowSubmit);
     page.removeEventListener('unload', unload);
   }
 

@@ -5,13 +5,13 @@
  * @license MIT License
  */
 
-function edit(uri, key, value) {
+function edit(uri, path, search) {
   const doc = document;
   const source = doc.querySelector('.view-edit');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'view-edit');
-  clone.cloned = true;
+  clone._cloned = true;
   doc.body.insertBefore(clone, source);
 
   const view = doc.getElementById('view-edit');
@@ -23,9 +23,10 @@ function edit(uri, key, value) {
   heading.innerText = uri + ' edit';
   heading.className = '';
 
-  const endpoint = uri;
-  const body = value;
-  const request = api_request(method, endpoint, body);
+  // 
+  // { key: value } > 'key=value'
+  const body = search;
+  const request = api_request('get', uri, body);
 
   const form = view.querySelector('form');
   const fieldset_ph = form.firstElementChild;

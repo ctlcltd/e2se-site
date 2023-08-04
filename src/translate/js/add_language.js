@@ -5,11 +5,11 @@
  * @license MIT License
  */
 
-function add_language(uri, key, value) {
+function add_language(uri, search) {
   console.log('add_language()');
 
   const doc = document;
-  doc.title = 'Add language - E2SE Translations';
+  doc.title = 'Add language - Translations';
   doc.description.setAttribute('content', 'Add a new language to translations');
 
   const page = doc.getElementById('page');
@@ -17,7 +17,7 @@ function add_language(uri, key, value) {
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'add-language');
-  clone.cloned = true;
+  clone._cloned = true;
   page.insertBefore(clone, source);
 
   const view = doc.getElementById('add-language');
@@ -95,6 +95,8 @@ function add_language(uri, key, value) {
     try {
       storage[lang] = language;
       localStorage.setItem('languages', JSON.stringify(storage));
+      // FIXME
+      // Wrong base path
       route('');
     } catch (err) {
       console.error('submit', err);
