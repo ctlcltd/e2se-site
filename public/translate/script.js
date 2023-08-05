@@ -52,11 +52,12 @@ function main() {
     }
     try {
       let storage;
-
       for (const lang in languages) {
-        if (storage = localStorage.getItem(lang)) {
+        const tr_key = 'tr-' + lang;
+        if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
           if (Object.keys(storage).length > 1) {
+            doc.getElementById('ctrbar-add-language').setAttribute('hidden', '');
             doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
             doc.querySelector('.submit-form').classList.remove('placeholder');
             break;
@@ -198,11 +199,12 @@ function edit_translate(uri, search) {
   console.log('edit_translate()');
 
   const doc = document;
+  const body = doc.body;
   doc.title = 'Edit - Translations';
   doc.description.setAttribute('content', 'Edit translation strings of a language');
 
   const page = doc.getElementById('page');
-  const source = doc.querySelector('.view-list');
+  const source = doc.querySelector('.edit-translate');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'edit-translate');
@@ -342,35 +344,50 @@ function edit_translate(uri, search) {
           storage[guid] = el.textContent;
         }
         localStorage.setItem(tr_key, JSON.stringify(storage));
-        allowSubmit(evt);
       } catch (err) {
         console.error('textInput', err);
       }
     }
   }
 
+  const _textInput = debounce(textInput, false, 50);
+
   function allowSubmit(evt) {
     console.log('allowSubmit');
+
     if (doc.getElementById('ctrbar-submit-form').hasAttribute('hidden') && Object.keys(storage).length > 1) {
       doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
       doc.querySelector('.submit-form').classList.remove('placeholder');
-    }
-
-    let edited = false;
-
-    for (const lang in languages) {
-      if (localStorage.getItem(lang)) {
-        edited = true;
-        break;
-      }
-    }
-
-    if (edited) {
-      if (window.confirm('You have a previous translation edit that was not sent.\nDo you want to discard the previous edit?')) {
-        // 
+    } else {
+      try {
+        let storage;
+        for (const lang in languages) {
+          const tr_key = 'tr-' + lang;
+          if (storage = localStorage.getItem(tr_key)) {
+            storage = JSON.parse(storage);
+            if (Object.keys(storage).length > 1) {
+              message('edit-prev');
+              break;
+            }
+          }
+        }
+      } catch (err) {
+        console.error('allowSubmit', err);
       }
     }
   }
+
+  const _allowSubmit = debounce(allowSubmit, true);
+
+  function scrollBody(evt) {
+    if (window.pageYOffset > 300) {
+      body.classList.add('ndm');
+    } else {
+      body.classList.remove('ndm');
+    }
+  }
+
+  const _scrollBody = debounce(scrollBody, false);
 
   function render_row(td, field, obj) {
     if (field == 'msg_tr') {
@@ -530,17 +547,12 @@ function edit_translate(uri, search) {
     table.classList.remove('placeholder');
   }
 
-  function loader(xhr, begin) {
+  function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
 
-      if (begin) {
-        disambiguation(obj);
-      }
+      disambiguation(obj);
       render_table(obj);
-      if (! begin) {
-        allowSubmit();
-      }
     } catch (err) {
       console.error('loader', err);
     }
@@ -557,25 +569,33 @@ function edit_translate(uri, search) {
 
     table.setAttribute('data-loading', '');
     request.then(function(xhr) {
-      loader(xhr, true);
+      loader(xhr);
+
       if (! lang_user) {
         const request = source_request(tr_src);
         request.then(loader).catch(error);
       } else {
         loader(xhr);
       }
+
+      scrollBody();
       allowSubmit();
     }).catch(error);
 
     tbody.addEventListener('click', toggler);
     tbody.addEventListener('click', scrollToRow);
-    tbody.addEventListener('input', textInput);
+    tbody.addEventListener('input', _textInput);
+    tbody.addEventListener('input', _allowSubmit);
+    window.addEventListener('scroll', _scrollBody);
   }
 
   function unload() {
+    body.classList.remove('dnm');
     tbody.removeEventListener('click', toggler);
     tbody.removeEventListener('click', scrollToRow);
-    tbody.removeEventListener('input', textInput);
+    tbody.removeEventListener('input', _textInput);
+    tbody.removeEventListener('input', _allowSubmit);
+    window.removeEventListener('scroll', _scrollBody);
     page.removeEventListener('unload', unload);
   }
 
@@ -593,7 +613,7 @@ function add_language(uri, search) {
   doc.description.setAttribute('content', 'Add a new language to translations');
 
   const page = doc.getElementById('page');
-  const source = doc.querySelector('.view-edit');
+  const source = doc.querySelector('.add-language');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'add-language');
@@ -626,7 +646,26 @@ function add_language(uri, search) {
   heading.className = '';
 
   const form = view.querySelector('form');
-  const fieldset_lh = form.firstElementChild;
+
+  function allowSubmit(evt) {
+    console.log('allowSubmit');
+
+    try {
+      let storage;
+      for (const lang in languages) {
+        const tr_key = 'tr-' + lang;
+        if (storage = localStorage.getItem(tr_key)) {
+          storage = JSON.parse(storage);
+          if (Object.keys(storage).length > 1) {
+            message('edit-prev');
+            break;
+          }
+        }
+      }
+    } catch (err) {
+      console.error('allowSubmit', err);
+    }
+  }
 
   function submit(evt) {
     const form = this;
@@ -651,7 +690,8 @@ function add_language(uri, search) {
         throw 'Storage Error';
       }
       if (lang in storage) {
-        // 
+        message('lang-exists');
+
         throw 'Language already exists';
       }
     } catch (err) {
@@ -675,15 +715,22 @@ function add_language(uri, search) {
     try {
       storage[lang] = language;
       localStorage.setItem('languages', JSON.stringify(storage));
-      // FIXME
-      // Wrong base path
-      route('');
+
+      form.setAttribute('data-loading', '');
+
+      setTimeout(function() {
+        form.removeAttribute('data-loading');
+
+        // FIXME
+        // Wrong base path
+        route('');
+      }, 300);
     } catch (err) {
       console.error('submit', err);
     }
   }
 
-  function submit_form(evt) {
+  function submitForm(evt) {
     const form = this;
     let pass;
 
@@ -745,7 +792,7 @@ function add_language(uri, search) {
     }
   }
 
-  function reset_form(evt) {
+  function resetForm(evt) {
     const form = this;
     let novalidate;
 
@@ -860,12 +907,12 @@ function add_language(uri, search) {
 
       fieldset.append(div);
 
-      form.insertBefore(fieldset, fieldset_lh);
+      form.insertBefore(fieldset, form.firstElementChild);
     }
 
     form.classList.remove('placeholder');
-    form.addEventListener('submit', submit_form);
-    form.addEventListener('reset', reset_form);
+    form.addEventListener('submit', submitForm);
+    form.addEventListener('reset', resetForm);
   }
 
   function load() {
@@ -874,11 +921,12 @@ function add_language(uri, search) {
     doc.querySelector('.submit-form').classList.add('placeholder');
 
     render_form(data);
+    allowSubmit();
   }
 
   function unload() {
-    form.removeEventListener('submit', submit_form);
-    form.removeEventListener('reset', reset_form);
+    form.removeEventListener('submit', submitForm);
+    form.removeEventListener('reset', resetForm);
     page.removeEventListener('unload', unload);
   }
 
@@ -888,46 +936,264 @@ function add_language(uri, search) {
 }
 
 
-function what_this() {
-  const what_this_areas = document.querySelectorAll('.what-this-area');
-  if (what_this_areas.length) {
-    for (const el of what_this_areas) {
-      el.removeAttribute('hidden');
-    }
-  }
-}
-
 function send_translation() {
-  const doc = document;
-  const form = doc.querySelector('.submit-form');
+  console.log('send_translation()');
 
-  function submit_form(evt) {
+  const doc = document;
+  const page = doc.getElementById('page');
+
+  let form;
+
+  function submit() {
     try {
-      let valid = false;
       let storage;
+      let translation;
+      let lang_code;
+      let language;
+      let user;
 
       for (const lang in languages) {
         if (storage = localStorage.getItem(lang)) {
           storage = JSON.parse(storage);
-          if (Object.keys(storage).length > 1) {
-            valid = true;
+          if (Object.keys(storage).length > 2) {
+            translation = storage;
+            lang_code = lang;
             break;
           }
         }
       }
 
-      if (! valid) {
+      for (const lang in languages) {
+        storage = JSON.parse(storage);
+        for (const lang in storage) {
+          if (! lang.guid) {
+            if (lang.code === lang_code) {
+              language = lang;
+            } else {
+              translation = null;
+            }
+            break;
+          }
+        }
+      }
+
+      if (! translation) {
+        throw 'Not a valid translation submit';
+      }
+
+      let data;
+
+      if (language) {
+        data['language'] = language;
+      } else if (lang_code) {
+        data['lang'] = lang_code;
+      } else {
         throw 'Not a valid submit';
       }
 
-      
+      data['translation'] = translation;
 
+      const input = form.querySelector('[name="send_user"]');
+
+      if (input.value) {
+        data['user'] = input.value;
+      }
+
+      const token = token();
+      const request = api_request('post', 'userland', 'submit', 'token=' + token + '&data=' + JSON.stringify(data));
+
+      form.setAttribute('data-loading', '');
+
+      request.then(sent).catch(error);
     } catch (err) {
-      console.error('submit_form', err);
+      console.error('submit', err);
     }
   }
 
-  form.addEventListener('submit', submit_form);
+  function cancel(evt) {
+    const el = evt.target;
+
+    if (el.nodeName == 'BUTTON' && el.type == 'button') {
+      send_unlock();
+      route();
+    }
+  }
+
+  function sent(xhr) {
+    form.removeAttribute('data-loading');
+
+    try {
+      const obj = JSON.parse(xhr.response);
+
+      if (obj.token && validate_token(obj.token)) {
+        localStorage.clear();
+
+        localStorage.setItem('_time', new Date().toJSON());
+        localStorage.setItem('_token', 1);
+        localStorage.setItem('your-token', obj.token);
+
+        message('your-token');
+      } else {
+        throw 'An error occurred';
+      }
+    } catch (err) {
+      console.error('loader', err);
+    }
+
+    send_unlock();
+    route();
+  }
+
+  function error(xhr) {
+    console.warn(xhr);
+
+    form.removeAttribute('data-loading');
+
+    message('send-error');
+
+    send_unlock();
+  }
+
+  function allowSubmit(evt) {
+    try {
+      let storage;
+      for (const lang in languages) {
+        const tr_key = 'tr-' + lang;
+        if (storage = localStorage.getItem(tr_key)) {
+          storage = JSON.parse(storage);
+          if (Object.keys(storage).length > 1) {
+            page_view();
+            break;
+          }
+        }
+      }
+    } catch (err) {
+      console.error('allowSubmit', err);
+    }
+  }
+
+  function render_form() {
+    const fieldset = doc.createElement('fieldset');
+
+    const div = doc.createElement('div');
+
+    const label = document.createElement('label');
+    const input = document.createElement('input');
+    const describe = document.createElement('span');
+
+    label.innerText = 'User name';
+    input.name = 'send_user';
+    input.setAttribute('type', 'text');
+    describe.className += 'describe';
+    describe.innerHTML = '<p>You could add your name or acronym before submit.</p><p><em>Please do not enter sensitive informations.</em></p>';
+
+    div.append(label);
+    div.append(input);
+    div.append(describe);
+
+    fieldset.append(div);
+
+    form.insertBefore(fieldset, form.firstElementChild);
+
+    form.classList.remove('placeholder');
+    form.addEventListener('submit', submit);
+    form.addEventListener('click', cancel);
+  }
+
+  function page_view() {
+    page_reset();
+
+    doc.title = 'Send translation - Translations';
+    doc.description.setAttribute('content', 'Send translation strings');
+
+    const source = doc.querySelector('.send-translation');
+    const clone = source.cloneNode(true);
+    clone.removeAttribute('class');
+    clone.setAttribute('id', 'send-translation');
+    clone._cloned = true;
+    page.insertBefore(clone, source);
+
+    const view = doc.getElementById('send-translation');
+    const heading = view.querySelector('h2');
+
+    heading.innerText = 'Send translation';
+    heading.className = '';
+
+    form = view.querySelector('form');
+
+    load();
+    page.addEventListener('unload', unload);
+    view.removeAttribute('hidden');
+
+    send_lock();
+  }
+
+  function page_reset() {
+    const views = doc.querySelectorAll('main');
+
+    for (const view of views) {
+      if (view._cloned) {
+        view.remove();
+      }
+
+      view.setAttribute('hidden', '');
+    }
+  }
+
+  function load() {
+    doc.getElementById('ctrbar-add-language').setAttribute('hidden', '');
+    doc.getElementById('ctrbar-submit-form').setAttribute('hidden', '');
+    doc.querySelector('.submit-form').classList.add('placeholder');
+
+    render_form();
+  }
+
+  function unload() {
+    form.removeEventListener('submit', submit);
+    page.removeEventListener('unload', unload);
+  }
+
+  allowSubmit();
+}
+
+function form_submit() {
+  const form = document.querySelector('.submit-form');
+
+  function submit(evt) {
+    const el = evt.target;
+
+    if (el.nodeName == 'BUTTON' && el.type == 'button') {
+      send_translation();
+    }
+  }
+
+  form.addEventListener('click', submit);
+}
+
+function send_lock() {
+  try {
+    localStorage.setItem('_lock', 'send');
+  } catch (err) {
+    console.error('send_lock', err);
+  }
+}
+
+function send_unlock() {
+  try {
+    localStorage.removeItem('_lock');
+  } catch (err) {
+    console.error('send_unlock', err);
+  }
+}
+
+function send_resume() {
+  try {
+    if (localStorage.getItem('_lock') == 'send') {
+      window.addEventListener('load', send_translation);
+    }
+  } catch (err) {
+    console.error('send_resume', err);
+  }
 }
 
 function token() {
@@ -958,8 +1224,249 @@ function token() {
   return s;
 }
 
+form_submit();
+send_resume();
+
+
+function resume_translation() {
+  const doc = document;
+  const page = doc.getElementById('page');
+
+  const request = api_request('post', 'userland', 'token=' + token);
+
+  function loader(xhr) {
+    try {
+      const obj = JSON.parse(xhr.response);
+
+      if (obj.data) {
+        const data = obj.data;
+
+        // 
+
+        if (data.ulang) {
+
+        }
+        if (data.utr) {
+
+        }
+      } else {
+        throw 'An error occurred';
+      }
+
+      localStorage.setItem('languages', JSON.stringify(languages));
+    } catch (err) {
+      console.error('loader', err);
+    }
+  }
+
+  function error(xhr) {
+    console.warn(xhr);
+  }
+
+  page.setAttribute('data-loading', '');
+  request.then(loader).catch(error);
+  page.removeAttribute('data-loading');
+}
+
+function form_token() {
+  const doc = document;
+  const form = doc.querySelector('.token-form');
+  const field = form.querySelector('#token');
+
+  function textInput(evt) {
+    const el = evt.target;
+
+    if (el.value.length === 10 && validate_token(el.value)) {
+      el.setAttribute('disabled', '');
+      resume_translation();
+      el.removeAttribute('disabled');
+    }
+  }
+
+  const _textInput = debounce(textInput, false, 50);
+
+  field.addEventListener('input', _textInput);
+}
+
+function your_token() {
+  try {
+    if (localStorage.getItem('_token')) {
+      message('your-token');
+    }
+  } catch (err) {
+    console.error('your_token', err);
+  }
+}
+
+function token_box_html() {
+  try {
+    const token = localStorage.getItem('your-token');
+
+    if (! validate_token(token)) {
+      throw 'Not a valid token';
+    }
+
+    // 
+    return '<p>Your token</p><div><input type="text" id="your-token" value="' + token + '" readonly></div>';
+  } catch (err) {
+    console.error('token_box_html', err);
+  }
+}
+
+function token_box_dismiss() {
+  try {
+    localStorage.removeItem('_token');
+  } catch (err) {
+    console.error('token_box_dismiss', err);
+  }
+}
+
+function validate_token(token) {
+  return /[a-zA-Z$&=@]{10}/g.test(token);
+}
+
+
+function message(id, text, type, buttons) {
+  const doc = document;
+  const box = doc.createElement('div');
+
+  function close() {
+    doc.body.classList.remove('backdrop');
+    msg = null;
+
+    setTimeout(function() {
+      box.remove();
+    }, 150);
+  }
+
+  if (id) {
+    let html;
+
+    if (id == 'storage') {
+      html = '<p><b>WebStorage is required</b></p><p>localStorage seems to be unavailable<br>Please reload your browser and try again</p>';
+    } else if (id == 'lang-exists') {
+      type = 0;
+      html = '<p>Language already exists</p>';
+    } else if (id == 'send-error') {
+      type = 0;
+      html = '<p><b>An error occurred<b></p><p>Please try again</p>';
+    } else if (id == 'edit-prev') {
+      type = 2;
+      html = '<p>You have a previous translation edit that was not sent</p><p><b>Do you want to submit or discard the previous edit?</b></p>';
+      buttons = [
+        {'label': 'Submit', 'class': 'primary', 'callback': send_translation},
+        {'label': 'Discard', 'class': 'secondary tiny', 'callback': discard_edit},
+        {'label': 'Cancel', 'class': 'tiny', 'callback': close}
+      ];
+    } else if (id == 'your-token') {
+      type = 1;
+      html = token_box_html();
+      buttons = [
+        {'label': 'Dismiss', 'class': 'secondary tiny', 'callback': token_box_dismiss}
+      ];
+    }
+
+    box.innerHTML = html;
+  } else if (text) {
+    box.innerText = text;
+  } else {
+    return;
+  }
+
+  box.className = 'message-box';
+  if (type === 0) {
+    box.className += ' error';
+  } else if (type === 1) {
+    box.className += ' success';
+  } else if (type === 2) {
+    box.className += ' ask';
+  }
+
+  if (type != undefined) {
+    doc.body.classList.add('backdrop');
+    box.className += ' top';
+    btns = [
+      {'label': 'OK', 'callback': close}
+    ];
+  }
+
+  if (buttons && typeof buttons == 'object') {
+    const btns = doc.createElement('div');
+    btns.className = 'feedback';
+
+    for (const btn of buttons) {
+      const button = doc.createElement('button');
+      if (btn.class) {
+        button.className += btn.class;
+      }
+      button.innerText = btn.label;
+      if (btn.callback && typeof btn.callback == 'function') {
+        button.onclick = function(evt) {
+          close();
+          btn.callback.call(this, evt);
+        };
+      }
+      btns.append(button);
+    }
+
+    box.append(btns);
+  }
+
+  if (msg) {
+    msg.replaceWith(box);
+  } else {
+    doc.body.append(box);
+  }
+  msg = box;
+}
+
+function what_this() {
+  const what_this_areas = document.querySelectorAll('.what-this-area');
+  if (what_this_areas.length) {
+    for (const el of what_this_areas) {
+      el.removeAttribute('hidden');
+    }
+  }
+}
+
+function discard_edit() {
+  try {
+    for (const lang in languages) {
+      if (localStorage.getItem(lang)) {
+        localStorage.removeItem(lang);
+      }
+    }
+  } catch (err) {
+    console.error('discard_edit', err);
+  }
+}
+
+function debounce(fn, once, timeout) {
+  timeout = timeout ?? 300;
+  let timer;
+
+  if (once) {
+    return (function() {
+      if (! timer) {
+        fn.apply(this, arguments);
+      }
+      clearTimeout(timer);
+      timer = setTimeout(function() {
+        timer = undefined;
+      }, timeout);
+    });
+  } else {
+    return (function() {
+      const args = arguments;
+      clearTimeout(timer);
+      timer = setTimeout(function() {
+        fn.apply(this, args);
+      }, timeout);
+    });
+  }
+}
+
 what_this();
-send_translation();
 
 
 function api_request(method, endpoint, route, data) {
@@ -1073,6 +1580,7 @@ function route(href, title) {
 
 
 var languages;
+var msg;
 
 function init() {
   const doc = document;
@@ -1090,10 +1598,7 @@ function init() {
     } catch (err) {
       console.error('requiredStorage', err);
 
-      const box = doc.createElement('div');
-      box.className = 'message-box';
-      box.innerHTML = '<p><b>WebStorage is required</b></p><p>localStorage seems to be unavailable<br>Please reload your browser and try again</p>';
-      body.append(box);
+      message('storage');
     }
   }
 
@@ -1138,13 +1643,27 @@ function init() {
     }
   }
 
+  function view() {
+    try {
+      if (! localStorage.getItem('_lock')) {
+        route();
+      }
+
+      your_token();
+    } catch (err) {
+      console.error('view', err);
+
+      route();
+    }
+  }
+
   function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
 
       languages = obj;
 
-      route();
+      view();
 
       localStorage.setItem('languages', JSON.stringify(languages));
     } catch (err) {
@@ -1161,7 +1680,7 @@ function init() {
 
         languages = obj;
 
-        route();
+        view();
       } else {
         request.then(loader).catch(error);
       }

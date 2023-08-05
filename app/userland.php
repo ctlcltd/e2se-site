@@ -247,9 +247,9 @@ function ul_submit(PDO $dbh, array $request) {
 		$content = [];
 
 		if (isset($data['language'])) {
-			$content['language'] = $data['language'];
+			$content['ulang'] = $data['language'];
 		}
-		$content['translation'] = $data['translation'];
+		$content['utr'] = $data['translation'];
 
 
 		$saved = [

@@ -6,6 +6,7 @@
  */
 
 var languages;
+var msg;
 
 function init() {
   const doc = document;
@@ -23,10 +24,7 @@ function init() {
     } catch (err) {
       console.error('requiredStorage', err);
 
-      const box = doc.createElement('div');
-      box.className = 'message-box';
-      box.innerHTML = '<p><b>WebStorage is required</b></p><p>localStorage seems to be unavailable<br>Please reload your browser and try again</p>';
-      body.append(box);
+      message('storage');
     }
   }
 
@@ -71,13 +69,27 @@ function init() {
     }
   }
 
+  function view() {
+    try {
+      if (! localStorage.getItem('_lock')) {
+        route();
+      }
+
+      your_token();
+    } catch (err) {
+      console.error('view', err);
+
+      route();
+    }
+  }
+
   function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
 
       languages = obj;
 
-      route();
+      view();
 
       localStorage.setItem('languages', JSON.stringify(languages));
     } catch (err) {
@@ -94,7 +106,7 @@ function init() {
 
         languages = obj;
 
-        route();
+        view();
       } else {
         request.then(loader).catch(error);
       }

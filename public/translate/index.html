@@ -11,17 +11,14 @@
 <div id="head" class="ctrbar ctrbar-head">
   <div id="ctrbar-token-form">
     <form class="token-form" action="?">
-      <fieldset>
-        <label for="token" hidden>Translation token</label>
-        <!--<input id="token" type="text" placeholder="Your token" readonly>-->
-        <input id="token" type="text" placeholder="I have a token">
-        <span class="what-this"></span>
-        <div class="what-this-area what-this--token" hidden>
-          <h5>Translation token</h5>
-          <p>Translation token is used to resume a previous submitted translation edit.</p>
-          <p>Token is auto-generated on every submission.</p>
-        </div>
-      </fieldset>
+      <label for="token" hidden>Translation token</label>
+      <input id="token" type="text" placeholder="I have a token">
+      <span class="what-this"></span>
+      <div class="what-this-area what-this--token" hidden>
+        <h5>Translation token</h5>
+        <p>Translation token is used to resume a previous submitted translation edit.</p>
+        <p>Token is auto-generated on every submission.</p>
+      </div>
     </form>
   </div>
   <div id="ctrbar-switch-color">
@@ -35,9 +32,9 @@
       <p>Welcome to <strong>e2 SAT Editor translation website</strong>.</p>
     </div>
     <div>
-      <h2>Language List</h2>
+      <h2>Language list</h2>
       <div class="table">
-        <table class="placeholder view-list_table">
+        <table class="placeholder main-table">
           <thead data-rendered>
             <tr>
               <th>Language</th>
@@ -63,11 +60,11 @@
       </div>
     </div>
   </main>
-  <main class="view-list" hidden>
+  <main class="edit-translate" hidden>
     <div>
-      <h2 class="placeholder">List</h2>
+      <h2 class="placeholder">Edit language</h2>
       <div class="table">
-        <table class="placeholder view-list_table">
+        <table class="placeholder edit-table">
           <thead data-rendered>
             <tr>
               <th>Node</th>
@@ -89,13 +86,24 @@
       </div>
     </div>
   </main>
-  <main class="view-edit" hidden>
+  <main class="add-language" hidden>
     <div>
-      <h2 class="placeholder">Edit</h2>
-      <form class="placeholder view-edit_form" action="?">
+      <h2 class="placeholder">Add language</h2>
+      <form class="placeholder add-form" action="?">
         <fieldset>
-          <button type="submit">Save</button>
+          <button type="submit">Submit</button>
           <button type="reset" class="tiny secondary">Reset</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+  <main class="send-translation" hidden>
+    <div>
+      <h2 class="placeholder">Send translation</h2>
+      <form class="placeholder send-form" action="?">
+        <fieldset>
+          <button type="submit" class="big">Submit Translation</button>
+          <button type="button">Cancel</button>
         </fieldset>
       </form>
     </div>
@@ -107,10 +115,8 @@
   </div>
   <div id="ctrbar-submit-form" hidden>
     <form class="placeholder submit-form" action="?">
-      <fieldset>
-        <p>Don't forget to submit your translation edit</p>
-        <button type="button" class="big primary submit">Submit</button>
-      </fieldset>
+      <p>Don't forget to submit your translation edit</p>
+      <button type="button" class="big primary submit">Submit</button>
     </form>
   </div>
 </div>

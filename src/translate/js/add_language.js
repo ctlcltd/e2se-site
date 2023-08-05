@@ -13,7 +13,7 @@ function add_language(uri, search) {
   doc.description.setAttribute('content', 'Add a new language to translations');
 
   const page = doc.getElementById('page');
-  const source = doc.querySelector('.view-edit');
+  const source = doc.querySelector('.add-language');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'add-language');
@@ -46,7 +46,26 @@ function add_language(uri, search) {
   heading.className = '';
 
   const form = view.querySelector('form');
-  const fieldset_lh = form.firstElementChild;
+
+  function allowSubmit(evt) {
+    console.log('allowSubmit');
+
+    try {
+      let storage;
+      for (const lang in languages) {
+        const tr_key = 'tr-' + lang;
+        if (storage = localStorage.getItem(tr_key)) {
+          storage = JSON.parse(storage);
+          if (Object.keys(storage).length > 1) {
+            message('edit-prev');
+            break;
+          }
+        }
+      }
+    } catch (err) {
+      console.error('allowSubmit', err);
+    }
+  }
 
   function submit(evt) {
     const form = this;
@@ -71,7 +90,8 @@ function add_language(uri, search) {
         throw 'Storage Error';
       }
       if (lang in storage) {
-        // 
+        message('lang-exists');
+
         throw 'Language already exists';
       }
     } catch (err) {
@@ -95,15 +115,22 @@ function add_language(uri, search) {
     try {
       storage[lang] = language;
       localStorage.setItem('languages', JSON.stringify(storage));
-      // FIXME
-      // Wrong base path
-      route('');
+
+      form.setAttribute('data-loading', '');
+
+      setTimeout(function() {
+        form.removeAttribute('data-loading');
+
+        // FIXME
+        // Wrong base path
+        route('');
+      }, 300);
     } catch (err) {
       console.error('submit', err);
     }
   }
 
-  function submit_form(evt) {
+  function submitForm(evt) {
     const form = this;
     let pass;
 
@@ -165,7 +192,7 @@ function add_language(uri, search) {
     }
   }
 
-  function reset_form(evt) {
+  function resetForm(evt) {
     const form = this;
     let novalidate;
 
@@ -280,12 +307,12 @@ function add_language(uri, search) {
 
       fieldset.append(div);
 
-      form.insertBefore(fieldset, fieldset_lh);
+      form.insertBefore(fieldset, form.firstElementChild);
     }
 
     form.classList.remove('placeholder');
-    form.addEventListener('submit', submit_form);
-    form.addEventListener('reset', reset_form);
+    form.addEventListener('submit', submitForm);
+    form.addEventListener('reset', resetForm);
   }
 
   function load() {
@@ -294,11 +321,12 @@ function add_language(uri, search) {
     doc.querySelector('.submit-form').classList.add('placeholder');
 
     render_form(data);
+    allowSubmit();
   }
 
   function unload() {
-    form.removeEventListener('submit', submit_form);
-    form.removeEventListener('reset', reset_form);
+    form.removeEventListener('submit', submitForm);
+    form.removeEventListener('reset', resetForm);
     page.removeEventListener('unload', unload);
   }
 

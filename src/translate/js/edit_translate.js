@@ -9,11 +9,12 @@ function edit_translate(uri, search) {
   console.log('edit_translate()');
 
   const doc = document;
+  const body = doc.body;
   doc.title = 'Edit - Translations';
   doc.description.setAttribute('content', 'Edit translation strings of a language');
 
   const page = doc.getElementById('page');
-  const source = doc.querySelector('.view-list');
+  const source = doc.querySelector('.edit-translate');
   const clone = source.cloneNode(true);
   clone.removeAttribute('class');
   clone.setAttribute('id', 'edit-translate');
@@ -153,35 +154,50 @@ function edit_translate(uri, search) {
           storage[guid] = el.textContent;
         }
         localStorage.setItem(tr_key, JSON.stringify(storage));
-        allowSubmit(evt);
       } catch (err) {
         console.error('textInput', err);
       }
     }
   }
 
+  const _textInput = debounce(textInput, false, 50);
+
   function allowSubmit(evt) {
     console.log('allowSubmit');
+
     if (doc.getElementById('ctrbar-submit-form').hasAttribute('hidden') && Object.keys(storage).length > 1) {
       doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
       doc.querySelector('.submit-form').classList.remove('placeholder');
-    }
-
-    let edited = false;
-
-    for (const lang in languages) {
-      if (localStorage.getItem(lang)) {
-        edited = true;
-        break;
-      }
-    }
-
-    if (edited) {
-      if (window.confirm('You have a previous translation edit that was not sent.\nDo you want to discard the previous edit?')) {
-        // 
+    } else {
+      try {
+        let storage;
+        for (const lang in languages) {
+          const tr_key = 'tr-' + lang;
+          if (storage = localStorage.getItem(tr_key)) {
+            storage = JSON.parse(storage);
+            if (Object.keys(storage).length > 1) {
+              message('edit-prev');
+              break;
+            }
+          }
+        }
+      } catch (err) {
+        console.error('allowSubmit', err);
       }
     }
   }
+
+  const _allowSubmit = debounce(allowSubmit, true);
+
+  function scrollBody(evt) {
+    if (window.pageYOffset > 300) {
+      body.classList.add('ndm');
+    } else {
+      body.classList.remove('ndm');
+    }
+  }
+
+  const _scrollBody = debounce(scrollBody, false);
 
   function render_row(td, field, obj) {
     if (field == 'msg_tr') {
@@ -341,17 +357,12 @@ function edit_translate(uri, search) {
     table.classList.remove('placeholder');
   }
 
-  function loader(xhr, begin) {
+  function loader(xhr) {
     try {
       const obj = JSON.parse(xhr.response);
 
-      if (begin) {
-        disambiguation(obj);
-      }
+      disambiguation(obj);
       render_table(obj);
-      if (! begin) {
-        allowSubmit();
-      }
     } catch (err) {
       console.error('loader', err);
     }
@@ -368,25 +379,33 @@ function edit_translate(uri, search) {
 
     table.setAttribute('data-loading', '');
     request.then(function(xhr) {
-      loader(xhr, true);
+      loader(xhr);
+
       if (! lang_user) {
         const request = source_request(tr_src);
         request.then(loader).catch(error);
       } else {
         loader(xhr);
       }
+
+      scrollBody();
       allowSubmit();
     }).catch(error);
 
     tbody.addEventListener('click', toggler);
     tbody.addEventListener('click', scrollToRow);
-    tbody.addEventListener('input', textInput);
+    tbody.addEventListener('input', _textInput);
+    tbody.addEventListener('input', _allowSubmit);
+    window.addEventListener('scroll', _scrollBody);
   }
 
   function unload() {
+    body.classList.remove('dnm');
     tbody.removeEventListener('click', toggler);
     tbody.removeEventListener('click', scrollToRow);
-    tbody.removeEventListener('input', textInput);
+    tbody.removeEventListener('input', _textInput);
+    tbody.removeEventListener('input', _allowSubmit);
+    window.removeEventListener('scroll', _scrollBody);
     page.removeEventListener('unload', unload);
   }
 

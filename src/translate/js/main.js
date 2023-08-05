@@ -40,11 +40,12 @@ function main() {
     }
     try {
       let storage;
-
       for (const lang in languages) {
-        if (storage = localStorage.getItem(lang)) {
+        const tr_key = 'tr-' + lang;
+        if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
           if (Object.keys(storage).length > 1) {
+            doc.getElementById('ctrbar-add-language').setAttribute('hidden', '');
             doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
             doc.querySelector('.submit-form').classList.remove('placeholder');
             break;
