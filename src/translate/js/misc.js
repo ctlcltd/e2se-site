@@ -24,22 +24,22 @@ function message(id, text, type, buttons) {
     if (id == 'storage') {
       html = '<p><b>WebStorage is required</b></p><p>localStorage seems to be unavailable<br>Please reload your browser and try again</p>';
     } else if (id == 'lang-exists') {
-      type = 0;
       html = '<p>Language already exists</p>';
-    } else if (id == 'send-error') {
       type = 0;
+    } else if (id == 'request-error') {
       html = '<p><b>An error occurred<b></p><p>Please try again</p>';
+      type = 0;
     } else if (id == 'edit-prev') {
-      type = 2;
       html = '<p>You have a previous translation edit that was not sent</p><p><b>Do you want to submit or discard the previous edit?</b></p>';
+      type = 2;
       buttons = [
         {'label': 'Submit', 'class': 'primary', 'callback': send_translation},
         {'label': 'Discard', 'class': 'secondary tiny', 'callback': discard_edit},
         {'label': 'Cancel', 'class': 'tiny', 'callback': close}
       ];
     } else if (id == 'your-token') {
+      html = token_box_html(type);
       type = 1;
-      html = token_box_html();
       buttons = [
         {'label': 'Dismiss', 'class': 'secondary tiny', 'callback': token_box_dismiss}
       ];
@@ -111,9 +111,19 @@ function what_this() {
 function discard_edit() {
   try {
     for (const lang in languages) {
-      if (localStorage.getItem(lang)) {
-        localStorage.removeItem(lang);
+      const tr_key = 'tr-' + lang;
+      if (localStorage.getItem(tr_key)) {
+        localStorage.removeItem(tr_key);
       }
+    }
+
+    if (localStorage.getItem('_lock') == 'resume') {
+      const token = localStorage.getItem('_resume');
+
+      resume_translation(token);
+
+      localStorage.removeItem('_lock');
+      localStorage.removeItem('_resume');
     }
   } catch (err) {
     console.error('discard_edit', err);

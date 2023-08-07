@@ -71,8 +71,9 @@ function init() {
 
   function view() {
     try {
-      if (! localStorage.getItem('_lock')) {
+      if (localStorage.getItem('_lock') != 'send') {
         route();
+        localStorage.removeItem('_lock');
       }
 
       your_token();

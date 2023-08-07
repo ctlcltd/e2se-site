@@ -50,6 +50,10 @@
     &:hover { box-shadow: 0 0 .11rem $input-shadow-color-hover; }
     &:focus { box-shadow: 0 .022rem .18rem $input-shadow-color-focus; opacity: 1; }
   }
+
+
+  // buttons
+
   button,
   .button {
     color: $button-color;

@@ -19,42 +19,7 @@ body {
   background: $background;
 }
 
-@keyframes loading {
-  0% { opacity: $loading-animation-opacity-0; }
-  100% { opacity: $loading-animation-opacity-100; }
-}
-
 :focus {
   outline: 0;
   -webkit-tap-highlight: transparent;
-}
-
-.placeholder {
-  visibility: hidden;
-}
-
-[hidden] {
-  display: none !important;
-}
-[disabled] {
-  opacity: .89;
-}
-[readonly] {
-  opacity: .93;
-}
-
-[data-loading] {
-  animation: infinite loading 600ms linear alternate;
-}
-
-.actions {
-  position: sticky;
-  inset-inline-end: 0;
-  text-align: center;
-}
-.action > a {
-  color: $color;
-  font-size: .8rem;
-  font-weight: bold;
-  text-transform: uppercase;
 }

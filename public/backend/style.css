@@ -23,18 +23,11 @@ body {
   background: #101010;
 }
 
-@keyframes loading {
-  0% {
-    opacity: 0.77;
-  }
-  100% {
-    opacity: 0.89;
-  }
-}
 :focus {
   outline: 0;
   -webkit-tap-highlight: transparent;
 }
+
 
 .placeholder {
   visibility: hidden;
@@ -52,6 +45,14 @@ body {
   opacity: 0.93;
 }
 
+@keyframes loading {
+  0% {
+    opacity: 0.77;
+  }
+  100% {
+    opacity: 0.89;
+  }
+}
 [data-loading] {
   animation: infinite loading 600ms linear alternate;
 }
@@ -289,6 +290,21 @@ textarea {
   text-align: right;
 }
 
+input + *,
+textarea + *,
+select + *,
+.input + * {
+  margin-inline-start: 2rem;
+}
+
+.novalid {
+  display: block;
+  margin: 0.5rem 0 0;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+
 button,
 .button {
   display: inline-block;
@@ -328,6 +344,12 @@ button.big,
   font-size: 0.95rem;
   letter-spacing: 0.01rem;
 }
+button.text,
+.button.text {
+  padding: 0.25rem 0.5rem;
+  color: inherit;
+  background: none;
+}
 button[type=submit], button.primary,
 .button[type=submit],
 .button.primary {
@@ -344,20 +366,9 @@ a.button {
   text-decoration: none;
 }
 
-input + *,
-textarea + *,
-select + *,
-.input + *,
 button + *,
 .button + * {
   margin-inline-start: 2rem;
-}
-
-.novalid {
-  display: block;
-  margin: 0.5rem 0 0;
-  font-weight: bold;
-  opacity: 0.7;
 }
 
 

@@ -11,11 +11,13 @@
 @import "../../scss/_dark.scss";
 @include variant_dark();
 @import "../../scss/_common.scss";
+@import "../../scss/_app.scss";
 @import "../../scss/_headings.scss";
 @import "../../scss/_nav.scss";
 @import "../../scss/_main.scss";
 @import "../../scss/_table.scss";
 @import "../../scss/_form.scss";
+@import "../../scss/_buttons.scss";
 @import "../../scss/_message.scss";
 @import "custom";
 

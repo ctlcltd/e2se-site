@@ -2,7 +2,7 @@
 
 Website for [e2-sat-editor](https://github.com/ctlcltd/e2-sat-editor).
 
-Contains the translation website for **e2 SAT Editor**.
+Contains all the website parts: translation app, landing page, backend.
 
 :construction: *work in progress* :construction:
 

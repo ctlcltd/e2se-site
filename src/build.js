@@ -4,8 +4,9 @@ const CleanCSS = require('clean-css');
 const sass = require('sass');
 
 const argv = process.argv;
-const dst = argv[2];
-const options = fs.readFileSync('./' + dst + '/build_options.jsx');
+const src = argv[2];
+const dst = argv[2] != 'landing' ? argv[2] : '';
+const options = fs.readFileSync('./' + src + '/build_options.jsx');
 
 const dest = '../public';
 
@@ -55,26 +56,26 @@ class Build {
 
     if (build) {
       if (! type || type === 'js') {
-        this.build('js', './' + dst + '/js');
+        this.build('js', './' + src + '/js');
       }
       /*if (! type || type === 'css') {
-        this.build('css', './' + dst + '/css');
+        this.build('css', './' + src + '/css');
       }*/
       if (! type || type === 'scss') {
-        this.compile('scss', './' + dst + '/scss');
+        this.compile('scss', './' + src + '/scss');
       }
     }
 
     if (watch) {
       if (! type || type === 'js') {
-        this.watch('js', './' + dst + '/js');
+        this.watch('js', './' + src + '/js');
       }
       /*if (! type || type === 'css') {
-        this.watch('css', './' + dst + '/css');
+        this.watch('css', './' + src + '/css');
       }*/
       if (! type || type === 'scss') {
-        this.watch('scss', './scss', './' + dst + '/scss');
-        this.watch('scss', './' + dst + '/scss');
+        this.watch('scss', './scss', './' + src + '/scss');
+        this.watch('scss', './' + src + '/scss');
       }
     }
   }

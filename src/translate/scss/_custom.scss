@@ -6,11 +6,12 @@
  */
 
 #page {
-  padding: 2.5rem 0 5rem;
+  padding: 2.5rem 0 3rem;
 }
 
 main {
-  padding: 0 .5rem;
+  min-height: 100vh;
+  padding: 0 .5rem 2rem;
 }
 main > div {
   padding: 1rem 0;
@@ -18,6 +19,71 @@ main > div {
 main > div:first-child {
   margin: 0 0 .5rem;
   padding: 1.5rem 0 .5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 .5rem;
+  font-size: .9rem;
+  color: darken(dimgray, 22%);
+
+  > div {
+    width: 100%;
+    min-width: 15ch;
+    margin: 0 0 1.5rem;
+  }
+  > div:last-child {
+    width: 100%;
+    padding: .7rem 0;
+  }
+  nav {
+    margin: 0;
+  }
+  nav ul {
+    margin: 0 -.3rem;
+    padding: 0;
+    list-style: none;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0 .2rem;
+
+    &.separator { width: .2rem; }
+  }
+  nav a {
+    padding: .05rem .15rem;
+    font-size: .95rem;
+  }
+
+  nav a,
+  button.text {
+    color: darken(dimgray, 22%);
+    opacity: .95;
+    transition: color linear 50ms;
+
+    &:hover { color: #101010; }
+    &:focus { color: #000; opacity: 1; }
+  }
+}
+body.dark {
+  #footer {
+    color: lighten(lightgray, 11%);
+
+    nav a,
+    button.text {
+      color: lighten(lightgray, 11%);
+
+      &:hover { color: #eee; }
+      &:focus { color: #fff; }
+    }
+  }
 }
 
 .ctrbar {
@@ -349,12 +415,25 @@ body.backdrop {
 }
 
 @media (min-width: 992px) {
+  #page {
+    padding: 2.5rem 0 6rem;
+  }
+
   main {
-    padding: 0 5rem 5rem;
+    padding: 0 5rem 4rem;
   }
   main > div:first-child {
     padding: 3rem 0 1.5rem;
   }
+
+  #footer {
+    padding: 0 5rem;
+
+    > div {
+      width: auto;
+    }
+  }
+
   .ctrbar {
     position: static;
     padding: 0;
@@ -386,4 +465,9 @@ body.backdrop {
   .what-this-area {
     min-width: 33vw;
   }
+}
+
+@media print {
+  main { min-height: unset; }
+  .ctrbar { display: none; }
 }

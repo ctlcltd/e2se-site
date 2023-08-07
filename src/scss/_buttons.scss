@@ -1,0 +1,59 @@
+/*
+ * scss/_buttons.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+button,
+.button {
+  display: inline-block;
+  margin: auto;
+  padding: .75rem 1.25rem;
+  font-size: .9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $button-color;
+  background: $button-background;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+
+  & { box-shadow: 0 0 .18rem $button-shadow-color; }
+  &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
+  &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
+
+  &.tiny {
+    padding: .5rem .75rem;
+    font-size: .75rem;
+    letter-spacing: .02rem;
+  }
+  &.big {
+    padding: .95rem 1.75rem;
+    font-size: .95rem;
+    letter-spacing: .01rem;
+  }
+  &.text {
+    padding: .25rem .5rem;
+    color: inherit;
+    background: none;
+  }
+  &[type="submit"],
+  &.primary {
+    color: $button-primary-color;
+    background: $button-primary-background;
+  }
+  &.secondary {
+    color: $button-secondary-color;
+    background: $button-secondary-background;
+  }
+}
+a.button {
+  text-decoration: none;
+}
+
+button,
+.button {
+  & + * { margin-inline-start: 2rem; }
+}

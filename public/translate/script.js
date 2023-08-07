@@ -533,7 +533,7 @@ function edit_translate(uri, search) {
         }
 
         tr.setAttribute('data-guid', guid);
-        tr.title = parseInt(idx) + 1;
+        tr.title = parseInt(idx);
 
         tbody.append(tr);
       }
@@ -946,16 +946,17 @@ function send_translation() {
 
   function submit() {
     try {
-      let storage;
       let translation;
       let lang_code;
       let language;
       let user;
 
+      let storage;
+
       for (const lang in languages) {
         if (storage = localStorage.getItem(lang)) {
           storage = JSON.parse(storage);
-          if (Object.keys(storage).length > 2) {
+          if (Object.keys(storage).length > 1) {
             translation = storage;
             lang_code = lang;
             break;
@@ -964,16 +965,13 @@ function send_translation() {
       }
 
       for (const lang in languages) {
-        storage = JSON.parse(storage);
-        for (const lang in storage) {
-          if (! lang.guid) {
-            if (lang.code === lang_code) {
-              language = lang;
-            } else {
-              translation = null;
-            }
-            break;
+        if (! lang.guid) {
+          if (lang.code === lang_code) {
+            language = lang;
+          } else {
+            translation = null;
           }
+          break;
         }
       }
 
@@ -1000,7 +998,7 @@ function send_translation() {
       }
 
       const token = token();
-      const request = api_request('post', 'userland', 'submit', 'token=' + token + '&data=' + JSON.stringify(data));
+      const request = api_request('post', 'userland', 'submit', {token, data});
 
       form.setAttribute('data-loading', '');
 
@@ -1025,6 +1023,10 @@ function send_translation() {
     try {
       const obj = JSON.parse(xhr.response);
 
+      if (! obj.status) {
+        return error(xhr);
+      }
+
       if (obj.token && validate_token(obj.token)) {
         localStorage.clear();
 
@@ -1032,7 +1034,7 @@ function send_translation() {
         localStorage.setItem('_token', 1);
         localStorage.setItem('your-token', obj.token);
 
-        message('your-token');
+        message('your-token', '', 1);
       } else {
         throw 'An error occurred';
       }
@@ -1049,7 +1051,7 @@ function send_translation() {
 
     form.removeAttribute('data-loading');
 
-    message('send-error');
+    message('request-error');
 
     send_unlock();
   }
@@ -1228,32 +1230,86 @@ form_submit();
 send_resume();
 
 
-function resume_translation() {
+function resume_translation(token) {
   const doc = document;
   const page = doc.getElementById('page');
 
-  const request = api_request('post', 'userland', 'token=' + token);
+  function allowResume() {
+    try {
+      let allow = true;
+
+      let storage;
+      for (const lang in languages) {
+        const tr_key = 'tr-' + lang;
+        if (storage = localStorage.getItem(tr_key)) {
+          storage = JSON.parse(storage);
+          if (Object.keys(storage).length > 1) {
+            allow = false;
+            break;
+          }
+        }
+      }
+
+      for (const lang in languages) {
+        if (! lang.guid) {
+          allow = false;
+          break;
+        }
+      }
+
+      if (allow) {
+        const request = api_request('post', 'userland', {token});
+
+        page.setAttribute('data-loading', '');
+        request.then(loader).catch(error);
+      } else {
+        localStorage.setItem('_resume', token);
+        localStorage.setItem('_lock', 'resume');
+
+        message('edit-prev');
+      }
+    } catch (err) {
+      console.error('allowResume', err);
+    }
+  }
 
   function loader(xhr) {
+    page.removeAttribute('data-loading');
+
     try {
       const obj = JSON.parse(xhr.response);
 
+      if (! obj.status) {
+        return error(xhr);
+      }
+
       if (obj.data) {
         const data = obj.data;
-
-        // 
+        let lang_code;
 
         if (data.ulang) {
-
+          const language = data.ulang;
+          lang_code = language.code;
+          languages[lang_code] = language;
+          localStorage.setItem('languages', JSON.stringify(languages));
+        } else if (data.guid) {
+          for (const lang in languages) {
+            if (lang.guid === data.guid) {
+              lang_code = lang.code;
+              break;
+            }
+          }
         }
-        if (data.utr) {
-
+        if (lang_code && data.utr) {
+          const translation = data.utr;
+          const tr_key = 'tr-' + lang_code;
+          localStorage.setItem(tr_key, JSON.stringify(translation));
+        } else {
+          throw 'An error occurred';
         }
       } else {
         throw 'An error occurred';
       }
-
-      localStorage.setItem('languages', JSON.stringify(languages));
     } catch (err) {
       console.error('loader', err);
     }
@@ -1261,11 +1317,17 @@ function resume_translation() {
 
   function error(xhr) {
     console.warn(xhr);
+
+    page.removeAttribute('data-loading');
+
+    message('request-error');
   }
 
-  page.setAttribute('data-loading', '');
-  request.then(loader).catch(error);
-  page.removeAttribute('data-loading');
+  if (validate_token(token)) {
+    allowResume();
+  } else {
+    throw 'Not a valid token';
+  }
 }
 
 function form_token() {
@@ -1275,10 +1337,11 @@ function form_token() {
 
   function textInput(evt) {
     const el = evt.target;
+    const token = el.value;
 
-    if (el.value.length === 10 && validate_token(el.value)) {
+    if (token.length === 10 && validate_token(token)) {
       el.setAttribute('disabled', '');
-      resume_translation();
+      resume_translation(token);
       el.removeAttribute('disabled');
     }
   }
@@ -1306,8 +1369,17 @@ function token_box_html() {
       throw 'Not a valid token';
     }
 
-    // 
-    return '<p>Your token</p><div><input type="text" id="your-token" value="' + token + '" readonly></div>';
+    let html;
+
+    if (type == 1) {
+      html = '<p><b>Thank you for contribution</b></p>';
+    }
+
+    html += '<div>';
+    html += '<p>Please take a note of your token</p>';
+    html += '<p>This is useful to resume the translation you have sent</p>';
+    html += '</div>';
+    html += '<div><input type="text" id="your-token" value="' + token + '" readonly></div>';
   } catch (err) {
     console.error('token_box_html', err);
   }
@@ -1345,22 +1417,22 @@ function message(id, text, type, buttons) {
     if (id == 'storage') {
       html = '<p><b>WebStorage is required</b></p><p>localStorage seems to be unavailable<br>Please reload your browser and try again</p>';
     } else if (id == 'lang-exists') {
-      type = 0;
       html = '<p>Language already exists</p>';
-    } else if (id == 'send-error') {
       type = 0;
+    } else if (id == 'request-error') {
       html = '<p><b>An error occurred<b></p><p>Please try again</p>';
+      type = 0;
     } else if (id == 'edit-prev') {
-      type = 2;
       html = '<p>You have a previous translation edit that was not sent</p><p><b>Do you want to submit or discard the previous edit?</b></p>';
+      type = 2;
       buttons = [
         {'label': 'Submit', 'class': 'primary', 'callback': send_translation},
         {'label': 'Discard', 'class': 'secondary tiny', 'callback': discard_edit},
         {'label': 'Cancel', 'class': 'tiny', 'callback': close}
       ];
     } else if (id == 'your-token') {
+      html = token_box_html(type);
       type = 1;
-      html = token_box_html();
       buttons = [
         {'label': 'Dismiss', 'class': 'secondary tiny', 'callback': token_box_dismiss}
       ];
@@ -1432,9 +1504,19 @@ function what_this() {
 function discard_edit() {
   try {
     for (const lang in languages) {
-      if (localStorage.getItem(lang)) {
-        localStorage.removeItem(lang);
+      const tr_key = 'tr-' + lang;
+      if (localStorage.getItem(tr_key)) {
+        localStorage.removeItem(tr_key);
       }
+    }
+
+    if (localStorage.getItem('_lock') == 'resume') {
+      const token = localStorage.getItem('_resume');
+
+      resume_translation(token);
+
+      localStorage.removeItem('_lock');
+      localStorage.removeItem('_resume');
     }
   } catch (err) {
     console.error('discard_edit', err);
@@ -1474,15 +1556,31 @@ function api_request(method, endpoint, route, data) {
   let url = apipath + '/';
   let body = null;
 
+  const serialize = function(obj) {
+    var data = [];
+    try {
+      for (const key of Object.keys(obj)) {
+        let value = obj[key];
+        if (typeof value === 'object') {
+          value = JSON.stringify(value);
+        }
+        data.push(key + '=' + value.toString());
+      }
+    } catch (err) {
+      console.error(err);
+    }
+    return data.join('&');
+  };
+
   if (method === 'get') {
     if (endpoint) {
-      url += '?data=' + endpoint;
+      url += '?body=' + endpoint;
     }
     if (route) {
       url += endpoint ? '&' : '?' + '&call=' + route;
     }
-    if (data) {
-      url += endpoint || route ? '&' : '?' + data;
+    if (data && typeof data === 'object') {
+      url += endpoint || route ? '&' : '?' + serialize(data);
     }
   } else if (method === 'post') {
     body = 'body=' + endpoint;
@@ -1490,8 +1588,8 @@ function api_request(method, endpoint, route, data) {
     if (route) {
       body += '&call=' + route;
     }
-    if (data) {
-      body += '&' + data;
+    if (data && typeof data === 'object') {
+      body += '&' + serialize(data);
     }
   } else {
     return new Promise(function(resolve, reject) {
@@ -1645,8 +1743,9 @@ function init() {
 
   function view() {
     try {
-      if (! localStorage.getItem('_lock')) {
+      if (localStorage.getItem('_lock') != 'send') {
         route();
+        localStorage.removeItem('_lock');
       }
 
       your_token();

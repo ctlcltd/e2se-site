@@ -23,18 +23,11 @@ body {
   background: #fcfcfc;
 }
 
-@keyframes loading {
-  0% {
-    opacity: 0.33;
-  }
-  100% {
-    opacity: 0.89;
-  }
-}
 :focus {
   outline: 0;
   -webkit-tap-highlight: transparent;
 }
+
 
 .placeholder {
   visibility: hidden;
@@ -52,6 +45,14 @@ body {
   opacity: 0.93;
 }
 
+@keyframes loading {
+  0% {
+    opacity: 0.33;
+  }
+  100% {
+    opacity: 0.89;
+  }
+}
 [data-loading] {
   animation: infinite loading 600ms linear alternate;
 }
@@ -289,6 +290,21 @@ textarea {
   text-align: right;
 }
 
+input + *,
+textarea + *,
+select + *,
+.input + * {
+  margin-inline-start: 2rem;
+}
+
+.novalid {
+  display: block;
+  margin: 0.5rem 0 0;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+
 button,
 .button {
   display: inline-block;
@@ -328,6 +344,12 @@ button.big,
   font-size: 0.95rem;
   letter-spacing: 0.01rem;
 }
+button.text,
+.button.text {
+  padding: 0.25rem 0.5rem;
+  color: inherit;
+  background: none;
+}
 button[type=submit], button.primary,
 .button[type=submit],
 .button.primary {
@@ -344,20 +366,9 @@ a.button {
   text-decoration: none;
 }
 
-input + *,
-textarea + *,
-select + *,
-.input + *,
 button + *,
 .button + * {
   margin-inline-start: 2rem;
-}
-
-.novalid {
-  display: block;
-  margin: 0.5rem 0 0;
-  font-weight: bold;
-  opacity: 0.7;
 }
 
 
@@ -436,11 +447,12 @@ body.light .dropdown a {
 
 
 #page {
-  padding: 2.5rem 0 5rem;
+  padding: 2.5rem 0 3rem;
 }
 
 main {
-  padding: 0 0.5rem;
+  min-height: 100vh;
+  padding: 0 0.5rem 2rem;
 }
 
 main > div {
@@ -450,6 +462,79 @@ main > div {
 main > div:first-child {
   margin: 0 0 0.5rem;
   padding: 1.5rem 0 0.5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  font-size: 0.9rem;
+  color: #313131;
+}
+#footer > div {
+  width: 100%;
+  min-width: 15ch;
+  margin: 0 0 1.5rem;
+}
+#footer > div:last-child {
+  width: 100%;
+  padding: 0.7rem 0;
+}
+#footer nav {
+  margin: 0;
+}
+#footer nav ul {
+  margin: 0 -0.3rem;
+  padding: 0;
+  list-style: none;
+}
+#footer nav li {
+  display: inline-block;
+  margin: 0 0.2rem;
+}
+#footer nav li.separator {
+  width: 0.2rem;
+}
+#footer nav a {
+  padding: 0.05rem 0.15rem;
+  font-size: 0.95rem;
+}
+#footer nav a,
+#footer button.text {
+  color: #313131;
+  opacity: 0.95;
+  transition: color linear 50ms;
+}
+#footer nav a:hover,
+#footer button.text:hover {
+  color: #101010;
+}
+#footer nav a:focus,
+#footer button.text:focus {
+  color: #000;
+  opacity: 1;
+}
+
+body.dark #footer {
+  color: #efefef;
+}
+body.dark #footer nav a,
+body.dark #footer button.text {
+  color: #efefef;
+}
+body.dark #footer nav a:hover,
+body.dark #footer button.text:hover {
+  color: #eee;
+}
+body.dark #footer nav a:focus,
+body.dark #footer button.text:focus {
+  color: #fff;
 }
 
 .ctrbar {
@@ -805,12 +890,23 @@ body.backdrop #page:after {
 }
 
 @media (min-width: 992px) {
+  #page {
+    padding: 2.5rem 0 6rem;
+  }
+
   main {
-    padding: 0 5rem 5rem;
+    padding: 0 5rem 4rem;
   }
 
   main > div:first-child {
     padding: 3rem 0 1.5rem;
+  }
+
+  #footer {
+    padding: 0 5rem;
+  }
+  #footer > div {
+    width: auto;
   }
 
   .ctrbar {
@@ -855,6 +951,15 @@ body.backdrop #page:after {
 
   .what-this-area {
     min-width: 33vw;
+  }
+}
+@media print {
+  main {
+    min-height: unset;
+  }
+
+  .ctrbar {
+    display: none;
   }
 }
 body.dark {

@@ -15,16 +15,17 @@ function send_translation() {
 
   function submit() {
     try {
-      let storage;
       let translation;
       let lang_code;
       let language;
       let user;
 
+      let storage;
+
       for (const lang in languages) {
         if (storage = localStorage.getItem(lang)) {
           storage = JSON.parse(storage);
-          if (Object.keys(storage).length > 2) {
+          if (Object.keys(storage).length > 1) {
             translation = storage;
             lang_code = lang;
             break;
@@ -33,16 +34,13 @@ function send_translation() {
       }
 
       for (const lang in languages) {
-        storage = JSON.parse(storage);
-        for (const lang in storage) {
-          if (! lang.guid) {
-            if (lang.code === lang_code) {
-              language = lang;
-            } else {
-              translation = null;
-            }
-            break;
+        if (! lang.guid) {
+          if (lang.code === lang_code) {
+            language = lang;
+          } else {
+            translation = null;
           }
+          break;
         }
       }
 
@@ -69,7 +67,7 @@ function send_translation() {
       }
 
       const token = token();
-      const request = api_request('post', 'userland', 'submit', 'token=' + token + '&data=' + JSON.stringify(data));
+      const request = api_request('post', 'userland', 'submit', {token, data});
 
       form.setAttribute('data-loading', '');
 
@@ -94,6 +92,10 @@ function send_translation() {
     try {
       const obj = JSON.parse(xhr.response);
 
+      if (! obj.status) {
+        return error(xhr);
+      }
+
       if (obj.token && validate_token(obj.token)) {
         localStorage.clear();
 
@@ -101,7 +103,7 @@ function send_translation() {
         localStorage.setItem('_token', 1);
         localStorage.setItem('your-token', obj.token);
 
-        message('your-token');
+        message('your-token', '', 1);
       } else {
         throw 'An error occurred';
       }
@@ -118,7 +120,7 @@ function send_translation() {
 
     form.removeAttribute('data-loading');
 
-    message('send-error');
+    message('request-error');
 
     send_unlock();
   }

@@ -1,0 +1,190 @@
+/*
+ * landing/_custom.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+#page {
+  padding: 2.5rem 0 0;
+}
+
+main {
+  min-height: 80vh;
+  padding: 0 .5rem 2rem;
+}
+main > div {
+  padding: 1rem 0;
+}
+main > div:first-child {
+  margin: 0 0 .5rem;
+  padding: 1.5rem 0 .5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 .5rem;
+  font-size: .9rem;
+  color: darken(dimgray, 22%);
+
+  > div {
+    width: 100%;
+    min-width: 15ch;
+    margin: 0 0 1.5rem;
+  }
+  > div:last-child {
+    width: 100%;
+    padding: .7rem 0;
+  }
+  nav {
+    margin: 0;
+  }
+  nav ul {
+    margin: 0 -.3rem;
+    padding: 0;
+    list-style: none;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0 .2rem;
+
+    &.separator { width: .2rem; }
+  }
+  nav a {
+    padding: .05rem .15rem;
+    font-size: .95rem;
+  }
+
+  nav a,
+  button.text {
+    color: darken(dimgray, 22%);
+    opacity: .95;
+    transition: color linear 50ms;
+
+    &:hover { color: #101010; }
+    &:focus { color: #000; opacity: 1; }
+  }
+}
+body.dark {
+  #footer {
+    color: lighten(lightgray, 11%);
+
+    nav a,
+    button.text {
+      color: lighten(lightgray, 11%);
+
+      &:hover { color: #eee; }
+      &:focus { color: #fff; }
+    }
+  }
+}
+
+#head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+}
+body.dark {
+  #head {
+    background: #181818;
+  }
+}
+#head {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+#head > div {
+  position: relative;
+  margin-inline-start: auto;
+  z-index: 10;
+}
+#head,
+#head > div {
+  top: 0;
+}
+#head {
+  padding: .05rem .1rem .1rem;
+}
+
+button#switch-color {
+  position: relative;
+  padding: .75rem;
+  padding-inline-start: 2.25rem;
+  text-transform: none;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    inset-inline-start: .75rem;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  &:after {
+    width: 0;
+    margin: 1px 0;
+    border-width: 0 9px;
+    border-right-color: transparent;
+    border-left-color: currentColor;
+  }
+}
+body.dark {
+  button#switch-color:after {
+    border-right-color: currentColor;
+    border-left-color: transparent;
+  }
+}
+
+@media (min-width: 992px) {
+  #page {
+    padding: 2.5rem 0 0;
+  }
+
+  main {
+    padding: 0 5rem 4rem;
+  }
+  main > div:first-child {
+    padding: 3rem 0 1.5rem;
+  }
+
+  #footer {
+    padding: 0 5rem;
+
+    > div {
+      width: auto;
+    }
+  }
+
+  #head {
+    position: static;
+    padding: 0;
+  }
+  #head > div {
+    position: fixed;
+    inset-inline-end: 5rem;
+  }
+
+  #head { background: #fff; }
+  body.dark {
+    #head { background: #181818; }
+  }
+}
+
+@media print {
+  main { min-height: unset; }
+  #head { display: none; }
+}

@@ -343,7 +343,7 @@ function edit_translate(uri, search) {
         }
 
         tr.setAttribute('data-guid', guid);
-        tr.title = parseInt(idx) + 1;
+        tr.title = parseInt(idx);
 
         tbody.append(tr);
       }

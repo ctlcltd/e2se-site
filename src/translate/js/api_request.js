@@ -10,15 +10,31 @@ function api_request(method, endpoint, route, data) {
   let url = apipath + '/';
   let body = null;
 
+  const serialize = function(obj) {
+    var data = [];
+    try {
+      for (const key of Object.keys(obj)) {
+        let value = obj[key];
+        if (typeof value === 'object') {
+          value = JSON.stringify(value);
+        }
+        data.push(key + '=' + value.toString());
+      }
+    } catch (err) {
+      console.error(err);
+    }
+    return data.join('&');
+  };
+
   if (method === 'get') {
     if (endpoint) {
-      url += '?data=' + endpoint;
+      url += '?body=' + endpoint;
     }
     if (route) {
       url += endpoint ? '&' : '?' + '&call=' + route;
     }
-    if (data) {
-      url += endpoint || route ? '&' : '?' + data;
+    if (data && typeof data === 'object') {
+      url += endpoint || route ? '&' : '?' + serialize(data);
     }
   } else if (method === 'post') {
     body = 'body=' + endpoint;
@@ -26,8 +42,8 @@ function api_request(method, endpoint, route, data) {
     if (route) {
       body += '&call=' + route;
     }
-    if (data) {
-      body += '&' + data;
+    if (data && typeof data === 'object') {
+      body += '&' + serialize(data);
     }
   } else {
     return new Promise(function(resolve, reject) {
