@@ -1,0 +1,123 @@
+
+svg {}
+text { user-select: none; }
+
+#menubar tspan tspan { text-decoration: underline; }
+
+.dark-m text { fill: #fff !important; }
+.dark-m #t-txt { fill: #bcbebe !important; }
+
+.dark-m #t-bg { fill: #404242 !important; stroke: #787979 !important; }
+.dark-m #w-bg, .dark-m #menu-bg { fill: #313333 !important; }
+.dark-m #sb-bg, .dark-m #tabbar .bg, .dark-m #main-bg { fill: #2f3131 !important; }
+
+.dark-m #ss-bg, .dark-m #tb-corner .bg { fill: #485352 !important; }
+
+.dark-m .tree-vp .bg { fill: #171717 !important; }
+
+.dark-m #side-tool .bg { fill: #313837 !important; }
+.dark-m #tree-tool .bg { fill: #202121 !important; }
+.dark-m .tree-search .bg { fill: #101010 !important; }
+
+.dark-m .btn-bg { fill: #fff !important; fill-opacity: 0.24 !important; stroke: url(#btn-stroke-d-m) !important; }
+.dark-m .input-bg { fill: #fff !important; fill-opacity: 0.08 !important; stroke: #fff !important; stroke-opacity: .11; }
+
+.dark-m .tb-button rect { fill: url(#btn-bg-d-m) !important; }
+.dark-m .find-bg, .dark-m .tree-cols .bg { fill: #323232 !important; }
+.dark-m .find-h-bg { fill: #25456c !important; }
+
+.dark-m #t-ctrs-m ellipse { stroke: none !important; }
+.dark-m #t-stroke { stroke: #000 !important; }
+.dark-m #sb-stroke, .dark-m #main-stroke { stroke: #404242 !important; }
+.dark-m .tb-button rect { stroke: #fff !important; stroke-opacity: 0.23;  }
+.dark-m #menu-stroke { stroke: #324040 !important; }
+.dark-m #side-tool .stroke { stroke: #3a4140 !important; }
+.dark-m #tree-tool .stroke { stroke: #2d2e2e !important; }
+
+.dark-m #w-shade { stroke-opacity: 0.24 !important; }
+
+.dark-m .tb-button text { fill-opacity: 0.89; }
+.dark-m .menu-item text, .dark-m .tool-txt { fill-opacity: 0.89; text-shadow: 0 0.5px 1px #090909; }
+.dark-m .menu-item .btn-txt { text-shadow: none; }
+.dark-m .btn-txt, .dark-m .find-txt { fill-opacity: 0.78 !important; }
+.dark-m .find-h-txt { fill: #323232 !important; }
+
+.dark-m .tb-button .ico use { fill: #dad4d6 !important; }
+.dark-m .tb-tab .ico use { fill: #fff !important; }
+.dark-m .tb-ico use { fill: #fff !important; }
+.dark-m .menu-item .ico use { fill: #c7c8c8 !important; }
+.dark-m #split-start .ico use { fill: #ced0d0 !important; }
+.dark-m #split-end .ico use { fill: #c7c7c7 !important; }
+
+.dark-m #tb-start { stroke: #fff !important; }
+.dark-m #tb-end {  }
+.dark-m #split ellipse { fill: #444646 !important; }
+
+.dark-m .btn-caret rect { fill: url(#btn-bg-a-d-m) !important; stroke: url(#btn-stroke-d-m) !important; }
+
+.dark-m .tb-tab.active rect { fill: #2a4f7b !important; stroke: #234065 !important; }
+.dark-m #split-start .focused { fill: #596362 !important; }
+.dark-m #split-end .focused { fill: #023acd !important; }
+
+
+
+.w { font-family: 'Segoe UI', Tahoma, sans-serif !important; }
+.l { font-family: 'Ubuntu', 'Liberation Sans', sans-serif !important; }
+
+.w #t-ctrs-m, .l #t-ctrs-m { display: none; }
+.w #t-ctrs-w, .l #t-ctrs-l { display: block !important; }
+
+.w #menubar, .l #menubar { display: block !important; }
+
+.w #w-bg, .w #w-stroke, .w #t-bg, .w #sb-bg, .l #w-bg, .l #w-stroke, .l #w-shade, .l #t-bg, .l #sb-bg { rx: 0; }
+
+.w .btn-bg { rx: 0; }
+.w .btn-caret .bg, .l .btn-caret .bg { fill: none !important; stroke: none !important; }
+
+.w #w-inner, .l #w-inner { transform: matrix(1, 0, 0, 1, 0, 30); }
+
+.w #tb-tabs rect, .w .tb-tab rect, .l #tb-tabs rect, .l .tb-tab rect { height: 67px; }
+.w .tb-tab text, .l .tb-tab text { dy: 38px; }
+
+.w #menu, .l #menu { transform: matrix(1, 0, 0, 1, 0, -2); }
+.w #menu > rect, .l #menu > rect { height: 89px; }
+
+.w #main, .l #main { transform: matrix(1, 0, 0, 1, 0, -13); }
+
+
+.w #w-bg { fill: #efefef !important; stroke: #acc6c3 !important; }
+.w #t-bg { fill: #fafafa !important; stroke: none !important; }
+
+.w #t-txt { font-weight: normal !important; font-size: 21.5px !important; fill: #000 !important; transform: translate(0, 1px); }
+
+.w .btn-bg { rx: 0; stroke: #ccc !important; }
+
+.w .menu-item .ico use { fill: #5c5c5c !important; }
+
+.w .tb-tab.active rect { stroke: #308cc6 !important; }
+.w .tb-tab.active text { fill: #fff !important; }
+
+.w .focused, .w .tb-tab.active rect  { fill: #308cc6 !important; }
+
+
+.l #w-bg { fill: #efefef !important; stroke: #acc6c3 !important; }
+.l #t-bg { fill: #fafafa !important; stroke: none !important; }
+
+.l #t-txt { font-size: 19px !important; fill: #636363 !important; }
+
+.l #menu-bg { fill: #efefef !important; }
+
+.l .btn-bg { rx: 3; stroke: #ababab !important; }
+
+.l .ruler { height: 26px; stroke: #000; stroke-opacity: 0.75; transform: translate(0, -3px); }
+
+.l .menu-item .ico use { fill: #5c5c5c !important; }
+
+.l .tb-tab.active rect { stroke: #308cc6 !important; }
+.l .tb-tab.active text { fill: #fff !important; }
+
+.l .focused, .l .tb-tab.active rect  { fill: #308cc6 !important; }
+
+
+
+#test text { font-family: sans-serif; font-weight: bold; text-decoration: underline; cursor: pointer; }
