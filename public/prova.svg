@@ -58,19 +58,21 @@
     <linearGradient id="btn-bg-a-m" x1="0" y1="0" x2="0" y2="1"><stop offset="0.4" style="stop-color:#0095ff"/><stop offset="1" style="stop-color:#0d7bff"/></linearGradient>
     <linearGradient id="btn-bg-a-d-m" x1="0" y1="0" x2="0" y2="1"><stop offset="0.4" style="stop-color:#007df4"/><stop offset="1" style="stop-color:#0073e4"/></linearGradient>
 
-    <linearGradient id="btn-bg-l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#fdfdfd"/><stop offset="1" style="stop-color:#eee"/></linearGradient>
+    <linearGradient id="btn-bg-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#fdfdfd"/><stop offset="1" style="stop-color:#eee"/></linearGradient>
+    <linearGradient id="btn-bg-d-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#3d3c3b"/><stop offset="1" style="stop-color:#333332"/></linearGradient>
+    <linearGradient id="btn-stroke-d-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#545452"/><stop offset="1" style="stop-color:#4b4b4a"/></linearGradient>
   </defs>
   <g id="system">
     <rect id="wallpaper" x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd" />
   </g>
-  <g id="window" class="l" style="font-family:'SF Pro','Helvetica Neue','Droid Sans',sans-serif;opacity:1">
+  <g id="window" class="w" style="font-family:'SF Pro','Helvetica Neue','Droid Sans',sans-serif;opacity:1">
     <rect id="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
     <g id="titlebar">
       <rect id="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
       <rect id="t-stroke" x="81" y="124" width="1718" height="1" style="fill:none;stroke:#cdcece;stroke-width:2px;clip-path:inset(0 1px)" />
       <text id="t-txt" x="82" y="82" dx="857" dy="28" text-anchor="middle" style="font-weight:bold;font-size:20px;fill:#494949;">e2 SAT Editor</text>
       <g id="t-ico-w" style="display:none">
-        <image x="89" y="86" width="32" height="32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAB6VBMVEUAAAD/otH//wD//wD//wCnpH2wrXD/oNb/psj/tan//wD//wD//wD/y3j/le///wD//wD/uZ///wD//wD/wI3/wY3//wD//wD//wD//wD6qb6zsGv/qsH5r666t2L/rLz/r7T/sLL//wD/t6H//wD/up3/vJf//wD/vZT//wD/wYz/w4b//wD/wor/yXj//wD//wANDQ3/j////wCYlJQXFhQA/wD9ntyopH0UExL4+AFNTBASERFAQEDx8QEgHxIFnwUMHQw3NzcVFRULKwsLNAsIZgj/AAAZGRkHdgcA+wA8PDw0NDQMLgwMFAwJXwkHcwclJSUiIiILPAsB5gEwMDANDw0JVwkJTwkEvgQDvwMB7QEdHh0MJQwErwQDywMC1QIB7gEMIQwMGgwKQgoJWwkHfAcGigYDxgMC2QIB5wErKysXIxc2Ng9bWw4MHwwIaQgGlQYGkQYGhQYFmgUC4AIB8wH9/QD/kfk5OTksLCwpKSkkIxIqKhFlZA5ycQ0LSAsJYAmcmwgIbgiGCAhiCAgHgge2tQYFqwUFnAW1BQUEuAQEtAS9BAQDwQMB9QEB6AEgJSAtFRNCQREdHRBaRw9XEQ8iDAwdDAyNjAoKVwoJVAmkowgIYgjHxwTWBAQDxQPWAwP39wGR5dOxAAAAMXRSTlMA87iw0Pbn9ey7qVETBf7px6B8ZlpSSB/28/Lw4+He29XPvqeal5KGfXBMNzIwJiYYhT3QNwAAAstJREFUWMPt0edX2lAYx3Fa27paraN27737kPK0KLFhGAgoZQmoKLigWrd1771H955/aW/wjdfklJtz+sLj8fPyd5Iv4V7dvl3mWGHepQOpZFy+fken7kS6nlHGXbWfzxzUM8vJUwYy9ZrcUHz/oLZAzv0dfyBdr1EGHSjUa/aAClzVHrhFBS5qD2RSgXTtgXNU4MwTzc5TgcOPNTuy1wJnn2p2gQoc4jRL25OBgWJGA6qB0vFRA6OxiWJloPitQYMOZWDaoMmCIjAGRNBms8GWBpvNDAQ9J/dGAChRBAxkrY0iYlXyvRkn4sYUENQM82SvCQO07wyUmgBszfWIGKgAAJOARA95kpohtCLvHhM8Uwm4YzV+URQ7LV6wuhxfRTEsYBi2zxBHqVkUm3xDQbVAGeJzALDyFvDxL4GowVewfYYXWC3v5byDOeC1/NfAL6z6RwCq+0KCIDRV+sA01JYQhN6E0w/bZ5hCsUcQpEg5qAYaQ0g4y4CoQmKRnDw9V8SStwPqgd667kBroNdrgNrYTKy1NeofAcLxWp4T0XlyoC1dLZub62Ve1YDNifK9G/lyEDAKxDDvcPjA4iJx6EJnI6zgqrxX8tYUh1iHLVsPRkZc4OLlgAexgboFxoA1wh7o7Hf6zWazyVUJCVx1m81uL2+VH3cFyTyJfW4QcEneh11G1UMMxeWzr2szgXvJs4FY/yUChLUtOUtNAGYh7kQMTDrUbwH8/UheS97dIhLdQFAzrMt7XP0aiQqP5KkFWfC7JDUDQc1k75KkMKgH2KkEjv9hDnycXZsDGOWyqMA17h0wWrbb7XPQzuVTgQKuHdh8shNr0MEVUYF73LSR0W8SmDX+4I7q6EPgJgxsPvy0L7/5TI6A9vDUwLeOEjbvxxe4XPIBtNucJtk6hYLTHLNc8r7SySscoyz5+1UT2TfTDqaQll/0SLdvl/kLbiw5QeVp49MAAAAASUVORK5CYII=" />
+        <image x="93" y="92" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAB6VBMVEUAAAD/otH//wD//wD//wCnpH2wrXD/oNb/psj/tan//wD//wD//wD/y3j/le///wD//wD/uZ///wD//wD/wI3/wY3//wD//wD//wD//wD6qb6zsGv/qsH5r666t2L/rLz/r7T/sLL//wD/t6H//wD/up3/vJf//wD/vZT//wD/wYz/w4b//wD/wor/yXj//wD//wANDQ3/j////wCYlJQXFhQA/wD9ntyopH0UExL4+AFNTBASERFAQEDx8QEgHxIFnwUMHQw3NzcVFRULKwsLNAsIZgj/AAAZGRkHdgcA+wA8PDw0NDQMLgwMFAwJXwkHcwclJSUiIiILPAsB5gEwMDANDw0JVwkJTwkEvgQDvwMB7QEdHh0MJQwErwQDywMC1QIB7gEMIQwMGgwKQgoJWwkHfAcGigYDxgMC2QIB5wErKysXIxc2Ng9bWw4MHwwIaQgGlQYGkQYGhQYFmgUC4AIB8wH9/QD/kfk5OTksLCwpKSkkIxIqKhFlZA5ycQ0LSAsJYAmcmwgIbgiGCAhiCAgHgge2tQYFqwUFnAW1BQUEuAQEtAS9BAQDwQMB9QEB6AEgJSAtFRNCQREdHRBaRw9XEQ8iDAwdDAyNjAoKVwoJVAmkowgIYgjHxwTWBAQDxQPWAwP39wGR5dOxAAAAMXRSTlMA87iw0Pbn9ey7qVETBf7px6B8ZlpSSB/28/Lw4+He29XPvqeal5KGfXBMNzIwJiYYhT3QNwAAAstJREFUWMPt0edX2lAYx3Fa27paraN27737kPK0KLFhGAgoZQmoKLigWrd1771H955/aW/wjdfklJtz+sLj8fPyd5Iv4V7dvl3mWGHepQOpZFy+fken7kS6nlHGXbWfzxzUM8vJUwYy9ZrcUHz/oLZAzv0dfyBdr1EGHSjUa/aAClzVHrhFBS5qD2RSgXTtgXNU4MwTzc5TgcOPNTuy1wJnn2p2gQoc4jRL25OBgWJGA6qB0vFRA6OxiWJloPitQYMOZWDaoMmCIjAGRNBms8GWBpvNDAQ9J/dGAChRBAxkrY0iYlXyvRkn4sYUENQM82SvCQO07wyUmgBszfWIGKgAAJOARA95kpohtCLvHhM8Uwm4YzV+URQ7LV6wuhxfRTEsYBi2zxBHqVkUm3xDQbVAGeJzALDyFvDxL4GowVewfYYXWC3v5byDOeC1/NfAL6z6RwCq+0KCIDRV+sA01JYQhN6E0w/bZ5hCsUcQpEg5qAYaQ0g4y4CoQmKRnDw9V8SStwPqgd667kBroNdrgNrYTKy1NeofAcLxWp4T0XlyoC1dLZub62Ve1YDNifK9G/lyEDAKxDDvcPjA4iJx6EJnI6zgqrxX8tYUh1iHLVsPRkZc4OLlgAexgboFxoA1wh7o7Hf6zWazyVUJCVx1m81uL2+VH3cFyTyJfW4QcEneh11G1UMMxeWzr2szgXvJs4FY/yUChLUtOUtNAGYh7kQMTDrUbwH8/UheS97dIhLdQFAzrMt7XP0aiQqP5KkFWfC7JDUDQc1k75KkMKgH2KkEjv9hDnycXZsDGOWyqMA17h0wWrbb7XPQzuVTgQKuHdh8shNr0MEVUYF73LSR0W8SmDX+4I7q6EPgJgxsPvy0L7/5TI6A9vDUwLeOEjbvxxe4XPIBtNucJtk6hYLTHLNc8r7SySscoyz5+1UT2TfTDqaQll/0SLdvl/kLbiw5QeVp49MAAAAASUVORK5CYII=" />
       </g>
       <g id="t-ctrs-w" style="display:none">
       </g>
@@ -83,7 +85,8 @@
       </g>
     </g>
     <g id="menubar" style="display:none">
-      <text id="mb-txt" x="82" y="124" dx="12" dy="22" style="font-size:19px;fill:#000"><tspan><tspan>F</tspan>ile</tspan> <tspan dx="15"><tspan>E</tspan>dit</tspan> <tspan dx="15"><tspan>F</tspan>ind</tspan> <tspan dx="15"><tspan>T</tspan>ools</tspan> <tspan dx="15"><tspan>W</tspan>indow</tspan> <tspan dx="15"><tspan>H</tspan>elp</tspan></text>
+      <rect id="mb-bg" x="82" y="121" width="1716" height="32" style="fill:#eee" />
+      <text id="mb-txt" x="82" y="121" dx="12" dy="24" style="font-size:19px;fill:#000"><tspan>F</tspan>ile <tspan>E</tspan>dit <tspan>F</tspan>ind <tspan>T</tspan>ools <tspan>W</tspan>indow <tspan>H</tspan>elp</text>
       <rect id="mb-stroke" x="81" y="154" width="1718" height="1" style="fill:#aaa" />
     </g>
     <g id="w-inner">
@@ -166,7 +169,8 @@
             <text x="246" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Save</text>
           </g>
           <g class="menu-divid">
-            <rect x="406" y="192" width="4" height="99" style="fill:red" />
+            <rect x="406" y="192" width="4" height="99" style="fill:none" />
+            <rect class="divid" x="408" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
             <rect x="410" y="192" width="160" height="99" style="fill:none" />
@@ -183,7 +187,8 @@
             <text x="577" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
           </g>
           <g class="menu-divid">
-            <rect x="760" y="192" width="4" height="99" style="fill:red" />
+            <rect x="760" y="192" width="4" height="99" style="fill:none" />
+            <rect class="divid" x="762" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
             <rect x="764" y="192" width="180" height="99" style="fill:none" />
@@ -225,7 +230,7 @@
           </g>
           <g class="menu-divid">
             <rect x="1488" y="192" width="4" height="99" style="fill:none" />
-            <rect class="divid" x="1490" y="212" width="1" height="61" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-width:1px;stroke-style:dashed;stroke-dasharray:1px 3px" />
+            <rect class="divid" x="1490" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
             <rect x="1502" y="192" width="120" height="99" style="fill:none" />
@@ -255,14 +260,16 @@
                 </g>
               </g>
             </g>
-            <g class="tree-items">
-              <g>
-                <rect class="focused" x="82" y="340" width="380" height="55" style="fill:#d5d6d6" />
-                <text x="82" y="340" dx="23" dy="34" style="font-size:20px;fill:#000">All services</text>
+            <g class="tree-view">
+              <g class="tree-items">
+                <g>
+                  <rect class="focused" x="82" y="340" width="380" height="55" style="fill:#d5d6d6" />
+                  <text x="82" y="340" dx="23" dy="34" style="font-size:20px;fill:#000">All services</text>
+                </g>
+                <text x="82" y="395" dx="23" dy="34" style="font-size:20px;fill:#000">TV</text>
+                <text x="82" y="450" dx="23" dy="34" style="font-size:20px;fill:#000">Radio</text>
+                <text x="82" y="505" dx="23" dy="34" style="font-size:20px;fill:#000">Data</text>
               </g>
-              <text x="82" y="395" dx="23" dy="34" style="font-size:20px;fill:#000">TV</text>
-              <text x="82" y="450" dx="23" dy="34" style="font-size:20px;fill:#000">Radio</text>
-              <text x="82" y="505" dx="23" dy="34" style="font-size:20px;fill:#000">Data</text>
             </g>
           </g>
           <g id="tree" class="tree-group">
@@ -270,42 +277,44 @@
               <rect class="bg" x="82" y="595" width="380" height="49" style="fill:none" />
               <text x="82" y="595" dx="10" dy="33" style="font-weight:bold;font-size:20px;fill:#000">Bouquets</text>
             </g>
-            <g>
-              <text x="82" y="643" dx="24" dy="34" style="font-size:20px;fill:#000">TV</text>
-              <g class="arrow" transform="matrix(1,0,0,1,88,675)">
-                <g class="arrow-m">
-                  <g class="arrow-down" transform="matrix(0.19,0,0,-0.19,2,3)">
-                    <use href="#arrow-m" style="fill:#bfbfbf" />
-                  </g>
-                </g>
-                <g class="arrow-f" style="display:none">
-                </g>
-              </g>
-            </g>
-            <g class="tree-items">
-              <text x="82" y="697" dx="25" dy="34" style="font-size:20px;fill:#000">Swiss</text>
+            <g class="tree-view">
               <g>
-                <rect class="focused" x="82" y="750" width="380" height="55" style="fill:#d5d6d6" />
-                <text x="82" y="750" dx="25" dy="34" style="font-size:20px;fill:#000">Italy</text>
-              </g>
-              <text x="82" y="804" dx="25" dy="34" style="font-size:20px;fill:#000">Tests</text>
-              <text x="82" y="857" dx="25" dy="34" style="font-size:20px;fill:#000">Tests 1</text>
-            </g>
-            <g>
-              <text x="82" y="910" dx="24" dy="34" style="font-size:20px;fill:#000">Radio</text>
-              <g class="arrow" transform="matrix(1,0,0,1,88,942)">
-                <g class="arrow-m">
-                  <g class="arrow-down" transform="matrix(0.19,0,0,-0.19,2,3)">
-                    <use href="#arrow-m" style="fill:#bfbfbf" />
+                <text x="82" y="643" dx="24" dy="34" style="font-size:20px;fill:#000">TV</text>
+                <g class="arrow" transform="matrix(1,0,0,1,88,675)">
+                  <g class="arrow-m">
+                    <g class="arrow-down" transform="matrix(0.19,0,0,-0.19,2,3)">
+                      <use href="#arrow-m" style="fill:#bfbfbf" />
+                    </g>
+                  </g>
+                  <g class="arrow-f" style="display:none">
                   </g>
                 </g>
-                <g class="arrow-f" style="display:none">
+              </g>
+              <g class="tree-items">
+                <text x="82" y="697" dx="25" dy="34" style="font-size:20px;fill:#000">Swiss</text>
+                <g>
+                  <rect class="focused" x="82" y="750" width="380" height="55" style="fill:#d5d6d6" />
+                  <text x="82" y="750" dx="25" dy="34" style="font-size:20px;fill:#000">Italy</text>
+                </g>
+                <text x="82" y="804" dx="25" dy="34" style="font-size:20px;fill:#000">Tests</text>
+                <text x="82" y="857" dx="25" dy="34" style="font-size:20px;fill:#000">Tests 1</text>
+              </g>
+              <g>
+                <text x="82" y="910" dx="24" dy="34" style="font-size:20px;fill:#000">Radio</text>
+                <g class="arrow" transform="matrix(1,0,0,1,88,942)">
+                  <g class="arrow-m">
+                    <g class="arrow-down" transform="matrix(0.19,0,0,-0.19,2,3)">
+                      <use href="#arrow-m" style="fill:#bfbfbf" />
+                    </g>
+                  </g>
+                  <g class="arrow-f" style="display:none">
+                  </g>
                 </g>
               </g>
-            </g>
-            <g class="tree-items">
-              <text x="82" y="964" dx="25" dy="34" style="font-size:20px;fill:#000">Swiss</text>
-              <text x="82" y="1017" dx="25" dy="34" style="font-size:20px;fill:#000">Italy</text>
+              <g class="tree-items">
+                <text x="82" y="964" dx="25" dy="34" style="font-size:20px;fill:#000">Swiss</text>
+                <text x="82" y="1017" dx="25" dy="34" style="font-size:20px;fill:#000">Italy</text>
+              </g>
             </g>
           </g>
           <g id="side-tool">
@@ -362,7 +371,7 @@
               <rect class="ruler" x="1425" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
               <rect class="ruler" x="1696" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
             </g>
-            <g class="tree-vp">
+            <g class="tree-vp tree-view">
               <rect class="bg" x="473" y="366" width="1325" height="687" style="fill:#fff" />
               <g class="tree-items">
                 <rect class="focused" x="473" y="707" width="1325" height="49" style="fill:#0044e2" />
@@ -450,7 +459,7 @@
               </g>
             </g>
             <g class="search-item">
-              <rect class="input-bg" x="627" y="1003" width="208" height="33" style="fill:#fff;stroke:#d1d2d2;stroke-width:1px" />
+              <rect class="input-bg" x="627" y="1003" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:1px" />
               <text class="input-txt" x="627" y="1003" dx="4" dy="23" style="font-size:19px;fill:#000">Nasa</text>
             </g>
             <g class="search-item">
@@ -534,8 +543,10 @@
     <rect id="w-shade" x="83" y="83" width="1714" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
-  <!--<image id="screen" href="screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
-  <!--<image id="screen-flip" href="screenshot.png" width="1880" height="1300" style="opacity:0.5" transform="matrix(-1,0,0,1,1880,0)" />-->
+  <!--<image id="screen" href="../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
+  <!--<image id="screen-flip" href="../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" transform="matrix(-1,0,0,1,1880,0)" />-->
 
   <g id="test" transform="matrix(1,0,0,1,50,1270)">
     <text id="test_lm" dx="95">macx light</text>
