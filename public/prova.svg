@@ -560,6 +560,8 @@
     document.getElementById('test').addEventListener('click', function(e) {
       var id = e.target.getAttribute('id');
       document.getElementById('window').setAttribute('class', id[id.length - 1] + ' ' + id.replace('test_', ''));
+      document.getElementsByTagName('svg')[0].setAttribute('transform', 'matrix(1,1,1,1,0,0)');
+      document.getElementsByTagName('svg')[0].setAttribute('transform', '');
     });
   </script>
 </svg>
