@@ -1,96 +1,102 @@
 
 svg {}
+
+/* safari: unsupported */
 text { user-select: none; }
 
 #menubar tspan tspan { text-decoration: underline; }
 
-.dark-m text { fill: #fff !important; }
-.dark-m #t-txt { fill: #bcbebe !important; }
+.dm text { fill: #fff !important; }
+.dm #t-txt { fill: #bcbebe !important; }
 
-.dark-m #t-bg { fill: #404242 !important; stroke: #787979 !important; }
-.dark-m #w-bg, .dark-m #menu-bg { fill: #313333 !important; }
-.dark-m #sb-bg, .dark-m #tabbar .bg, .dark-m #main-bg { fill: #2f3131 !important; }
+.dm #t-bg { fill: #404242 !important; stroke: #787979 !important; }
+.dm #w-bg, .dm #menu-bg { fill: #313333 !important; }
+.dm #sb-bg, .dm #tabbar .bg, .dm #main-bg { fill: #2f3131 !important; }
 
-.dark-m #ss-bg, .dark-m #tb-corner .bg { fill: #485352 !important; }
+.dm #ss-bg, .dm #tb-corner .bg { fill: #485352 !important; }
 
-.dark-m .tree-vp .bg { fill: #171717 !important; }
+.dm .tree-vp .bg { fill: #171717 !important; }
 
-.dark-m #side-tool .bg { fill: #313837 !important; }
-.dark-m #tree-tool .bg { fill: #202121 !important; }
-.dark-m .tree-search .bg { fill: #101010 !important; }
+.dm #side-tool .bg { fill: #313837 !important; }
+.dm #tree-tool .bg { fill: #202121 !important; }
+.dm .tree-search .bg { fill: #101010 !important; }
 
-.dark-m .btn-bg { fill: #fff !important; fill-opacity: 0.24 !important; stroke: url(#btn-stroke-d-m) !important; }
-.dark-m .input-bg { fill: #fff !important; fill-opacity: 0.08 !important; stroke: #fff !important; stroke-opacity: .11; }
+.dm .btn-bg { fill: #fff !important; fill-opacity: 0.24 !important; stroke: url(#btn-stroke-d-m) !important; }
+.dm .input-bg { fill: #fff !important; fill-opacity: 0.08 !important; stroke: #fff !important; stroke-opacity: .11; }
 
-.dark-m .tb-button rect { fill: url(#btn-bg-d-m) !important; }
-.dark-m .find-bg, .dark-m .tree-cols .bg { fill: #323232 !important; }
-.dark-m .find-h-bg { fill: #25456c !important; }
+.dm .tb-button rect { fill: url(#btn-bg-d-m) !important; }
+.dm .find-bg, .dm .tree-cols .bg { fill: #323232 !important; }
+.dm .find-h-bg { fill: #25456c !important; }
 
-.dark-m #t-ctrs-m ellipse { stroke: none !important; }
-.dark-m #t-stroke { stroke: #000 !important; }
-.dark-m #sb-stroke, .dark-m #main-stroke { stroke: #404242 !important; }
-.dark-m .tb-button rect { stroke: #fff !important; stroke-opacity: 0.23;  }
-.dark-m #menu-stroke { stroke: #324040 !important; }
-.dark-m #side-tool .stroke { stroke: #3a4140 !important; }
-.dark-m #tree-tool .stroke { stroke: #2d2e2e !important; }
+.dm #t-ctrs-m ellipse { stroke: none !important; }
+.dm #t-stroke { stroke: #000 !important; }
+.dm #sb-stroke, .dm #main-stroke { stroke: #404242 !important; }
+.dm .tb-button rect { stroke: #fff !important; stroke-opacity: 0.23;  }
+.dm .tb-tab rect { fill: #323232 !important; stroke: #3e3e3e !important; }
+.dm #menu-stroke { stroke: #324040 !important; }
+.dm #side-tool .stroke { stroke: #3a4140 !important; }
+.dm #tree-tool .stroke { stroke: #2d2e2e !important; }
 
-.dark-m #w-shade { stroke-opacity: 0.24 !important; }
+.dm #w-shade { stroke-opacity: 0.24 !important; }
 
-.dark-m .tb-button text { fill-opacity: 0.89; }
-.dark-m .menu-item text, .dark-m .tool-txt { fill-opacity: 0.89; text-shadow: 0 0.5px 1px #090909; }
-.dark-m .menu-item .btn-txt { text-shadow: none; }
-.dark-m .btn-txt, .dark-m .find-txt { fill-opacity: 0.78 !important; }
-.dark-m .find-h-txt { fill: #323232 !important; }
+.dm .tb-button text { fill-opacity: 0.89; }
+.dm .menu-item text, .dm .tool-txt { fill-opacity: 0.89; text-shadow: 0 0.5px 1px #090909; }
+.dm .menu-item .btn-txt { text-shadow: none; }
+.dm .btn-txt, .dm .find-txt { fill-opacity: 0.78 !important; }
+.dm .find-h-txt { fill: #323232 !important; }
 
-.dark-m .tb-button .ico use { fill: #dad4d6 !important; }
-.dark-m .tb-tab .ico use { fill: #fff !important; }
-.dark-m .tb-ico use { fill: #fff !important; }
-.dark-m .menu-item .ico use { fill: #c7c8c8 !important; }
-.dark-m #split-start .ico use { fill: #ced0d0 !important; }
-.dark-m #split-end .ico use { fill: #c7c7c7 !important; }
+.dm .tb-button .ico use { fill: #dad4d6 !important; }
+.dm .tb-tab .ico use { fill: #646464 !important; }
+.dm .tb-tab .tb-ico use { fill: #fff !important; }
+.dm .menu-item .ico use { fill: #c7c8c8 !important; }
+.dm #tree .ico use { fill: #7b7c7c !important; }
+.dm #split-start .ico use { fill: #ced0d0 !important; }
+.dm #split-end .ico use { fill: #c7c7c7 !important; }
 
-.dark-m #tb-start { stroke: #fff !important; }
-.dark-m #tb-end {  }
-.dark-m #split ellipse { fill: #444646 !important; }
+.dm #tb-start { fill: #3a5165 !important; }
+.dm #tb-end { fill: #3a3a3a !important; }
+.dm #split ellipse { fill: #444646 !important; }
 
-.dark-m .btn-caret rect { fill: url(#btn-bg-a-d-m) !important; stroke: url(#btn-stroke-d-m) !important; }
+.dm .btn-caret rect { fill: url(#btn-bg-a-d-m) !important; stroke: url(#btn-stroke-d-m) !important; }
 
-.dark-m .tb-tab.active rect { fill: #2a4f7b !important; stroke: #234065 !important; }
-.dark-m #split-start .focused { fill: #596362 !important; }
-.dark-m #split-end .focused { fill: #023acd !important; }
+.dm .tb-tab.active rect { fill: #2a4f7b !important; stroke: #234065 !important; }
+.dm .tb-tab.active .ico use { fill: #fff !important; }
+.dm #split-start .focused { fill: #596362 !important; }
+.dm #split-end .focused { fill: #023acd !important; }
 
-.dark-m .sbv .xy { fill: #8b8b8b !important; }
+.dm .sbv .xy { fill: #8b8b8b !important; }
 
 
 
 .w { font-family: 'Segoe UI', Tahoma, sans-serif !important; }
-.l { font-family: 'Ubuntu', 'Liberation Sans', sans-serif !important; }
+.f { font-family: 'Ubuntu', 'Liberation Sans', sans-serif !important; }
 
-.w #t-ctrs-m, .l #t-ctrs-m { display: none; }
-.w #t-ctrs-w, .l #t-ctrs-l { display: block !important; }
+.w #t-ctrs-m, .f #t-ctrs-m { display: none; }
+.w #t-ctrs-w, .w #t-ico-w, .f #t-ctrs-l { display: block !important; }
 
-.w #menubar, .l #menubar { display: block !important; }
-.w #split ellipse, .l #split ellipse { display: none !important; }
+.w #menubar, .f #menubar, .w .arrow-w, .f .arrow-f { display: block !important; }
+.w #split ellipse, .f #split ellipse, .w .arrow-m, .f .arrow-m { display: none !important; }
 
-.w #w-bg, .w #w-stroke, .w #t-bg, .w #sb-bg, .l #w-bg, .l #w-stroke, .l #w-shade, .l #t-bg, .l #sb-bg { rx: 0; }
+.w #w-bg, .w #w-stroke, .w #t-bg, .w #sb-bg, .f #w-bg, .f #w-stroke, .f #w-shade, .f #t-bg, .f #sb-bg { rx: 0; }
 
-.w .btn-caret .bg, .l .btn-caret .bg { fill: none !important; stroke: none !important; }
+.w .btn-caret .bg, .f .btn-caret .bg { fill: none !important; stroke: none !important; }
 
-.w #w-inner, .l #w-inner { transform: matrix(1, 0, 0, 1, 0, 30); }
+.w #w-inner, .f #w-inner { transform: matrix(1, 0, 0, 1, 0, 30); }
 
-.w #tb-tabs rect, .w .tb-tab rect, .l #tb-tabs rect, .l .tb-tab rect { height: 67px; }
-.w .tb-tab text, .l .tb-tab text { dy: 38px; }
+.w #tb-tabs rect, .f #tb-tabs rect { height: 65px; }
+.w #tb-tabs .tb-tab rect, .f #tb-tabs .tb-tab rect { height: 67px; }
+.w .tb-tab text, .f .tb-tab text { dy: 38px; }
 
-.w #menu, .l #menu { transform: matrix(1, 0, 0, 1, 0, -2); }
-.w #menu-bg, .l #menu-bg { height: 89px; }
+.w #menu, .f #menu { transform: matrix(1, 0, 0, 1, 0, -2); }
+.w #menu-bg, .f #menu-bg { height: 89px; }
 
-.w .menu-item, .l .menu-item { transform: translate(0, -6px); }
-.w .menu-item > rect, .l .menu-item > rect{ height: 88px; }
-.w .menu-item > text, .l .menu-item > text { font-size: 24px !important; }
+.w .menu-item, .f .menu-item { transform: translate(0, -6px); }
+.w .menu-item > rect, .f .menu-item > rect{ height: 88px; }
+.w .menu-item > text, .f .menu-item > text { font-size: 24px !important; }
 
-.w #main, .l #main { transform: matrix(1, 0, 0, 1, 0, -13); }
+.w #main, .f #main { transform: matrix(1, 0, 0, 1, 0, -13); }
 
-.w .ay, .l .ay { text-decoration: underline; }
+.w .ay, .f .ay { text-decoration: underline; }
 
 
 .w #w-bg { fill: #efefef !important; stroke: #acc6c3 !important; }
@@ -107,87 +113,98 @@ text { user-select: none; }
 
 .w .focused, .w .tb-tab.active rect  { fill: #308cc6 !important; }
 
+.w .sbh { clip-path: inset(0 0 1px 1px); }
+.w .sbv { clip-path: inset(1px 1px 0 0); transform: translate(7px, -1px); }
+.w .sbh .bg, .w .sbv .bg { fill: #e6e6e6; stroke: #bcbcbc !important; }
+.w .sbh .btn-bg, .w .sbv .btn-bg { rx: 0; }
+.w .sbh .btn-bg, .w .sbv .btn-bg, .w .sbh .xy, .w .sbv .xy { display: block !important; fill: url(#btn-bg-l) !important; stroke: #ababab !important; stroke-width: 1px; }
+.w .sbh .xy, .w .sbv .xy { rx: 0 }
+.w .sbh .xy { display: block !important; x: 487px; y: 997px; width: 1255px; height: 14px; }
+.w .sbv .xy { x: 1784px; y: 511px; width: 14px; height: 70px; }
 
-.l .sbh .bg, .l .sbv .bg, .l .sbh .btn-bg, .l .sbv .btn-bg { display: block !important; }
 
-.l #w-bg { fill: #efefef !important; stroke: #acc6c3 !important; }
-.l #t-bg { fill: #fafafa !important; stroke: none !important; }
+.f .sbh .bg, .f .sbv .bg, .f .sbh .btn-bg, .f .sbv .btn-bg { display: block !important; }
 
-.l #sb-bg, .l #tabbar .bg, .l #tb-corner .bg, .l #menu-bg, .l #ss-bg { fill: none !important; }
-.l #main-bg, .l #side-tool .bg, .l #tree-tool .bg { fill: #efefef !important; }
+.f #w-bg { fill: #efefef !important; stroke: #acc6c3 !important; }
+.f #t-bg { fill: #fafafa !important; stroke: none !important; }
 
-.l #t-txt { font-size: 19px !important; fill: #636363 !important; }
+.f #sb-bg, .f #tabbar .bg, .f #tb-corner .bg, .f #menu-bg, .f #ss-bg { fill: none !important; }
+.f #main-bg, .f #side-tool .bg, .f #tree-tool .bg { fill: #efefef !important; }
 
-.l #mb-stroke { fill: #e2e2e2 !important; stroke: #e2e2e2; stroke-width: 1px; transform: translate(0, -0.5px); }
+.f #t-txt { font-size: 19px !important; fill: #636363 !important; }
 
-.l .btn-bg, .l .tb-button rect, .l .box-button .bg { rx: 3; fill: url(#btn-bg-l) !important; stroke: #ababab !important; }
+.f #mb-stroke { fill: #e2e2e2 !important; stroke: #e2e2e2; stroke-width: 1px; transform: translate(0, -0.5px); }
 
-.l .find-h-bg { fill: #68c5ff !important; }
+/* safari bug: radius undefined :workaround: rx="1" style="rx:0" */
+.f .btn-bg, .f .tb-button rect, .f .box-button .bg { rx: 4px !important; fill: url(#btn-bg-l) !important; stroke: #ababab !important; }
 
-.l .ruler { height: 26px; stroke: #000; stroke-opacity: 0.75; transform: translate(0, -1px); }
+.f .find-h-bg { fill: #68c5ff !important; }
 
-.l .menu-item .ico use, .l .tree-item .ico use { fill: #5c5c5c !important; }
+.f .ruler { height: 26px; stroke: #000; stroke-opacity: 0.75; transform: translate(0, -1px); }
 
-.l .tree-cols .bg { fill: url(#btn-bg-l) !important; stroke: #c8c8c8; stroke-width: 2px; clip-path: inset(1px 1px 0); }
+.f .menu-item .ico use, .f .tree-item .ico use { fill: #5c5c5c !important; }
 
-.l .tb-tab.active rect { stroke: #308cc6 !important; }
-.l .tb-tab.active text { fill: #fff !important; }
+.f .tree-cols .bg { fill: url(#btn-bg-l) !important; stroke: #c8c8c8; stroke-width: 2px; clip-path: inset(1px 1px 0); }
 
-.l #sb-stroke { stroke: #e4e4e4 !important; }
+.f .tb-tab.active rect { stroke: #308cc6 !important; }
+.f .tb-tab.active text { fill: #fff !important; }
 
-.l .focused, .l .tb-tab.active rect  { fill: #308cc6 !important; }
-.l .tree-items g text { fill: #fff !important; }
+.f #sb-stroke { stroke: #e4e4e4 !important; }
 
-.l #statusbar { transform: translate(0, 5px); }
-.l #sb-bg { height: 51px; }
-.l #sb-stroke { height: 37px; }
-.l #statusbar text { font-size: 18px !important; transform: translate(-5px, -2px); }
-.l #statusbar text:last-child { transform: translate(38px, -2px); }
+.f .focused, .f .tb-tab.active rect  { fill: #308cc6 !important; }
+.f .tree-items g text { fill: #fff !important; }
 
-.l #tb-corner .bg { width: 128px; }
-.l .tb-button { transform: translate(8px, 0); }
-.l .tb-button text { font-size: 18px !important; }
-.l #tb-tabs { transform: translate(8px, 0); }
+.f #statusbar { transform: translate(0, 5px); }
+.f #sb-bg { height: 51px; }
+.f #sb-stroke { height: 37px; }
+.f #statusbar text { font-size: 18px !important; transform: translate(-5px, -2px); }
+.f #statusbar text:last-child { transform: translate(38px, -2px); }
 
-.l .tb-tab rect { fill: #efefef !important; }
-.l .tb-tab rect, .l #tb-end { stroke: #dfdfdf !important; }
-.l .tb-tab text { font-size: 18px !important; transform: translate(0, -1px); }
+.f #tb-corner .bg { width: 128px; }
+.f .tb-button { transform: translate(8px, 0); }
+.f .tb-button text { font-size: 18px !important; }
+.f #tb-tabs { transform: translate(8px, 0); }
 
-.l .box-title text { font-size: 19px !important; }
-.l .tree-cols text { transform: translate(-3px, 2px); }
+.f .tb-tab rect { fill: #efefef !important; }
+.f .tb-tab rect { stroke: #dfdfdf !important; }
+.f #tb-end { fill: #dfdfdf !important; }
 
-.l .box-button { transform: translate(20px, -5px); }
+.f .tb-tab text { font-size: 18px !important; transform: translate(0, -1px); }
+.f .box-title text { font-size: 19px !important; }
+.f .tree-cols text { transform: translate(-3px, 2px); }
 
-.l #split rect { width: 4px; }
-.l #split-end { transform: translate(-7px, 0); }
+.f .box-button { transform: translate(20px, -5px); }
 
-.l .tree .tree-items { transform: translate(0, -1px); }
-.l .tree-items text { transform: translate(-5px, 0); }
+.f #split rect { width: 4px; }
+.f #split-end { transform: translate(-7px, 0); }
 
-.l .tree-search .bg { width: 1332px; height: 50px; }
-.l #tree-tool .bg { width: 1332px; }
-.l .tree-search { transform: translate(0, 20px); }
-.l .search-item { transform: translate(0, -4px); }
+.f .tree .tree-items { transform: translate(0, -1px); }
+.f .tree-items text { transform: translate(-5px, 0); }
 
-.l #side-tool .bg, .l #side-tool .stroke, .l #tree-tool .bg, .l #tree-tool .stroke { height: 65px; transform: translate(0, 8px); }
-.l #st-items, .l #tt-items { transform: translate(0, 4px); }
-.l .tool-txt { font-size: 19px !important; }
+.f .tree-search .bg { width: 1332px; height: 50px; }
+.f #tree-tool .bg { width: 1332px; }
+.f .tree-search { transform: translate(0, 20px); }
+.f .search-item { transform: translate(0, -4px); }
 
-.l .st-item:last-child { transform: translate(20px, 2px); }
-.l .tt-item:last-child { transform: translate(30px, 2px); }
-.l .st-item:last-child .btn-bg, .l .tt-item:last-child .btn-bg { width: 100px; height: 34px; }
-.l .st-item:last-child .btn-bg { transform: translate(15px, -1px); }
-.l .tt-item:last-child .btn-bg { transform: translate(10px, -1px); }
-.l .st-item:last-child .btn-ico use, .l .tt-item:last-child .btn-ico use { x: 15px; }
+.f #side-tool .bg, .f #side-tool .stroke, .f #tree-tool .bg, .f #tree-tool .stroke { height: 65px; transform: translate(0, 8px); }
+.f #st-items, .f #tt-items { transform: translate(0, 4px); }
+.f .tool-txt { font-size: 20px !important; }
 
-.l .sbh { clip-path: inset(0 0 1px 1px); }
-.l .sbv { clip-path: inset(1px 1px 0 0); transform: translate(7px, -1px); }
-.l .sbh .bg, .l .sbv .bg { fill: #e6e6e6; stroke: #bcbcbc !important; }
-.l .sbh .btn-bg, .l .sbv .btn-bg { rx: 0; }
-.l .sbh .btn-bg, .l .sbv .btn-bg, .l .sbh .xy, .l .sbv .xy { display: block !important; fill: url(#btn-bg-l) !important; stroke: #ababab !important; stroke-width: 1px; }
-.l .sbh .xy, .l .sbv .xy { rx: 0 }
-.l .sbh .xy { display: block !important; x: 487px; y: 997px; width: 1255px; height: 14px; }
-.l .sbv .xy { x: 1784px; y: 511px; width: 14px; height: 70px; }
+.f .st-item:last-child { transform: translate(20px, 2px); }
+.f .tt-item:last-child { transform: translate(30px, 2px); }
+.f .st-item:last-child .btn-bg, .f .tt-item:last-child .btn-bg { width: 100px; height: 34px; }
+.f .st-item:last-child .btn-bg { transform: translate(15px, -1px); }
+.f .tt-item:last-child .btn-bg { transform: translate(10px, -1px); }
+.f .st-item:last-child .btn-ico use, .f .tt-item:last-child .btn-ico use { x: 15px; }
+
+.f .sbh { clip-path: inset(0 0 1px 1px); }
+.f .sbv { clip-path: inset(1px 1px 0 0); transform: translate(7px, -1px); }
+.f .sbh .bg, .f .sbv .bg { fill: #e6e6e6; stroke: #bcbcbc !important; }
+.f .sbh .btn-bg, .f .sbv .btn-bg { rx: 0; }
+.f .sbh .btn-bg, .f .sbv .btn-bg, .f .sbh .xy, .f .sbv .xy { display: block !important; fill: url(#btn-bg-l) !important; stroke: #ababab !important; stroke-width: 1px; }
+.f .sbh .xy, .f .sbv .xy { rx: 0 }
+.f .sbh .xy { display: block !important; x: 487px; y: 997px; width: 1255px; height: 14px; }
+.f .sbv .xy { x: 1784px; y: 511px; width: 14px; height: 70px; }
 
 
 

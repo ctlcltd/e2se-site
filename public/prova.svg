@@ -47,6 +47,10 @@
       <path d="M18.707,48.333L15.707,48.333C14.603,48.333 13.707,49.23 13.707,50.333C13.707,51.437 14.603,52.333 15.707,52.333L27.707,52.333C28.811,52.333 29.707,51.437 29.707,50.333C29.707,49.23 28.811,48.333 27.707,48.333L24.707,48.333L24.707,45.333C24.707,43.678 23.363,42.333 21.707,42.333C20.052,42.333 18.707,43.678 18.707,45.333L18.707,48.333ZM25.286,39.498C25.191,39.499 25.096,39.5 25,39.5C14.928,39.5 6.75,31.098 6.75,20.75C6.75,10.402 14.928,2 25,2C35.072,2 43.25,10.402 43.25,20.75C43.25,24.057 42.415,27.166 40.949,29.865L52,25.842L52,22.771C52,21.943 52.672,21.271 53.5,21.271L56.5,21.271C57.328,21.271 58,21.943 58,22.771L58,33.771C58,34.599 57.328,35.271 56.5,35.271L53.5,35.271C52.672,35.271 52,34.599 52,33.771L52,32.228L26.074,41.664L25.286,39.498Z" />
     </symbol>
 
+    <symbol id="arrow-m">
+      <path d="M32,13.243C30.332,13.243 28.664,13.878 27.392,15.15L2.907,39.635C0.364,42.178 0.364,46.307 2.907,48.85C5.45,51.393 9.579,51.393 12.122,48.85L32,28.972L51.878,48.85C54.421,51.393 58.55,51.393 61.093,48.85C63.636,46.307 63.636,42.178 61.093,39.635L36.608,15.15C35.336,13.878 33.668,13.243 32,13.243Z" />
+    </symbol>
+
     <linearGradient id="btn-bg-m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#e2e2e2"/><stop offset="0.7" style="stop-color:#f7f7f7"/></linearGradient>
     <linearGradient id="btn-stroke-m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#000;stop-opacity:0.15"/><stop offset="1" style="stop-color:#000;stop-opacity:0.19"/></linearGradient>
     <linearGradient id="btn-bg-d-m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#5b6564"/><stop offset="0.6" style="stop-color:#626c6c"/></linearGradient>
@@ -66,6 +70,7 @@
       <rect id="t-stroke" x="81" y="124" width="1718" height="1" style="fill:none;stroke:#cdcece;stroke-width:2px;clip-path:inset(0 1px)" />
       <text id="t-txt" x="82" y="82" dx="857" dy="28" text-anchor="middle" style="font-weight:bold;font-size:20px;fill:#494949;">e2 SAT Editor</text>
       <g id="t-ico-w" style="display:none">
+        <image x="89" y="86" width="32" height="32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAB6VBMVEUAAAD/otH//wD//wD//wCnpH2wrXD/oNb/psj/tan//wD//wD//wD/y3j/le///wD//wD/uZ///wD//wD/wI3/wY3//wD//wD//wD//wD6qb6zsGv/qsH5r666t2L/rLz/r7T/sLL//wD/t6H//wD/up3/vJf//wD/vZT//wD/wYz/w4b//wD/wor/yXj//wD//wANDQ3/j////wCYlJQXFhQA/wD9ntyopH0UExL4+AFNTBASERFAQEDx8QEgHxIFnwUMHQw3NzcVFRULKwsLNAsIZgj/AAAZGRkHdgcA+wA8PDw0NDQMLgwMFAwJXwkHcwclJSUiIiILPAsB5gEwMDANDw0JVwkJTwkEvgQDvwMB7QEdHh0MJQwErwQDywMC1QIB7gEMIQwMGgwKQgoJWwkHfAcGigYDxgMC2QIB5wErKysXIxc2Ng9bWw4MHwwIaQgGlQYGkQYGhQYFmgUC4AIB8wH9/QD/kfk5OTksLCwpKSkkIxIqKhFlZA5ycQ0LSAsJYAmcmwgIbgiGCAhiCAgHgge2tQYFqwUFnAW1BQUEuAQEtAS9BAQDwQMB9QEB6AEgJSAtFRNCQREdHRBaRw9XEQ8iDAwdDAyNjAoKVwoJVAmkowgIYgjHxwTWBAQDxQPWAwP39wGR5dOxAAAAMXRSTlMA87iw0Pbn9ey7qVETBf7px6B8ZlpSSB/28/Lw4+He29XPvqeal5KGfXBMNzIwJiYYhT3QNwAAAstJREFUWMPt0edX2lAYx3Fa27paraN27737kPK0KLFhGAgoZQmoKLigWrd1771H955/aW/wjdfklJtz+sLj8fPyd5Iv4V7dvl3mWGHepQOpZFy+fken7kS6nlHGXbWfzxzUM8vJUwYy9ZrcUHz/oLZAzv0dfyBdr1EGHSjUa/aAClzVHrhFBS5qD2RSgXTtgXNU4MwTzc5TgcOPNTuy1wJnn2p2gQoc4jRL25OBgWJGA6qB0vFRA6OxiWJloPitQYMOZWDaoMmCIjAGRNBms8GWBpvNDAQ9J/dGAChRBAxkrY0iYlXyvRkn4sYUENQM82SvCQO07wyUmgBszfWIGKgAAJOARA95kpohtCLvHhM8Uwm4YzV+URQ7LV6wuhxfRTEsYBi2zxBHqVkUm3xDQbVAGeJzALDyFvDxL4GowVewfYYXWC3v5byDOeC1/NfAL6z6RwCq+0KCIDRV+sA01JYQhN6E0w/bZ5hCsUcQpEg5qAYaQ0g4y4CoQmKRnDw9V8SStwPqgd667kBroNdrgNrYTKy1NeofAcLxWp4T0XlyoC1dLZub62Ve1YDNifK9G/lyEDAKxDDvcPjA4iJx6EJnI6zgqrxX8tYUh1iHLVsPRkZc4OLlgAexgboFxoA1wh7o7Hf6zWazyVUJCVx1m81uL2+VH3cFyTyJfW4QcEneh11G1UMMxeWzr2szgXvJs4FY/yUChLUtOUtNAGYh7kQMTDrUbwH8/UheS97dIhLdQFAzrMt7XP0aiQqP5KkFWfC7JDUDQc1k75KkMKgH2KkEjv9hDnycXZsDGOWyqMA17h0wWrbb7XPQzuVTgQKuHdh8shNr0MEVUYF73LSR0W8SmDX+4I7q6EPgJgxsPvy0L7/5TI6A9vDUwLeOEjbvxxe4XPIBtNucJtk6hYLTHLNc8r7SySscoyz5+1UT2TfTDqaQll/0SLdvl/kLbiw5QeVp49MAAAAASUVORK5CYII=" />
       </g>
       <g id="t-ctrs-w" style="display:none">
       </g>
@@ -87,7 +92,7 @@
         <g id="tb-corner">
           <rect class="bg" x="82" y="125" width="120" height="67" style="fill:#e7e8e8" />
           <g class="tb-button">
-            <rect x="82" y="131" width="112" height="53" style="fill:url(#btn-bg-m);stroke:#afafaf;stroke-width:1px" />
+            <rect x="82" y="131" width="112" height="53" rx="1" style="rx:0;fill:url(#btn-bg-m);stroke:#afafaf;stroke-width:1px" />
             <g class="tb-ico ico" transform="matrix(0.26,0,0,0.26,88,149)">
               <use href="#add" style="fill:#4f4f4f" />
             </g>
@@ -95,7 +100,7 @@
           </g>
         </g>
         <g id="tb-tabs">
-          <rect id="tb-start" x="202" y="124" width="0.6" height="69" style="fill:none;stroke:#95c1f1;stroke-width:1px;clip-path:inset(1px 0 1px);transform:translate(0.5px,0)" />
+          <rect id="tb-start" x="202" y="125" width="1" height="67" style="fill:#95c1f1" />
           <g class="tb-tab active">
             <rect x="203" y="124" width="157" height="69" style="fill:#9dcdff;stroke:#91bdef;stroke-width:1px;clip-path:inset(1px 0 1px)" />
             <text x="203" y="124" dx="15" dy="41" style="font-size:20px;fill:#000">enigma_db</text>
@@ -140,7 +145,7 @@
               <use href="#close" style="fill:#666" />
             </g>
           </g>
-          <rect id="tb-end" x="1391" y="124" width="0.6" height="69" style="fill:none;stroke:#d5d6d6;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+          <rect id="tb-end" x="1390" y="125" width="1" height="67" style="fill:#d5d6d6" />
         </g>
       </g>
       <g id="menu">
@@ -194,8 +199,17 @@
               <g class="btn-caret" transform="matrix(1,0,0,1,1130,226)">
                 <rect class="fx" x="0" y="0" width="24" height="24" rx="8" style="fill:none;filter:drop-shadow(0 0.5px 1px #333);transform:translate(0.5px,1px)" />
                 <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
-                <g class="ico" transform="matrix(0.18,0,0,0.18,7,7)">
-                  <use href="#close" style="fill:#fff" />
+                <g class="arrow">
+                  <g class="arrow-m">
+                    <g class="arrow-up" transform="matrix(0.16,0,0,0.16,7.4,3.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                    <g class="arrow-down" transform="matrix(0.16,0,0,-0.16,7.4,22.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                  </g>
+                  <g class="arrow-f" style="display:none">
+                  </g>
                 </g>
               </g>
               <text class="btn-txt" x="1033" y="224" dx="12" dy="22" style="font-size:20px;fill:#000">Default</text>
@@ -234,7 +248,7 @@
               <text x="82" y="291" dx="10" dy="33" style="font-weight:bold;font-size:20px;fill:#000">Services</text>
               <g class="box-button">
                 <g transform="matrix(1,0,0,1,405,300)">
-                  <rect class="bg" x="0" y="0" width="38" height="32" style="fill:none" />
+                  <rect class="bg" x="0" y="0" width="38" height="32" rx="1" style="rx:0;fill:none" />
                   <g class="ico" transform="matrix(0.38,0,0,0.38,7,3)">
                     <use href="#services-sets-menu" style="fill:#505050" />
                   </g>
@@ -258,6 +272,15 @@
             </g>
             <g>
               <text x="82" y="643" dx="24" dy="34" style="font-size:20px;fill:#000">TV</text>
+              <g class="arrow" transform="matrix(1,0,0,1,88,675)">
+                <g class="arrow-m">
+                  <g class="arrow-down" transform="matrix(0.19,0,0,-0.19,2,3)">
+                    <use href="#arrow-m" style="fill:#bfbfbf" />
+                  </g>
+                </g>
+                <g class="arrow-f" style="display:none">
+                </g>
+              </g>
             </g>
             <g class="tree-items">
               <text x="82" y="697" dx="25" dy="34" style="font-size:20px;fill:#000">Swiss</text>
@@ -270,6 +293,15 @@
             </g>
             <g>
               <text x="82" y="910" dx="24" dy="34" style="font-size:20px;fill:#000">Radio</text>
+              <g class="arrow" transform="matrix(1,0,0,1,88,942)">
+                <g class="arrow-m">
+                  <g class="arrow-down" transform="matrix(0.19,0,0,-0.19,2,3)">
+                    <use href="#arrow-m" style="fill:#bfbfbf" />
+                  </g>
+                </g>
+                <g class="arrow-f" style="display:none">
+                </g>
+              </g>
             </g>
             <g class="tree-items">
               <text x="82" y="964" dx="25" dy="34" style="font-size:20px;fill:#000">Swiss</text>
@@ -310,7 +342,7 @@
             <text x="473" y="291" dx="10" dy="32" style="font-weight:bold;font-size:20px;fill:#000">Channels</text>
             <g class="box-button">
               <g transform="matrix(1,0,0,1,1744,300)">
-                <rect class="bg" x="0" y="0" width="38" height="32" style="fill:none" />
+                <rect class="bg" x="0" y="0" width="38" height="32" rx="1" style="rx:0;fill:none" />
                 <g class="ico" transform="matrix(0.38,0,0,0.38,7,3)">
                   <use href="#list-prefs-menu" style="fill:#505050" />
                 </g>
@@ -403,8 +435,17 @@
               <g class="btn-caret" transform="matrix(1,0,0,1,592,1006)">
                 <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
                 <rect class="fx" x="0" y="0" width="24" height="24" rx="8" style="fill:none;filter:drop-shadow(0 0.5px 1px #333);transform:translate(0.5px,1px)" />
-                <g class="ico" transform="matrix(0.18,0,0,0.18,7,7)">
-                  <use href="#close" style="fill:#fff" />
+                <g class="arrow">
+                  <g class="arrow-m">
+                    <g class="arrow-up" transform="matrix(0.16,0,0,0.16,7.4,3.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                    <g class="arrow-down" transform="matrix(0.16,0,0,-0.16,7.4,22.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                  </g>
+                  <g class="arrow-f" style="display:none">
+                  </g>
                 </g>
               </g>
             </g>
@@ -497,12 +538,12 @@
   <!--<image id="screen-flip" href="screenshot.png" width="1880" height="1300" style="opacity:0.5" transform="matrix(-1,0,0,1,1880,0)" />-->
 
   <g id="test" transform="matrix(1,0,0,1,50,1270)">
-    <text id="test_light-m" dx="100">m light</text>
-    <text id="test_dark-m" dx="200">m dark</text>
-    <text id="test_light-w" dx="300">w light</text>
-    <text id="test_dark-w" dx="400">w dark</text>
-    <text id="test_light-l" dx="500">l light</text>
-    <text id="test_dark-l" dx="600">l dark</text>
+    <text id="test_lm" dx="95">macx light</text>
+    <text id="test_dm" dx="200">macx dark</text>
+    <text id="test_lw" dx="320">win light</text>
+    <text id="test_dw" dx="420">win dark</text>
+    <text id="test_lf" dx="535">fusion light</text>
+    <text id="test_df" dx="650">fusion dark</text>
   </g>
   <script type="text/javascript">
     document.getElementById('test').addEventListener('click', function(e) {
