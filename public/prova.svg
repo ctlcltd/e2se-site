@@ -50,6 +50,15 @@
     <symbol id="arrow-m">
       <path d="M32,13.243C30.332,13.243 28.664,13.878 27.392,15.15L2.907,39.635C0.364,42.178 0.364,46.307 2.907,48.85C5.45,51.393 9.579,51.393 12.122,48.85L32,28.972L51.878,48.85C54.421,51.393 58.55,51.393 61.093,48.85C63.636,46.307 63.636,42.178 61.093,39.635L36.608,15.15C35.336,13.878 33.668,13.243 32,13.243Z" />
     </symbol>
+    <symbol id="arrow-w">
+      <path d="M32,30.114L59.467,59.353L59.467,34.738L32,5.498L4.533,34.738L4.533,59.353L32,30.114Z" />
+    </symbol>
+    <symbol id="arrow-t-w">
+      <path d="M32,36.23L11.77,16.573C10.515,15.353 8.476,15.353 7.221,16.573C7.221,16.573 5.308,18.432 5.308,18.432C4.039,19.665 4.039,21.667 5.308,22.9C5.308,22.9 31.878,48.718 31.878,48.718L32,48.6C32,48.6 32.12,48.72 32.12,48.72L58.692,22.9C59.961,21.667 59.961,19.665 58.692,18.432C58.692,18.432 56.329,16.135 56.329,16.135C55.322,15.157 53.687,15.157 52.68,16.135L32,36.23Z" />
+    </symbol>
+    <symbol id="arrow-l">
+      <path d="M32,45.423L58.667,18.577L5.333,18.577L32,45.423Z" />
+    </symbol>
 
     <linearGradient id="btn-bg-m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#e2e2e2"/><stop offset="0.7" style="stop-color:#f7f7f7"/></linearGradient>
     <linearGradient id="btn-stroke-m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#000;stop-opacity:0.15"/><stop offset="1" style="stop-color:#000;stop-opacity:0.19"/></linearGradient>
@@ -74,24 +83,47 @@
       <g id="t-ico-w" style="display:none">
         <image x="93" y="92" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAB6VBMVEUAAAD/otH//wD//wD//wCnpH2wrXD/oNb/psj/tan//wD//wD//wD/y3j/le///wD//wD/uZ///wD//wD/wI3/wY3//wD//wD//wD//wD6qb6zsGv/qsH5r666t2L/rLz/r7T/sLL//wD/t6H//wD/up3/vJf//wD/vZT//wD/wYz/w4b//wD/wor/yXj//wD//wANDQ3/j////wCYlJQXFhQA/wD9ntyopH0UExL4+AFNTBASERFAQEDx8QEgHxIFnwUMHQw3NzcVFRULKwsLNAsIZgj/AAAZGRkHdgcA+wA8PDw0NDQMLgwMFAwJXwkHcwclJSUiIiILPAsB5gEwMDANDw0JVwkJTwkEvgQDvwMB7QEdHh0MJQwErwQDywMC1QIB7gEMIQwMGgwKQgoJWwkHfAcGigYDxgMC2QIB5wErKysXIxc2Ng9bWw4MHwwIaQgGlQYGkQYGhQYFmgUC4AIB8wH9/QD/kfk5OTksLCwpKSkkIxIqKhFlZA5ycQ0LSAsJYAmcmwgIbgiGCAhiCAgHgge2tQYFqwUFnAW1BQUEuAQEtAS9BAQDwQMB9QEB6AEgJSAtFRNCQREdHRBaRw9XEQ8iDAwdDAyNjAoKVwoJVAmkowgIYgjHxwTWBAQDxQPWAwP39wGR5dOxAAAAMXRSTlMA87iw0Pbn9ey7qVETBf7px6B8ZlpSSB/28/Lw4+He29XPvqeal5KGfXBMNzIwJiYYhT3QNwAAAstJREFUWMPt0edX2lAYx3Fa27paraN27737kPK0KLFhGAgoZQmoKLigWrd1771H955/aW/wjdfklJtz+sLj8fPyd5Iv4V7dvl3mWGHepQOpZFy+fken7kS6nlHGXbWfzxzUM8vJUwYy9ZrcUHz/oLZAzv0dfyBdr1EGHSjUa/aAClzVHrhFBS5qD2RSgXTtgXNU4MwTzc5TgcOPNTuy1wJnn2p2gQoc4jRL25OBgWJGA6qB0vFRA6OxiWJloPitQYMOZWDaoMmCIjAGRNBms8GWBpvNDAQ9J/dGAChRBAxkrY0iYlXyvRkn4sYUENQM82SvCQO07wyUmgBszfWIGKgAAJOARA95kpohtCLvHhM8Uwm4YzV+URQ7LV6wuhxfRTEsYBi2zxBHqVkUm3xDQbVAGeJzALDyFvDxL4GowVewfYYXWC3v5byDOeC1/NfAL6z6RwCq+0KCIDRV+sA01JYQhN6E0w/bZ5hCsUcQpEg5qAYaQ0g4y4CoQmKRnDw9V8SStwPqgd667kBroNdrgNrYTKy1NeofAcLxWp4T0XlyoC1dLZub62Ve1YDNifK9G/lyEDAKxDDvcPjA4iJx6EJnI6zgqrxX8tYUh1iHLVsPRkZc4OLlgAexgboFxoA1wh7o7Hf6zWazyVUJCVx1m81uL2+VH3cFyTyJfW4QcEneh11G1UMMxeWzr2szgXvJs4FY/yUChLUtOUtNAGYh7kQMTDrUbwH8/UheS97dIhLdQFAzrMt7XP0aiQqP5KkFWfC7JDUDQc1k75KkMKgH2KkEjv9hDnycXZsDGOWyqMA17h0wWrbb7XPQzuVTgQKuHdh8shNr0MEVUYF73LSR0W8SmDX+4I7q6EPgJgxsPvy0L7/5TI6A9vDUwLeOEjbvxxe4XPIBtNucJtk6hYLTHLNc8r7SySscoyz5+1UT2TfTDqaQll/0SLdvl/kLbiw5QeVp49MAAAAASUVORK5CYII=" />
       </g>
-      <g id="t-ctrs-w" style="display:none">
-      </g>
       <g id="t-ctrs-m">
         <ellipse cx="103" cy="103" rx="8.8" style="fill:#ff5f5a;stroke:#000;stroke-opacity:0.1" />
         <ellipse cx="133" cy="103" rx="8.8" style="fill:#febc2e;stroke:#000;stroke-opacity:0.1" />
         <ellipse cx="164" cy="103" rx="8.8" style="fill:#28c840;stroke:#000;stroke-opacity:0.1" />
       </g>
+      <g id="t-ctrs-w" style="display:none">
+        <rect x="1622" y="102" width="14.5" height="0.6" style="fill:none;stroke:#000;stroke-width:1px" />
+        <g transform="matrix(1,0,0,1,1687,110)">
+          <g transform="rotate(-90)">
+            <rect x="0" y="0" width="13.7" height="13.7" style="fill:none;stroke:#000;stroke-width:1.3px" />
+          </g>
+        </g>
+        <g transform="matrix(1,0,0,1,1762,89)">
+          <g transform="rotate(45)">
+            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:0.8px" />
+            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:0.8px" />
+          </g>
+        </g>
+      </g>
       <g id="t-ctrs-l" style="display:none">
+        <rect x="1670" y="107" width="10.5" height="1" style="fill:none;stroke:#333;stroke-width:1.1px" />
+        <g transform="matrix(0.9,0,0,0.9,1715,100)">
+          <rect x="0" y="0" width="15" height="13" style="fill:none;stroke:#333;stroke-width:3px;clip-path:inset(0 0 2px)" />
+          <rect x="1" y="4" width="13" height="7" style="fill:none;stroke:#333;stroke-width:1.7px" />
+        </g>
+        <g transform="matrix(1,0,0,1,1773,94)">
+          <g transform="rotate(45)">
+            <rect x="0" y="7" width="15" height="1" style="fill:none;stroke:#333;stroke-width:1px" />
+            <rect x="7" y="0" width="1" height="15" style="fill:none;stroke:#333;stroke-width:1px" />
+          </g>
+        </g>
       </g>
     </g>
     <g id="menubar" style="display:none">
       <rect id="mb-bg" x="82" y="121" width="1716" height="32" style="fill:#eee" />
-      <text id="mb-txt" x="82" y="121" dx="12" dy="24" style="font-size:19px;fill:#000"><tspan>F</tspan>ile <tspan>E</tspan>dit <tspan>F</tspan>ind <tspan>T</tspan>ools <tspan>W</tspan>indow <tspan>H</tspan>elp</text>
+      <text id="mb-txt" x="82" y="121" dx="12" dy="24" style="font-size:19px;fill:#000">File Edit Find Tools Window Help</text>
       <rect id="mb-stroke" x="81" y="154" width="1718" height="1" style="fill:#aaa" />
     </g>
     <g id="w-inner">
       <g id="tabbar">
-        <rect class="bg" x="82" y="125" width="1716" height="67" style="fill:#f3f4f4" />
+        <rect id="tb-bg" x="82" y="125" width="1716" height="67" style="fill:#f3f4f4" />
         <g id="tb-corner">
           <rect class="bg" x="82" y="125" width="120" height="67" style="fill:#e7e8e8" />
           <g class="tb-button">
@@ -105,47 +137,72 @@
         <g id="tb-tabs">
           <rect id="tb-start" x="202" y="125" width="1" height="67" style="fill:#95c1f1" />
           <g class="tb-tab active">
-            <rect x="203" y="124" width="157" height="69" style="fill:#9dcdff;stroke:#91bdef;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+            <rect class="bg" x="203" y="124" width="157" height="69" style="fill:#9dcdff;stroke:#91bdef;stroke-width:1px;clip-path:inset(1px 0 1px)" />
             <text x="203" y="124" dx="15" dy="41" style="font-size:20px;fill:#000">enigma_db</text>
-            <g class="tb-ico ico" transform="matrix(0.21,0,0,0.21,334,151)">
-              <use href="#close" style="fill:#fff" />
+            <g class="tb-close" transform="matrix(1,0,0,1,335,152)">
+              <g class="o">
+                <rect rx="1" style="fill:none" />
+                <g class="ico" transform="matrix(0.2,0,0,0.2,0,0)">
+                  <use href="#close" style="fill:#fff" />
+                </g>
+              </g>
             </g>
           </g>
           <g class="tb-tab">
-            <rect x="360" y="124" width="292" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+            <rect class="bg" x="360" y="124" width="292" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
             <g class="tb-ico ico" transform="matrix(0.38,0,0,0.38,372,144)">
               <use href="#picons-view" fill="#000" />
             </g>
             <text x="360" y="124" dx="46" dy="41" style="font-size:20px;fill:#000">enigma_db - Picons <tspan class="ellipsis" style="font-size:15px">…</tspan></text>
-            <g class="ico" transform="matrix(0.21,0,0,0.21,627,151)">
-              <use href="#close" style="fill:#666" />
+            <g class="tb-close" transform="matrix(1,0,0,1,628,152)">
+              <g class="o">
+                <rect rx="1" style="fill:none" />
+                <g class="ico" transform="matrix(0.2,0,0,0.2,0,0)">
+                  <use href="#close" style="fill:#666" />
+                </g>
+              </g>
             </g>
           </g>
           <g class="tb-tab">
-            <rect x="652" y="124" width="154" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+            <rect class="bg" x="652" y="124" width="154" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
             <text x="652" y="124" dx="15" dy="41" style="font-size:20px;fill:#000">out</text>
-            <g class="ico" transform="matrix(0.21,0,0,0.21,781,151)">
-              <use href="#close" style="fill:#666" />
+            <g class="tb-close" transform="matrix(1,0,0,1,782,152)">
+              <g class="o">
+                <rect rx="1" style="fill:none" />
+                <g class="ico" transform="matrix(0.2,0,0,0.2,0,0)">
+                  <use href="#close" style="fill:#666" />
+                </g>
+              </g>
             </g>
           </g>
           <g class="tb-tab">
-            <rect x="806" y="124" width="292" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+            <rect class="bg" x="806" y="124" width="292" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
             <g class="tb-ico ico" transform="matrix(0.38,0,0,0.38,818,144)">
               <use href="#transponders-view" fill="#000" />
             </g>
             <text x="806" y="124" dx="46" dy="41" style="font-size:20px;fill:#000">out - Edit Transpond<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
-            <g class="ico" transform="matrix(0.21,0,0,0.21,1074,151)">
-              <use href="#close" style="fill:#666" />
+            <g class="tb-close" transform="matrix(1,0,0,1,1075,152)">
+              <g class="o">
+                <rect rx="1" style="fill:none" />
+                <g class="ico" transform="matrix(0.2,0,0,0.2,0,0)">
+                  <use href="#close" style="fill:#666" />
+                </g>
+              </g>
             </g>
           </g>
           <g class="tb-tab">
-            <rect x="1098" y="124" width="293" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+            <rect class="bg" x="1098" y="124" width="293" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
             <g class="tb-ico ico" transform="matrix(0.38,0,0,0.38,1111,144)">
               <use href="#channelbook-view" fill="#000" />
             </g>
             <text x="1098" y="124" dx="46" dy="41" style="font-size:20px;fill:#000">enigma_db - Channe<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
-            <g class="ico" transform="matrix(0.21,0,0,0.21,1366,151)">
-              <use href="#close" style="fill:#666" />
+            <g class="tb-close" transform="matrix(1,0,0,1,1367,152)">
+              <g class="o">
+                <rect rx="1" style="fill:none" />
+                <g class="ico" transform="matrix(0.2,0,0,0.2,0,0)">
+                  <use href="#close" style="fill:#666" />
+                </g>
+              </g>
             </g>
           </g>
           <rect id="tb-end" x="1390" y="125" width="1" height="67" style="fill:#d5d6d6" />
@@ -155,50 +212,50 @@
         <rect id="menu-bg" class="bg" x="82" y="192" width="1716" height="100" style="fill:#fff" />
         <g id="menu-items">
           <g class="menu-item">
-            <rect x="90" y="192" width="150" height="99" style="fill:none" />
+            <rect class="s" x="90" y="192" width="150" height="99" style="fill:none" />
             <g class="ico" transform="matrix(0.38,0,0,0.38,106,217)">
               <use href="#open" style="fill:#4c4c4c" />
             </g>
-            <text x="90" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Open</text>
+            <text class="t" x="90" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Open</text>
           </g>
           <g class="menu-item">
-            <rect x="246" y="192" width="146" height="99" style="fill:none" />
+            <rect class="s" x="246" y="192" width="146" height="99" style="fill:none" />
             <g class="ico" transform="matrix(0.38,0,0,0.38,261,217)">
               <use href="#save" style="fill:#4c4c4c" />
             </g>
-            <text x="246" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Save</text>
+            <text class="t" x="246" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Save</text>
           </g>
           <g class="menu-divid">
-            <rect x="406" y="192" width="4" height="99" style="fill:none" />
+            <rect class="s" x="406" y="192" width="4" height="99" style="fill:none" />
             <rect class="divid" x="408" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
-            <rect x="410" y="192" width="160" height="99" style="fill:none" />
+            <rect class="s" x="410" y="192" width="160" height="99" style="fill:none" />
             <g class="ico" transform="matrix(0.38,0,0,0.38,426,217)">
               <use href="#import" style="fill:#4c4c4c" />
             </g>
-            <text x="410" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
+            <text class="t" x="410" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
           </g>
           <g class="menu-item">
-            <rect x="577" y="192" width="160" height="99" style="fill:none" />
+            <rect class="s" x="577" y="192" width="160" height="99" style="fill:none" />
             <g class="ico" transform="matrix(0.38,0,0,0.38,595,217)">
               <use href="#export" style="fill:#4c4c4c" />
             </g>
-            <text x="577" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
+            <text class="t" x="577" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
           </g>
           <g class="menu-divid">
             <rect x="760" y="192" width="4" height="99" style="fill:none" />
             <rect class="divid" x="762" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
-            <rect x="764" y="192" width="180" height="99" style="fill:none" />
+            <rect class="s" x="764" y="192" width="180" height="99" style="fill:none" />
             <g class="ico" transform="matrix(0.38,0,0,0.38,779,217)">
               <use href="#settings" style="fill:#4c4c4c" />
             </g>
-            <text x="764" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
+            <text class="t" x="764" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
           </g>
           <g class="menu-item">
-            <rect x="1020" y="192" width="150" height="99" style="fill:none" />
+            <rect class="s" x="1020" y="192" width="150" height="99" style="fill:none" />
             <g>
               <rect class="btn-bg" x="1033" y="224" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px" />
               <g class="btn-caret" transform="matrix(1,0,0,1,1130,226)">
@@ -213,7 +270,11 @@
                       <use href="#arrow-m" style="fill:#fff" />
                     </g>
                   </g>
-                  <g class="arrow-f" style="display:none">
+                  <g class="arrow-w" style="display:none">
+                    <use href="#arrow-t-w" />
+                  </g>
+                  <g class="arrow-l" style="display:none">
+                    <use href="#arrow-l" />
                   </g>
                 </g>
               </g>
@@ -221,24 +282,24 @@
             </g>
           </g>
           <g class="menu-item">
-            <rect x="1181" y="192" width="133" height="99" style="fill:none" />
-            <text x="1181" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
+            <rect class="s" x="1181" y="192" width="133" height="99" style="fill:none" />
+            <text class="t" x="1181" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
           </g>
           <g class="menu-item">
-            <rect x="1318" y="192" width="160" height="99" style="fill:none" />
-            <text x="1318" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Disconnect</text>
+            <rect class="s" x="1318" y="192" width="160" height="99" style="fill:none" />
+            <text class="t" x="1318" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Disconnect</text>
           </g>
           <g class="menu-divid">
-            <rect x="1488" y="192" width="4" height="99" style="fill:none" />
+            <rect class="s" x="1488" y="192" width="4" height="99" style="fill:none" />
             <rect class="divid" x="1490" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
-            <rect x="1502" y="192" width="120" height="99" style="fill:none" />
-            <text x="1502" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Upload</text>
+            <rect class="s" x="1502" y="192" width="120" height="99" style="fill:none" />
+            <text class="t" x="1502" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Upload</text>
           </g>
           <g class="menu-item">
-            <rect x="1630" y="192" width="150" height="99" style="fill:none" />
-            <text x="1630" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
+            <rect class="s" x="1630" y="192" width="150" height="99" style="fill:none" />
+            <text class="t" x="1630" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
           </g>
         </g>
         <rect id="menu-stroke" class="stroke" x="80" y="192" width="1720" height="100" style="fill:none;stroke:#d5d6d6;stroke-width:2px;clip-path:inset(0 2px)" />
@@ -286,7 +347,11 @@
                       <use href="#arrow-m" style="fill:#bfbfbf" />
                     </g>
                   </g>
-                  <g class="arrow-f" style="display:none">
+                  <g class="arrow-w" style="display:none">
+                    <use href="#arrow-t-w" />
+                  </g>
+                  <g class="arrow-l" style="display:none">
+                    <use href="#arrow-l" />
                   </g>
                 </g>
               </g>
@@ -307,7 +372,11 @@
                       <use href="#arrow-m" style="fill:#bfbfbf" />
                     </g>
                   </g>
-                  <g class="arrow-f" style="display:none">
+                  <g class="arrow-w" style="display:none">
+                    <use href="#arrow-t-w" />
+                  </g>
+                  <g class="arrow-l" style="display:none">
+                    <use href="#arrow-l" />
                   </g>
                 </g>
               </g>
@@ -316,19 +385,41 @@
                 <text x="82" y="1017" dx="25" dy="34" style="font-size:20px;fill:#000">Italy</text>
               </g>
             </g>
+            <g class="sbv">
+              <rect class="bg" x="448" y="644" width="14" height="409" style="display:none" />
+              <rect class="btn-bg vs" x="448" y="644" width="14" height="14" style="display:none" />
+              <g class="arrow as" transform="matrix(1,0,0,1,448,644)">
+                <g class="arrow-w" style="display:none">
+                  <use href="#arrow-w" />
+                </g>
+                <g class="arrow-l" style="display:none">
+                  <use href="#arrow-l" />
+                </g>
+              </g>
+              <rect class="btn-bg ve" x="448" y="1039" width="14" height="14" style="display:none" />
+              <g class="arrow ae" transform="matrix(1,0,0,1,448,1039)">
+                <g class="arrow-w" style="display:none">
+                  <use href="#arrow-w" />
+                </g>
+                <g class="arrow-l" style="display:none">
+                  <use href="#arrow-l" />
+                </g>
+              </g>
+              <rect class="xy" x="446" y="649" width="12" height="44" rx="7" style="display:none" />
+            </g>
           </g>
           <g id="side-tool">
             <rect class="bg" x="82" y="1054" width="380" height="73" style="fill:#eff0f0" />
             <rect class="stroke" x="80" y="1053" width="384" height="73" style="fill:none;stroke:#e2e2e2;stroke-width:2px;clip-path:inset(0 2px 2px)" />
             <g id="st-items">
-              <g id="st-item">
+              <g class="st-item">
                 <rect x="95" y="1064" width="174" height="53" style="fill:none" />
                 <g class="tool-ico ico" transform="matrix(0.25,0,0,0.25,101,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
                 <text class="tool-txt" x="95" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">New Bouquet</text>
               </g>
-              <g class="st-item">
+              <g class="st-item qe qe-st">
                 <!--<rect x="301" y="1064" width="153" height="53" style="fill:#eee;fill-opacity:.6" />-->
                 <rect x="301" y="1064" width="153" height="53" style="fill:none" />
                 <rect class="btn-bg" x="314" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px" />
@@ -424,20 +515,52 @@
               </g>
             </g>
             <g class="sbv">
-              <rect class="bg" x="1784" y="341" width="14" height="670" style="display:none" />
-              <rect class="btn-bg" x="1784" y="341" width="14" height="14" style="display:none" />
-              <rect class="btn-bg" x="1784" y="1067" width="14" height="14" style="display:none" />
+              <rect class="bg" x="1784" y="341" width="14" height="651" style="display:none" />
+              <rect class="btn-bg vs" x="1784" y="341" width="14" height="14" style="display:none" />
+              <g class="arrow as" transform="matrix(1,0,0,1,1784,341)">
+                <g class="arrow-w" style="display:none">
+                  <use href="#arrow-w" />
+                </g>
+                <g class="arrow-l" style="display:none">
+                  <use href="#arrow-l" />
+                </g>
+              </g>
+              <rect class="btn-bg ve" x="1784" y="978" width="14" height="14" style="display:none" />
+              <g class="arrow ae" transform="matrix(1,0,0,1,1784,978)">
+                <g class="arrow-w" style="display:none">
+                  <use href="#arrow-w" />
+                </g>
+                <g class="arrow-l" style="display:none">
+                  <use href="#arrow-l" />
+                </g>
+              </g>
               <rect class="xy" x="1782" y="541" width="12" height="77" rx="7" style="fill:#7f7f7f" />
             </g>
             <g class="sbh">
               <rect class="bg" x="473" y="997" width="1318" height="14" style="display:none" />
-              <rect class="btn-bg" x="473" y="997" width="14" height="14" style="display:none" />
-              <rect class="btn-bg" x="1777" y="997" width="14" height="14" style="display:none" />
+              <rect class="btn-bg hs" x="473" y="997" width="14" height="14" style="display:none" />
+              <g class="arrow as" transform="matrix(1,0,0,1,473,997)">
+                <g class="arrow-w" style="display:none">
+                  <use href="#arrow-w" />
+                </g>
+                <g class="arrow-l" style="display:none">
+                  <use href="#arrow-l" />
+                </g>
+              </g>
+              <rect class="btn-bg he" x="1777" y="997" width="14" height="14" style="display:none" />
+              <g class="arrow ae" transform="matrix(1,0,0,1,1777,997)">
+                <g class="arrow-w" style="display:none">
+                  <use href="#arrow-w" />
+                </g>
+                <g class="arrow-l" style="display:none">
+                  <use href="#arrow-l" />
+                </g>
+              </g>
               <rect class="xy" x="511" y="996" width="99" height="12" rx="7" style="display:none" />
             </g>
           </g>
           <g class="tree-search">
-            <rect class="bg" x="473" y="992" width="1325" height="61" style="fill:#fafafa" />
+            <rect class="ts-bg bg" x="473" y="992" width="1325" height="61" style="fill:#fafafa" />
             <g class="search-item">
               <rect class="btn-bg" x="483" y="1004" width="136" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px" />
               <text class="btn-txt" x="483" y="1004" dx="12" dy="22" style="font-size:20px;fill:#000">Name</text>
@@ -453,7 +576,11 @@
                       <use href="#arrow-m" style="fill:#fff" />
                     </g>
                   </g>
-                  <g class="arrow-f" style="display:none">
+                  <g class="arrow-w" style="display:none">
+                    <use href="#arrow-t-w" />
+                  </g>
+                  <g class="arrow-l" style="display:none">
+                    <use href="#arrow-l" />
                   </g>
                 </g>
               </g>
@@ -486,21 +613,21 @@
             <rect class="bg" x="473" y="1054" width="1325" height="73" style="fill:#f7f8f8" />
             <rect class="stroke" x="471" y="1053" width="1329" height="73" style="fill:none;stroke:#e9eaea;stroke-width:2px;clip-path:inset(0 2px 2px)" />
             <g id="tt-items">
-              <g id="tt-item">
+              <g class="tt-item">
                 <rect x="487" y="1064" width="174" height="53" style="fill:none" />
                 <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,492,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
                 <text class="tool-txt" x="487" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Add Channel</text>
               </g>
-              <g id="tt-item">
+              <g class="tt-item">
                 <rect x="675" y="1064" width="162" height="53" style="fill:none" />
                 <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,679,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
                 <text class="tool-txt" x="675" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Add Marker</text>
               </g>
-              <g id="tt-item" style="opacity:0.24">
+              <g class="tt-item" style="opacity:0.24">
                 <rect x="850" y="1064" width="162" height="53" style="fill:none" />
                 <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,855,1080)">
                   <use href="#add" style="fill:#545454" />
@@ -518,8 +645,7 @@
                 <rect class="btn-bg" x="1199" y="1072" width="147" height="32" rx="8" style="fill:#fff;stroke:#000;stroke:url(#btn-stroke-m);stroke-width:1px" />
                 <text class="btn-txt" x="1199" y="1072" dx="25" dy="22" style="font-size:20px;fill:#000">Drag&amp;Drop</text>
               </g>
-              <g class="tt-item">
-                <!--<rect x="1638" y="1064" width="153" height="53" style="fill:#eee;fill-opacity:.6" />-->
+              <g class="tt-item qe qe-tt">
                 <rect x="1638" y="1064" width="153" height="53" style="fill:none" />
                 <rect class="btn-bg" x="1652" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px" />
                 <g class="btn-ico ico" transform="matrix(0.38,0,0,0.38,1664,1075)">
@@ -536,8 +662,8 @@
     <g id="statusbar">
       <rect id="sb-bg" x="82" y="1164" width="1716" height="56" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0 0)" />
       <rect id="sb-stroke" x="80" y="1179" width="1720" height="42" style="fill:none;stroke:#d8d9d9;stroke-width:2px;clip-path:inset(0 2px 2px)" />
-      <text x="82" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Channels: 138</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
-      <text x="82" y="1179" dx="1281" dy="29" style="font-size:20px;fill:#000"><tspan>TV: 1180</tspan> <tspan dx="10">Radio: 281</tspan> <tspan dx="10">Data: 151</tspan> <tspan dx="10">Total: 1612</tspan></text>
+      <text id="sbts" x="82" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Channels: 138</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
+      <text id="sbte" x="82" y="1179" dx="1281" dy="29" style="font-size:20px;fill:#000"><tspan>TV: 1180</tspan> <tspan dx="10">Radio: 281</tspan> <tspan dx="10">Data: 151</tspan> <tspan dx="10">Total: 1612</tspan></text>
     </g>
     <rect id="w-stroke" x="81" y="81" width="1718" height="1140" rx="15" style="fill:none;stroke:#a6bbb9;stroke-width:1px" />
     <rect id="w-shade" x="83" y="83" width="1714" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
