@@ -70,11 +70,33 @@
     <linearGradient id="btn-bg-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#fdfdfd"/><stop offset="1" style="stop-color:#eee"/></linearGradient>
     <linearGradient id="btn-bg-d-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#3d3c3b"/><stop offset="1" style="stop-color:#333332"/></linearGradient>
     <linearGradient id="btn-stroke-d-f" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:#545452"/><stop offset="1" style="stop-color:#4b4b4a"/></linearGradient>
+
+    <filter id="btn-shadow-m" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-opacity="0.06" />
+      <feDropShadow dx="0" dy="0" stdDeviation="0.8" flood-opacity="0.2" />
+    </filter>
+    <filter id="btn-shadow-d-m" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-opacity="0.25" />
+      <feDropShadow dx="0" dy="0" stdDeviation="2.2" flood-opacity="0.3" />
+    </filter>
+
+    <filter id="btn-shadow-d-f" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="0.75" />
+      <feDropShadow dx="0" dy="0" stdDeviation="0.5" />
+      <feDropShadow dx="0" dy="0" stdDeviation="1" />
+    </filter>
+
+    <filter id="tb-close-b-w" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-opacity="0.15" />
+    </filter>
+    <filter id="tb-close-g-w" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="0" />
+    </filter>
   </defs>
   <g id="system">
     <rect id="wallpaper" x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd" />
   </g>
-  <g id="window" class="w" style="font-family:'SF Pro','Helvetica Neue','Droid Sans',sans-serif;opacity:1">
+  <g id="window" class="f" style="font-family:'SF Pro','Helvetica Neue','Droid Sans',sans-serif;opacity:1">
     <rect id="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
     <g id="titlebar">
       <rect id="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
@@ -127,7 +149,7 @@
         <g id="tb-corner">
           <rect class="bg" x="82" y="125" width="120" height="67" style="fill:#e7e8e8" />
           <g class="tb-button">
-            <rect x="82" y="131" width="112" height="53" rx="1" style="rx:0;fill:url(#btn-bg-m);stroke:#afafaf;stroke-width:1px" />
+            <rect x="82" y="131" width="112" height="53" rx="1" style="rx:0;fill:url(#btn-bg-m);stroke:#afafaf;stroke-width:1.5px" />
             <g class="tb-ico ico" transform="matrix(0.26,0,0,0.26,88,149)">
               <use href="#add" style="fill:#4f4f4f" />
             </g>
@@ -137,7 +159,7 @@
         <g id="tb-tabs">
           <rect id="tb-start" x="202" y="125" width="1" height="67" style="fill:#95c1f1" />
           <g class="tb-tab active">
-            <rect class="bg" x="203" y="124" width="157" height="69" style="fill:#9dcdff;stroke:#91bdef;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+            <rect class="bg" x="203" y="124" width="157" height="69" style="fill:#9dcdff;stroke:#91bdef;stroke-width:1.5px;clip-path:inset(1px 0 1px)" />
             <text x="203" y="124" dx="15" dy="41" style="font-size:20px;fill:#000">enigma_db</text>
             <g class="tb-close" transform="matrix(1,0,0,1,335,152)">
               <g class="o">
@@ -149,7 +171,7 @@
             </g>
           </g>
           <g class="tb-tab">
-            <rect class="bg" x="360" y="124" width="292" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+            <rect class="bg" x="360" y="124" width="292" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0 1px)" />
             <g class="tb-ico ico" transform="matrix(0.38,0,0,0.38,372,144)">
               <use href="#picons-view" fill="#000" />
             </g>
@@ -164,7 +186,7 @@
             </g>
           </g>
           <g class="tb-tab">
-            <rect class="bg" x="652" y="124" width="154" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+            <rect class="bg" x="652" y="124" width="154" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0 1px)" />
             <text x="652" y="124" dx="15" dy="41" style="font-size:20px;fill:#000">out</text>
             <g class="tb-close" transform="matrix(1,0,0,1,782,152)">
               <g class="o">
@@ -176,7 +198,7 @@
             </g>
           </g>
           <g class="tb-tab">
-            <rect class="bg" x="806" y="124" width="292" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+            <rect class="bg" x="806" y="124" width="292" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0 1px)" />
             <g class="tb-ico ico" transform="matrix(0.38,0,0,0.38,818,144)">
               <use href="#transponders-view" fill="#000" />
             </g>
@@ -191,7 +213,7 @@
             </g>
           </g>
           <g class="tb-tab">
-            <rect class="bg" x="1098" y="124" width="293" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1px;clip-path:inset(1px 0 1px)" />
+            <rect class="bg" x="1098" y="124" width="293" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0 1px)" />
             <g class="tb-ico ico" transform="matrix(0.38,0,0,0.38,1111,144)">
               <use href="#channelbook-view" fill="#000" />
             </g>
@@ -209,55 +231,48 @@
         </g>
       </g>
       <g id="menu">
-        <rect id="menu-bg" class="bg" x="82" y="192" width="1716" height="100" style="fill:#fff" />
+        <rect id="menu-bg" class="bg" x="82" y="192" width="1716" height="100" style="fill:#e7e8e8" />
         <g id="menu-items">
           <g class="menu-item">
-            <rect class="s" x="90" y="192" width="150" height="99" style="fill:none" />
             <g class="ico" transform="matrix(0.38,0,0,0.38,106,217)">
               <use href="#open" style="fill:#4c4c4c" />
             </g>
-            <text class="t" x="90" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Open</text>
+            <text class="txt" x="90" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Open</text>
           </g>
           <g class="menu-item">
-            <rect class="s" x="246" y="192" width="146" height="99" style="fill:none" />
             <g class="ico" transform="matrix(0.38,0,0,0.38,261,217)">
               <use href="#save" style="fill:#4c4c4c" />
             </g>
-            <text class="t" x="246" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Save</text>
+            <text class="txt" x="246" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Save</text>
           </g>
           <g class="menu-divid">
-            <rect class="s" x="406" y="192" width="4" height="99" style="fill:none" />
             <rect class="divid" x="408" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
-            <rect class="s" x="410" y="192" width="160" height="99" style="fill:none" />
             <g class="ico" transform="matrix(0.38,0,0,0.38,426,217)">
               <use href="#import" style="fill:#4c4c4c" />
             </g>
-            <text class="t" x="410" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
+            <text class="txt" x="410" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
           </g>
           <g class="menu-item">
-            <rect class="s" x="577" y="192" width="160" height="99" style="fill:none" />
             <g class="ico" transform="matrix(0.38,0,0,0.38,595,217)">
               <use href="#export" style="fill:#4c4c4c" />
             </g>
-            <text class="t" x="577" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
+            <text class="txt" x="577" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
           </g>
           <g class="menu-divid">
             <rect x="760" y="192" width="4" height="99" style="fill:none" />
             <rect class="divid" x="762" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
-            <rect class="s" x="764" y="192" width="180" height="99" style="fill:none" />
             <g class="ico" transform="matrix(0.38,0,0,0.38,779,217)">
               <use href="#settings" style="fill:#4c4c4c" />
             </g>
-            <text class="t" x="764" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
+            <text class="txt" x="764" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
           </g>
           <g class="menu-item">
-            <rect class="s" x="1020" y="192" width="150" height="99" style="fill:none" />
             <g>
-              <rect class="btn-bg" x="1033" y="224" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px" />
+              <rect class="btn-bg" x="1033" y="224" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
               <g class="btn-caret" transform="matrix(1,0,0,1,1130,226)">
                 <rect class="fx" x="0" y="0" width="24" height="24" rx="8" style="fill:none;filter:drop-shadow(0 0.5px 1px #333);transform:translate(0.5px,1px)" />
                 <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
@@ -282,27 +297,22 @@
             </g>
           </g>
           <g class="menu-item">
-            <rect class="s" x="1181" y="192" width="133" height="99" style="fill:none" />
-            <text class="t" x="1181" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
+            <text class="txt" x="1181" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
           </g>
           <g class="menu-item">
-            <rect class="s" x="1318" y="192" width="160" height="99" style="fill:none" />
-            <text class="t" x="1318" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Disconnect</text>
+            <text class="txt" x="1318" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Disconnect</text>
           </g>
           <g class="menu-divid">
-            <rect class="s" x="1488" y="192" width="4" height="99" style="fill:none" />
             <rect class="divid" x="1490" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
-            <rect class="s" x="1502" y="192" width="120" height="99" style="fill:none" />
-            <text class="t" x="1502" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Upload</text>
+            <text class="txt" x="1502" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Upload</text>
           </g>
           <g class="menu-item">
-            <rect class="s" x="1630" y="192" width="150" height="99" style="fill:none" />
-            <text class="t" x="1630" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
+            <text class="txt" x="1630" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
           </g>
         </g>
-        <rect id="menu-stroke" class="stroke" x="80" y="192" width="1720" height="100" style="fill:none;stroke:#d5d6d6;stroke-width:2px;clip-path:inset(0 2px)" />
+        <rect id="menu-stroke" class="stroke" x="80" y="192" width="1720" height="100" style="fill:none;stroke:#d5d6d6;stroke-width:2.4px;clip-path:inset(0 2px)" />
       </g>
       <g id="main">
         <rect id="main-bg" class="bg" x="82" y="291" width="1716" height="835" style="fill:#f3f4f4" />
@@ -410,19 +420,16 @@
           </g>
           <g id="side-tool">
             <rect class="bg" x="82" y="1054" width="380" height="73" style="fill:#eff0f0" />
-            <rect class="stroke" x="80" y="1053" width="384" height="73" style="fill:none;stroke:#e2e2e2;stroke-width:2px;clip-path:inset(0 2px 2px)" />
+            <rect class="stroke" x="80" y="1053" width="384" height="73" style="fill:none;stroke:#e2e2e2;stroke-width:2.4px;clip-path:inset(0 2px 2px)" />
             <g id="st-items">
               <g class="st-item">
-                <rect x="95" y="1064" width="174" height="53" style="fill:none" />
                 <g class="tool-ico ico" transform="matrix(0.25,0,0,0.25,101,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
                 <text class="tool-txt" x="95" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">New Bouquet</text>
               </g>
               <g class="st-item qe qe-st">
-                <!--<rect x="301" y="1064" width="153" height="53" style="fill:#eee;fill-opacity:.6" />-->
-                <rect x="301" y="1064" width="153" height="53" style="fill:none" />
-                <rect class="btn-bg" x="314" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px" />
+                <rect class="btn-bg" x="314" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
                 <g class="btn-ico ico" transform="matrix(0.38,0,0,0.38,334,1075)">
                   <use href="#search" style="fill:#545454" />
                 </g>
@@ -562,7 +569,7 @@
           <g class="tree-search">
             <rect class="ts-bg bg" x="473" y="992" width="1325" height="61" style="fill:#fafafa" />
             <g class="search-item">
-              <rect class="btn-bg" x="483" y="1004" width="136" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px" />
+              <rect class="btn-bg" x="483" y="1004" width="136" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
               <text class="btn-txt" x="483" y="1004" dx="12" dy="22" style="font-size:20px;fill:#000">Name</text>
               <g class="btn-caret" transform="matrix(1,0,0,1,592,1006)">
                 <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
@@ -611,7 +618,7 @@
           </g>
           <g id="tree-tool">
             <rect class="bg" x="473" y="1054" width="1325" height="73" style="fill:#f7f8f8" />
-            <rect class="stroke" x="471" y="1053" width="1329" height="73" style="fill:none;stroke:#e9eaea;stroke-width:2px;clip-path:inset(0 2px 2px)" />
+            <rect class="stroke" x="471" y="1053" width="1329" height="73" style="fill:none;stroke:#e9eaea;stroke-width:2.4px;clip-path:inset(0 2px 2px)" />
             <g id="tt-items">
               <g class="tt-item">
                 <rect x="487" y="1064" width="174" height="53" style="fill:none" />
@@ -621,33 +628,27 @@
                 <text class="tool-txt" x="487" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Add Channel</text>
               </g>
               <g class="tt-item">
-                <rect x="675" y="1064" width="162" height="53" style="fill:none" />
                 <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,679,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
                 <text class="tool-txt" x="675" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Add Marker</text>
               </g>
               <g class="tt-item" style="opacity:0.24">
-                <rect x="850" y="1064" width="162" height="53" style="fill:none" />
                 <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,855,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
                 <text class="tool-txt" x="850" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">New Service</text>
               </g>
               <g class="tt-item">
-                <rect x="1021" y="1064" width="161" height="53" style="fill:none" />
-                <rect class="btn-fx" x="1034" y="1072" width="135" height="32" rx="8" style="fill:none;filter:drop-shadow(0 1px 2px #d5d6d6)" />
-                <rect class="btn-bg" x="1034" y="1072" width="135" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px" />
+                <rect class="btn-bg" x="1034" y="1072" width="135" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
                 <text class="btn-txt" x="1034" y="1072" dx="22" dy="22" style="font-size:20px;fill:#000">Reference</text>
               </g>
               <g class="tt-item" style="opacity:0.24">
-                <rect x="1186" y="1064" width="173" height="53" style="fill:none" />
-                <rect class="btn-bg" x="1199" y="1072" width="147" height="32" rx="8" style="fill:#fff;stroke:#000;stroke:url(#btn-stroke-m);stroke-width:1px" />
+                <rect class="btn-bg" x="1199" y="1072" width="147" height="32" rx="8" style="fill:#fff;stroke:#000;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
                 <text class="btn-txt" x="1199" y="1072" dx="25" dy="22" style="font-size:20px;fill:#000">Drag&amp;Drop</text>
               </g>
               <g class="tt-item qe qe-tt">
-                <rect x="1638" y="1064" width="153" height="53" style="fill:none" />
-                <rect class="btn-bg" x="1652" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px" />
+                <rect class="btn-bg" x="1652" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
                 <g class="btn-ico ico" transform="matrix(0.38,0,0,0.38,1664,1075)">
                   <use href="#search" style="fill:#545454" />
                 </g>
@@ -656,14 +657,20 @@
             </g>
           </g>
         </g>
-        <rect id="main-stroke" class="stroke" x="80" y="291" width="1720" height="836" style="fill:none;stroke:#d5d6d6;stroke-width:2px;clip-path:inset(0 2px)" />
+        <rect id="main-stroke" class="stroke" x="80" y="291" width="1720" height="836" style="fill:none;stroke:#d5d6d6;stroke-width:2.4px;clip-path:inset(0 2px)" />
       </g>
     </g>
     <g id="statusbar">
       <rect id="sb-bg" x="82" y="1164" width="1716" height="56" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0 0)" />
-      <rect id="sb-stroke" x="80" y="1179" width="1720" height="42" style="fill:none;stroke:#d8d9d9;stroke-width:2px;clip-path:inset(0 2px 2px)" />
+      <rect id="sb-stroke" x="80" y="1179" width="1720" height="42" style="fill:none;stroke:#d8d9d9;stroke-width:2.5px;clip-path:inset(0 2px 2px)" />
       <text id="sbts" x="82" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Channels: 138</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
+      <rect class="divid sbds-w" x="508" y="1184" width="1" height="25" style="fill:none" />
+      <rect class="divid sbdl-w" x="1358" y="1184" width="1" height="25" style="fill:none" />
       <text id="sbte" x="82" y="1179" dx="1281" dy="29" style="font-size:20px;fill:#000"><tspan>TV: 1180</tspan> <tspan dx="10">Radio: 281</tspan> <tspan dx="10">Data: 151</tspan> <tspan dx="10">Total: 1612</tspan></text>
+      <rect class="divid sbdr-w" x="1770" y="1184" width="1" height="25" style="fill:none" />
+      <g id="sbcb-w" transform="matrix(1,0,0,1,1769,1188)">
+        <rect x="0" y="0" width="25" height="25" style="fill:none" />
+      </g>
     </g>
     <rect id="w-stroke" x="81" y="81" width="1718" height="1140" rx="15" style="fill:none;stroke:#a6bbb9;stroke-width:1px" />
     <rect id="w-shade" x="83" y="83" width="1714" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />

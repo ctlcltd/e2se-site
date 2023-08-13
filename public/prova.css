@@ -6,9 +6,10 @@ text { user-select: none; }
 
 
 
-/*.m .btn-bg { filter: drop-shadow(0 1px 2px #d5d6d6); } */
 .m .divid { stroke: #000; stroke-opacity: 0.3; stroke-width: 1px; stroke-style: dashed; stroke-dasharray: 1px 3px; }
+.m #statusbar .divid { display: none; }
 .dm .divid { stroke: #fff; }
+.m .btn-bg { stroke-width: 0.4px !important; }
 
 
 .dm text { fill: #fff !important; }
@@ -27,6 +28,7 @@ text { user-select: none; }
 .dm .ts-bg { fill: #101010 !important; }
 
 .dm .btn-bg { fill: #fff !important; fill-opacity: 0.24 !important; stroke: url(#btn-stroke-d-m) !important; }
+.dm .btn-bg { filter: url(#btn-shadow-d-m) !important; }
 .dm .input-bg { fill: #fff !important; fill-opacity: 0.08 !important; stroke: #fff !important; stroke-opacity: .11; }
 
 .dm .tb-button rect { fill: url(#btn-bg-d-m) !important; }
@@ -72,7 +74,7 @@ text { user-select: none; }
 
 
 
-.w .divid { width: 1.2px; height: 45px; fill: #d5d5d5 !important; stroke: none !important; transform: translate(7px, 8px); }
+
 
 
 .w { font-family: 'Segoe UI', Tahoma, sans-serif !important; }
@@ -86,6 +88,10 @@ text { user-select: none; }
 .w #w-bg, .w #w-stroke, .w #w-shade, .w #t-bg, .w #sb-bg { rx: 0; }
 
 .w .btn-caret .bg { fill: none !important; stroke: none !important; }
+
+.w .divid { width: 1.2px; fill: #d5d5d5 !important; stroke: none !important; }
+.w #sbcb-w { clip-path: inset(0 27px 27px 0); }
+.w #sbcb-w rect { fill: #d5d5d5 !important; transform: matrix(-0.8, -1, -1, 1, 52, 23); }
 
 .w #w-bg { fill: #f0f0f0 !important; stroke: #a2b5ba !important; }
 .w #t-bg { height: 92.5px; fill: #fff !important; stroke: none !important; }
@@ -116,22 +122,24 @@ text { user-select: none; }
 .w .tb-tab.active .bg { fill: #0078d7 !important; stroke: #0078d7 !important; }
 .w .tb-tab.active text { fill: #fff !important; }
 
-.w .tb-close .o { transform: translate(-3px, 1.5px); }
+.w .tb-close .o { filter: url(#tb-close-b-w); transform: translate(-3px, 1.5px); }
 .w .tb-close rect { x: -4px; y: -4px; width: 20px; height: 20px; rx: 3px; fill: #e08759 !important; stroke: #da4634; stroke-width: 2px; }
 .w .tb-close .ico { transform: matrix(0.15, 0, 0, 0.15, 1, 1) !important; }
 .w .tb-close .ico use { fill: #fff !important; stroke: #fff; stroke-width: 10px; }
-.w .tb-close { -webkit-filter: grayscale(1); filter: grayscale(1); opacity: 0.6; }
+.w .tb-close { filter: url(#tb-close-g-w); opacity: 0.5; }
 .w .tb-tab.active .tb-close { filter: none; opacity: 1; }
 
-.w #statusbar { transform: translate(0, 5px); }
-.w #sb-bg { height: 51px; }
-.w #sb-stroke { height: 37px; }
-.w #statusbar text { font-size: 19px !important; transform: translate(-5px, -2px); }
-.w #statusbar #sbte { transform: translate(38px, -2px); }
+.w #statusbar { transform: translate(0, 8px); }
+.w #sb-bg { height: 48px; }
+.w #sb-stroke { height: 34px; }
+.w #statusbar text { font-size: 19px !important; transform: translate(-13px, -4.5px); }
+.w #statusbar #sbte { transform: translate(18px, -2px); }
 
+.w #sb-stroke, .w #menu-stroke, .w #main-stroke { stroke-width: 2px !important; }
 .w #sb-stroke, .w #main-stroke { stroke: #d3d3d3 !important; }
 
 .w .btn-bg, .w .tb-button rect, .w .box-button .bg { rx: 0px !important; fill: #e1e1e1 !important; stroke: #a3a3a3 !important; stroke-width: 1.2px !important; }
+.w .btn-bg { filter: none !important; }
 /* safari bug: radius undefined :workaround: rx="1" style="rx:0" */
 .w .input-bg { rx: 1px !important; stroke: #949494 !important; stroke-width: 1.5px !important; }
 
@@ -144,9 +152,8 @@ text { user-select: none; }
 .w #menu-bg, .w #menu-stroke { height: 94px; }
 .w #menu-stroke { stroke: #d2d2d2 !important; }
 .w .menu-item { transform: translate(0, -3px); }
-.w .menu-item .s { height: 71px; }
-.w .menu-item .t { font-size: 26.5px !important; }
-
+.w .menu-item .txt { font-size: 26.5px !important; }
+.w .menu-item .divid { height: 45px; transform: translate(7px, 8px); }
 
 .w #w-inner { transform: matrix(1, 0, 0, 1, 0, 37); }
 
@@ -244,9 +251,18 @@ text { user-select: none; }
 .w .sbv .arrow.ae .arrow-w { transform: matrix(0.2, 0, 0, -0.2, 7, 20); }
 .w .tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 963); }
 
+.w .menu-item:nth-child(1) { transform: translate(0, -3px); }
+.w .menu-item:nth-child(2) { transform: translate(-10px, -3px); }
+.w .menu-divid:nth-child(3) { transform: translate(-15px, 0); }
+.w .menu-item:nth-child(4) { transform: translate(-20px, -3px); }
+.w .menu-item:nth-child(5) { transform: translate(-30px, -3px); }
+.w .menu-divid:nth-child(6) { transform: translate(-45px, 0); }
+.w .menu-item:nth-child(7) { transform: translate(-50px, -3px); }
+
 
 
 .f .divid { width: 4px; height: 44px; fill: #fff !important; stroke: #dfdfdf; stroke-width: 2px; stroke-style: solid; transform: translate(6px, 8px); clip-path: inset(1px 1px 1px 0); }
+.f #statusbar .divid { display: none; }
 .df .divid { fill: #252323 !important; stroke: #1d1c1c; }
 
 
@@ -282,7 +298,7 @@ text { user-select: none; }
 .f #sb-bg { height: 51px; }
 .f #sb-stroke { height: 37px; stroke: none !important; }
 .f #statusbar text { font-size: 19.5px !important; transform: translate(-5px, -2px); }
-.f #statusbar #sbte { transform: translate(38px, -2px); }
+.f #statusbar #sbte { transform: translate(12px, -2px); }
 .f #sb-stroke { stroke: #e4e4e4 !important; }
 
 .f #tb-corner .bg { width: 128px; }
@@ -297,22 +313,26 @@ text { user-select: none; }
 .f .tb-tab.active text { fill: #fff !important; }
 .f .focused, .f .tb-tab.active .bg { fill: #308cc6 !important; }
 
-.f .tb-close g { transform: translate(-3px, 0); }
-.f .tb-close rect { x: -4.5px; y: -4.5px; width: 22px; height: 22px; rx: 11px; fill: #c7162b !important; }
-.f .tb-close .ico { transform: matrix(0.17, 0, 0, 0.17, 1.3, 1.2) !important; }
+.f .tb-close .o { transform: matrix(0.9, 0, 0, 0.9, -2, 1.5); }
+.f .tb-close rect { x: -4.5px; y: -4.5px; width: 22px; height: 22px; rx: 11px; fill: #000 !important; fill-opacity: 0.33; }
+.f .tb-close .ico { transform: matrix(0.17, 0, 0, 0.17, 1.2, 1.2) !important; }
 .f .tb-close .ico use { fill: #fff !important; }
 
 .f .btn-bg, .f .tb-button rect, .f .box-button .bg { fill: url(#btn-bg-f) !important; }
+.f .btn-bg { filter: none !important; }
 .f .btn-bg, .f .tb-button rect, .f .box-button .bg, .f .input-bg { rx: 3px !important; stroke: #ababab !important; }
+.f .tb-button rect { stroke-width: 1px !important; }
 
 .f .find-h-bg { fill: #68c5ff !important; }
 
 .f .menu-item .ico use, .f .tree-item .ico use { fill: #5c5c5c !important; }
 
+.f #sb-stroke, .f #menu-stroke, .f #side-tool .stroke, .f #tree-tool .stroke { stroke-width: 2px !important; }
+.f #main-stroke { stroke-width: 1.5px !important; }
 .f #menu-bg, .f #menu-stroke { height: 95px; }
+.f #menu-stroke { stroke: #d1d2d2 !important; }
 .f .menu-item { transform: translate(0, -2px); }
-.f .menu-item .s { height: 70px; }
-.f .menu-item .t { font-size: 26.5px !important; }
+.f .menu-item .txt { font-size: 25.5px !important; transform: translate(-1.5px, 0); }
 
 
 .f #w-inner { transform: matrix(1, 0, 0, 1, 0, 42); }
@@ -321,7 +341,7 @@ text { user-select: none; }
 
 
 .f .box-title text { font-size: 19px !important; }
-.f .box-button { transform: translate(20px, -5px); }
+.f .box-button { transform: translate(15px, -2px); }
 
 .f #split rect { width: 4px; }
 .f #split-end { transform: translate(-4px, 0); }
@@ -357,24 +377,55 @@ text { user-select: none; }
 .f .qe-st .btn-bg { transform: translate(15px, -1px); }
 .f .qe-tt .btn-bg { transform: translate(10px, -1px); }
 .f .qe .btn-ico use { x: 15px; }
+.f .menu-item .btn-bg, .f .search-item .btn-bg { width: 100px; height: 34px; transform: translate(5px, -2px); }
+.f .menu-item .arrow, .f .search-item .arrow { transform: translate(-12px, 0); }
 
 .f .sbh .bg, .f .sbv .bg, .f .sbh .btn-bg, .f .sbv .btn-bg, .f .sbh .xy, .f .sbv .xy { display: block !important; }
 
 .f .sbh { clip-path: inset(0 0 1px 1px); }
-.f .sbv { clip-path: inset(1px 1px 0 0); transform: translate(7px, -1px); }
-.f .sbh .bg, .f .sbv .bg { fill: #e6e6e6; stroke: #bcbcbc !important; }
-.f .sbh .btn-bg, .f .sbv .btn-bg { rx: 0; }
-.f .sbh .btn-bg, .f .sbv .btn-bg, .f .sbh .xy, .f .sbv .xy { fill: url(#btn-bg-f) !important; stroke: #ababab !important; stroke-width: 1px; }
-.f .sbh .xy, .f .sbv .xy { rx: 0 }
-.f .sbh .xy { x: 487px; y: 997px; width: 1255px; height: 14px; }
-.f .sbv .xy { x: 1784px; y: 511px; width: 14px; height: 70px; }
-.f #w-bg, .f #w-stroke, .f #w-shade, .f #t-bg, .f #sb-bg { rx: 0; }
+.f .sbv { clip-path: inset(1px 1px 0 0); }
+.f .sbh .bg, .f .sbv .bg { fill: #e6e6e6; stroke: #bcbcbc !important; stroke-width: 2px; }
+.f .sbh .btn-bg, .f .sbv .btn-bg, .f .sbh .xy, .f .sbv .xy { rx: 0 !important; fill: url(#btn-bg-f) !important; stroke: #ababab !important; stroke-width: 1px; }
 
-.f .sbh .arrow-l use, .w .sbv .arrow-l use { fill: #5c5c5c; }
-.f .sbh .arrow.as .arrow-l { transform: matrix(0, 0.23, -0.23, 0, 13, 0); }
-.f .sbh .arrow.ae .arrow-l { transform: matrix(0, 0.23, 0.23, 0, 0, 0); }
-.f .sbv .arrow.as .arrow-l { transform: matrix(0.23, 0, 0, -0.23, 0, 13); }
-.f .sbv .arrow.ae .arrow-l { transform: matrix(0.23, 0, 0, 0.23, 0, 0); }
+.f .sbh .btn-bg { width: 22px; height: 22px; transform: translate(-1.5px, 0.5px); }
+.f .sbv .btn-bg { width: 22px; height: 22px; transform: translate(0.5px, -1.5px); }
+.f .sbh .bg { height: 23px; }
+.f .sbv .bg { width: 23px; }
+.f .sbh .xy { height: 22px; transform: translate(0, 0.5px); }
+.f .sbv .xy { width: 22px; transform: translate(0.5px, 0); }
+
+.f #tree .sbv { transform: translate(-8px, -1px); }
+.f #tree .sbv .bg { height: 419px; }
+.f #tree .sbv .vs { y: 646px; }
+.f #tree .sbv .ve { y: 1042px; }
+.f #tree .sbv .xy { x: 448px; y: 667px; height: 333px; }
+
+.f .tree .sbh { transform: translate(0, -7.5px); }
+.f .tree .sbh .bg { width: 1308px; }
+.f .tree .sbh .hs { x: 475px; }
+.f .tree .sbh .he { x: 1760px; }
+.f .tree .sbh .xy { x: 496px; y: 997px; width: 900px; }
+
+.f .tree .sbv { transform: translate(-4px, -1px); }
+.f .tree .sbv .bg { height: 650.5px; }
+.f .tree .sbv .vs { y: 343px; }
+.f .tree .sbv .ve { y: 970.5px; }
+.f .tree .sbv .xy { x: 1784px; y: 511px; height: 70px; }
+
+.f .sbh .arrow-l use, .f .sbv .arrow-l use { fill: #5c5c5c; }
+.f .sbh .arrow.as .arrow-l { transform: matrix(0, 0.22, -0.22, 0, 17.5, 4.3); }
+.f .sbh .arrow.ae .arrow-l { transform: matrix(0, 0.22, 0.22, 0, -13.5, 4.3); }
+.f .sbv .arrow.as .arrow-l { transform: matrix(0.22, 0, 0, -0.22, 4.3, 18.5); }
+.f .sbv .arrow.ae .arrow-l { transform: matrix(0.22, 0, 0, 0.22, 4.3, 6); }
+.f .tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 968); }
+
+.f .menu-item:nth-child(1) { transform: translate(0, -2px); }
+.f .menu-item:nth-child(2) { transform: translate(-10px, -2px); }
+.f .menu-divid:nth-child(3) { transform: translate(-20px, 0); }
+.f .menu-item:nth-child(4) { transform: translate(-20px, -2px); }
+.f .menu-item:nth-child(5) { transform: translate(-30px, -2px); }
+.f .menu-divid:nth-child(6) { transform: translate(-50px, 0); }
+.f .menu-item:nth-child(7) { transform: translate(-50px, -2px); }
 
 
 .df #t-ctrs-l rect { stroke: #fdfdfd !important; }
@@ -384,7 +435,7 @@ text { user-select: none; }
 .df #t-txt { fill: #aaa !important; }
 
 .df #w-bg { fill: #171717 !important; stroke: #acc6c3 !important; }
-.df #t-bg { fill: #3a3a3a !important; stroke: #1c1c1c !important; }
+.df #t-bg { fill: #3a3a3a !important; stroke: #131312 !important; }
 
 .df #mb-txt { fill-opacity: 0.9; }
 
@@ -396,8 +447,10 @@ text { user-select: none; }
 .df #side-tool .bg, .df #tree-tool .bg { fill: #3d3d3d !important; }
 .df .ts-bg { fill: #0c0b0b !important; }
 
-.df .btn-bg { /*-webkit-filter: drop-shadow(0 0 0 #000);*/ filter: drop-shadow(-1px 0 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(1px -1px 0 #000); }
+.df .tb-close rect { fill: #aaa !important; fill-opacity: 0.44; }
+
 .df .btn-bg, .df .tb-button rect, .df .box-button .bg { fill: url(#btn-bg-d-f) !important; stroke: url(#btn-stroke-d-f) !important; }
+.df .btn-bg, .df .tb-button rect, .df .box-button .bg { filter: url(#btn-shadow-d-f) !important; }
 .df .input-bg { fill: #131312 !important; stroke: #4e4d4d !important; }
 
 .df .tree-cols .bg { fill: url(#btn-bg-d-f) !important; stroke: #4e4d4d; }
@@ -407,7 +460,9 @@ text { user-select: none; }
 .df .find-h-bg { fill: #0d4867 !important; stroke: #2a2a29 !important; }
 
 .df #t-stroke { stroke: #222020 !important; }
-.df #mb-stroke, .df #sb-stroke, .df #menu-stroke, .df #main-stroke { stroke: #1d1c1c !important; }
+.df #mb-stroke, .df #sb-stroke { stroke: #1d1c1c !important; }
+.df #menu-stroke { stroke: #fff !important; stroke-opacity: 0.09 !important; }
+.df #main-stroke { stroke: #fff !important; stroke-opacity: 0.05 !important; }
 .df #side-tool .stroke, .df #tree-tool .stroke { stroke: #4e4d4d !important; }
 
 .df .tb-button .ico use { fill: #c3c3c3 !important; }
@@ -416,10 +471,31 @@ text { user-select: none; }
 .df #split-start .ico use { fill: #c4c4c4 !important; }
 .df #split-end .ico use { fill: #c4c4c4 !important; }
 
-.df .tb-tab .bg { fill: #2a2a29 !important; stroke: #3a3a39 !important; }
+.df .tb-tab .bg { fill: #2a2a29 !important; stroke: #363636 !important; }
 .df .tb-tab.active .bg, .df #tb-start { stroke: #12608a !important; }
 .df .focused, .df .tb-tab.active .bg  { fill: #12608a !important; }
-.df #tb-end { fill: #3a3a39 !important; }
+.df #tb-end { fill: #333 !important; }
+
+.df .tree-view .arrow-l { fill: #adacac; }
+.df .btn-caret .arrow-l { fill: #b5b5b4; }
+
+.df .sbh .btn-bg, .df .sbv .btn-bg, .df .sbh .xy, .df .sbv .xy { fill: url(#btn-bg-d-f) !important; stroke: url(#btn-stroke-d-f) !important; }
+.df .sbh .bg, .df .sbv .bg { fill: #1d1c1c; stroke: url(#btn-stroke-d-f) !important; }
+.df .sbh .xy, .df .sbv .xy { fill-opacity: 0.7; stroke-opacity: 0.75; }
+.df .sbh .arrow-l use, .df .sbv .arrow-l use { fill: #d3d2d2; }
+
+.df .sbh, .df .sbv { filter: url(#btn-shadow-d-f); }
+.df .sbh { clip-path: inset(-1px 0 0 0) !important; }
+.df .sbv { clip-path: inset(0 0 0 -2px) !important; }
+.df .sbh .bg { clip-path: inset(0 0 1px 0);}
+.df .sbv .bg { clip-path: inset(0 1px 0 0); }
+
+.df #tree .sbv { /*transform: translate(-9px, -1.5px);*/ transform: matrix(0.997, 0, 0, 0.997, -7.5, 0); }
+.df .tree .sbh { /*transform: translate(0, -7.5px);*/ transform: matrix(0.997, 0, 0, 0.997, 2, -4.5); }
+.df .tree .sbv { /*transform: translate(-5px, -1.5px);*/ transform: matrix(0.997, 0, 0, 0.997, -0.5, 0.5); }
+.df .sbh .xy { transform: translate(2.5px, 0.5px); }
+.df .sbv .xy { transform: translate(0.5px, 2.5px); }
+
 
 
 #test text { font-family: sans-serif; font-weight: bold; text-decoration: underline; cursor: pointer; }
