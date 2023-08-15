@@ -1,5 +1,5 @@
 <svg viewBox="0 0 1880 1300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="prova.css" type="text/css" />
+  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="svg_screenshot.css" type="text/css" />
   <defs>
     <symbol id="add">
       <path d="M37.75,37.75L55.877,37.75L55.877,26.25L37.75,26.25C37.75,26.25 37.75,8.123 37.75,8.123L26.25,8.123L26.25,26.25C26.25,26.25 8.123,26.25 8.123,26.25L8.123,37.75L26.25,37.75C26.25,37.75 26.25,55.877 26.25,55.877L37.75,55.877L37.75,37.75Z" />
@@ -96,7 +96,7 @@
   <g id="system">
     <rect id="wallpaper" x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd" />
   </g>
-  <g id="window" class="f" style="font-family:'SF Pro','Helvetica Neue','Droid Sans',sans-serif;opacity:1">
+  <g id="window" class="w" style="font-family:'SF Pro','Helvetica Neue','Droid Sans',sans-serif;opacity:1">
     <rect id="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
     <g id="titlebar">
       <rect id="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
@@ -473,14 +473,14 @@
               <rect class="bg" x="473" y="366" width="1325" height="687" style="fill:#fff" />
               <g class="tree-items">
                 <rect class="focused" x="473" y="707" width="1325" height="49" style="fill:#0044e2" />
-                <text x="473" y="366" dx="0" dy="31" style="font-size:19px;fill:#000"><tspan x="500">38</tspan> <tspan x="580">Giallo</tspan> <tspan x="990">4322</tspan> <tspan x="1114">1000</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">TVN</tspan> <tspan x="1703">DVB-S</tspan></text>
+                <text x="473" y="366" dy="31" style="font-size:19px;fill:#000"><tspan x="500">38</tspan> <tspan x="580">Giallo</tspan> <tspan x="990">4322</tspan> <tspan x="1114">1000</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">TVN</tspan> <tspan x="1703">DVB-S</tspan></text>
                 <g class="ico" transform="matrix(0.38,0,0,0.38,884,378)">
                   <use href="#service-blacklist" style="fill:#545454" />
                 </g>
                 <g class="ico" transform="matrix(0.38,0,0,0.38,1364,378)">
                   <use href="#crypted" style="fill:#545454" />
                 </g>
-                <text x="473" y="415" dx="0" dy="31" style="font-size:19px;fill:#000"><tspan x="500">39</tspan> <tspan x="580">TOPcrime HD</tspan> <tspan x="990">132</tspan> <tspan x="1114">1200</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">Mediaset</tspan> <tspan x="1703">DVB-S</tspan></text>
+                <text x="473" y="415" dy="31" style="font-size:19px;fill:#000"><tspan x="500">39</tspan> <tspan x="580">TOPcrime HD</tspan> <tspan x="990">132</tspan> <tspan x="1114">1200</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">Mediaset</tspan> <tspan x="1703">DVB-S</tspan></text>
                 <g class="ico" transform="matrix(0.38,0,0,0.38,884,427)">
                   <use href="#service-blacklist" style="fill:#545454" />
                 </g>
@@ -689,12 +689,19 @@
     <text id="test_lf" dx="535">fusion light</text>
     <text id="test_df" dx="650">fusion dark</text>
   </g>
+
+  <!--<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="svg_flatten.js"></script>-->
+
   <script type="text/javascript">
-    document.getElementById('test').addEventListener('click', function(e) {
-      var id = e.target.getAttribute('id');
-      document.getElementById('window').setAttribute('class', id[id.length - 1] + ' ' + id.replace('test_', ''));
-      document.getElementsByTagName('svg')[0].setAttribute('transform', 'matrix(1,1,1,1,0,0)');
-      document.getElementsByTagName('svg')[0].setAttribute('transform', '');
-    });
+    // <![CDATA[
+    if (document.getElementById('test')) {
+      document.getElementById('test').addEventListener('click', function(e) {
+        var id = e.target.getAttribute('id');
+        document.getElementById('window').setAttribute('class', id[id.length - 1] + ' ' + id.replace('test_', ''));
+        document.getElementsByTagName('svg')[0].setAttribute('transform', 'matrix(1,1,1,1,0,0)');
+        document.getElementsByTagName('svg')[0].setAttribute('transform', '');
+      });
+    }
+    // ]]>
   </script>
 </svg>
