@@ -79,7 +79,7 @@
   
     <rect x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd"/>
   
-  <g style="font-family:sans-serif-light,'Sans-Serif',system-ui,sans-serif">
+  <g style="font-family:'Sans-Serif',system-ui,sans-serif">
     <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:#f9f9f9;stroke:#acc6c3;stroke-width:1px"/>
     
       <rect x="81" y="81" width="1718" height="48" rx="0" style="fill:#fafafa;stroke:#e8e8e8;stroke-width:2px;clip-path:inset(1px 1px 0px)"/>
