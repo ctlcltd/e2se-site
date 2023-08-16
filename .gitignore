@@ -3,7 +3,7 @@
 src/node_modules
 src/package-lock.json
 config.php
-test
+/test
 translations/*.ts
 src/e2-sat-editor
 public/sources/*.json
