@@ -38,9 +38,9 @@ function round(value) {
 
 
 
-const excluded = [ 'block-size', 'inline-size', 'perspective-origin', 'text-wrap', 'transform-origin', 'user-select', 'zoom' ];
+const excluded = [ 'block-size', 'inline-size', 'overflow-x', 'overflow-y', 'perspective-origin', 'text-decoration-line', 'text-wrap', 'transform-origin', 'user-select', 'zoom', '-webkit-text-decorations-in-effect' ];
 const attributes = [ 'x', 'y', 'cx', 'cy', 'dx', 'dy', 'width', 'height', 'rx', 'ry', 'transform', 'style' ];
-const ordered = [ 'display', 'x', 'y', 'cx', 'cy', 'dx', 'dy', 'width', 'height', 'rx', 'ry', 'fill', 'fill-opacity', 'stroke', 'stroke-opacity', 'stroke-width', 'transform', 'clip-path', 'filter' ];
+const ordered = [ 'display', 'x', 'y', 'width', 'height', 'rx', 'ry', 'font-family', 'font-weight', 'font-size', 'letter-spacing', 'word-spacing', 'fill', 'fill-opacity', 'stroke', 'stroke-opacity', 'stroke-width', 'stroke-dasharray', 'text-decoration', 'text-shadow', 'transform', 'clip-path', 'filter', 'opacity' ];
 
 
 const svg = document.rootElement;
@@ -97,10 +97,10 @@ for (const el of elements) {
 
     let fix = (prop == 'display' && value != 'inline');
 
-    if (prop == 'fill' && (_style && value != _style || _style == 'none')) {
+    if (_style && value != _style) {
       fix = true;
-    } else if (prop == 'font-weight' && _style && value != _style) {
-      fix = true;
+    } else if (prop == 'fill' || prop == 'stroke' || prop == 'filter') {
+      fix = value && /url\(.+\)/.test(value) || _style && /url\(.+\)/.test(_style);
     }
 
     if (value && (value != _default && value != _style && value != _parent) || fix) {
@@ -118,21 +118,21 @@ for (const el of elements) {
         atts[prop] = replace(value);
       }
 
-      if (/url\(.+\)/.test(value)) {
-        const href = value.match(/url\("(.+)"\)/);
-        used.add(href[1].substr(1));
-      }
-
-      // console.log(el, prop, { value, _parent, _default });
+      // console.log(el, prop, { value, _style, _parent, _default });
     }
   }
 
   var s = [];
+  var i = 1e3;
   for (const prop in css) {
-    s.push(prop + ':' + css[prop]);
+    const x = ordered.indexOf(prop) != -1 ? ordered.indexOf(prop) : i++;
+    // if (ordered.indexOf(prop) == -1) {
+    //   console.log('unordered property', prop);
+    // }
+    s[x] = prop + ':' + css[prop];
   }
   if (s.length) {
-    atts.style = s.join(';');
+    atts.style = s.flat().join(';');
   }
 
   for (const prop in atts) {
@@ -310,12 +310,7 @@ if (/w|f/.test(root.getAttribute('_class'))) {
         // console.log(matrix.e, pos.x, m.e, cm.e, tm.e);
 
         txt.setAttribute('x', matrix.e);
-
-        // if (matrix.f) {
-        //   txt.setAttribute('y', matrix.f);
-        // } else {
-        //   txt.removeAttribute('y');
-        // }
+        // txt.removeAttribute('y');
       }
 
       child.removeAttribute('class');
@@ -366,26 +361,34 @@ elements = svg.querySelectorAll('g *');
 for (const el of elements) {
   if (el.nodeName == 'use') {
     used.add(el.getAttribute('href').substr(1));
+  } else if (el.hasAttribute('style')) {
+    var s = el.getAttribute('style').split(';');
+    for (const rule of s) {
+      if (/url\(.+\)/.test(rule)) {
+        const id = rule.match(/url\((.+)\)/);
+        used.add(id[1].substr(1));
+      }
+    }
   }
 }
 
 
-var resources = svg.querySelector('defs');
+var resources = svg.querySelectorAll('defs [id]');
 
-for (const res of resources.children) {
+for (const res of resources) {
   if (! used.has(res.id)) {
     res.remove();
   }
 }
 
-
 idmap = {};
-resources = svg.querySelector('defs');
+resources = svg.querySelectorAll('defs [id]');
 elements = svg.querySelectorAll('g *');
 
-for (var i = 0; i < resources.children.length; i++) {
-  const res = resources.children.item(i);
-  idmap[res.id] = res.id[0] + String.fromCharCode(i + 97) + res.id[res.id.length - 1];
+for (var i = 0; i < resources.length; i++) {
+  const res = resources.item(i);
+  const c = String.fromCharCode(i + 97 > 122 ? i + 65 : i + 97);
+  idmap[res.id] = res.id[0] + c + res.id[res.id.length - 1];
   res.id = idmap[res.id];
   // console.log(res.id);
 }
@@ -425,9 +428,13 @@ for (var i = 0; i != 10; i++) {
 }
 
 
-elements = svg.querySelectorAll('g, g *');
+elements = svg.querySelectorAll('*');
 
 for (const el of elements) {
+  if (el.nodeName == 'link' || el.nodeName == 'script') {
+    continue;
+  }
+
   el.removeAttribute('xmlns');
 
   el.removeAttribute('_id');
@@ -435,8 +442,17 @@ for (const el of elements) {
 }
 
 
+elements = svg.querySelectorAll('*');
+
+for (const el of elements) {
+  if (el.hasAttribute('style') && el.getAttribute('style') == 'fill:none') {
+    el.remove();
+  }
+}
+
 
 const dst_size = svg.outerHTML.length / 1e3;
 
 console.log({ src_size, dst_size });
+// console.log(svg.outerHTML);
 
