@@ -82,12 +82,12 @@
   
     <rect x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd"/>
   
-  <g style="font-family:'Segoe UI',Monospace,Tahoma,sans-serif">
+  <g style="font-family:'Segoe UI','Serif',Tahoma,sans-serif">
     <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:#f0f0f0;stroke:#a2b5ba;stroke-width:1px"/>
     
       <rect x="82" y="82" width="1716" height="92.5" rx="0" style="fill:#fff;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
       
-      <text x="82" y="83.70000004768372" dx="42" dy="28" style="font-family:'Segoe UI',Monospace,Tahoma,sans-serif;font-weight:normal;font-size:19.1px;letter-spacing:-0.1px;fill:#000">e2 SAT Editor</text>
+      <text x="82" y="83.70000004768372" dx="42" dy="28" style="font-family:'Segoe UI','Serif',Tahoma,sans-serif;font-weight:normal;font-size:19.1px;letter-spacing:-0.1px;fill:#000">e2 SAT Editor</text>
       
         <image x="93" y="92" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg=="/>
       
