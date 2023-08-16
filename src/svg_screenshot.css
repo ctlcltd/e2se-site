@@ -1,10 +1,4 @@
 
-svg {}
-
-/* safari: unsupported */
-text { user-select: none; }
-
-
 
 .m .divid { stroke: #000; stroke-opacity: 0.3; stroke-width: 1px; stroke-style: dashed; stroke-dasharray: 1px 3px; }
 .m #statusbar .divid { display: none; }
@@ -36,7 +30,7 @@ text { user-select: none; }
 .dm .find-h-bg { fill: #25456c !important; }
 
 .dm #t-ctrs-m ellipse { stroke: none !important; }
-.dm #t-stroke { stroke: #000 !important; }
+.dm #t-stroke { stroke: #000 !important; stroke-opacity: 0.89; }
 .dm #sb-stroke, .dm #main-stroke { stroke: #404242 !important; }
 .dm .tb-button rect { stroke: #fff !important; stroke-opacity: 0.23;  }
 .dm .tb-tab .bg { fill: #323232 !important; stroke: #3e3e3e !important; }
@@ -74,9 +68,6 @@ text { user-select: none; }
 
 
 
-
-
-
 .w { font-family: 'Segoe UI', Tahoma, sans-serif !important; }
 
 .w #t-ctrs-m { display: none; }
@@ -89,11 +80,13 @@ text { user-select: none; }
 
 .w .btn-caret .bg { fill: none !important; stroke: none !important; }
 
-.w .divid { width: 1.2px; fill: #d5d5d5 !important; stroke: none !important; }
+.w .divid { width: 1.2px; fill: #d0d0d0 !important; stroke: none !important; }
+.w .menu-divid .divid { height: 50px; y: 214px; }
 .w #sbcb-w { clip-path: inset(0 27px 27px 0); }
-.w #sbcb-w rect { fill: #d5d5d5 !important; transform: matrix(-0.8, -1, -1, 1, 52, 23); }
+.w #sbcb-w rect { fill: #c5c5c5 !important; transform: matrix(-0.8, -1, -1, 1, 52, 23); }
 
 .w #w-bg { fill: #f0f0f0 !important; stroke: #a2b5ba !important; }
+.w #w-stroke { stroke: #9bb3b3 !important; }
 .w #t-bg { height: 92.5px; fill: #fff !important; stroke: none !important; }
 
 .w #sb-bg, .w #tb-bg, .w #tb-corner .bg, .w #menu-bg, .w #ss-bg { fill: none !important; }
@@ -114,15 +107,15 @@ text { user-select: none; }
 .w .tb-button text { font-size: 18px !important; }
 .w #tb-tabs { transform: translate(1px, 0); }
 
-.w .tb-tab .bg { fill: #f0f0f0 !important; stroke: #e2e2e2 !important; stroke-width: 2px !important; }
+.w .tb-tab .bg { fill: #f0f0f0 !important; stroke: #ddd !important; stroke-width: 2px !important; }
 .w .tb-tab text { font-size: 19px !important; transform: translate(0, 1.5px); }
 .w #tb-start { fill: none !important, }
-.w #tb-end { fill: #e2e2e2 !important; transform: translate(1px, 0); }
+.w #tb-end { fill: #ddd !important; transform: translate(1px, 0); }
 
 .w .tb-tab.active .bg { fill: #0078d7 !important; stroke: #0078d7 !important; }
 .w .tb-tab.active text { fill: #fff !important; }
 
-.w .tb-close .o { filter: url(#tb-close-b-w); transform: translate(-3px, 1.5px); }
+.w .tb-close .o { filter: url(#tb-close-b-w); transform: translate(-2.5px, 0); }
 .w .tb-close rect { x: -4px; y: -4px; width: 20px; height: 20px; rx: 3px; fill: #e08759 !important; stroke: #da4634; stroke-width: 2px; }
 .w .tb-close .ico { transform: matrix(0.15, 0, 0, 0.15, 1, 1) !important; }
 .w .tb-close .ico use { fill: #fff !important; stroke: #fff; stroke-width: 10px; }
@@ -132,11 +125,11 @@ text { user-select: none; }
 .w #statusbar { transform: translate(0, 8px); }
 .w #sb-bg { height: 48px; }
 .w #sb-stroke { height: 34px; }
-.w #statusbar text { font-size: 19px !important; transform: translate(-13px, -4.5px); }
-.w #statusbar #sbte { transform: translate(18px, -2px); }
+.w #statusbar text { font-size: 19px !important; transform: translate(-13px, -3px); }
+.w #statusbar #sbte { transform: translate(18px, -3px); }
 
-.w #sb-stroke, .w #menu-stroke, .w #main-stroke { stroke-width: 2px !important; }
-.w #sb-stroke, .w #main-stroke { stroke: #d3d3d3 !important; }
+.w #sb-stroke, .w #menu-stroke, .w #main-stroke { stroke-width: 2.2px !important; }
+.w #sb-stroke, #menu-stroke, .w #main-stroke { stroke: #d0d0d0 !important; }
 
 .w .btn-bg, .w .tb-button rect, .w .box-button .bg { rx: 0px !important; fill: #e1e1e1 !important; stroke: #a3a3a3 !important; stroke-width: 1.2px !important; }
 .w .btn-bg { filter: none !important; }
@@ -149,16 +142,19 @@ text { user-select: none; }
 
 .w .menu-item .ico use, .w .tree-item .ico use { fill: #505050 !important; }
 
-.w #menu-bg, .w #menu-stroke { height: 94px; }
-.w #menu-stroke { stroke: #d2d2d2 !important; }
+.w #menu-bg, .w #menu-stroke { height: 98px; }
 .w .menu-item { transform: translate(0, -3px); }
 .w .menu-item .txt { font-size: 26.5px !important; }
 .w .menu-item .divid { height: 45px; transform: translate(7px, 8px); }
+
 
 .w #w-inner { transform: matrix(1, 0, 0, 1, 0, 37); }
 
 .w #main { transform: matrix(1, 0, 0, 1, 0, -6); }
 
+
+.w #main-bg { height: 816px; }
+.w #main-stroke { height: 818px; }
 
 .w .box-title text { font-size: 19px !important; transform: translate(-2px, 1px); }
 .w .box-button { transform: translate(16px, -5px); }
@@ -170,7 +166,7 @@ text { user-select: none; }
 .w .tree-group .focused { fill: #ccc !important; }
 
 .w .tree { transform: translate(0, 2px); }
-.w .tree-vp { transform: translate(0, 10px); }
+.w .tree-vp { height: 591px; transform: translate(0, 10px); }
 .w .tree-cols text { font-size: 18.5px !important; transform: translate(1px, 7px); }
 .w .tree-cols .bg { height: 36px; fill: #fff !important; stroke: none !important; stroke-width: 0 !important; clip-path: none !important; }
 
@@ -179,13 +175,13 @@ text { user-select: none; }
 .w .tree .focused { fill: #cde8ff !important; }
 .w .tree text { fill: #000 !important; }
 
-.w .tree .tree-items { transform: translate(0, 1px); }
+.w .tree .tree-items { transform: translate(0, 3px); }
 .w .tree .tree-items text { font-size: 19.5px !important; transform: translate(-4px, 0); }
 
-.w .tree-search .bg { width: 1329px; height: 50px; }
+.w .tree-search .bg { width: 1329px; height: 52px; }
 .w #tree-tool .bg { width: 1329px; }
 .w #tree-tool .stroke { width: 1333px; }
-.w .tree-search { transform: translate(0, 20px); }
+.w #side-tool, .w #tree-tool { transform: translate(0, -18px); }
 .w .search-item { transform: translate(0, -4px); }
 
 .w #side-tool .bg, .w #side-tool .stroke, .w #tree-tool .bg, .w #tree-tool .stroke { height: 65px; transform: translate(0, 8px); }
@@ -204,8 +200,25 @@ text { user-select: none; }
 .w .qe-tt .btn-bg { transform: translate(5px, -1px); }
 .w .qe .btn-ico use { x: 16px; y: -1px; }
 .w .qe text { transform: translate(0, 1px); }
-.w .menu-item .btn-bg { width: 100px; height: 32px; transform: translate(5px, -2px); }
+.w .menu-item .btn-bg { width: 100px; height: 32px; transform: translate(5px, -1px); }
 .w .menu-item .arrow { transform: translate(-12px, 0); }
+
+.w #tb-corner .tb-ico use, .w .tool-ico use { fill: #505050 !important; }
+.w #tb-corner .tb-ico use { transform: translate(8px, 1px); }
+.w .tool-ico use { transform: translate(0, 1px); }
+.w .tree-search .ico { transform: matrix(0.24, 0, 0, 0.24, 1771, 1011) !important; }
+
+.w .search-item .btn-bg { width: 110px; height: 32px; transform: translate(0, 1px); }
+.w .search-item .btn-txt { transform: translate(-5px, 3px); }
+.w .search-item .btn-caret { transform: matrix(1, 0, 0, 1, 573, 1008) !important; }
+.w .search-item .input-bg { width: 352px; height: 36px; transform: translate(-33px, 0); }
+.w .search-item .input-txt { transform: translate(-33px, 2px); }
+
+.w .tt-divid .divid { display: block !important; height: 30px; }
+.w .tt-item:nth-child(4) .btn-bg, .w .tt-item:nth-child(4) .btn-txt { width: 118px; }
+.w .tt-item:nth-child(6) .btn-bg, .w .tt-item:nth-child(6) .btn-txt { width: 122px; }
+.w .tt-item:nth-child(4) .btn-txt { transform: translate(-6px, 0); }
+.w .tt-item:nth-child(6) .btn-txt { transform: translate(-15px, 0); }
 
 .w .sbh .bg, .w .sbv .bg, .w .sbh .btn-bg, .w .sbv .btn-bg, .w .sbh .xy, .w .sbv .xy { display: block !important; }
 
@@ -220,28 +233,24 @@ text { user-select: none; }
 .w .sbv .bg { width: 28px; }
 .w .sbh .xy { height: 23px; transform: translate(0, 0.5px); }
 .w .sbv .xy { width: 23px; transform: translate(0.5px, 0); }
-
-/*.w .sbh .hs { fill: yellow !important; }
-.w .sbh .he { fill: green !important; }
-.w .sbv .vs { fill: yellow !important; }
-.w .sbv .ve { fill: green !important; }*/
+.w .sbr { display: block !important; x: 1777px; y: 965px; width: 25px; height: 25px; fill: #f0f0f0; }
 
 .w #tree .sbv { transform: translate(-12px, -2px); }
-.w #tree .sbv .bg { height: 422px; }
+.w #tree .sbv .bg { height: 404px; }
 .w #tree .sbv .vs { y: 646px; }
-.w #tree .sbv .ve { y: 1038px; }
+.w #tree .sbv .ve { y: 1020px; }
 .w #tree .sbv .xy { x: 449px; y: 672px; height: 238px; }
 
-.w .tree .sbh { transform: translate(-2px, -11px); }
+.w .tree .sbh { transform: translate(-2px, -32px); }
 .w .tree .sbh .bg { width: 1334px; }
 .w .tree .sbh .hs { x: 475px; }
 .w .tree .sbh .he { x: 1751px; }
 .w .tree .sbh .xy { x: 501px; y: 998px; width: 738px; }
 
 .w .tree .sbv { transform: translate(-7px, -3px); }
-.w .tree .sbv .bg { height: 674px; }
+.w .tree .sbv .bg { height: 653px; }
 .w .tree .sbv .vs { y: 343px; }
-.w .tree .sbv .ve { y: 963px; }
+.w .tree .sbv .ve { y: 942px; }
 .w .tree .sbv .xy { x: 1785px; y: 511px; height: 38px; }
 
 .w .sbh .arrow-w use, .w .sbv .arrow-w use { fill: #636363; }
@@ -249,15 +258,37 @@ text { user-select: none; }
 .w .sbh .arrow.ae .arrow-w { transform: matrix(0, 0.2, -0.2, 0, -2, 7); }
 .w .sbv .arrow.as .arrow-w { transform: matrix(0.2, 0, 0, 0.2, 7, 9); }
 .w .sbv .arrow.ae .arrow-w { transform: matrix(0.2, 0, 0, -0.2, 7, 20); }
-.w .tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 963); }
+.w #tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 448, 1021); }
+.w .tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 942); }
 
 .w .menu-item:nth-child(1) { transform: translate(0, -3px); }
-.w .menu-item:nth-child(2) { transform: translate(-10px, -3px); }
-.w .menu-divid:nth-child(3) { transform: translate(-15px, 0); }
-.w .menu-item:nth-child(4) { transform: translate(-20px, -3px); }
-.w .menu-item:nth-child(5) { transform: translate(-30px, -3px); }
-.w .menu-divid:nth-child(6) { transform: translate(-45px, 0); }
-.w .menu-item:nth-child(7) { transform: translate(-50px, -3px); }
+.w .menu-item:nth-child(2) { transform: translate(-5px, -3px); }
+.w .menu-divid:nth-child(3) { transform: translate(-17px, 0); }
+.w .menu-item:nth-child(4) { transform: translate(-23px, -3px); }
+.w .menu-item:nth-child(5) { transform: translate(-27px, -3px); }
+.w .menu-divid:nth-child(6) { transform: translate(-37px, 0); }
+.w .menu-item:nth-child(7) { transform: translate(-42px, -3px); }
+
+.w .menu-item:nth-child(8) { transform: translate(60px, -3px); }
+.w .menu-item:nth-child(9) { transform: translate(20px, -3px); }
+.w .menu-item:nth-child(10) { transform: translate(15px, -3px); }
+.w .menu-divid:nth-child(11) { transform: translate(9px, 0); }
+.w .menu-item:nth-child(12) { transform: translate(3px, -3px); }
+.w .menu-item:nth-child(13) { transform: translate(0, -3px); }
+
+.w .tree .tree-items text:last-of-type { display: none; }
+
+.w .search-item:nth-child(4) { transform: translate(115px, -2px); }
+.w .search-item:nth-child(5) { transform: translate(115px, -2px); }
+.w .search-item:nth-child(6) { transform: translate(115px, -2px); }
+.w .search-item:nth-child(7) { transform: translate(95px, -2px); }
+
+.w .tt-item:nth-child(1) { transform: translate(5px, 1px); }
+.w .tt-item:nth-child(2) { transform: translate(0, 1px); }
+.w .tt-item:nth-child(3) { transform: translate(-5px, 1px); opacity: 0.25 !important; }
+.w .tt-item:nth-child(4) { transform: translate(-10px, 0); }
+.w .tt-divid:nth-child(5) { transform: translate(-25px, 0); }
+.w .tt-item:nth-child(6) { transform: translate(-25px, 0); opacity: 0.25 !important; }
 
 
 
@@ -279,8 +310,9 @@ text { user-select: none; }
 .f .btn-caret .bg { fill: none !important; stroke: none !important; }
 
 .f #w-bg { fill: #f9f9f9 !important; stroke: #acc6c3 !important; }
+.f #w-stroke { stroke: #9bb1ab !important; }
 .f #t-bg { x: 81px; y: 81px; width: 1718px; height: 48px; fill: #fafafa !important; stroke: #e8e8e8 !important; stroke-width: 2px !important; clip-path: inset(1px 1px 0px) !important; }
-.f #t-stroke { y: 127px; }
+.f #t-stroke { y: 127px; stroke: #cbcdcc !important; stroke-width: 2px !important; clip-path: inset(0 1px); }
 
 .f #tb-bg, .f #tb-corner .bg, .f #ss-bg { fill: #efefef !important; }
 .f #sb-bg, .f #main-bg { fill: #efefef !important; }
@@ -291,14 +323,14 @@ text { user-select: none; }
 
 .f #menubar { transform: translate(0, 8px); }
 .f #mb-bg { height: 36px; }
-.f #mb-txt { font-size: 20px !important; word-spacing: 15px; fill-opacity: 0.75; transform: translate(1px, 1px); }
-.f #mb-stroke { fill: #e2e2e2 !important; stroke: #e2e2e2; stroke-width: 1px; transform: translate(0, 3.5px); }
+.f #mb-txt { font-size: 20px !important; word-spacing: 15px; fill-opacity: 0.75; transform: translate(1px, 2px); }
+.f #mb-stroke { fill: #e2e2e2 !important; stroke: #dcdddd; stroke-width: 1px; transform: translate(0, 3.5px); }
 
 .f #statusbar { transform: translate(0, 5px); }
 .f #sb-bg { height: 51px; }
 .f #sb-stroke { height: 37px; stroke: none !important; }
-.f #statusbar text { font-size: 19.5px !important; transform: translate(-5px, -2px); }
-.f #statusbar #sbte { transform: translate(12px, -2px); }
+.f #statusbar text { font-size: 19.5px !important; transform: translate(-6px, -3px); }
+.f #statusbar #sbte { transform: translate(28px, -3px); }
 .f #sb-stroke { stroke: #e4e4e4 !important; }
 
 .f #tb-corner .bg { width: 128px; }
@@ -332,6 +364,8 @@ text { user-select: none; }
 .f #menu-bg, .f #menu-stroke { height: 95px; }
 .f #menu-stroke { stroke: #d1d2d2 !important; }
 .f .menu-item { transform: translate(0, -2px); }
+.f .menu-item .btn-bg { width: 100px; height: 34px; transform: translate(5px, -2px); }
+.f .menu-item .arrow { transform: translate(-12px, 0); }
 .f .menu-item .txt { font-size: 25.5px !important; transform: translate(-1.5px, 0); }
 
 
@@ -339,6 +373,9 @@ text { user-select: none; }
 
 .f #main { transform: matrix(1, 0, 0, 1, 0, -5); }
 
+
+.f #main-bg, .f #ss-bg, .f #se-bg { height: 820px; }
+.f #main-stroke { height: 822px; }
 
 .f .box-title text { font-size: 19px !important; }
 .f .box-button { transform: translate(15px, -2px); }
@@ -352,16 +389,17 @@ text { user-select: none; }
 .f .tree-cols .bg { fill: url(#btn-bg-f) !important; stroke: #c8c8c8; stroke-width: 2px; clip-path: inset(1px 1px 0); }
 .f .tree-cols text { transform: translate(-3px, 2px); }
 
-/*.f .ruler { stroke: #000 !important; stroke-opacity: 0.75; transform: translate(0, -1px); }*/
 .f .ruler { width: 3px; height: 26px; fill: #ddd !important; stroke: #cdcdcd !important; transform: translate(-2px, -3px); clip-path: inset(1px 1px 1px 0); }
 
-.f .tree .tree-items { transform: translate(0, -1px); }
+.f .tree .tree-items { transform: translate(0, 1px); }
 .f .tree .tree-items text { font-size: 20px !important; transform: translate(-4px, 0); }
+
+.f #side-tool, .f #tree-tool { transform: translate(0, -15px); }
 
 .f .tree-search .bg { width: 1329px; height: 50px; }
 .f #tree-tool .bg { width: 1329px; }
 .f #tree-tool .stroke { width: 1333px; }
-.f .tree-search { transform: translate(0, 20px); }
+.f .tree-search { transform: translate(0, 5px); }
 .f .search-item { transform: translate(0, -4px); }
 
 .f #side-tool .bg, .f #side-tool .stroke, .f #tree-tool .bg, .f #tree-tool .stroke { height: 65px; transform: translate(0, 8px); }
@@ -372,20 +410,30 @@ text { user-select: none; }
 .f .btn-caret .arrow-l { fill: #676767; transform: matrix(0.23, 0, 0, 0.23, 0, 5); }
 
 .f .qe-st { transform: translate(20px, 2px); }
-.f .qe-tt { transform: translate(30px, 2px); }
+.f .qe-tt { transform: translate(27px, 2px); }
 .f .qe .btn-bg { width: 100px; height: 34px; }
 .f .qe-st .btn-bg { transform: translate(15px, -1px); }
 .f .qe-tt .btn-bg { transform: translate(10px, -1px); }
 .f .qe .btn-ico use { x: 15px; }
-.f .menu-item .btn-bg, .f .search-item .btn-bg { width: 100px; height: 34px; transform: translate(5px, -2px); }
-.f .menu-item .arrow, .f .search-item .arrow { transform: translate(-12px, 0); }
+.f .search-item .btn-bg { width: 123px; height: 34px; transform: translate(-2px, -2px); }
+.f .search-item .btn-txt { transform: translate(-5px, 0); }
+.f .search-item .arrow { transform: translate(-7px, 0); }
+.f .search-item .input-bg { width: 308px; height: 34px; transform: translate(-16px, -1px); }
+.f .search-item .input-txt { transform: translate(-15px, 0); }
+.f .search-item .find-txt, .f .search-item .find-h-txt { font-size: 19.5px !important; }
+.f .search-item .find-txt, .f .search-item .find-h-txt, .f .st-item .btn-txt, .f .tt-item .btn-txt { transform: translate(0, 1px); }
 
-.f .sbh .bg, .f .sbv .bg, .f .sbh .btn-bg, .f .sbv .btn-bg, .f .sbh .xy, .f .sbv .xy { display: block !important; }
+.f .tt-divid .divid { display: block !important; height: 24px; }
+
+.f .sbh .bg, .f .sbv .bg, .f .sbh .btn-bg, .f .sbv .btn-bg, .f .sbh .xy, .f .sbv .xy, .f .sbr { display: block !important; }
 
 .f .sbh { clip-path: inset(0 0 1px 1px); }
 .f .sbv { clip-path: inset(1px 1px 0 0); }
-.f .sbh .bg, .f .sbv .bg { fill: #e6e6e6; stroke: #bcbcbc !important; stroke-width: 2px; }
+.f .sbh .bg, .f .sbv .bg, .f .sbr { fill: #e6e6e6; stroke: #bcbcbc !important; stroke-width: 2px; }
 .f .sbh .btn-bg, .f .sbv .btn-bg, .f .sbh .xy, .f .sbv .xy { rx: 0 !important; fill: url(#btn-bg-f) !important; stroke: #ababab !important; stroke-width: 1px; }
+.f .sbh .btn-bg, .f .sbh .xy { fill: url(#btn-bg-f) !important }
+.f .sbv .btn-bg, .f .sbv .xy { fill: url(#btn-bg-v-f) !important; }
+.f .sbh .xy, .f .sbv .xy { fill-opacity: 0.8; stroke-opacity: 0.6; }
 
 .f .sbh .btn-bg { width: 22px; height: 22px; transform: translate(-1.5px, 0.5px); }
 .f .sbv .btn-bg { width: 22px; height: 22px; transform: translate(0.5px, -1.5px); }
@@ -393,39 +441,64 @@ text { user-select: none; }
 .f .sbv .bg { width: 23px; }
 .f .sbh .xy { height: 22px; transform: translate(0, 0.5px); }
 .f .sbv .xy { width: 22px; transform: translate(0.5px, 0); }
+.f .sbr { display: block !important; x: 1780px; y: 974.5px; width: 24px; height: 24px; stroke-width: 2px; clip-path: inset(0 1px 1px 0); }
 
 .f #tree .sbv { transform: translate(-8px, -1px); }
-.f #tree .sbv .bg { height: 419px; }
+.f #tree .sbv .bg { height: 404px; }
 .f #tree .sbv .vs { y: 646px; }
-.f #tree .sbv .ve { y: 1042px; }
-.f #tree .sbv .xy { x: 448px; y: 667px; height: 333px; }
+.f #tree .sbv .ve { y: 1027px; }
+.f #tree .sbv .xy { x: 448px; y: 667px; height: 318px; }
 
-.f .tree .sbh { transform: translate(0, -7.5px); }
+.f .tree .sbh { transform: translate(0, -22.3px); }
 .f .tree .sbh .bg { width: 1308px; }
 .f .tree .sbh .hs { x: 475px; }
 .f .tree .sbh .he { x: 1760px; }
 .f .tree .sbh .xy { x: 496px; y: 997px; width: 900px; }
 
 .f .tree .sbv { transform: translate(-4px, -1px); }
-.f .tree .sbv .bg { height: 650.5px; }
+.f .tree .sbv .bg { height: 635.5px; }
 .f .tree .sbv .vs { y: 343px; }
-.f .tree .sbv .ve { y: 970.5px; }
-.f .tree .sbv .xy { x: 1784px; y: 511px; height: 70px; }
+.f .tree .sbv .ve { y: 955.5px; }
+.f .tree .sbv .xy { x: 1784px; y: 496px; height: 70px; }
 
 .f .sbh .arrow-l use, .f .sbv .arrow-l use { fill: #5c5c5c; }
 .f .sbh .arrow.as .arrow-l { transform: matrix(0, 0.22, -0.22, 0, 17.5, 4.3); }
 .f .sbh .arrow.ae .arrow-l { transform: matrix(0, 0.22, 0.22, 0, -13.5, 4.3); }
 .f .sbv .arrow.as .arrow-l { transform: matrix(0.22, 0, 0, -0.22, 4.3, 18.5); }
 .f .sbv .arrow.ae .arrow-l { transform: matrix(0.22, 0, 0, 0.22, 4.3, 6); }
-.f .tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 968); }
+.f #tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 448, 1024); }
+.f .tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 953); }
 
 .f .menu-item:nth-child(1) { transform: translate(0, -2px); }
-.f .menu-item:nth-child(2) { transform: translate(-10px, -2px); }
-.f .menu-divid:nth-child(3) { transform: translate(-20px, 0); }
-.f .menu-item:nth-child(4) { transform: translate(-20px, -2px); }
-.f .menu-item:nth-child(5) { transform: translate(-30px, -2px); }
-.f .menu-divid:nth-child(6) { transform: translate(-50px, 0); }
-.f .menu-item:nth-child(7) { transform: translate(-50px, -2px); }
+.f .menu-item:nth-child(2) { transform: translate(-8px, -2px); }
+.f .menu-divid:nth-child(3) { transform: translate(-24px, 0); }
+.f .menu-item:nth-child(4) { transform: translate(-24px, -2px); }
+.f .menu-item:nth-child(5) { transform: translate(-32px, -2px); }
+.f .menu-divid:nth-child(6) { transform: translate(-48px, 0); }
+.f .menu-item:nth-child(7) { transform: translate(-48px, -2px); }
+
+.f .menu-item:nth-child(8) { transform: translate(80px, 0); }
+.f .menu-item:nth-child(9) { transform: translate(48px, -2px); }
+.f .menu-item:nth-child(10) { transform: translate(40px, -2px); }
+.f .menu-divid:nth-child(11) { transform: translate(20px, 0); }
+.f .menu-item:nth-child(12) { transform: translate(16px, -2px); }
+.f .menu-item:nth-child(13) { transform: translate(8px, -2px); }
+
+.f .search-item:nth-child(4), .f .search-item:nth-child(5), .f .search-item:nth-child(6) { transform: translate(86px, -5px); }
+.f .search-item:nth-child(7) { transform: translate(83px, -5px); }
+
+.f .st-item:nth-child(1) { transform: translate(0, 0.5px); }
+
+.f .tt-item:nth-child(1) { transform: translate(0, 0.5px); }
+.f .tt-item:nth-child(2) { transform: translate(-8px, 0.5px); }
+.f .tt-item:nth-child(3) { transform: translate(-20px, 0.5px); opacity: 0.25 !important; }
+.f .tt-item:nth-child(4) { transform: translate(-22px, 1px); }
+.f .tt-divid:nth-child(5) { transform: translate(-28px, -5px); }
+.f .tt-item:nth-child(6) { transform: translate(-24px, 1px); opacity: 0.25 !important; }
+
+.f #side .focused { transform: matrix(1, 0, 0, 0.996, 0, 1.2); }
+.f #tree .focused { transform: matrix(1, 0, 0, 0.996, 0, 2.4); }
+.f .tree .focused { transform: matrix(1, 0, 0, 0.996, 0, 1.1); }
 
 
 .df #t-ctrs-l rect { stroke: #fdfdfd !important; }
@@ -435,6 +508,7 @@ text { user-select: none; }
 .df #t-txt { fill: #aaa !important; }
 
 .df #w-bg { fill: #171717 !important; stroke: #acc6c3 !important; }
+.df #w-stroke { stroke: #a7bfba !important; }
 .df #t-bg { fill: #3a3a3a !important; stroke: #131312 !important; }
 
 .df #mb-txt { fill-opacity: 0.9; }
@@ -479,9 +553,11 @@ text { user-select: none; }
 .df .tree-view .arrow-l { fill: #adacac; }
 .df .btn-caret .arrow-l { fill: #b5b5b4; }
 
-.df .sbh .btn-bg, .df .sbv .btn-bg, .df .sbh .xy, .df .sbv .xy { fill: url(#btn-bg-d-f) !important; stroke: url(#btn-stroke-d-f) !important; }
-.df .sbh .bg, .df .sbv .bg { fill: #1d1c1c; stroke: url(#btn-stroke-d-f) !important; }
-.df .sbh .xy, .df .sbv .xy { fill-opacity: 0.7; stroke-opacity: 0.75; }
+.df .sbh .bg, .df .sbv .bg, .df .sbr { fill: #1d1c1c; stroke: #2e2d2c !important; }
+.df .sbh .btn-bg, .df .sbv .btn-bg, .df .sbh .xy, .df .sbv .xy { stroke: #4f4f4e !important; }
+.df .sbh .btn-bg, .df .sbh .xy { fill: url(#btn-bg-d-f) !important; }
+.df .sbv .btn-bg, .df .sbv .xy { fill: url(#btn-bg-v-d-f) !important; }
+.df .sbh .xy, .df .sbv .xy { fill-opacity: 0.7; stroke-opacity: 0.8; }
 .df .sbh .arrow-l use, .df .sbv .arrow-l use { fill: #d3d2d2; }
 
 .df .sbh, .df .sbv { filter: url(#btn-shadow-d-f); }
@@ -490,11 +566,13 @@ text { user-select: none; }
 .df .sbh .bg { clip-path: inset(0 0 1px 0);}
 .df .sbv .bg { clip-path: inset(0 1px 0 0); }
 
-.df #tree .sbv { /*transform: translate(-9px, -1.5px);*/ transform: matrix(0.997, 0, 0, 0.997, -7.5, 0); }
-.df .tree .sbh { /*transform: translate(0, -7.5px);*/ transform: matrix(0.997, 0, 0, 0.997, 2, -4.5); }
-.df .tree .sbv { /*transform: translate(-5px, -1.5px);*/ transform: matrix(0.997, 0, 0, 0.997, -0.5, 0.5); }
+.df #tree .sbv { transform: matrix(0.997, 0, 0, 0.997, -7.5, 0); }
+.df .tree .sbh { transform: matrix(0.997, 0, 0, 0.997, 2, -20); }
+.df .tree .sbv { transform: matrix(0.997, 0, 0, 0.997, -0.5, 0.5); }
 .df .sbh .xy { transform: translate(2.5px, 0.5px); }
 .df .sbv .xy { transform: translate(0.5px, 2.5px); }
+.df .sbr { x: 1778px; y: 974px; width: 26px; height: 24px; stroke: none !important; }
+
 
 
 

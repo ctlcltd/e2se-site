@@ -1,11 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1880 1300">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1880 1300" style="pointer-events:none;user-select:none">
   <defs>
     <symbol id="aad">
       <path d="M37.75 37.75h18.127v-11.5h-18.127c0 0 0-18.127 0-18.127h-11.5v18.127c0 0-18.127 0-18.127 0v11.5h18.127c0 0 0 18.127 0 18.127h11.5v-18.127z"/>
     </symbol>
     <symbol id="cbw">
-      <!-- fixme -->
-      <path d="M4,14.973C2.23,15.791 1,17.583 1,19.66L1,52.34C1,55.188 3.312,57.5 6.16,57.5L57.84,57.5C60.688,57.5 63,55.188 63,52.34L63,19.66C63,17.583 61.77,15.791 60,14.973L60,53.738L4,53.738L4,14.973ZM7,50.167C10.141,49.887 15.021,49.5 18,49.5C18.95,49.5 20.094,49.539 21.312,49.602C22.274,49.638 23.326,49.708 24.371,49.793C27.049,49.984 29.634,50.221 31,50.352L31,14.451C31,14.451 24.39,13 21.037,13C17.037,13 7,14.451 7,14.451L7,50.167ZM33,50.352C34.365,50.221 36.951,49.984 39.629,49.793C40.674,49.708 41.726,49.638 42.688,49.602C43.906,49.539 45.05,49.5 46,49.5C48.979,49.5 53.859,49.887 57,50.167L57,14.451C57,14.451 46.963,13 42.963,13C39.61,13 33,14.451 33,14.451L33,50.352ZM28.5,42.5C28.5,41.396 27.604,40.5 26.5,40.5L12.5,40.5C11.396,40.5 10.5,41.396 10.5,42.5C10.5,43.604 11.396,44.5 12.5,44.5L26.5,44.5C27.604,44.5 28.5,43.604 28.5,42.5ZM53.5,42.5C53.5,41.396 52.604,40.5 51.5,40.5L37.5,40.5C36.396,40.5 35.5,41.396 35.5,42.5C35.5,43.604 36.396,44.5 37.5,44.5L51.5,44.5C52.604,44.5 53.5,43.604 53.5,42.5ZM28.5,35.5C28.5,34.396 27.604,33.5 26.5,33.5L12.5,33.5C11.396,33.5 10.5,34.396 10.5,35.5C10.5,36.604 11.396,37.5 12.5,37.5L26.5,37.5C27.604,37.5 28.5,36.604 28.5,35.5ZM53.5,35.5C53.5,34.396 52.604,33.5 51.5,33.5L37.5,33.5C36.396,33.5 35.5,34.396 35.5,35.5C35.5,36.604 36.396,37.5 37.5,37.5L51.5,37.5C52.604,37.5 53.5,36.604 53.5,35.5ZM28.5,28.5C28.5,27.396 27.604,26.5 26.5,26.5L12.5,26.5C11.396,26.5 10.5,27.396 10.5,28.5C10.5,29.604 11.396,30.5 12.5,30.5L26.5,30.5C27.604,30.5 28.5,29.604 28.5,28.5ZM53.5,28.5C53.5,27.396 52.604,26.5 51.5,26.5L37.5,26.5C36.396,26.5 35.5,27.396 35.5,28.5C35.5,29.604 36.396,30.5 37.5,30.5L51.5,30.5C52.604,30.5 53.5,29.604 53.5,28.5ZM28.5,21.5C28.5,20.396 27.604,19.5 26.5,19.5L12.5,19.5C11.396,19.5 10.5,20.396 10.5,21.5C10.5,22.604 11.396,23.5 12.5,23.5L26.5,23.5C27.604,23.5 28.5,22.604 28.5,21.5ZM53.5,21.5C53.5,20.396 52.604,19.5 51.5,19.5L37.5,19.5C36.396,19.5 35.5,20.396 35.5,21.5C35.5,22.604 36.396,23.5 37.5,23.5L51.5,23.5C52.604,23.5 53.5,22.604 53.5,21.5Z"/>
+      <path d="M60 14.973l-3-0.522v35.716c-3.141-0.28-8.021-0.667-11-0.667-0.95 0-2.094 0.039-3.312 0.102-0.962 0.036-2.014 0.106-3.059 0.191-2.678 0.191-5.264 0.428-6.629 0.559v-35.901c0 0 6.61-1.451 9.963-1.451 4 0 14.037 1.451 14.037 1.451l3.001 0.522c1.769 0.819 2.999 2.61 2.999 4.687v32.68c0 2.848-2.312 5.16-5.16 5.16h-51.68c-2.848 0-5.16-2.312-5.16-5.16v-32.68c0-2.077 1.23-3.869 3-4.687l3-0.522c0 0 10.037-1.451 14.037-1.451 3.353 0 9.963 1.451 9.963 1.451v35.901c-1.366-0.131-3.951-0.368-6.629-0.559-1.045-0.085-2.097-0.155-3.059-0.191-1.218-0.063-2.362-0.102-3.312-0.102-2.979 0-7.859 0.387-11 0.667v-35.716l-3 0.522v38.765h56v-38.765zM28.5 42.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 42.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM28.5 35.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 35.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM28.5 28.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 28.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM28.5 21.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 21.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2z"/>
     </symbol>
     <symbol id="cce">
       <path d="M62.328 7.276l-5.604-5.604-24.724 24.724c0 0-24.724-24.724-24.724-24.724l-5.604 5.604 24.724 24.724c0 0-24.724 24.724-24.724 24.724l5.604 5.604 24.724-24.724c0 0 24.724 24.724 24.724 24.724l5.604-5.604-24.724-24.724c0 0 24.724-24.724 24.724-24.724z"/>
@@ -73,6 +72,8 @@
     
     
     
+    
+    
 
     
     <filter id="btm" color-interpolation-filters="sRGB">
@@ -92,7 +93,7 @@
     <rect x="81" y="81" width="1718" height="1140" rx="15" style="fill:#313333;stroke:#a6bbb9;stroke-width:1px"/>
     
       <rect x="82" y="82" width="1716" height="57" rx="15" style="fill:#404242;stroke:#787979;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
-      <rect x="81" y="124" width="1718" height="1" style="fill:none;stroke:#000;stroke-width:2px;clip-path:inset(0px 1px)"/>
+      <rect x="81" y="124" width="1718" height="1" style="fill:none;stroke:#000;stroke-opacity:0.89;stroke-width:0.5px"/>
       <text x="82" y="82" dx="857" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#bcbebe">e2 SAT Editor</text>
       
       
@@ -201,48 +202,47 @@
             <text x="90" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Open</text>
           
           
-            <g transform="matrix(0.38,0,0,0.38,261,217)">
+            <g transform="matrix(0.38,0,0,0.38,259,217)">
               <use href="#sje" style="fill:#c7c8c8"/>
             </g>
-            <text x="246" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Save</text>
+            <text x="244" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Save</text>
           
           
-            <rect x="408" y="212" width="1" height="61" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
+            <rect x="406" y="212" width="1" height="61" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
           
           
-            <g transform="matrix(0.38,0,0,0.38,426,217)">
+            <g transform="matrix(0.38,0,0,0.38,424,217)">
               <use href="#ift" style="fill:#c7c8c8"/>
             </g>
-            <text x="410" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Import</text>
+            <text x="408" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Import</text>
           
           
-            <g transform="matrix(0.38,0,0,0.38,595,217)">
+            <g transform="matrix(0.38,0,0,0.38,592,217)">
               <use href="#eet" style="fill:#c7c8c8"/>
             </g>
-            <text x="577" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Export</text>
+            <text x="574" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Export</text>
           
           
-            
-            <rect x="762" y="212" width="1" height="61" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
+            <rect x="756" y="212" width="1" height="61" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
           
           
-            <g transform="matrix(0.38,0,0,0.38,779,217)">
+            <g transform="matrix(0.38,0,0,0.38,773,217)">
               <use href="#sns" style="fill:#c7c8c8"/>
             </g>
-            <text x="764" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Settings</text>
+            <text x="758" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Settings</text>
           
           
             
-              <rect x="1033" y="224" width="125" height="30" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
+              <rect x="1049" y="224" width="125" height="30" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
               
-                <rect x="1130.5" y="227" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);filter:#333"/>
-                <rect x="1130.5" y="227" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);stroke-opacity:0.06;stroke-width:2px"/>
+                <rect x="1146.5" y="227" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);filter:#333"/>
+                <rect x="1146.5" y="227" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
-                    <g transform="matrix(0.16,0,0,0.16,1137.4000244140625,229.6999969482422)">
+                    <g transform="matrix(0.16,0,0,0.16,1153.4000244140625,229.6999969482422)">
                       <use href="#apm" style="fill:#fff"/>
                     </g>
-                    <g transform="matrix(0.16,0,0,-0.16,1137.4000244140625,248.6999969482422)">
+                    <g transform="matrix(0.16,0,0,-0.16,1153.4000244140625,248.6999969482422)">
                       <use href="#apm" style="fill:#fff"/>
                     </g>
                   
@@ -250,23 +250,23 @@
                   
                 
               
-              <text x="1033" y="224" dx="12" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Default</text>
+              <text x="1049" y="224" dx="12" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Default</text>
             
           
           
-            <text x="1181" y="192" dx="15" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Connect</text>
+            <text x="1196" y="192" dx="15" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Connect</text>
           
           
-            <text x="1318" y="192" dx="15" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Disconnect</text>
+            <text x="1329" y="192" dx="15" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Disconnect</text>
           
           
-            <rect x="1490" y="212" width="1" height="61" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
+            <rect x="1501" y="212" width="1" height="61" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
           
           
-            <text x="1502" y="192" dx="15" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Upload</text>
+            <text x="1513" y="192" dx="15" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Upload</text>
           
           
-            <text x="1630" y="192" dx="15" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Download</text>
+            <text x="1632" y="192" dx="15" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Download</text>
           
         
         <rect x="80" y="192" width="1720" height="100" style="fill:none;stroke:#324040;stroke-width:2.4px;clip-path:inset(0px 2px)"/>
@@ -472,6 +472,7 @@
               
               
             
+             
           
           
             <rect x="473" y="992" width="1325" height="61" style="fill:#101010"/>
@@ -545,6 +546,7 @@
               
                 <rect x="1034" y="1072" width="135" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
                 <text x="1034" y="1072" dx="22" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Reference</text>
+              
               
               <g style="opacity:0.24">
                 <rect x="1199" y="1072" width="147" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>

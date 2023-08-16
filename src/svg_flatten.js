@@ -38,7 +38,7 @@ function round(value) {
 
 
 
-const excluded = [ 'block-size', 'inline-size', 'overflow-x', 'overflow-y', 'perspective-origin', 'text-decoration-line', 'text-wrap', 'transform-origin', 'user-select', 'zoom', '-webkit-text-decorations-in-effect' ];
+const excluded = [ 'block-size', 'inline-size', 'overflow-x', 'overflow-y', 'perspective-origin', 'text-decoration-line', 'text-wrap', 'transform-origin', 'zoom', '-webkit-text-decorations-in-effect' ];
 const attributes = [ 'x', 'y', 'cx', 'cy', 'dx', 'dy', 'width', 'height', 'rx', 'ry', 'transform', 'style' ];
 const ordered = [ 'display', 'x', 'y', 'width', 'height', 'rx', 'ry', 'font-family', 'font-weight', 'font-size', 'letter-spacing', 'word-spacing', 'fill', 'fill-opacity', 'stroke', 'stroke-opacity', 'stroke-width', 'stroke-dasharray', 'text-decoration', 'text-shadow', 'transform', 'clip-path', 'filter', 'opacity' ];
 
@@ -451,8 +451,12 @@ for (const el of elements) {
 }
 
 
+svg.setAttribute('style', 'pointer-events:none;user-select:none');
+
+
+
 const dst_size = svg.outerHTML.length / 1e3;
 
 console.log({ src_size, dst_size });
-// console.log(svg.outerHTML);
+console.log(svg.outerHTML);
 
