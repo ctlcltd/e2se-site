@@ -15,6 +15,7 @@
 @import "../../scss/_headings.scss";
 @import "../../scss/_buttons.scss";
 @import "custom";
+@import "landing";
 
 body.dark {
   @include variant_dark($print: true);

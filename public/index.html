@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="style.css">
 <title>e2 SAT Editor</title>
 <meta name="description" content="e2 SAT Editor software">
+<script>window.className='js'</script>
 </head>
 <body>
 <div id="head">
@@ -15,9 +16,115 @@
 </div>
 <div id="page">
   <main id="main">
-    <div>
+    <div id="hwi">
       <h1>e2 SAT Editor</h1>
       <p>Satellite channel list editor for decoder: Enigma2, Neutrino</p>
+    </div>
+    <div id="cnt">
+      <div id="lsa">
+        <div class="txt">
+          <p>This software can help you to manage channel lists in a comfortable way, satellite, terrestrial and cable lists, DVB and ATSC, to sort channels, to edit services, transponders, to create and edit bouquets and userbouquets, or to modify, assign and remove the picons (channel logos).</p>
+        </div>
+        <div class="img">
+          <div id="img-a">
+            <img src="../src/test/f-lf.svg" lazyload>
+          </div>
+        </div>
+      </div>
+      <div id="lsb">
+        <div class="txt">
+          <div>
+            <p>The software has 2 tree views, side-by-side and is optimized to <marker>Drag and Drop</marker>.</p>
+            <p>You can move easily between lists, bouquets and choose multiple channels from Channel Book.</p>
+          </div>
+          <div>
+            <p>With <strong>Channel Book</strong> you might explore the services: <marker>by type</marker> (TV, Radio, Data), <marker>by transponder</marker>, <marker>by frequency</marker>, <marker>by resolution</marker> (HD, UHD), <marker>by provider</marker> (package), <marker>by encryption</marker> type and <marker>in alphabetical order</marker>.</p>
+            <p>Cut, copy, paste and delete multiple channels, it has search, filters and sort functionality. With global support of Cut - Copy - Paste, of services and transponders on <marker>spreadsheets</marker> (for example from or to Excel), and export, import and re-import channels.</p>
+          </div>
+        </div>
+        <div class="img">
+          <div id="img-b">
+            <img src="../src/test/f-df.svg">
+          </div>
+        </div>
+      </div>
+      <div id="whc">
+        <h2>Merge and edit all you want</h2>
+        <p>e2 SAT Editor has <marker>FTP</marker> support, <marker>telnet</marker> and <marker>Webif</marker>, with profiles, to upload and download channel lists from one or more decoders, and update the lists directly from the software.</p>
+        <div>
+          <p>Download and reload services from your decoder, magically merge channel lists, save and reopen lists from your computer and convert from/to Enigma, Enigma2, Neutrino and even CSV format.</p>
+          <p>Channel lists can be printed in a human-readable look on paper (or PDF) or exported to HTML files.</p>
+        </div>
+      </div>
+      <div id="sbd">
+        <div class="img">
+          <div id="img-d">
+            <img src="../src/test/f-df.svg">
+          </div>
+        </div>
+        <div>
+          <div class="txt">
+            <h3>Control in your hands</h3>
+            <p>Edit, add and remove transponders, selectively, both in the Lamedb list and in XML files (satellites.xml, terrestrial.xml, cable.xml, atsc.xml).</p>
+            <p><strong>Edit of services:</strong> alter service flags, modify service details, change transponders, manage parental controls for each service and list.</p>
+            <p><strong>Edit of markers:</strong> manage the markers of the bouquets, modify them, add them, and remove as you like.</p>
+            <p>The software displays the service parameters, such as Service ID, Transponder ID, Reference, to identify channels quickly.</p>
+          </div>
+          <div class="txt">
+            <h3>Import, export and convert</h3>
+            <p>You can import and export everything, single lists, single bouquet, single userbouquet, the current list, XML files (satellites.xml, terrestrial.xml, cable.xml, atsc.xml).</p>
+            <p>Import and export and simultaneously convert from/to Enigma Lamedb lists, Neutrino Zapit XML lists and CSV lists.</p>
+          </div>
+        </div>
+      </div>
+      <div id="dde">
+        <div class="txt">
+          <h3>Picons: click and drag</h3>
+          <p>In Picons Editor you might edit, add and remove multiple icons for multiple services.</p>
+          <p>It supports both picon with reference filename and service name filename format. Several resolutions supported and automatic backup of replaced images.</p>
+          <p><strong>Picons Editor</strong> has Drag and Drop: drag images to and from the software.</p>
+        </div>
+        <div class="img">
+          <div id="img-e">
+            <img src="../src/test/w-lw.svg">
+          </div>
+        </div>
+      </div>
+      <div id="epf">
+        <h2>Features, without snoopers</h2>
+        <p>e2 SAT Editor is a software to manage channel lists for Enigma2, Neutrino, dreambox and compatible decoders.</p>
+        <p>The software supports non-destructive modification of services and transponders, has tabbed navigation, Log Inspector and advanced settings to control in detail his engine.</p>
+        <p>It has CLI (command-line interface), is being tested.</p>
+        <p>It supports Enigma 2, 2.4, 2.5, 2.3, 2.2, Enigma 1, and Neutrino XML versions api-4, api-3, api-2, api-1.</p>
+        <p class="lead">The software comes with 33 languages, in addition to English, and both light theme and dark theme support.</p>
+        <div class="img">
+          <div class="img-f">
+            <img src="../src/test/f-df.svg">
+          </div>
+          <div class="img-f">
+            <img src="../src/test/f-df.svg">
+          </div>
+        </div>
+      </div>
+      <div id="lwg">
+        <h4>Download<em>&hellip;</em> free as freedom.</h4>
+        <div>
+          <p>e2 SAT Editor is free available for <marker>Windows</marker>, <marker>macOS</marker>, <marker>Linux</marker>, <marker>BSD-like</marker> distros.</p>
+          <p>Downloads from Releases page of his repository: <a href="https://github.com/ctlcltd/e2-sat-editor/releases">https://github.com/ctlcltd/e2-sat-editor/releases</a></p>
+          <a class="button" href="https://github.com/ctlcltd/e2-sat-editor/releases">Download e2 SAT Editor</a>
+        </div>
+        <div>
+          <p>Also free available on software stores for Linux users: ...</p>
+        </div>
+      </div>
+    </div>
+    <div id="foot-notes">
+      <p>Registered trademarks, <span class="sym">&reg;</span>, <span class="sym">&trade;</span>, are properties of their legitimate owners in different countries. Listed trademarks used here to merely exposes the software features.</p>
+      <p>The images shown are reconstructions for optimal viewing and may slightly differ from the software on screen.</p>
+      <p>The software do NOT use and NOT collect user data. More information on Privacy, the software and this website, in the page: <a href="/privacy.html">Your Privacy</a>.</p>
+      <p>Source code of the software is available under the terms of the GNU GPLv3 license and the MIT License, in his official repository: <a href="https://github.com/ctlcltd/e2-sat-editor">https://github.com/ctlcltd/e2-sat-editor</a>.</p>
+      <p>The software is distributed under the terms of the GNU GPLv3 license.</p>
+      <p>The software is given free of charge, without warranty of any kind, as licensed.</p>
     </div>
   </main>
   <div id="footer">
