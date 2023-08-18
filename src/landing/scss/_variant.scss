@@ -1,0 +1,76 @@
+/*
+ * landing/_variant.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+@mixin variant {
+  color: $color;
+  background: $background;
+
+
+  // buttons
+
+  button,
+  .button {
+    color: $button-color;
+    background: $button-background;
+
+    box-shadow: 0 0 .18rem $button-shadow-color;
+    &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
+    &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
+
+    &[type="submit"],
+    &.primary {
+      color: $button-primary-color;
+      background: $button-primary-background;
+    }
+    &.secondary {
+      color: $button-secondary-color;
+      background: $button-secondary-background;
+    }
+  }
+
+
+  // custom
+
+  #footer {
+    color: lighten(lightgray, 11%);
+
+    nav a,
+    button.text {
+      color: lighten(lightgray, 11%);
+      &:hover { color: #eee; }
+      &:focus { color: #fff; }
+    }
+  }
+
+  #head {
+    background: #181818;
+  }
+
+  #switch-color .d {
+    display: inline-block;
+  }
+  #switch-color .l {
+    display: none;
+  }
+  #switch-color:after {
+    border-right-color: currentColor;
+    border-left-color: transparent;
+  }
+
+  @media (min-width: 992px) {
+    #head { background: #181818; }
+  }
+
+
+  // landing
+
+  mark, .lead {
+    color: #dff;
+    background: #023;
+  }
+
+}

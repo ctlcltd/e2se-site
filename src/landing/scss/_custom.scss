@@ -16,13 +16,57 @@ main {
 main > div {
   padding: 1rem 0;
 }
-main > div:first-child {
-  margin: 0 0 .5rem;
-  padding: 1.5rem 0 .5rem;
+main a {
+  color: inherit;
 }
 
 p {
   margin: 0 0 1rem;
+}
+b {
+  font-size: 89%;
+}
+em, strong {
+  font-size: 99%;
+}
+em {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol, dl {
+  margin: -0.3rem 0 0;
+  line-height: 2.2;
+}
+ul, ol {
+  padding: 0;
+  list-style-position: inside;
+}
+ul {
+  list-style-type: square;
+}
+li {
+  margin: 0 .2rem 0;
+}
+dt {
+  float: left;
+  margin: 0 0.4rem 0 0;
+}
+dd {
+  padding: 0;
+}
+
+mark, .lead {
+  padding: 0.1rem 0.2rem;
+  color: $color;
+  background: #dff;
+  border-radius: 1.5px;
+}
+.lead {
+  display: inline-block;
+}
+.sym {
+  font-size: 0.93rem;
+  font-family: Arial, sans-serif;
 }
 
 #footer {
@@ -72,30 +116,12 @@ p {
     &:focus { color: #000; opacity: 1; }
   }
 }
-body.dark {
-  #footer {
-    color: lighten(lightgray, 11%);
-
-    nav a,
-    button.text {
-      color: lighten(lightgray, 11%);
-
-      &:hover { color: #eee; }
-      &:focus { color: #fff; }
-    }
-  }
-}
 
 #head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: #fff;
-}
-body.dark {
-  #head {
-    background: #181818;
-  }
 }
 #head {
   position: fixed;
@@ -116,7 +142,7 @@ body.dark {
   padding: .05rem .1rem .1rem;
 }
 
-button#switch-color {
+#switch-color {
   position: relative;
   padding: .75rem;
   padding-inline-start: 2.25rem;
@@ -142,10 +168,18 @@ button#switch-color {
     border-left-color: currentColor;
   }
 }
-body.dark {
-  button#switch-color:after {
-    border-right-color: currentColor;
-    border-left-color: transparent;
+#switch-color .d {
+  display: none;
+}
+
+#privacy {
+  padding: 0 1rem 2rem;
+
+  > p {
+    font-size: 0.97rem;
+  }
+  div > div {
+    margin: 1.2rem 0 0;
   }
 }
 
@@ -156,9 +190,6 @@ body.dark {
 
   main {
     padding: 0 5rem 4rem;
-  }
-  main > div:first-child {
-    padding: 3rem 0 1.5rem;
   }
 
   #footer {
@@ -179,8 +210,11 @@ body.dark {
   }
 
   #head { background: #fff; }
-  body.dark {
-    #head { background: #181818; }
+
+  #privacy {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 0.5rem 2rem;
   }
 }
 

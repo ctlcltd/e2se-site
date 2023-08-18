@@ -16,7 +16,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -system-ui, sans-serif;
+  font-family: sans-serif;
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -130,8 +130,6 @@ nav > a {
   padding: 0.2rem 1rem;
   text-decoration: none;
   color: #fff;
-}
-nav > a {
   opacity: 0.9;
 }
 nav > a:hover {
@@ -252,11 +250,6 @@ select,
   border-radius: 0;
   -webkit-appearance: none;
   box-sizing: border-box;
-}
-input,
-textarea,
-select,
-.input {
   box-shadow: 0 0 0.11rem transparent;
   opacity: 0.97;
 }
@@ -319,9 +312,6 @@ button,
   border-radius: 0;
   cursor: pointer;
   -webkit-appearance: none;
-}
-button,
-.button {
   box-shadow: 0 0 0.18rem transparent;
 }
 button:hover,
@@ -402,8 +392,6 @@ main {
 
 th {
   text-transform: uppercase;
-}
-th {
   font-weight: normal;
 }
 th:last-of-type {
@@ -499,11 +487,6 @@ body.light .input {
   color: #000;
   background: #fff;
   border-color: #505050;
-}
-body.light input,
-body.light textarea,
-body.light select,
-body.light .input {
   box-shadow: 0 0 0.11rem transparent;
   opacity: 0.97;
 }
@@ -524,9 +507,6 @@ body.light button,
 body.light .button {
   color: #4b4b4b;
   background: #fff;
-}
-body.light button,
-body.light .button {
   box-shadow: 0 0 0.18rem transparent;
 }
 body.light button:hover,

@@ -18,9 +18,9 @@
 @import "_form";
 @import "_message";
 
-body.light {
+.light {
     @include variant_light($print: true);
 }
-body.dark {
+.dark {
     @include variant_dark($print: true);
 }

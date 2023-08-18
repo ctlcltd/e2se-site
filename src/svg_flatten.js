@@ -381,7 +381,7 @@ for (const res of resources) {
   }
 }
 
-idmap = {};
+var idmap = {};
 resources = svg.querySelectorAll('defs [id]');
 elements = svg.querySelectorAll('g *');
 

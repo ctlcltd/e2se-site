@@ -5,13 +5,21 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <title>e2 SAT Editor</title>
-<meta name="description" content="e2 SAT Editor software">
-<script>window.className='js'</script>
+<meta name="description" content="e2 SAT Editor software, Satellite channel list editor for decoder: Enigma2, Neutrino">
+<!--
+<style>[data-lazy] img{display:none}</style>
+<noscript><style>[data-lazy] img{display:block}</style></noscript>
+<body data-lazy>
+-->
 </head>
 <body>
+<script>document.body.dataset.lazy=''</script>
 <div id="head">
   <div>
-    <button type="button" id="switch-color">switch to dark</button>
+    <button type="button" id="switch-color">
+      <span class="d">switch to light</span>
+      <span class="l">switch to dark</span>
+    </button>
   </div>
 </div>
 <div id="page">
@@ -27,30 +35,30 @@
         </div>
         <div class="img">
           <div id="img-a">
-            <img src="../src/test/f-lf.svg" lazyload>
+            <img width="424" height="300" src="../src/test/f-lf.svg" alt="e2 SAT Editor software, screenshot" loading="lazy">
           </div>
         </div>
       </div>
       <div id="lsb">
         <div class="txt">
           <div>
-            <p>The software has 2 tree views, side-by-side and is optimized to <marker>Drag and Drop</marker>.</p>
+            <p>The software has 2 tree views, side-by-side and is optimized to <mark>Drag and Drop</mark>.</p>
             <p>You can move easily between lists, bouquets and choose multiple channels from Channel Book.</p>
           </div>
           <div>
-            <p>With <strong>Channel Book</strong> you might explore the services: <marker>by type</marker> (TV, Radio, Data), <marker>by transponder</marker>, <marker>by frequency</marker>, <marker>by resolution</marker> (HD, UHD), <marker>by provider</marker> (package), <marker>by encryption</marker> type and <marker>in alphabetical order</marker>.</p>
-            <p>Cut, copy, paste and delete multiple channels, it has search, filters and sort functionality. With global support of Cut - Copy - Paste, of services and transponders on <marker>spreadsheets</marker> (for example from or to Excel), and export, import and re-import channels.</p>
+            <p>With <strong>Channel Book</strong> you might explore the services: <mark>by type</mark> (TV, Radio, Data), <mark>by transponder</mark>, <mark>by frequency</mark>, <mark>by resolution</mark> (HD, UHD), <mark>by provider</mark> (package), <mark>by encryption</mark> type and <mark>in alphabetical order</mark>.</p>
+            <p>Cut, copy, paste and delete multiple channels, it has search, filters and sort functionality. With global support of Cut - Copy - Paste, of services and transponders on <mark>spreadsheets</mark> (for example from or to Excel), and export, import and re-import channels.</p>
           </div>
         </div>
         <div class="img">
           <div id="img-b">
-            <img src="../src/test/f-df.svg">
+            <img width="424" height="300" src="../src/test/f-df.svg" alt="Channel Book, software feature screenshot" loading="lazy">
           </div>
         </div>
       </div>
       <div id="whc">
         <h2>Merge and edit all you want</h2>
-        <p>e2 SAT Editor has <marker>FTP</marker> support, <marker>telnet</marker> and <marker>Webif</marker>, with profiles, to upload and download channel lists from one or more decoders, and update the lists directly from the software.</p>
+        <p>e2 SAT Editor has <mark>FTP</mark> support, <mark>telnet</mark> and <mark>Webif</mark>, with profiles, to upload and download channel lists from one or more decoders, and update the lists directly from the software.</p>
         <div>
           <p>Download and reload services from your decoder, magically merge channel lists, save and reopen lists from your computer and convert from/to Enigma, Enigma2, Neutrino and even CSV format.</p>
           <p>Channel lists can be printed in a human-readable look on paper (or PDF) or exported to HTML files.</p>
@@ -59,7 +67,7 @@
       <div id="sbd">
         <div class="img">
           <div id="img-d">
-            <img src="../src/test/f-df.svg">
+            <img width="424" height="188" src="../src/test/f-df.svg" alt="Editing lists, software screenshot" loading="lazy">
           </div>
         </div>
         <div>
@@ -80,37 +88,37 @@
       <div id="dde">
         <div class="txt">
           <h3>Picons: click and drag</h3>
-          <p>In Picons Editor you might edit, add and remove multiple icons for multiple services.</p>
+          <p>In Picons editor you might edit, add and remove multiple icons for multiple services.</p>
           <p>It supports both picon with reference filename and service name filename format. Several resolutions supported and automatic backup of replaced images.</p>
-          <p><strong>Picons Editor</strong> has Drag and Drop: drag images to and from the software.</p>
+          <p><strong>Picons editor</strong> has Drag and Drop: drag images to and from the software.</p>
         </div>
         <div class="img">
           <div id="img-e">
-            <img src="../src/test/w-lw.svg">
+            <img width="424" height="300" src="../src/test/w-lw.svg" alt="Picons editor, software feature screenshot" loading="lazy">
           </div>
         </div>
       </div>
       <div id="epf">
         <h2>Features, without snoopers</h2>
         <p>e2 SAT Editor is a software to manage channel lists for Enigma2, Neutrino, dreambox and compatible decoders.</p>
-        <p>The software supports non-destructive modification of services and transponders, has tabbed navigation, Log Inspector and advanced settings to control in detail his engine.</p>
+        <p>The software supports non-destructive modification of services and transponders, has tabbed navigation, Log Inspector and advanced settings to control in detail its engine.</p>
         <p>It has CLI (command-line interface), is being tested.</p>
         <p>It supports Enigma 2, 2.4, 2.5, 2.3, 2.2, Enigma 1, and Neutrino XML versions api-4, api-3, api-2, api-1.</p>
         <p class="lead">The software comes with 33 languages, in addition to English, and both light theme and dark theme support.</p>
         <div class="img">
           <div class="img-f">
-            <img src="../src/test/f-df.svg">
+            <img width="424" height="188" src="../src/test/f-df.svg" alt="Light theme, software screenshot" loading="lazy">
           </div>
           <div class="img-f">
-            <img src="../src/test/f-df.svg">
+            <img width="424" height="188" src="../src/test/f-df.svg" alt="Dark theme, software screenshot" loading="lazy">
           </div>
         </div>
       </div>
       <div id="lwg">
         <h4>Download<em>&hellip;</em> free as freedom.</h4>
         <div>
-          <p>e2 SAT Editor is free available for <marker>Windows</marker>, <marker>macOS</marker>, <marker>Linux</marker>, <marker>BSD-like</marker> distros.</p>
-          <p>Downloads from Releases page of his repository: <a href="https://github.com/ctlcltd/e2-sat-editor/releases">https://github.com/ctlcltd/e2-sat-editor/releases</a></p>
+          <p>e2 SAT Editor is free available for <mark>Windows</mark>, <mark>macOS</mark>, <mark>Linux</mark>, <mark>BSD-like</mark> distros.</p>
+          <p>Downloads from Releases page of its repository: <a href="https://github.com/ctlcltd/e2-sat-editor/releases">https://github.com/ctlcltd/e2-sat-editor/releases</a></p>
           <a class="button" href="https://github.com/ctlcltd/e2-sat-editor/releases">Download e2 SAT Editor</a>
         </div>
         <div>
@@ -121,8 +129,8 @@
     <div id="foot-notes">
       <p>Registered trademarks, <span class="sym">&reg;</span>, <span class="sym">&trade;</span>, are properties of their legitimate owners in different countries. Listed trademarks used here to merely exposes the software features.</p>
       <p>The images shown are reconstructions for optimal viewing and may slightly differ from the software on screen.</p>
-      <p>The software do NOT use and NOT collect user data. More information on Privacy, the software and this website, in the page: <a href="/privacy.html">Your Privacy</a>.</p>
-      <p>Source code of the software is available under the terms of the GNU GPLv3 license and the MIT License, in his official repository: <a href="https://github.com/ctlcltd/e2-sat-editor">https://github.com/ctlcltd/e2-sat-editor</a>.</p>
+      <p>The software do NOT use and NOT collect user data. More informations on Privacy, the software and this website, in the page: <a href="/privacy.html">Your Privacy</a>.</p>
+      <p>Source code of the software is available under the terms of the GNU GPLv3 license and the MIT License, in its official repository: <a href="https://github.com/ctlcltd/e2-sat-editor">https://github.com/ctlcltd/e2-sat-editor</a>.</p>
       <p>The software is distributed under the terms of the GNU GPLv3 license.</p>
       <p>The software is given free of charge, without warranty of any kind, as licensed.</p>
     </div>
@@ -145,5 +153,6 @@
   </div>
 </div>
 <script src="script.js"></script>
+<script>delete document.body.dataset.lazy</script>
 </body>
 </html>

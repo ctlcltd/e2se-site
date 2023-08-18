@@ -24,7 +24,7 @@ main {
 th {
   text-transform: uppercase;
 
-  & { font-weight: normal; }
+  font-weight: normal;
   &:last-of-type { font-weight: bold; }
 }
 .table {

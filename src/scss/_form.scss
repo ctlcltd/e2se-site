@@ -46,7 +46,7 @@ select,
   -webkit-appearance: none;
   box-sizing: border-box;
 
-  & { box-shadow: 0 0 .11rem $input-shadow-color; opacity: .97; }
+  box-shadow: 0 0 .11rem $input-shadow-color; opacity: .97;
   &:hover { box-shadow: 0 0 .11rem $input-shadow-color-hover; }
   &:focus { box-shadow: 0 .022rem .18rem $input-shadow-color-focus; opacity: 1; }
 }

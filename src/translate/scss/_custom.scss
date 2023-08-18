@@ -64,22 +64,20 @@ p {
 
   nav a,
   button.text {
-    color: darken(dimgray, 22%);
-    opacity: .95;
     transition: color linear 50ms;
 
+    color: darken(dimgray, 22%); opacity: .95;
     &:hover { color: #101010; }
     &:focus { color: #000; opacity: 1; }
   }
 }
-body.dark {
+.dark {
   #footer {
     color: lighten(lightgray, 11%);
 
     nav a,
     button.text {
       color: lighten(lightgray, 11%);
-
       &:hover { color: #eee; }
       &:focus { color: #fff; }
     }
@@ -87,22 +85,20 @@ body.dark {
 }
 
 .ctrbar {
+  position: fixed;
+  right: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: #fff;
+  z-index: 10;
 }
-body.dark {
+.dark {
   .ctrbar-head,
   .ctrbar-foot {
     background: #181818;
   }
-}
-.ctrbar {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 10;
 }
 .ctrbar > div {
   position: relative;
@@ -124,11 +120,9 @@ body.dark {
 }
 
 .ctrbar form {
+  position: relative;
   margin: 0;
   padding: 0;
-}
-.ctrbar form {
-  position: relative;
 }
 .ctrbar form > p {
   display: none;
@@ -136,7 +130,7 @@ body.dark {
   padding: 0 .25rem;
   background: rgba(255, 255, 255, .95);
 }
-body.dark {
+.dark {
   .ctrbar form > p {
     background: rgba(0, 0, 0, .75);
   }
@@ -206,7 +200,7 @@ body {
   h5 { margin: 0 0 .5rem; }
   p { margin: 0 0 .25rem; }
 }
-body.dark {
+.dark {
   .what-this-area {
     color: #fcfcfc;
     background: #222;
@@ -214,7 +208,7 @@ body.dark {
   }
 }
 
-input#token {
+#token {
   width: auto;
   min-width: 240px;
   height: 40.5px;
@@ -223,7 +217,7 @@ input#token {
   padding-inline-end: 32px;
 }
 
-button#switch-color {
+#switch-color {
   position: relative;
   padding: .75rem;
   padding-inline-start: 2.25rem;
@@ -249,8 +243,8 @@ button#switch-color {
     border-left-color: currentColor;
   }
 }
-body.dark {
-  button#switch-color:after {
+.dark {
+  #switch-color:after {
     border-right-color: currentColor;
     border-left-color: transparent;
   }
@@ -351,7 +345,7 @@ label {
     width: calc(.8 * var(--completed));
   }
 }
-body.dark {
+.dark {
   .level { background: #222; }
 }
 
@@ -381,14 +375,14 @@ body.dark {
     margin: 1.75rem 0 -.5rem;
   }
 }
-body.dark {
+.dark {
   .message-box {
     background: #262626;
     box-shadow: 0 .2rem 2.2rem .2rem rgba(0, 0, 0, .33);
   }
 }
 
-body.backdrop {
+.backdrop {
   user-select: none;
   overflow: hidden;
 
@@ -450,7 +444,7 @@ body.backdrop {
 
   .ctrbar-head { background: #fff; }
   .ctrbar-foot { background: none; }
-  body.dark {
+  .dark {
     .ctrbar-head { background: #181818; }
     .ctrbar-foot { background: none; }
   }

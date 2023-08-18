@@ -7,12 +7,14 @@
 
 const doc = document;
 const body = doc.body;
-var platform, theme;
+var platform;
 
 function preferredColor() {
-  const color = sessionStorage.getItem('preferred-color');
+  let color = sessionStorage.getItem('preferred-color');
+  color = color == 'light' || color == 'dark' ? color : null;
+  color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
 
-  if (color == 'light' || color == 'dark') {
+  if (color) {
     body.setAttribute('data-color', color);
     if (color == 'dark') {
       body.classList.add('dark');
@@ -65,18 +67,23 @@ function platform_detect() {
 function load_images(evt) {
   let color = sessionStorage.getItem('preferred-color');
   color = color == 'light' || color == 'dark' ? color[0] : null;
+  let i = 0;
 
   for (const el of doc.querySelectorAll('.img img')) {
-    el.setAttribute('hidden', '');
-    el.setAttribute('src', '');
+    el.disabled = true;
+    el.removeAttribute('src');
 
     platform = platform ?? platform_detect();
-    theme = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'd' : 'l');
-    theme = platform == 'w' ? 'l' : theme + platform;
 
-    const src = '../src/test/' + platform + '-' + theme + '.svg';
+    if (! el.parentElement.classList.contains('img-f')) {
+      color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'd' : 'l');
+    } else {
+      color = i++ ? 'd' : 'l';
+    }
+
+    const src = '../src/test/' + platform + '-' + (platform == 'w' ? 'l' : color) + platform + '.svg';
     el.setAttribute('src', src);
-    el.removeAttribute('hidden');
+    el.disabled = false;
   }
 }
 
@@ -84,5 +91,3 @@ preferredColor();
 doc.getElementById('head').addEventListener('click', switchColor);
 load_images();
 window.addEventListener('appearance-changed', load_images);
-
-window.className = '';

@@ -47,7 +47,7 @@
 .dropdown a {
   color: $color;
 }
-body.dark {
+.dark {
   .dropdown {
     background: #202020;
     border-color: #333;
@@ -56,7 +56,7 @@ body.dark {
     color: #fff;
   }
 }
-body.light {
+.light {
   .dropdown {
     background: #fff;
     border-color: #aaa;

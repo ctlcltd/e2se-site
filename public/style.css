@@ -17,7 +17,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -system-ui, sans-serif;
+  font-family: sans-serif;
   font-size: 15px;
   line-height: 1.5;
   color: #000;
@@ -41,15 +41,14 @@ h6 {
 }
 
 h1 {
-  margin: 0 0 1.5rem;
+  margin: 0 -0.2rem 1.5rem;
 }
 
 h2,
 h3,
 h4,
 h5 {
-  margin: 0 0 2rem;
-  font-weight: normal;
+  margin: 0 -0.05rem 1rem;
 }
 
 h6 {
@@ -57,29 +56,38 @@ h6 {
 }
 
 h1 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 
 h2 {
-  font-size: 1.3rem;
-}
-
-h3 {
   font-size: 1.2rem;
 }
 
-h4 {
+h3 {
   font-size: 1.1rem;
 }
 
-h5 {
+h4, h5, h6 {
   font-size: 1rem;
 }
 
-h6 {
-  font-size: 0.9rem;
-}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 1.8rem;
+  }
 
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+}
 
 button,
 .button {
@@ -95,9 +103,6 @@ button,
   border-radius: 0;
   cursor: pointer;
   -webkit-appearance: none;
-}
-button,
-.button {
   box-shadow: 0 0 0.18rem transparent;
 }
 button:hover,
@@ -161,13 +166,67 @@ main > div {
   padding: 1rem 0;
 }
 
-main > div:first-child {
-  margin: 0 0 0.5rem;
-  padding: 1.5rem 0 0.5rem;
+main a {
+  color: inherit;
 }
 
 p {
   margin: 0 0 1rem;
+}
+
+b {
+  font-size: 89%;
+}
+
+em, strong {
+  font-size: 99%;
+}
+
+em {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul, ol, dl {
+  margin: -0.3rem 0 0;
+  line-height: 2.2;
+}
+
+ul, ol {
+  padding: 0;
+  list-style-position: inside;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin: 0 0.2rem 0;
+}
+
+dt {
+  float: left;
+  margin: 0 0.4rem 0 0;
+}
+
+dd {
+  padding: 0;
+}
+
+mark, .lead {
+  padding: 0.1rem 0.2rem;
+  color: #000;
+  background: #dff;
+  border-radius: 1.5px;
+}
+
+.lead {
+  display: inline-block;
+}
+
+.sym {
+  font-size: 0.93rem;
+  font-family: Arial, sans-serif;
 }
 
 #footer {
@@ -223,31 +282,11 @@ p {
   opacity: 1;
 }
 
-body.dark #footer {
-  color: #efefef;
-}
-body.dark #footer nav a,
-body.dark #footer button.text {
-  color: #efefef;
-}
-body.dark #footer nav a:hover,
-body.dark #footer button.text:hover {
-  color: #eee;
-}
-body.dark #footer nav a:focus,
-body.dark #footer button.text:focus {
-  color: #fff;
-}
-
 #head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: #fff;
-}
-
-body.dark #head {
-  background: #181818;
 }
 
 #head {
@@ -272,13 +311,13 @@ body.dark #head {
   padding: 0.05rem 0.1rem 0.1rem;
 }
 
-button#switch-color {
+#switch-color {
   position: relative;
   padding: 0.75rem;
   padding-inline-start: 2.25rem;
   text-transform: none;
 }
-button#switch-color:before, button#switch-color:after {
+#switch-color:before, #switch-color:after {
   content: "";
   position: absolute;
   inset-inline-start: 0.75rem;
@@ -289,7 +328,7 @@ button#switch-color:before, button#switch-color:after {
   border-radius: 16px;
   overflow: hidden;
 }
-button#switch-color:after {
+#switch-color:after {
   width: 0;
   margin: 1px 0;
   border-width: 0 9px;
@@ -297,9 +336,18 @@ button#switch-color:after {
   border-left-color: currentColor;
 }
 
-body.dark button#switch-color:after {
-  border-right-color: currentColor;
-  border-left-color: transparent;
+#switch-color .d {
+  display: none;
+}
+
+#privacy {
+  padding: 0 1rem 2rem;
+}
+#privacy > p {
+  font-size: 0.97rem;
+}
+#privacy div > div {
+  margin: 1.2rem 0 0;
 }
 
 @media (min-width: 992px) {
@@ -309,10 +357,6 @@ body.dark button#switch-color:after {
 
   main {
     padding: 0 5rem 4rem;
-  }
-
-  main > div:first-child {
-    padding: 3rem 0 1.5rem;
   }
 
   #footer {
@@ -336,8 +380,10 @@ body.dark button#switch-color:after {
     background: #fff;
   }
 
-  body.dark #head {
-    background: #181818;
+  #privacy {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 0.5rem 2rem;
   }
 }
 @media print {
@@ -350,45 +396,59 @@ body.dark button#switch-color:after {
   }
 }
 
-html.loading img {
-  display: none !important;
+#hwi {
+  margin: 0 0 0.5rem;
+  padding: 1.5rem 0 0.5rem;
+}
+#hwi h1 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.003em;
+}
+#hwi p {
+  font-size: 1.032rem;
+  letter-spacing: -0.0001em;
 }
 
-h2, h3, h4 {
+#cnt h2, #cnt h3, #cnt h4 {
   font-family: sans-serif-condensed, HelveticaNeue-CondensedBold, Impact;
   font-weight: bold;
   flex-shrink: 0;
 }
-
-h1 {
-  font-size: 1.5rem;
-  letter-spacing: -0.003em;
-}
-
-h2 {
+#cnt h2 {
   font-size: 1.8rem;
   letter-spacing: 0.01em;
 }
-
-h3 {
+#cnt h3 {
   font-size: 1.7rem;
   letter-spacing: 0.003em;
 }
-
-h4 {
+#cnt h4 {
   font-size: 1.6rem;
   letter-spacing: 0.008em;
 }
-
-h4 em {
+#cnt h4 em {
   font-size: 78%;
   font-style: normal;
 }
-
-marker, .lead {
-  padding: 0.1rem 0.2rem;
-  background: #dff;
-  border-radius: 1.5px;
+#cnt p {
+  font-size: 0.976rem;
+  letter-spacing: 0.002em;
+}
+#cnt strong {
+  font-size: 102.2%;
+}
+#cnt .button {
+  font-size: 1rem;
+  text-transform: none;
+  background: #cef;
+  box-shadow: inset 0 -5px 1px 5px #bef;
+  filter: drop-shadow(0 1px 1px #000);
+  border-radius: 6px;
+}
+#cnt .lead {
+  font-size: 1.01rem;
+  letter-spacing: 0.009em;
 }
 
 .txt {
@@ -425,44 +485,6 @@ marker, .lead {
   height: 100%;
   width: 9vw;
   background: linear-gradient(90deg, transparent, #b4d0cd);
-}
-
-.lead {
-  display: inline-block;
-  font-size: 1.01rem;
-  letter-spacing: 0.009em;
-}
-
-.sym {
-  font-size: 0.93rem;
-  font-family: Arial, sans-serif;
-}
-
-#cnt .button {
-  font-size: 1rem;
-  text-transform: none;
-  background: #cef;
-  box-shadow: inset 0 -5 1px 5px #bef;
-  filter: drop-shadow(0 1px 1px #000);
-  border-radius: 6px;
-}
-
-#main a {
-  color: inherit;
-}
-
-#hwi p {
-  font-size: 1.032rem;
-  letter-spacing: -0.0001em;
-}
-
-#cnt p {
-  font-size: 0.976rem;
-  letter-spacing: 0.002em;
-}
-
-#cnt strong {
-  font-size: 102.2%;
 }
 
 #lsa {
@@ -511,23 +533,23 @@ marker, .lead {
 }
 
 @media (min-width: 992px) {
+  #hwi {
+    padding: 3rem 0 1.5rem;
+  }
+
   #cnt {
     padding: 0 1.221rem;
   }
-
-  h1 {
+  #cnt h1 {
     font-size: 1.75rem;
   }
-
-  h2 {
+  #cnt h2 {
     font-size: 1.9rem;
   }
-
-  h3 {
+  #cnt h3 {
     font-size: 1.85rem;
   }
-
-  h4 {
+  #cnt h4 {
     font-size: 1.7rem;
   }
 
@@ -651,21 +673,17 @@ marker, .lead {
   #cnt {
     padding: 0 2.122rem;
   }
-
-  h1 {
+  #cnt h1 {
     font-size: 1.8rem;
   }
-
-  h2 {
+  #cnt h2 {
     font-size: 2.193rem;
   }
-
-  h3 {
+  #cnt h3 {
     font-size: 2.051rem;
     letter-spacing: 0.013em;
   }
-
-  h4 {
+  #cnt h4 {
     font-size: 1.86rem;
     letter-spacing: 0.0022em;
   }
@@ -687,93 +705,88 @@ marker, .lead {
     line-height: 1.9;
   }
 }
-body.dark {
+.dark {
   color: #fff;
   background: #101010;
 }
-@keyframes dark_loading {
-  0% {
-    opacity: 0.77;
-  }
-  100% {
-    opacity: 0.89;
-  }
-}
-body.dark [data-loading] {
-  animation-name: dark_loading;
-}
-body.dark th {
-  background: #1a1a1a;
-}
-body.dark th,
-body.dark td {
-  border-color: #383838;
-}
-body.dark tbody tr[data-href] {
-  background: #141414;
-}
-body.dark tbody tr[data-href]:hover td {
-  background: #1e1e1e;
-}
-body.dark tbody tr[data-href]:focus td {
-  background: #023;
-}
-body.dark tbody tr.highlight {
-  background: #034;
-}
-body.dark input,
-body.dark textarea,
-body.dark select,
-body.dark .input {
-  color: #fff;
-  background: #141414;
-  border-color: #3a3a3a;
-}
-body.dark input,
-body.dark textarea,
-body.dark select,
-body.dark .input {
-  box-shadow: 0 0 0.11rem transparent;
-  opacity: 0.97;
-}
-body.dark input:hover,
-body.dark textarea:hover,
-body.dark select:hover,
-body.dark .input:hover {
-  box-shadow: 0 0 0.11rem rgba(80, 80, 80, 0.7);
-}
-body.dark input:focus,
-body.dark textarea:focus,
-body.dark select:focus,
-body.dark .input:focus {
-  box-shadow: 0 0.022rem 0.18rem rgba(50, 50, 50, 0.5);
-  opacity: 1;
-}
-body.dark button,
-body.dark .button {
+.dark button,
+.dark .button {
   color: #fff;
   background: #1e1e1e;
-}
-body.dark button,
-body.dark .button {
   box-shadow: 0 0 0.18rem transparent;
 }
-body.dark button:hover,
-body.dark .button:hover {
+.dark button:hover,
+.dark .button:hover {
   box-shadow: 0 0 0.18rem rgba(150, 150, 150, 0.4);
 }
-body.dark button:focus,
-body.dark .button:focus {
+.dark button:focus,
+.dark .button:focus {
   box-shadow: 0 0.03rem 0.3rem black;
 }
-body.dark button[type=submit], body.dark button.primary,
-body.dark .button[type=submit],
-body.dark .button.primary {
+.dark button[type=submit], .dark button.primary,
+.dark .button[type=submit],
+.dark .button.primary {
   color: #fff;
   background: #007cf4;
 }
-body.dark button.secondary,
-body.dark .button.secondary {
+.dark button.secondary,
+.dark .button.secondary {
   color: #fff;
   background: #393939;
+}
+.dark #footer {
+  color: #efefef;
+}
+.dark #footer nav a,
+.dark #footer button.text {
+  color: #efefef;
+}
+.dark #footer nav a:hover,
+.dark #footer button.text:hover {
+  color: #eee;
+}
+.dark #footer nav a:focus,
+.dark #footer button.text:focus {
+  color: #fff;
+}
+.dark #head {
+  background: #181818;
+}
+.dark #switch-color .d {
+  display: inline-block;
+}
+.dark #switch-color .l {
+  display: none;
+}
+.dark #switch-color:after {
+  border-right-color: currentColor;
+  border-left-color: transparent;
+}
+@media (min-width: 992px) {
+  .dark #head {
+    background: #181818;
+  }
+}
+.dark mark, .dark .lead {
+  color: #dff;
+  background: #023;
+}
+
+#switch-color {
+  visibility: hidden;
+}
+
+[data-color] #switch-color {
+  visibility: visible;
+}
+
+[data-lazy] img {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
+  [data-lazy] {
+    color: #000;
+    background: #aaa;
+  }
 }

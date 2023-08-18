@@ -6,17 +6,37 @@
  */
 
 @import "../../scss/_setup.scss";
-@import "../../scss/_variant.scss";
+@import "variant";
 @import "../../scss/_dark.scss";
 @import "../../scss/_light.scss";
 @include variant_light();
 @import "../../scss/_light.scss";
 @import "../../scss/_common.scss";
-@import "../../scss/_headings.scss";
+@import "headings";
 @import "../../scss/_buttons.scss";
 @import "custom";
 @import "landing";
 
-body.dark {
+.dark {
   @include variant_dark($print: true);
+}
+
+#switch-color {
+  visibility: hidden;
+}
+[data-color] {
+  #switch-color {
+    visibility: visible;
+  }
+}
+
+[data-lazy] img {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
+  [data-lazy] {
+    color: #000;
+    background: #aaa;
+  }
 }

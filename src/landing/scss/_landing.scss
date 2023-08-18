@@ -5,45 +5,71 @@
  * @license MIT License
  */
 
-html.loading img {
-  display: none !important;
+#hwi {
+  margin: 0 0 .5rem;
+  padding: 1.5rem 0 .5rem;
+
+  h1 {
+    margin: 0 0 1rem;
+    font-size: 1.5rem;
+    letter-spacing: -0.003em;
+  }
+
+  p {
+    font-size: 1.032rem;
+    letter-spacing: -0.0001em;
+  }
 }
 
-h2, h3, h4 {
-  font-family: sans-serif-condensed, HelveticaNeue-CondensedBold, Impact;
-  font-weight: bold;
-  flex-shrink: 0;
-}
+#cnt {
+  h2, h3, h4 {
+    font-family: sans-serif-condensed, HelveticaNeue-CondensedBold, Impact;
+    font-weight: bold;
+    flex-shrink: 0;
+  }
 
-h1 {
-  font-size: 1.5rem;
-  letter-spacing: -0.003em;
-}
+  h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.01em;
+  }
 
-h2 {
-  font-size: 1.8rem;
-  letter-spacing: 0.01em;
-}
+  h3 {
+    font-size: 1.7rem;
+    letter-spacing: 0.003em;
+  }
 
-h3 {
-  font-size: 1.7rem;
-  letter-spacing: 0.003em;
-}
+  h4 {
+    font-size: 1.6rem;
+    letter-spacing: 0.008em;
+  }
 
-h4 {
-  font-size: 1.6rem;
-  letter-spacing: 0.008em;
-}
+  h4 em {
+    font-size: 78%;
+    font-style: normal;
+  }
 
-h4 em {
-  font-size: 78%;
-  font-style: normal;
-}
+  p {
+    font-size: 0.976rem;
+    letter-spacing: 0.002em;
+  }
 
-marker, .lead {
-  padding: 0.1rem 0.2rem;
-  background: #dff;
-  border-radius: 1.5px;
+  strong {
+    font-size: 102.2%;
+  }
+
+  .button {
+    font-size: 1rem;
+    text-transform: none;
+    background: #cef;
+    box-shadow: inset 0 -5px 1px 5px #bef;
+    filter: drop-shadow(0 1px 1px #000);
+    border-radius: 6px;
+  }
+
+  .lead {
+    font-size: 1.01rem;
+    letter-spacing: 0.009em;
+  }
 }
 
 
@@ -78,43 +104,6 @@ marker, .lead {
   height: 100%;
   width: 9vw;
   background: linear-gradient(90deg, transparent, #b4d0cd);
-}
-
-.lead {
-  display: inline-block;
-  font-size: 1.01rem;
-  letter-spacing: 0.009em;
-}
-.sym {
-  font-size: 0.93rem;
-  font-family: Arial, sans-serif;
-}
-
-#cnt .button {
-  font-size: 1rem;
-  text-transform: none;
-  background: #cef;
-  box-shadow: inset 0 -5 1px 5px #bef;
-  filter: drop-shadow(0 1px 1px #000);
-  border-radius: 6px;
-}
-
-#main a {
-  color: inherit;
-}
-
-#hwi p {
-  font-size: 1.032rem;
-  letter-spacing: -0.0001em;
-}
-
-#cnt p {
-  font-size: 0.976rem;
-  letter-spacing: 0.002em;
-}
-
-#cnt strong {
-  font-size: 102.2%;
 }
 
 
@@ -158,24 +147,28 @@ marker, .lead {
 }
 
 @media (min-width: 992px) {
+  #hwi {
+    padding: 3rem 0 1.5rem;
+  }
+
   #cnt {
     padding: 0 1.221rem;
-  }
 
-  h1 {
-    font-size: 1.75rem;
-  }
+    h1 {
+      font-size: 1.75rem;
+    }
 
-  h2 {
-    font-size: 1.9rem;
-  }
+    h2 {
+      font-size: 1.9rem;
+    }
 
-  h3 {
-    font-size: 1.85rem;
-  }
+    h3 {
+      font-size: 1.85rem;
+    }
 
-  h4 {
-    font-size: 1.7rem;
+    h4 {
+      font-size: 1.7rem;
+    }
   }
 
   .img div {
@@ -282,21 +275,21 @@ marker, .lead {
 
   #cnt {
     padding: 0 2.122rem;
-  }
 
-  h1 {
-    font-size: 1.8rem;
-  }
-  h2 {
-    font-size: 2.193rem;
-  }
-  h3 {
-    font-size: 2.051rem;
-    letter-spacing: 0.013em;
-  }
-  h4 {
-    font-size: 1.86rem;
-    letter-spacing: 0.0022em;
+    h1 {
+      font-size: 1.8rem;
+    }
+    h2 {
+      font-size: 2.193rem;
+    }
+    h3 {
+      font-size: 2.051rem;
+      letter-spacing: 0.013em;
+    }
+    h4 {
+      font-size: 1.86rem;
+      letter-spacing: 0.0022em;
+    }
   }
 
   #lsa {
