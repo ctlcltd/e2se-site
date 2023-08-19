@@ -1,0 +1,652 @@
+<svg viewBox="0 0 1880 1300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="svg_screenshot.css" type="text/css" />
+  <defs>
+    <symbol id="add">
+      <path d="M37.75 37.75h18.127v-11.5h-18.127c0 0 0-18.127 0-18.127h-11.5v18.127c0 0-18.127 0-18.127 0v11.5h18.127c0 0 0 18.127 0 18.127h11.5v-18.127z" />
+    </symbol>
+    <symbol id="channelbook-view">
+      <path d="M60 14.973l-3-0.522v35.716c-3.141-0.28-8.021-0.667-11-0.667-0.95 0-2.094 0.039-3.312 0.102-0.962 0.036-2.014 0.106-3.059 0.191-2.678 0.191-5.264 0.428-6.629 0.559v-35.901c0 0 6.61-1.451 9.963-1.451 4 0 14.037 1.451 14.037 1.451l3.001 0.522c1.769 0.819 2.999 2.61 2.999 4.687v32.68c0 2.848-2.312 5.16-5.16 5.16h-51.68c-2.848 0-5.16-2.312-5.16-5.16v-32.68c0-2.077 1.23-3.869 3-4.687l3-0.522c0 0 10.037-1.451 14.037-1.451 3.353 0 9.963 1.451 9.963 1.451v35.901c-1.366-0.131-3.951-0.368-6.629-0.559-1.045-0.085-2.097-0.155-3.059-0.191-1.218-0.063-2.362-0.102-3.312-0.102-2.979 0-7.859 0.387-11 0.667v-35.716l-3 0.522v38.765h56v-38.765zM28.5 42.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 42.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM28.5 35.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 35.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM28.5 28.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 28.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM28.5 21.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 21.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2z" />
+    </symbol>
+    <symbol id="close">
+      <path d="M62.328 7.276l-5.604-5.604-24.724 24.724c0 0-24.724-24.724-24.724-24.724l-5.604 5.604 24.724 24.724c0 0-24.724 24.724-24.724 24.724l5.604 5.604 24.724-24.724c0 0 24.724 24.724 24.724 24.724l5.604-5.604-24.724-24.724c0 0 24.724-24.724 24.724-24.724z" />
+    </symbol>
+    <symbol id="crypted">
+      <path d="M11.087 56c-5.563 0-10.080-4.517-10.080-10.080v-27.84c0-5.563 4.517-10.080 10.080-10.080h33.84c5.564 0 10.080 4.517 10.080 10.080v27.84c0 5.52-4.446 10.009-9.95 10.079l-33.97 0.001zM30.853 14.994v-4.013h-5.793v4.048c-4.2 0.556-8.106 2.261-9.955 5.037-3.005 4.512 0.906 10.812 7.19 12.99 0.768 0.266 1.722 0.512 2.765 0.768v10.901c-2.614-0.587-4.538-2.424-6.16-3.803l-4.893 2.788 2.091 1.821c2.411 2.055 5.421 3.271 8.962 3.703v3.747h5.793v-3.783c8.228-1.147 14.043-6.861 9.643-12.981-0.763-1.061-1.821-2.027-2.998-2.881-1.734-1.258-4.155-1.986-6.645-2.64v-11.197c2.638 0.575 4.575 2.426 6.207 3.814l4.893-2.788-2.091-1.822c-2.421-2.064-5.447-3.281-9.009-3.709zM30.853 35.422v9.077c3.644-0.894 6.321-3.13 4.366-6.219-0.805-1.273-2.452-2.167-4.366-2.858zM25.060 19.742c-3.624 0.903-6.23 3.15-4.321 6.246 0.873 1.416 2.441 2.336 4.321 3.044v-9.29z" />
+    </symbol>
+    <symbol id="export">
+      <path d="M56.256 31.057h-42.438c-7.074 0-12.818 5.744-12.818 12.818v61.295c0 7.074 5.744 12.818 12.818 12.818h54.476c7.075 0 12.818-5.744 12.818-12.818v-51.051c-16.616 14.040-16.649 30.281-17.025 36.965-0.151 2.687-1.869 5.034-4.385 5.99s-5.359 0.343-7.257-1.565c-14.421-14.502-16.181-43.133 3.811-64.452zM57.293 90.694c-14.624-14.705-13.039-45.988 15.234-64.344l-10.365-12.362 42.838 1.084-7.263 41.344-11.808-14.082c-28.127 16.992-28.15 39.728-28.636 48.36z" />
+    </symbol>
+    <symbol id="import">
+      <path d="M87.8 55.714h8.488c5.912 0 10.712 4.753 10.712 10.606v45.074c0 5.854-4.8 10.606-10.712 10.606h-84.576c-5.912 0-10.712-4.752-10.712-10.606v-45.074c0-5.853 4.8-10.606 10.712-10.606h19.788l22.5 21.827c1.413 1.374 4.32 2.133 6.3 2.109 1.98-0.023 4.821-0.828 6.2-2.236l21.3-21.7zM93.982 6.385c-17.881-3.082-49.582 12.531-44.921 39.525h-15.517l27.127 26.376 25.847-26.376h-14.41c-4.833-24.162 15.844-35.121 21.874-39.525z" />
+    </symbol>
+    <symbol id="list-prefs-menu">
+      <path d="M56.25 57.423c0-2.388-1.939-4.327-4.327-4.327h-39.846c-2.388 0-4.327 1.939-4.327 4.327s1.939 4.327 4.327 4.327c0 0 39.846 0 39.846 0 2.388 0 4.327-1.939 4.327-4.327zM56.25 44.903c0-2.389-1.939-4.328-4.327-4.328h-39.846c-2.388 0-4.327 1.939-4.327 4.328 0 2.388 1.939 4.327 4.327 4.327 0 0 39.846 0 39.846 0 2.388 0 4.327-1.939 4.327-4.327zM56.25 32.382c0-2.388-1.939-4.327-4.327-4.327h-39.846c-2.388 0-4.327 1.939-4.327 4.327s1.939 4.327 4.327 4.327h39.846c2.388 0 4.327-1.939 4.327-4.327zM13.803 19.471v3.446h10.579v-5.844c0.837-0.373 1.624-0.848 2.343-1.41 2.237-1.745 3.347-4.068 3.371-6.392s-1.039-4.671-3.239-6.471v0c-0.887-0.725-1.951-1.273-3.024-1.702l-1.372 0.918-0.062 6.154c-0.003 0.286-0.167 0.503-0.402 0.659-0.376 0.249-0.899 0.364-1.472 0.364h-2.85c-0.565-0.008-1.082-0.142-1.452-0.406-0.242-0.173-0.413-0.406-0.41-0.702 0 0 0.062-6.155 0.062-6.155l-1.348-0.947c-1.083 0.403-2.158 0.924-3.060 1.628-2.237 1.746-3.347 4.068-3.371 6.392-0.023 2.323 1.039 4.671 3.239 6.471 0.725 0.593 1.567 1.067 2.437 1.454 0.016 0.617 0.026 1.607 0.031 2.543z" />
+    </symbol>
+    <symbol id="open">
+      <path d="M21 42.973h89.077c2.783 0 4.643 2.26 4.153 5.042l-9.34 52.943c-0.491 2.783-3.149 5.042-5.932 5.042h-91.118c-2.119 0-3.84-1.721-3.84-3.84v-80.16h67.2l16.8 14h-72v32h5v-25.027z" />
+    </symbol>
+    <symbol id="picons-view">
+      <path d="M14.762 29.23h34.49c0 0 13.928 14.478 11.463 15.596-1.067 0.483-6.127-1.117-11.524-3.087v20.261h-34.389v-20.253c-5.389 1.967-10.437 3.562-11.502 3.079-2.465-1.118 11.462-15.596 11.462-15.596zM36.774 11.359h-20.475v13.19h6.364v-10.552h14.111v-2.638zM38.538 16.635h-14.111v7.914h14.111v-7.914zM45.299 10.4v14.149h-4.283v-9.233h-2.478v-4.916h6.761zM36.632 3.482h-18.173v5.276h18.173v-5.276z" />
+    </symbol>
+    <symbol id="save">
+      <path d="M114 22v86.16c0 2.119-1.721 3.84-3.84 3.84h-92.32c-2.119 0-3.84-1.721-3.84-3.84v-88.32c0-2.119 1.721-3.84 3.84-3.84h91.16l5 6zM94 59.014v-40h-56v40h56zM84.5 26v30h-15v-30h15z" />
+    </symbol>
+    <symbol id="search">
+      <path d="M40.023 45.152c-3.477 2.591-7.729 4.192-12.407 4.221-10.406 0.066-20.276-8.26-21.806-18.699-1.731-11.814 7.58-24.164 20.12-25.040 0.561-0.039 1.124-0.055 1.686-0.053 10 0.095 19.38 7.75 21.337 17.619 1.156 5.829-0.437 11.92-3.87 16.758l13.82 13.819-5.128 5.128-13.752-13.753zM27.395 14.645c-6.236 0.060-12 5.17-12.677 11.431-0.588 5.436 2.691 11.076 7.773 13.229 6.62 2.806 15.346-1.167 17.352-8.391 2.055-7.404-3.759-16.031-12.032-16.265-0.139-0.003-0.278-0.004-0.416-0.004z" />
+    </symbol>
+    <symbol id="service-blacklist">
+      <path d="M18.504 59c-4.142 0-7.504-3.362-7.504-7.504v-22.326c0-2.67 1.397-5.016 3.5-6.346v-7.052c0-7.368 5.982-13.351 13.351-13.351h8.298c7.369 0 13.351 5.983 13.351 13.351v7.052c2.103 1.33 3.5 3.676 3.5 6.346v22.326c0 4.109-3.31 7.452-7.407 7.503l-27.089 0.001zM44.728 37.712h-9.528v-9.528h-6.4v9.528h-9.528v6.4h9.528v9.528h6.4v-9.528h9.528v-6.4zM42.5 15.772c0-3.505-2.846-6.351-6.351-6.351h-8.298c-3.505 0-6.351 2.846-6.351 6.351v5.895h21v-5.895z" />
+    </symbol>
+    <symbol id="services-sets-menu">
+      <path d="M19.144 57.582c0-2.301-1.868-4.169-4.169-4.169 0 0-7.557 0-7.557 0-2.3 0-4.168 1.868-4.168 4.169s1.868 4.168 4.168 4.168c0 0 7.557 0 7.557 0 2.301 0 4.169-1.868 4.169-4.168zM60.75 57.582c0-2.301-1.868-4.169-4.168-4.169 0 0-29.147 0-29.147 0-2.301 0-4.169 1.868-4.169 4.169s1.868 4.168 4.169 4.168c0 0 29.147 0 29.147 0 2.3 0 4.168-1.868 4.168-4.168zM19.144 45.617c0-2.301-1.868-4.169-4.169-4.169h-7.557c-2.3 0-4.168 1.868-4.168 4.169s1.868 4.168 4.168 4.168h7.557c2.301 0 4.169-1.867 4.169-4.168zM60.75 45.617c0-2.301-1.868-4.169-4.168-4.169h-29.147c-2.301 0-4.169 1.868-4.169 4.169s1.868 4.168 4.169 4.168h29.147c2.3 0 4.168-1.867 4.168-4.168zM19.144 33.652c0-2.3-1.868-4.168-4.169-4.168 0 0-7.557 0-7.557 0-2.3 0-4.168 1.868-4.168 4.168 0 2.301 1.868 4.169 4.168 4.169 0 0 7.557 0 7.557 0 2.301 0 4.169-1.868 4.169-4.169zM60.75 33.652c0-2.3-1.868-4.168-4.168-4.168 0 0-29.147 0-29.147 0-2.301 0-4.169 1.868-4.169 4.168 0 2.301 1.868 4.169 4.169 4.169 0 0 29.147 0 29.147 0 2.3 0 4.168-1.868 4.168-4.169zM19.144 21.688c0-2.301-1.868-4.169-4.169-4.169 0 0-7.557 0-7.557 0-2.3 0-4.168 1.868-4.168 4.169 0 2.3 1.868 4.168 4.168 4.168 0 0 7.557 0 7.557 0 2.301 0 4.169-1.868 4.169-4.168zM48.088 15.692l4.859 4.858c1.614 1.614 4.234 1.614 5.848 0 1.613-1.613 1.613-4.234 0-5.847 0 0-7.711-7.711-7.711-7.711-0.825-0.825-1.914-1.228-2.996-1.21-1.082-0.018-2.17 0.385-2.995 1.21 0 0-7.711 7.711-7.711 7.711-1.614 1.613-1.614 4.234 0 5.847s4.234 1.614 5.847 0l4.859-4.858z" />
+    </symbol>
+    <symbol id="settings">
+      <path d="M73.934 15.359c-6.491-1.302-13.177-1.302-19.668 0 0.828 4.128 1.452 8.287 1.871 12.477-4.352 0.948-8.5 2.666-12.249 5.073-2.666-3.259-5.165-6.641-7.499-10.146-5.511 3.67-10.238 8.397-13.908 13.908 3.505 2.334 6.887 4.834 10.146 7.499-2.407 3.749-4.125 7.897-5.073 12.249-4.19-0.419-8.349-1.043-12.477-1.871-1.303 6.491-1.303 13.177 0 19.668 4.128-0.828 8.287-1.452 12.477-1.871 0.948 4.352 2.666 8.501 5.073 12.249-3.259 2.666-6.641 5.165-10.146 7.499 3.67 5.511 8.397 10.238 13.908 13.908 2.334-3.505 4.833-6.887 7.499-10.146 3.749 2.407 7.897 4.125 12.249 5.074-0.419 4.189-1.043 8.348-1.871 12.476 6.491 1.303 13.177 1.303 19.668 0-0.828-4.128-1.452-8.287-1.871-12.476 4.352-0.949 8.5-2.667 12.249-5.074 2.666 3.259 5.165 6.641 7.499 10.146 5.511-3.67 10.238-8.397 13.908-13.908-3.505-2.334-6.887-4.833-10.146-7.499 2.407-3.748 4.125-7.897 5.073-12.249 4.19 0.419 8.349 1.043 12.477 1.871 1.303-6.491 1.303-13.177 0-19.668-4.128 0.828-8.287 1.452-12.477 1.871-0.948-4.352-2.666-8.5-5.073-12.249 3.259-2.665 6.641-5.165 10.146-7.499-3.67-5.511-8.397-10.238-13.908-13.908-2.334 3.505-4.833 6.887-7.499 10.146-3.749-2.407-7.897-4.125-12.249-5.073 0.419-4.19 1.043-8.349 1.871-12.477zM64.1 50.882c7.451 0 13.5 6.049 13.5 13.5s-6.049 13.5-13.5 13.5c-7.451 0-13.5-6.049-13.5-13.5s6.049-13.5 13.5-13.5z" />
+    </symbol>
+    <symbol id="transponders-view">
+      <path d="M18.707 48.333h-3c-1.104 0-2 0.897-2 2s0.896 2 2 2h12c1.104 0 2-0.896 2-2s-0.896-2-2-2h-3v-3c0-1.655-1.344-3-3-3s-3 1.345-3 3v3zM25.286 39.498c-0.095 0.001-0.19 0.002-0.286 0.002-10.072 0-18.25-8.402-18.25-18.75s8.178-18.75 18.25-18.75c10.072 0 18.25 8.402 18.25 18.75 0 3.307-0.835 6.416-2.301 9.115l11.051-4.023v-3.071c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v11c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-1.543l-25.926 9.436-0.788-2.166z" />
+    </symbol>
+
+    <symbol id="arrow-m">
+      <path d="M32 13.243c-1.668 0-3.336 0.635-4.608 1.907l-24.485 24.485c-2.543 2.543-2.543 6.672 0 9.215s6.672 2.543 9.215 0l19.878-19.878 19.878 19.878c2.543 2.543 6.672 2.543 9.215 0s2.543-6.672 0-9.215l-24.485-24.485c-1.272-1.272-2.94-1.907-4.608-1.907z" />
+    </symbol>
+    <symbol id="arrow-w">
+      <path d="M32 30.114l27.467 29.239v-24.615l-27.467-29.24-27.467 29.24v24.615l27.467-29.239z" />
+    </symbol>
+    <symbol id="arrow-t-w">
+      <path d="M32 36.23l-20.23-19.657c-1.255-1.22-3.294-1.22-4.549 0 0 0-1.913 1.859-1.913 1.859-1.269 1.233-1.269 3.235 0 4.468 0 0 26.57 25.818 26.57 25.818l0.122-0.118c0 0 0.12 0.12 0.12 0.12l26.572-25.82c1.269-1.233 1.269-3.235 0-4.468 0 0-2.363-2.297-2.363-2.297-1.007-0.978-2.642-0.978-3.649 0l-20.68 20.095z" />
+    </symbol>
+    <symbol id="arrow-l">
+      <path d="M32 45.423l26.667-26.846h-53.334l26.667 26.846z" />
+    </symbol>
+
+    <linearGradient id="btn-bg-m" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:#e2e2e2" />
+      <stop offset="0.7" style="stop-color:#f7f7f7" />
+    </linearGradient>
+    <linearGradient id="btn-stroke-m" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:#000;stop-opacity:0.15" />
+      <stop offset="1" style="stop-color:#000;stop-opacity:0.19" />
+    </linearGradient>
+    <linearGradient id="btn-bg-d-m" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:#5b6564" />
+      <stop offset="0.6" style="stop-color:#626c6c" />
+    </linearGradient>
+    <linearGradient id="btn-stroke-d-m" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:#fff;stop-opacity:0.19" />
+      <stop offset="1" style="stop-color:#000;stop-opacity:0.34" />
+    </linearGradient>
+    <linearGradient id="btn-bg-a-m" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.4" style="stop-color:#0095ff" />
+      <stop offset="1" style="stop-color:#0d7bff" />
+    </linearGradient>
+    <linearGradient id="btn-bg-a-d-m" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.4" style="stop-color:#007df4" />
+      <stop offset="1" style="stop-color:#0073e4" />
+    </linearGradient>
+
+    <linearGradient id="btn-bg-f" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:#fdfdfd" />
+      <stop offset="1" style="stop-color:#eee" />
+    </linearGradient>
+    <linearGradient id="btn-bg-v-f" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:#fdfdfd" />
+      <stop offset="1" style="stop-color:#eee" />
+    </linearGradient>
+    <linearGradient id="btn-bg-d-f" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:#3d3c3b" />
+      <stop offset="1" style="stop-color:#333332" />
+    </linearGradient>
+    <linearGradient id="btn-bg-v-d-f" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" style="stop-color:#3d3c3b" />
+      <stop offset="1" style="stop-color:#333332" />
+    </linearGradient>
+    <linearGradient id="btn-stroke-d-f" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:#545452" />
+      <stop offset="1" style="stop-color:#4b4b4a" />
+    </linearGradient>
+
+    <filter id="btn-shadow-m" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-opacity="0.06" />
+      <feDropShadow dx="0" dy="0" stdDeviation="0.8" flood-opacity="0.2" />
+    </filter>
+    <filter id="btn-shadow-d-m" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-opacity="0.25" />
+      <feDropShadow dx="0" dy="0" stdDeviation="2.2" flood-opacity="0.3" />
+    </filter>
+
+    <filter id="btn-shadow-d-f" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="0.75" />
+      <feDropShadow dx="0" dy="0" stdDeviation="0.5" />
+      <feDropShadow dx="0" dy="0" stdDeviation="1" />
+    </filter>
+
+    <filter id="tb-close-b-w" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-opacity="0.15" />
+    </filter>
+    <filter id="tb-close-g-w" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="0" />
+    </filter>
+  </defs>
+  <g id="system">
+    <rect id="wallpaper" x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd" />
+  </g>
+  <g id="window" class="m" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+    <rect id="w-bg" x="501" y="81" width="1298" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
+    <g id="titlebar">
+      <rect id="t-bg" x="502" y="82" width="1296" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
+      <rect id="t-stroke" x="501" y="124" width="1298" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
+      <text id="t-txt" x="502" y="82" dx="857" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949;">e2 SAT Editor</text>
+      <g id="t-ico-w" style="display:none">
+        <image x="513" y="92" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg==" />
+      </g>
+      <g id="t-ctrs-m">
+        <ellipse cx="523" cy="103" rx="8.8" style="fill:#ff5f5a;stroke:#000;stroke-opacity:0.1" />
+        <ellipse cx="553" cy="103" rx="8.8" style="fill:#febc2e;stroke:#000;stroke-opacity:0.1" />
+        <ellipse cx="584" cy="103" rx="8.8" style="fill:#28c840;stroke:#000;stroke-opacity:0.1" />
+      </g>
+      <g id="t-ctrs-w" style="display:none">
+        <rect x="1622" y="102" width="14.5" height="0.6" style="fill:none;stroke:#000;stroke-width:1px" />
+        <g transform="matrix(1,0,0,1,1687,110)">
+          <g transform="rotate(-90)">
+            <rect x="0" y="0" width="13.7" height="13.7" style="fill:none;stroke:#000;stroke-width:1.3px" />
+          </g>
+        </g>
+        <g transform="matrix(1,0,0,1,1762,89)">
+          <g transform="rotate(45)">
+            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:0.8px" />
+            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:0.8px" />
+          </g>
+        </g>
+      </g>
+      <g id="t-ctrs-l" style="display:none">
+        <rect x="1670" y="107" width="10.5" height="1" style="fill:none;stroke:#333;stroke-width:1.1px" />
+        <g transform="matrix(0.9,0,0,0.9,1715,100)">
+          <rect x="0" y="0" width="15" height="13" style="fill:none;stroke:#333;stroke-width:3px;clip-path:inset(0 0 2px)" />
+          <rect x="1" y="4" width="13" height="7" style="fill:none;stroke:#333;stroke-width:1.7px" />
+        </g>
+        <g transform="matrix(1,0,0,1,1773,94)">
+          <g transform="rotate(45)">
+            <rect x="0" y="7" width="15" height="1" style="fill:none;stroke:#333;stroke-width:1px" />
+            <rect x="7" y="0" width="1" height="15" style="fill:none;stroke:#333;stroke-width:1px" />
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="menubar" style="display:none">
+      <rect id="mb-bg" x="502" y="121" width="1296" height="32" style="fill:#eee" />
+      <text id="mb-txt" x="502" y="121" dx="12" dy="24" style="font-size:19px;fill:#000">File Edit Find Tools Window Help</text>
+      <rect id="mb-stroke" x="501" y="154" width="1298" height="1" style="fill:#aaa" />
+    </g>
+    <g id="w-inner">
+      <g id="tabbar">
+        <rect id="tb-bg" x="502" y="125" width="1296" height="67" style="fill:#f3f4f4" />
+        <g id="tb-corner">
+          <rect class="bg" x="502" y="125" width="120" height="67" style="fill:#e7e8e8" />
+          <g class="tb-button">
+            <rect x="502" y="131" width="112" height="53" rx="1" style="rx:0;fill:url(#btn-bg-m);stroke:#afafaf;stroke-width:1.5px" />
+            <g class="tb-ico ico" transform="matrix(0.26,0,0,0.26,508,149)">
+              <use href="#add" style="fill:#4f4f4f" />
+            </g>
+            <text x="502" y="131" dx="27" dy="33" style="font-weight:bold;font-size:19px;fill:#000">New <tspan class="ay">T</tspan>ab</text>
+          </g>
+        </g>
+        <g id="tb-tabs">
+          <rect id="tb-start" x="622" y="125" width="1" height="67" style="fill:#d5d6d6" />
+          <g class="tb-tab">
+            <rect class="bg" x="623" y="124" width="157" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0 1px)" />
+            <text x="623" y="124" dx="15" dy="41" style="font-size:20px;fill:#000">enigma_db</text>
+            <g class="tb-close" transform="matrix(1,0,0,1,755,152)">
+              <g class="o">
+                <rect rx="1" style="fill:none" />
+                <g class="ico" transform="matrix(0.2,0,0,0.2,0,0)">
+                  <use href="#close" style="fill:#666" />
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="tb-tab active">
+            <rect class="bg" x="780" y="124" width="292" height="69" style="fill:#9dcdff;stroke:#91bdef;stroke-width:1.5px;clip-path:inset(1px 0 1px)" />
+            <g class="tb-ico ico" transform="matrix(0.38,0,0,0.38,792,144)">
+              <use href="#picons-view" fill="#000" />
+            </g>
+            <text x="780" y="124" dx="46" dy="41" style="font-size:20px;fill:#000">enigma_db - Picons <tspan class="ellipsis" style="font-size:15px">…</tspan></text>
+            <g class="tb-close" transform="matrix(1,0,0,1,1048,152)">
+              <g class="o">
+                <rect rx="1" style="fill:none" />
+                <g class="ico" transform="matrix(0.2,0,0,0.2,0,0)">
+                  <use href="#close" style="fill:#fff" />
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="tb-tab">
+            <rect class="bg" x="1072" y="124" width="154" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0 1px)" />
+            <text x="1072" y="124" dx="15" dy="41" style="font-size:20px;fill:#000">out</text>
+            <g class="tb-close" transform="matrix(1,0,0,1,1202,152)">
+              <g class="o">
+                <rect rx="1" style="fill:none" />
+                <g class="ico" transform="matrix(0.2,0,0,0.2,0,0)">
+                  <use href="#close" style="fill:#666" />
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="tb-tab">
+            <rect class="bg" x="1226" y="124" width="292" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0 1px)" />
+            <g class="tb-ico ico" transform="matrix(0.38,0,0,0.38,1238,144)">
+              <use href="#transponders-view" fill="#000" />
+            </g>
+            <text x="1226" y="124" dx="46" dy="41" style="font-size:20px;fill:#000">out - Edit Transpond<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
+            <g class="tb-close" transform="matrix(1,0,0,1,1495,152)">
+              <g class="o">
+                <rect rx="1" style="fill:none" />
+                <g class="ico" transform="matrix(0.2,0,0,0.2,0,0)">
+                  <use href="#close" style="fill:#666" />
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="tb-tab">
+            <rect class="bg" x="1518" y="124" width="256" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0 1px)" />
+            <g class="tb-ico ico" transform="matrix(0.38,0,0,0.38,1531,144)">
+              <use href="#channelbook-view" fill="#000" />
+            </g>
+            <text x="1518" y="124" dx="46" dy="41" style="font-size:20px;fill:#000">enigma_db - Cha<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
+          </g>
+          <rect id="tb-end" x="1773" y="125" width="1" height="67" style="fill:#d5d6d6" />
+        </g>
+      </g>
+      <g id="menu">
+        <rect id="menu-bg" class="bg" x="502" y="192" width="1296" height="100" style="fill:#e7e8e8" />
+        <g id="menu-items">
+          <g class="menu-item">
+            <g class="ico" transform="matrix(0.38,0,0,0.38,526,217)">
+              <use href="#open" style="fill:#4c4c4c" />
+            </g>
+            <text class="txt" x="510" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Open</text>
+          </g>
+          <g class="menu-item">
+            <g class="ico" transform="matrix(0.38,0,0,0.38,679,217)">
+              <use href="#save" style="fill:#4c4c4c" />
+            </g>
+            <text class="txt" x="664" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Save</text>
+          </g>
+          <g class="menu-divid">
+            <rect class="divid" x="826" y="212" width="1" height="61" style="fill:none" />
+          </g>
+          <g class="menu-item">
+            <g class="ico" transform="matrix(0.38,0,0,0.38,844,217)">
+              <use href="#import" style="fill:#4c4c4c" />
+            </g>
+            <text class="txt" x="828" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
+          </g>
+          <g class="menu-item">
+            <g class="ico" transform="matrix(0.38,0,0,0.38,1012,217)">
+              <use href="#export" style="fill:#4c4c4c" />
+            </g>
+            <text class="txt" x="994" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
+          </g>
+          <g class="menu-divid">
+            <rect class="divid" x="1176" y="212" width="1" height="61" style="fill:none" />
+          </g>
+          <g class="menu-item">
+            <g class="ico" transform="matrix(0.38,0,0,0.38,1193,217)">
+              <use href="#settings" style="fill:#4c4c4c" />
+            </g>
+            <text class="txt" x="1178" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
+          </g>
+          <g class="menu-item">
+            <g>
+              <rect class="btn-bg" x="1487" y="224" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+              <g class="btn-caret" transform="matrix(1,0,0,1,1584,226)">
+                <rect class="fx" x="0" y="0" width="24" height="24" rx="8" style="fill:none;filter:drop-shadow(0 0.5px 1px #333);transform:translate(0.5px,1px)" />
+                <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
+                <g class="arrow">
+                  <g class="arrow-m">
+                    <g class="arrow-up" transform="matrix(0.16,0,0,0.16,7.4,3.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                    <g class="arrow-down" transform="matrix(0.16,0,0,-0.16,7.4,22.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                  </g>
+                  <g class="arrow-w" style="display:none">
+                    <use href="#arrow-t-w" />
+                  </g>
+                  <g class="arrow-l" style="display:none">
+                    <use href="#arrow-l" />
+                  </g>
+                </g>
+              </g>
+              <text class="btn-txt" x="1487" y="224" dx="12" dy="22" style="font-size:20px;fill:#000">Default</text>
+            </g>
+          </g>
+          <g class="menu-item">
+            <text class="txt" x="1634" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
+          </g>
+        </g>
+        <rect id="menu-stroke" class="stroke" x="500" y="192" width="1300" height="100" style="fill:none;stroke:#d5d6d6;stroke-width:2.4px;clip-path:inset(0 2px)" />
+      </g>
+      <g id="main">
+        <rect id="main-bg" class="bg" x="502" y="291" width="1296" height="835" style="fill:#f3f4f4" />
+        <g id="split-end">
+          <rect id="se-bg" class="bg" x="502" y="291" width="1296" height="835" style="fill:none" />
+          <g class="box-title">
+            <rect x="502" y="291" width="1296" height="49" style="fill:none" />
+            <text x="502" y="291" dx="10" dy="32" style="font-weight:bold;font-size:20px;fill:#000">Picons</text>
+            <g class="box-button">
+              <g transform="matrix(1,0,0,1,1744,300)">
+                <rect class="bg" x="0" y="0" width="38" height="32" rx="1" style="rx:0;fill:none" />
+                <g class="ico" transform="matrix(0.38,0,0,0.38,7,3)">
+                  <use href="#list-prefs-menu" style="fill:#505050" />
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="tree">
+            <g class="tree-vp tree-view">
+              <rect class="bg" x="502" y="346" width="1296" height="687" style="fill:#fff" />
+              <g class="tree-items">
+                <g>
+                  <rect x="526" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="560" y="395" width="151" height="80" style="fill:none" />
+                  <rect class="ico" x="570" y="399" width="130" height="75" rx="6" style="fill:#eee;stroke:#999;stroke-width:1.7px" />
+                  <g class="img" transform="matrix(0.34,0,0,0.34,589,422)">
+                    <rect x="0" y="0" width="273" height="88" style="fill:violet" />
+                    <rect x="188" y="0" width="85" height="88" style="fill:antiquewhite" />
+                    <g style="font-family:Arial,Helvetica,sans-serif;font-weight:bold">
+                      <text x="18" y="0" dy="73" style="font-size:80px;letter-spacing:2px" transform="matrix(1.1,0,0,1,0,0)">NTI</text>
+                      <text x="185" y="0" dy="81" style="font-size:88px" transform="matrix(1.2,0,0,0.9,-22,0)">1</text>
+                    </g>
+                  </g>
+                  <text class="txt" x="526" y="493" dx="106" dy="18" text-anchor="middle" style="font-size:18px">NTI 1</text>
+                </g>
+                <g>
+                  <rect x="792" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="827" y="395" width="151" height="80" style="fill:none" />
+                  <rect class="ico" x="837" y="399" width="130" height="75" rx="6" style="fill:#eee;stroke:#999;stroke-width:1.7px" />
+                  <g class="img" transform="matrix(0.34,0,0,0.34,857,422)">
+                    <rect x="0" y="0" width="273" height="88" style="fill:violet" />
+                    <rect x="188" y="0" width="85" height="88" style="fill:antiquewhite" />
+                    <g style="font-family:Arial,Helvetica,sans-serif;font-weight:bold">
+                      <text x="18" y="0" dy="73" style="font-size:80px;letter-spacing:2px" transform="matrix(1.1,0,0,1,0,0)">NTI</text>
+                      <text x="185" y="0" dy="81" style="font-size:102px;stroke:#000;stroke-width:2px" transform="matrix(1,0,0,0.8,16,8)">2</text>
+                    </g>
+                  </g>
+                  <text class="txt" x="792" y="493" dx="108" dy="18" text-anchor="middle" style="font-size:18px">NTI 2</text>
+                </g>
+                <g>
+                  <rect x="1058" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="1093" y="395" width="151" height="80" style="fill:none" />
+                  <rect class="ico" x="1103" y="399" width="130" height="75" rx="6" style="fill:#eee;stroke:#999;stroke-width:1.7px" />
+                  <g class="img" transform="matrix(0.29,0,0,0.29,1113,420)">
+                    <rect x="256" y="21" width="93" height="65" style="fill:#c00" />
+                    <text x="10" y="0" dy="78" style="font-family:cursive,serif;font-size:96px;fill:#c00">image</text>
+                    <text x="262" y="0" dy="78" style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:50px;fill:#eee">4K</text>
+                  </g>
+                  <text class="txt" x="1058" y="493" dx="108" dy="18" text-anchor="middle" style="font-size:18px">Image 4K</text>
+                </g>
+                <g>
+                  <rect x="1324" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="1359" y="395" width="151" height="80" style="fill:none" />
+                  <rect class="ico" x="1369" y="399" width="130" height="75" rx="6" style="fill:#eee;stroke:#999;stroke-width:1.7px" />
+                  <g class="img" transform="matrix(0.23,0,0,0.23,1401,415)">
+                    <rect x="50" y="4" width="180" height="180" style="fill:darkturquoise" />
+                    <rect x="2" y="30" width="274" height="134" style="fill:darkturquoise" />
+                    <text x="50" y="38" dy="80" style="font-family:'Times New Roman',Times,sans-serif;font-weight:bold;font-size:122px;letter-spacing:-4px;fill:#fff;stroke:#fff;stroke-width:4px" transform="matrix(1.3,0,0,1.2,1,0)">22</text>
+                  </g>
+                  <text class="txt" x="1324" y="493" dx="109" dy="18" text-anchor="middle" style="font-size:18px">VIDEO 22</text>
+                </g>
+
+                <g>
+                  <rect x="526" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="560" y="605" width="151" height="80" style="fill:none" />
+                  <rect class="ico" x="570" y="609" width="130" height="75" rx="6" style="fill:#eee;stroke:#999;stroke-width:1.7px" />
+                  <g class="img" transform="matrix(0.24,0,0,0.24,578,630)">
+                    <rect x="-4" y="-4" width="483" height="141" style="fill:lime" />
+                    <ellipse cx="67" cy="67" rx="67" ry="67" style="fill:#000" />
+                    <text x="18" y="0" dy="107" style="font-family:Arial,Helvetica,sans-serif;font-size:122px;fill:lime;stroke:lime;stroke-width:10px" transform="matrix(1.3,0,0,1.2,1,0)">7</text>
+                    <text x="312" y="0" dy="121" style="font-family:'Times New Roman',Times,sans-serif;font-weight:bold;font-size:144px;letter-spacing:-2px" transform="matrix(0.45,0,0,1,0,0)">CHANNEL</text>
+                  </g>
+                  <text class="txt" x="526" y="701" dx="106" dy="18" text-anchor="middle" style="font-size:18px">7 Channel</text>
+                </g>
+                <g>
+                  <rect class="focused" x="791" y="579" width="223" height="175" rx="20" style="fill:#0044e2" />
+                  <rect x="792" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="827" y="605" width="151" height="80" style="fill:#ccc" />
+                  <g class="img" transform="matrix(0.14,0,0,0.14,827,605)">
+                    <ellipse cx="186" cy="116" rx="178" ry="118" style="fill:mediumaquamarine" />
+                    <g style="font-family:Arial,Helvetica,sans-serif">
+                      <text x="42" y="0" dy="136" style="font-weight:bold;font-style:italic;font-size:102px;letter-spacing:-1px;stroke:#000;stroke-width:4px" transform="matrix(1,0,0,1.2,0,0)">RIBA</text>
+                      <text x="389" y="0" dy="138" style="font-size:100px;stroke:#000;stroke-width:5px" transform="matrix(1,0,0,1.2,0,0)">SPORTS</text>
+                    </g>
+                  </g>
+                  <text class="txt" x="792" y="701" dx="110" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">RIBA Sports</text>
+                </g>
+                <g>
+                  <rect x="1058" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="1093" y="605" width="151" height="80" style="fill:#ccc" />
+                  <g class="img" transform="matrix(0.14,0,0,0.14,1093,605)">
+                    <ellipse cx="186" cy="116" rx="178" ry="118" style="fill:mediumaquamarine" />
+                    <g style="font-family:Arial,Helvetica,sans-serif">
+                      <text x="42" y="0" dy="136" style="font-weight:bold;font-style:italic;font-size:102px;letter-spacing:-1px;stroke:#000;stroke-width:4px" transform="matrix(1,0,0,1.2,0,0)">RIBA</text>
+                      <text x="389" y="0" dy="138" style="font-size:100px;stroke:#000;stroke-width:5px" transform="matrix(1,0,0,1.2,0,0)">PREMIERE</text>
+                    </g>
+                  </g>
+                  <text class="txt" x="1058" y="701" dx="107" dy="18" text-anchor="middle" style="font-size:18px">RIBA Premiere</text>
+                </g>
+                <g>
+                  <rect x="1324" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="1359" y="605" width="151" height="80" style="fill:#ccc" />
+                  <g class="img" transform="matrix(0.21,0,0,0.21,1359,605)">
+                    <rect x="0" y="0" width="462" height="120" rx="48" style="fill:#771" />
+                    <g style="font-family:Arial,Helvetica,sans-serif;font-size:96px">
+                      <text x="32" y="0" dy="96" style="fill:#fff;stroke:#fff;stroke-width:6px" transform="matrix(0.9,0,0,1,0,0)">SERIAL</text>
+                      <text x="412" y="0" dy="96" style="letter-spacing:8px;fill:#fff;stroke:#fff;stroke-width:6px" transform="matrix(0.8,0,0,1,0,-0.9)">TV</text>
+                    </g>
+                  </g>
+                  <text class="txt" x="1324" y="701" dx="106" dy="18" text-anchor="middle" style="font-size:18px">Serial TV</text>
+                </g>
+
+                <g>
+                  <rect x="526" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="560" y="814" width="151" height="80" style="fill:#ccc" />
+                  <g class="img" transform="matrix(0.3,0,0,0.3,560,814)">
+                    <rect x="0" y="0" width="275" height="102" rx="24" fill="#444" />
+                    <rect x="0" y="0" width="106" height="102" rx="24" fill="slate" />
+                    <text x="16" y="0" dy="102" style="font-family:'Times New Roman',Times,sans-serif;font-weight:bold;font-size:150px;fill:#bbb">Q</text>
+                    <text x="224" y="0" dy="84" style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:72px;letter-spacing:1px;fill:#fff" transform="matrix(0.6,0,0,1,0,0)">NEWS</text>
+                  </g>
+                  <text class="txt" x="526" y="910" dx="106" dy="18" text-anchor="middle" style="font-size:18px">Q NEWS</text>
+                </g>
+                <g>
+                  <rect x="792" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="827" y="814" width="151" height="80" style="fill:#ccc" />
+                  <g class="img" transform="matrix(0.22,0,0,0.22,827,814)">
+                    <rect x="432" y="0" width="96" height="96" style="fill:#099" />
+                    <text x="0" y="0" dy="80" style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:96px;letter-spacing:-3px;fill:#333">Shopping</text>
+                    <text x="432" y="0" dx="8" dy="80" style="font-family:'Times New Roman',Times,sans-serif;font-weight:bold;font-size:99px;fill:#fff;stroke:#fff;stroke-width:5px">G</text>
+                  </g>
+                  <text class="txt" x="792" y="910" dx="107" dy="18" text-anchor="middle" style="font-size:18px">Shopping G</text>
+                </g>
+                <g>
+                  <rect x="1058" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="1093" y="814" width="151" height="80" style="fill:#ccc" />
+                  <g class="img" transform="matrix(0.3,0,0,0.3,1058,788)">
+                    <use href="#picon" />
+                  </g>
+                  <text class="txt" x="1058" y="910" dx="107" dy="18" text-anchor="middle" style="font-size:18px">Service 1120</text>
+                </g>
+                <g>
+                  <rect x="1324" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="ico" x="1359" y="814" width="151" height="80" style="fill:#ccc" />
+                  <g class="img" transform="matrix(0.2,0,0,0.2,1359,814)">
+                    <text x="0" y="0" dy="96" style="font-family:Arial,Helvetica,sans-serif;font-size:97px;font-weight:bold;stroke:#000;stroke-width:1px" transform="matrix(0.76,0,0,1,0,0)">GLOBALFLARE</text>
+                  </g>
+                  <text class="txt" x="1324" y="910" dx="109" dy="18" text-anchor="middle" style="font-size:18px">Globalflare HD</text>
+                </g>
+              </g>
+            </g>
+            <g class="sbv">
+              <rect class="bg" x="1784" y="315" width="14" height="625" style="display:none" />
+              <rect class="btn-bg vs" x="1784" y="315" width="14" height="14" style="display:none" />
+              <g class="arrow as" transform="matrix(1,0,0,1,1784,315)">
+                <g class="arrow-w" style="display:none">
+                  <use href="#arrow-w" />
+                </g>
+                <g class="arrow-l" style="display:none">
+                  <use href="#arrow-l" />
+                </g>
+              </g>
+              <rect class="btn-bg ve" x="1784" y="952" width="14" height="14" style="display:none" />
+              <g class="arrow ae" transform="matrix(1,0,0,1,1784,952)">
+                <g class="arrow-w" style="display:none">
+                  <use href="#arrow-w" />
+                </g>
+                <g class="arrow-l" style="display:none">
+                  <use href="#arrow-l" />
+                </g>
+              </g>
+              <rect class="xy" x="1782" y="349" width="12" height="44" rx="7" style="fill:#7f7f7f" />
+            </g>
+            <g class="sbh">
+              <rect class="bg" x="473" y="997" width="1318" height="14" style="display:none" />
+              <rect class="btn-bg hs" x="473" y="997" width="14" height="14" style="display:none" />
+              <g class="arrow as" transform="matrix(1,0,0,1,473,997)">
+                <g class="arrow-w" style="display:none">
+                  <use href="#arrow-w" />
+                </g>
+                <g class="arrow-l" style="display:none">
+                  <use href="#arrow-l" />
+                </g>
+              </g>
+              <rect class="btn-bg he" x="1777" y="997" width="14" height="14" style="display:none" />
+              <g class="arrow ae" transform="matrix(1,0,0,1,1777,997)">
+                <g class="arrow-w" style="display:none">
+                  <use href="#arrow-w" />
+                </g>
+                <g class="arrow-l" style="display:none">
+                  <use href="#arrow-l" />
+                </g>
+              </g>
+              <rect class="xy" x="511" y="996" width="99" height="12" rx="7" style="display:none" />
+            </g>
+            <rect class="sbr" x="1782" y="971" width="14" height="14" style="display:none" /> 
+          </g>
+          <g class="tree-search">
+            <rect class="ts-bg bg" x="502" y="992" width="1296" height="61" style="fill:#fafafa" />
+            <g class="search-item">
+              <rect class="btn-bg" x="513" y="1004" width="136" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+              <text class="btn-txt" x="513" y="1004" dx="12" dy="22" style="font-size:20px;fill:#000">Name</text>
+              <g class="btn-caret" transform="matrix(1,0,0,1,621,1006)">
+                <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
+                <rect class="fx" x="0" y="0" width="24" height="24" rx="8" style="fill:none;filter:drop-shadow(0 0.5px 1px #333);transform:translate(0.5px,1px)" />
+                <g class="arrow">
+                  <g class="arrow-m">
+                    <g class="arrow-up" transform="matrix(0.16,0,0,0.16,7.4,3.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                    <g class="arrow-down" transform="matrix(0.16,0,0,-0.16,7.4,22.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                  </g>
+                  <g class="arrow-w" style="display:none">
+                    <use href="#arrow-t-w" />
+                  </g>
+                  <g class="arrow-l" style="display:none">
+                    <use href="#arrow-l" />
+                  </g>
+                </g>
+              </g>
+            </g>
+            <g class="search-item">
+              <rect class="input-bg" x="656" y="1003" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:1px" />
+              <text class="input-txt" x="656" y="1003" dx="4" dy="23" style="font-size:19px;fill:#000">riba</text>
+            </g>
+            <g class="search-item">
+              <rect class="find-bg" x="874" y="1003" width="82" height="33" rx="4" style="fill:#ececec" />
+              <text class="find-txt" x="874" y="1003" dx="40" dy="23" text-anchor="middle" style="font-size:19px;fill:#000;fill-opacity:0.89">Find</text>
+            </g>
+            <g class="search-item">
+              <rect class="find-bg" x="965" y="1003" width="166" height="33" rx="4" style="fill:#ececec" />
+              <text class="find-txt" x="965" y="1003" dx="83" dy="23" text-anchor="middle" style="font-size:19px;fill:#000;fill-opacity:0.89">Find Previous</text>
+            </g>
+            <g class="search-item">
+              <rect class="find-bg" x="1140" y="1003" width="110" height="33" rx="4" style="fill:#ececec" />
+              <text class="find-txt" x="1140" y="1003" dx="55" dy="23" text-anchor="middle" style="font-size:19px;fill:#000;fill-opacity:0.89">Find All</text>
+            </g>
+            <g class="search-item">
+              <rect class="find-h-bg" x="1283" y="1004" width="126" height="31" rx="4" style="fill:#b1d7ff;stroke:#d1d2d2;stroke-width:1px" />
+              <text class="find-h-txt" x="1283" y="1004" dx="62" dy="22" text-anchor="middle" style="font-size:18px;fill:#fff;fill-opacity:0.9">Highlight</text>
+            </g>
+            <g class="ico" transform="matrix(0.23,0,0,0.23,1764,1013)">
+              <use href="#close" style="fill:#666" />
+            </g>
+          </g>
+          <g id="tree-tool">
+            <rect class="bg" x="502" y="1054" width="1296" height="73" style="fill:#f7f8f8" />
+            <rect class="stroke" x="500" y="1053" width="1300" height="73" style="fill:none;stroke:#e9eaea;stroke-width:2.4px;clip-path:inset(0 2px 2px)" />
+            <g id="tt-items">
+              <g class="tt-item">
+                <text class="txt" x="510" y="1072" dx="4" dy="23" style="font-size:19px;fill:#000">Folder</text>
+                <rect class="input-bg" x="580" y="1072" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:1px" />
+                <rect class="btn-bg" x="800" y="1072" width="126" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+                <text class="btn-txt" x="800" y="1072" dx="24" dy="22" style="font-size:20px;fill:#000">Browse<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
+              </g>
+              <g class="tt-item qe qe-tt">
+                <rect class="btn-bg" x="1652" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+                <g class="btn-ico ico" transform="matrix(0.38,0,0,0.38,1664,1075)">
+                  <use href="#search" style="fill:#545454" />
+                </g>
+                <text class="btn-txt"  x="1652" y="1072" dx="46" dy="22" style="font-size:20px;fill:#000"><tspan class="ay">F</tspan>ind<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
+              </g>
+            </g>
+          </g>
+        </g>
+        <rect id="main-stroke" class="stroke" x="500" y="291" width="1300" height="836" style="fill:none;stroke:#d5d6d6;stroke-width:2.4px;clip-path:inset(0 2px)" />
+      </g>
+    </g>
+    <g id="statusbar">
+      <rect id="sb-bg" x="502" y="1164" width="1296" height="56" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0 0)" />
+      <rect id="sb-stroke" x="500" y="1179" width="1300" height="42" style="fill:none;stroke:#d8d9d9;stroke-width:2.5px;clip-path:inset(0 2px 2px)" />
+      <text id="sbts" x="502" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000">Filename: ribasports.png</text>
+      <rect class="divid sbds-w" x="740" y="1184" width="1" height="25" style="fill:none" />
+      <rect class="divid sbdr-w" x="1770" y="1184" width="1" height="25" style="fill:none" />
+      <g id="sbcb-w" transform="matrix(1,0,0,1,1769,1188)">
+        <rect x="0" y="0" width="25" height="25" style="fill:none" />
+      </g>
+    </g>
+    <rect id="w-stroke" x="501" y="81" width="1298" height="1140" rx="15" style="fill:none;stroke:#a6bbb9;stroke-width:1px" />
+    <rect id="w-shade" x="503" y="83" width="1294" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
+  </g>
+
+  <!--<image id="screen" href="../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
+  <!--<image id="screen-flip" href="../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" transform="matrix(-1,0,0,1,1880,0)" />-->
+
+  <g id="test" transform="matrix(1,0,0,1,50,1270)">
+    <text id="test_lm" dx="95">macx light</text>
+    <text id="test_dm" dx="200">macx dark</text>
+    <text id="test_lw" dx="320">win light</text>
+    <text id="test_dw" dx="420">win dark</text>
+    <text id="test_lf" dx="535">fusion light</text>
+    <text id="test_df" dx="650">fusion dark</text>
+  </g>
+
+  <!--<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="svg_flatten.js"></script>-->
+
+  <script type="text/javascript">
+    // <![CDATA[
+    if (document.getElementById('test')) {
+      document.getElementById('test').addEventListener('click', function(e) {
+        var id = e.target.getAttribute('id');
+        document.getElementById('window').setAttribute('class', id[id.length - 1] + ' ' + id.replace('test_', ''));
+        document.getElementsByTagName('svg')[0].setAttribute('transform', 'matrix(1,1,1,1,0,0)');
+        document.getElementsByTagName('svg')[0].setAttribute('transform', '');
+      });
+    }
+    // ]]>
+  </script>
+</svg>

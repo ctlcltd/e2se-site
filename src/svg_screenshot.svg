@@ -728,7 +728,7 @@
     <text id="test_df" dx="650">fusion dark</text>
   </g>
 
-  <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="svg_flatten.js"></script>
+  <!--<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="svg_flatten.js"></script>-->
 
   <script type="text/javascript">
     // <![CDATA[
