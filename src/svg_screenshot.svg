@@ -1,4 +1,4 @@
-<svg viewBox="0 0 1880 1300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg id="screenshot" viewBox="0 0 1880 1300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="svg_screenshot.css" type="text/css" />
   <defs>
     <symbol id="add">
@@ -366,7 +366,7 @@
               </g>
             </g>
             <g class="tree-view">
-              <g class="tree-items">
+              <g class="items">
                 <g>
                   <rect class="focused" x="82" y="340" width="380" height="55" style="fill:#d5d6d6" />
                   <text x="82" y="340" dx="23" dy="34" style="font-size:20px;fill:#000">All services</text>
@@ -399,7 +399,7 @@
                   </g>
                 </g>
               </g>
-              <g class="tree-items">
+              <g class="items">
                 <text x="82" y="697" dx="25" dy="34" style="font-size:20px;fill:#000">Swiss</text>
                 <g>
                   <rect class="focused" x="82" y="750" width="380" height="55" style="fill:#d5d6d6" />
@@ -424,7 +424,7 @@
                   </g>
                 </g>
               </g>
-              <g class="tree-items">
+              <g class="items">
                 <text x="82" y="964" dx="25" dy="34" style="font-size:20px;fill:#000">Swiss</text>
                 <text x="82" y="1017" dx="25" dy="34" style="font-size:20px;fill:#000">Italy</text>
               </g>
@@ -452,17 +452,17 @@
               <rect class="xy" x="446" y="649" width="12" height="44" rx="7" style="display:none" />
             </g>
           </g>
-          <g id="side-tool">
+          <g id="tree-tool">
             <rect class="bg" x="82" y="1054" width="380" height="73" style="fill:#eff0f0" />
             <rect class="stroke" x="80" y="1053" width="384" height="73" style="fill:none;stroke:#e2e2e2;stroke-width:2.4px;clip-path:inset(0 2px 2px)" />
-            <g id="st-items">
-              <g class="st-item">
+            <g id="ti-items">
+              <g class="ti-item">
                 <g class="tool-ico ico" transform="matrix(0.25,0,0,0.25,101,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
                 <text class="tool-txt" x="95" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">New Bouquet</text>
               </g>
-              <g class="st-item qe qe-st">
+              <g class="ti-item qe qe-ti">
                 <rect class="btn-bg" x="314" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
                 <g class="btn-ico ico" transform="matrix(0.38,0,0,0.38,334,1075)">
                   <use href="#search" style="fill:#545454" />
@@ -490,8 +490,8 @@
               </g>
             </g>
           </g>
-          <g class="tree">
-            <g class="tree-cols">
+          <g class="list">
+            <g class="list-cols">
               <rect class="bg" x="473" y="340" width="1325" height="26" style="fill:#ececec" />
               <text x="473" y="340" dy="18" style="font-size:17px;fill:#000"><tspan x="479">Index</tspan> <tspan x="578">Name</tspan> <tspan x="883">Parental</tspan> <tspan x="989">Service ID</tspan> <tspan x="1112">Transport ID</tspan> <tspan x="1234">Type</tspan> <tspan x="1363">CAS</tspan> <tspan x="1432">Provider</tspan> <tspan x="1702">System</tspan></text>
               <rect class="ruler" x="571" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
@@ -503,9 +503,9 @@
               <rect class="ruler" x="1425" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
               <rect class="ruler" x="1696" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
             </g>
-            <g class="tree-vp tree-view">
+            <g class="list-view">
               <rect class="bg" x="473" y="366" width="1325" height="687" style="fill:#fff" />
-              <g class="tree-items">
+              <g class="items">
                 <rect class="focused" x="473" y="707" width="1325" height="49" style="fill:#0044e2" />
                 <text x="473" y="366" dy="31" style="font-size:19px;fill:#000"><tspan x="500">38</tspan> <tspan x="580">Giallo</tspan> <tspan x="990">4322</tspan> <tspan x="1114">1000</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">TVN</tspan> <tspan x="1703">DVB-S</tspan></text>
                 <g class="ico" transform="matrix(0.38,0,0,0.38,884,378)">
@@ -538,7 +538,7 @@
                 <g class="ico" transform="matrix(0.38,0,0,0.38,1364,670)">
                   <use href="#crypted" style="fill:#545454" />
                 </g>
-                <text x="473" y="707" dy="31" style="font-size:19px;fill:#fff"><tspan x="500">45</tspan> <tspan x="580">NASA TV HD</tspan> <tspan x="990">504</tspan> <tspan x="1114">900</tspan> <tspan x="1235">TV</tspan> <tspan x="1434">NoName</tspan> <tspan x="1703">DVB-S</tspan></text>
+                <text class="active" x="473" y="707" dy="31" style="font-size:19px;fill:#fff"><tspan x="500">45</tspan> <tspan x="580">NASA TV HD</tspan> <tspan x="990">504</tspan> <tspan x="1114">900</tspan> <tspan x="1235">TV</tspan> <tspan x="1434">NoName</tspan> <tspan x="1703">DVB-S</tspan></text>
                 <text x="473" y="756" dy="31" style="font-size:19px;fill:#000"><tspan x="500">46</tspan> <tspan x="580">Cartoonito HD</tspan> <tspan x="990">133</tspan> <tspan x="1114">1200</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">Mediaset</tspan> <tspan x="1703">DVB-S</tspan></text>
                 <g class="ico" transform="matrix(0.38,0,0,0.38,1364,768)">
                   <use href="#crypted" style="fill:#545454" />
@@ -601,7 +601,7 @@
             </g>
             <rect class="sbr" x="1782" y="997" width="14" height="14" style="display:none" /> 
           </g>
-          <g class="tree-search">
+          <g class="list-search">
             <rect class="ts-bg bg" x="473" y="992" width="1325" height="61" style="fill:#fafafa" />
             <g class="search-item">
               <rect class="btn-bg" x="483" y="1004" width="136" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
@@ -651,41 +651,41 @@
               <use href="#close" style="fill:#666" />
             </g>
           </g>
-          <g id="tree-tool">
+          <g id="list-tool">
             <rect class="bg" x="473" y="1054" width="1325" height="73" style="fill:#f7f8f8" />
             <rect class="stroke" x="471" y="1053" width="1329" height="73" style="fill:none;stroke:#e9eaea;stroke-width:2.4px;clip-path:inset(0 2px 2px)" />
-            <g id="tt-items">
-              <g class="tt-item">
+            <g id="li-items">
+              <g class="li-item">
                 <rect x="487" y="1064" width="174" height="53" style="fill:none" />
                 <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,492,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
                 <text class="tool-txt" x="487" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Add Channel</text>
               </g>
-              <g class="tt-item">
+              <g class="li-item">
                 <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,679,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
                 <text class="tool-txt" x="675" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Add Marker</text>
               </g>
-              <g class="tt-item" style="opacity:0.24">
+              <g class="li-item" style="opacity:0.24">
                 <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,855,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
                 <text class="tool-txt" x="850" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">New Service</text>
               </g>
-              <g class="tt-item">
+              <g class="li-item">
                 <rect class="btn-bg" x="1034" y="1072" width="135" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
                 <text class="btn-txt" x="1034" y="1072" dx="22" dy="22" style="font-size:20px;fill:#000">Reference</text>
               </g>
-              <g class="tt-divid">
+              <g class="tool-divid">
                 <rect class="divid" x="1183" y="1075" width="1" height="32" style="display:none" />
               </g>
-              <g class="tt-item" style="opacity:0.24">
+              <g class="li-item" style="opacity:0.24">
                 <rect class="btn-bg" x="1199" y="1072" width="147" height="32" rx="8" style="fill:#fff;stroke:#000;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
                 <text class="btn-txt" x="1199" y="1072" dx="25" dy="22" style="font-size:20px;fill:#000">Drag&amp;Drop</text>
               </g>
-              <g class="tt-item qe qe-tt">
+              <g class="li-item qe qe-li">
                 <rect class="btn-bg" x="1652" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
                 <g class="btn-ico ico" transform="matrix(0.38,0,0,0.38,1664,1075)">
                   <use href="#search" style="fill:#545454" />

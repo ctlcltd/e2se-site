@@ -452,6 +452,7 @@ for (const el of elements) {
 
 
 svg.setAttribute('style', 'pointer-events:none;user-select:none');
+svg.removeAttribute('id');
 
 
 
