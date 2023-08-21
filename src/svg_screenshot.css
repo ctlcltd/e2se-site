@@ -6,7 +6,7 @@
 .m .btn-bg { stroke-width: 0.4px !important; }
 
 
-.dm text:not(.img-txt) { fill: #fff !important; }
+.dm text:not(.color) { fill: #fff !important; }
 .dm #t-txt { fill: #bcbebe !important; }
 
 .dm #t-bg { fill: #404242 !important; stroke: #787979 !important; }
@@ -262,6 +262,16 @@
 .w #tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 448, 1021); }
 .w .list .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 942); }
 
+.w #icon-ico rect { rx: 0 !important; stroke: #8e8e8e; stroke-width: 1.1px; }
+.w #icon-shape { width: 137px; height: 173px; fill: #f5f6f7 !important; }
+.w #icon-clip { x: 142px; width: 52px; height: 56px; fill: url(#icon-clip-bg-w) !important; stroke: #444 !important; stroke-width: 3px; }
+.w #icon-fix { display: block !important; x:102.6px; y:99.2px; width: 0.1px; height: 65px; fill: #e8e8e8; transform: rotate(-44deg); }
+.w #icon-ico g:last-of-type g { filter: url(#icon-shadow-c-w) !important; }
+.w #icon-ico g g { filter: none !important; }
+.w #icon-ico text { display: none !important; }
+.w #icon-img { transform: matrix(0.99, 0, 0, 1, 62.8, 71); }
+.w #icon-txt { transform: translate(2px, -8px); font-family: 'Segoe UI', Tahoma, sans-serif !important; font-weight: normal !important; font-size: 22px !important; letter-spacing: none !important; fill: #000 !important; text-shadow: none !important; }
+
 .w .menu-item:nth-child(1) { transform: translate(0, -3px); }
 .w .menu-item:nth-child(2) { transform: translate(-5px, -3px); }
 .w .menu-divid:nth-child(3) { transform: translate(-17px, 0); }
@@ -472,6 +482,18 @@
 .f #tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 448, 1024); }
 .f .list .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 953); }
 
+.f #icon-ico rect { rx: 4.4px !important; stroke: #000; stroke-opacity: 0.25; stroke-width: 0.9px; }
+.f #icon-shape { width: 134px; height: 167px; fill: #f1f0f0 !important; }
+.f #icon-clip { x: 140px; y: -6px; width: 50px; height: 51px; fill: #efeeee !important; stroke: none !important; }
+.f #icon-fix { display: block !important; x:98.5px; y:99px; width: 0.1px; height: 64px; fill: #000; fill-opacity: 0.2; transform: rotate(-45deg); }
+.f #icon-ico g:last-of-type g { filter: url(#icon-shadow-c-f) !important; }
+.f #icon-ico g g { filter: none !important; }
+.f #icon-ico text { display: none !important; }
+.f #icon-ico text:last-child { display: block !important; transform: translate(-3px, -16px); fill: #999; font-family: 'Sans-Serif', system-ui, sans-serif !important; font-size: 32px; }
+.f #icon-ico text:last-child tspan { font-size: 110%; }
+.f #icon-img { transform: matrix(0.9, 0, 0, 0.9, 66.6, 60); }
+.f #icon-txt { transform: translate(2px, -5px); font-family: 'Sans-Serif', system-ui, sans-serif !important; font-weight: normal !important; font-size: 22px !important; letter-spacing: 0.1px !important; fill: #000 !important; text-shadow: none !important; }
+
 .f .menu-item:nth-child(1) { transform: translate(0, -2px); }
 .f .menu-item:nth-child(2) { transform: translate(-8px, -2px); }
 .f .menu-divid:nth-child(3) { transform: translate(-24px, 0); }
@@ -507,7 +529,7 @@
 .df #t-ctrs-l rect { stroke: #fdfdfd !important; }
 .df #t-ctrs-l g g rect { stroke-width: 1.3px !important; }
 
-.df text:not(.img-txt) { fill: #fff !important; }
+.df text:not(.color) { fill: #fff !important; }
 .df #t-txt { fill: #aaa !important; }
 
 .df #w-bg { fill: #171717 !important; stroke: #acc6c3 !important; }
