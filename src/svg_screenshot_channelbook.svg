@@ -128,6 +128,19 @@
       <feColorMatrix type="saturate" values="0" />
     </filter>
 
+
+    <symbol id="picon">
+      <g transform="matrix(1,0,0,1,2,2)">
+        <g transform="matrix(0.75,0,0,0.75,18.3,9.9)">
+          <rect x="48.3" y="24.2" width="50" height="32" style="fill:none;stroke:#c0c0c0;stroke-opacity:0.96;stroke-width:2.5px" />
+          <g transform="matrix(1,0,0,1,49,27)">
+            <rect x="0" y="0" width="2.5" height="56" transform="rotate(-58)" style="fill:#c0c0c0;fill-opacity:0.96" />
+            <rect x="23" y="-42" width="2.5" height="56" transform="rotate(58)" style="fill:#c0c0c0;fill-opacity:0.96" />
+          </g>
+        </g>
+        <rect x="0" y="0" width="148" height="78" style="fill:none;stroke:#c4c4c4;stroke-opacity:0.9;stroke-width:3.3px" />
+      </g>
+    </symbol>
     <linearGradient id="picon-bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0.5" style="stop-color:#f4f4f4" />
       <stop offset="1" style="stop-color:#e2e2e2" />
@@ -137,11 +150,11 @@
       <stop offset="0.8" style="stop-color:#e8e8e8" />
     </linearGradient>
     <filter id="icon-shadow-m" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="2.3" stdDeviation="2" flood-opacity="0.3" />
+      <feDropShadow dx="0" dy="2.3" stdDeviation="2" flood-opacity="0.4" />
     </filter>
     <filter id="icon-shadow-c-m" color-interpolation-filters="sRGB">
       <feDropShadow dx="-1.8" dy="1.7" stdDeviation="3" flood-opacity="0.3" />
-      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-opacity="0.1" />
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-opacity="0.12" />
     </filter>
     <filter id="icon-shadow-c-w" color-interpolation-filters="sRGB">
       <feDropShadow dx="1" dy="1.1" stdDeviation="2" flood-opacity="0.25" />
@@ -153,12 +166,12 @@
   <g id="system">
     <rect id="wallpaper" x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd" />
   </g>
-  <g id="window" class="w" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="window" class="m" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect id="w-bg" x="501" y="81" width="1298" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
     <g id="titlebar">
       <rect id="t-bg" x="502" y="82" width="1296" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
       <rect id="t-stroke" x="501" y="124" width="1298" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
-      <text id="t-txt" x="502" y="82" dx="857" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949;">e2 SAT Editor</text>
+      <text id="t-txt" x="502" y="82" dx="649" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949;">e2 SAT Editor</text>
       <g id="t-ico-w" style="display:none">
         <image x="513" y="92" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg==" />
       </g>
@@ -371,7 +384,6 @@
               <g class="list-items">
                 <g>
                   <rect x="526" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
-                  <rect class="ico" x="560" y="395" width="151" height="80" style="fill:none" />
                   <rect class="ico" x="570" y="399" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.34,0,0,0.34,588,422)">
                     <rect x="0" y="0" width="273" height="88" style="fill:#f5b4e4" />
@@ -385,7 +397,6 @@
                 </g>
                 <g>
                   <rect x="792" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
-                  <rect class="ico" x="827" y="395" width="151" height="80" style="fill:none" />
                   <rect class="ico" x="837" y="399" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.34,0,0,0.34,856,422)">
                     <rect x="0" y="0" width="273" height="88" style="fill:#f5b4e4" />
@@ -399,7 +410,6 @@
                 </g>
                 <g>
                   <rect x="1058" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
-                  <rect class="ico" x="1093" y="395" width="151" height="80" style="fill:none" />
                   <rect class="ico" x="1103" y="399" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.32,0,0,0.32,1111,420)">
                     <rect x="256" y="21" width="93" height="65" style="fill:#cb0000" />
@@ -410,7 +420,6 @@
                 </g>
                 <g>
                   <rect x="1324" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
-                  <rect class="ico" x="1359" y="395" width="151" height="80" style="fill:none" />
                   <rect class="ico" x="1369" y="399" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.23,0,0,0.23,1401,415)">
                     <rect x="50" y="4" width="180" height="180" style="fill:#881" />
@@ -421,12 +430,15 @@
                 </g>
 
                 <g>
+                  <rect class="focused" x="525" y="579" width="223" height="174" rx="20" style="fill:#0044e2" />
                   <rect x="526" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
-                  <rect class="ico" x="560" y="605" width="151" height="80" style="fill:#ccc" />
-                  <text class="txt" x="526" y="701" dx="106" dy="18" text-anchor="middle" style="font-size:18px">7 Channel</text>
+                  <rect class="ico" x="560" y="605" width="151" height="80" style="fill:none" />
+                  <g class="ico" transform="matrix(0.9,0,0,0.9,566.5,608)">
+                    <use href="#picon" />
+                  </g>
+                  <text class="txt active" x="526" y="701" dx="106" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">7 Channel</text>
                 </g>
                 <g>
-                  <rect class="focused" x="791" y="579" width="223" height="175" rx="20" style="fill:#0044e2" />
                   <rect x="792" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="ico" x="827" y="605" width="151" height="80" style="fill:none" />
                   <rect class="ico" x="837" y="609" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
@@ -437,11 +449,10 @@
                       <text class="color" x="389" y="0" dy="142" style="font-size:100px;stroke:#000;stroke-width:5px" transform="matrix(1,0,0,1.2,0,0)">SPORTS</text>
                     </g>
                   </g>
-                  <text class="txt active" x="792" y="701" dx="110" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">RIBA Sports</text>
+                  <text class="txt" x="792" y="701" dx="110" dy="18" text-anchor="middle" style="font-size:18px;fill:#000">RIBA Sports</text>
                 </g>
                 <g>
                   <rect x="1058" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
-                  <rect class="ico" x="1093" y="605" width="151" height="80" style="fill:none" />
                   <rect class="ico" x="1103" y="609" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.13,0,0,0.13,1109,631)">
                     <ellipse cx="186" cy="116" rx="178" ry="118" style="fill:#64d8b1" />
@@ -454,7 +465,6 @@
                 </g>
                 <g>
                   <rect x="1324" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
-                  <rect class="ico" x="1359" y="605" width="151" height="80" style="fill:none" />
                   <rect class="ico" x="1369" y="609" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.21,0,0,0.21,1385,634)">
                     <rect x="0" y="0" width="462" height="120" rx="48" style="fill:#771" />
@@ -468,7 +478,6 @@
 
                 <g>
                   <rect x="526" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
-                  <rect class="ico" x="560" y="813" width="151" height="80" style="fill:none" />
                   <rect class="ico" x="570" y="818" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.31,0,0,0.31,592,837)">
                     <rect x="0" y="0" width="275" height="102" rx="24" fill="#fff" />
@@ -480,7 +489,6 @@
                 </g>
                 <g>
                   <rect x="792" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
-                  <rect class="ico" x="827" y="813" width="151" height="80" style="fill:none" />
                   <rect class="ico" x="837" y="818" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.21,0,0,0.21,846,846)">
                     <rect x="433" y="0" width="96" height="96" style="fill:#099" />
@@ -491,8 +499,8 @@
                 </g>
                 <g>
                   <rect x="1058" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
-                  <rect class="ico" x="1093" y="813" width="151" height="80" style="fill:#ccc" />
-                  <g class="img" transform="matrix(0.3,0,0,0.3,1058,788)">
+                  <rect class="ico" x="1093" y="813" width="151" height="80" style="fill:none" />
+                  <g class="img" transform="matrix(0.9,0,0,0.9,1099.5,816)">
                     <use href="#picon" />
                   </g>
                   <text class="txt" x="1058" y="911" dx="107" dy="18" text-anchor="middle" style="font-size:18px">Service 1120</text>
@@ -641,9 +649,9 @@
     <rect id="w-shade" x="503" y="83" width="1294" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
-  <g id="dnd" class="f">
+  <g id="dnd" class="m">
     <g id="icon" transform="matrix(1,0,0,1,108,701)">
-      <rect id="icon-canvas" x="100" y="696" rx="10" style="fill:#ececec" />
+      <rect id="icon-canvas" x="11.2" y="-20.5" width="211" height="212" rx="10" style="fill:#101;fill-opacity:0.26;stroke:#b1b2b3;stroke-width:3px" />
       <g id="icon-ico">
         <g style="clip-path:polygon(-4% -56%,104% 30%,104% 104%,-4% 104%)">
           <g style="filter:url(#icon-shadow-m)">
@@ -668,7 +676,8 @@
           <text class="color" x="315" y="0" dy="121" style="font-family:'Times New Roman',Times,sans-serif;font-weight:bold;font-size:144px;letter-spacing:-2px;fill:#fff" transform="matrix(0.45,0,0,1,0,0)">CHANNEL</text>
         </g>
       </g>
-      <text id="icon-txt" class="color" x="0" y="200" dx="116" dy="19" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:23px;letter-spacing:-0.5px;fill:#f5f6f7;text-shadow:0 0.5px 2px #333, 0 2px 13px #888">picon.png</text>
+      <rect class="focused" x="58" y="198" width="116" height="32" rx="5" style="fill:#0044e2" />
+      <text id="icon-txt" class="color" x="0" y="202" dx="116" dy="19" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:23px;letter-spacing:-0.5px;fill:#f5f6f7;text-shadow:0 0.5px 2px #333, 0 2px 13px #888">picon.png</text>
     </g>
   </g>
 
