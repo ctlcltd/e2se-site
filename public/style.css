@@ -532,6 +532,10 @@ mark, .lead {
   font-size: 0.78rem;
 }
 
+#foot-notes b {
+  font-weight: normal;
+}
+
 @media (min-width: 992px) {
   #hwi {
     padding: 3rem 0 1.5rem;

@@ -77,13 +77,20 @@ function load_images(evt) {
 
     platform = platform ?? platform_detect();
 
-    if (! el.parentElement.classList.contains('img-f')) {
+    let img;
+    const id = el.parentElement.className.substr(-1);
+
+    if (id != 'f') {
       color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'd' : 'l');
+
+      if (id == 'e') {
+        img = id;
+      }
     } else {
       color = i++ ? 'd' : 'l';
     }
 
-    const src = '../src/test/' + platform + '-' + (platform == 'w' ? 'l' : color) + platform + '.svg';
+    const src = '../src/test/' + (img ? img + '-' : '') + platform + '-' + (platform == 'w' ? 'l' : color) + platform + '.svg';
     el.setAttribute('src', src);
     el.disabled = false;
   }

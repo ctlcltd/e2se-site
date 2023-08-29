@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1880 1300" style="pointer-events:none;user-select:none">
+
   <defs>
     <symbol id="aad">
       <path d="M37.75 37.75h18.127v-11.5h-18.127c0 0 0-18.127 0-18.127h-11.5v18.127c0 0-18.127 0-18.127 0v11.5h18.127c0 0 0 18.127 0 18.127h11.5v-18.127z"/>
@@ -235,7 +236,6 @@
             
               <rect x="1049" y="224" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
               
-                <rect x="1146.5" y="227" width="24" height="24" rx="8" style="fill:none;filter:#333"/>
                 <rect x="1146.5" y="227" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
@@ -481,7 +481,6 @@
               <text x="483" y="1004" dx="12" dy="22" style="font-size:20px;fill:#000">Name</text>
               
                 <rect x="592.5" y="1007" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);stroke-opacity:0.06;stroke-width:2px"/>
-                <rect x="592.5" y="1007" width="24" height="24" rx="8" style="fill:none;filter:#333"/>
                 
                   
                     <g transform="matrix(0.16,0,0,0.16,599.4000244140625,1009.7000122070312)">
@@ -580,4 +579,5 @@
     <rect x="81" y="81" width="1718" height="1140" rx="15" style="fill:none;stroke:#a6bbb9;stroke-width:1px"/>
     <rect x="83" y="83" width="1714" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px"/>
   </g>
+
 </svg>

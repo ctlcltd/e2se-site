@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1880 1300" style="pointer-events:none;user-select:none">
+
   <defs>
     <symbol id="aad">
       <path d="M37.75 37.75h18.127v-11.5h-18.127c0 0 0-18.127 0-18.127h-11.5v18.127c0 0-18.127 0-18.127 0v11.5h18.127c0 0 0 18.127 0 18.127h11.5v-18.127z"/>
@@ -244,7 +245,6 @@
             
               <rect x="1114" y="257" width="100" height="32" rx="0" style="fill:#e1e1e1;stroke:#a3a3a3;stroke-width:1.2px;filter:none"/>
               
-                <rect x="1206.5" y="261" width="24" height="24" rx="8" style="fill:none;filter:#333"/>
                 <rect x="1206.5" y="261" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
@@ -459,7 +459,7 @@
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
                 <text x="457" y="900" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">48</tspan> <tspan x="572">Rai News 24 HD</tspan> <tspan x="982">17711</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S</tspan></text>
-                <text x="461" y="948" dy="31" style="font-size:19.5px;fill:#000"><tspan x="496">49</tspan> <tspan x="576">Mediaset Italia2 HD</tspan> <tspan x="986">130</tspan> <tspan x="1110">1200</tspan> <tspan x="1231">HD</tspan> <tspan x="1396" style="font-size:18.915px">...</tspan> <tspan x="1429">Mediaset</tspan> <tspan x="1699">DVB-S</tspan></text>
+                <text x="457" y="948" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">49</tspan> <tspan x="572">Mediaset Italia2 HD</tspan> <tspan x="982">130</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,960)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
@@ -511,7 +511,6 @@
               <text x="474" y="1034" dx="12" dy="22" style="font-size:19.5px;fill:#000">Name</text>
               
                 <rect x="569.5" y="1036" width="1329" height="52" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
-                <rect x="569.5" y="1036" width="24" height="24" rx="8" style="fill:none;filter:#333"/>
                 
                   
                   <g style="fill:#676767" transform="matrix(0.23,0,0,0.23,569,1042)">
@@ -573,8 +572,6 @@
                 <text x="1014" y="1089" dx="22" dy="22" style="font-size:19.5px;fill:#000" width="118">Reference</text>
               
               
-                <rect x="1154" y="1092" width="1.2" height="30" style="fill:#d0d0d0"/>
-              
               <g style="opacity:0.25">
                 <rect x="1170" y="1089" width="122" height="32" rx="0" style="fill:#e1e1e1;stroke:#a3a3a3;stroke-width:1.2px;filter:none"/>
                 <text x="1155" y="1089" dx="25" dy="22" style="font-size:19.5px;fill:#000" width="122">Drag&amp;Drop</text>
@@ -607,4 +604,5 @@
     <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:none;stroke:#9bb3b3;stroke-width:1px"/>
     
   </g>
+
 </svg>

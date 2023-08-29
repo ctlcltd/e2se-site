@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1880 1300" style="pointer-events:none;user-select:none">
+
   <defs>
     <symbol id="aad">
       <path d="M37.75 37.75h18.127v-11.5h-18.127c0 0 0-18.127 0-18.127h-11.5v18.127c0 0-18.127 0-18.127 0v11.5h18.127c0 0 0 18.127 0 18.127h11.5v-18.127z"/>
@@ -83,12 +84,12 @@
   
     <rect x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd"/>
   
-  <g style="font-family:Sans-Serif,system-ui,sans-serif">
+  <g style="font-family:'Sans-Serif',system-ui,sans-serif">
     <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:#f9f9f9;stroke:#acc6c3;stroke-width:1px"/>
     
       <rect x="81" y="81" width="1718" height="48" rx="0" style="fill:#fafafa;stroke:#e8e8e8;stroke-width:2px;clip-path:inset(1px 1px 0px)"/>
       <rect x="81" y="127" width="1718" height="1" style="fill:none;stroke:#cbcdcc;stroke-width:2px;clip-path:inset(0px 1px)"/>
-      <text x="82" y="83.5" dx="857" dy="28" text-anchor="middle" style="font-family:Sans-Serif,system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#5a5a5a">e2 SAT Editor</text>
+      <text x="79" y="83.5" dx="857" dy="28" text-anchor="middle" style="font-family:'Sans-Serif',system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#5a5a5a">e2 SAT Editor</text>
       
       
       
@@ -241,7 +242,6 @@
             
               <rect x="1134" y="264" width="100" height="34" rx="3" style="fill:url(#bqf);stroke:#ababab;stroke-width:1px;filter:none"/>
               
-                <rect x="1226.5" y="269" width="24" height="24" rx="8" style="fill:none;filter:#333"/>
                 <rect x="1226.5" y="269" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
@@ -508,7 +508,6 @@
               <text x="474" y="1042" dx="12" dy="22" style="font-size:20px;fill:#000">Name</text>
               
                 <rect x="588.5" y="1045" width="1329" height="50" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
-                <rect x="588.5" y="1045" width="24" height="24" rx="8" style="fill:none;filter:#333"/>
                 
                   
                   
@@ -538,7 +537,7 @@
               <rect x="1333" y="1041" width="126" height="31" rx="4" style="fill:#68c5ff;stroke:#d1d2d2;stroke-width:1px"/>
               <text x="1333" y="1042" dx="62" dy="22" text-anchor="middle" style="font-size:19.5px;fill:#fff;fill-opacity:0.9">Highlight</text>
             
-            <g transform="matrix(0.23,0,0,0.23,1760,1055)">
+            <g transform="matrix(0.23,0,0,0.23,1767,1052)">
               <use href="#cce" style="fill:#666"/>
             </g>
           
@@ -566,22 +565,20 @@
                 <text x="826" y="1090.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#000">New Service</text>
               </g>
               
-                <rect x="1008" y="1099" width="135" height="32" rx="3" style="fill:url(#bqf);stroke:#ababab;stroke-width:1px;filter:none"/>
-                <text x="1008" y="1100" dx="22" dy="22" style="font-size:20px;fill:#000">Reference</text>
+                <rect x="1008" y="1099" width="135" height="34" rx="3" style="fill:url(#bqf);stroke:#ababab;stroke-width:1px;filter:none"/>
+                <text x="1008" y="1100.5" dx="22" dy="22" style="font-size:20px;fill:#000">Reference</text>
               
-              
-                <rect x="1157" y="1104" width="4" height="24" style="fill:#fff;stroke:#dfdfdf;stroke-width:2px;clip-path:inset(1px 1px 1px 0px)"/>
               
               <g style="opacity:0.25">
-                <rect x="1171" y="1099" width="147" height="32" rx="3" style="fill:url(#bqf);stroke:#ababab;stroke-width:1px;filter:none"/>
-                <text x="1171" y="1100" dx="25" dy="22" style="font-size:20px;fill:#000">Drag&amp;Drop</text>
+                <rect x="1171" y="1099" width="147" height="34" rx="3" style="fill:url(#bqf);stroke:#ababab;stroke-width:1px;filter:none"/>
+                <text x="1171" y="1100.5" dx="25" dy="22" style="font-size:20px;fill:#000">Drag&amp;Drop</text>
               </g>
               
                 <rect x="1685" y="1099" width="100" height="34" rx="3" style="fill:url(#bqf);stroke:#ababab;stroke-width:1px;filter:none"/>
                 <g transform="matrix(0.38,0,0,0.38,1687,1103)">
                   <use href="#skh" style="fill:#545454" x="15"/>
                 </g>
-                <text x="1675" y="1101" dx="46" dy="22" style="font-size:20px;fill:#000"><tspan>F</tspan>ind<tspan style="font-size:15px">…</tspan></text>
+                <text x="1675" y="1101.5" dx="46" dy="22" style="font-size:20px;fill:#000"><tspan>F</tspan>ind<tspan style="font-size:15px">…</tspan></text>
               
             
           
@@ -604,4 +601,5 @@
     <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:none;stroke:#9bb1ab;stroke-width:1px"/>
     
   </g>
+
 </svg>

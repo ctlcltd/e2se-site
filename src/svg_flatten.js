@@ -38,7 +38,7 @@ function round(value) {
 
 
 
-const excluded = [ 'block-size', 'inline-size', 'overflow-x', 'overflow-y', 'perspective-origin', 'text-decoration-line', 'text-wrap', 'transform-origin', 'zoom', '-webkit-text-decorations-in-effect' ];
+const excluded = [ 'block-size', 'd', 'inline-size', 'overflow-x', 'overflow-y', 'perspective-origin', 'text-decoration-line', 'text-wrap', 'transform-origin', 'zoom', '-webkit-text-decorations-in-effect' ];
 const attributes = [ 'x', 'y', 'cx', 'cy', 'dx', 'dy', 'width', 'height', 'rx', 'ry', 'transform', 'style' ];
 const ordered = [ 'display', 'x', 'y', 'width', 'height', 'rx', 'ry', 'font-family', 'font-weight', 'font-size', 'letter-spacing', 'word-spacing', 'fill', 'fill-opacity', 'stroke', 'stroke-opacity', 'stroke-width', 'stroke-dasharray', 'text-decoration', 'text-shadow', 'transform', 'clip-path', 'filter', 'opacity' ];
 
@@ -270,22 +270,22 @@ for (const el of elements) {
 //
 // fix text x pos  win | fusion
 // 
-// .tree text, .tree text > tspan
+// .list text, .list text > tspan
 
 if (/w|f/.test(root.getAttribute('_class'))) {
   root.setAttribute('class', root.getAttribute('_class'));
 
-  elements = svg.querySelectorAll('g[_class="tree"]');
+  elements = svg.querySelectorAll('g[_class="list"]');
 
   for (const el of elements) {
     el.closest('g[_id="split-end"]').setAttribute('id', 'split-end');
-    el.setAttribute('class', 'tree');
+    el.setAttribute('class', 'list');
 
     let m = getComputedStyle(el.closest('g[_id="split-end"]')).transform;
     m = m.substr(7, m.length - 8).split(', ');
     m = { e: parseFloat(m[4]), f: parseFloat(m[5]) };
 
-    for (const child of el.querySelectorAll('g[_class="tree-cols"], g[_class="tree-items"]')) {
+    for (const child of el.querySelectorAll('g[_class="list-cols"], g[_class="items"]')) {
       child.setAttribute('class', child.getAttribute('_class'));
       let cm = getComputedStyle(child).transform;
       cm = cm.substr(7, cm.length - 8).split(', ');
@@ -333,6 +333,7 @@ if (/w/.test(root.getAttribute('_class'))) {
   {
     const txt = root.querySelector('text[_id="t-txt"]');
     txt.setAttribute('id', txt.getAttribute('_id'));
+    const fix = svg.getAttribute('id') === 'piconseditor' ? 502 : 82;
 
     let tm = getComputedStyle(txt).transform;
     tm = tm.substr(7, tm.length - 8).split(', ');
@@ -344,7 +345,7 @@ if (/w/.test(root.getAttribute('_class'))) {
     matrix.e = dpos.dx + tm.e;
     matrix.f = dpos.dy + tm.f;
 
-    txt.setAttribute('x', 82);
+    txt.setAttribute('x', fix);
     txt.setAttribute('dx', matrix.e);
     // txt.setAttribute('dy', matrix.f);
     txt.removeAttribute('text-anchor');
@@ -354,6 +355,17 @@ if (/w/.test(root.getAttribute('_class'))) {
 
   root.removeAttribute('class');
 }
+
+
+// 
+// fix tspan text-decoration  win
+
+// 
+// fix font-family quotes  fusion
+
+// 
+// fix fill: none | stroke: none | filter: none
+
 
 
 elements = svg.querySelectorAll('g *');
