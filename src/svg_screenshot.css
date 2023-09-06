@@ -18,6 +18,8 @@
 .dm #w-bg, .dm #menu-bg { fill: #313333 !important; }
 .dm #sb-bg, .dm #tb-bg, .dm #main-bg { fill: #2f3131 !important; }
 
+#channelbook .dm#addchannel #w-stroke { stroke: #020202 !important; }
+
 .dm #ss-bg, .dm #tb-corner .bg { fill: #485352 !important; }
 
 .dm .list-view .bg { fill: #171717 !important; }
@@ -25,6 +27,11 @@
 .dm #tree-tool .bg { fill: #313837 !important; }
 .dm #list-tool .bg { fill: #202121 !important; }
 .dm .ts-bg { fill: #101010 !important; }
+
+.dm #tbar-bg { fill: #2f3131 !important; }
+.dm #tbar-stroke { fill: #3f4040 !important; }
+
+#channelbook .dm #ch-list .bg { fill: #2d2e2e !important; }
 
 .dm .btn-bg { fill: #fff !important; fill-opacity: 0.24 !important; stroke: url(#btn-stroke-d-m) !important; }
 .dm .btn-bg { filter: url(#btn-shadow-d-m) !important; }
@@ -59,19 +66,23 @@
 .dm #tb-arrows .arrow use { fill: #fff !important; stroke: #fff !important; }
 .dm .menu-item .ico use { fill: #c7c8c8 !important; }
 .dm #split-start .ico use { fill: #ced0d0 !important; }
-.dm #split-end .ico use, #piconseditor .dm #main .ico use { fill: #c7c7c7 !important; }
+.dm #split-end .ico use, #piconseditor .dm #main .ico use, .dm .ch-item .ico use { fill: #c7c7c7 !important; }
+.dm #btn-collapse .arrow use, .dm #btn-collapse .txt { fill: #dfe0e0 !important; }
 
 .dm .tb-tab.active .bg { fill: #2a4f7b !important; stroke: #234065 !important; }
 .dm #tb-start { fill: #3a5165 !important; }
 .dm #tb-end { fill: #3a3a3a !important; }
 
-.dm .btn-caret rect { fill: url(#btn-bg-a-d-m) !important; stroke: url(#btn-stroke-d-m) !important; }
+.dm .btn-caret rect, .dm .btn-flag rect { fill: url(#btn-bg-a-d-m) !important; stroke: url(#btn-stroke-d-m) !important; }
 
-.dm #split ellipse { fill: #444646 !important; }
+.dm #split ellipse, .dm #ch-split ellipse { fill: #444646 !important; }
 .dm #split-start .focused { fill: #596362 !important; }
-.dm #split-end .focused, #piconseditor .dm .list-view .focused, #piconseditor .dm #icon .focused { fill: #023acd !important; }
+.dm #split-end .focused, #piconseditor .dm .list-view .focused, #piconseditor .dm #icon .focused, #channelbook .dm #ch-end .focused { fill: #023acd !important; }
+#channelbook .dm #ch-list .focused { fill: #444545 !important; }
+#channelbook .dm #ch-start .focused { fill: #303030 !important; }
 
 .dm .sbv .xy { fill: #8b8b8b !important; }
+#channelbook .dm .sbh .xy, #channelbook .dm .sbv .xy { fill: #fff !important; }
 
 .dm #tb-arrows { transform: translate(-2px, 0); }
 
@@ -83,11 +94,11 @@
 .w #t-ctrs-w, .w #t-ico-w { display: block !important; }
 
 .w #menubar, .w .arrow-w { display: block !important; }
-.w #w-shade, .w #mb-bg, .w #split ellipse, .w .arrow-m { display: none !important; }
+.w #w-shade, .w #mb-bg, .w #split ellipse, .w #ch-split ellipse, .w .arrow-m { display: none !important; }
 
 .w #w-bg, .w #w-stroke, .w #w-shade, .w #t-bg, .w #sb-bg { rx: 0; }
 
-.w .btn-caret .bg { fill: none !important; stroke: none !important; }
+.w .btn-caret .bg, .w .btn-flag .bg { fill: none !important; stroke: none !important; }
 
 .w .divid { width: 1.2px; fill: #d0d0d0 !important; stroke: none !important; }
 .w .menu-divid .divid { height: 50px; y: 214px; }
@@ -97,6 +108,8 @@
 .w #w-bg { fill: #f0f0f0 !important; stroke: #a2b5ba !important; }
 .w #w-stroke { stroke: #9bb3b3 !important; }
 .w #t-bg { height: 92.5px; fill: #fff !important; stroke: none !important; }
+
+#channelbook .w #t-bg { height: 58.5px; }
 
 .w #sb-bg, .w #tb-bg, .w #tb-corner .bg, .w #menu-bg, .w #ss-bg { fill: none !important; }
 .w #main-bg, .w #tree-tool .bg, .w #list-tool .bg { fill: #f0f0f0 !important; }
@@ -142,6 +155,11 @@
 .w #sb-stroke, .w #menu-stroke, .w #main-stroke { stroke-width: 2.2px !important; }
 .w #sb-stroke, #menu-stroke, .w #main-stroke { stroke: #d0d0d0 !important; }
 
+.w #tbar-bg { fill: #f0f0f0 !important; }
+.w #tbar-stroke { height: 1.2px; fill: #d0d0d0 !important; }
+
+#channelbook .w #ch-list .bg { fill: none !important; }
+
 .w .btn-bg, .w .tb-button rect, .w .box-button .bg { rx: 0px !important; fill: #e1e1e1 !important; stroke: #a3a3a3 !important; stroke-width: 1.2px !important; }
 .w .btn-bg { filter: none !important; }
 /* safari bug: radius undefined :workaround: rx="1" style="rx:0" */
@@ -172,6 +190,9 @@
 .w .box-title text { font-size: 19px !important; transform: translate(-2px, 1px); }
 .w .box-button { transform: translate(16px, -5px); }
 #piconseditor .w .box-button { transform: translate(12px, -5px); }
+.w #btn-collapse .box-button { transform: translate(-16px, 3.5px); }
+.w #btn-collapse .bg { width: 136px; }
+.w #btn-collapse .txt { font-weight: normal !important; transform: translate(-12px, -4px); }
 
 .w #split rect { width: 4px; }
 .w #split-end { transform: translate(-4px, 0); }
@@ -182,16 +203,22 @@
 .w .list { transform: translate(0, 2px); }
 #screenshot .w .list-view { height: 591px; transform: translate(0, 10px); }
 #piconseditor .w .list-view { transform: translate(0, -6px); }
+#channelbook .w #ch-end .list-view { transform: translate(0, 10px); }
 .w .list-cols text { font-size: 18.5px !important; transform: translate(1px, 7px); }
 .w .list-cols .bg { height: 36px; fill: #fff !important; stroke: none !important; stroke-width: 0 !important; clip-path: none !important; }
 
 .w .ruler { width: 3px; height: 37px; fill: #f0f0f0 !important; stroke: #eee !important; transform: translate(0, -4px); clip-path: inset(1px 1px 1px 0); }
 
-.w .list .focused { fill: #cde8ff !important; }
-.w .list text.active { fill: #000 !important; }
+#channelbook .w .focused { fill: #ccc !important; }
+#screenshot .w .list .focused, #channelbook .w #ch-end .focused { fill: #cde8ff !important; }
+.w text.active { fill: #000 !important; }
 
 .w .list .items { transform: translate(0, 3px); }
 .w .list .items text { font-size: 19.5px !important; transform: translate(-4px, 0); }
+#channelbook .w #ch-start .items text { transform: translate(-3px, 1px); }
+#channelbook .w #ch-end .items text { transform: translate(-3px, 0); }
+
+#channelbook .w #ch-list text { font-size: 21px !important; transform: translate(-3px, 0); }
 
 .w #tree-tool, .w #list-tool { transform: translate(0, -18px); }
 #channelbook .w #tree-tool, #channelbook .w #list-tool { transform: translate(0, -23px); }
@@ -207,6 +234,7 @@
 
 .w .tree-view .arrow-w { fill: #636363; stroke: #636363; stroke-width: 4px; transform: matrix(0.22, 0, 0, 0.22, -3, -12); }
 .w .btn-caret .arrow-w { fill: #676767; transform: matrix(0.23, 0, 0, 0.23, 0, 7); }
+.w #btn-collapse .arrow-w { fill: #676767; stroke: #636363; stroke-width: 4px; transform: matrix(-0.23, 0, 0, -0.23, -9, 15); }
 
 .w .btn-txt { transform: translate(0, 1px); }
 .w .qe-ti { transform: translate(12px, 2px); }
@@ -288,6 +316,15 @@
 #piconseditor .w .list .sbv .ve { y: 944px; }
 #piconseditor .w .list .sbv .xy { y: 344px; height: 28px; }
 
+#channelbook .w #ch-start .sbv { transform: translate(-6px, -2px); }
+#channelbook .w #ch-start .sbv .xy { x: 488px; y: 344px; height: 28px; }
+
+#channelbook .w #ch-end .sbv { transform: translate(-13px, -2px); }
+#channelbook .w #ch-end .sbv .xy { x: 1049px; y: 102px; height: 28px; }
+
+#channelbook .w #ch-end .sbh { transform: translate(-2px, -12px); }
+#channelbook .w #ch-end .sbh .xy { x: 537px; y: 569px; }
+
 .w #icon-ico rect { rx: 0 !important; stroke: #8e8e8e; stroke-width: 1.1px; }
 .w #icon-shape { width: 137px; height: 173px; fill: #f5f6f7 !important; }
 .w #icon-clip { x: 142px; width: 52px; height: 56px; fill: url(#icon-clip-bg-w) !important; stroke: #444 !important; stroke-width: 3px; }
@@ -345,11 +382,11 @@
 .f #t-ctrs-l { display: block !important; }
 
 .f #menubar, .f .arrow-l { display: block !important; }
-.f #w-shade, .f #split ellipse, .f .arrow-m { display: none !important; }
+.f #w-shade, .f #split ellipse, .f #ch-split ellipse, .f .arrow-m { display: none !important; }
 
 .f #w-bg, .f #w-stroke, .f #w-shade, .f #t-bg, .f #sb-bg { rx: 0; }
 
-.f .btn-caret .bg { fill: none !important; stroke: none !important; }
+.f .btn-caret .bg, .f .btn-flag .bg { fill: none !important; stroke: none !important; }
 
 .f #w-bg { fill: #f9f9f9 !important; stroke: #acc6c3 !important; }
 .f #w-stroke { stroke: #9bb1ab !important; }
@@ -668,6 +705,8 @@
 
 
 #piconseditor .list .sbh, #piconseditor .sbr { display: none !important; }
+
+.disabled { opacity: 0.25; }
 
 
 

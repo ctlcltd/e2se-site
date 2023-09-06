@@ -133,7 +133,7 @@
   </g>
   <g id="cropbox">
     <rect x="81" y="81" width="1718" height="1140" style="fill:none;stroke:red;stroke-width:2px" />
-    <g id="window" class="m" transform="matrix(1.32,0,0,1.32,-478,-222)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif;opacity:0.8">
+    <g id="window" class="w" transform="matrix(1.34,0,0,1.34,-530,-230)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif;opacity:0.8">
       <rect id="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
       <g id="w-inner">
         <g id="menu">
@@ -283,7 +283,7 @@
           </g>
           <g id="split">
             <rect class="bg" x="462" y="291" width="11" height="836" style="fill:none" />
-            <ellipse cx="467.4" cy="708.4" rx="4" style="fill:#ccc" />
+            <ellipse cx="467.4" cy="708.4" rx="4" style="fill:#dadbdb" />
           </g>
           <g id="split-end">
             <rect id="se-bg" class="bg" x="473" y="291" width="1325" height="835" style="fill:none" />
@@ -316,51 +316,18 @@
                 <rect class="bg" x="473" y="366" width="1325" height="687" style="fill:#fff" />
                 <g class="items">
                   <rect class="focused" x="473" y="707" width="1325" height="49" style="fill:#0044e2" />
-                  <text x="473" y="366" dy="31" style="font-size:19px;fill:#000"><tspan x="500">38</tspan> <tspan x="580">Giallo</tspan> <tspan x="990">4322</tspan> <tspan x="1114">1000</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">TVN</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,884,378)">
-                    <use href="#service-blacklist" style="fill:#545454" />
-                  </g>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,1364,378)">
-                    <use href="#crypted" style="fill:#545454" />
-                  </g>
-                  <text x="473" y="415" dy="31" style="font-size:19px;fill:#000"><tspan x="500">39</tspan> <tspan x="580">TOPcrime HD</tspan> <tspan x="990">132</tspan> <tspan x="1114">1200</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">Mediaset</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,884,427)">
-                    <use href="#service-blacklist" style="fill:#545454" />
-                  </g>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,1364,427)">
-                    <use href="#crypted" style="fill:#545454" />
-                  </g>
-                  <text x="473" y="464" dy="31" style="font-size:19px;fill:#000"><tspan x="500">40</tspan> <tspan x="580">Boing HD</tspan> <tspan x="990">126</tspan> <tspan x="1114">1200</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1434">Mediaset</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,1364,476)">
-                    <use href="#crypted" style="fill:#545454" />
-                  </g>
-                  <text x="473" y="512" dy="31" style="font-size:19px;fill:#000"><tspan x="500">41</tspan> <tspan x="580">K2</tspan> <tspan x="990">15204</tspan> <tspan x="1114">300</tspan> <tspan x="1235">H.264</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">TVN Discovery Group</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,1364,524)">
-                    <use href="#crypted" style="fill:#545454" />
-                  </g>
-                  <text x="473" y="561" dy="31" style="font-size:19px;fill:#000"><tspan x="500">42</tspan> <tspan x="580">Rai Gulp HD</tspan> <tspan x="990">17712</tspan> <tspan x="1114">12500</tspan> <tspan x="1235">HD</tspan> <tspan x="1400"></tspan> <tspan x="1434">Rai</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <text x="473" y="610" dy="31" style="font-size:19px;fill:#000"><tspan x="500">43</tspan> <tspan x="580">Rai YoYo HD</tspan> <tspan x="990">8511</tspan> <tspan x="1114">12400</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">RAI</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,1364,622)">
-                    <use href="#crypted" style="fill:#545454" />
-                  </g>
-                  <text x="473" y="658" dy="31" style="font-size:19px;fill:#000"><tspan x="500">44</tspan> <tspan x="580">Frisbee</tspan> <tspan x="990">15205</tspan> <tspan x="1114">300</tspan> <tspan x="1235">H.264</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">TVN Discovery Group</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,1364,670)">
-                    <use href="#crypted" style="fill:#545454" />
-                  </g>
-                  <text class="active" x="473" y="707" dy="31" style="font-size:19px;fill:#fff"><tspan x="500">45</tspan> <tspan x="580">NASA TV HD</tspan> <tspan x="990">504</tspan> <tspan x="1114">900</tspan> <tspan x="1235">TV</tspan> <tspan x="1434">NoName</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <text x="473" y="756" dy="31" style="font-size:19px;fill:#000"><tspan x="500">46</tspan> <tspan x="580">Cartoonito HD</tspan> <tspan x="990">133</tspan> <tspan x="1114">1200</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">Mediaset</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,1364,768)">
-                    <use href="#crypted" style="fill:#545454" />
-                  </g>
-                  <text x="473" y="805" dy="31" style="font-size:19px;fill:#000"><tspan x="500">47</tspan> <tspan x="580">Super!</tspan> <tspan x="990">1327</tspan> <tspan x="1114">15700</tspan> <tspan x="1235">H.264</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">M-ThreeSatcom Srl</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,1364,817)">
-                    <use href="#crypted" style="fill:#545454" />
-                  </g>
-                  <text x="473" y="854" dy="31" style="font-size:19px;fill:#000"><tspan x="500">48</tspan> <tspan x="580">Rai News 24 HD</tspan> <tspan x="990">17711</tspan> <tspan x="1114">12500</tspan> <tspan x="1235">HD</tspan> <tspan x="1434">Rai</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <text x="473" y="902" dy="31" style="font-size:19px;fill:#000"><tspan x="500">49</tspan> <tspan x="580">Mediaset Italia2 HD</tspan> <tspan x="990">130</tspan> <tspan x="1114">1200</tspan> <tspan x="1235">HD</tspan> <tspan class="ellipsis" x="1400" style="font-size:15px">...</tspan> <tspan x="1433">Mediaset</tspan> <tspan x="1703">DVB-S</tspan></text>
-                  <g class="ico" transform="matrix(0.38,0,0,0.38,1364,914)">
-                    <use href="#crypted" style="fill:#545454" />
-                  </g>
+                  <text x="473" y="366" dy="31" style="font-size:19px;fill:#000"><tspan x="500">38</tspan> <tspan x="580">Giallo</tspan></text>
+                  <text x="473" y="415" dy="31" style="font-size:19px;fill:#000"><tspan x="500">39</tspan> <tspan x="580">TOPcrime HD</tspan></text>
+                  <text x="473" y="464" dy="31" style="font-size:19px;fill:#000"><tspan x="500">40</tspan> <tspan x="580">Boing HD</tspan></text>
+                  <text x="473" y="512" dy="31" style="font-size:19px;fill:#000"><tspan x="500">41</tspan> <tspan x="580">K2</tspan></text>
+                  <text x="473" y="561" dy="31" style="font-size:19px;fill:#000"><tspan x="500">42</tspan> <tspan x="580">Rai Gulp HD</tspan></text>
+                  <text x="473" y="610" dy="31" style="font-size:19px;fill:#000"><tspan x="500">43</tspan> <tspan x="580">Rai YoYo HD</tspan></text>
+                  <text x="473" y="658" dy="31" style="font-size:19px;fill:#000"><tspan x="500">44</tspan> <tspan x="580">Frisbee</tspan></text>
+                  <text class="active" x="473" y="707" dy="31" style="font-size:19px;fill:#fff"><tspan x="500">45</tspan> <tspan x="580">NASA TV HD</tspan></text>
+                  <text x="473" y="756" dy="31" style="font-size:19px;fill:#000"><tspan x="500">46</tspan> <tspan x="580">Cartoonito HD</tspan></text>
+                  <text x="473" y="805" dy="31" style="font-size:19px;fill:#000"><tspan x="500">47</tspan> <tspan x="580">Super!</tspan></text>
+                  <text x="473" y="854" dy="31" style="font-size:19px;fill:#000"><tspan x="500">48</tspan> <tspan x="580">Rai News 24 HD</tspan></text>
+                  <text x="473" y="902" dy="31" style="font-size:19px;fill:#000"><tspan x="500">49</tspan> <tspan x="580">Mediaset Italia2 HD</tspan></text>
                   <text x="473" y="951" dy="31" style="font-size:19px;fill:#000"><tspan x="500">50</tspan> <tspan x="580">Explorer HD Channel</tspan> <tspan x="990">13534</tspan> <tspan x="1114">6900</tspan> <tspan x="1235">HD</tspan> <tspan x="1433">SkyItalia</tspan> <tspan x="1703">DVB-S</tspan></text>
                   <text x="473" y="999" dy="31" style="font-size:19px;fill:#000"><tspan x="500">51</tspan> <tspan x="580">TGCOM24 HD</tspan> <tspan x="990">128</tspan> <tspan x="1114">1200</tspan> <tspan x="1235">HD</tspan> <tspan x="1433">Mediaset</tspan> <tspan x="1703">DVB-S</tspan></text>
                 </g>
@@ -440,14 +407,14 @@
     </g>
   </g>
 
-  <g id="addchannel" transform="matrix(1.32,0,0,1.32,451,213)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
-    <rect id="w-bg" x="1" y="1" width="1061" height="650" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
+  <g id="addchannel" class="w" transform="matrix(1.34,0,0,1.34,410,213)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+    <rect id="w-bg" x="1" y="1" width="1061" height="650" rx="15" style="fill:#f3f4f4;stroke:#a6bbb9;stroke-width:1px" />
     <g id="titlebar">
       <rect id="t-bg" x="2" y="2" width="1059" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
-      <rect id="t-stroke" x="1" y="43" width="1061" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
+      <rect id="t-stroke" x="1" y="44" width="1061" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
       <text id="t-txt" x="2" y="2" dx="529" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949;">Add Channel</text>
       <g id="t-ico-w" style="display:none">
-        <image x="93" y="92" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg==" />
+        <image x="13" y="12" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg==" />
       </g>
       <g id="t-ctrs-m">
         <ellipse cx="21" cy="23" rx="8.8" style="fill:#ff5f5a;stroke:#000;stroke-opacity:0.1" />
@@ -483,34 +450,32 @@
       </g>
     </g>
     <g id="addchannel-inner">
-      <g id="btn-collapse">
+      <g id="btn-collapse" transform="matrix(1,0,0,1,940,44)">
         <g class="box-button">
-          <g transform="matrix(1,0,0,1,940,44)">
-            <rect class="bg" x="0" y="0" width="38" height="32" rx="1" style="rx:0;fill:none" />
-            <g class="arrow" transform="matrix(1,0,0,1,29,6)">
-              <g class="arrow-m">
-                <g class="arrow-down" transform="matrix(-0.26,0,0,0.26,2,3)">
-                  <use href="#arrow-m" style="fill:#bfbfbf" />
-                </g>
-              </g>
-              <g class="arrow-w" style="display:none">
-                <use href="#arrow-t-w" />
-              </g>
-              <g class="arrow-l" style="display:none">
-                <use href="#arrow-l" />
+          <rect class="bg" x="0" y="0" width="100" height="26" rx="1" style="rx:0;fill:none" />
+          <g class="arrow" transform="matrix(1,0,0,1,29,6)">
+            <g class="arrow-m">
+              <g class="arrow-down" transform="matrix(-0.26,0,0,0.26,2,3)">
+                <use href="#arrow-m" style="fill:#252525" />
               </g>
             </g>
-            <text class="txt" x="36" y="7" dy="15" style="font-weight:bold;font-size:16.5px">collapse</text>
+            <g class="arrow-w" style="display:none">
+              <use href="#arrow-t-w" />
+            </g>
+            <g class="arrow-l" style="display:none">
+              <use href="#arrow-l" />
+            </g>
           </g>
+          <text class="txt" x="36" y="7" dy="15" style="font-weight:bold;font-size:16.5px;fill:#252525">collapse</text>
         </g>
       </g>
       <g id="ch-list">
-        <rect class="bg" x="0" y="75" width="228" height="507" style="fill:#fff" />
+        <rect class="bg" x="1" y="75" width="227" height="507" style="fill:#e7e8e8" />
         <g class="items">
           <text x="1" y="76" dx="22" dy="38" style="font-size:22.5px">Services</text>
           <text x="1" y="136" dx="22" dy="38" style="font-size:22.5px">Bouquets</text>
           <text x="1" y="197" dx="22" dy="38" style="font-size:22.5px">Positions</text>
-          <rect class="focused" x="1" y="257" width="228" height="60" style="fill:#d5d6d6" />
+          <rect class="focused" x="1" y="257" width="227" height="60" style="fill:#d5d6d6" />
           <text class="active" x="1" y="257" dx="22" dy="38" style="font-size:22.5px">Providers</text>
           <text x="1" y="318" dx="22" dy="38" style="font-size:22.5px">Resolution</text>
           <text x="1" y="379" dx="22" dy="38" style="font-size:22.5px">Encryption</text>
@@ -522,32 +487,54 @@
           <g class="list-view">
             <rect class="bg" x="228" y="75" width="273" height="507" style="fill:#fff" />
             <g class="items">
-              <text x="255" y="69" dy="29" style="font-size:19.5px">M.-Three satcom</text>
-              <text x="255" y="103" dy="29" style="font-size:19.5px">M7 Group</text>
-              <text x="255" y="136" dy="29" style="font-size:19.5px">MB Satellite</text>
-              <text x="255" y="170" dy="29" style="font-size:19.5px">MIT-xperts GmbH</text>
-              <text x="255" y="203" dy="29" style="font-size:19.5px">MTHREE SATCOM</text>
-              <text x="255" y="236" dy="29" style="font-size:19.5px">MX1</text>
-              <text x="255" y="269" dy="29" style="font-size:19.5px">Mediaset</text>
-              <text x="255" y="303" dy="29" style="font-size:19.5px">NOVA</text>
-              <rect class="focused" x="228" y="341.5" width="273" height="34" style="fill:#d5d6d6" />
-              <text class="active" x="255" y="336" dy="29" style="font-size:19.5px">NoName</text>
-              <text x="255" y="370" dy="29" style="font-size:19.5px">ONT TUNISIA</text>
-              <text x="255" y="403" dy="29" style="font-size:19.5px">PolastBox</text>
-              <text x="255" y="436" dy="29" style="font-size:19.5px">RAI</text>
-              <text x="255" y="469" dy="29" style="font-size:19.5px">RBN Media</text>
-              <text x="255" y="503" dy="29" style="font-size:19.5px">Radio Mojdeh</text>
-              <text x="255" y="536" dy="29" style="font-size:19.5px">Radio RTR</text>
+              <text x="255" y="75" dy="29" style="font-size:19.5px">M.-Three satcom</text>
+              <text x="255" y="108" dy="29" style="font-size:19.5px">M7 Group</text>
+              <text x="255" y="141" dy="29" style="font-size:19.5px">MB Satellite</text>
+              <text x="255" y="175" dy="29" style="font-size:19.5px">MIT-xperts GmbH</text>
+              <text x="255" y="208" dy="29" style="font-size:19.5px">MTHREE SATCOM</text>
+              <text x="255" y="241" dy="29" style="font-size:19.5px">MX1</text>
+              <text x="255" y="275" dy="29" style="font-size:19.5px">Mediaset</text>
+              <text x="255" y="308" dy="29" style="font-size:19.5px">NOVA</text>
+              <rect class="focused" x="228" y="347" width="273" height="34" style="fill:#ebebeb" />
+              <text class="active" x="255" y="341" dy="29" style="font-size:19.5px">NoName</text>
+              <text x="255" y="375" dy="29" style="font-size:19.5px">ONT TUNISIA</text>
+              <text x="255" y="408" dy="29" style="font-size:19.5px">PolastBox</text>
+              <text x="255" y="441" dy="29" style="font-size:19.5px">RAI</text>
+              <text x="255" y="475" dy="29" style="font-size:19.5px">RBN Media</text>
+              <text x="255" y="508" dy="29" style="font-size:19.5px">Radio Mojdeh</text>
+              <text x="255" y="541" dy="29" style="font-size:19.5px">Radio RTR</text>
             </g>
+          </g>
+          <g class="sbv">
+            <rect class="bg" x="487" y="75" width="14" height="507" style="display:none" />
+            <rect class="btn-bg vs" x="487" y="75" width="14" height="14" style="display:none" />
+            <g class="arrow as" transform="matrix(1,0,0,1,487,75)">
+              <g class="arrow-w" style="display:none">
+                <use href="#arrow-w" />
+              </g>
+              <g class="arrow-l" style="display:none">
+                <use href="#arrow-l" />
+              </g>
+            </g>
+            <rect class="btn-bg ve" x="487" y="568" width="14" height="14" style="display:none" />
+            <g class="arrow ae" transform="matrix(1,0,0,1,487,568)">
+              <g class="arrow-w" style="display:none">
+                <use href="#arrow-w" />
+              </g>
+              <g class="arrow-l" style="display:none">
+                <use href="#arrow-l" />
+              </g>
+            </g>
+            <rect class="xy" x="487" y="299" width="12" height="94" rx="7" style="fill:#000;fill-opacity:0.46" />
           </g>
         </g>
         <g id="ch-split">
           <rect class="bg" x="501" y="75" width="11" height="507" style="fill:none" />
-          <ellipse cx="506.4" cy="329.4" rx="4" style="fill:#ccc" />
+          <ellipse cx="506.4" cy="329.4" rx="4" style="fill:#dadbdb" />
         </g>
         <g id="ch-end">
           <g class="list-cols">
-            <rect class="bg" x="512" y="75" width="549" height="26" style="fill:#ececec;fill:#ccc" />
+            <rect class="bg" x="512" y="75" width="549" height="26" style="fill:#ececec" />
             <text x="512" y="75" dy="18" style="font-size:17px;fill:#000"><tspan x="518">Index</tspan> <tspan x="609">Name</tspan> <tspan x="874">Type</tspan> <tspan x="980">Provider</tspan></text>
             <rect class="ruler" x="601" y="78" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
             <rect class="ruler" x="866" y="78" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
@@ -556,7 +543,7 @@
           <g class="list-view">
             <rect class="bg" x="512" y="101" width="549" height="481" style="fill:#fff" />
             <g class="items">
-              <rect class="focused" x="512" y="300.5" width="549" height="34" style="fill:#0044e2" />
+              <rect class="focused" x="512" y="300" width="549" height="34" style="fill:#0044e2" />
               <text class="disabled" x="514" y="95" dy="29" style="font-size:19.5px"><tspan x="538">9</tspan> <tspan x="610">CH4441</tspan> <tspan x="875">Data</tspan> <tspan x="981">NoName</tspan></text>
               <text class="disabled" x="514" y="128" dy="29" style="font-size:19.5px"><tspan x="538">10</tspan> <tspan x="610">CH4442</tspan> <tspan x="875">Data</tspan> <tspan x="981">NoName</tspan></text>
               <text class="disabled" x="514" y="162" dy="29" style="font-size:19.5px"><tspan x="538">11</tspan> <tspan x="610">CH4443</tspan> <tspan x="875">Data</tspan> <tspan x="981">NoName</tspan></text>
@@ -571,15 +558,60 @@
               <text class="disabled" x="514" y="462" dy="29" style="font-size:19.5px"><tspan x="538">87</tspan> <tspan x="610">CH15797</tspan> <tspan x="875">Data</tspan> <tspan x="981">NoName</tspan></text>
               <text x="514" y="495" dy="29" style="font-size:19.5px"><tspan x="538">93</tspan> <tspan x="610">Eurasia Worldwide</tspan> <tspan x="875">TV</tspan> <tspan x="981">NoName</tspan></text>
               <text x="514" y="528" dy="29" style="font-size:19.5px"><tspan x="538">177</tspan> <tspan x="610">Espresso TV</tspan> <tspan x="875">TV</tspan> <tspan x="981">NoName</tspan></text>
-              <text class="disabled" x="514" y="562" dy="29" style="font-size:19.5px"><tspan x="538">212</tspan> <tspan x="610">?</tspan> <tspan x="875">Data</tspan> <tspan x="981">NoName</tspan></text>
+              <text class="disabled" x="514" y="562" dy="29" style="font-size:19.5px"><tspan x="538">213</tspan> <tspan x="875">Data</tspan> <tspan x="981">NoName</tspan></text>
             </g>
           </g>
+          <g class="sbv">
+            <rect class="bg" x="1048" y="75" width="14" height="507" style="display:none" />
+            <rect class="btn-bg vs" x="1048" y="75" width="14" height="14" style="display:none" />
+            <g class="arrow as" transform="matrix(1,0,0,1,1048,75)">
+              <g class="arrow-w" style="display:none">
+                <use href="#arrow-w" />
+              </g>
+              <g class="arrow-l" style="display:none">
+                <use href="#arrow-l" />
+              </g>
+            </g>
+            <rect class="btn-bg ve" x="1048" y="568" width="14" height="14" style="display:none" />
+            <g class="arrow ae" transform="matrix(1,0,0,1,1048,568)">
+              <g class="arrow-w" style="display:none">
+                <use href="#arrow-w" />
+              </g>
+              <g class="arrow-l" style="display:none">
+                <use href="#arrow-l" />
+              </g>
+            </g>
+            <rect class="xy" x="1048" y="102" width="12" height="51" rx="7" style="fill:#000;fill-opacity:0.46" />
+          </g>
+          <g class="sbh">
+            <rect class="bg" x="512" y="568" width="536" height="14" style="display:none" />
+            <rect class="btn-bg hs" x="512" y="568" width="14" height="14" style="display:none" />
+            <g class="arrow as" transform="matrix(1,0,0,1,512,568)">
+              <g class="arrow-w" style="display:none">
+                <use href="#arrow-w" />
+              </g>
+              <g class="arrow-l" style="display:none">
+                <use href="#arrow-l" />
+              </g>
+            </g>
+            <rect class="btn-bg he" x="1034" y="568" width="14" height="14" style="display:none" />
+            <g class="arrow ae" transform="matrix(1,0,0,1,1034,568)">
+              <g class="arrow-w" style="display:none">
+                <use href="#arrow-w" />
+              </g>
+              <g class="arrow-l" style="display:none">
+                <use href="#arrow-l" />
+              </g>
+            </g>
+            <rect class="xy" x="513" y="568" width="257" height="12" rx="7" style="fill:#000;fill-opacity:0.46" />
+          </g>
+          <rect class="sbr" x="1048" y="568" width="14" height="14" style="display:none" />
         </g>
       </g>
       <g id="addchannel-tbar">
-        <rect class="bg" x="1" y="568" width="1061" height="82" rx="15" style="fill:red;clip-path:inset(15px 0 0)" />
+        <rect id="tbar-bg" x="1" y="568" width="1061" height="82" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0 0)" />
         <g class="ch-item">
-          <g class="btn-caret" transform="matrix(0.9,0,0,0.9,15,604)">
+          <g class="btn-flag" transform="matrix(0.9,0,0,0.9,15,604)">
             <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
             <g class="arrow">
               <g class="arrow-m">
@@ -605,18 +637,18 @@
         </g>
         <g class="ch-item">
           <g class="tool-ico ico" transform="matrix(0.34,0,0,0.34,955,605)">
-            <use href="#add" style="fill:#545454" />
+            <use href="#add" style="fill:#505050" />
           </g>
           <text class="tool-txt" x="955" y="591" dx="28" dy="34" style="font-size:23.5px;fill:#000">Add</text>
         </g>
+        <rect id="tbar-stroke" x="1" y="582" width="1061" height="1.4" style="fill:#e0e1e1" />
       </g>
-      <rect class="stroke" x="1" y="582" width="1061" height="1" style="fill:#000" />
     </g>
-    <rect id="w-stroke" x="1" y="1" width="1061" height="650" rx="15" style="fill:none;stroke:#a6bbb9;stroke-width:1px" />
+    <rect id="w-stroke" x="1" y="1" width="1061" height="650" rx="15" style="fill:none;stroke:#c1c1c1;stroke-width:1px" />
     <rect id="w-shade" x="3" y="3" width="1057" height="646" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
-  <!--<g id="screen" transform="matrix(1,0,0,1,340,140)" style="opacity:0.2"><image href="../test/addchannel-dm.png" width="1624" height="1080" /></g>-->
+  <!--<g id="screen" transform="matrix(1.015,0,0,1.015,297,139)" style="opacity:0.2"><image href="../test/addchannel-dm.png" width="1624" height="1080" /></g>-->
   <!--<image id="screen" href="../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
   <!--<image id="screen" href="../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" />-->
   <!--<image id="screen" href="../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
@@ -639,7 +671,7 @@
       document.getElementById('test').addEventListener('click', function(e) {
         var id = e.target.getAttribute('id');
         document.getElementById('window').setAttribute('class', id[id.length - 1] + ' ' + id.replace('test_', ''));
-        document.getElementById('modal').setAttribute('class', id[id.length - 1] + ' ' + id.replace('test_', ''));
+        document.getElementById('addchannel').setAttribute('class', id[id.length - 1] + ' ' + id.replace('test_', ''));
         document.getElementsByTagName('svg')[0].setAttribute('transform', 'matrix(1,1,1,1,0,0)');
         document.getElementsByTagName('svg')[0].setAttribute('transform', '');
       });
