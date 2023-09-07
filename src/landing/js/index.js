@@ -81,7 +81,7 @@ function load_images(evt) {
     if (id != 'f') {
       color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'd' : 'l');
 
-      if (id == 'e') {
+      if (id == 'b' || id == 'e') {
         img = id;
       }
     } else {

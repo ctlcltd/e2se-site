@@ -600,8 +600,8 @@
 .f .sbv .btn-bg { width: 22px; height: 22px; transform: translate(0.5px, -1.5px); }
 .f .sbh .bg { height: 23px; }
 .f .sbv .bg { width: 23px; }
-.f .sbh .xy { height: 22px; transform: translate(0, 0.5px); fill-opacity: 1 !important; }
-.f .sbv .xy { width: 22px; transform: translate(0.5px, 0); fill-opacity: 1 !important; }
+.f .sbh .xy { height: 22px; transform: translate(0, 0.5px); }
+.f .sbv .xy { width: 22px; transform: translate(0.5px, 0); }
 .f .sbr { display: block !important; x: 1780px; y: 974.5px; width: 24px; height: 24px; stroke-width: 2px; clip-path: inset(0 1px 1px 0); }
 
 .f #tree .sbv { transform: translate(-8px, -1px); }
@@ -649,19 +649,19 @@
 
 #channelbook .f #ch-start .sbv { transform: translate(-5px, 0); }
 #channelbook .f #ch-start .sbv .ve { transform: translate(0, -7px); }
-#channelbook .f #ch-start .sbv .xy { x: 477px; y: 318px; height: 108px; }
+#channelbook .f #ch-start .sbv .xy { x: 477px; y: 318px; height: 108px; fill-opacity: 1 !important; }
 #channelbook .f #ch-start .sbv .arrow.as { transform: matrix(1, 0, 0, 1, 476.6, 73); }
 #channelbook .f #ch-start .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 476.6, 560); }
 
 #channelbook .f #ch-end .sbv { transform: translate(-8px, 1.5px); }
 #channelbook .f #ch-end .sbv .ve { transform: translate(0.5px, -31px); }
-#channelbook .f #ch-end .sbv .xy { x: 1048px; y: 96px; height: 46px; }
+#channelbook .f #ch-end .sbv .xy { x: 1048px; y: 96px; height: 46px; fill-opacity: 1 !important; }
 #channelbook .f #ch-end .sbv .arrow.as { transform: matrix(1, 0, 0, 1, 1047.7, 73); }
 #channelbook .f #ch-end .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1047.7, 536); }
 
 #channelbook .f #ch-end .sbh { transform: translate(0, -8px); }
 #channelbook .f #ch-end .sbh .he { transform: translate(-25.5px, 0.5px); }
-#channelbook .f #ch-end .sbh .xy { x: 523px; y: 568px; width: 204px; }
+#channelbook .f #ch-end .sbh .xy { x: 523px; y: 568px; width: 204px; fill-opacity: 1 !important; }
 #channelbook .f #ch-end .sbh .arrow.as { transform: matrix(1, 0, 0, 1, 500.5, 568.2); }
 #channelbook .f #ch-end .sbh .arrow.ae { transform: matrix(1, 0, 0, 1, 1036.5, 568.2); }
 #channelbook .f #ch-end .sbr { x: 1040px; y: 560px; width: 23px; }
@@ -698,7 +698,7 @@
 #piconseditor .f .menu-item:nth-child(8) { transform: translate(42px, 0); }
 #piconseditor .f .menu-item:nth-child(9) { transform: translate(10px, -2px); }
 
-.f .list .items text:last-of-type { display: none; }
+#channelbook .f .list .items text:last-of-type { display: none; }
 
 .f .search-item:nth-child(4), .f .search-item:nth-child(5), .f .search-item:nth-child(6) { transform: translate(86px, -5px); }
 .f .search-item:nth-child(7) { transform: translate(83px, -5px); }

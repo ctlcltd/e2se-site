@@ -330,7 +330,7 @@ if (/w|f/.test(root.getAttribute('_class'))) {
 if (/w/.test(root.getAttribute('_class'))) {
   root.setAttribute('class', root.getAttribute('_class'));
 
-  {
+  if (root.querySelector('text[_id="t-txt"]')) {
     const txt = root.querySelector('text[_id="t-txt"]');
     txt.setAttribute('id', txt.getAttribute('_id'));
     const fix = svg.getAttribute('id') === 'piconseditor' ? 502 : 82;

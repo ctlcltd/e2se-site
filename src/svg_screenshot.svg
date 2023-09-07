@@ -131,7 +131,7 @@
   <g id="system">
     <rect id="wallpaper" x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd" />
   </g>
-  <g id="window" class="m" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="window" class="f" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect id="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
     <g id="titlebar">
       <rect id="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />

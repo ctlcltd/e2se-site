@@ -125,7 +125,7 @@
             <g transform="matrix(0.26,0,0,0.26,92,189)">
               <use href="#aad" style="fill:#505050" x="8" y="1"/>
             </g>
-            <text x="86" y="171" dx="27" dy="33" style="font-weight:bold;font-size:18px;fill:#000">New <tspan style="text-decoration:#000">T</tspan>ab</text>
+            <text x="86" y="171" dx="27" dy="33" style="font-weight:bold;font-size:18px;fill:#000">New <tspan style="text-decoration:underline">T</tspan>ab</text>
           
         
         
@@ -581,7 +581,7 @@
                 <g transform="matrix(0.38,0,0,0.38,1680,1094)">
                   <use href="#skh" style="fill:#545454" x="16" y="-1"/>
                 </g>
-                <text x="1668" y="1092" dx="46" dy="22" style="font-size:19.5px;fill:#000"><tspan style="text-decoration:#000">F</tspan>ind<tspan style="font-size:18.915px">…</tspan></text>
+                <text x="1668" y="1092" dx="46" dy="22" style="font-size:19.5px;fill:#000"><tspan style="text-decoration:underline">F</tspan>ind<tspan style="font-size:18.915px">…</tspan></text>
               
             
           
