@@ -161,7 +161,7 @@
 .w #sb-stroke, .w #menu-stroke, .w #main-stroke { stroke-width: 2.2px !important; }
 .w #sb-stroke, #menu-stroke, .w #main-stroke { stroke: #d0d0d0 !important; }
 
-.w #tbar-bg { fill: #f0f0f0 !important; }
+.w #tbar-bg { rx: 0 !important; fill: #f0f0f0 !important; }
 .w #tbar-stroke { height: 1.2px; fill: #d0d0d0 !important; }
 
 #channelbook .w #ch-list .bg { fill: none !important; }
@@ -198,9 +198,9 @@
 #piconseditor .w .box-button { transform: translate(12px, -5px); }
 .w #btn-collapse .box-button { transform: translate(-16px, 4px); }
 .w #btn-collapse .bg { width: 136px; }
-.w #btn-collapse .txt { font-weight: normal !important; transform: translate(-12px, -4px); }
+.w #btn-collapse .txt { font-weight: normal !important; fill: #000 !important; transform: translate(-12px, -4px); }
 
-.w #split rect { width: 4px; }
+.w #split .bg { width: 4px; }
 .w #split-end { transform: translate(-4px, 0); }
 
 .w .tree-group .tree-view text { font-size: 19px !important; transform: translate(-5px, 1px); }
@@ -297,8 +297,8 @@
 .w .sbv .btn-bg { width: 23px; height: 26px; transform: translate(1.5px, 0); }
 .w .sbh .bg { height: 28px; }
 .w .sbv .bg { width: 28px; }
-.w .sbh .xy { height: 23px; transform: translate(0, 0.5px); }
-.w .sbv .xy { width: 23px; transform: translate(0.5px, 0); }
+.w .sbh .xy { height: 23px; transform: translate(0, 0.5px); fill-opacity: 1 !important; }
+.w .sbv .xy { width: 23px; transform: translate(0.5px, 0); fill-opacity: 1 !important; }
 .w .sbr { display: block !important; x: 1777px; y: 965px; width: 25px; height: 25px; fill: #f0f0f0; }
 
 .w #tree .sbv { transform: translate(-12px, -2px); }
@@ -343,14 +343,16 @@
 #channelbook .w .list .sbr { y: 1011px; }
 
 #channelbook .w #ch-start .sbv { transform: translate(-8px, -2px); }
-#channelbook .w #ch-start .sbv .xy { x: 478px; y: 344px; height: 28px; }
+#channelbook .w #ch-start .sbv .xy { x: 478px; y: 331px; height: 78px; }
 
-#channelbook .w #ch-end .sbv { transform: translate(-13px, -2px); }
-#channelbook .w #ch-end .sbv .xy { x: 1049px; y: 102px; height: 28px; }
+#channelbook .w #ch-end .sbv { transform: translate(-12px, -2px); }
+#channelbook .w #ch-end .sbv .xy { x: 1049px; y: 102px; height: 48px; }
 
-#channelbook .w #ch-end .sbh { transform: translate(-2px, -12px); }
-#channelbook .w #ch-end .sbh .xy { x: 537px; y: 569px; }
-#channelbook .w #ch-end .sbr { x: 1035px; y: 556px; width: 27px; height: 27px; }
+#channelbook .w #ch-end .sbh { transform: translate(-2px, -10.5px); }
+#channelbook .w #ch-end .sbh .xy { x: 530px; y: 569px; }
+#channelbook .w #ch-end .sbv .arrow.as { transform: matrix(1, 0, 0, 1, 1047.5, 75); }
+#channelbook .w #ch-end .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1047.5, 534); }
+#channelbook .w #ch-end .sbr { x: 1036px; y: 557px; }
 
 .w #icon-ico rect { rx: 0 !important; stroke: #8e8e8e; stroke-width: 1.1px; }
 .w #icon-shape { width: 137px; height: 173px; fill: #f5f6f7 !important; }
@@ -417,6 +419,11 @@
 
 .f #w-bg, .f #w-stroke, .f #w-shade, .f #t-bg, .f #sb-bg { rx: 0; }
 
+#channelbook .f#addchannel #w-bg { fill: #efefef !important; filter: url(#modal-shadow-f) !important; }
+#channelbook .f#addchannel #w-stroke { stroke: #f9f9f9 !important; }
+#channelbook .f#addchannel #t-bg { x: 0; y: 1px; width: 1063px; }
+#channelbook .f#addchannel #t-stroke { x: 0; y: 47px; width: 1063px; }
+
 .f .btn-caret .bg, .f .btn-flag .bg { fill: none !important; stroke: none !important; }
 
 .f #w-bg { fill: #f9f9f9 !important; stroke: #acc6c3 !important; }
@@ -463,6 +470,14 @@
 .f .tb-close .ico { transform: matrix(0.17, 0, 0, 0.17, 1.2, 1.2) !important; }
 .f .tb-close .ico use { fill: #fff !important; }
 
+.f #ch-list, .f #ch-tree { transform: translate(0, 2px); }
+.f #addchannel-tbar { transform: translate(0, 2px); }
+
+.f #tbar-bg { height: 80px; rx: 0 !important; fill: #f0f0f0 !important; }
+.f #tbar-stroke { height: 1.1px; fill: #c4c4c4 !important; }
+
+#channelbook .f #ch-list .bg { fill: none !important; }
+
 .f .btn-bg, .f .tb-button rect, .f .box-button .bg { fill: url(#btn-bg-f) !important; }
 .f .btn-bg { filter: none !important; }
 .f .btn-bg, .f .tb-button rect, .f .box-button .bg, .f .input-bg { rx: 3px !important; stroke: #ababab !important; stroke-width: 1px !important; }
@@ -495,21 +510,32 @@
 .f .box-title text { font-size: 19px !important; }
 .f .box-button { transform: translate(15px, -2px); }
 #piconseditor .f .box-button { transform: translate(11px, -2px); }
+.f #btn-collapse .box-button { transform: translate(-17px, 5.5px); }
+.f #btn-collapse .bg { width: 138px; }
+.f #btn-collapse .txt { font-weight: normal !important; fill: #000 !important; transform: translate(-13px, -3px); }
 
-.f #split rect { width: 4px; }
+.f .split-l { display: block !important; width: 0.5px; fill: none; stroke: #000; stroke-opacity: 0.25; stroke-width: 1px; stroke-dasharray: 0 2px 0; }
+
+.f #split .bg { width: 4px; }
 .f #split-end { transform: translate(-4px, 0); }
 
-.f .items g text { fill: #fff !important; }
+.f .items text.active { fill: #fff !important; }
 .f .tree-group .tree-view text { font-size: 19.5px !important; transform: translate(-2px, 1px); }
 
 #piconseditor .f .list-view { transform: translate(0, -3px); }
 .f .list-cols .bg { fill: url(#btn-bg-f) !important; stroke: #c8c8c8; stroke-width: 2px; clip-path: inset(1px 1px 0); }
 .f .list-cols text { transform: translate(-3px, 2px); }
+#channelbook .f #ch-end .list-cols text { transform: translate(-2px, 2px); }
 
 .f .ruler { width: 3px; height: 26px; fill: #ddd !important; stroke: #cdcdcd !important; transform: translate(-2px, -3px); clip-path: inset(1px 1px 1px 0); }
 
 .f .list .items { transform: translate(0, 1px); }
 .f .list .items text { font-size: 20px !important; transform: translate(-4px, 0); }
+#channelbook .f #ch-start .items text { transform: translate(-2px, -2px); }
+#channelbook .f #ch-end .items text { font-size: 20px !important; transform: translate(-3px, 1px); }
+#channelbook .w #ch-end .items text:nth-child(16) { font-size: 20px !important; display: none; }
+
+#channelbook .f #ch-list text { font-size: 21.5px !important; transform: translate(-3px, 0); }
 
 .f #tree-tool, .f #list-tool { transform: translate(0, -15px); }
 #channelbook .f #tree-tool, #channelbook .f #list-tool { transform: translate(0, -26px); }
@@ -522,11 +548,20 @@
 #screenshot .f #list-tool .stroke { width: 1333px; }
 
 .f #tree-tool .bg, .f #tree-tool .stroke, .f #list-tool .bg, .f #list-tool .stroke { height: 65px; transform: translate(0, 8px); }
+.f #list-tool .bg { width: 1330px; }
 .f #ti-items, .f #li-items { transform: translate(0, 4px); }
 .f .tool-txt { font-size: 20.5px !important; }
 
 .f .tree-view .arrow-l { fill: #636363; transform: matrix(0.22, 0, 0, 0.22, -2, -11); }
 .f .btn-caret .arrow-l { fill: #676767; transform: matrix(0.23, 0, 0, 0.23, 0, 5); }
+.f #btn-collapse .arrow-l { fill: #676767; transform: matrix(-0.22, 0, 0, -0.22, -11, 14); }
+
+/**/
+.f #addchannel-tbar .arrow-l { transform: matrix(0.3, 0, 0, 0.3, 2, 4); }
+
+.f #addchannel-tbar .txt { font-size: 19.5px !important; }
+.f #addchannel-tbar .tool-txt { font-size: 23px !important; }
+.f #addchannel-tbar .ch-item .ico { transform: matrix(0.34, 0, 0, 0.34, 958, 605) !important; }
 
 .f .qe-ti { transform: translate(20px, 2px); }
 .f .qe-li { transform: translate(27px, 2px); }
@@ -565,8 +600,8 @@
 .f .sbv .btn-bg { width: 22px; height: 22px; transform: translate(0.5px, -1.5px); }
 .f .sbh .bg { height: 23px; }
 .f .sbv .bg { width: 23px; }
-.f .sbh .xy { height: 22px; transform: translate(0, 0.5px); }
-.f .sbv .xy { width: 22px; transform: translate(0.5px, 0); }
+.f .sbh .xy { height: 22px; transform: translate(0, 0.5px); fill-opacity: 1 !important; }
+.f .sbv .xy { width: 22px; transform: translate(0.5px, 0); fill-opacity: 1 !important; }
 .f .sbr { display: block !important; x: 1780px; y: 974.5px; width: 24px; height: 24px; stroke-width: 2px; clip-path: inset(0 1px 1px 0); }
 
 .f #tree .sbv { transform: translate(-8px, -1px); }
@@ -602,6 +637,35 @@
 #piconseditor .f .list .sbv .xy { y: 338px; height: 44px; }
 #piconseditor .f .list .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 947.5); }
 
+#channelbook .f #tree .sbv .bg { height: 394px; }
+#channelbook .f #tree .sbv .ve { y: 1016px; }
+#channelbook .f #tree .sbv .xy { height: 308px; }
+#channelbook .f #tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 448, 1014); }
+#channelbook .f .list .sbh { transform: translate(0, 16px); }
+#channelbook .f .list .sbv .bg { height: 696px; }
+#channelbook .f .list .sbv .ve { y: 994px; }
+#channelbook .f .list .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 991); }
+#channelbook .f .list .sbr { y: 1013px; }
+
+#channelbook .f #ch-start .sbv { transform: translate(-5px, 0); }
+#channelbook .f #ch-start .sbv .ve { transform: translate(0, -7px); }
+#channelbook .f #ch-start .sbv .xy { x: 477px; y: 318px; height: 108px; }
+#channelbook .f #ch-start .sbv .arrow.as { transform: matrix(1, 0, 0, 1, 476.6, 73); }
+#channelbook .f #ch-start .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 476.6, 560); }
+
+#channelbook .f #ch-end .sbv { transform: translate(-8px, 1.5px); }
+#channelbook .f #ch-end .sbv .ve { transform: translate(0.5px, -31px); }
+#channelbook .f #ch-end .sbv .xy { x: 1048px; y: 96px; height: 46px; }
+#channelbook .f #ch-end .sbv .arrow.as { transform: matrix(1, 0, 0, 1, 1047.7, 73); }
+#channelbook .f #ch-end .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1047.7, 536); }
+
+#channelbook .f #ch-end .sbh { transform: translate(0, -8px); }
+#channelbook .f #ch-end .sbh .he { transform: translate(-25.5px, 0.5px); }
+#channelbook .f #ch-end .sbh .xy { x: 523px; y: 568px; width: 204px; }
+#channelbook .f #ch-end .sbh .arrow.as { transform: matrix(1, 0, 0, 1, 500.5, 568.2); }
+#channelbook .f #ch-end .sbh .arrow.ae { transform: matrix(1, 0, 0, 1, 1036.5, 568.2); }
+#channelbook .f #ch-end .sbr { x: 1040px; y: 560px; width: 23px; }
+
 .f #icon-ico { transform: translate(0, 5px); }
 .f #icon-ico rect { rx: 4.4px !important; stroke: #000; stroke-opacity: 0.25; stroke-width: 0.9px; }
 .f #icon-shape { width: 134px; height: 167px; fill: #f1f0f0 !important; }
@@ -634,6 +698,8 @@
 #piconseditor .f .menu-item:nth-child(8) { transform: translate(42px, 0); }
 #piconseditor .f .menu-item:nth-child(9) { transform: translate(10px, -2px); }
 
+.f .list .items text:last-of-type { display: none; }
+
 .f .search-item:nth-child(4), .f .search-item:nth-child(5), .f .search-item:nth-child(6) { transform: translate(86px, -5px); }
 .f .search-item:nth-child(7) { transform: translate(83px, -5px); }
 
@@ -647,9 +713,17 @@
 .f .li-item:nth-child(6) { transform: translate(-24px, 1px); opacity: 0.25 !important; }
 #piconseditor .f .li-item:nth-child(2) { transform: translate(23px, 2px); }
 
+#channelbook .f .ch-item:nth-child(2) { transform: translate(-2px, 0.5px); }
+#channelbook .f .ch-item:nth-child(3) { transform: translate(12px, -1px); }
+#channelbook .f .ch-item:nth-child(4) { transform: translate(0, -1px); }
+
 .f #side .focused { transform: matrix(1, 0, 0, 0.996, 0, 1.2); }
 .f #tree .focused { transform: matrix(1, 0, 0, 0.996, 0, 2.4); }
 .f .list .focused { transform: matrix(1, 0, 0, 0.996, 0, 1.1); }
+
+#channelbook .f #ch-list .focused { transform: matrix(1, 0, 0, 0.996, 0, 0.7); }
+#channelbook .f #ch-start .focused { transform: matrix(1, 0, 0, 0.996, 0, -2.3); }
+#channelbook .f #ch-end .focused { transform: matrix(1, 0, 0, 0.996, 0, 2); }
 
 
 .df #t-ctrs-l rect { stroke: #fdfdfd !important; }
@@ -663,6 +737,9 @@
 .df #w-bg { fill: #171717 !important; stroke: #acc6c3 !important; }
 .df #w-stroke { stroke: #a7bfba !important; }
 .df #t-bg { fill: #3a3a3a !important; stroke: #131312 !important; }
+
+#channelbook .df#addchannel #w-bg { fill: #222020 !important; }
+#channelbook .df#addchannel #w-stroke { stroke: #000 !important; stroke-width: 1.8px !important; }
 
 .df #mb-txt { fill-opacity: 0.9; }
 
@@ -679,6 +756,8 @@
 .df .btn-bg, .df .tb-button rect, .df .box-button .bg { fill: url(#btn-bg-d-f) !important; stroke: url(#btn-stroke-d-f) !important; }
 .df .btn-bg, .df .tb-button rect, .df .box-button .bg { filter: url(#btn-shadow-d-f) !important; }
 .df .input-bg { fill: #131312 !important; stroke: #4e4d4d !important; }
+
+.df .split-l { stroke: #fff !important; }
 
 .df .list-cols .bg { fill: url(#btn-bg-d-f) !important; stroke: #4e4d4d; }
 .df .ruler { width: 3px; fill: #4e4d4d !important; stroke: #171717 !important; transform: translate(-3px, -3px); clip-path: inset(1px 0 1px 1px); }
@@ -697,7 +776,8 @@
 .df #tb-arrows .arrow use { fill: #fff !important; stroke: #fff !important; }
 .df .menu-item .ico use { fill: #c4c4c4 !important; }
 .df #split-start .ico use { fill: #c4c4c4 !important; }
-.df #split-end .ico use, #piconseditor .df #main .ico use { fill: #c4c4c4 !important; }
+.df #split-end .ico use, #piconseditor .df #main .ico use, .df .ch-item .ico use, .df #btn-collapse .arrow use { fill: #c4c4c4 !important; }
+.df #btn-collapse .txt { fill: #fff !important; }
 
 .df #tb-arrows { transform: translate(1px, 0); }
 
@@ -708,8 +788,11 @@
 #screenshot .df #tb-start { stroke: #12608a !important; }
 #piconseditor .df #tb-start { fill: #333 !important; }
 
+.df #tbar-bg { fill: #222020 !important; }
+.df #tbar-stroke { height: 1.6px; fill: #131312 !important; }
+
 .df .tree-view .arrow-l { fill: #adacac; }
-.df .btn-caret .arrow-l { fill: #b5b5b4; }
+.df .btn-caret .arrow-l, .df .btn-flag .arrow-l { fill: #b5b5b4; }
 
 .df .sbh .bg, .df .sbv .bg, .df .sbr { fill: #1d1c1c; stroke: #2e2d2c !important; }
 .df .sbh .btn-bg, .df .sbv .btn-bg, .df .sbh .xy, .df .sbv .xy { stroke: #4f4f4e !important; }
@@ -730,6 +813,13 @@
 .df .sbh .xy { transform: translate(2.5px, 0.5px); }
 .df .sbv .xy { transform: translate(0.5px, 2.5px); }
 .df .sbr { x: 1778px; y: 974px; width: 26px; height: 24px; stroke: none !important; }
+
+#channelbook .df .list .sbh .he { x: 1756px; }
+#channelbook .df .list .sbh .arrow.ae { transform: matrix(1, 0, 0, 1, 1773, 997); }
+
+#channelbook .df #ch-start .sbv { transform: matrix(0.994, 0, 0, 0.994, -4, 2.5); }
+#channelbook .df #ch-end .sbh { transform: matrix(0.994, 0, 0, 0.994, 3, -5); }
+#channelbook .df #ch-end .sbv { transform: matrix(0.994, 0, 0, 0.994, -3, 2.5); }
 
 .df #tb-arrows { transform: translate(-1px, 0); }
 

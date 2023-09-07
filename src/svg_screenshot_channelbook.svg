@@ -136,6 +136,10 @@
       <feDropShadow dx="0" dy="0" stdDeviation="4" flood-opacity="0.2" />
       <feDropShadow dx="0" dy="6" stdDeviation="16" flood-opacity="0.25" />
     </filter>
+    <filter id="modal-shadow-f" color-interpolation-filters="sRGB">
+      <feDropShadow dx="-3" dy="12" stdDeviation="20" flood-opacity="0.2" />
+      <feDropShadow dx="3" dy="12" stdDeviation="10" flood-opacity="0.2" />
+    </filter>
   </defs>
   <g id="system">
     <rect id="wallpaper" x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd" />
@@ -294,6 +298,7 @@
           <g id="split">
             <rect class="bg" x="462" y="291" width="11" height="836" style="fill:none" />
             <ellipse cx="467.4" cy="708.4" rx="4" style="fill:#dadbdb" />
+            <rect class="split-l" x="465.5" y="669" width="1" height="28" style="display:none" />
           </g>
           <g id="split-end">
             <rect id="se-bg" class="bg" x="473" y="291" width="1325" height="835" style="fill:none" />
@@ -462,12 +467,7 @@
         </g>
       </g>
       <g id="t-ctrs-l" style="display:none">
-        <rect x="1670" y="107" width="10.5" height="1" style="fill:none;stroke:#333;stroke-width:1.1px" />
-        <g transform="matrix(0.9,0,0,0.9,1715,100)">
-          <rect x="0" y="0" width="15" height="13" style="fill:none;stroke:#333;stroke-width:3px;clip-path:inset(0 0 2px)" />
-          <rect x="1" y="4" width="13" height="7" style="fill:none;stroke:#333;stroke-width:1.7px" />
-        </g>
-        <g transform="matrix(1,0,0,1,1773,94)">
+        <g transform="matrix(1,0,0,1,1040,15)">
           <g transform="rotate(45)">
             <rect x="0" y="7" width="15" height="1" style="fill:none;stroke:#333;stroke-width:1px" />
             <rect x="7" y="0" width="1" height="15" style="fill:none;stroke:#333;stroke-width:1px" />
@@ -557,6 +557,7 @@
         <g id="ch-split">
           <rect class="bg" x="491" y="75" width="11" height="507" style="fill:none" />
           <ellipse cx="496.3" cy="329.4" rx="4" style="fill:#dadbdb" />
+          <rect class="split-l" x="497.5" y="321" width="1" height="28" style="display:none" />
         </g>
         <g id="ch-end">
           <g class="list-cols">

@@ -368,7 +368,7 @@
               <g class="items">
                 <g>
                   <rect class="focused" x="82" y="340" width="380" height="55" style="fill:#d5d6d6" />
-                  <text x="82" y="340" dx="23" dy="34" style="font-size:20px;fill:#000">All services</text>
+                  <text class="active" x="82" y="340" dx="23" dy="34" style="font-size:20px;fill:#000">All services</text>
                 </g>
                 <text x="82" y="395" dx="23" dy="34" style="font-size:20px;fill:#000">TV</text>
                 <text x="82" y="450" dx="23" dy="34" style="font-size:20px;fill:#000">Radio</text>
@@ -402,7 +402,7 @@
                 <text x="82" y="697" dx="25" dy="34" style="font-size:20px;fill:#000">Swiss</text>
                 <g>
                   <rect class="focused" x="82" y="750" width="380" height="55" style="fill:#d5d6d6" />
-                  <text x="82" y="750" dx="25" dy="34" style="font-size:20px;fill:#000">Italy</text>
+                  <text class="active" x="82" y="750" dx="25" dy="34" style="font-size:20px;fill:#000">Italy</text>
                 </g>
                 <text x="82" y="804" dx="25" dy="34" style="font-size:20px;fill:#000">Tests</text>
                 <text x="82" y="857" dx="25" dy="34" style="font-size:20px;fill:#000">Tests 1</text>
@@ -474,6 +474,7 @@
         <g id="split">
           <rect class="bg" x="462" y="291" width="11" height="836" style="fill:none" />
           <ellipse cx="467.4" cy="708.4" rx="4" style="fill:#dadbdb" />
+          <rect class="split-l" x="465.5" y="669" width="1" height="28" style="display:none" />
         </g>
         <g id="split-end">
           <rect id="se-bg" class="bg" x="473" y="291" width="1325" height="835" style="fill:none" />
