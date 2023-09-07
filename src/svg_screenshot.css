@@ -19,6 +19,7 @@
 .dm #sb-bg, .dm #tb-bg, .dm #main-bg { fill: #2f3131 !important; }
 
 #channelbook .dm#addchannel #w-stroke { stroke: #020202 !important; }
+#channelbook .dm#tint-d { fill-opacity: 0.7 !important; }
 
 .dm #ss-bg, .dm #tb-corner .bg { fill: #485352 !important; }
 
@@ -52,6 +53,7 @@
 .dm #list-tool .stroke { stroke: #2d2e2e !important; }
 
 .dm #w-shade { stroke-opacity: 0.24 !important; }
+#channelbook .dm #w-shade { stroke-opacity: 0.09 !important; }
 
 .dm .tb-button text { fill-opacity: 0.89; }
 .dm .menu-item text, .dm .tool-txt { fill-opacity: 0.89; text-shadow: 0 0.5px 1px #090909; }
@@ -83,6 +85,7 @@
 
 .dm .sbv .xy { fill: #8b8b8b !important; }
 #channelbook .dm .sbh .xy, #channelbook .dm .sbv .xy { fill: #fff !important; }
+#channelbook .dm #ch-end .sbv .xy { x: 1046px; y: 103px; }
 
 .dm #tb-arrows { transform: translate(-2px, 0); }
 
@@ -109,7 +112,9 @@
 .w #w-stroke { stroke: #9bb3b3 !important; }
 .w #t-bg { height: 92.5px; fill: #fff !important; stroke: none !important; }
 
-#channelbook .w #t-bg { height: 58.5px; }
+#channelbook .w#addchannel #w-bg { filter: url(#modal-shadow-w) !important; }
+#channelbook .w#addchannel #w-stroke { stroke: #fff !important; stroke-opacity: 0.6; stroke-width: 1.5px !important; }
+#channelbook .w#addchannel #t-bg { height: 59.5px; }
 
 .w #sb-bg, .w #tb-bg, .w #tb-corner .bg, .w #menu-bg, .w #ss-bg { fill: none !important; }
 .w #main-bg, .w #tree-tool .bg, .w #list-tool .bg { fill: #f0f0f0 !important; }
@@ -117,6 +122,7 @@
 .w #t-stroke { display: none; stroke: none !important; }
 .w #t-txt { text-anchor: start; font-family: 'Segoe UI', Tahoma, sans-serif !important; font-weight: normal !important; font-size: 19.1px !important; letter-spacing: -0.1px; fill: #000 !important; transform: translate(-815px, 1.7px); }
 #piconseditor .w #t-txt { transform: translate(-608px, 1.7px); }
+#channelbook .w #t-txt { transform: translate(-489px, 0.6px); }
 
 .w .ellipsis { font-size: 97% !important; }
 .w .ay { text-decoration: underline; }
@@ -190,7 +196,7 @@
 .w .box-title text { font-size: 19px !important; transform: translate(-2px, 1px); }
 .w .box-button { transform: translate(16px, -5px); }
 #piconseditor .w .box-button { transform: translate(12px, -5px); }
-.w #btn-collapse .box-button { transform: translate(-16px, 3.5px); }
+.w #btn-collapse .box-button { transform: translate(-16px, 4px); }
 .w #btn-collapse .bg { width: 136px; }
 .w #btn-collapse .txt { font-weight: normal !important; transform: translate(-12px, -4px); }
 
@@ -216,9 +222,12 @@
 .w .list .items { transform: translate(0, 3px); }
 .w .list .items text { font-size: 19.5px !important; transform: translate(-4px, 0); }
 #channelbook .w #ch-start .items text { transform: translate(-3px, 1px); }
-#channelbook .w #ch-end .items text { transform: translate(-3px, 0); }
+#channelbook .w #ch-end .items text { transform: translate(-3px, 3px); }
+#channelbook .w #ch-end .focused { transform: translate(0, 2.5px); }
+#channelbook .w #ch-end .items text:nth-child(15), #channelbook .w #ch-end .items text:nth-child(16) { display: none; }
 
-#channelbook .w #ch-list text { font-size: 21px !important; transform: translate(-3px, 0); }
+#channelbook .w #ch-list .focused { transform: translate(-0.5px, 0.5px); }
+#channelbook .w #ch-list text { font-size: 21px !important; transform: translate(-4px, 0); }
 
 .w #tree-tool, .w #list-tool { transform: translate(0, -18px); }
 #channelbook .w #tree-tool, #channelbook .w #list-tool { transform: translate(0, -23px); }
@@ -235,6 +244,13 @@
 .w .tree-view .arrow-w { fill: #636363; stroke: #636363; stroke-width: 4px; transform: matrix(0.22, 0, 0, 0.22, -3, -12); }
 .w .btn-caret .arrow-w { fill: #676767; transform: matrix(0.23, 0, 0, 0.23, 0, 7); }
 .w #btn-collapse .arrow-w { fill: #676767; stroke: #636363; stroke-width: 4px; transform: matrix(-0.23, 0, 0, -0.23, -9, 15); }
+
+/**/
+.w #addchannel-tbar .arrow-w { transform: matrix(0.3, 0, 0, 0.3, 2, 4); }
+
+.w #addchannel-tbar .txt { font-size: 19px !important; }
+.w #addchannel-tbar .tool-txt { font-size: 23px !important; }
+.w #addchannel-tbar .ch-item .ico { transform: matrix(0.34, 0, 0, 0.34, 957, 605) !important; }
 
 .w .btn-txt { transform: translate(0, 1px); }
 .w .qe-ti { transform: translate(12px, 2px); }
@@ -316,14 +332,25 @@
 #piconseditor .w .list .sbv .ve { y: 944px; }
 #piconseditor .w .list .sbv .xy { y: 344px; height: 28px; }
 
-#channelbook .w #ch-start .sbv { transform: translate(-6px, -2px); }
-#channelbook .w #ch-start .sbv .xy { x: 488px; y: 344px; height: 28px; }
+#channelbook .w #tree .sbv .bg { height: 399px; }
+#channelbook .w #tree .sbv .ve { y: 1015px; }
+#channelbook .w #tree .sbv .xy { height: 232px; }
+#channelbook .w #tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 448, 1016); }
+#channelbook .w .list .sbh { transform: translate(-2px, 14px); }
+#channelbook .w .list .sbv .bg { height: 678px; }
+#channelbook .w .list .sbv .ve { y: 967px; }
+#channelbook .w .list .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 987); }
+#channelbook .w .list .sbr { y: 1011px; }
+
+#channelbook .w #ch-start .sbv { transform: translate(-8px, -2px); }
+#channelbook .w #ch-start .sbv .xy { x: 478px; y: 344px; height: 28px; }
 
 #channelbook .w #ch-end .sbv { transform: translate(-13px, -2px); }
 #channelbook .w #ch-end .sbv .xy { x: 1049px; y: 102px; height: 28px; }
 
 #channelbook .w #ch-end .sbh { transform: translate(-2px, -12px); }
 #channelbook .w #ch-end .sbh .xy { x: 537px; y: 569px; }
+#channelbook .w #ch-end .sbr { x: 1035px; y: 556px; width: 27px; height: 27px; }
 
 .w #icon-ico rect { rx: 0 !important; stroke: #8e8e8e; stroke-width: 1.1px; }
 .w #icon-shape { width: 137px; height: 173px; fill: #f5f6f7 !important; }
@@ -368,6 +395,10 @@
 .w .li-divid:nth-child(5) { transform: translate(-25px, 0); }
 .w .li-item:nth-child(6) { transform: translate(-25px, 0); opacity: 0.25 !important; }
 #piconseditor .w .li-item:nth-child(2) { transform: translate(16px, 2px); }
+
+#channelbook .w .ch-item:nth-child(2) { transform: translate(-1px, 1px); }
+#channelbook .w .ch-item:nth-child(3) { transform: translate(25px, 1px); }
+#channelbook .w .ch-item:nth-child(4) { transform: translate(5px, 1px); }
 
 
 
@@ -626,6 +657,8 @@
 
 .df text:not(.color) { fill: #fff !important; }
 .df #t-txt { fill: #aaa !important; }
+
+#channelbook .df#tint-d { fill-opacity: 0.7 !important; }
 
 .df #w-bg { fill: #171717 !important; stroke: #acc6c3 !important; }
 .df #w-stroke { stroke: #a7bfba !important; }
