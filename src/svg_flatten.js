@@ -278,12 +278,26 @@ if (/w|f/.test(root.getAttribute('_class'))) {
   elements = svg.querySelectorAll('g[_class="list"]');
 
   for (const el of elements) {
-    el.closest('g[_id="split-end"]').setAttribute('id', 'split-end');
+    let parent;
+
+    if (el.closest('g[_id="split-end"]')) {
+      parent = el.closest('g[_id="split-end"]');
+    } else if (el.closest('g[_id="split-start"]')) {
+      parent = el.closest('g[_id="split-start"]');
+    } else {
+      continue;
+    }
+
+    parent.setAttribute('id', parent.getAttribute('_id'));
     el.setAttribute('class', 'list');
 
-    let m = getComputedStyle(el.closest('g[_id="split-end"]')).transform;
-    m = m.substr(7, m.length - 8).split(', ');
-    m = { e: parseFloat(m[4]), f: parseFloat(m[5]) };
+    let m = getComputedStyle(parent).transform;
+    if (m != 'none') {
+      m = m.substr(7, m.length - 8).split(', ');
+      m = { e: parseFloat(m[4]), f: parseFloat(m[5]) };
+    } else {
+      m = { e: 0, f: 0 };
+    }
 
     for (const child of el.querySelectorAll('g[_class="list-cols"], g[_class="items"]')) {
       child.setAttribute('class', child.getAttribute('_class'));
@@ -302,6 +316,10 @@ if (/w|f/.test(root.getAttribute('_class'))) {
           tm = getComputedStyle(txt).transform;
           tm = tm.substr(7, tm.length - 8).split(', ');
           tm = { e: parseFloat(tm[4]) || 0, f: parseFloat(tm[5]) || 0 };
+
+          if (svg.getAttribute('id') === 'wide') {
+            tm.e += 1169;
+          }
         }
 
         matrix.e = pos.x + m.e + cm.e + tm.e;
@@ -316,7 +334,7 @@ if (/w|f/.test(root.getAttribute('_class'))) {
       child.removeAttribute('class');
     }
 
-    el.closest('g[_id="split-end"]').removeAttribute('id');
+    parent.removeAttribute('id');
   }
 
   root.removeAttribute('class');
@@ -330,27 +348,42 @@ if (/w|f/.test(root.getAttribute('_class'))) {
 if (/w/.test(root.getAttribute('_class'))) {
   root.setAttribute('class', root.getAttribute('_class'));
 
-  if (root.querySelector('text[_id="t-txt"]')) {
-    const txt = root.querySelector('text[_id="t-txt"]');
-    txt.setAttribute('id', txt.getAttribute('_id'));
-    const fix = svg.getAttribute('id') === 'piconseditor' ? 502 : 82;
+  if (root.querySelector('text[_class="t-txt"]')) {
+    elements = svg.querySelectorAll('text[_class="t-txt"]');
 
-    let tm = getComputedStyle(txt).transform;
-    tm = tm.substr(7, tm.length - 8).split(', ');
-    tm = { e: parseFloat(tm[4]) || 0, f: parseFloat(tm[5]) || 0 };
+    for (const txt of elements) {
+      txt.setAttribute('class', txt.getAttribute('_class'));
 
-    const dpos = { dx: txt.hasAttribute('dx') ? parseFloat(txt.getAttribute('dx')) : 0, dy: txt.hasAttribute('dy') ? parseFloat(txt.getAttribute('dy')) : 0 };
-    const matrix = { e: 0, f: 0 };
+      let fix;
+      if (svg.getAttribute('id') === 'piconseditor') {
+        fix = 502;
+      } else if (svg.getAttribute('id') === 'wide') {
+        if (txt.closest('g[_id="editservice"]')) {
+          fix = -400;
+        } else {
+          fix = 838;
+        }
+      } else {
+        fix = 82;
+      }
 
-    matrix.e = dpos.dx + tm.e;
-    matrix.f = dpos.dy + tm.f;
+      let tm = getComputedStyle(txt).transform;
+      tm = tm.substr(7, tm.length - 8).split(', ');
+      tm = { e: parseFloat(tm[4]) || 0, f: parseFloat(tm[5]) || 0 };
 
-    txt.setAttribute('x', fix);
-    txt.setAttribute('dx', matrix.e);
-    // txt.setAttribute('dy', matrix.f);
-    txt.removeAttribute('text-anchor');
+      const dpos = { dx: txt.hasAttribute('dx') ? parseFloat(txt.getAttribute('dx')) : 0, dy: txt.hasAttribute('dy') ? parseFloat(txt.getAttribute('dy')) : 0 };
+      const matrix = { e: 0, f: 0 };
 
-    txt.removeAttribute('id');
+      matrix.e = dpos.dx + tm.e;
+      matrix.f = dpos.dy + tm.f;
+
+      txt.setAttribute('x', fix);
+      txt.setAttribute('dx', matrix.e);
+      // txt.setAttribute('dy', matrix.f);
+      txt.removeAttribute('text-anchor');
+
+      txt.removeAttribute('class');
+    }
   }
 
   root.removeAttribute('class');

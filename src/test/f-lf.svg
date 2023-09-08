@@ -156,7 +156,7 @@
           
           
             <rect x="660" y="166" width="154" height="69" style="fill:#efefef;stroke:#dfdfdf;stroke-width:2px;clip-path:inset(1px 0px)"/>
-            <text x="660" y="165.5" dx="15" dy="41" style="font-size:19px;fill:#000">out</text>
+            <text x="660" y="165.5" dx="15" dy="41" style="font-size:19px;fill:#000">neutrino</text>
             
               <g transform="matrix(0.9,0,0,0.9,788,195.5)">
                 <rect rx="11" style="fill:#000;fill-opacity:0.33" height="22" width="22" x="-4.5" y="-4.5"/>
@@ -171,7 +171,7 @@
             <g transform="matrix(0.38,0,0,0.38,826,186)">
               <use href="#tow" fill="#000"/>
             </g>
-            <text x="814" y="165.5" dx="46" dy="41" style="font-size:19px;fill:#000">out - Edit Transpond<tspan style="font-size:15px">…</tspan></text>
+            <text x="814" y="165.5" dx="46" dy="41" style="font-size:19px;fill:#000">enigma_db - Edit Set<tspan style="font-size:15px">…</tspan></text>
             
               <g transform="matrix(0.9,0,0,0.9,1081,195.5)">
                 <rect rx="11" style="fill:#000;fill-opacity:0.33" height="22" width="22" x="-4.5" y="-4.5"/>

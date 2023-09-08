@@ -12,21 +12,22 @@
 
 
 .dm text:not(.color) { fill: #fff !important; }
-.dm #t-txt { fill: #bcbebe !important; }
+.dm .t-txt { fill: #bcbebe !important; }
 
-.dm #t-bg { fill: #404242 !important; stroke: #787979 !important; }
-.dm #w-bg, .dm #menu-bg { fill: #313333 !important; }
+.dm .t-bg { fill: #404242 !important; stroke: #787979 !important; }
+.dm .w-bg, .dm #menu-bg { fill: #313333 !important; }
 .dm #sb-bg, .dm #tb-bg, .dm #main-bg { fill: #2f3131 !important; }
 
-#channelbook .dm#addchannel #w-stroke { stroke: #020202 !important; }
+#channelbook .dm#addchannel .w-stroke, #wide .dm#editservice .w-stroke { stroke: #020202 !important; }
+#wide .dm#editservice .t-ctrs-m ellipse:last-child { fill: #636766 !important; }
 #channelbook .dm#tint-d { fill-opacity: 0.7 !important; }
 
-.dm #ss-bg, .dm #tb-corner .bg { fill: #485352 !important; }
+#editor .dm #ss-bg, .dm #tb-corner .bg { fill: #485352 !important; }
 
 .dm .list-view .bg { fill: #171717 !important; }
 
-.dm #tree-tool .bg { fill: #313837 !important; }
-.dm #list-tool .bg { fill: #202121 !important; }
+#editor .dm #tree-tool .bg { fill: #313837 !important; }
+.dm #list-tool .bg, #wide .dm #tree-tool .bg { fill: #202121 !important; }
 .dm .ts-bg { fill: #101010 !important; }
 
 .dm #tbar-bg { fill: #2f3131 !important; }
@@ -43,17 +44,17 @@
 .dm .find-bg, .dm .list-cols .bg { fill: #323232 !important; }
 .dm .find-h-bg { fill: #25456c !important; }
 
-.dm #t-ctrs-m ellipse { stroke: none !important; }
-.dm #t-stroke { stroke: #000 !important; stroke-opacity: 0.89; }
+.dm .t-ctrs-m ellipse { stroke: none !important; }
+.dm .t-stroke { stroke: #000 !important; stroke-opacity: 0.89; }
 .dm #sb-stroke, .dm #main-stroke { stroke: #404242 !important; }
 .dm .tb-button rect { stroke: #fff !important; stroke-opacity: 0.23;  }
 .dm .tb-tab .bg, .dm #tb-arrows .bg { fill: #323232 !important; stroke: #3e3e3e !important; }
 .dm #menu-stroke { stroke: #324040 !important; }
-.dm #tree-tool .stroke { stroke: #3a4140 !important; }
-.dm #list-tool .stroke { stroke: #2d2e2e !important; }
+#editor .dm #tree-tool .stroke { stroke: #3a4140 !important; }
+.dm #list-tool .stroke, #wide .dm #tree-tool .stroke { stroke: #2d2e2e !important; }
 
-.dm #w-shade { stroke-opacity: 0.24 !important; }
-#channelbook .dm #w-shade { stroke-opacity: 0.09 !important; }
+.dm .w-shade { stroke-opacity: 0.24 !important; }
+#channelbook .dm .w-shade { stroke-opacity: 0.09 !important; }
 
 .dm .tb-button text { fill-opacity: 0.89; }
 .dm .menu-item text, .dm .tool-txt { fill-opacity: 0.89; text-shadow: 0 0.5px 1px #090909; }
@@ -78,10 +79,10 @@
 .dm .btn-caret rect, .dm .btn-flag rect { fill: url(#btn-bg-a-d-m) !important; stroke: url(#btn-stroke-d-m) !important; }
 
 .dm #split ellipse, .dm #ch-split ellipse { fill: #444646 !important; }
-.dm #split-start .focused { fill: #596362 !important; }
+#editor .dm #split-start .focused { fill: #596362 !important; }
 .dm #split-end .focused, #piconseditor .dm .list-view .focused, #piconseditor .dm #icon .focused, #channelbook .dm #ch-end .focused { fill: #023acd !important; }
 #channelbook .dm #ch-list .focused { fill: #444545 !important; }
-#channelbook .dm #ch-start .focused { fill: #303030 !important; }
+#channelbook .dm #ch-start .focused, #wide .dm #split-start .focused, #wide .dm #split-end .focused { fill: #303030 !important; }
 
 .dm .sbv .xy { fill: #8b8b8b !important; }
 #channelbook .dm .sbh .xy, #channelbook .dm .sbv .xy { fill: #fff !important; }
@@ -93,13 +94,13 @@
 
 .w { font-family: 'Segoe UI', Tahoma, sans-serif !important; }
 
-.w #t-ctrs-m { display: none; }
-.w #t-ctrs-w, .w #t-ico-w { display: block !important; }
+.w .t-ctrs-m { display: none; }
+.w .t-ctrs-w, .w .t-ico-w { display: block !important; }
 
 .w #menubar, .w .arrow-w { display: block !important; }
-.w #w-shade, .w #mb-bg, .w #split ellipse, .w #ch-split ellipse, .w .arrow-m { display: none !important; }
+.w .w-shade, .w #mb-bg, .w #split ellipse, .w #ch-split ellipse, .w .arrow-m { display: none !important; }
 
-.w #w-bg, .w #w-stroke, .w #w-shade, .w #t-bg, .w #sb-bg { rx: 0; }
+.w .w-bg, .w .w-stroke, .w .w-shade, .w .t-bg, .w #sb-bg { rx: 0; }
 
 .w .btn-caret .bg, .w .btn-flag .bg { fill: none !important; stroke: none !important; }
 
@@ -108,21 +109,22 @@
 .w #sbcb-w { clip-path: inset(0 27px 27px 0); }
 .w #sbcb-w rect { fill: #c5c5c5 !important; transform: matrix(-0.8, -1, -1, 1, 52, 23); }
 
-.w #w-bg { fill: #f0f0f0 !important; stroke: #a2b5ba !important; }
-.w #w-stroke { stroke: #9bb3b3 !important; }
-.w #t-bg { height: 92.5px; fill: #fff !important; stroke: none !important; }
+.w .w-bg { fill: #f0f0f0 !important; stroke: #a2b5ba !important; }
+.w .w-stroke { stroke: #9bb3b3 !important; }
+.w .t-bg { height: 92.5px; fill: #fff !important; stroke: none !important; }
 
-#channelbook .w#addchannel #w-bg { filter: url(#modal-shadow-w) !important; }
-#channelbook .w#addchannel #w-stroke { stroke: #fff !important; stroke-opacity: 0.6; stroke-width: 1.5px !important; }
-#channelbook .w#addchannel #t-bg { height: 59.5px; }
+#channelbook .w#addchannel .w-bg, #wide .w#editservice .w-bg { filter: url(#modal-shadow-w) !important; }
+#channelbook .w#addchannel .w-stroke, #wide .w#editservice .w-stroke { stroke: #fff !important; stroke-opacity: 0.6; stroke-width: 1.5px !important; }
+#channelbook .w#addchannel .t-bg, #wide .w#editservice .t-bg { height: 59.5px; }
 
 .w #sb-bg, .w #tb-bg, .w #tb-corner .bg, .w #menu-bg, .w #ss-bg { fill: none !important; }
 .w #main-bg, .w #tree-tool .bg, .w #list-tool .bg { fill: #f0f0f0 !important; }
 
-.w #t-stroke { display: none; stroke: none !important; }
-.w #t-txt { text-anchor: start; font-family: 'Segoe UI', Tahoma, sans-serif !important; font-weight: normal !important; font-size: 19.1px !important; letter-spacing: -0.1px; fill: #000 !important; transform: translate(-815px, 1.7px); }
-#piconseditor .w #t-txt { transform: translate(-608px, 1.7px); }
-#channelbook .w #t-txt { transform: translate(-489px, 0.6px); }
+.w .t-stroke { display: none; stroke: none !important; }
+.w .t-txt { text-anchor: start; font-family: 'Segoe UI', Tahoma, sans-serif !important; font-weight: normal !important; font-size: 19.1px !important; letter-spacing: -0.1px; fill: #000 !important; transform: translate(-815px, 1.7px); }
+#piconseditor .w .t-txt { transform: translate(-608px, 1.7px); }
+#channelbook .w .t-txt { transform: translate(-489px, 0.6px); }
+#wide .w .t-txt { transform: translate(-402px, 0.6px); }
 
 .w .ellipsis { font-size: 97% !important; }
 .w .ay { text-decoration: underline; }
@@ -157,6 +159,7 @@
 .w #sb-stroke { height: 34px; }
 .w #statusbar text { font-size: 19px !important; transform: translate(-13px, -3px); }
 .w #statusbar #sbte { transform: translate(18px, -3px); }
+#wide .w #statusbar #sbte { transform: translate(5px, -3px); }
 
 .w #sb-stroke, .w #menu-stroke, .w #main-stroke { stroke-width: 2.2px !important; }
 .w #sb-stroke, #menu-stroke, .w #main-stroke { stroke: #d0d0d0 !important; }
@@ -207,7 +210,7 @@
 .w .tree-group .focused { fill: #ccc !important; }
 
 .w .list { transform: translate(0, 2px); }
-#screenshot .w .list-view { height: 591px; transform: translate(0, 10px); }
+#editor .w .list-view, #wide .w .list-view { height: 591px; transform: translate(0, 10px); }
 #piconseditor .w .list-view { transform: translate(0, -6px); }
 #channelbook .w #ch-end .list-view { transform: translate(0, 10px); }
 .w .list-cols text { font-size: 18.5px !important; transform: translate(1px, 7px); }
@@ -215,8 +218,8 @@
 
 .w .ruler { width: 3px; height: 37px; fill: #f0f0f0 !important; stroke: #eee !important; transform: translate(0, -4px); clip-path: inset(1px 1px 1px 0); }
 
-#channelbook .w .focused { fill: #ccc !important; }
-#screenshot .w .list .focused, #channelbook .w #ch-end .focused { fill: #cde8ff !important; }
+#channelbook .w .focused, #wide .w #split-end .focused { fill: #ccc !important; }
+#editor .w .list .focused, #channelbook .w #ch-end .focused { fill: #cde8ff !important; }
 .w text.active { fill: #000 !important; }
 
 .w .list .items { transform: translate(0, 3px); }
@@ -232,9 +235,9 @@
 .w #tree-tool, .w #list-tool { transform: translate(0, -18px); }
 #channelbook .w #tree-tool, #channelbook .w #list-tool { transform: translate(0, -23px); }
 .w .search-item { transform: translate(0, -4px); }
-#screenshot .w .list-search .bg { width: 1329px; height: 52px; }
-#screenshot .w #list-tool .bg { width: 1329px; }
-#screenshot .w #list-tool .stroke { width: 1333px; }
+#editor .w .list-search .bg { width: 1329px; height: 52px; }
+#editor .w #list-tool .bg { width: 1329px; }
+#editor .w #list-tool .stroke { width: 1333px; }
 
 .w #tree-tool .bg, .w #tree-tool .stroke, .w #list-tool .bg, .w #list-tool .stroke { height: 65px; transform: translate(0, 8px); }
 .w #tree-tool .stroke, .w #list-tool .stroke { display: none !important; stroke: none !important; }
@@ -266,13 +269,15 @@
 .w #tb-corner .tb-ico use, .w .tool-ico use { fill: #505050 !important; }
 .w #tb-corner .tb-ico use { transform: translate(8px, 1px); }
 .w .tool-ico use { transform: translate(0, 1px); }
-#screenshot .w .list-search .ico { transform: matrix(0.24, 0, 0, 0.24, 1771, 1011) !important; }
+#editor .w .list-search .ico { transform: matrix(0.24, 0, 0, 0.24, 1771, 1011) !important; }
 #piconseditor .w .list-search .ico { transform: matrix(0.24, 0, 0, 0.24, 1767, 1011) !important; }
 
 .w .search-item .btn-bg { width: 110px; height: 32px; transform: translate(0, 1px); }
 .w .search-item .btn-txt { transform: translate(-5px, 3px); }
-#screenshot .w .search-item .btn-caret { transform: matrix(1, 0, 0, 1, 573, 1008) !important; }
+#wide .w .search-item .btn-bg { width: 150px; height: 32px; transform: translate(0, 1px); }
+#editor .w .search-item .btn-caret { transform: matrix(1, 0, 0, 1, 573, 1008) !important; }
 #piconseditor .w .search-item .btn-caret { transform: matrix(1, 0, 0, 1, 603, 1008) !important; }
+#wide .w .search-item .btn-caret { transform: matrix(1, 0, 0, 1, 613, 1008) !important; }
 .w .search-item .input-bg { width: 352px; height: 36px; transform: translate(-33px, 0); }
 .w .search-item .input-txt { transform: translate(-33px, 2px); }
 
@@ -397,6 +402,7 @@
 .w .li-divid:nth-child(5) { transform: translate(-25px, 0); }
 .w .li-item:nth-child(6) { transform: translate(-25px, 0); opacity: 0.25 !important; }
 #piconseditor .w .li-item:nth-child(2) { transform: translate(16px, 2px); }
+#wide .w .li-item:nth-child(2) { transform: translate(20px, 2px); opacity: 0.25 !important; }
 
 #channelbook .w .ch-item:nth-child(2) { transform: translate(-1px, 1px); }
 #channelbook .w .ch-item:nth-child(3) { transform: translate(25px, 1px); }
@@ -411,34 +417,36 @@
 
 .f { font-family: 'Sans-Serif', system-ui, sans-serif !important; }
 
-.f #t-ctrs-m { display: none; }
-.f #t-ctrs-l { display: block !important; }
+.f .t-ctrs-m { display: none; }
+.f .t-ctrs-l { display: block !important; }
 
 .f #menubar, .f .arrow-l { display: block !important; }
-.f #w-shade, .f #split ellipse, .f #ch-split ellipse, .f .arrow-m { display: none !important; }
+.f .w-shade, .f #split ellipse, .f #ch-split ellipse, .f .arrow-m { display: none !important; }
 
-.f #w-bg, .f #w-stroke, .f #w-shade, .f #t-bg, .f #sb-bg { rx: 0; }
+.f .w-bg, .f .w-stroke, .f .w-shade, .f .t-bg, .f #sb-bg { rx: 0; }
 
-#channelbook .f#addchannel #w-bg { fill: #efefef !important; filter: url(#modal-shadow-f) !important; }
-#channelbook .f#addchannel #w-stroke { stroke: #f9f9f9 !important; }
-#channelbook .f#addchannel #t-bg { x: 0; y: 1px; width: 1063px; }
-#channelbook .f#addchannel #t-stroke { x: 0; y: 47px; width: 1063px; }
+#channelbook .f#addchannel .w-bg, #wide .f#editservice .w-bg { fill: #efefef !important; filter: url(#modal-shadow-f) !important; }
+#channelbook .f#addchannel .w-stroke, #wide .f#editservice .w-stroke { stroke: #f9f9f9 !important; }
+#channelbook .f#addchannel .t-bg, #wide .f#editservice .t-bg { x: 0; y: 1px; }
+#channelbook .f#addchannel .t-stroke, #wide .f#editservice .t-stroke { x: 0; y: 47px; }
+#channelbook .f#addchannel .t-bg, #channelbook .f#addchannel .t-stroke { width: 1063px; }
+#wide .f#editservice .t-bg, #wide .f#editservice .t-stroke { width: 869px; }
 
 .f .btn-caret .bg, .f .btn-flag .bg { fill: none !important; stroke: none !important; }
 
-.f #w-bg { fill: #f9f9f9 !important; stroke: #acc6c3 !important; }
-.f #w-stroke { stroke: #9bb1ab !important; }
-.f #t-bg { y: 81px; height: 48px; fill: #fafafa !important; stroke: #e8e8e8 !important; stroke-width: 2px !important; clip-path: inset(1px 1px 0px) !important; }
-.f #t-stroke { y: 127px; stroke: #cbcdcc !important; stroke-width: 2px !important; clip-path: inset(0 1px); }
-#screenshot .f #t-bg { x: 81px; width: 1718px; }
-#piconseditor .f #t-bg { x: 501px; width: 1298px; }
+.f .w-bg { fill: #f9f9f9 !important; stroke: #acc6c3 !important; }
+.f .w-stroke { stroke: #9bb1ab !important; }
+.f .t-bg { y: 81px; height: 48px; fill: #fafafa !important; stroke: #e8e8e8 !important; stroke-width: 2px !important; clip-path: inset(1px 1px 0px) !important; }
+.f .t-stroke { y: 127px; stroke: #cbcdcc !important; stroke-width: 2px !important; clip-path: inset(0 1px); }
+#editor .f .t-bg { x: 81px; width: 1718px; }
+#piconseditor .f .t-bg { x: 501px; width: 1298px; }
+
+.f .t-txt { font-family: 'Sans-Serif', system-ui, sans-serif !important; font-size: 19px !important; fill: #5a5a5a !important; transform: translate(-3px, 1.5px); }
 
 .f #tb-bg, .f #tb-corner .bg, .f #ss-bg { fill: #efefef !important; }
 .f #sb-bg, .f #main-bg { fill: #efefef !important; }
 .f #menu-bg { fill: #f9f9f9 !important; }
 .f #tree-tool .bg, .f #list-tool .bg { fill: #fff !important; }
-
-.f #t-txt { font-family: 'Sans-Serif', system-ui, sans-serif !important; font-size: 19px !important; fill: #5a5a5a !important; transform: translate(-3px, 1.5px); }
 
 .f #menubar { transform: translate(0, 8px); }
 .f #mb-bg { height: 36px; }
@@ -541,11 +549,11 @@
 #channelbook .f #tree-tool, #channelbook .f #list-tool { transform: translate(0, -26px); }
 .f .list-search { transform: translate(0, 5px); }
 .f .search-item { transform: translate(0, -4px); }
-#screenshot .f .list-search .ico { transform: matrix(0.23, 0, 0, 0.23, 1771, 1010); }
+#editor .f .list-search .ico { transform: matrix(0.23, 0, 0, 0.23, 1771, 1010); }
 #piconseditor .f .list-search .ico { transform: matrix(0.23, 0, 0, 0.23, 1767, 1010); }
-#screenshot .f .list-search .bg { width: 1329px; height: 50px; }
-#screenshot .f #list-tool .bg { width: 1329px; }
-#screenshot .f #list-tool .stroke { width: 1333px; }
+#editor .f .list-search .bg { width: 1329px; height: 50px; }
+#editor .f #list-tool .bg { width: 1329px; }
+#editor .f #list-tool .stroke { width: 1333px; }
 
 .f #tree-tool .bg, .f #tree-tool .stroke, .f #list-tool .bg, .f #list-tool .stroke { height: 65px; transform: translate(0, 8px); }
 .f #list-tool .bg { width: 1330px; }
@@ -570,8 +578,10 @@
 .f .qe-li .btn-bg { transform: translate(10px, -1px); }
 .f .qe .btn-ico use { x: 15px; }
 .f .search-item .btn-bg { width: 123px; height: 34px; transform: translate(-2px, -2px); }
+#wide .f .search-item .btn-bg { width: 162.5px; }
 .f .search-item .btn-txt { transform: translate(-5px, 0); }
 .f .search-item .arrow { transform: translate(-7px, 0); }
+#wide .f .search-item .arrow { transform: translate(-6px, 0); }
 .f .search-item .input-bg { width: 308px; height: 34px; transform: translate(-16px, -1px); }
 .f .search-item .input-txt { transform: translate(-15px, 0); }
 .f .search-item .find-txt, .f .search-item .find-h-txt { font-size: 19.5px !important; }
@@ -712,6 +722,7 @@
 .f .li-divid:nth-child(5) { transform: translate(-28px, -5px); }
 .f .li-item:nth-child(6) { transform: translate(-24px, 1px); opacity: 0.25 !important; }
 #piconseditor .f .li-item:nth-child(2) { transform: translate(23px, 2px); }
+#wide .f .li-item:nth-child(2) { transform: translate(27px, 2px); opacity: 0.25 !important; }
 
 #channelbook .f .ch-item:nth-child(2) { transform: translate(-2px, 0.5px); }
 #channelbook .f .ch-item:nth-child(3) { transform: translate(12px, -1px); }
@@ -726,20 +737,20 @@
 #channelbook .f #ch-end .focused { transform: matrix(1, 0, 0, 0.996, 0, 2); }
 
 
-.df #t-ctrs-l rect { stroke: #fdfdfd !important; }
-.df #t-ctrs-l g g rect { stroke-width: 1.3px !important; }
+.df .t-ctrs-l rect { stroke: #fdfdfd !important; }
+.df .t-ctrs-l g g rect { stroke-width: 1.3px !important; }
 
 .df text:not(.color) { fill: #fff !important; }
-.df #t-txt { fill: #aaa !important; }
+.df .t-txt { fill: #aaa !important; }
 
 #channelbook .df#tint-d { fill-opacity: 0.7 !important; }
 
-.df #w-bg { fill: #171717 !important; stroke: #acc6c3 !important; }
-.df #w-stroke { stroke: #a7bfba !important; }
-.df #t-bg { fill: #3a3a3a !important; stroke: #131312 !important; }
+.df .w-bg { fill: #171717 !important; stroke: #acc6c3 !important; }
+.df .w-stroke { stroke: #a7bfba !important; }
+.df .t-bg { fill: #3a3a3a !important; stroke: #131312 !important; }
 
-#channelbook .df#addchannel #w-bg { fill: #222020 !important; }
-#channelbook .df#addchannel #w-stroke { stroke: #000 !important; stroke-width: 1.8px !important; }
+#channelbook .df#addchannel .w-bg, #wide .df#editservice .w-bg { fill: #222020 !important; }
+#channelbook .df#addchannel .w-stroke, #wide .df#editservice .w-stroke { stroke: #000 !important; stroke-width: 1.8px !important; }
 
 .df #mb-txt { fill-opacity: 0.9; }
 
@@ -765,7 +776,7 @@
 .df .find-bg { fill: #2a2a29 !important; }
 .df .find-h-bg { fill: #0d4867 !important; stroke: #2a2a29 !important; }
 
-.df #t-stroke { stroke: #222020 !important; }
+.df .t-stroke { stroke: #222020 !important; }
 .df #mb-stroke, .df #sb-stroke { stroke: #1d1c1c !important; }
 .df #menu-stroke { stroke: #fff !important; stroke-opacity: 0.09 !important; }
 .df #main-stroke { stroke: #fff !important; stroke-opacity: 0.05 !important; }
@@ -782,11 +793,11 @@
 .df #tb-arrows { transform: translate(1px, 0); }
 
 .df .tb-tab .bg, .df #tb-arrows .bg { fill: #2a2a29 !important; stroke: #363636 !important; }
-.df .tb-tab.active .bg, #screenshot .df #tb-start { stroke: #12608a !important; }
+.df .tb-tab.active .bg, #editor .df #tb-start { stroke: #12608a !important; }
 .df .focused, .df .tb-tab.active .bg, #piconseditor .df #icon-canvas { fill: #12608a !important; }
 .df #tb-end { fill: #333 !important; }
-#screenshot .df #tb-start { stroke: #12608a !important; }
-#piconseditor .df #tb-start { fill: #333 !important; }
+#editor .df #tb-start { stroke: #12608a !important; }
+#piconseditor .df #tb-start, #wide .df #tb-start { fill: #333 !important; }
 
 .df #tbar-bg { fill: #222020 !important; }
 .df #tbar-stroke { height: 1.6px; fill: #131312 !important; }

@@ -73,7 +73,9 @@ function load_images(evt) {
     el.disabled = true;
     el.removeAttribute('src');
 
-    platform = platform ?? platform_detect();
+    // 
+    // platform = platform ?? platform_detect();
+    platform = platform_detect();
 
     let img;
     const id = el.parentElement.className.substr(-1);
@@ -81,8 +83,12 @@ function load_images(evt) {
     if (id != 'f') {
       color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'd' : 'l');
 
-      if (id == 'b' || id == 'e') {
+      if (id == 'b' || id == 'd' || id == 'e') {
         img = id;
+      }
+      // 
+      if (id == 'd') {
+        platform = 'w';
       }
     } else {
       color = i++ ? 'd' : 'l';
