@@ -1,4 +1,4 @@
-<svg viewBox="0 0 3040 1300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="wide">
+<svg viewBox="0 0 3318 1300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="wide">
   <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="svg_screenshot.css" type="text/css" />
   <defs>
     <symbol id="add">
@@ -143,15 +143,15 @@
   </defs>
 
   <g id="system">
-    <rect id="wallpaper" x="0" y="0" width="3290" height="1300" style="fill:#b4d0cd" />
+    <rect id="wallpaper" x="0" y="0" width="3318" height="1300" style="fill:#b4d0cd" />
   </g>
 
-  <g id="editservice" class="m" transform="matrix(1.19,0,0,1.19,102,204)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
-    <rect class="w-bg" x="1" y="1" width="867" height="722" rx="15" style="fill:#f3f4f4;stroke:#a6bbb9;stroke-width:1px;filter: url(#modal-shadow-m)" />
+  <g id="editservice" class="m" transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+    <rect class="w-bg" x="1" y="1" width="960" height="820" rx="15" style="fill:#f3f4f4;stroke:#a6bbb9;stroke-width:1px;filter: url(#modal-shadow-m)" />
     <g class="titlebar">
-      <rect class="t-bg" x="2" y="2" width="865" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
-      <rect class="t-stroke" x="1" y="44" width="867" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
-      <text class="t-txt" x="2" y="2" dx="441" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949;">Edit Service</text>
+      <rect class="t-bg" x="2" y="2" width="958" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
+      <rect class="t-stroke" x="1" y="44" width="960" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
+      <text class="t-txt" x="2" y="2" dx="478" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949;">Edit Service</text>
       <g class="t-ico-w" style="display:none">
         <image x="11" y="11" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg==" />
       </g>
@@ -178,12 +178,103 @@
       </g>
     </g>
     <g id="editservice-inner">
+      <rect id="editservice-frame" x="32" y="82" width="897" height="638" rx="6" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px;" />
+      <g id="editservice-tabs">
+        <g class="tab-item active" style="clip-path:inset(0 8px 0 0);">
+          <rect x="363" y="68" width="103" height="29" rx="7" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:1px;transform:translate(0.5px,1px)" />
+          <text x="363" y="68" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#fff;fill-opacity:0.9;">Service</text>
+        </g>
+        <g class="tab-item active" style="clip-path:inset(0 0 0 8px);">
+          <rect x="450" y="68" width="147" height="29" rx="7" style="fill:#eee;stroke:#d1d2d2;stroke-width:1px;transform:translate(0.5px,1px)" />
+          <text x="450" y="68" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#000;fill-opacity:0.9;">Transponder</text>
+        </g>
+      </g>
+      <g class="gbox">
+        <rect class="gbox-bg" x="65" y="130" width="420" height="324" rx="5" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px;" />
+        <text class="gbox-txt" x="65" y="108" dx="10" dy="17" style="font-size:17px;fill:#000">Service</text>
+        <g class="gbox-inner">
+          <g class="fg-item">
+            <text class="txt" x="88" y="150" dy="21" style="font-size:20px;fill:#000">Service name</text>
+            <g>
+              <rect class="input-bg" x="88" y="188" width="343" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:1px" />
+              <text class="input-txt" x="88" y="188" dx="4" dy="23" style="font-size:19px;fill:#000">NASA TV HD</text>
+            </g>
+          </g>
+          <g class="fg-item">
+            <text class="txt" x="88" y="250" dy="21" style="font-size:20px;fill:#000">Service type</text>
+            <g>
+              <g>
+                <rect class="btn-bg" x="88" y="305" width="136" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+                <text class="btn-txt" x="88" y="305" dx="12" dy="22" style="font-size:20px;word-spacing:4px;fill:#000">1 TV</text>
+                <g class="btn-caret" transform="matrix(1,0,0,1,197,307)">
+                  <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
+                  <g class="arrow">
+                    <g class="arrow-m">
+                      <g class="arrow-up" transform="matrix(0.16,0,0,0.16,7.4,3.7)">
+                        <use href="#arrow-m" style="fill:#fff" />
+                      </g>
+                      <g class="arrow-down" transform="matrix(0.16,0,0,-0.16,7.4,22.7)">
+                        <use href="#arrow-m" style="fill:#fff" />
+                      </g>
+                    </g>
+                    <g class="arrow-w" style="display:none">
+                      <use href="#arrow-t-w" />
+                    </g>
+                    <g class="arrow-l" style="display:none">
+                      <use href="#arrow-l" />
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g>
+                <rect class="btn-bg" x="254" y="305" width="112" height="32" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+                <text class="btn-txt" x="254" y="305" dx="22" dy="22.5" style="font-size:20px;fill:#fff;fill-opacity:0.9;">custom</text>
+              </g>
+            </g>
+          </g>
+          <g class="fg-item">
+            <text class="txt" x="88" y="360" dy="21" style="font-size:20px;fill:#000">Service ID</text>
+            <g>
+              <rect class="input-bg" x="88" y="398" width="86" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:1px" />
+              <text class="input-txt" x="88" y="398" dx="4" dy="23" style="font-size:19px;fill:#000">504</text>
+              <text class="input-xr" x="192" y="398" dy="23" style="font-size:20.5px;fill:#000">[SID]</text>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g class="gbox">
+        <rect class="gbox-bg" x="65" y="506" width="420" height="183" rx="5" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px;" />
+        <text class="gbox-txt" x="65" y="484" dx="10" dy="17" style="font-size:17px;fill:#000">Tuner</text>
+        <g class="gbox-inner">
+          
+        </g>
+      </g>
+      <g class="gbox">
+        <rect class="gbox-bg" x="508" y="130" width="388" height="559" rx="5" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px;" />
+        <text class="gbox-txt" x="508" y="108" dx="10" dy="17" style="font-size:17px;fill:#000">Parameters</text>
+        <g class="gbox-inner">
+          
+        </g>
+      </g>
+      <g id="editservice-tbar">
+        <rect id="tbar-bg" x="1" y="739" width="960" height="82" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0 0)" />
+        <g class="ch-item">
+          <text class="tool-txt" x="723" y="764" dx="26" dy="34" style="font-size:22.5px;fill:#000">Cancel</text>
+        </g>
+        <g class="ch-item">
+          <g class="tool-ico ico" transform="matrix(0.34,0,0,0.34,851,778)">
+            <use href="#add" style="fill:#505050" />
+          </g>
+          <text class="tool-txt" x="851" y="764" dx="26" dy="34" style="font-size:22.5px;fill:#000">Save</text>
+        </g>
+        <rect id="tbar-stroke" x="1" y="756" width="960" height="1.4" style="fill:#e0e1e1" />
+      </g>
     </g>
-    <rect class="w-stroke" x="1" y="1" width="867" height="722" rx="15" style="fill:none;stroke:#c1c1c1;stroke-width:1px" />
-    <rect class="w-shade" x="3" y="3" width="863" height="718" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
+    <rect class="w-stroke" x="1" y="1" width="960" height="820" rx="15" style="fill:none;stroke:#c1c1c1;stroke-width:1px" />
+    <rect class="w-shade" x="3" y="3" width="956" height="816" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
-  <g id="window" class="m" transform="matrix(1,0,0,1,1169,0)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="window" class="m" transform="matrix(1,0,0,1,1440,0)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
     <g class="titlebar">
       <rect class="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
@@ -636,6 +727,7 @@
     <rect class="w-shade" x="83" y="83" width="1714" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
+  <!--<g id="screen" transform="matrix(1.41,0,0,1.41,7,-81)" style="opacity:0.6"><image href="../test/editservice-lm.png" width="946" height="1082" /></g>-->
   <!--<image id="screen" href="../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
   <!--<image id="screen" href="../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" />-->
   <!--<image id="screen" href="../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
