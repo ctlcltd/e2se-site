@@ -631,7 +631,7 @@
               </g>
             </g>
             <g class="search-item">
-              <rect class="input-bg" x="656" y="1003" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:1.2px" />
+              <rect class="input-bg" x="656" y="1003" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:3.4px;clip-path:inset(1px 1px 0.2px)" />
               <text class="input-txt" x="656" y="1003" dx="4" dy="23" style="font-size:19px;fill:#000">riba</text>
             </g>
             <g class="search-item">
@@ -660,7 +660,7 @@
             <g id="li-items">
               <g class="li-item">
                 <text class="txt" x="509" y="1072" dx="4" dy="23" style="font-size:19px;fill:#000">Folder</text>
-                <rect class="input-bg" x="580" y="1072" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:1.3px" />
+                <rect class="input-bg" x="580" y="1072" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:3.8px;clip-path:inset(1px 1px 0.3px)" />
                 <rect class="btn-bg" x="800" y="1072" width="126" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
                 <text class="btn-txt" x="800" y="1072" dx="24" dy="22" style="font-size:20px;fill:#000">Browse<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
               </g>

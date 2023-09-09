@@ -497,7 +497,7 @@
               
             
             
-              <rect x="656" y="1003" width="208" height="33" rx="0" style="fill:#fff;fill-opacity:0.08;stroke:#fff;stroke-opacity:0.11;stroke-width:1.2px"/>
+              <rect x="656" y="1003" width="208" height="33" rx="0" style="fill:#fff;fill-opacity:0.08;stroke:#fff;stroke-opacity:0.11;stroke-width:3.4px;clip-path:inset(1px 1px 0.2px)"/>
               <text x="656" y="1003" dx="4" dy="23" style="font-size:19px;fill:#fff">riba</text>
             
             
@@ -526,7 +526,7 @@
             
               
                 <text x="509" y="1072" dx="4" dy="23" style="font-size:19px;fill:#fff">Folder</text>
-                <rect x="580" y="1072" width="208" height="33" rx="0" style="fill:#fff;fill-opacity:0;stroke:#fff;stroke-opacity:0.11;stroke-width:1.5px"/>
+                <rect x="580" y="1072" width="208" height="33" rx="0" style="fill:#fff;fill-opacity:0;stroke:#fff;stroke-opacity:0.11;stroke-width:3.8px;clip-path:inset(1px 1px 0.3px)"/>
                 <rect x="800" y="1072" width="126" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
                 <text x="800" y="1072" dx="24" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Browse<tspan style="font-size:15px">…</tspan></text>
               

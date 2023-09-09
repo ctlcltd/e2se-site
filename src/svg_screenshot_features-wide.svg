@@ -178,35 +178,35 @@
       </g>
     </g>
     <g id="editservice-inner">
-      <rect id="editservice-frame" x="32" y="82" width="897" height="638" rx="6" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px;" />
+      <rect id="editservice-frame" x="33" y="82" width="895" height="638" rx="6" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px" />
       <g id="editservice-tabs">
-        <g class="tab-item active" style="clip-path:inset(0 8px 0 0);">
+        <g class="tab-item active" style="clip-path:inset(0 8px 0 0)">
           <rect x="363" y="68" width="103" height="29" rx="7" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:1px;transform:translate(0.5px,1px)" />
-          <text x="363" y="68" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#fff;fill-opacity:0.9;">Service</text>
+          <text x="363" y="68" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#fff">Service</text>
         </g>
-        <g class="tab-item active" style="clip-path:inset(0 0 0 8px);">
-          <rect x="450" y="68" width="147" height="29" rx="7" style="fill:#eee;stroke:#d1d2d2;stroke-width:1px;transform:translate(0.5px,1px)" />
-          <text x="450" y="68" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#000;fill-opacity:0.9;">Transponder</text>
+        <g class="tab-item active" style="clip-path:inset(0 0 0 8px)">
+          <rect x="450" y="68" width="147" height="29" rx="7" style="fill:#f7f8f8;stroke:#d1d2d2;stroke-width:1px;transform:translate(0.5px,1px)" />
+          <text x="450" y="68" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#000;fill-opacity:0.9">Transponder</text>
         </g>
       </g>
       <g class="gbox">
-        <rect class="gbox-bg" x="65" y="130" width="420" height="324" rx="5" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px;" />
-        <text class="gbox-txt" x="65" y="108" dx="10" dy="17" style="font-size:17px;fill:#000">Service</text>
+        <rect class="gbox-bg" x="66" y="131" width="418" height="323" rx="5" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px" />
+        <text class="gbox-txt" x="66" y="109" dx="10" dy="17" style="font-size:17px;letter-spacing:0.4px;fill:#000">Service</text>
         <g class="gbox-inner">
           <g class="fg-item">
-            <text class="txt" x="88" y="150" dy="21" style="font-size:20px;fill:#000">Service name</text>
+            <text class="txt" x="87" y="150" dy="22" style="font-size:19.5px;fill:#000">Service name</text>
             <g>
-              <rect class="input-bg" x="88" y="188" width="343" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:1px" />
-              <text class="input-txt" x="88" y="188" dx="4" dy="23" style="font-size:19px;fill:#000">NASA TV HD</text>
+              <rect class="input-bg" x="87" y="187" width="346" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:4.4px;clip-path:inset(1px 1px 0)" />
+              <text class="input-txt" x="87" y="187" dx="4" dy="23" style="font-size:19px;fill:#000">NASA TV HD</text>
             </g>
           </g>
           <g class="fg-item">
-            <text class="txt" x="88" y="250" dy="21" style="font-size:20px;fill:#000">Service type</text>
+            <text class="txt" x="87" y="244" dy="22" style="font-size:19.5px;fill:#000">Service type</text>
             <g>
               <g>
-                <rect class="btn-bg" x="88" y="305" width="136" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
-                <text class="btn-txt" x="88" y="305" dx="12" dy="22" style="font-size:20px;word-spacing:4px;fill:#000">1 TV</text>
-                <g class="btn-caret" transform="matrix(1,0,0,1,197,307)">
+                <rect class="btn-bg" x="95" y="299" width="126" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+                <text class="btn-txt" x="95" y="299" dx="12" dy="22" style="font-size:20px;word-spacing:3px;fill:#000">1 TV</text>
+                <g class="btn-caret" transform="matrix(1,0,0,1,194,301)">
                   <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
                   <g class="arrow">
                     <g class="arrow-m">
@@ -227,33 +227,177 @@
                 </g>
               </g>
               <g>
-                <rect class="btn-bg" x="254" y="305" width="112" height="32" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
-                <text class="btn-txt" x="254" y="305" dx="22" dy="22.5" style="font-size:20px;fill:#fff;fill-opacity:0.9;">custom</text>
+                <rect class="btn-bg" x="248" y="302" width="106" height="29" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+                <text class="btn-txt" x="248" y="302" dx="20" dy="21" style="font-size:19.5px;fill:#fff">custom</text>
               </g>
             </g>
           </g>
           <g class="fg-item">
-            <text class="txt" x="88" y="360" dy="21" style="font-size:20px;fill:#000">Service ID</text>
+            <text class="txt" x="87" y="365" dy="22" style="font-size:19.5px;fill:#000">Service ID</text>
             <g>
-              <rect class="input-bg" x="88" y="398" width="86" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:1px" />
-              <text class="input-txt" x="88" y="398" dx="4" dy="23" style="font-size:19px;fill:#000">504</text>
-              <text class="input-xr" x="192" y="398" dy="23" style="font-size:20.5px;fill:#000">[SID]</text>
+              <rect class="input-bg" x="87" y="401" width="87" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:4.4px;clip-path:inset(1px 1px 0)" />
+              <text class="input-txt" x="87" y="401" dx="4" dy="23" style="font-size:19px;fill:#000">504</text>
+              <text class="input-xr" x="188" y="401" dy="23" style="font-size:19.5px;fill:#000">[SID]</text>
             </g>
           </g>
         </g>
       </g>
       <g class="gbox">
-        <rect class="gbox-bg" x="65" y="506" width="420" height="183" rx="5" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px;" />
-        <text class="gbox-txt" x="65" y="484" dx="10" dy="17" style="font-size:17px;fill:#000">Tuner</text>
+        <rect class="gbox-bg" x="66" y="506" width="418" height="182" rx="5" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px" />
+        <text class="gbox-txt" x="66" y="484" dx="10" dy="17" style="font-size:17px;letter-spacing:0.4px;fill:#000">Tuner</text>
         <g class="gbox-inner">
-          
+          <g class="fg-item">
+            <text class="txt" x="133" y="533" dy="22" style="font-size:19.5px;fill:#000">Satellite</text>
+            <g>
+              <rect class="btn-bg" x="225" y="532" width="241" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+              <text class="btn-txt" x="225" y="532" dx="12" dy="22" style="font-size:20px;fill:#000">Hot Bird</text>
+              <g class="btn-caret" transform="matrix(1,0,0,1,438,534)">
+                <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
+                <g class="arrow">
+                  <g class="arrow-m">
+                    <g class="arrow-up" transform="matrix(0.16,0,0,0.16,7.4,3.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                    <g class="arrow-down" transform="matrix(0.16,0,0,-0.16,7.4,22.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                  </g>
+                  <g class="arrow-w" style="display:none">
+                    <use href="#arrow-t-w" />
+                  </g>
+                  <g class="arrow-l" style="display:none">
+                    <use href="#arrow-l" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="fg-item">
+            <text class="txt" x="94" y="588" dy="22" style="font-size:19.5px;fill:#000">Transponder</text>
+            <g>
+              <rect class="btn-bg" x="225" y="587" width="241" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+              <text class="btn-txt" x="225" y="587" dx="12" dy="22" style="font-size:20px;fill:#000">11373/H/27500</text>
+              <g class="btn-caret" transform="matrix(1,0,0,1,438,589)">
+                <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
+                <g class="arrow">
+                  <g class="arrow-m">
+                    <g class="arrow-up" transform="matrix(0.16,0,0,0.16,7.4,3.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                    <g class="arrow-down" transform="matrix(0.16,0,0,-0.16,7.4,22.7)">
+                      <use href="#arrow-m" style="fill:#fff" />
+                    </g>
+                  </g>
+                  <g class="arrow-w" style="display:none">
+                    <use href="#arrow-t-w" />
+                  </g>
+                  <g class="arrow-l" style="display:none">
+                    <use href="#arrow-l" />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="fg-item">
+            <g>
+              <rect class="btn-bg" x="222" y="640" width="193" height="29" rx="8" style="fill:#f9f9f9;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+              <text class="btn-txt" x="222" y="640" dx="20" dy="21" style="font-size:19.5px;fill:#000">New Transponder</text>
+            </g>
+          </g>
         </g>
       </g>
       <g class="gbox">
-        <rect class="gbox-bg" x="508" y="130" width="388" height="559" rx="5" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px;" />
-        <text class="gbox-txt" x="508" y="108" dx="10" dy="17" style="font-size:17px;fill:#000">Parameters</text>
+        <rect class="gbox-bg" x="508" y="131" width="387" height="557" rx="5" style="fill:#888;fill-opacity:0.09;stroke:#000;stroke-opacity:0.1;stroke-width:0.5px" />
+        <text class="gbox-txt" x="508" y="109" dx="10" dy="17" style="font-size:17px;letter-spacing:0.4px;fill:#000">Parameters</text>
         <g class="gbox-inner">
-          
+          <g class="qt-item">
+            <rect class="qt-shape" x="526" y="178" width="350" height="50" style="fill:none" />
+            <g class="qt-fold" transform="matrix(1,0,0,1,526,178)">
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+            </g>
+            <text class="qt-txt" x="526" y="178" dx="8" dy="26" style="font-size:19.5px;fill:#000">Package</text>
+          </g>
+          <g class="qt-item">
+            <rect class="qt-shape" x="526" y="227" width="350" height="50" style="fill:none" />
+            <g class="qt-fold" transform="matrix(1,0,0,1,526,227)">
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+            </g>
+            <text class="qt-txt" x="526" y="227" dx="8" dy="26" style="font-size:19.5px;fill:#000">PIDs</text>
+            <g class="qt-inner" style="clip-path:inset(0 0 15px)">
+              <rect class="bg" x="529" y="277" width="345" height="167" style="fill:#fff;fill-opacity:0.3" />
+              <g class="fg-item">
+                <text class="txt" x="632" y="295" dy="22" style="font-size:19.5px;fill:#000">video</text>
+                <g>
+                  <rect class="input-bg" x="691" y="294" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:4.4px;clip-path:inset(1px 1px 0)" />
+                  <text class="input-txt" x="691" y="294" dx="4" dy="23" style="font-size:19px;fill:#000">5041</text>
+                  <text class="input-xr" x="775" y="294" dy="23" style="font-size:19px;fill:#000">[VPID]</text>
+                </g>
+              </g>
+              <g class="fg-item">
+                <text class="txt" x="574" y="340" dy="22" style="font-size:19.5px;fill:#000">mpeg-audio</text>
+                <g>
+                  <rect class="input-bg" x="691" y="339" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:4.4px;clip-path:inset(1px 1px 0)" />
+                  <text class="input-txt" x="691" y="339" dx="4" dy="23" style="font-size:19px;fill:#000">8191</text>
+                  <text class="input-xr" x="775" y="339" dy="23" style="font-size:19px;fill:#000">[APID]</text>
+                </g>
+              </g>
+              <g class="fg-item">
+                <text class="txt" x="660" y="384" dy="22" style="font-size:19.5px;fill:#000">tp</text>
+                <g>
+                  <rect class="input-bg" x="691" y="383" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:4.4px;clip-path:inset(1px 1px 0)" />
+                  <text class="input-xr" x="775" y="383" dy="23" style="font-size:19px;fill:#000">[TXTPID]</text>
+                </g>
+              </g>
+              <g class="fg-item">
+                <text class="txt" x="650" y="429" dy="22" style="font-size:19.5px;fill:#000">pcr</text>
+                <g>
+                  <rect class="input-bg" x="691" y="428" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:4.4px;clip-path:inset(1px 1px 0)" />
+                  <text class="input-txt" x="691" y="428" dx="4" dy="23" style="font-size:19px;fill:#000">5041</text>
+                  <text class="input-xr" x="775" y="428" dy="23" style="font-size:19px;fill:#000">[PCRPID]</text>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g class="qt-item">
+            <rect class="qt-shape" x="526" y="457" width="350" height="50" style="fill:none" />
+            <g class="qt-fold" transform="matrix(1,0,0,1,526,457)">
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+            </g>
+            <text class="qt-txt" x="526" y="457" dx="8" dy="26" style="font-size:19.5px;fill:#000">CAIDs</text>
+          </g>
+          <g class="qt-item">
+            <rect class="qt-shape" x="526" y="506" width="350" height="50" style="fill:none" />
+            <g class="qt-fold" transform="matrix(1,0,0,1,526,506)">
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+            </g>
+            <text class="qt-txt" x="526" y="506" dx="8" dy="26" style="font-size:19.5px;fill:#000">Flags</text>
+          </g>
+          <g class="qt-item">
+            <rect class="qt-shape" x="526" y="555" width="350" height="50" style="fill:none" />
+            <g class="qt-fold" transform="matrix(1,0,0,1,526,555)">
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+            </g>
+            <text class="qt-txt" x="526" y="555" dx="8" dy="26" style="font-size:19.5px;fill:#000">Custom</text>
+          </g>
+          <g class="qt-item">
+            <rect class="qt-shape" x="526" y="604" width="350" height="50" style="fill:none" />
+            <g class="qt-fold" transform="matrix(1,0,0,1,526,604)">
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+            </g>
+            <text class="qt-txt" x="526" y="604" dx="8" dy="26" style="font-size:19.5px;fill:#000">Extras</text>
+          </g>
         </g>
       </g>
       <g id="editservice-tbar">
@@ -664,7 +808,7 @@
               </g>
             </g>
             <g class="search-item">
-              <rect class="input-bg" x="667" y="1003" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:1px" />
+              <rect class="input-bg" x="667" y="1003" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:3.4px;clip-path:inset(1px 1px 0.2px)" />
               <text class="input-txt" x="667" y="1003" dx="4" dy="23" style="font-size:19px;fill:#000">10796/V</text>
             </g>
             <g class="search-item">
@@ -727,7 +871,7 @@
     <rect class="w-shade" x="83" y="83" width="1714" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
-  <!--<g id="screen" transform="matrix(1.41,0,0,1.41,7,-81)" style="opacity:0.6"><image href="../test/editservice-lm.png" width="946" height="1082" /></g>-->
+  <g id="screen" transform="matrix(1.41,0,0,1.41,7,-81)" style="opacity:0"><image href="../test/editservice-lm.png" width="946" height="1082" /></g>
   <!--<image id="screen" href="../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
   <!--<image id="screen" href="../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" />-->
   <!--<image id="screen" href="../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->

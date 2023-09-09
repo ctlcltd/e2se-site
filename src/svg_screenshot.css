@@ -38,7 +38,7 @@
 .dm .btn-bg { fill: #fff !important; fill-opacity: 0.24 !important; stroke: url(#btn-stroke-d-m) !important; }
 .dm .btn-bg { filter: url(#btn-shadow-d-m) !important; }
 .dm .input-bg { fill: #fff !important; fill-opacity: 0.08 !important; stroke: #fff !important; stroke-opacity: .11; }
-#piconseditor .dm #list-tool .input-bg { fill-opacity: 0 !important; stroke-width: 1.5px !important; }
+#piconseditor .dm #list-tool .input-bg { fill-opacity: 0 !important; /*stroke-width: 1.5px !important;*/ }
 
 .dm .tb-button rect { fill: url(#btn-bg-d-m) !important; }
 .dm .find-bg, .dm .list-cols .bg { fill: #323232 !important; }
@@ -172,7 +172,7 @@
 .w .btn-bg, .w .tb-button rect, .w .box-button .bg { rx: 0px !important; fill: #e1e1e1 !important; stroke: #a3a3a3 !important; stroke-width: 1.2px !important; }
 .w .btn-bg { filter: none !important; }
 /* safari bug: radius undefined :workaround: rx="1" style="rx:0" */
-.w .input-bg { rx: 1px !important; stroke: #949494 !important; stroke-width: 1.5px !important; }
+.w .input-bg { rx: 1px !important; stroke: #949494 !important; stroke-width: 1.5px !important; clip-path: none !important; }
 
 .w .find-h-bg { fill: #68c5ff !important; }
 
@@ -488,6 +488,7 @@
 
 .f .btn-bg, .f .tb-button rect, .f .box-button .bg { fill: url(#btn-bg-f) !important; }
 .f .btn-bg { filter: none !important; }
+.f .input-bg { clip-path: none !important; }
 .f .btn-bg, .f .tb-button rect, .f .box-button .bg, .f .input-bg { rx: 3px !important; stroke: #ababab !important; stroke-width: 1px !important; }
 .f .tb-button rect { stroke-width: 1px !important; }
 
