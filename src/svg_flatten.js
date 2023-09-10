@@ -318,7 +318,7 @@ if (/w|f/.test(root.getAttribute('_class'))) {
           tm = { e: parseFloat(tm[4]) || 0, f: parseFloat(tm[5]) || 0 };
 
           if (svg.getAttribute('id') === 'wide') {
-            tm.e += 1169;
+            tm.e += 1440;
           }
         }
 
@@ -359,9 +359,9 @@ if (/w/.test(root.getAttribute('_class'))) {
         fix = 502;
       } else if (svg.getAttribute('id') === 'wide') {
         if (txt.closest('g[_id="editservice"]')) {
-          fix = -400;
+          fix = -435;
         } else {
-          fix = 838;
+          fix = 1522;
         }
       } else {
         fix = 82;

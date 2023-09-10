@@ -250,7 +250,7 @@
                   
                 
               
-              <text x="1049" y="224" dx="12" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Default</text>
+              <text x="1049" y="224" dx="12" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.92">Default</text>
             
           
           
@@ -478,7 +478,7 @@
             <rect x="473" y="992" width="1325" height="61" style="fill:#101010"/>
             
               <rect x="483" y="1004" width="136" height="30" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
-              <text x="483" y="1004" dx="12" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Name</text>
+              <text x="483" y="1004" dx="12" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.92">Name</text>
               
                 <rect x="592.5" y="1007" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);stroke-opacity:0.06;stroke-width:2px"/>
                 

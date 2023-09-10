@@ -369,7 +369,7 @@
             <text class="txt" x="1178" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
           </g>
           <g class="menu-item">
-            <g>
+            <g class="btn-dropdown">
               <rect class="btn-bg" x="1473" y="224" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
               <g class="btn-caret" transform="matrix(1,0,0,1,1570,226)">
                 <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
@@ -607,7 +607,7 @@
           </g>
           <g class="list-search">
             <rect class="ts-bg bg" x="502" y="992" width="1296" height="61" style="fill:#fafafa" />
-            <g class="search-item">
+            <g class="search-item btn-dropdown">
               <rect class="btn-bg" x="513" y="1004" width="136" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
               <text class="btn-txt" x="513" y="1004" dx="12" dy="22" style="font-size:20px;fill:#000">Name</text>
               <g class="btn-caret" transform="matrix(1,0,0,1,621,1006)">
