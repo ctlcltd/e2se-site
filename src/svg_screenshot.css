@@ -253,7 +253,7 @@
 .w #tree-tool, .w #list-tool { transform: translate(0, -18px); }
 #channelbook .w #tree-tool, #channelbook .w #list-tool { transform: translate(0, -23px); }
 .w .search-item { transform: translate(0, -4px); }
-#editor .w .list-search .bg { width: 1329px; height: 52px; }
+#editor .w .list-search .bg, #wide .w .list-search .bg { width: 1329px; height: 52px; }
 #editor .w #list-tool .bg { width: 1329px; }
 #editor .w #list-tool .stroke { width: 1333px; }
 
@@ -379,6 +379,10 @@
 #channelbook .w #ch-end .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1047.5, 534); }
 #channelbook .w #ch-end .sbr { x: 1036px; y: 557px; }
 
+#wide .w .list .sbv .bg { height: 655px; }
+#wide .w .list .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 967); }
+#wide .w .list .sbv .xy { y: 369px; height: 56px; }
+
 #wide .w .qt-item .sbv { transform: translate(20px, 0px); }
 #wide .w .qt-item .sbv .bg { height: 223px; }
 #wide .w .qt-item .sbv .arrow.as { transform: matrix(1, 0, 0, 1, 862, 275.5); }
@@ -415,7 +419,7 @@
 #piconseditor .w .menu-item:nth-child(9) { transform: translate(7px, -3px); }
 
 .w .list .items text:last-of-type { display: none; }
-#wide .w #split-start .list .items text:last-of-type { display: block; }
+#wide .w .list .items text:last-of-type { display: block; }
 
 .w .search-item:nth-child(4) { transform: translate(115px, -2px); }
 .w .search-item:nth-child(5) { transform: translate(115px, -2px); }
@@ -790,6 +794,12 @@
 #channelbook .f #ch-end .sbh .arrow.as { transform: matrix(1, 0, 0, 1, 500.5, 568.2); }
 #channelbook .f #ch-end .sbh .arrow.ae { transform: matrix(1, 0, 0, 1, 1036.5, 568.2); }
 #channelbook .f #ch-end .sbr { x: 1040px; y: 560px; width: 23px; }
+
+#wide .f .list .sbv { clip-path: inset(1px 1px 1px 0); }
+#wide .f .list .sbv .bg { height: 658px; }
+#wide .f .list .sbv .ve { y: 978px; }
+#wide .f .list .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 975); }
+#wide .f .list .sbv .xy { y: 363.5px; height: 76px; }
 
 #wide .f .qt-item .sbv { transform: translate(11.5px, -5px); clip-path: inset(1px 1px 1px 0); }
 #wide .f .qt-item .sbv .bg { height: 236px; }

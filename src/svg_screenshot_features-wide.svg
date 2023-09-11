@@ -774,7 +774,7 @@
               </g>
             </g>
             <g class="sbv">
-              <rect class="bg" x="1784" y="341" width="14" height="651" style="display:none" />
+              <rect class="bg" x="1784" y="341" width="14" height="655" style="display:none" />
               <rect class="btn-bg vs" x="1784" y="341" width="14" height="14" style="display:none" />
               <g class="arrow as" transform="matrix(1,0,0,1,1784,341)">
                 <g class="arrow-w" style="display:none">
@@ -784,8 +784,8 @@
                   <use href="#arrow-l" />
                 </g>
               </g>
-              <rect class="btn-bg ve" x="1784" y="978" width="14" height="14" style="display:none" />
-              <g class="arrow ae" transform="matrix(1,0,0,1,1784,978)">
+              <rect class="btn-bg ve" x="1784" y="982" width="14" height="14" style="display:none" />
+              <g class="arrow ae" transform="matrix(1,0,0,1,1784,982)">
                 <g class="arrow-w" style="display:none">
                   <use href="#arrow-w" />
                 </g>
@@ -793,31 +793,8 @@
                   <use href="#arrow-l" />
                 </g>
               </g>
-              <rect class="xy" x="1782" y="368" width="12" height="77" rx="7" style="fill:#7f7f7f" />
+              <rect class="xy" x="1782" y="368" width="12" height="72" rx="7" style="fill:#7f7f7f" />
             </g>
-            <g class="sbh">
-              <rect class="bg" x="473" y="997" width="1318" height="14" style="display:none" />
-              <rect class="btn-bg hs" x="473" y="997" width="14" height="14" style="display:none" />
-              <g class="arrow as" transform="matrix(1,0,0,1,473,997)">
-                <g class="arrow-w" style="display:none">
-                  <use href="#arrow-w" />
-                </g>
-                <g class="arrow-l" style="display:none">
-                  <use href="#arrow-l" />
-                </g>
-              </g>
-              <rect class="btn-bg he" x="1777" y="997" width="14" height="14" style="display:none" />
-              <g class="arrow ae" transform="matrix(1,0,0,1,1777,997)">
-                <g class="arrow-w" style="display:none">
-                  <use href="#arrow-w" />
-                </g>
-                <g class="arrow-l" style="display:none">
-                  <use href="#arrow-l" />
-                </g>
-              </g>
-              <rect class="xy" x="511" y="996" width="99" height="12" rx="7" style="display:none" />
-            </g>
-            <rect class="sbr" x="1782" y="997" width="14" height="14" style="display:none" />
           </g>
           <g class="list-search">
             <rect class="ts-bg bg" x="473" y="992" width="1325" height="61" style="fill:#fafafa" />
