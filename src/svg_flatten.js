@@ -268,11 +268,11 @@ for (const el of elements) {
 
 
 //
-// fix text x pos  win | fusion
+// fix text x pos
 // 
 // .list text, .list text > tspan
 
-if (/w|f/.test(root.getAttribute('_class'))) {
+if (/w|f/.test(root.getAttribute('_class')) || svg.getAttribute('id') === 'wide') {
   root.setAttribute('class', root.getAttribute('_class'));
 
   elements = svg.querySelectorAll('g[_class="list"]');
@@ -391,7 +391,10 @@ if (/w/.test(root.getAttribute('_class'))) {
 
 
 // 
-// fix tspan text-decoration  win
+// fix text text-shadow
+
+// 
+// fix text text-decoration
 
 // 
 // fix font-family quotes  fusion

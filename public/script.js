@@ -9,7 +9,7 @@
 
 const doc = document;
 const body = doc.body;
-var platform;
+// var platform;
 
 function preferredColor() {
   let color = sessionStorage.getItem('preferred-color');
@@ -76,27 +76,22 @@ function load_images(evt) {
     el.removeAttribute('src');
 
     // 
+    window.platform = window.platform ?? platform_detect();
     // platform = platform ?? platform_detect();
-    platform = platform_detect();
 
     let img;
     const id = el.parentElement.className.substr(-1);
 
+    // 
     if (id != 'f') {
+      img = id;
       color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'd' : 'l');
-
-      if (id == 'b' || id == 'd' || id == 'e') {
-        img = id;
-      }
-      // 
-      if (id == 'd') {
-        platform = 'w';
-      }
     } else {
+      img = 'a';
       color = i++ ? 'd' : 'l';
     }
 
-    const src = '../src/test/' + (img ? img + '-' : '') + platform + '-' + (platform == 'w' ? 'l' : color) + platform + '.svg';
+    const src = '../src/screenshot-pre-svgo/' + (img ? img + '-' : '') + platform + '-' + (platform == 'w' ? 'l' : color) + platform + '.svg';
     el.setAttribute('src', src);
     el.disabled = false;
   }

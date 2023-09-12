@@ -11,6 +11,8 @@
       <path d="M62.328 7.276l-5.604-5.604-24.724 24.724c0 0-24.724-24.724-24.724-24.724l-5.604 5.604 24.724 24.724c0 0-24.724 24.724-24.724 24.724l5.604 5.604 24.724-24.724c0 0 24.724 24.724 24.724 24.724l5.604-5.604-24.724-24.724c0 0 24.724-24.724 24.724-24.724z"/>
     </symbol>
     
+    
+    
     <symbol id="edt">
       <path d="M56.256 31.057h-42.438c-7.074 0-12.818 5.744-12.818 12.818v61.295c0 7.074 5.744 12.818 12.818 12.818h54.476c7.075 0 12.818-5.744 12.818-12.818v-51.051c-16.616 14.040-16.649 30.281-17.025 36.965-0.151 2.687-1.869 5.034-4.385 5.99s-5.359 0.343-7.257-1.565c-14.421-14.502-16.181-43.133 3.811-64.452zM57.293 90.694c-14.624-14.705-13.039-45.988 15.234-64.344l-10.365-12.362 42.838 1.084-7.263 41.344-11.808-14.082c-28.127 16.992-28.15 39.728-28.636 48.36z"/>
     </symbol>
@@ -38,7 +40,7 @@
       <path d="M73.934 15.359c-6.491-1.302-13.177-1.302-19.668 0 0.828 4.128 1.452 8.287 1.871 12.477-4.352 0.948-8.5 2.666-12.249 5.073-2.666-3.259-5.165-6.641-7.499-10.146-5.511 3.67-10.238 8.397-13.908 13.908 3.505 2.334 6.887 4.834 10.146 7.499-2.407 3.749-4.125 7.897-5.073 12.249-4.19-0.419-8.349-1.043-12.477-1.871-1.303 6.491-1.303 13.177 0 19.668 4.128-0.828 8.287-1.452 12.477-1.871 0.948 4.352 2.666 8.501 5.073 12.249-3.259 2.666-6.641 5.165-10.146 7.499 3.67 5.511 8.397 10.238 13.908 13.908 2.334-3.505 4.833-6.887 7.499-10.146 3.749 2.407 7.897 4.125 12.249 5.074-0.419 4.189-1.043 8.348-1.871 12.476 6.491 1.303 13.177 1.303 19.668 0-0.828-4.128-1.452-8.287-1.871-12.476 4.352-0.949 8.5-2.667 12.249-5.074 2.666 3.259 5.165 6.641 7.499 10.146 5.511-3.67 10.238-8.397 13.908-13.908-3.505-2.334-6.887-4.833-10.146-7.499 2.407-3.748 4.125-7.897 5.073-12.249 4.19 0.419 8.349 1.043 12.477 1.871 1.303-6.491 1.303-13.177 0-19.668-4.128 0.828-8.287 1.452-12.477 1.871-0.948-4.352-2.666-8.5-5.073-12.249 3.259-2.665 6.641-5.165 10.146-7.499-3.67-5.511-8.397-10.238-13.908-13.908-2.334 3.505-4.833 6.887-7.499 10.146-3.749-2.407-7.897-4.125-12.249-5.073 0.419-4.19 1.043-8.349 1.871-12.477zM64.1 50.882c7.451 0 13.5 6.049 13.5 13.5s-6.049 13.5-13.5 13.5c-7.451 0-13.5-6.049-13.5-13.5s6.049-13.5 13.5-13.5z"/>
     </symbol>
     <symbol id="tlw">
-      <path d="M18.707 48.333h-3c-1.104 0-2 0.897-2 2s0.896 2 2 2h12c1.104 0 2-0.896 2-2s-0.896-2-2-2h-3v-3c0-1.655-1.344-3-3-3s-3 1.345-3 3v3zM25.286 39.498c-0.095 0.001-0.19 0.002-0.286 0.002-10.072 0-18.25-8.402-18.25-18.75s8.178-18.75 18.25-18.75c10.072 0 18.25 8.402 18.25 18.75 0 3.307-0.835 6.416-2.301 9.115l11.051-4.023v-3.071c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v11c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-1.543l-25.926 9.436-0.788-2.166z"/>
+      <path d="M64 64v-19h-64v19h64zM38.975 58.253l0.001 1.834c0.001 1.076-0.872 1.949-1.947 1.949s-1.949-0.873-1.95-1.949l-0.002-6.41-1.968 1.774c-0.407 0.367-0.947 0.542-1.48 0.524-0.533 0.018-1.073-0.157-1.48-0.524l-1.968-1.774-0.003 6.41c0 1.076-0.874 1.949-1.949 1.949s-1.948-0.873-1.948-1.949l0.002-5.24h-6.669l4.099 3.89c0.751 0.713 0.751 1.869 0.002 2.581-0.75 0.711-1.968 0.71-2.719-0.002l-4.104-3.895-4.104 3.895c-0.751 0.712-1.969 0.713-2.719 0.002-0.75-0.712-0.749-1.868 0.002-2.581l4.104-3.895-4.104-3.895c-0.751-0.712-0.752-1.868-0.002-2.58s1.968-0.711 2.719 0.002l4.104 3.895 4.104-3.895c0.751-0.713 1.969-0.713 2.719-0.002 0.749 0.712 0.749 1.868-0.002 2.58l-4.099 3.89h6.669l0.002-5.24c0-0.024 0.001-0.048 0.002-0.072-0.031-0.488 0.159-0.985 0.571-1.356 0.276-0.249 0.614-0.408 0.97-0.477 0.131-0.028 0.267-0.043 0.406-0.043 0.058 0 0.115 0.002 0.172 0.007 0.454 0.033 0.899 0.206 1.247 0.52l3.976 3.583 3.975-3.583c0.348-0.314 0.793-0.487 1.248-0.52 0.056-0.005 0.114-0.007 0.171-0.007 0.14 0 0.276 0.015 0.407 0.043 0.356 0.069 0.694 0.228 0.97 0.477 0.412 0.371 0.602 0.868 0.571 1.356 0.001 0.024 0.001 0.048 0.001 0.072l0.003 8.646h2.912l0.003-8.83c0-1.076 0.874-1.949 1.949-1.949s1.948 0.873 1.948 1.949l-0.004 8.839 6.372 0.002c0.993 0.001 1.798 0.807 1.798 1.799 0 0.993-0.805 1.798-1.798 1.798l-8.471-0.003c-0.992 0-1.798-0.806-1.798-1.799l0.001-1.796h-2.912zM25.286 39.498c-0.095 0.001-0.19 0.002-0.286 0.002-10.072 0-18.25-8.402-18.25-18.75s8.178-18.75 18.25-18.75c10.072 0 18.25 8.402 18.25 18.75 0 3.307-0.835 6.416-2.301 9.115l11.051-4.023v-3.071c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v11c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-1.543l-25.926 9.436-0.788-2.166z"/>
     </symbol>
 
     <symbol id="amm">
@@ -51,23 +53,20 @@
       <path d="M32 36.23l-20.23-19.657c-1.255-1.22-3.294-1.22-4.549 0 0 0-1.913 1.859-1.913 1.859-1.269 1.233-1.269 3.235 0 4.468 0 0 26.57 25.818 26.57 25.818l0.122-0.118c0 0 0.12 0.12 0.12 0.12l26.572-25.82c1.269-1.233 1.269-3.235 0-4.468 0 0-2.363-2.297-2.363-2.297-1.007-0.978-2.642-0.978-3.649 0l-20.68 20.095z"/>
     </symbol>
     
-
-    <marker id="apd" markerWidth="3" markerHeight="3" refX="1.75" refY="1.75" viewBox="0 0 3.5 3.5" orient="auto">
-      <polygon points="0.7,3.5 0,1.75 0.7,0 3.5,1.75" fill="#0bbbcc"/>
-    </marker>
+    
 
     
     
-    <linearGradient id="bqm" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="bpm" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" style="stop-color:#5b6564"/>
       <stop offset="0.6" style="stop-color:#626c6c"/>
     </linearGradient>
-    <linearGradient id="brm" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="bqm" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" style="stop-color:#fff;stop-opacity:0.19"/>
       <stop offset="1" style="stop-color:#000;stop-opacity:0.34"/>
     </linearGradient>
     
-    <linearGradient id="bsm" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="brm" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0.4" style="stop-color:#007df4"/>
       <stop offset="1" style="stop-color:#0073e4"/>
     </linearGradient>
@@ -79,7 +78,7 @@
     
 
     
-    <filter id="btm" color-interpolation-filters="sRGB">
+    <filter id="bsm" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-opacity="0.25"/>
       <feDropShadow dx="0" dy="0" stdDeviation="2.2" flood-opacity="0.3"/>
     </filter>
@@ -89,10 +88,18 @@
     
     
 
+    
+    
+    
+
+
+    <marker id="atd" markerWidth="3" markerHeight="3" refX="1.75" refY="1.75" viewBox="0 0 3.5 3.5" orient="auto">
+      <polygon points="0.7,3.5 0,1.75 0.7,0 3.5,1.75" style="fill:#0bbbcc"/>
+    </marker>
 
     <symbol id="pun">
       
-        <g transform="matrix(0.75,0,0,0.75,20.299999237060547,11.899999618530273)">
+        <g transform="matrix(0.75,0,0,0.75,20.3,11.9)">
           <rect x="48.3" y="24.2" width="50" height="32" style="fill:none;stroke:#c0c0c0;stroke-opacity:0.96;stroke-width:2.5px"/>
           
             <rect x="0" y="0" width="2.5" height="56" transform="matrix(0.53,-0.848,0.848,0.53,49,27)" style="fill:#c0c0c0;fill-opacity:0.96"/>
@@ -117,9 +124,11 @@
     
     
   </defs>
+
   
     <rect x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd"/>
   
+
   <g style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect x="501" y="81" width="1298" height="1140" rx="15" style="fill:#313333;stroke:#a6bbb9;stroke-width:1px"/>
     
@@ -142,11 +151,11 @@
         
           <rect x="502" y="125" width="120" height="67" style="fill:#485352"/>
           
-            <rect x="502" y="131" width="112" height="53" rx="0" style="fill:url(#bqm);stroke:#fff;stroke-opacity:0.23;stroke-width:1.5px"/>
+            <rect x="502" y="131" width="112" height="53" rx="0" style="fill:url(#bpm);stroke:#fff;stroke-opacity:0.23;stroke-width:1.5px"/>
             <g transform="matrix(0.26,0,0,0.26,508,149)">
               <use href="#aad" style="fill:#dad4d6"/>
             </g>
-            <text x="502" y="131" dx="27" dy="33" style="font-weight:bold;font-size:19px;fill:#fff;fill-opacity:0.89">New <tspan>T</tspan>ab</text>
+            <text x="502" y="131" dx="27" dy="33" style="font-weight:bold;font-size:19px;fill:#fff;fill-opacity:0.89">New Tab</text>
           
         
         
@@ -166,7 +175,7 @@
           
             <rect x="780" y="124" width="292" height="69" style="fill:#2a4f7b;stroke:#234065;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
             <g transform="matrix(0.38,0,0,0.38,792,144)">
-              <use href="#phw" fill="#000" style="fill:#fff"/>
+              <use href="#phw" style="fill:#fff"/>
             </g>
             <text x="780" y="124" dx="46" dy="41" style="font-size:20px;fill:#fff">enigma_db - Picons <tspan style="font-size:15px">…</tspan></text>
             
@@ -193,7 +202,7 @@
           
             <rect x="1226" y="124" width="292" height="69" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
             <g transform="matrix(0.38,0,0,0.38,1238,144)">
-              <use href="#tlw" fill="#000" style="fill:#fff"/>
+              <use href="#tlw" style="fill:#fff"/>
             </g>
             <text x="1226" y="124" dx="46" dy="41" style="font-size:20px;fill:#fff">enigma_db - Edit Set<tspan style="font-size:15px">…</tspan></text>
             
@@ -208,7 +217,7 @@
           
             <rect x="1518" y="124" width="256" height="69" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
             <g transform="matrix(0.38,0,0,0.38,1531,144)">
-              <use href="#cbw" fill="#000" style="fill:#fff"/>
+              <use href="#cbw" style="fill:#fff"/>
             </g>
             <text x="1518" y="124" dx="46" dy="41" style="font-size:20px;fill:#fff">enigma_db - Cha<tspan style="font-size:15px">…</tspan></text>
           
@@ -218,7 +227,7 @@
           
             <rect x="1748" y="125.5" width="23" height="66" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px"/>
             
-              <g transform="matrix(0,0.3,-0.3,0,1771.199951171875,150)" style="opacity:0.25">
+              <g transform="matrix(0,0.3,-0.3,0,1771.2,150)" style="opacity:0.25">
                 <use href="#aow" style="fill:#fff;stroke:#fff;stroke-width:2.7px"/>
               </g>
             
@@ -226,7 +235,7 @@
           
             <rect x="1772" y="125.5" width="23" height="66" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px"/>
             
-              <g transform="matrix(0,-0.3,0.3,0,1774.0999755859375,169.10000610351562)">
+              <g transform="matrix(0,-0.3,0.3,0,1774.1,169.1)">
                 <use href="#aow" style="fill:#fff;stroke:#fff;stroke-width:2.7px"/>
               </g>
             
@@ -240,13 +249,13 @@
             <g transform="matrix(0.38,0,0,0.38,526,217)">
               <use href="#ogn" style="fill:#c7c8c8"/>
             </g>
-            <text x="510" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Open</text>
+            <text x="510" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Open</text>
           
           
             <g transform="matrix(0.38,0,0,0.38,679,217)">
               <use href="#sie" style="fill:#c7c8c8"/>
             </g>
-            <text x="664" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Save</text>
+            <text x="664" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Save</text>
           
           
             <rect x="826" y="212" width="1" height="61" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
@@ -255,13 +264,13 @@
             <g transform="matrix(0.38,0,0,0.38,844,217)">
               <use href="#iet" style="fill:#c7c8c8"/>
             </g>
-            <text x="828" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Import</text>
+            <text x="828" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Import</text>
           
           
             <g transform="matrix(0.38,0,0,0.38,1012,217)">
               <use href="#edt" style="fill:#c7c8c8"/>
             </g>
-            <text x="994" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Export</text>
+            <text x="994" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Export</text>
           
           
             <rect x="1176" y="212" width="1" height="61" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
@@ -270,20 +279,19 @@
             <g transform="matrix(0.38,0,0,0.38,1193,217)">
               <use href="#sks" style="fill:#c7c8c8"/>
             </g>
-            <text x="1178" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Settings</text>
+            <text x="1178" y="192" dx="69" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Settings</text>
           
           
             
-              <rect x="1473" y="224" width="125" height="30" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
+              <rect x="1473" y="224" width="125" height="30" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#bqm);stroke-width:0.4px;filter:url(#bsm)"/>
               
-                <rect x="1570.5" y="227" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);filter:#333"/>
-                <rect x="1570.5" y="227" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);stroke-opacity:0.06;stroke-width:2px"/>
+                <rect x="1570.5" y="227" width="24" height="24" rx="8" style="fill:url(#brm);stroke:url(#bqm);stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
-                    <g transform="matrix(0.16,0,0,0.16,1577.4000244140625,229.6999969482422)">
+                    <g transform="matrix(0.16,0,0,0.16,1577.4,229.7)">
                       <use href="#amm" style="fill:#fff"/>
                     </g>
-                    <g transform="matrix(0.16,0,0,-0.16,1577.4000244140625,248.6999969482422)">
+                    <g transform="matrix(0.16,0,0,-0.16,1577.4,248.7)">
                       <use href="#amm" style="fill:#fff"/>
                     </g>
                   
@@ -295,7 +303,7 @@
             
           
           
-            <text x="1617" y="192" dx="15" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:#09090900000501">Connect</text>
+            <text x="1617" y="192" dx="15" dy="59" style="font-size:26px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Connect</text>
           
         
         
@@ -304,7 +312,7 @@
               <use href="#anw" transform="matrix(0,0.23,-0.23,0,0,0)" style="fill:#646464"/>
             
             
-              <use href="#anw" transform="matrix(0,0.23,-0.23,0,9.399999618530273,0)" style="fill:#646464"/>
+              <use href="#anw" transform="matrix(0,0.23,-0.23,0,9.4,0)" style="fill:#646464"/>
             
           </g>
         
@@ -379,7 +387,6 @@
                 
                   <rect x="525" y="579" width="223" height="174" rx="20" style="fill:#023acd"/>
                   <rect x="526" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
-                  
                   <g transform="matrix(0.9,0,0,0.9,566.5,608)">
                     <use href="#pun"/>
                   </g>
@@ -427,8 +434,8 @@
                   <rect x="526" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <rect x="570" y="818" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.31,0,0,0.31,592,837)">
-                    <rect x="0" y="0" width="275" height="102" rx="24" fill="#fff"/>
-                    <rect x="0" y="0" width="106" height="102" rx="24" fill="#7ec6d6"/>
+                    <rect x="0" y="0" width="275" height="102" rx="24" style="fill:#fff"/>
+                    <rect x="0" y="0" width="106" height="102" rx="24" style="fill:#7ec6d6"/>
                     <text x="16" y="0" dy="102" style="font-family:'Times New Roman',Times,sans-serif;font-weight:bold;font-size:150px;fill:#333">Q</text>
                     <text x="224" y="0" dy="84" style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:72px;letter-spacing:1px;fill:#4f4f4f" transform="matrix(0.6,0,0,1,0,0)">NEWS</text>
                   </g>
@@ -446,7 +453,6 @@
                 
                 
                   <rect x="1058" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
-                  
                   <g transform="matrix(0.9,0,0,0.9,1099.5,816)">
                     <use href="#pun"/>
                   </g>
@@ -454,7 +460,6 @@
                 
                 
                   <rect x="1324" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
-                  
                   <rect x="1369" y="818" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.2,0,0,0.2,1377,844)">
                     <text x="0" y="0" dy="96" style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:97px;fill:#600900;stroke-width:1px" transform="matrix(0.76,0,0,1,0,0)">GLOBALFLARE</text>
@@ -477,17 +482,16 @@
           
             <rect x="502" y="992" width="1296" height="61" style="fill:#101010"/>
             
-              <rect x="513" y="1004" width="136" height="30" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
+              <rect x="513" y="1004" width="136" height="30" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#bqm);stroke-width:0.4px;filter:url(#bsm)"/>
               <text x="513" y="1004" dx="12" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.92">Name</text>
               
-                <rect x="621.5" y="1007" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);stroke-opacity:0.06;stroke-width:2px"/>
-                <rect x="621.5" y="1007" width="24" height="24" rx="8" style="fill:url(#bsm);stroke:url(#brm);filter:#333"/>
+                <rect x="621.5" y="1007" width="24" height="24" rx="8" style="fill:url(#brm);stroke:url(#bqm);stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
-                    <g transform="matrix(0.16,0,0,0.16,628.4000244140625,1009.7000122070312)">
+                    <g transform="matrix(0.16,0,0,0.16,628.4,1009.7)">
                       <use href="#amm" style="fill:#fff"/>
                     </g>
-                    <g transform="matrix(0.16,0,0,-0.16,628.4000244140625,1028.699951171875)">
+                    <g transform="matrix(0.16,0,0,-0.16,628.4,1028.7)">
                       <use href="#amm" style="fill:#fff"/>
                     </g>
                   
@@ -526,16 +530,16 @@
             
               
                 <text x="509" y="1072" dx="4" dy="23" style="font-size:19px;fill:#fff">Folder</text>
-                <rect x="580" y="1072" width="208" height="33" rx="0" style="fill:#fff;fill-opacity:0;stroke:#fff;stroke-opacity:0.11;stroke-width:3.8px;clip-path:inset(1px 1px 0.3px)"/>
-                <rect x="800" y="1072" width="126" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
+                <rect x="580" y="1072" width="208" height="33" rx="0" style="fill:#fff;fill-opacity:0;stroke:#fff;stroke-opacity:0.13;stroke-width:3.8px;clip-path:inset(1px 1px 0.3px)"/>
+                <rect x="800" y="1072" width="126" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#bqm);stroke-width:0.4px;filter:url(#bsm)"/>
                 <text x="800" y="1072" dx="24" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Browse<tspan style="font-size:15px">…</tspan></text>
               
               
-                <rect x="1652" y="1072" width="128" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
+                <rect x="1652" y="1072" width="128" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#bqm);stroke-width:0.4px;filter:url(#bsm)"/>
                 <g transform="matrix(0.38,0,0,0.38,1664,1075)">
-                  <use href="#sjh" style="fill:#ced0d0"/>
+                  <use href="#sjh" style="fill:#c7c7c7"/>
                 </g>
-                <text x="1652" y="1072" dx="46" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78"><tspan>F</tspan>ind<tspan style="font-size:15px">…</tspan></text>
+                <text x="1652" y="1072" dx="46" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Find<tspan style="font-size:15px">…</tspan></text>
               
             
           
@@ -575,7 +579,7 @@
         <text x="159" y="837" dx="67" dy="20" text-anchor="middle" style="font-family:'Helvetica Neue',sans-serif-thin,Helvetica,sans-serif;font-weight:300;font-size:26px;letter-spacing:2px;fill:#707080;stroke:#707080;stroke-width:1.5px">PNG</text>
         
       
-      <g transform="matrix(0.95,0,0,0.95,170.60000610351562,762)">
+      <g transform="matrix(0.95,0,0,0.95,170.6,762)">
         <rect x="0" y="0" width="114" height="39" style="fill:#fff"/>
         <g transform="matrix(0.22,0,0,0.22,5,5)">
           <rect x="-4" y="-4" width="483" height="141" style="fill:#0be"/>
@@ -589,7 +593,7 @@
     
     <g transform="matrix(0.8,-0.8,0.5,0.6,-192,686)">
       <g style="fill:none;stroke:#0bbbcc;stroke-width:22px">
-        <path d="M290.5 341.28160095214844Q434.5 59.28160095214844 509.5 560.2816009521484" style="d:path('M 290.5 341.282 Q 434.5 59.2816 509.5 560.282');marker-end:url(#apd)"/>
+        <path d="M290.5 341.28160095214844Q434.5 59.28160095214844 509.5 560.2816009521484" style="marker-end:url(#atd)"/>
       </g>
     </g>
 

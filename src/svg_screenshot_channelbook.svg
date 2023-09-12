@@ -13,6 +13,12 @@
     <symbol id="crypted">
       <path d="M11.087 56c-5.563 0-10.080-4.517-10.080-10.080v-27.84c0-5.563 4.517-10.080 10.080-10.080h33.84c5.564 0 10.080 4.517 10.080 10.080v27.84c0 5.52-4.446 10.009-9.95 10.079l-33.97 0.001zM30.853 14.994v-4.013h-5.793v4.048c-4.2 0.556-8.106 2.261-9.955 5.037-3.005 4.512 0.906 10.812 7.19 12.99 0.768 0.266 1.722 0.512 2.765 0.768v10.901c-2.614-0.587-4.538-2.424-6.16-3.803l-4.893 2.788 2.091 1.821c2.411 2.055 5.421 3.271 8.962 3.703v3.747h5.793v-3.783c8.228-1.147 14.043-6.861 9.643-12.981-0.763-1.061-1.821-2.027-2.998-2.881-1.734-1.258-4.155-1.986-6.645-2.64v-11.197c2.638 0.575 4.575 2.426 6.207 3.814l4.893-2.788-2.091-1.822c-2.421-2.064-5.447-3.281-9.009-3.709zM30.853 35.422v9.077c3.644-0.894 6.321-3.13 4.366-6.219-0.805-1.273-2.452-2.167-4.366-2.858zM25.060 19.742c-3.624 0.903-6.23 3.15-4.321 6.246 0.873 1.416 2.441 2.336 4.321 3.044v-9.29z" />
     </symbol>
+    <symbol id="edit">
+      <path d="M13.624 42.251l33.207-33.269c1.948-1.951 5.432-1.635 7.775 0.704 2.344 2.34 2.666 5.823 0.719 7.774l-33.207 33.269-12.724 4.254 4.23-12.732z" />
+    </symbol>
+    <symbol id="edit-tunersets">
+      <path d="M32.032 50.518c-4.79-2.886-8.032-8.409-8.032-14.742 0-9.314 7.011-16.876 15.648-16.876 8.636 0 15.647 7.562 15.647 16.876s-7.011 16.875-15.647 16.875c-0.924 0-1.828-0.086-2.709-0.252l-0.191 10.501-4.943-0.144 0.227-12.238zM6.057 26.78c-0.001-0.001 0.023 14.969 0.023 14.969-0.866 0.414-1.706 0.922-2.43 1.563-4.358 3.853-4.35 10.108 0.019 13.972 0.971 0.858 2.137 1.495 3.319 1.965l1.369-0.931-0.011-7.239c-0.001-0.885 0.89-1.557 1.892-1.556 0 0 2.771 0.003 2.771 0.003 0.536 0.001 1.068 0.166 1.418 0.476 0.306 0.27 0.483 0.677 0.484 1.091 0 0 0.011 7.016 0.011 7.016l1.416 0.908c0.975-0.446 1.946-0.994 2.763-1.716 4.357-3.853 4.35-10.108-0.019-13.972-0.727-0.643-1.569-1.153-2.438-1.57l-0.023-14.969c0.866-0.414 1.706-0.923 2.43-1.563 4.358-3.853 4.35-10.108-0.019-13.972-0.895-0.791-1.965-1.383-3.043-1.844l-1.393 0.921 0.010 6.793c0.002 0.875-0.84 1.502-1.829 1.501 0 0-2.897-0.003-2.897-0.003-0.992-0.002-1.837-0.634-1.839-1.511 0 0-0.010-6.794-0.010-6.794l-1.392-0.918c-1.078 0.459-2.146 1.048-3.039 1.838-4.357 3.853-4.35 10.108 0.019 13.972 0.727 0.642 1.569 1.153 2.438 1.57zM50.271 51.811l-0.523-0.46-5.453 3.436 0.662 1.988 5.986-1.196c1.277 1.246 2.819 1.484 3.871 0.785-0.004 0.002 7.388-4.581 7.388-4.581 0.786-0.485 1.326-1.441 1.398-2.711 0.046-0.806-0.219-1.238-0.491-1.487-0.236-0.215-0.539-0.342-0.917-0.337-0.336 0.004-0.81 0.167-1.33 0.351-0.245 0.086-0.508 0.175-0.77 0.205-0.142 0.017-0.286 0.022-0.415-0.049-1.014-0.553-2.017-0.529-2.787-0.049l-6.619 4.105z" />
+    </symbol>
     <symbol id="export">
       <path d="M56.256 31.057h-42.438c-7.074 0-12.818 5.744-12.818 12.818v61.295c0 7.074 5.744 12.818 12.818 12.818h54.476c7.075 0 12.818-5.744 12.818-12.818v-51.051c-16.616 14.040-16.649 30.281-17.025 36.965-0.151 2.687-1.869 5.034-4.385 5.99s-5.359 0.343-7.257-1.565c-14.421-14.502-16.181-43.133 3.811-64.452zM57.293 90.694c-14.624-14.705-13.039-45.988 15.234-64.344l-10.365-12.362 42.838 1.084-7.263 41.344-11.808-14.082c-28.127 16.992-28.15 39.728-28.636 48.36z" />
     </symbol>
@@ -43,8 +49,8 @@
     <symbol id="settings">
       <path d="M73.934 15.359c-6.491-1.302-13.177-1.302-19.668 0 0.828 4.128 1.452 8.287 1.871 12.477-4.352 0.948-8.5 2.666-12.249 5.073-2.666-3.259-5.165-6.641-7.499-10.146-5.511 3.67-10.238 8.397-13.908 13.908 3.505 2.334 6.887 4.834 10.146 7.499-2.407 3.749-4.125 7.897-5.073 12.249-4.19-0.419-8.349-1.043-12.477-1.871-1.303 6.491-1.303 13.177 0 19.668 4.128-0.828 8.287-1.452 12.477-1.871 0.948 4.352 2.666 8.501 5.073 12.249-3.259 2.666-6.641 5.165-10.146 7.499 3.67 5.511 8.397 10.238 13.908 13.908 2.334-3.505 4.833-6.887 7.499-10.146 3.749 2.407 7.897 4.125 12.249 5.074-0.419 4.189-1.043 8.348-1.871 12.476 6.491 1.303 13.177 1.303 19.668 0-0.828-4.128-1.452-8.287-1.871-12.476 4.352-0.949 8.5-2.667 12.249-5.074 2.666 3.259 5.165 6.641 7.499 10.146 5.511-3.67 10.238-8.397 13.908-13.908-3.505-2.334-6.887-4.833-10.146-7.499 2.407-3.748 4.125-7.897 5.073-12.249 4.19 0.419 8.349 1.043 12.477 1.871 1.303-6.491 1.303-13.177 0-19.668-4.128 0.828-8.287 1.452-12.477 1.871-0.948-4.352-2.666-8.5-5.073-12.249 3.259-2.665 6.641-5.165 10.146-7.499-3.67-5.511-8.397-10.238-13.908-13.908-2.334 3.505-4.833 6.887-7.499 10.146-3.749-2.407-7.897-4.125-12.249-5.073 0.419-4.19 1.043-8.349 1.871-12.477zM64.1 50.882c7.451 0 13.5 6.049 13.5 13.5s-6.049 13.5-13.5 13.5c-7.451 0-13.5-6.049-13.5-13.5s6.049-13.5 13.5-13.5z" />
     </symbol>
-    <symbol id="transponders-view">
-      <path d="M18.707 48.333h-3c-1.104 0-2 0.897-2 2s0.896 2 2 2h12c1.104 0 2-0.896 2-2s-0.896-2-2-2h-3v-3c0-1.655-1.344-3-3-3s-3 1.345-3 3v3zM25.286 39.498c-0.095 0.001-0.19 0.002-0.286 0.002-10.072 0-18.25-8.402-18.25-18.75s8.178-18.75 18.25-18.75c10.072 0 18.25 8.402 18.25 18.75 0 3.307-0.835 6.416-2.301 9.115l11.051-4.023v-3.071c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v11c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-1.543l-25.926 9.436-0.788-2.166z" />
+    <symbol id="tunersets-view">
+      <path d="M64 64v-19h-64v19h64zM38.975 58.253l0.001 1.834c0.001 1.076-0.872 1.949-1.947 1.949s-1.949-0.873-1.95-1.949l-0.002-6.41-1.968 1.774c-0.407 0.367-0.947 0.542-1.48 0.524-0.533 0.018-1.073-0.157-1.48-0.524l-1.968-1.774-0.003 6.41c0 1.076-0.874 1.949-1.949 1.949s-1.948-0.873-1.948-1.949l0.002-5.24h-6.669l4.099 3.89c0.751 0.713 0.751 1.869 0.002 2.581-0.75 0.711-1.968 0.71-2.719-0.002l-4.104-3.895-4.104 3.895c-0.751 0.712-1.969 0.713-2.719 0.002-0.75-0.712-0.749-1.868 0.002-2.581l4.104-3.895-4.104-3.895c-0.751-0.712-0.752-1.868-0.002-2.58s1.968-0.711 2.719 0.002l4.104 3.895 4.104-3.895c0.751-0.713 1.969-0.713 2.719-0.002 0.749 0.712 0.749 1.868-0.002 2.58l-4.099 3.89h6.669l0.002-5.24c0-0.024 0.001-0.048 0.002-0.072-0.031-0.488 0.159-0.985 0.571-1.356 0.276-0.249 0.614-0.408 0.97-0.477 0.131-0.028 0.267-0.043 0.406-0.043 0.058 0 0.115 0.002 0.172 0.007 0.454 0.033 0.899 0.206 1.247 0.52l3.976 3.583 3.975-3.583c0.348-0.314 0.793-0.487 1.248-0.52 0.056-0.005 0.114-0.007 0.171-0.007 0.14 0 0.276 0.015 0.407 0.043 0.356 0.069 0.694 0.228 0.97 0.477 0.412 0.371 0.602 0.868 0.571 1.356 0.001 0.024 0.001 0.048 0.001 0.072l0.003 8.646h2.912l0.003-8.83c0-1.076 0.874-1.949 1.949-1.949s1.948 0.873 1.948 1.949l-0.004 8.839 6.372 0.002c0.993 0.001 1.798 0.807 1.798 1.799 0 0.993-0.805 1.798-1.798 1.798l-8.471-0.003c-0.992 0-1.798-0.806-1.798-1.799l0.001-1.796h-2.912zM25.286 39.498c-0.095 0.001-0.19 0.002-0.286 0.002-10.072 0-18.25-8.402-18.25-18.75s8.178-18.75 18.25-18.75c10.072 0 18.25 8.402 18.25 18.75 0 3.307-0.835 6.416-2.301 9.115l11.051-4.023v-3.071c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v11c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-1.543l-25.926 9.436-0.788-2.166z" />
     </symbol>
 
     <symbol id="arrow-m">
@@ -58,6 +64,9 @@
     </symbol>
     <symbol id="arrow-l">
       <path d="M32 45.423l26.667-26.846h-53.334l26.667 26.846z" />
+    </symbol>
+    <symbol id="checkmark">
+      <path d="M5.601 32l18.857 18.856 33.941-33.941-3.772-3.771-30.169 30.17-15.085-15.085-3.772 3.771z" />
     </symbol>
 
     <linearGradient id="btn-bg-m" x1="0" y1="0" x2="0" y2="1">
@@ -150,7 +159,7 @@
     <!--<rect x="81" y="81" width="1718" height="1140" style="fill:none;stroke:red;stroke-width:2px" />-->
     <rect id="tint-d" class="m" x="0" y="0" width="1880" height="1330" style="fill:#000;fill-opacity:0.2" />
 
-    <g id="window" class="m" transform="matrix(1.34,0,0,1.34,-530,-230)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif;opacity:0.8">
+    <g id="window" class="m" transform="matrix(1.41,0,0,1.41,-656,-271)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif;opacity:0.8">
       <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
       <g id="w-inner">
         <g id="menu">
@@ -161,12 +170,8 @@
             <g class="menu-item">
             </g>
             <g class="menu-divid">
-              <rect class="divid" x="406" y="212" width="1" height="61" style="fill:none" />
             </g>
             <g class="menu-item">
-              <g class="ico" transform="matrix(0.38,0,0,0.38,424,217)">
-                <use href="#import" style="fill:#4c4c4c" />
-              </g>
               <text class="txt" x="408" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
             </g>
             <g class="menu-item">
@@ -229,80 +234,6 @@
         </g>
         <g id="main">
           <rect id="main-bg" class="bg" x="82" y="291" width="1716" height="835" style="fill:#f3f4f4" />
-          <g id="split-start">
-            <rect id="ss-bg" class="bg" x="82" y="291" width="380" height="835" style="fill:#e7e8e8" />
-            <g id="side" class="tree-group">
-              <g class="box-title">
-                <rect class="bg" x="82" y="291" width="380" height="49" style="fill:none" />
-                <g class="box-button">
-                  <g transform="matrix(1,0,0,1,405,300)">
-                    <rect class="bg" x="0" y="0" width="38" height="32" rx="1" style="rx:0;fill:none" />
-                    <g class="ico" transform="matrix(0.38,0,0,0.38,7,3)">
-                      <use href="#services-sets-menu" style="fill:#505050" />
-                    </g>
-                  </g>
-                </g>
-              </g>
-              <g class="tree-view">
-                <g class="items">
-                  <g>
-                    <rect class="focused" x="82" y="340" width="380" height="55" style="fill:#d5d6d6" />
-                  </g>
-                </g>
-              </g>
-            </g>
-            <g id="tree" class="tree-group">
-              <g class="tree-view">
-                <g class="items">
-                  <g>
-                    <rect class="focused" x="82" y="750" width="380" height="55" style="fill:#d5d6d6" />
-                  </g>
-                </g>
-              </g>
-              <g class="sbv">
-                <rect class="bg" x="448" y="644" width="14" height="409" style="display:none" />
-                <rect class="btn-bg vs" x="448" y="644" width="14" height="14" style="display:none" />
-                <g class="arrow as" transform="matrix(1,0,0,1,448,644)">
-                  <g class="arrow-w" style="display:none">
-                    <use href="#arrow-w" />
-                  </g>
-                  <g class="arrow-l" style="display:none">
-                    <use href="#arrow-l" />
-                  </g>
-                </g>
-                <rect class="btn-bg ve" x="448" y="1039" width="14" height="14" style="display:none" />
-                <g class="arrow ae" transform="matrix(1,0,0,1,448,1039)">
-                  <g class="arrow-w" style="display:none">
-                    <use href="#arrow-w" />
-                  </g>
-                  <g class="arrow-l" style="display:none">
-                    <use href="#arrow-l" />
-                  </g>
-                </g>
-                <rect class="xy" x="446" y="649" width="12" height="44" rx="7" style="display:none" />
-              </g>
-            </g>
-            <g id="tree-tool">
-              <rect class="bg" x="82" y="1054" width="380" height="73" style="fill:#eff0f0" />
-              <rect class="stroke" x="80" y="1053" width="384" height="73" style="fill:none;stroke:#e2e2e2;stroke-width:2.4px;clip-path:inset(0 2px 2px)" />
-              <g id="ti-items">
-                <g class="ti-item">
-                </g>
-                <g class="ti-item qe qe-ti">
-                  <rect class="btn-bg" x="314" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
-                  <g class="btn-ico ico" transform="matrix(0.38,0,0,0.38,334,1075)">
-                    <use href="#search" style="fill:#545454" />
-                  </g>
-                  <text class="btn-txt" x="314" y="1072" dx="54" dy="22" style="font-size:20px;fill:#000">Find<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
-                </g>
-              </g>
-            </g>
-          </g>
-          <g id="split">
-            <rect class="bg" x="462" y="291" width="11" height="836" style="fill:none" />
-            <ellipse cx="467.4" cy="708.4" rx="4" style="fill:#dadbdb" />
-            <rect class="split-l" x="465.5" y="669" width="1" height="28" style="display:none" />
-          </g>
           <g id="split-end">
             <rect id="se-bg" class="bg" x="473" y="291" width="1325" height="835" style="fill:none" />
             <g class="box-title">
@@ -320,15 +251,8 @@
             <g class="list">
               <g class="list-cols">
                 <rect class="bg" x="473" y="340" width="1325" height="26" style="fill:#ececec" />
-                <text x="473" y="340" dy="18" style="font-size:17px;fill:#000"><tspan x="479">Index</tspan> <tspan x="578">Name</tspan> <tspan x="883">Parental</tspan> <tspan x="989">Service ID</tspan> <tspan x="1112">Transport ID</tspan> <tspan x="1234">Type</tspan> <tspan x="1363">CAS</tspan> <tspan x="1432">Provider</tspan> <tspan x="1702">System</tspan></text>
+                <text x="473" y="340" dy="18" style="font-size:17px;fill:#000"><tspan x="479">Index</tspan> <tspan x="578">Name</tspan></text>
                 <rect class="ruler" x="571" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-                <rect class="ruler" x="876" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-                <rect class="ruler" x="982" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-                <rect class="ruler" x="1105" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-                <rect class="ruler" x="1226" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-                <rect class="ruler" x="1356" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-                <rect class="ruler" x="1425" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-                <rect class="ruler" x="1696" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
               </g>
               <g class="list-view">
                 <rect class="bg" x="473" y="366" width="1325" height="687" style="fill:#fff" />
@@ -447,7 +371,7 @@
     </g>
   </g>
 
-  <g id="addchannel" class="m" transform="matrix(1.34,0,0,1.34,410,213)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="addchannel" class="m" transform="matrix(1.41,0,0,1.41,321,189)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect class="w-bg" x="1" y="1" width="1061" height="650" rx="15" style="fill:#f3f4f4;stroke:#a6bbb9;stroke-width:1px;filter: url(#modal-shadow-m)" />
     <g class="titlebar">
       <rect class="t-bg" x="2" y="2" width="1059" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
@@ -643,21 +567,8 @@
         <g class="ch-item">
           <g class="btn-flag" transform="matrix(0.9,0,0,0.9,15,604)">
             <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
-            <g class="arrow">
-              <g class="arrow-m">
-                <g class="arrow-up" transform="matrix(0.16,0,0,0.16,7.4,3.7)">
-                  <use href="#arrow-m" style="fill:#fff" />
-                </g>
-                <g class="arrow-down" transform="matrix(0.16,0,0,-0.16,7.4,22.7)">
-                  <use href="#arrow-m" style="fill:#fff" />
-                </g>
-              </g>
-              <g class="arrow-w" style="display:none">
-                <use href="#arrow-t-w" />
-              </g>
-              <g class="arrow-l" style="display:none">
-                <use href="#arrow-l" />
-              </g>
+            <g class="checkmark" transform="matrix(0.22,0,0,0.3,5.8,3.6)">
+              <use href="#checkmark" style="fill:#fff;stroke:#fff;stroke-width:7.1px" />
             </g>
           </g>
           <text class="txt" x="43" y="604" dy="19" style="font-size:20.5px">Filters for service type</text>

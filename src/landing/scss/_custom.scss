@@ -105,6 +105,13 @@ mark, .lead {
     padding: .05rem .15rem;
     font-size: .95rem;
   }
+  p {
+    font-size: 0.8rem;
+  }
+  p span {
+    margin: 0.2rem;
+    font-size: .7rem;
+  }
 
   nav a,
   button.text {
@@ -197,6 +204,9 @@ mark, .lead {
 
     > div {
       width: auto;
+    }
+    p {
+      font-size: 0.9rem;
     }
   }
 

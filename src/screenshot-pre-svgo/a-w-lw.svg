@@ -13,6 +13,8 @@
     <symbol id="cdd">
       <path d="M11.087 56c-5.563 0-10.080-4.517-10.080-10.080v-27.84c0-5.563 4.517-10.080 10.080-10.080h33.84c5.564 0 10.080 4.517 10.080 10.080v27.84c0 5.52-4.446 10.009-9.95 10.079l-33.97 0.001zM30.853 14.994v-4.013h-5.793v4.048c-4.2 0.556-8.106 2.261-9.955 5.037-3.005 4.512 0.906 10.812 7.19 12.99 0.768 0.266 1.722 0.512 2.765 0.768v10.901c-2.614-0.587-4.538-2.424-6.16-3.803l-4.893 2.788 2.091 1.821c2.411 2.055 5.421 3.271 8.962 3.703v3.747h5.793v-3.783c8.228-1.147 14.043-6.861 9.643-12.981-0.763-1.061-1.821-2.027-2.998-2.881-1.734-1.258-4.155-1.986-6.645-2.64v-11.197c2.638 0.575 4.575 2.426 6.207 3.814l4.893-2.788-2.091-1.822c-2.421-2.064-5.447-3.281-9.009-3.709zM30.853 35.422v9.077c3.644-0.894 6.321-3.13 4.366-6.219-0.805-1.273-2.452-2.167-4.366-2.858zM25.060 19.742c-3.624 0.903-6.23 3.15-4.321 6.246 0.873 1.416 2.441 2.336 4.321 3.044v-9.29z"/>
     </symbol>
+    
+    
     <symbol id="eet">
       <path d="M56.256 31.057h-42.438c-7.074 0-12.818 5.744-12.818 12.818v61.295c0 7.074 5.744 12.818 12.818 12.818h54.476c7.075 0 12.818-5.744 12.818-12.818v-51.051c-16.616 14.040-16.649 30.281-17.025 36.965-0.151 2.687-1.869 5.034-4.385 5.99s-5.359 0.343-7.257-1.565c-14.421-14.502-16.181-43.133 3.811-64.452zM57.293 90.694c-14.624-14.705-13.039-45.988 15.234-64.344l-10.365-12.362 42.838 1.084-7.263 41.344-11.808-14.082c-28.127 16.992-28.15 39.728-28.636 48.36z"/>
     </symbol>
@@ -44,7 +46,7 @@
       <path d="M73.934 15.359c-6.491-1.302-13.177-1.302-19.668 0 0.828 4.128 1.452 8.287 1.871 12.477-4.352 0.948-8.5 2.666-12.249 5.073-2.666-3.259-5.165-6.641-7.499-10.146-5.511 3.67-10.238 8.397-13.908 13.908 3.505 2.334 6.887 4.834 10.146 7.499-2.407 3.749-4.125 7.897-5.073 12.249-4.19-0.419-8.349-1.043-12.477-1.871-1.303 6.491-1.303 13.177 0 19.668 4.128-0.828 8.287-1.452 12.477-1.871 0.948 4.352 2.666 8.501 5.073 12.249-3.259 2.666-6.641 5.165-10.146 7.499 3.67 5.511 8.397 10.238 13.908 13.908 2.334-3.505 4.833-6.887 7.499-10.146 3.749 2.407 7.897 4.125 12.249 5.074-0.419 4.189-1.043 8.348-1.871 12.476 6.491 1.303 13.177 1.303 19.668 0-0.828-4.128-1.452-8.287-1.871-12.476 4.352-0.949 8.5-2.667 12.249-5.074 2.666 3.259 5.165 6.641 7.499 10.146 5.511-3.67 10.238-8.397 13.908-13.908-3.505-2.334-6.887-4.833-10.146-7.499 2.407-3.748 4.125-7.897 5.073-12.249 4.19 0.419 8.349 1.043 12.477 1.871 1.303-6.491 1.303-13.177 0-19.668-4.128 0.828-8.287 1.452-12.477 1.871-0.948-4.352-2.666-8.5-5.073-12.249 3.259-2.665 6.641-5.165 10.146-7.499-3.67-5.511-8.397-10.238-13.908-13.908-2.334 3.505-4.833 6.887-7.499 10.146-3.749-2.407-7.897-4.125-12.249-5.073 0.419-4.19 1.043-8.349 1.871-12.477zM64.1 50.882c7.451 0 13.5 6.049 13.5 13.5s-6.049 13.5-13.5 13.5c-7.451 0-13.5-6.049-13.5-13.5s6.049-13.5 13.5-13.5z"/>
     </symbol>
     <symbol id="tow">
-      <path d="M18.707 48.333h-3c-1.104 0-2 0.897-2 2s0.896 2 2 2h12c1.104 0 2-0.896 2-2s-0.896-2-2-2h-3v-3c0-1.655-1.344-3-3-3s-3 1.345-3 3v3zM25.286 39.498c-0.095 0.001-0.19 0.002-0.286 0.002-10.072 0-18.25-8.402-18.25-18.75s8.178-18.75 18.25-18.75c10.072 0 18.25 8.402 18.25 18.75 0 3.307-0.835 6.416-2.301 9.115l11.051-4.023v-3.071c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v11c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-1.543l-25.926 9.436-0.788-2.166z"/>
+      <path d="M64 64v-19h-64v19h64zM38.975 58.253l0.001 1.834c0.001 1.076-0.872 1.949-1.947 1.949s-1.949-0.873-1.95-1.949l-0.002-6.41-1.968 1.774c-0.407 0.367-0.947 0.542-1.48 0.524-0.533 0.018-1.073-0.157-1.48-0.524l-1.968-1.774-0.003 6.41c0 1.076-0.874 1.949-1.949 1.949s-1.948-0.873-1.948-1.949l0.002-5.24h-6.669l4.099 3.89c0.751 0.713 0.751 1.869 0.002 2.581-0.75 0.711-1.968 0.71-2.719-0.002l-4.104-3.895-4.104 3.895c-0.751 0.712-1.969 0.713-2.719 0.002-0.75-0.712-0.749-1.868 0.002-2.581l4.104-3.895-4.104-3.895c-0.751-0.712-0.752-1.868-0.002-2.58s1.968-0.711 2.719 0.002l4.104 3.895 4.104-3.895c0.751-0.713 1.969-0.713 2.719-0.002 0.749 0.712 0.749 1.868-0.002 2.58l-4.099 3.89h6.669l0.002-5.24c0-0.024 0.001-0.048 0.002-0.072-0.031-0.488 0.159-0.985 0.571-1.356 0.276-0.249 0.614-0.408 0.97-0.477 0.131-0.028 0.267-0.043 0.406-0.043 0.058 0 0.115 0.002 0.172 0.007 0.454 0.033 0.899 0.206 1.247 0.52l3.976 3.583 3.975-3.583c0.348-0.314 0.793-0.487 1.248-0.52 0.056-0.005 0.114-0.007 0.171-0.007 0.14 0 0.276 0.015 0.407 0.043 0.356 0.069 0.694 0.228 0.97 0.477 0.412 0.371 0.602 0.868 0.571 1.356 0.001 0.024 0.001 0.048 0.001 0.072l0.003 8.646h2.912l0.003-8.83c0-1.076 0.874-1.949 1.949-1.949s1.948 0.873 1.948 1.949l-0.004 8.839 6.372 0.002c0.993 0.001 1.798 0.807 1.798 1.799 0 0.993-0.805 1.798-1.798 1.798l-8.471-0.003c-0.992 0-1.798-0.806-1.798-1.799l0.001-1.796h-2.912zM25.286 39.498c-0.095 0.001-0.19 0.002-0.286 0.002-10.072 0-18.25-8.402-18.25-18.75s8.178-18.75 18.25-18.75c10.072 0 18.25 8.402 18.25 18.75 0 3.307-0.835 6.416-2.301 9.115l11.051-4.023v-3.071c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v11c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-1.543l-25.926 9.436-0.788-2.166z"/>
     </symbol>
 
     
@@ -54,6 +56,7 @@
     <symbol id="aqw">
       <path d="M32 36.23l-20.23-19.657c-1.255-1.22-3.294-1.22-4.549 0 0 0-1.913 1.859-1.913 1.859-1.269 1.233-1.269 3.235 0 4.468 0 0 26.57 25.818 26.57 25.818l0.122-0.118c0 0 0.12 0.12 0.12 0.12l26.572-25.82c1.269-1.233 1.269-3.235 0-4.468 0 0-2.363-2.297-2.363-2.297-1.007-0.978-2.642-0.978-3.649 0l-20.68 20.095z"/>
     </symbol>
+    
     
 
     
@@ -80,16 +83,22 @@
     <filter id="tsw" color-interpolation-filters="sRGB">
       <feColorMatrix type="saturate" values="0"/>
     </filter>
+
+    
+    
+    
   </defs>
+
   
     <rect x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd"/>
   
+
   <g style="font-family:'Segoe UI',Tahoma,sans-serif">
     <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:#f0f0f0;stroke:#a2b5ba;stroke-width:1px"/>
     
       <rect x="82" y="82" width="1716" height="92.5" rx="0" style="fill:#fff;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
       
-      <text x="82" y="83.70000004768372" dx="42" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:19.1px;letter-spacing:-0.1px;fill:#000">e2 SAT Editor</text>
+      <text x="82" y="83.7" dx="42" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:19.1px;letter-spacing:-0.1px;fill:#000">e2 SAT Editor</text>
       
         <image x="93" y="92" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg=="/>
       
@@ -112,7 +121,7 @@
     
     
       
-      <text x="80" y="128.30000019073486" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#000">File Edit Find Tools Window Help</text>
+      <text x="80" y="128.3" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#000">File Edit Find Tools Window Help</text>
       
     
     
@@ -145,7 +154,7 @@
           
             <rect x="361" y="161" width="292" height="69" style="fill:#f0f0f0;stroke:#ddd;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <g transform="matrix(0.38,0,0,0.38,373,181)">
-              <use href="#piw" fill="#000"/>
+              <use href="#piw" style="fill:#000"/>
             </g>
             <text x="361" y="162.5" dx="46" dy="41" style="font-size:19px;fill:#000">enigma_db - Picons <tspan style="font-size:18.43px">…</tspan></text>
             <g style="filter:url(#tsw);opacity:0.5">
@@ -172,7 +181,7 @@
           
             <rect x="807" y="161" width="292" height="69" style="fill:#f0f0f0;stroke:#ddd;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <g transform="matrix(0.38,0,0,0.38,819,181)">
-              <use href="#tow" fill="#000"/>
+              <use href="#tow" style="fill:#000"/>
             </g>
             <text x="807" y="162.5" dx="46" dy="41" style="font-size:19px;fill:#000">enigma_db - Edit Set<tspan style="font-size:18.43px">…</tspan></text>
             <g style="filter:url(#tsw);opacity:0.5">
@@ -187,7 +196,7 @@
           
             <rect x="1099" y="161" width="293" height="69" style="fill:#f0f0f0;stroke:#ddd;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <g transform="matrix(0.38,0,0,0.38,1112,181)">
-              <use href="#cbw" fill="#000"/>
+              <use href="#cbw" style="fill:#000"/>
             </g>
             <text x="1099" y="162.5" dx="46" dy="41" style="font-size:19px;fill:#000">enigma_db - Channe<tspan style="font-size:18.43px">…</tspan></text>
             <g style="filter:url(#tsw);opacity:0.5">
@@ -386,6 +395,7 @@
         
           
           
+          
         
         
           
@@ -404,7 +414,7 @@
           
             
               <rect x="469" y="373" width="1325" height="36" style="fill:#fff;stroke-width:0px"/>
-              <text x="467" y="380" dy="18" style="font-size:18.5px;fill:#000"><tspan x="476">Index</tspan> <tspan x="575">Name</tspan> <tspan x="880">Parental</tspan> <tspan x="986">Service ID</tspan> <tspan x="1109">Transport ID</tspan> <tspan x="1231">Type</tspan> <tspan x="1360">CAS</tspan> <tspan x="1429">Provider</tspan> <tspan x="1699">System</tspan></text>
+              <text x="469" y="380" dy="18" style="font-size:18.5px;fill:#000"><tspan x="476">Index</tspan> <tspan x="575">Name</tspan> <tspan x="880">Parental</tspan> <tspan x="986">Service ID</tspan> <tspan x="1109">Transport ID</tspan> <tspan x="1231">Type</tspan> <tspan x="1360">CAS</tspan> <tspan x="1429">Provider</tspan> <tspan x="1699">System</tspan></text>
               <rect x="567" y="372" width="3" height="37" style="fill:#f0f0f0;stroke:#eee;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
               <rect x="872" y="372" width="3" height="37" style="fill:#f0f0f0;stroke:#eee;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
               <rect x="978" y="372" width="3" height="37" style="fill:#f0f0f0;stroke:#eee;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
@@ -418,48 +428,48 @@
               <rect x="469" y="409" width="1325" height="687" style="fill:#fff"/>
               
                 <rect x="469" y="753" width="1325" height="49" style="fill:#cde8ff"/>
-                <text x="457" y="412" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">38</tspan> <tspan x="572">Giallo</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="412" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">38</tspan> <tspan x="572">Giallo</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN</tspan> <tspan x="1695">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,880,424)">
                   <use href="#slt" style="fill:#545454"/>
                 </g>
                 <g transform="matrix(0.38,0,0,0.38,1360,424)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
-                <text x="457" y="461" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">39</tspan> <tspan x="572">TOPcrime HD</tspan> <tspan x="982">132</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="461" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">39</tspan> <tspan x="572">TOPcrime HD</tspan> <tspan x="982">132</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,880,473)">
                   <use href="#slt" style="fill:#545454"/>
                 </g>
                 <g transform="matrix(0.38,0,0,0.38,1360,473)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
-                <text x="457" y="510" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">40</tspan> <tspan x="572">Boing HD</tspan> <tspan x="982">126</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1426">Mediaset</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="510" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">40</tspan> <tspan x="572">Boing HD</tspan> <tspan x="982">126</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1426">Mediaset</tspan> <tspan x="1695">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,522)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
-                <text x="457" y="558" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">41</tspan> <tspan x="572">K2</tspan> <tspan x="982">15204</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN Discovery Group</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="558" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">41</tspan> <tspan x="572">K2</tspan> <tspan x="982">15204</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN Discovery Group</tspan> <tspan x="1695">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,570)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
-                <text x="457" y="607" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">42</tspan> <tspan x="572">Rai Gulp HD</tspan> <tspan x="982">17712</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1392"/> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S</tspan></text>
-                <text x="457" y="656" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">43</tspan> <tspan x="572">Rai YoYo HD</tspan> <tspan x="982">8511</tspan> <tspan x="1106">12400</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">RAI</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="607" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">42</tspan> <tspan x="572">Rai Gulp HD</tspan> <tspan x="982">17712</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1392"/> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="656" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">43</tspan> <tspan x="572">Rai YoYo HD</tspan> <tspan x="982">8511</tspan> <tspan x="1106">12400</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">RAI</tspan> <tspan x="1695">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,668)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
-                <text x="457" y="704" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">44</tspan> <tspan x="572">Frisbee</tspan> <tspan x="982">15205</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN Discovery Group</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="704" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">44</tspan> <tspan x="572">Frisbee</tspan> <tspan x="982">15205</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN Discovery Group</tspan> <tspan x="1695">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,716)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
-                <text x="457" y="753" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">45</tspan> <tspan x="572">NASA TV HD</tspan> <tspan x="982">504</tspan> <tspan x="1106">900</tspan> <tspan x="1227">TV</tspan> <tspan x="1426">NoName</tspan> <tspan x="1695">DVB-S</tspan></text>
-                <text x="457" y="802" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">46</tspan> <tspan x="572">Cartoonito HD</tspan> <tspan x="982">133</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="753" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">45</tspan> <tspan x="572">NASA TV HD</tspan> <tspan x="982">504</tspan> <tspan x="1106">900</tspan> <tspan x="1227">TV</tspan> <tspan x="1426">NoName</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="802" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">46</tspan> <tspan x="572">Cartoonito HD</tspan> <tspan x="982">133</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,814)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
-                <text x="457" y="851" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">47</tspan> <tspan x="572">Super!</tspan> <tspan x="982">1327</tspan> <tspan x="1106">15700</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">M-ThreeSatcom Srl</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="851" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">47</tspan> <tspan x="572">Super!</tspan> <tspan x="982">1327</tspan> <tspan x="1106">15700</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">M-ThreeSatcom Srl</tspan> <tspan x="1695">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,863)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
-                <text x="457" y="900" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">48</tspan> <tspan x="572">Rai News 24 HD</tspan> <tspan x="982">17711</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S</tspan></text>
-                <text x="457" y="948" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">49</tspan> <tspan x="572">Mediaset Italia2 HD</tspan> <tspan x="982">130</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="900" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">48</tspan> <tspan x="572">Rai News 24 HD</tspan> <tspan x="982">17711</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S</tspan></text>
+                <text x="469" y="948" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">49</tspan> <tspan x="572">Mediaset Italia2 HD</tspan> <tspan x="982">130</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,960)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
@@ -502,7 +512,7 @@
               
               <rect x="495" y="999.5" width="738" height="23" rx="0" style="fill:#cdcdcd"/>
             </g>
-            <rect x="1773" y="998" width="25" height="25" style="fill:#f0f0f0"/> 
+            <rect x="1773" y="998" width="25" height="25" style="fill:#f0f0f0"/>
           
           
             <rect x="469" y="1023" width="1329" height="52" style="fill:#fafafa"/>
@@ -521,7 +531,7 @@
               
             
             
-              <rect x="590" y="1030" width="352" height="36" rx="1" style="fill:#fff;stroke:#949494;stroke-width:1.5px"/>
+              <rect x="590" y="1030" width="352" height="36" rx="1" style="fill:#fff;stroke:#949494;stroke-width:1.5px;clip-path:none"/>
               <text x="590" y="1032" dx="4" dy="23" style="font-size:19px;fill:#000">Nasa</text>
             
             

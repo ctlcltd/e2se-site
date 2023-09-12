@@ -1,0 +1,745 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3318 1300" style="pointer-events:none;user-select:none">
+
+  <defs>
+    <symbol id="aad">
+      <path d="M37.75 37.75h18.127v-11.5h-18.127c0 0 0-18.127 0-18.127h-11.5v18.127c0 0-18.127 0-18.127 0v11.5h18.127c0 0 0 18.127 0 18.127h11.5v-18.127z"/>
+    </symbol>
+    <symbol id="cbw">
+      <path d="M60 14.973l-3-0.522v35.716c-3.141-0.28-8.021-0.667-11-0.667-0.95 0-2.094 0.039-3.312 0.102-0.962 0.036-2.014 0.106-3.059 0.191-2.678 0.191-5.264 0.428-6.629 0.559v-35.901c0 0 6.61-1.451 9.963-1.451 4 0 14.037 1.451 14.037 1.451l3.001 0.522c1.769 0.819 2.999 2.61 2.999 4.687v32.68c0 2.848-2.312 5.16-5.16 5.16h-51.68c-2.848 0-5.16-2.312-5.16-5.16v-32.68c0-2.077 1.23-3.869 3-4.687l3-0.522c0 0 10.037-1.451 14.037-1.451 3.353 0 9.963 1.451 9.963 1.451v35.901c-1.366-0.131-3.951-0.368-6.629-0.559-1.045-0.085-2.097-0.155-3.059-0.191-1.218-0.063-2.362-0.102-3.312-0.102-2.979 0-7.859 0.387-11 0.667v-35.716l-3 0.522v38.765h56v-38.765zM28.5 42.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 42.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM28.5 35.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 35.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM28.5 28.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 28.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM28.5 21.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2zM53.5 21.5c0-1.104-0.896-2-2-2h-14c-1.104 0-2 0.896-2 2s0.896 2 2 2h14c1.104 0 2-0.896 2-2z"/>
+    </symbol>
+    <symbol id="cce">
+      <path d="M62.328 7.276l-5.604-5.604-24.724 24.724c0 0-24.724-24.724-24.724-24.724l-5.604 5.604 24.724 24.724c0 0-24.724 24.724-24.724 24.724l5.604 5.604 24.724-24.724c0 0 24.724 24.724 24.724 24.724l5.604-5.604-24.724-24.724c0 0 24.724-24.724 24.724-24.724z"/>
+    </symbol>
+    
+    <symbol id="edt">
+      <path d="M13.624 42.251l33.207-33.269c1.948-1.951 5.432-1.635 7.775 0.704 2.344 2.34 2.666 5.823 0.719 7.774l-33.207 33.269-12.724 4.254 4.23-12.732z"/>
+    </symbol>
+    <symbol id="ees">
+      <path d="M32.032 50.518c-4.79-2.886-8.032-8.409-8.032-14.742 0-9.314 7.011-16.876 15.648-16.876 8.636 0 15.647 7.562 15.647 16.876s-7.011 16.875-15.647 16.875c-0.924 0-1.828-0.086-2.709-0.252l-0.191 10.501-4.943-0.144 0.227-12.238zM6.057 26.78c-0.001-0.001 0.023 14.969 0.023 14.969-0.866 0.414-1.706 0.922-2.43 1.563-4.358 3.853-4.35 10.108 0.019 13.972 0.971 0.858 2.137 1.495 3.319 1.965l1.369-0.931-0.011-7.239c-0.001-0.885 0.89-1.557 1.892-1.556 0 0 2.771 0.003 2.771 0.003 0.536 0.001 1.068 0.166 1.418 0.476 0.306 0.27 0.483 0.677 0.484 1.091 0 0 0.011 7.016 0.011 7.016l1.416 0.908c0.975-0.446 1.946-0.994 2.763-1.716 4.357-3.853 4.35-10.108-0.019-13.972-0.727-0.643-1.569-1.153-2.438-1.57l-0.023-14.969c0.866-0.414 1.706-0.923 2.43-1.563 4.358-3.853 4.35-10.108-0.019-13.972-0.895-0.791-1.965-1.383-3.043-1.844l-1.393 0.921 0.010 6.793c0.002 0.875-0.84 1.502-1.829 1.501 0 0-2.897-0.003-2.897-0.003-0.992-0.002-1.837-0.634-1.839-1.511 0 0-0.010-6.794-0.010-6.794l-1.392-0.918c-1.078 0.459-2.146 1.048-3.039 1.838-4.357 3.853-4.35 10.108 0.019 13.972 0.727 0.642 1.569 1.153 2.438 1.57zM50.271 51.811l-0.523-0.46-5.453 3.436 0.662 1.988 5.986-1.196c1.277 1.246 2.819 1.484 3.871 0.785-0.004 0.002 7.388-4.581 7.388-4.581 0.786-0.485 1.326-1.441 1.398-2.711 0.046-0.806-0.219-1.238-0.491-1.487-0.236-0.215-0.539-0.342-0.917-0.337-0.336 0.004-0.81 0.167-1.33 0.351-0.245 0.086-0.508 0.175-0.77 0.205-0.142 0.017-0.286 0.022-0.415-0.049-1.014-0.553-2.017-0.529-2.787-0.049l-6.619 4.105z"/>
+    </symbol>
+    <symbol id="eft">
+      <path d="M56.256 31.057h-42.438c-7.074 0-12.818 5.744-12.818 12.818v61.295c0 7.074 5.744 12.818 12.818 12.818h54.476c7.075 0 12.818-5.744 12.818-12.818v-51.051c-16.616 14.040-16.649 30.281-17.025 36.965-0.151 2.687-1.869 5.034-4.385 5.99s-5.359 0.343-7.257-1.565c-14.421-14.502-16.181-43.133 3.811-64.452zM57.293 90.694c-14.624-14.705-13.039-45.988 15.234-64.344l-10.365-12.362 42.838 1.084-7.263 41.344-11.808-14.082c-28.127 16.992-28.15 39.728-28.636 48.36z"/>
+    </symbol>
+    <symbol id="igt">
+      <path d="M87.8 55.714h8.488c5.912 0 10.712 4.753 10.712 10.606v45.074c0 5.854-4.8 10.606-10.712 10.606h-84.576c-5.912 0-10.712-4.752-10.712-10.606v-45.074c0-5.853 4.8-10.606 10.712-10.606h19.788l22.5 21.827c1.413 1.374 4.32 2.133 6.3 2.109 1.98-0.023 4.821-0.828 6.2-2.236l21.3-21.7zM93.982 6.385c-17.881-3.082-49.582 12.531-44.921 39.525h-15.517l27.127 26.376 25.847-26.376h-14.41c-4.833-24.162 15.844-35.121 21.874-39.525z"/>
+    </symbol>
+    
+    <symbol id="ohn">
+      <path d="M21 42.973h89.077c2.783 0 4.643 2.26 4.153 5.042l-9.34 52.943c-0.491 2.783-3.149 5.042-5.932 5.042h-91.118c-2.119 0-3.84-1.721-3.84-3.84v-80.16h67.2l16.8 14h-72v32h5v-25.027z"/>
+    </symbol>
+    <symbol id="piw">
+      <path d="M14.762 29.23h34.49c0 0 13.928 14.478 11.463 15.596-1.067 0.483-6.127-1.117-11.524-3.087v20.261h-34.389v-20.253c-5.389 1.967-10.437 3.562-11.502 3.079-2.465-1.118 11.462-15.596 11.462-15.596zM36.774 11.359h-20.475v13.19h6.364v-10.552h14.111v-2.638zM38.538 16.635h-14.111v7.914h14.111v-7.914zM45.299 10.4v14.149h-4.283v-9.233h-2.478v-4.916h6.761zM36.632 3.482h-18.173v5.276h18.173v-5.276z"/>
+    </symbol>
+    <symbol id="sje">
+      <path d="M114 22v86.16c0 2.119-1.721 3.84-3.84 3.84h-92.32c-2.119 0-3.84-1.721-3.84-3.84v-88.32c0-2.119 1.721-3.84 3.84-3.84h91.16l5 6zM94 59.014v-40h-56v40h56zM84.5 26v30h-15v-30h15z"/>
+    </symbol>
+    <symbol id="skh">
+      <path d="M40.023 45.152c-3.477 2.591-7.729 4.192-12.407 4.221-10.406 0.066-20.276-8.26-21.806-18.699-1.731-11.814 7.58-24.164 20.12-25.040 0.561-0.039 1.124-0.055 1.686-0.053 10 0.095 19.38 7.75 21.337 17.619 1.156 5.829-0.437 11.92-3.87 16.758l13.82 13.819-5.128 5.128-13.752-13.753zM27.395 14.645c-6.236 0.060-12 5.17-12.677 11.431-0.588 5.436 2.691 11.076 7.773 13.229 6.62 2.806 15.346-1.167 17.352-8.391 2.055-7.404-3.759-16.031-12.032-16.265-0.139-0.003-0.278-0.004-0.416-0.004z"/>
+    </symbol>
+    
+    
+    <symbol id="sls">
+      <path d="M73.934 15.359c-6.491-1.302-13.177-1.302-19.668 0 0.828 4.128 1.452 8.287 1.871 12.477-4.352 0.948-8.5 2.666-12.249 5.073-2.666-3.259-5.165-6.641-7.499-10.146-5.511 3.67-10.238 8.397-13.908 13.908 3.505 2.334 6.887 4.834 10.146 7.499-2.407 3.749-4.125 7.897-5.073 12.249-4.19-0.419-8.349-1.043-12.477-1.871-1.303 6.491-1.303 13.177 0 19.668 4.128-0.828 8.287-1.452 12.477-1.871 0.948 4.352 2.666 8.501 5.073 12.249-3.259 2.666-6.641 5.165-10.146 7.499 3.67 5.511 8.397 10.238 13.908 13.908 2.334-3.505 4.833-6.887 7.499-10.146 3.749 2.407 7.897 4.125 12.249 5.074-0.419 4.189-1.043 8.348-1.871 12.476 6.491 1.303 13.177 1.303 19.668 0-0.828-4.128-1.452-8.287-1.871-12.476 4.352-0.949 8.5-2.667 12.249-5.074 2.666 3.259 5.165 6.641 7.499 10.146 5.511-3.67 10.238-8.397 13.908-13.908-3.505-2.334-6.887-4.833-10.146-7.499 2.407-3.748 4.125-7.897 5.073-12.249 4.19 0.419 8.349 1.043 12.477 1.871 1.303-6.491 1.303-13.177 0-19.668-4.128 0.828-8.287 1.452-12.477 1.871-0.948-4.352-2.666-8.5-5.073-12.249 3.259-2.665 6.641-5.165 10.146-7.499-3.67-5.511-8.397-10.238-13.908-13.908-2.334 3.505-4.833 6.887-7.499 10.146-3.749-2.407-7.897-4.125-12.249-5.073 0.419-4.19 1.043-8.349 1.871-12.477zM64.1 50.882c7.451 0 13.5 6.049 13.5 13.5s-6.049 13.5-13.5 13.5c-7.451 0-13.5-6.049-13.5-13.5s6.049-13.5 13.5-13.5z"/>
+    </symbol>
+    <symbol id="tmw">
+      <path d="M64 64v-19h-64v19h64zM38.975 58.253l0.001 1.834c0.001 1.076-0.872 1.949-1.947 1.949s-1.949-0.873-1.95-1.949l-0.002-6.41-1.968 1.774c-0.407 0.367-0.947 0.542-1.48 0.524-0.533 0.018-1.073-0.157-1.48-0.524l-1.968-1.774-0.003 6.41c0 1.076-0.874 1.949-1.949 1.949s-1.948-0.873-1.948-1.949l0.002-5.24h-6.669l4.099 3.89c0.751 0.713 0.751 1.869 0.002 2.581-0.75 0.711-1.968 0.71-2.719-0.002l-4.104-3.895-4.104 3.895c-0.751 0.712-1.969 0.713-2.719 0.002-0.75-0.712-0.749-1.868 0.002-2.581l4.104-3.895-4.104-3.895c-0.751-0.712-0.752-1.868-0.002-2.58s1.968-0.711 2.719 0.002l4.104 3.895 4.104-3.895c0.751-0.713 1.969-0.713 2.719-0.002 0.749 0.712 0.749 1.868-0.002 2.58l-4.099 3.89h6.669l0.002-5.24c0-0.024 0.001-0.048 0.002-0.072-0.031-0.488 0.159-0.985 0.571-1.356 0.276-0.249 0.614-0.408 0.97-0.477 0.131-0.028 0.267-0.043 0.406-0.043 0.058 0 0.115 0.002 0.172 0.007 0.454 0.033 0.899 0.206 1.247 0.52l3.976 3.583 3.975-3.583c0.348-0.314 0.793-0.487 1.248-0.52 0.056-0.005 0.114-0.007 0.171-0.007 0.14 0 0.276 0.015 0.407 0.043 0.356 0.069 0.694 0.228 0.97 0.477 0.412 0.371 0.602 0.868 0.571 1.356 0.001 0.024 0.001 0.048 0.001 0.072l0.003 8.646h2.912l0.003-8.83c0-1.076 0.874-1.949 1.949-1.949s1.948 0.873 1.948 1.949l-0.004 8.839 6.372 0.002c0.993 0.001 1.798 0.807 1.798 1.799 0 0.993-0.805 1.798-1.798 1.798l-8.471-0.003c-0.992 0-1.798-0.806-1.798-1.799l0.001-1.796h-2.912zM25.286 39.498c-0.095 0.001-0.19 0.002-0.286 0.002-10.072 0-18.25-8.402-18.25-18.75s8.178-18.75 18.25-18.75c10.072 0 18.25 8.402 18.25 18.75 0 3.307-0.835 6.416-2.301 9.115l11.051-4.023v-3.071c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v11c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-1.543l-25.926 9.436-0.788-2.166z"/>
+    </symbol>
+
+    <symbol id="anm">
+      <path d="M32 13.243c-1.668 0-3.336 0.635-4.608 1.907l-24.485 24.485c-2.543 2.543-2.543 6.672 0 9.215s6.672 2.543 9.215 0l19.878-19.878 19.878 19.878c2.543 2.543 6.672 2.543 9.215 0s2.543-6.672 0-9.215l-24.485-24.485c-1.272-1.272-2.94-1.907-4.608-1.907z"/>
+    </symbol>
+    
+    
+    
+    
+
+    <linearGradient id="bom" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:#e2e2e2"/>
+      <stop offset="0.7" style="stop-color:#f7f7f7"/>
+    </linearGradient>
+    <linearGradient id="bpm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" style="stop-color:#000;stop-opacity:0.15"/>
+      <stop offset="1" style="stop-color:#000;stop-opacity:0.19"/>
+    </linearGradient>
+    
+    
+    <linearGradient id="bqm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0.4" style="stop-color:#0095ff"/>
+      <stop offset="1" style="stop-color:#0d7bff"/>
+    </linearGradient>
+    
+
+    
+    
+    
+    
+    
+
+    <filter id="brm" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-opacity="0.06"/>
+      <feDropShadow dx="0" dy="0" stdDeviation="0.8" flood-opacity="0.2"/>
+    </filter>
+    
+
+    
+
+    
+    
+
+    <filter id="msm" color-interpolation-filters="sRGB">
+      <feDropShadow dx="-2" dy="19" stdDeviation="8" flood-opacity="0.1"/>
+      <feDropShadow dx="0" dy="10" stdDeviation="23" flood-opacity="0.3"/>
+    </filter>
+    
+    
+  </defs>
+
+  
+    <rect x="0" y="0" width="3318" height="1300" style="fill:#b4d0cd"/>
+  
+
+  <g transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+    <rect x="1" y="1" width="960" height="820" rx="15" style="fill:#f3f4f4;stroke:#a6bbb9;stroke-width:1px;filter:url(#msm)"/>
+    
+      <rect x="2" y="2" width="958" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
+      <rect x="1" y="44" width="960" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px"/>
+      <text x="2" y="2" dx="478" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949">Edit Service</text>
+      
+      
+        <ellipse cx="21" cy="23" rx="8.8" style="fill:#ff5f5a;stroke:#000;stroke-opacity:0.1"/>
+        <ellipse cx="52" cy="23" rx="8.8" style="fill:#febc2e;stroke:#000;stroke-opacity:0.1"/>
+        <ellipse cx="83" cy="23" rx="8.8" style="fill:#dedfcf;stroke:#000;stroke-opacity:0.1"/>
+      
+      
+      
+    
+    
+      <rect x="33" y="82" width="895" height="638" rx="6" style="fill:#888;fill-opacity:0.08;stroke:#555;stroke-opacity:0.1;stroke-width:0.5px"/>
+      
+        <g style="clip-path:inset(0px 8px 0px 0px)">
+          <rect x="363.5" y="69" width="103" height="29" rx="7" style="fill:url(#bqm);stroke:#def;stroke-width:1px"/>
+          <text x="363" y="68" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#fff">Service</text>
+        </g>
+        <g style="clip-path:inset(0px 0px 0px 8px)">
+          <rect x="450.5" y="69" width="147" height="29" rx="7" style="fill:#f7f8f8;stroke:#d1d2d2;stroke-width:1px"/>
+          <text x="450" y="68" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#000;fill-opacity:0.9">Transponder</text>
+        </g>
+      
+      
+        <rect x="66" y="131" width="418" height="323" rx="5" style="fill:#999;fill-opacity:0.09;stroke:#444;stroke-opacity:0.1;stroke-width:0.5px"/>
+        
+        <text x="66" y="109" dx="10" dy="17" style="font-size:17px;letter-spacing:0.4px;fill:#000">Service</text>
+        
+          
+            <text x="87" y="150" dy="22" style="font-size:19.5px;fill:#000">Service name</text>
+            
+              <rect x="87" y="187" width="346" height="33" rx="0" style="fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0px)"/>
+              <text x="87" y="187" dx="4" dy="23" style="font-size:19px;fill:#000">NASA TV HD</text>
+            
+          
+          
+            <text x="87" y="244" dy="22" style="font-size:19.5px;fill:#000">Service type</text>
+            
+              
+                <rect x="95" y="299" width="126" height="30" rx="8" style="fill:#fff;stroke:url(#bpm);stroke-width:0.4px;filter:url(#brm)"/>
+                <text x="95" y="299" dx="12" dy="22" style="font-size:20px;word-spacing:3px;fill:#000">1 TV</text>
+                
+                  <rect x="194.5" y="302" width="24" height="24" rx="8" style="fill:url(#bqm);stroke:url(#bpm);stroke-opacity:0.06;stroke-width:2px"/>
+                  
+                    
+                      <g transform="matrix(0.16,0,0,0.16,201.4,304.7)">
+                        <use href="#anm" style="fill:#fff"/>
+                      </g>
+                      <g transform="matrix(0.16,0,0,-0.16,201.4,323.7)">
+                        <use href="#anm" style="fill:#fff"/>
+                      </g>
+                    
+                    
+                    
+                  
+                
+              
+              
+                <rect x="248" y="302" width="106" height="29" rx="8" style="fill:url(#bqm);stroke:url(#bpm);stroke-width:0.4px;filter:url(#brm)"/>
+                
+                <text x="248" y="302" dx="20" dy="20" style="font-size:19.5px;fill:#fff">custom</text>
+              
+            
+          
+          
+            <text x="87" y="365" dy="22" style="font-size:19.5px;fill:#000">Service ID</text>
+            
+              <rect x="87" y="401" width="87" height="33" rx="0" style="fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0.2px)"/>
+              <text x="87" y="401" dx="4" dy="23" style="font-size:19px;fill:#000">504</text>
+              <text x="188" y="401" dy="23" style="font-size:19.5px;fill:#000">[SID]</text>
+            
+          
+        
+      
+      
+        <rect x="66" y="506" width="418" height="182" rx="5" style="fill:#999;fill-opacity:0.09;stroke:#444;stroke-opacity:0.1;stroke-width:0.5px"/>
+        
+        <text x="66" y="484" dx="10" dy="17" style="font-size:17px;letter-spacing:0.4px;fill:#000">Tuner</text>
+        
+          
+            <text x="133" y="533" dy="22" style="font-size:19.5px;fill:#000">Satellite</text>
+            
+              <rect x="225" y="532" width="241" height="30" rx="8" style="fill:#fff;stroke:url(#bpm);stroke-width:0.4px;filter:url(#brm)"/>
+              
+              <text x="225" y="532" dx="12" dy="22" style="font-size:20px;fill:#000">Hot Bird</text>
+              
+              
+                <rect x="438.5" y="535" width="24" height="24" rx="8" style="fill:url(#bqm);stroke:url(#bpm);stroke-opacity:0.06;stroke-width:2px"/>
+                
+                  
+                    <g transform="matrix(0.16,0,0,0.16,445.4,537.7)">
+                      <use href="#anm" style="fill:#fff"/>
+                    </g>
+                    <g transform="matrix(0.16,0,0,-0.16,445.4,556.7)">
+                      <use href="#anm" style="fill:#fff"/>
+                    </g>
+                  
+                  
+                  
+                
+              
+            
+          
+          
+            <text x="94" y="588" dy="22" style="font-size:19.5px;fill:#000">Transponder</text>
+            
+              <rect x="225" y="587" width="241" height="30" rx="8" style="fill:#fff;stroke:url(#bpm);stroke-width:0.4px;filter:url(#brm)"/>
+              
+              <text x="225" y="587" dx="12" dy="22" style="font-size:20px;fill:#000">11373/H/27500</text>
+              
+              
+                <rect x="438.5" y="590" width="24" height="24" rx="8" style="fill:url(#bqm);stroke:url(#bpm);stroke-opacity:0.06;stroke-width:2px"/>
+                
+                  
+                    <g transform="matrix(0.16,0,0,0.16,445.4,592.7)">
+                      <use href="#anm" style="fill:#fff"/>
+                    </g>
+                    <g transform="matrix(0.16,0,0,-0.16,445.4,611.7)">
+                      <use href="#anm" style="fill:#fff"/>
+                    </g>
+                  
+                  
+                  
+                
+              
+            
+          
+          
+            
+              <rect x="222" y="640" width="193" height="29" rx="8" style="fill:#f9f9f9;stroke:url(#bpm);stroke-width:0.4px;filter:url(#brm)"/>
+              <text x="222" y="640" dx="20" dy="21" style="font-size:19.5px;fill:#000">New Transponder</text>
+            
+          
+        
+      
+      
+        <rect x="508" y="131" width="387" height="557" rx="5" style="fill:#999;fill-opacity:0.09;stroke:#444;stroke-opacity:0.1;stroke-width:0.5px"/>
+        
+        <text x="508" y="109" dx="10" dy="17" style="font-size:17px;letter-spacing:0.4px;fill:#000">Parameters</text>
+        
+          
+            
+            
+              <rect x="527" y="178" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="843" y="208" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,526,178)"/>
+            
+            <text x="526" y="178" dx="8" dy="26" style="font-size:19.5px;fill:#000">Package</text>
+          
+          
+            
+            
+              <rect x="527" y="227" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="843" y="257" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,526,227)"/>
+            
+            <text x="526" y="227" dx="8" dy="26" style="font-size:19.5px;fill:#000">PIDs</text>
+            <g style="clip-path:inset(0px 0px 59px)">
+              <rect x="529" y="277" width="345" height="167" style="fill:#eee;fill-opacity:0.7"/>
+              
+                <text x="632" y="295" dy="22" style="font-size:19.5px;fill:#000">video</text>
+                
+                  <rect x="691" y="294" width="70" height="31" rx="0" style="fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0px)"/>
+                  <text x="691" y="294" dx="4" dy="23" style="font-size:19px;fill:#000">5041</text>
+                  <text x="775" y="294" dy="23" style="font-size:19px;fill:#000">[VPID]</text>
+                
+              
+              
+                <text x="574" y="340" dy="22" style="font-size:19.5px;fill:#000">mpeg-audio</text>
+                
+                  <rect x="691" y="339" width="70" height="31" rx="0" style="fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0.1px)"/>
+                  <text x="691" y="339" dx="4" dy="23" style="font-size:19px;fill:#000">8191</text>
+                  <text x="775" y="339" dy="23" style="font-size:19px;fill:#000">[APID]</text>
+                
+              
+              
+                <text x="660" y="384" dy="22" style="font-size:19.5px;fill:#000">tp</text>
+                
+                  <rect x="691" y="383" width="70" height="31" rx="0" style="fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0.4px)"/>
+                  <text x="775" y="383" dy="23" style="font-size:19px;fill:#000">[TXTPID]</text>
+                
+              
+              
+                <text x="650" y="429" dy="22" style="font-size:19.5px;fill:#000">pcr</text>
+                
+                  <rect x="691" y="428" width="70" height="31" rx="0" style="fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0.1px)"/>
+                  <text x="691" y="428" dx="4" dy="23" style="font-size:19px;fill:#000">5041</text>
+                  <text x="775" y="428" dy="23" style="font-size:19px;fill:#000">[PCRPID]</text>
+                
+              
+              
+                <text x="650" y="473" dy="22" style="font-size:19.5px;fill:#000">ac3</text>
+                
+                  <rect x="691" y="472" width="70" height="31" rx="0" style="fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0.4px)"/>
+                  <text x="775" y="472" dy="23" style="font-size:19px;fill:#000">[AC3PID]</text>
+                
+              
+            </g>
+            
+              
+              
+              
+              
+              
+              <rect x="860" y="278" width="12" height="36" rx="7" style="fill:#000;fill-opacity:0.46"/>
+            
+          
+          
+            
+            
+              <rect x="527" y="457" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="843" y="487" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,526,457)"/>
+            
+            <text x="526" y="457" dx="8" dy="26" style="font-size:19.5px;fill:#000">CAIDs</text>
+          
+          
+            
+            
+              <rect x="527" y="506" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="843" y="536" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,526,506)"/>
+            
+            <text x="526" y="506" dx="8" dy="26" style="font-size:19.5px;fill:#000">Flags</text>
+          
+          
+            
+            
+              <rect x="527" y="555" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="843" y="585" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,526,555)"/>
+            
+            <text x="526" y="555" dx="8" dy="26" style="font-size:19.5px;fill:#000">Custom</text>
+          
+          
+            
+            
+              <rect x="527" y="604" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="843" y="634" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,526,604)"/>
+            
+            <text x="526" y="604" dx="8" dy="26" style="font-size:19.5px;fill:#000">Extras</text>
+          
+        
+      
+      
+        <rect x="1" y="739" width="960" height="82" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0px 0px)"/>
+        
+          <text x="723" y="764" dx="26" dy="34" style="font-size:22.5px;fill:#000">Cancel</text>
+        
+        
+          <g transform="matrix(0.36,0,0,0.36,851,778)">
+            <use href="#edt" style="fill:#505050"/>
+          </g>
+          <text x="851" y="764" dx="26" dy="34" style="font-size:22.5px;fill:#000">Save</text>
+        
+        <rect x="1" y="756" width="960" height="1.4" style="fill:#e0e1e1"/>
+      
+    
+    <rect x="1" y="1" width="960" height="820" rx="15" style="fill:none;stroke:#c1c1c1;stroke-width:1px"/>
+    <rect x="3" y="3" width="956" height="816" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px"/>
+  </g>
+
+  <g style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+    <rect x="1521" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px"/>
+    
+      <rect x="1522" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
+      <rect x="1521" y="124" width="1718" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px"/>
+      <text x="1522" y="82" dx="857" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949">e2 SAT Editor</text>
+      
+      
+        <ellipse cx="1543" cy="103" rx="8.8" style="fill:#ff5f5a;stroke:#000;stroke-opacity:0.1" x="1440"/>
+        <ellipse cx="1573" cy="103" rx="8.8" style="fill:#febc2e;stroke:#000;stroke-opacity:0.1" x="1440"/>
+        <ellipse cx="1604" cy="103" rx="8.8" style="fill:#28c840;stroke:#000;stroke-opacity:0.1" x="1440"/>
+      
+      
+      
+    
+    
+    
+      
+        <rect x="1522" y="125" width="1716" height="67" style="fill:#f3f4f4"/>
+        
+          <rect x="1522" y="125" width="120" height="67" style="fill:#e7e8e8"/>
+          
+            <rect x="1522" y="131" width="112" height="53" rx="0" style="fill:url(#bom);stroke:#afafaf;stroke-width:1.5px"/>
+            <g transform="matrix(0.26,0,0,0.26,1528,149)">
+              <use href="#aad" style="fill:#4f4f4f"/>
+            </g>
+            <text x="1522" y="131" dx="27" dy="33" style="font-weight:bold;font-size:19px;fill:#000">New Tab</text>
+          
+        
+        
+          <rect x="1642" y="125" width="1" height="67" style="fill:#d5d6d6"/>
+          
+            <rect x="1643" y="124" width="157" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
+            <text x="1643" y="124" dx="15" dy="41" style="font-size:20px;fill:#000">enigma_db</text>
+            
+              
+                
+                <g transform="matrix(0.2,0,0,0.2,1775,152)">
+                  <use href="#cce" style="fill:#666"/>
+                </g>
+              
+            
+          
+          
+            <rect x="1800" y="124" width="292" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
+            <g transform="matrix(0.38,0,0,0.38,1812,144)">
+              <use href="#piw" style="fill:#000"/>
+            </g>
+            <text x="1800" y="124" dx="46" dy="41" style="font-size:20px;fill:#000">enigma_db - Picons <tspan style="font-size:15px">…</tspan></text>
+            
+              
+                
+                <g transform="matrix(0.2,0,0,0.2,2068,152)">
+                  <use href="#cce" style="fill:#666"/>
+                </g>
+              
+            
+          
+          
+            <rect x="2092" y="124" width="154" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
+            <text x="2092" y="124" dx="15" dy="41" style="font-size:20px;fill:#000">neutrino</text>
+            
+              
+                
+                <g transform="matrix(0.2,0,0,0.2,2222,152)">
+                  <use href="#cce" style="fill:#666"/>
+                </g>
+              
+            
+          
+          
+            <rect x="2246" y="124" width="292" height="69" style="fill:#9dcdff;stroke:#91bdef;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
+            <g transform="matrix(0.38,0,0,0.38,2258,144)">
+              <use href="#tmw" style="fill:#000"/>
+            </g>
+            <text x="2246" y="124" dx="46" dy="41" style="font-size:20px;fill:#000">enigma_db - Edit Set<tspan style="font-size:15px">…</tspan></text>
+            
+              
+                
+                <g transform="matrix(0.2,0,0,0.2,2515,152)">
+                  <use href="#cce" style="fill:#666"/>
+                </g>
+              
+            
+          
+          
+            <rect x="2538" y="124" width="293" height="69" style="fill:#ececec;stroke:#d2d3d3;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
+            <g transform="matrix(0.38,0,0,0.38,2551,144)">
+              <use href="#cbw" style="fill:#000"/>
+            </g>
+            <text x="2538" y="124" dx="46" dy="41" style="font-size:20px;fill:#000">enigma_db - Channe<tspan style="font-size:15px">…</tspan></text>
+            
+              
+                
+                <g transform="matrix(0.2,0,0,0.2,2807,152)">
+                  <use href="#cce" style="fill:#666"/>
+                </g>
+              
+            
+          
+          <rect x="2830" y="125" width="1" height="67" style="fill:#d5d6d6"/>
+        
+      
+      
+        <rect x="1522" y="192" width="1716" height="100" style="fill:#e7e8e8"/>
+        
+          
+            <g transform="matrix(0.38,0,0,0.38,1546,217)">
+              <use href="#ohn" style="fill:#4c4c4c"/>
+            </g>
+            <text x="1530" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Open</text>
+          
+          
+            <g transform="matrix(0.38,0,0,0.38,1699,217)">
+              <use href="#sje" style="fill:#4c4c4c"/>
+            </g>
+            <text x="1684" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Save</text>
+          
+          
+            <rect x="1846" y="212" width="1" height="61" style="fill:none;stroke:#000;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
+          
+          
+            <g transform="matrix(0.38,0,0,0.38,1864,217)">
+              <use href="#igt" style="fill:#4c4c4c"/>
+            </g>
+            <text x="1848" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
+          
+          
+            <g transform="matrix(0.38,0,0,0.38,2032,217)">
+              <use href="#eft" style="fill:#4c4c4c"/>
+            </g>
+            <text x="2014" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
+          
+          
+            <rect x="2196" y="212" width="1" height="61" style="fill:none;stroke:#000;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
+          
+          
+            <g transform="matrix(0.38,0,0,0.38,2213,217)">
+              <use href="#sls" style="fill:#4c4c4c"/>
+            </g>
+            <text x="2198" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
+          
+          
+            
+              <rect x="2489" y="224" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#bpm);stroke-width:0.4px;filter:url(#brm)"/>
+              
+                <rect x="2586.5" y="227" width="24" height="24" rx="8" style="fill:url(#bqm);stroke:url(#bpm);stroke-opacity:0.06;stroke-width:2px"/>
+                
+                  
+                    <g transform="matrix(0.16,0,0,0.16,2593.4,229.7)">
+                      <use href="#anm" style="fill:#fff"/>
+                    </g>
+                    <g transform="matrix(0.16,0,0,-0.16,2593.4,248.7)">
+                      <use href="#anm" style="fill:#fff"/>
+                    </g>
+                  
+                  
+                  
+                
+              
+              <text x="2489" y="224" dx="12" dy="22" style="font-size:20px;fill:#000">Default</text>
+            
+          
+          
+            <text x="2636" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
+          
+          
+            <text x="2769" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Disconnect</text>
+          
+          
+            <rect x="2941" y="212" width="1" height="61" style="fill:none;stroke:#000;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
+          
+          
+            <text x="2953" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Upload</text>
+          
+          
+            <text x="3072" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
+          
+        
+        <rect x="1520" y="192" width="1720" height="100" style="fill:none;stroke:#d0d0d0;stroke-width:2.4px;clip-path:inset(0px 2px)"/>
+      
+      
+        <rect x="1522" y="291" width="1716" height="835" style="fill:#f3f4f4"/>
+        
+          
+          
+            
+              
+              <text x="1522" y="291" dx="10" dy="33" style="font-weight:bold;font-size:20px;fill:#000">Satellites</text>
+              
+                
+                  
+                  <g transform="matrix(0.38,0,0,0.38,1853,303)">
+                    <use href="#ees" style="fill:#505050"/>
+                  </g>
+                
+              
+            
+            
+              
+                <rect x="1522" y="340" width="380" height="26" style="fill:#ececec"/>
+                <text x="1522" y="340" dy="18" style="font-size:17px;fill:#000"><tspan x="1529">Name</tspan> <tspan x="1826">Position</tspan></text>
+                <rect x="1820" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
+              
+              
+                <rect x="1522" y="366" width="380" height="687" style="fill:#fff"/>
+                
+                  <rect x="1522" y="448" width="380" height="44" style="fill:#ebebeb"/>
+                  <text x="1522" y="366" dy="29" style="font-size:19px;fill:#000"><tspan x="1537">Hispasat 30W-4-5</tspan> <tspan x="1829">30.0W</tspan></text>
+                  <text x="1522" y="407" dy="29" style="font-size:19px;fill:#000"><tspan x="1537">Eutelsat / Nilesat</tspan> <tspan x="1829">7.0W</tspan></text>
+                  <text x="1522" y="448" dy="29" style="font-size:19px;fill:#000"><tspan x="1537">Hot Bird</tspan> <tspan x="1829">13.0E</tspan></text>
+                  <text x="1522" y="491" dy="29" style="font-size:19px;fill:#000"><tspan x="1537">Badr 7</tspan> <tspan x="1829">24.0E</tspan></text>
+                  <text x="1522" y="533" dy="29" style="font-size:19px;fill:#000"><tspan x="1537">Badr 4/5/6/7</tspan> <tspan x="1829">26.0E</tspan></text>
+                
+              
+            
+          
+          
+            <rect x="1522" y="1054" width="380" height="73" style="fill:#f7f8f8"/>
+            <rect x="1520" y="1053" width="384" height="73" style="fill:none;stroke:#e9eaea;stroke-width:2.4px;clip-path:inset(0px 2px 2px)"/>
+            
+              
+                <g transform="matrix(0.25,0,0,0.25,1541,1080)">
+                  <use href="#aad" style="fill:#545454"/>
+                </g>
+                <text x="1535" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">New Position</text>
+              
+              
+                <rect x="1754" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#bpm);stroke-width:0.4px;filter:url(#brm)"/>
+                <g transform="matrix(0.38,0,0,0.38,1774,1075)">
+                  <use href="#skh" style="fill:#545454"/>
+                </g>
+                <text x="1754" y="1072" dx="54" dy="22" style="font-size:20px;fill:#000">Find<tspan style="font-size:15px">…</tspan></text>
+              
+            
+          
+        
+        
+          
+          <ellipse cx="467.4" cy="708.4" rx="4" style="fill:#dadbdb" x="1440"/>
+          
+        
+        
+          
+          
+            
+            <text x="1913" y="291" dx="10" dy="32" style="font-weight:bold;font-size:20px;fill:#000">Transponders</text>
+          
+          
+            
+              <rect x="1913" y="340" width="1325" height="26" style="fill:#ececec"/>
+              <text x="1913" y="340" dy="18" style="font-size:17px;fill:#000"><tspan x="1921">Freq/Pol/SR</tspan> <tspan x="2157">Frequency</tspan> <tspan x="2276">Polarization</tspan> <tspan x="2395">Symbol Rate</tspan> <tspan x="2515">System</tspan> <tspan x="2616">FEC</tspan> <tspan x="2715">Modulation</tspan> <tspan x="2826">Inversion</tspan> <tspan x="2920">Roll offset</tspan> <tspan x="3021">Pilot</tspan></text>
+              <rect x="2150" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
+              <rect x="2269" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
+              <rect x="2387" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
+              <rect x="2508" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
+              <rect x="2609" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
+              <rect x="2708" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
+              <rect x="2819" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
+              <rect x="2913" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
+              <rect x="3014" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
+            
+            
+              <rect x="1913" y="366" width="1325" height="687" style="fill:#fff"/>
+              
+                <rect x="1913" y="576" width="1325" height="44" style="fill:#ebebeb"/>
+                <text x="1913" y="366" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10719/V/27500</tspan> <tspan x="2159">10719</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="407" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10728/H/30000</tspan> <tspan x="2159">10728</tspan> <tspan x="2278">H</tspan> <tspan x="2397">30000</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="448" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10758/V/27500</tspan> <tspan x="2159">10758</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="491" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10775/H/27500</tspan> <tspan x="2159">10775</tspan> <tspan x="2278">H</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="533" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10775/H/29900</tspan> <tspan x="2159">10775</tspan> <tspan x="2278">H</tspan> <tspan x="2397">29900</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="576" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10796/V/27500</tspan> <tspan x="2159">10796</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="618" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10815/H/27500</tspan> <tspan x="2159">10815</tspan> <tspan x="2278">H</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="662" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10834/V/27500</tspan> <tspan x="2159">10834</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="705" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10853/H/29900</tspan> <tspan x="2159">10853</tspan> <tspan x="2278">H</tspan> <tspan x="2397">29900</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="749" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10872/V/27500</tspan> <tspan x="2159">10872</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="791" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10873/V/27500</tspan> <tspan x="2159">10873</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="834" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10892/H/27500</tspan> <tspan x="2159">10892</tspan> <tspan x="2278">H</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="876" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10911/V/27500</tspan> <tspan x="2159">10911</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="918" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10930/H/30000</tspan> <tspan x="2159">10930</tspan> <tspan x="2278">H</tspan> <tspan x="2397">30000</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+                <text x="1913" y="959" dy="29" style="font-size:19px;fill:#000"><tspan x="1924">10949/V/27500</tspan> <tspan x="2159">10949</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
+              
+            
+            
+              
+              
+              
+              
+              
+              <rect x="3222" y="368" width="12" height="72" rx="7" style="fill:#7f7f7f"/>
+            
+          
+          
+            <rect x="1913" y="992" width="1325" height="61" style="fill:#fafafa"/>
+            
+              <rect x="1923" y="1004" width="174" height="30" rx="8" style="fill:#fff;stroke:url(#bpm);stroke-width:0.4px;filter:url(#brm)"/>
+              <text x="1923" y="1004" dx="12" dy="22" style="font-size:20px;fill:#000">Freq/Pol/SR</text>
+              
+                <rect x="2070.5" y="1007" width="24" height="24" rx="8" style="fill:url(#bqm);stroke:url(#bpm);stroke-opacity:0.06;stroke-width:2px"/>
+                
+                  
+                    <g transform="matrix(0.16,0,0,0.16,2077.4,1009.7)">
+                      <use href="#anm" style="fill:#fff"/>
+                    </g>
+                    <g transform="matrix(0.16,0,0,-0.16,2077.4,1028.7)">
+                      <use href="#anm" style="fill:#fff"/>
+                    </g>
+                  
+                  
+                  
+                
+              
+            
+            
+              <rect x="2107" y="1003" width="208" height="33" rx="0" style="fill:#fff;stroke:#d1d2d2;stroke-width:3.4px;clip-path:inset(1px 1px 0.2px)"/>
+              <text x="2107" y="1003" dx="4" dy="23" style="font-size:19px;fill:#000">10796/V</text>
+            
+            
+              <rect x="2325" y="1003" width="82" height="33" rx="4" style="fill:#ececec"/>
+              <text x="2325" y="1003" dx="40" dy="23" text-anchor="middle" style="font-size:19px;fill:#000;fill-opacity:0.89">Find</text>
+            
+            
+              <rect x="2416" y="1003" width="166" height="33" rx="4" style="fill:#ececec"/>
+              <text x="2416" y="1003" dx="83" dy="23" text-anchor="middle" style="font-size:19px;fill:#000;fill-opacity:0.89">Find Previous</text>
+            
+            
+              <rect x="2591" y="1003" width="110" height="33" rx="4" style="fill:#ececec"/>
+              <text x="2591" y="1003" dx="55" dy="23" text-anchor="middle" style="font-size:19px;fill:#000;fill-opacity:0.89">Find All</text>
+            
+            
+              <rect x="2734" y="1004" width="126" height="31" rx="4" style="fill:#b1d7ff;stroke:#d1d2d2;stroke-width:1px"/>
+              <text x="2734" y="1004" dx="62" dy="22" text-anchor="middle" style="font-size:18px;fill:#fff;fill-opacity:0.9">Highlight</text>
+            
+            <g transform="matrix(0.23,0,0,0.23,3204,1013)">
+              <use href="#cce" style="fill:#666"/>
+            </g>
+          
+          
+            <rect x="1913" y="1054" width="1325" height="73" style="fill:#f7f8f8"/>
+            <rect x="1911" y="1053" width="1329" height="73" style="fill:none;stroke:#e9eaea;stroke-width:2.4px;clip-path:inset(0px 2px 2px)"/>
+            
+              
+                
+                <g transform="matrix(0.26,0,0,0.26,1932,1080)">
+                  <use href="#aad" style="fill:#545454"/>
+                </g>
+                <text x="1927" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">New Transponder</text>
+              
+              
+                <rect x="3092" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#bpm);stroke-width:0.4px;filter:url(#brm)"/>
+                <g transform="matrix(0.38,0,0,0.38,3104,1075)">
+                  <use href="#skh" style="fill:#545454"/>
+                </g>
+                <text x="3092" y="1072" dx="46" dy="22" style="font-size:20px;fill:#000">Find<tspan style="font-size:15px">…</tspan></text>
+              
+            
+          
+        
+        <rect x="1520" y="291" width="1720" height="836" style="fill:none;stroke:#d5d6d6;stroke-width:2.4px;clip-path:inset(0px 2px)"/>
+      
+    
+    
+      <rect x="1522" y="1164" width="1716" height="56" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0px 0px)"/>
+      <rect x="1520" y="1179" width="1720" height="42" style="fill:none;stroke:#d8d9d9;stroke-width:2.5px;clip-path:inset(0px 2px 2px)"/>
+      <text x="1522" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Transponders: 119</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
+      
+      
+      <text x="1522" y="1179" dx="1593" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 411</tspan></text>
+      
+      
+        
+      
+    
+    <rect x="1521" y="81" width="1718" height="1140" rx="15" style="fill:none;stroke:#a6bbb9;stroke-width:1px"/>
+    <rect x="1523" y="83" width="1714" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px"/>
+  </g>
+
+</svg>

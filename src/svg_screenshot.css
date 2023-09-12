@@ -12,7 +12,7 @@
 
 
 .dm text:not(.color) { fill: #fff !important; }
-.dm .t-txt { fill: #bcbebe !important; }
+.dm text.t-txt { fill: #bcbebe !important; }
 
 .dm .t-bg { fill: #404242 !important; stroke: #787979 !important; }
 .dm .w-bg, .dm #menu-bg { fill: #313333 !important; }
@@ -37,8 +37,8 @@
 
 .dm .btn-bg { fill: #fff !important; fill-opacity: 0.24 !important; stroke: url(#btn-stroke-d-m) !important; }
 .dm .btn-bg { filter: url(#btn-shadow-d-m) !important; }
-.dm .input-bg { fill: #fff !important; fill-opacity: 0.08 !important; stroke: #fff !important; stroke-opacity: .11; }
-#piconseditor .dm #list-tool .input-bg { fill-opacity: 0 !important; /*stroke-width: 1.5px !important;*/ }
+.dm .input-bg { fill: #fff !important; fill-opacity: 0.08 !important; stroke: #fff !important; stroke-opacity: 0.11 !important; }
+#piconseditor .dm #list-tool .input-bg { fill-opacity: 0 !important; stroke-opacity: 0.13 !important; }
 
 .dm .tb-button rect { fill: url(#btn-bg-d-m) !important; }
 .dm .find-bg, .dm .list-cols .bg { fill: #323232 !important; }
@@ -208,11 +208,14 @@
 
 .w #main { transform: matrix(1, 0, 0, 1, 0, -6); }
 
-#channelbook .w #w-inner { transform: matrix(1, 0, 0, 1, 0, 2); }
+#channelbook .w #w-inner { transform: none; }
+
+.w#addchannel { transform: matrix(1.41, 0, 0, 1.41, 314, 186); }
 
 
 .w #main-bg { height: 816px; }
 .w #main-stroke { height: 818px; }
+#channelbook .w #main-stroke { height: 816px; }
 
 .w .box-title text { font-size: 19px !important; transform: translate(-2px, 1px); }
 .w .box-button { transform: translate(16px, -5px); }
@@ -237,7 +240,7 @@
 .w .ruler { width: 3px; height: 37px; fill: #f0f0f0 !important; stroke: #eee !important; transform: translate(0, -4px); clip-path: inset(1px 1px 1px 0); }
 
 #channelbook .w .focused, #wide .w #split-end .focused { fill: #ccc !important; }
-#editor .w .list .focused, #channelbook .w #ch-end .focused { fill: #cde8ff !important; }
+#editor .w .list .focused, #channelbook .w #ch-end .focused, #piconseditor .w .list .focused { fill: #cde8ff !important; }
 .w text.active { fill: #000 !important; }
 
 .w .list .items { transform: translate(0, 3px); }
@@ -266,8 +269,9 @@
 .w .btn-caret .arrow-w { fill: #676767; transform: matrix(0.23, 0, 0, 0.23, 0, 7); }
 .w #btn-collapse .arrow-w { fill: #676767; stroke: #636363; stroke-width: 4px; transform: matrix(-0.23, 0, 0, -0.23, -9, 15); }
 
-/**/
-.w #addchannel-tbar .arrow-w { transform: matrix(0.3, 0, 0, 0.3, 2, 4); }
+.w .btn-flag .bg { width: 19.5px; height: 20px; rx: 0 !important; fill: #fff !important; stroke: #949494 !important; stroke-opacity: 1 !important; stroke-width: 1.8px !important; transform: translate(3px, 3px) !important; }
+.w .btn-flag .checkmark { transform: matrix(0.23, 0, 0, 0.32, 5.5, 2.5); }
+.w .btn-flag .checkmark use { fill: #000 !important; stroke: #000 !important; stroke-width: 2.3px !important; }
 
 .w #addchannel-tbar .txt { font-size: 19px !important; }
 .w #addchannel-tbar .tool-txt { font-size: 23px !important; }
@@ -399,7 +403,7 @@
 .w #icon-img { transform: matrix(0.99, 0, 0, 1, 62.8, 71); }
 .w #icon-canvas { x: -8.6px; y: -15px; rx: 4px; width: 256px; height: 240px; fill: #eff !important; fill-opacity: 0.5 !important; stroke: #fff !important; stroke-opacity: 0.25; stroke-width: 1.3px !important; }
 .w #icon .focused { display: none !important; }
-.w #icon-txt { transform: translate(2px, -8px); font-family: 'Segoe UI', Tahoma, sans-serif !important; font-weight: normal !important; font-size: 24px !important; letter-spacing: none !important; fill: #fff !important; text-shadow: 1px 0.5px 1px #000, -1px 1px 1.5px #000, 0 1px 4px #000 !important; }
+.w #icon-txt { transform: translate(2px, -8px); font-family: 'Segoe UI', Tahoma, sans-serif !important; font-weight: normal !important; font-size: 24px !important; letter-spacing: 0 !important; fill: #fff !important; text-shadow: 1px 0.5px 1px #000, -1px 1px 1.5px #000, 0 1px 4px #000 !important; }
 
 .w .menu-item:nth-child(1) { transform: translate(0, -3px); }
 .w .menu-item:nth-child(2) { transform: translate(-5px, -3px); }
@@ -418,6 +422,12 @@
 #piconseditor .w .menu-item:nth-child(8) { transform: translate(47px, -3px); }
 #piconseditor .w .menu-item:nth-child(9) { transform: translate(7px, -3px); }
 
+#channelbook .w #menu-items { transform: translate(5px, 0); }
+#channelbook .w .menu-item:nth-child(4) { transform: translate(-18px, -3px); }
+#channelbook .w .menu-item:nth-child(5) { transform: translate(-22px, -3px); }
+#channelbook .w .menu-divid:nth-child(6) { transform: translate(-32px, 0); }
+#channelbook .w .menu-item:nth-child(7) { transform: translate(-37px, -3px); }
+
 .w .list .items text:last-of-type { display: none; }
 #wide .w .list .items text:last-of-type { display: block; }
 
@@ -433,7 +443,7 @@
 .w .li-divid:nth-child(5) { transform: translate(-25px, 0); }
 .w .li-item:nth-child(6) { transform: translate(-25px, 0); opacity: 0.25 !important; }
 #piconseditor .w .li-item:nth-child(2) { transform: translate(16px, 2px); }
-#wide .w .li-item:nth-child(2) { transform: translate(20px, 2px); opacity: 0.25 !important; }
+#wide .w .li-item:nth-child(2) { transform: translate(20px, 2px); opacity: 1 !important; }
 
 #channelbook .w .ch-item:nth-child(2) { transform: translate(-1px, 1px); }
 #channelbook .w .ch-item:nth-child(3) { transform: translate(25px, 1px); }
@@ -448,7 +458,7 @@
 #wide .w #editservice-tabs { transform: translate(-331px, 13px); }
 #wide .w .tab-item { clip-path: none !important; }
 #wide .w .tab-item rect { stroke: #ccc !important; stroke-width: 2.3px !important; filter: none !important; clip-path: inset(0 0 2.3px); }
-#wide .w .tab-item text { fill: #000 !important; transform: translate(0.5px, 6.5px); }
+#wide .w .tab-item text { letter-spacing: 0 !important; fill: #000 !important; transform: translate(0.5px, 6.5px); }
 #wide .w .tab-item.active text { transform: translate(2px, 5px); }
 #wide .w .tab-item rect { x: 460px; y: 71px; width: 136px; height: 35.7px; fill: #f0f0f0 !important; }
 #wide .w .tab-item.active rect { x: 363px; y: 68px; width: 98px; height: 40px; fill: #fff !important; }
@@ -560,6 +570,7 @@
 .f #sb-bg, .f #main-bg { fill: #efefef !important; }
 .f #menu-bg { fill: #f9f9f9 !important; }
 .f #tree-tool .bg, .f #list-tool .bg { fill: #fff !important; }
+#piconseditor .f #list-tool .bg { width: 1296px; }
 
 .f #menubar { transform: translate(0, 8px); }
 .f #mb-bg { height: 36px; }
@@ -626,11 +637,14 @@
 
 .f #main { transform: matrix(1, 0, 0, 1, 0, -5); }
 
-#channelbook .f #w-inner { transform: matrix(1, 0, 0, 1, 0, 1); }
+#channelbook .f #w-inner { transform: none; }
+
+.f#addchannel { transform: matrix(1.41, 0, 0, 1.41, 315, 182); }
 
 
 .f #main-bg, .f #ss-bg, .f #se-bg { height: 820px; }
 .f #main-stroke { height: 822px; }
+#channelbook .f #main-stroke { height: 810px; }
 
 .f .box-title text { font-size: 19px !important; }
 .f .box-button { transform: translate(15px, -2px); }
@@ -681,8 +695,9 @@
 .f .btn-caret .arrow-l { fill: #676767; transform: matrix(0.23, 0, 0, 0.23, 0, 5); }
 .f #btn-collapse .arrow-l { fill: #676767; transform: matrix(-0.22, 0, 0, -0.22, -11, 14); }
 
-/**/
-.f #addchannel-tbar .arrow-l { transform: matrix(0.3, 0, 0, 0.3, 2, 4); }
+.f .btn-flag .bg { width: 21px; height: 21px; rx: 0 !important; fill: #fff !important; stroke: #ababab !important; stroke-opacity: 1 !important; stroke-width: 1.4px !important; transform: translate(1.5px, 3px) !important; }
+.f .btn-flag .checkmark { transform: matrix(0.2, 0, 0, 0.32, 5.8, 3.6); }
+.f .btn-flag .checkmark use { fill: #000 !important; stroke: #000 !important; stroke-width: 5.1px !important; }
 
 .f #addchannel-tbar .txt { font-size: 19.5px !important; }
 .f #addchannel-tbar .tool-txt { font-size: 23px !important; }
@@ -840,6 +855,12 @@
 #piconseditor .f .menu-item:nth-child(8) { transform: translate(42px, 0); }
 #piconseditor .f .menu-item:nth-child(9) { transform: translate(10px, -2px); }
 
+#channelbook .f #menu-items { transform: translate(6px, 0); }
+#channelbook .f .menu-item:nth-child(4) { transform: translate(-15px, -2px); }
+#channelbook .f .menu-item:nth-child(5) { transform: translate(-23px, -2px); }
+#channelbook .f .menu-divid:nth-child(6) { transform: translate(-38px, 0); }
+#channelbook .f .menu-item:nth-child(7) { transform: translate(-38px, -2px); }
+
 #channelbook .f .list .items text:last-of-type { display: none; }
 
 .f .search-item:nth-child(4), .f .search-item:nth-child(5), .f .search-item:nth-child(6) { transform: translate(86px, -5px); }
@@ -854,7 +875,7 @@
 .f .li-divid:nth-child(5) { transform: translate(-28px, -5px); }
 .f .li-item:nth-child(6) { transform: translate(-24px, 1px); opacity: 0.25 !important; }
 #piconseditor .f .li-item:nth-child(2) { transform: translate(23px, 2px); }
-#wide .f .li-item:nth-child(2) { transform: translate(27px, 2px); opacity: 0.25 !important; }
+#wide .f .li-item:nth-child(2) { transform: translate(27px, 2px); opacity: 1 !important; }
 
 #channelbook .f .ch-item:nth-child(2) { transform: translate(-2px, 0.5px); }
 #channelbook .f .ch-item:nth-child(3) { transform: translate(12px, -1px); }
@@ -877,7 +898,7 @@
 #wide .f #editservice-tabs { transform: translate(-331.5px, 12px); }
 #wide .f .tab-item { clip-path: none !important; }
 #wide .f .tab-item rect { rx: 3px !important; stroke-width: 3.8px !important; filter: none !important; clip-path: inset(0 0 2.3px); }
-#wide .f .tab-item text { font-size: 19.5px !important; fill: #000 !important; transform: translate(12px, 9.5px); }
+#wide .f .tab-item text { font-size: 19.5px !important; letter-spacing: 0 !important; fill: #000 !important; transform: translate(12px, 9.5px); }
 #wide .f .tab-item.active text { transform: translate(7px, 7.5px); }
 #wide .f .tab-item rect { x: 467px; y: 71px; width: 151px; height: 42px; fill: #efefef !important; transform: translate(0.5px, 0.5px) !important; }
 #wide .f .tab-item.active rect { x: 363px; y: 67px; width: 106px; height: 48px; fill: #f9f9f9 !important; }
@@ -972,7 +993,7 @@
 .df .t-ctrs-l g g rect { stroke-width: 1.3px !important; }
 
 .df text:not(.color) { fill: #fff !important; }
-.df .t-txt { fill: #aaa !important; }
+.df text.t-txt { fill: #aaa !important; }
 
 #channelbook .df#tint-d { fill-opacity: 0.7 !important; }
 
@@ -1022,6 +1043,9 @@
 .df #btn-collapse .txt { fill: #fff !important; }
 
 .df #tb-arrows { transform: translate(1px, 0); }
+
+.df .btn-flag .bg { fill: #131312 !important; stroke: #4e4d4d !important; stroke-width: 2.3px !important; }
+.df .btn-flag .checkmark use { fill: #fff !important; stroke: #fff !important; }
 
 .df .tb-tab .bg, .df #tb-arrows .bg { fill: #2a2a29 !important; stroke: #363636 !important; }
 .df .tb-tab.active .bg, #editor .df #tb-start { stroke: #12608a !important; }

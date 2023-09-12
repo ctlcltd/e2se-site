@@ -266,6 +266,13 @@ mark, .lead {
   padding: 0.05rem 0.15rem;
   font-size: 0.95rem;
 }
+#footer p {
+  font-size: 0.8rem;
+}
+#footer p span {
+  margin: 0.2rem;
+  font-size: 0.7rem;
+}
 #footer nav a,
 #footer button.text {
   color: #313131;
@@ -364,6 +371,9 @@ mark, .lead {
   }
   #footer > div {
     width: auto;
+  }
+  #footer p {
+    font-size: 0.9rem;
   }
 
   #head {
