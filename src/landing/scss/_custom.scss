@@ -62,7 +62,8 @@ mark, .lead {
   border-radius: 1.5px;
 }
 .lead {
-  display: inline-block;
+  display: inline;
+  padding: 0.3rem 0.2rem;
 }
 .sym {
   font-size: 0.93rem;
@@ -197,6 +198,11 @@ mark, .lead {
 
   main {
     padding: 0 5rem 4rem;
+  }
+
+  .lead {
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
   }
 
   #footer {

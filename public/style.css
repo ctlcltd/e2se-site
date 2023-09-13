@@ -221,7 +221,8 @@ mark, .lead {
 }
 
 .lead {
-  display: inline-block;
+  display: inline;
+  padding: 0.3rem 0.2rem;
 }
 
 .sym {
@@ -366,6 +367,11 @@ mark, .lead {
     padding: 0 5rem 4rem;
   }
 
+  .lead {
+    display: inline-block;
+    padding: 0.1rem 0.2rem;
+  }
+
   #footer {
     padding: 0 5rem;
   }
@@ -406,9 +412,70 @@ mark, .lead {
   }
 }
 
+#main {
+  padding: 0;
+}
+
+#t,
+#m,
+#b {
+  position: relative;
+}
+
+#t:before,
+#m:before,
+#b:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-repeat: repeat-y;
+  background-size: 222%;
+  z-index: -1;
+}
+
+#t:before {
+  top: 0;
+  background-image: url(../src/landing/img/ttten-t.svg);
+  background-position: 50% 0;
+  opacity: 0.8;
+}
+
+#m:before {
+  bottom: 0;
+  height: 100%;
+  background-image: url(../src/landing/img/ttten-m.svg);
+  background-position: 50% 0;
+}
+
+#b:before {
+  bottom: 0;
+  background-image: url(../src/landing/img/ttten-b.svg);
+  background-position: 50% 100%;
+}
+
+#m:before,
+#b:before {
+  opacity: 0.6;
+}
+
+body.dark #t:before {
+  opacity: 0.5;
+}
+body.dark #m:before,
+body.dark #b:before {
+  opacity: 0.5;
+}
+
 #hwi {
   margin: 0 0 0.5rem;
   padding: 1.5rem 0 0.5rem;
+}
+#hwi div {
+  display: inline-block;
+  background: #fff;
 }
 #hwi h1 {
   margin: 0 0 1rem;
@@ -420,35 +487,44 @@ mark, .lead {
   letter-spacing: -0.0001em;
 }
 
-#cnt h2, #cnt h3, #cnt h4 {
-  font-family: sans-serif-condensed, HelveticaNeue-CondensedBold, Impact;
+body.dark #hwi div {
+  background: #000;
+}
+
+.cnt h2, .cnt h3, .cnt h4 {
+  display: inline-block;
+  font-family: sans-serif-condensed, HelveticaNeue-CondensedBold, "Franklin Gothic", sans-serif;
   font-weight: bold;
-  flex-shrink: 0;
+  transform: matrix(1.21, 0, 0.01, 1.02, -1, -1);
+  transform-origin: left;
 }
-#cnt h2 {
+.cnt h2 {
   font-size: 1.8rem;
-  letter-spacing: 0.01em;
+  letter-spacing: -0.02em;
+  word-spacing: -0.04em;
 }
-#cnt h3 {
+.cnt h3 {
   font-size: 1.7rem;
-  letter-spacing: 0.003em;
+  letter-spacing: -0.003em;
+  word-spacing: -0.01em;
 }
-#cnt h4 {
+.cnt h4 {
   font-size: 1.6rem;
-  letter-spacing: 0.008em;
+  letter-spacing: -0.008em;
+  word-spacing: -0.01em;
 }
-#cnt h4 em {
+.cnt h4 em {
   font-size: 78%;
   font-style: normal;
 }
-#cnt p {
+.cnt p {
   font-size: 0.976rem;
   letter-spacing: 0.002em;
 }
-#cnt strong {
+.cnt strong {
   font-size: 102.2%;
 }
-#cnt .button {
+.cnt .button {
   font-size: 1rem;
   text-transform: none;
   background: #cef;
@@ -456,13 +532,27 @@ mark, .lead {
   filter: drop-shadow(0 1px 1px #000);
   border-radius: 6px;
 }
-#cnt .lead {
+.cnt .lead {
   font-size: 1.01rem;
   letter-spacing: 0.009em;
 }
 
 .txt {
-  float: left;
+  padding: 0 0.8rem;
+}
+
+.txt div {
+  padding: 0.5rem 0.6rem 0.6rem;
+  background: #ffffffde;
+}
+
+#lsb .txt div,
+#whc .txt div {
+  background: none;
+}
+
+body.dark .txt div {
+  background: #000000e5;
 }
 
 .img {
@@ -480,6 +570,7 @@ mark, .lead {
 }
 
 .img img {
+  display: block;
   width: auto;
   height: 100%;
 }
@@ -495,6 +586,12 @@ mark, .lead {
   height: 100%;
   width: 9vw;
   background: linear-gradient(90deg, transparent, #b4d0cd);
+}
+
+#lsb .img:after,
+#epf .img:after {
+  content: none;
+  display: none;
 }
 
 #lsa {
@@ -514,27 +611,34 @@ mark, .lead {
 }
 
 #epf .img {
-  height: 36vh;
-  padding: 0 3.1em 3em 0;
+  padding: 0 1.86em 1.86em 0;
 }
 
-#epf div {
-  height: 31vh;
+#epf .img div {
+  height: 22vh;
   overflow-x: hidden;
 }
 
-#epf img {
+#lsa img {
+  width: 138%;
+}
+
+#sbd img {
+  width: 174%;
+}
+
+#dde img {
+  width: 150%;
+}
+
+#epf .img img {
   width: 140%;
   height: auto;
 }
 
-#epf .img:after {
-  content: none;
-  display: none;
-}
-
 #foot-notes {
   margin: 0;
+  padding: 2.5rem 1.5rem 3rem;
 }
 
 #foot-notes p {
@@ -546,25 +650,58 @@ mark, .lead {
   font-weight: normal;
 }
 
+@media (min-width: 768px) {
+  #t:before,
+#m:before,
+#b:before {
+    background-size: 167%;
+  }
+}
 @media (min-width: 992px) {
   #hwi {
     padding: 3rem 0 1.5rem;
   }
 
-  #cnt {
+  #t:before {
+    height: 75%;
+  }
+
+  #m:before {
+    top: 46%;
+    height: 46%;
+  }
+
+  #b:before {
+    height: 83%;
+  }
+
+  .cnt {
     padding: 0 1.221rem;
   }
-  #cnt h1 {
+  .cnt h1 {
     font-size: 1.75rem;
   }
-  #cnt h2 {
+  .cnt h2 {
     font-size: 1.9rem;
   }
-  #cnt h3 {
+  .cnt h3 {
     font-size: 1.85rem;
   }
-  #cnt h4 {
+  .cnt h4 {
     font-size: 1.7rem;
+  }
+
+  .txt {
+    display: inline-block;
+    float: left;
+  }
+
+  .txt div {
+    padding: 1.5rem 2.2rem 1rem;
+  }
+
+  .txt div:last-child {
+    padding-bottom: 3rem;
   }
 
   .img div {
@@ -592,6 +729,18 @@ mark, .lead {
     padding: 0 0 2em;
   }
 
+  #lsa img,
+#sbd img,
+#dde img {
+    width: auto;
+  }
+
+  #hwi .txt,
+#epf .txt,
+#lwg .txt {
+    float: none;
+  }
+
   #lsa {
     display: grid;
   }
@@ -617,20 +766,28 @@ mark, .lead {
   }
 
   #lsb .txt {
-    padding: 9em 6em 0 0;
+    padding: 9em 6em 0 2em;
+  }
+
+  #whc .txt {
+    padding: 0 2em;
   }
 
   #whc div {
     margin: 1.6rem 0 0;
   }
 
-  #epf .txt {
-    width: 40%;
+  #dde .txt {
+    float: right;
+    width: 50%;
   }
 
-  #epf .img div {
-    float: left;
+  #dde .img {
     width: 50%;
+  }
+
+  #dde .txt {
+    padding: 4em 4em 0;
   }
 
   #sbd > div {
@@ -661,41 +818,62 @@ mark, .lead {
     margin: auto;
   }
 
-  #dde .txt {
-    float: right;
-    width: 50%;
+  #epf .txt {
+    padding: 0 0 4em 8em;
   }
 
-  #dde .img {
-    width: 50%;
+  #epf .img {
+    padding: 0 3.3em 2.2em 0;
   }
 
-  #dde .txt {
-    padding: 4.1em 4em 0;
+  #epf .img div {
+    float: left;
+    width: 50%;
+    height: 36vh;
+  }
+
+  #lwg .txt {
+    padding: 0 0 0.5em 4em;
+  }
+
+  #foot-notes {
+    padding: 6rem 7rem 8rem;
   }
 }
 @media (min-width: 1320px) {
+  #t:before,
+#m:before,
+#b:before {
+    height: 100%;
+    background-size: 122%;
+    background-repeat: no-repeat;
+  }
+
+  #m:before {
+    top: 34%;
+  }
+
   #hwi p {
     font-size: 1.06rem;
     letter-spacing: 0.0001em;
   }
 
-  #cnt {
+  .cnt {
     padding: 0 2.122rem;
   }
-  #cnt h1 {
+  .cnt h1 {
     font-size: 1.8rem;
   }
-  #cnt h2 {
+  .cnt h2 {
     font-size: 2.193rem;
   }
-  #cnt h3 {
+  .cnt h3 {
     font-size: 2.051rem;
-    letter-spacing: 0.013em;
+    letter-spacing: -0.013em;
   }
-  #cnt h4 {
+  .cnt h4 {
     font-size: 1.86rem;
-    letter-spacing: 0.0022em;
+    letter-spacing: -0.0022em;
   }
 
   #lsa {
