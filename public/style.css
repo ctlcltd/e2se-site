@@ -644,7 +644,7 @@ body.dark #hwi .txt div {
 }
 
 #epf .img div {
-  height: 40vw;
+  height: 39vw;
   overflow-x: hidden;
 }
 
@@ -729,7 +729,7 @@ body.dark .txt div {
 @media (min-width: 768px) {
   #m {
     margin: 2em 0 0;
-    padding: 1em 0 0;
+    padding-top: 1em;
   }
 
   #t:before,
@@ -989,20 +989,22 @@ body.dark .txt div {
   #epf .img div {
     float: left;
     width: 50%;
-    height: 19.6vmax;
+    height: 19.3vmax;
   }
 
   #lwg .txt {
     padding: 0 0 0.5em 4em;
   }
 
-  #lsa .txt div,
-#whc .txt div {
+  #lsa .txt div {
     background: #ffffffde;
   }
 
-  body.dark #lsa .txt div,
-body.dark #whc .txt div {
+  #whc .txt div {
+    background: none;
+  }
+
+  body.dark #lsa .txt div {
     background: #000000e5;
   }
 
@@ -1088,15 +1090,15 @@ body.dark #whc .txt div {
   }
 
   #dde .txt {
-    width: 50%;
+    width: 48%;
   }
 
   #dde .img {
-    width: 50%;
+    width: 52%;
   }
 
   #dde .txt {
-    padding: 4em 4em 0;
+    padding: 4em 2em 0 4em;
   }
 
   #sbd .txt:nth-child(2) {
@@ -1113,7 +1115,7 @@ body.dark #whc .txt div {
   }
 
   #sbd img {
-    width: 86vw;
+    width: 89vw;
     margin: auto;
   }
 
@@ -1128,6 +1130,15 @@ body.dark #whc .txt div {
 
   #epf .txt div {
     padding-bottom: 1.9rem;
+  }
+
+  #lsb .txt div:first-child p:nth-child(2) {
+    width: 82%;
+  }
+
+  #sbd .txt:first-child p:nth-child(3),
+#sbd .txt:first-child p:nth-child(4) {
+    width: 91%;
   }
 }
 .dark {
