@@ -162,10 +162,6 @@ main {
   padding: 0 0.5rem 2rem;
 }
 
-main > div {
-  padding: 1rem 0;
-}
-
 main a {
   color: inherit;
 }
@@ -367,11 +363,6 @@ mark, .lead {
     padding: 0 5rem 4rem;
   }
 
-  .lead {
-    display: inline-block;
-    padding: 0.1rem 0.2rem;
-  }
-
   #footer {
     padding: 0 5rem;
   }
@@ -430,7 +421,7 @@ mark, .lead {
   right: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 100%;
   background-repeat: repeat-y;
   background-size: 222%;
   z-index: -1;
@@ -438,14 +429,14 @@ mark, .lead {
 
 #t:before {
   top: 0;
+  height: 51%;
   background-image: url(../src/landing/img/ttten-t.svg);
   background-position: 50% 0;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 #m:before {
   bottom: 0;
-  height: 100%;
   background-image: url(../src/landing/img/ttten-m.svg);
   background-position: 50% 0;
 }
@@ -469,28 +460,6 @@ body.dark #b:before {
   opacity: 0.5;
 }
 
-#hwi {
-  margin: 0 0 0.5rem;
-  padding: 1.5rem 0 0.5rem;
-}
-#hwi div {
-  display: inline-block;
-  background: #fff;
-}
-#hwi h1 {
-  margin: 0 0 1rem;
-  font-size: 1.5rem;
-  letter-spacing: -0.003em;
-}
-#hwi p {
-  font-size: 1.032rem;
-  letter-spacing: -0.0001em;
-}
-
-body.dark #hwi div {
-  background: #000;
-}
-
 .cnt h2, .cnt h3, .cnt h4 {
   display: inline-block;
   font-family: sans-serif-condensed, HelveticaNeue-CondensedBold, "Franklin Gothic", sans-serif;
@@ -499,17 +468,17 @@ body.dark #hwi div {
   transform-origin: left;
 }
 .cnt h2 {
-  font-size: 1.8rem;
+  font-size: 1.56rem;
   letter-spacing: -0.02em;
   word-spacing: -0.04em;
 }
 .cnt h3 {
-  font-size: 1.7rem;
+  font-size: 1.51rem;
   letter-spacing: -0.003em;
   word-spacing: -0.01em;
 }
 .cnt h4 {
-  font-size: 1.6rem;
+  font-size: 1.49rem;
   letter-spacing: -0.008em;
   word-spacing: -0.01em;
 }
@@ -536,28 +505,15 @@ body.dark #hwi div {
   font-size: 1.01rem;
   letter-spacing: 0.009em;
 }
-
-.txt {
-  padding: 0 0.8rem;
-}
-
-.txt div {
-  padding: 0.5rem 0.6rem 0.6rem;
-  background: #ffffffde;
-}
-
-#lsb .txt div,
-#whc .txt div {
-  background: none;
-}
-
-body.dark .txt div {
-  background: #000000e5;
+.cnt .lead:before {
+  content: "";
+  display: inline-block;
+  margin: 1.5em 0 0;
 }
 
 .img {
   position: relative;
-  margin: 0 -0.5rem;
+  margin: 0;
   background: #b4d0cd;
   border-radius: 2px;
   overflow: hidden;
@@ -588,12 +544,6 @@ body.dark .txt div {
   background: linear-gradient(90deg, transparent, #b4d0cd);
 }
 
-#lsb .img:after,
-#epf .img:after {
-  content: none;
-  display: none;
-}
-
 #lsa {
   padding: 0 0 4em;
 }
@@ -606,17 +556,102 @@ body.dark .txt div {
   padding: 0 0 2em;
 }
 
-#whc, #lwg {
+#whc {
+  padding: 2em 0 0;
+}
+
+#lwg {
   padding: 0 0 2em;
 }
 
+#hwi {
+  margin: 0 0 0.5rem;
+  padding: 1.5rem 0 0.5rem;
+}
+
+#hwi .txt {
+  padding: 0 0.8rem;
+}
+
+#hwi .txt div {
+  background: #fff;
+  padding: 1.1rem 0.6rem 0.1rem;
+}
+
+#hwi h1 {
+  margin: 0 0 1rem;
+  font-size: 1.5rem;
+  letter-spacing: -0.003em;
+}
+
+#hwi p {
+  font-size: 1.032rem;
+  letter-spacing: -0.0001em;
+}
+
+body.dark #hwi .txt div {
+  background: #000;
+}
+
+.txt {
+  padding: 0 0.7rem;
+}
+
+.txt div {
+  padding: 0.5rem 0.6rem 0.6rem;
+}
+
+#lsa .txt {
+  padding: 0.2em 0 0;
+}
+
+#lsa .txt div {
+  padding: 1.1rem 0.9rem 0.6rem;
+}
+
+#lsb .txt {
+  padding: 0;
+}
+
+#whc .txt,
+#epf .txt {
+  padding: 0 0 1.1em;
+}
+
+#dde .txt {
+  padding: 0 0.7em 1.1em;
+}
+
+#lsb .txt div,
+#whc .txt div {
+  padding: 0.5rem 0.9rem 0.6rem;
+}
+
+#epf .txt div {
+  padding: 0.8rem 0.9rem 1.5rem;
+}
+
+#sbd .txt:nth-child(1) {
+  padding: 2em 0.7em 1em;
+}
+
+#sbd .txt:nth-child(2) {
+  padding: 1em 0.7em 0;
+}
+
 #epf .img {
-  padding: 0 1.86em 1.86em 0;
+  padding: 0 6.01vw 6vw 0;
 }
 
 #epf .img div {
-  height: 22vh;
+  height: 40vw;
   overflow-x: hidden;
+}
+
+#lsb .img:after,
+#epf .img:after {
+  content: none;
+  display: none;
 }
 
 #lsa img {
@@ -636,6 +671,27 @@ body.dark .txt div {
   height: auto;
 }
 
+.txt div {
+  background: #ffffffde;
+}
+
+#lsa .txt div,
+#whc .txt div {
+  background: #fff9;
+}
+
+#lsb .txt div {
+  background: none;
+}
+
+body.dark #lsa .txt div,
+body.dark #whc .txt div {
+  background: #00000096;
+}
+body.dark .txt div {
+  background: #000000e5;
+}
+
 #foot-notes {
   margin: 0;
   padding: 2.5rem 1.5rem 3rem;
@@ -644,51 +700,123 @@ body.dark .txt div {
 #foot-notes p {
   margin: 0 0 0.6rem;
   font-size: 0.78rem;
+  opacity: 0.9;
 }
 
 #foot-notes b {
   font-weight: normal;
 }
 
+@media (min-width: 576px) {
+  .txt {
+    padding: 0 0.8rem;
+  }
+
+  .txt div {
+    padding: 0.8rem 1.2em 1rem;
+  }
+
+  #lsa .txt div,
+#lsb .txt div,
+#whc .txt div {
+    padding: 0.8rem 2rem 1rem;
+  }
+
+  #epf .txt div {
+    padding: 1.1rem 2rem 1.5rem;
+  }
+}
 @media (min-width: 768px) {
+  #m {
+    margin: 2em 0 0;
+    padding: 1em 0 0;
+  }
+
   #t:before,
 #m:before,
 #b:before {
     background-size: 167%;
   }
-}
-@media (min-width: 992px) {
-  #hwi {
-    padding: 3rem 0 1.5rem;
+
+  #lsa .txt {
+    padding: 0.3em 0 0;
   }
 
-  #t:before {
-    height: 75%;
+  #sbd .txt:nth-child(1) {
+    padding: 2em 2.2em 1em;
+  }
+
+  #sbd .txt:nth-child(2) {
+    padding: 1em 2.2em 0;
+  }
+
+  #dde .txt {
+    padding: 0 2.2em 1.1em;
+  }
+
+  #lwg .txt {
+    padding: 0 2.2em;
+  }
+
+  .txt div {
+    padding: 1rem 1.2em 1.1rem;
+  }
+
+  #lsa .txt div,
+#lsb .txt div,
+#whc .txt div {
+    padding: 1.2rem 3rem 1.1rem;
+  }
+
+  #epf .txt div {
+    padding: 1.2rem 3rem 1.5rem;
+  }
+
+  #hwi .txt {
+    display: inline-block;
+    padding: 0;
+  }
+
+  #hwi .txt div {
+    padding: 1.1rem 0.9rem 0.2rem;
+  }
+
+  #foot-notes p {
+    opacity: 1;
+  }
+}
+@media (min-width: 992px) {
+  #b {
+    margin: 1.5em 0 0;
+  }
+
+  #t:before,
+#m:before,
+#b:before {
+    background-repeat: no-repeat;
+  }
+
+  #t:before,
+#b:before {
+    height: 100%;
   }
 
   #m:before {
-    top: 46%;
+    top: 42%;
     height: 46%;
-  }
-
-  #b:before {
-    height: 83%;
   }
 
   .cnt {
     padding: 0 1.221rem;
   }
-  .cnt h1 {
-    font-size: 1.75rem;
-  }
   .cnt h2 {
     font-size: 1.9rem;
   }
   .cnt h3 {
-    font-size: 1.85rem;
+    font-size: 1.71rem;
   }
   .cnt h4 {
-    font-size: 1.7rem;
+    font-size: 1.58rem;
   }
 
   .txt {
@@ -701,7 +829,7 @@ body.dark .txt div {
   }
 
   .txt div:last-child {
-    padding-bottom: 3rem;
+    padding-bottom: 2.2rem;
   }
 
   .img div {
@@ -713,8 +841,21 @@ body.dark .txt div {
     display: none;
   }
 
+  #sbd .img div {
+    overflow-x: auto;
+  }
+
+  #sbd .img:after {
+    content: "";
+    display: block;
+  }
+
+  #hwi {
+    padding: 3rem 0 1.5rem;
+  }
+
   #lsa {
-    padding: 0 0 8em;
+    padding: 0 0 7em;
   }
 
   #dde {
@@ -729,16 +870,14 @@ body.dark .txt div {
     padding: 0 0 2em;
   }
 
-  #lsa img,
-#sbd img,
-#dde img {
-    width: auto;
-  }
-
   #hwi .txt,
 #epf .txt,
 #lwg .txt {
     float: none;
+  }
+
+  #hwi .txt div {
+    padding: 1.5rem 1.8rem 0.5rem;
   }
 
   #lsa {
@@ -747,47 +886,69 @@ body.dark .txt div {
 
   #lsa .txt {
     order: 1;
+    width: 71%;
+    padding: 1.6em 0 1em;
+  }
+
+  #lsa .txt div {
+    padding: 1.2rem 3rem 1.1rem 1.9rem;
   }
 
   #lsa .img {
     order: 0;
   }
 
+  #lsa .img div {
+    text-align: center;
+  }
+
+  #lsa img {
+    width: 78vw;
+    margin: auto;
+  }
+
   #lsb .txt {
-    width: 54%;
+    width: 48%;
   }
 
   #lsb .img {
-    width: 46%;
+    top: 4em;
+    width: 52%;
   }
 
   #lsb .txt div {
     margin: 0 0 2.6rem;
-  }
-
-  #lsb .txt {
-    padding: 9em 6em 0 2em;
+    padding: 1.2rem 3rem 1.1rem 0.8rem;
   }
 
   #whc .txt {
     padding: 0 2em;
   }
 
-  #whc div {
+  #whc .txt div {
     margin: 1.6rem 0 0;
+  }
+
+  #whc .txt div:last-child {
+    margin: 0 0 1rem;
+    padding-top: 0;
   }
 
   #dde .txt {
     float: right;
-    width: 50%;
+    width: 44%;
   }
 
   #dde .img {
-    width: 50%;
+    width: 56%;
+  }
+
+  #dde img {
+    width: auto;
   }
 
   #dde .txt {
-    padding: 4em 4em 0;
+    padding: 4em 0 0 2em;
   }
 
   #sbd > div {
@@ -798,15 +959,14 @@ body.dark .txt div {
   #sbd .txt {
     width: 50%;
     margin: 3em 0 0;
-    padding: 0 2em 0;
+  }
+
+  #sbd .txt:nth-child(1) {
+    padding: 0 1.75em 0 2em;
   }
 
   #sbd .txt:nth-child(2) {
-    padding-left: 4em;
-  }
-
-  #sbd .txt:nth-child(3) {
-    padding-right: 4em;
+    padding: 0 2em 0 1.75em;
   }
 
   #sbd .img {
@@ -814,26 +974,36 @@ body.dark .txt div {
     text-align: center;
   }
 
-  #sbd div {
-    margin: auto;
+  #sbd img {
+    width: 131%;
   }
 
   #epf .txt {
-    padding: 0 0 4em 8em;
+    padding: 0 0 2em 8em;
   }
 
   #epf .img {
-    padding: 0 3.3em 2.2em 0;
+    padding: 0 3.03vw 3vw 0;
   }
 
   #epf .img div {
     float: left;
     width: 50%;
-    height: 36vh;
+    height: 19.6vmax;
   }
 
   #lwg .txt {
     padding: 0 0 0.5em 4em;
+  }
+
+  #lsa .txt div,
+#whc .txt div {
+    background: #ffffffde;
+  }
+
+  body.dark #lsa .txt div,
+body.dark #whc .txt div {
+    background: #000000e5;
   }
 
   #foot-notes {
@@ -853,16 +1023,8 @@ body.dark .txt div {
     top: 34%;
   }
 
-  #hwi p {
-    font-size: 1.06rem;
-    letter-spacing: 0.0001em;
-  }
-
   .cnt {
     padding: 0 2.122rem;
-  }
-  .cnt h1 {
-    font-size: 1.8rem;
   }
   .cnt h2 {
     font-size: 2.193rem;
@@ -874,6 +1036,22 @@ body.dark .txt div {
   .cnt h4 {
     font-size: 1.86rem;
     letter-spacing: -0.0022em;
+  }
+  .cnt p {
+    font-size: 1.022rem;
+    letter-spacing: 0.001em;
+  }
+  .cnt .lead:before {
+    margin: 1.7em 0 0;
+  }
+
+  .img {
+    margin: 0 -0.5rem;
+  }
+
+  #hwi p {
+    font-size: 1.06rem;
+    letter-spacing: 0.0001em;
   }
 
   #lsa {
@@ -888,9 +1066,68 @@ body.dark .txt div {
     width: 58%;
   }
 
+  #lsa img {
+    width: auto;
+  }
+
   #lsa .txt {
-    padding: 9em 5em 0 0;
+    padding: 9em 5em 0 1.1em;
     line-height: 1.9;
+  }
+
+  #lsb .txt {
+    width: 54%;
+  }
+
+  #lsb .img {
+    width: 46%;
+  }
+
+  #lsb .txt {
+    padding: 9em 6em 0 2em;
+  }
+
+  #dde .txt {
+    width: 50%;
+  }
+
+  #dde .img {
+    width: 50%;
+  }
+
+  #dde .txt {
+    padding: 4em 4em 0;
+  }
+
+  #sbd .txt:nth-child(2) {
+    padding-left: 4em;
+  }
+
+  #sbd .txt:nth-child(3) {
+    padding-right: 4em;
+  }
+
+  #sbd .img div {
+    text-align: center;
+    overflow-x: hidden;
+  }
+
+  #sbd img {
+    width: 86vw;
+    margin: auto;
+  }
+
+  #sbd .img:after {
+    content: none;
+    display: none;
+  }
+
+  #epf .txt {
+    padding: 0 0 4em 8em;
+  }
+
+  #epf .txt div {
+    padding-bottom: 1.9rem;
   }
 }
 .dark {

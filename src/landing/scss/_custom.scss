@@ -13,9 +13,6 @@ main {
   min-height: 80vh;
   padding: 0 .5rem 2rem;
 }
-main > div {
-  padding: 1rem 0;
-}
 main a {
   color: inherit;
 }
@@ -198,11 +195,6 @@ mark, .lead {
 
   main {
     padding: 0 5rem 4rem;
-  }
-
-  .lead {
-    display: inline-block;
-    padding: 0.1rem 0.2rem;
   }
 
   #footer {
