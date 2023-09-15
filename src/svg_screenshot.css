@@ -86,7 +86,7 @@
 #channelbook .dm #ch-start .focused, #wide .dm #split-start .focused, #wide .dm #split-end .focused { fill: #303030 !important; }
 
 .dm .sbv .xy { fill: #8b8b8b !important; }
-#channelbook .dm .sbh .xy, #channelbook .dm .sbv .xy, #wide .dm#editservice .sbv .xy { fill: #fff !important; }
+#channelbook .dm#addchannel .sbh .xy, #channelbook .dm#addchannel .sbv .xy, #wide .dm#editservice .sbv .xy { fill: #fff !important; }
 #channelbook .dm #ch-end .sbv .xy { x: 1046px; y: 103px; }
 #wide .dm#editservice .sbv .xy { x: 858px; y: 279px; }
 

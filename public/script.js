@@ -55,6 +55,54 @@ function switchColor(evt) {
   }
 }
 
+function abbrbox() {
+  function box(el) {
+    const box = doc.createElement('div');
+    const inner = doc.createElement('div');
+    box.className = 'abbrbox';
+    inner.className = 'inner';
+    inner.innerText = el._title;
+    box.append(inner);
+    el.append(box);
+    el._abbr = box;
+
+    setTimeout(function() {
+      body._abbrbox = el;
+    }, 0);
+    setTimeout(function() {
+      close(el);
+    }, 7e3);
+  }
+
+  function close(el) {
+    if (el._abbr) {
+      el._abbr.remove();
+      delete el._abbr;
+      delete body._abbrbox;
+    }
+  }
+
+  function event(evt) {
+    const el = evt.target;
+
+    if (el.nodeName === 'ABBR' && ! el._abbr) {
+      box.call(this, el);
+    } else if (el._abbr) {
+      close.call(this, el);
+    } else if (body._abbrbox) {
+      close.call(this, body._abbrbox);
+    }
+  }
+
+  for (const el of doc.querySelectorAll('abbr')) {
+    el._title = el.title;
+    el.setAttribute('title', '');
+    el.addEventListener('click', event);
+    el.addEventListener('mouseenter', event);
+  }
+  body.addEventListener('click', event);
+}
+
 function platform_detect() {
   function test(s) {
     if (/win/i.test(s)) {
@@ -79,19 +127,27 @@ function load_images(evt) {
     window.platform = window.platform ?? platform_detect();
     // platform = platform ?? platform_detect();
 
-    let img;
+    let img = 'screenshot-';
     const id = el.parentElement.className.substr(-1);
 
     // 
-    if (id != 'f') {
-      img = id;
+    if (id == 'f') {
+      img += 'sat-list-editor';
+      color = i++ ? 'd' : 'l';
+    } else if (id == 'a' || id == 'b' || id == 'd' || id == 'e') {
+      if (id == 'b') {
+        img += 'sat-channel-book';
+      } else if (id == 'd') {
+        img += 'edit-service-transponders-sat';
+      } else if (id == 'e') {
+        img += 'picons-editor-sat';
+      }
       color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'd' : 'l');
     } else {
-      img = 'a';
-      color = i++ ? 'd' : 'l';
+      return;
     }
 
-    const src = '../src/screenshot-pre-svgo/' + (img ? img + '-' : '') + platform + '-' + (platform == 'w' ? 'l' : color) + platform + '.svg';
+    const src = 'img/' + img + '_' + id + platform + (platform == 'w' ? 'l' : color) + platform + '.svg';
     el.setAttribute('src', src);
     el.disabled = false;
   }
@@ -101,5 +157,6 @@ preferredColor();
 doc.getElementById('head').addEventListener('click', switchColor);
 load_images();
 window.addEventListener('appearance-changed', load_images);
+abbrbox();
 
 })();
