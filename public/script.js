@@ -127,15 +127,19 @@ function load_images(evt) {
     window.platform = window.platform ?? platform_detect();
     // platform = platform ?? platform_detect();
 
+    let id = el.parentElement.className.substr(-1);
     let img = 'screenshot-';
-    const id = el.parentElement.className.substr(-1);
 
-    // 
     if (id == 'f') {
+      id = 'a';
       img += 'sat-list-editor';
       color = i++ ? 'd' : 'l';
+      // 
+      color = platform == 'w' ? 'l' : color;
     } else if (id == 'a' || id == 'b' || id == 'd' || id == 'e') {
-      if (id == 'b') {
+      if (id == 'a') {
+        img += 'sat-list-editor';
+      } else if (id == 'b') {
         img += 'sat-channel-book';
       } else if (id == 'd') {
         img += 'edit-service-transponders-sat';
@@ -143,11 +147,12 @@ function load_images(evt) {
         img += 'picons-editor-sat';
       }
       color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'd' : 'l');
+      color = platform == 'w' ? 'l' : color;
     } else {
       return;
     }
 
-    const src = 'img/' + img + '_' + id + platform + (platform == 'w' ? 'l' : color) + platform + '.svg';
+    const src = 'img/' + img + '_' + id + platform + color + platform + '.svg';
     el.setAttribute('src', src);
     el.disabled = false;
   }
