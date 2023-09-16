@@ -23,9 +23,9 @@ body {
   background: #101010;
 }
 
-:focus {
+:active, :focus {
   outline: 0;
-  -webkit-tap-highlight: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 

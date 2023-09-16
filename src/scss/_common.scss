@@ -19,7 +19,7 @@ body {
   background: $background;
 }
 
-:focus {
+:active, :focus {
   outline: 0;
-  -webkit-tap-highlight: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
