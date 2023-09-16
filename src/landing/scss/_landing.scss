@@ -59,6 +59,9 @@ body.dark {
 }
 
 .cnt {
+  max-width: 1920px;
+  margin: auto;
+
   h2, h3, h4 {
     display: inline-block;
     font-family: sans-serif-condensed, HelveticaNeue-CondensedBold, "Franklin Gothic", sans-serif;
@@ -290,6 +293,13 @@ body.dark {
   height: auto;
 }
 
+.img div {
+  aspect-ratio: 217/150;
+}
+#sbd .img div {
+  aspect-ratio: 150/59;
+}
+
 #lwg .txt div:last-child b {
   text-transform: uppercase;
 }
@@ -317,7 +327,7 @@ body.dark {
 }
 
 .txt div {
-  background: #ffffffde;
+  background: #ffffffdf;
 }
 #lsa .txt div,
 #whc .txt div,
@@ -381,7 +391,7 @@ body.dark {
 
 @media (min-width: 768px) {
   #m {
-    margin: 2em 0 0;
+    margin: 2em auto 0;
     padding-top: 1em;
   }
 
@@ -443,7 +453,7 @@ body.dark {
 
 @media (min-width: 992px) {
   #b {
-    margin: 1.5em 0 0;
+    margin: 1.5em auto 0;
   }
 
   #t:before,
@@ -491,13 +501,6 @@ body.dark {
   .img:after {
     content: none;
     display: none;
-  }
-  #sbd .img div {
-    overflow-x: auto;
-  }
-  #sbd .img:after {
-    content: "";
-    display: block;
   }
 
   #hwi {
@@ -551,14 +554,14 @@ body.dark {
   #lsb .txt {
     width: 48%;
   }
+  #lsb .txt div {
+    margin: 0 0 2.6rem;
+    padding: 1.2rem 3rem 1.1rem 0.8rem;
+  }
   #lsb .img {
     // 
     top: 4em;
     width: 52%;
-  }
-  #lsb .txt div {
-    margin: 0 0 2.6rem;
-    padding: 1.2rem 3rem 1.1rem 0.8rem;
   }
 
   #whc .txt {
@@ -575,6 +578,7 @@ body.dark {
   #dde .txt {
     float: right;
     width: 44%;
+    padding: 4em 0 0 2em;
   }
   #dde .img {
     width: 56%;
@@ -582,13 +586,11 @@ body.dark {
   #dde img {
     width: auto;
   }
-  #dde .txt {
-    padding: 4em 0 0 2em;
-  }
 
   #sbd > div {
     display: inline-block;
     clear: both;
+    width: 100%;
   }
 
   #sbd .txt {
@@ -608,6 +610,13 @@ body.dark {
   #sbd img {
     width: 131%;
   }
+  #sbd .img div {
+    overflow-x: auto;
+  }
+  #sbd .img:after {
+    content: "";
+    display: block;
+  }
 
   #epf .txt {
     padding: 0 0 2em 8em;
@@ -618,7 +627,8 @@ body.dark {
   #epf .img div {
     float: left;
     width: 50%;
-    height: 19.3vmax;
+    height: 19.2vmax;
+    max-height: 36vh;
   }
 
   #lwg .txt {
@@ -634,7 +644,7 @@ body.dark {
   }
 
   #lsa .txt div {
-    background: #ffffffde;
+    background: #ffffffdf;
   }
   #whc .txt div {
     background: none;
@@ -697,6 +707,11 @@ body.dark {
   }
   #lsa .txt {
     width: 42%;
+    padding: 9em 5em 0 1.1em;
+    line-height: 1.9;
+  }
+  #lsa .txt div {
+    max-width: 580px;
   }
   #lsa .img {
     width: 58%;
@@ -704,35 +719,35 @@ body.dark {
   #lsa img {
     width: auto;
   }
-  #lsa .txt {
-    padding: 9em 5em 0 1.1em;
-    line-height: 1.9;
-  }
 
   #lsb .txt {
     width: 54%;
+    padding: 9em 6em 0 2em;
+  }
+  #lsb .txt div {
+    max-width: 750px;
+    margin: auto;
   }
   #lsb .img {
     width: 46%;
   }
-  #lsb .txt {
-    padding: 9em 6em 0 2em;
-  }
 
   #dde .txt {
     width: 48%;
+    padding: 4em 2em 0 4em;
   }
   #dde .img {
     width: 52%;
   }
-  #dde .txt {
-    padding: 4em 2em 0 4em;
-  }
 
-  #sbd .txt:nth-child(2) {
+  #sbd .txt div {
+    max-width: 680px;
+    margin: auto;
+  }
+  #sbd .txt:nth-child(1) {
     padding-left: 4em;
   }
-  #sbd .txt:nth-child(3) {
+  #sbd .txt:nth-child(2) {
     padding-right: 4em;
   }
   #sbd .img div {
@@ -741,11 +756,17 @@ body.dark {
   }
   #sbd img {
     width: 89vw;
+    max-width: 100%;
     margin: auto;
   }
   #sbd .img:after {
     content: none;
     display: none;
+  }
+
+  #dde .txt div {
+    max-width: 700px;
+    margin: auto;
   }
 
   #epf .txt {

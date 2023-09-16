@@ -437,6 +437,8 @@ button + *,
 
 
 #page {
+  max-width: 2048px;
+  margin: 0 auto;
   padding: 2.5rem 0 3rem;
 }
 
@@ -945,6 +947,26 @@ label {
 
   .what-this-area {
     min-width: 33vw;
+  }
+}
+@media (min-width: 2440px) {
+  body {
+    zoom: 1.25;
+  }
+}
+@media (min-width: 2848px) {
+  body {
+    zoom: 1.5;
+  }
+}
+@media (min-width: 3088px) {
+  body {
+    zoom: 1.75;
+  }
+}
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
   }
 }
 @media print {

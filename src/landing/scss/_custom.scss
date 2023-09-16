@@ -6,6 +6,8 @@
  */
 
 #page {
+  max-width: 2048px;
+  margin: 0 auto;
   padding: 2.5rem 0 0;
 }
 
@@ -285,6 +287,27 @@ body.dark {
     max-width: 1200px;
     margin: auto;
     padding: 0 0.5rem 2rem;
+  }
+}
+
+@media (min-width: 2440px) {
+  body {
+    zoom: 1.25;
+  }
+}
+@media (min-width: 2848px) {
+  body {
+    zoom: 1.5;
+  }
+}
+@media (min-width: 3088px) {
+  body {
+    zoom: 1.75;
+  }
+}
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
   }
 }
 
