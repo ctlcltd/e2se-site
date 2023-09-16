@@ -788,14 +788,6 @@ body.dark #hwi .txt div {
   height: auto;
 }
 
-.img div {
-  aspect-ratio: 217/150;
-}
-
-#sbd .img div {
-  aspect-ratio: 150/59;
-}
-
 #lwg .txt div:last-child b {
   text-transform: uppercase;
 }
@@ -1018,6 +1010,15 @@ body.dark .txt div {
   .img:after {
     content: none;
     display: none;
+  }
+
+  .img div {
+    aspect-ratio: 217/150;
+  }
+
+  #sbd .img div {
+    min-height: 46vh;
+    aspect-ratio: auto;
   }
 
   #hwi {
@@ -1311,6 +1312,11 @@ body.dark .txt div {
   #sbd .img:after {
     content: none;
     display: none;
+  }
+
+  #sbd .img div {
+    min-height: unset;
+    aspect-ratio: 150/59;
   }
 
   #dde .txt div {
