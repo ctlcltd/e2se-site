@@ -113,8 +113,8 @@ function db_update(PDO $dbh, string $table_name, array $arr, mixed $clauses, mix
 	$sql = sprintf($sql, $table_name, implode(',', $vars), $clauses);
 
 	if (is_array($params)) {
-		$cols += array_keys($params);
-		$arr += array_values($params);
+		$cols = array_merge($cols, array_keys($params));
+		$arr = array_merge($arr, $params);
 		$vars = array_map($_param_transfunc, $cols);
 		$params = array_combine($vars, $arr);
 	}

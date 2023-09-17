@@ -76,11 +76,11 @@ if ($read_db) {
 
 	try {
 		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id', 'ts_guid', 'ts_notes'], 'WHERE ts_notes!=""');
-		$results = $sth->fetchAll(PDO::FETCH_ASSOC|PDO::FETCH_GROUP);
+		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
 
-		foreach ($results as $ts_id => $arr) {
-			$guid = $arr[0]['ts_guid'];
-			$notes['ts'][$guid] = $arr[0]['ts_notes'];
+		foreach ($results as $arr) {
+			$guid = $arr['ts_guid'];
+			$notes['ts'][$guid] = $arr['ts_notes'];
 		}
 	} catch (PDOException $e) {
 		return false;
@@ -89,15 +89,15 @@ if ($read_db) {
 	}
 
 	try {
-		$sth = \api\db_select($dbh, 'e2se_tr', ['e2se_tr.ts_id', 'ts_guid', 'lang_id', 'tr_notes'], 'INNER JOIN e2se_ts WHERE tr_notes!=""');
-		$results = $sth->fetchAll(PDO::FETCH_ASSOC|PDO::FETCH_GROUP);
+		$sth = \api\db_select($dbh, 'e2se_tr', ['e2se_tr.ts_id', 'ts_guid', 'lang_id', 'tr_notes'], 'LEFT JOIN e2se_ts ON e2se_ts.ts_id=e2se_tr.ts_id WHERE tr_notes!=""');
+		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
 
-		foreach ($results as $ts_id => $arr) {
-			$guid = $arr[0]['ts_guid'];
-			$lang_id = $arr[0]['lang_id'];
+		foreach ($results as $arr) {
+			$guid = $arr['ts_guid'];
+			$lang_id = $arr['lang_id'];
 			$lang = $language[$lang_id];
 
-			$notes[$lang][$guid] = $arr[0]['tr_notes'];
+			$notes[$lang][$guid] = $arr['tr_notes'];
 		}
 	} catch (PDOException $e) {
 		return false;
@@ -277,10 +277,9 @@ foreach ($ts_files as $ts_file) {
 					'ts_msg_extra' => decode_entities($extracomment),
 					'ts_msg_numerus' => (int) $msg_numerous,
 					'ts_line' => $src_line,
-					'ts_notes' => ! empty($notes['ts'][$guid]) ? $notes['ts'][$guid] : ''
+					'ts_notes' => isset($notes['ts'][$guid]) ? $notes['ts'][$guid] : ''
 				];
 
-				// FIXME
 				$disambiguation[$key][] = $id;
 			} else {
 
@@ -294,7 +293,7 @@ foreach ($ts_files as $ts_file) {
 					'tr_line' => $src_line,
 					'tr_status' => $status,
 					'tr_revised' => 0,
-					'tr_notes' => ! empty($notes[$lang][$guid]) ? $notes[$lang][$guid] : ''
+					'tr_notes' => isset($notes[$lang][$guid]) ? $notes[$lang][$guid] : ''
 				];
 
 				$order[$lang][$id] = $ts_id;
@@ -354,12 +353,21 @@ foreach ($disambiguation as $arr) {
 	}
 }
 
+foreach ($disambigua as $ts_id => $arr) {
+	foreach ($arr as $id => $guid) {
+		$disambigua[$id][$ts_id] = $strings[$ts_id]['ts_guid'];
+		$_arr = $arr;
+		unset($_arr[$id]);
+		$disambigua[$id] += $_arr;
+	}
+}
+
 
 // var_dump($langs);
 // var_dump($disambigua);
 // var_dump($strings);
 // var_dump($translated);
-
+// var_dump($notes);
 
 
 
