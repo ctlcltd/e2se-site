@@ -571,7 +571,7 @@
                 </g>
                 <text x="671" y="1082" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Add Marker</text>
               
-              <g style="opacity:0.25">
+              <g style="opacity:0.45">
                 <g transform="matrix(0.26,0,0,0.26,846,1098)">
                   <use href="#aad" style="fill:#505050" y="1"/>
                 </g>
@@ -582,7 +582,7 @@
                 <text x="1014" y="1089" dx="22" dy="22" style="font-size:19.5px;fill:#000" width="118">Reference</text>
               
               
-              <g style="opacity:0.25">
+              <g style="opacity:0.45">
                 <rect x="1170" y="1089" width="122" height="32" rx="0" style="fill:#e1e1e1;stroke:#a3a3a3;stroke-width:1.2px;filter:none"/>
                 <text x="1155" y="1089" dx="25" dy="22" style="font-size:19.5px;fill:#000" width="122">Drag&amp;Drop</text>
               </g>

@@ -343,7 +343,7 @@
               <rect x="502" y="380" width="1296" height="687" style="fill:#131312"/>
               
                 
-                  <rect x="526" y="405" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="526" y="405" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <rect x="570" y="433" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.34,0,0,0.34,588,456)">
                     <rect x="0" y="0" width="273" height="88" style="fill:#f5b4e4"/>
@@ -356,7 +356,7 @@
                   <text x="526" y="527" dx="106" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">NTI 1</text>
                 
                 
-                  <rect x="792" y="405" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="792" y="405" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <rect x="837" y="433" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.34,0,0,0.34,856,456)">
                     <rect x="0" y="0" width="273" height="88" style="fill:#f5b4e4"/>
@@ -369,7 +369,7 @@
                   <text x="792" y="527" dx="108" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">NTI 2</text>
                 
                 
-                  <rect x="1058" y="405" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="1058" y="405" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <rect x="1103" y="433" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.32,0,0,0.32,1111,454)">
                     <rect x="256" y="21" width="93" height="65" style="fill:#cb0000"/>
@@ -379,7 +379,7 @@
                   <text x="1058" y="527" dx="108" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">Image 4K</text>
                 
                 
-                  <rect x="1324" y="405" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="1324" y="405" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <rect x="1369" y="433" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.23,0,0,0.23,1401,449)">
                     <rect x="50" y="4" width="180" height="180" style="fill:#881"/>
@@ -391,14 +391,14 @@
 
                 
                   <rect x="525" y="579" width="223" height="174" rx="20" style="fill:#12608a" transform="matrix(1,0,0,0.996,0,35.099998474121094)"/>
-                  <rect x="526" y="614" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="526" y="614" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <g transform="matrix(0.9,0,0,0.9,566.5,642)">
                     <use href="#pun"/>
                   </g>
                   <text x="526" y="735" dx="106" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">7 Channel</text>
                 
                 
-                  <rect x="792" y="614" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="792" y="614" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   
                   <rect x="837" y="643" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.13,0,0,0.13,849,665)">
@@ -411,7 +411,7 @@
                   <text x="792" y="735" dx="110" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">RIBA Sports</text>
                 
                 
-                  <rect x="1058" y="614" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="1058" y="614" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <rect x="1103" y="643" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.13,0,0,0.13,1109,665)">
                     <ellipse cx="186" cy="116" rx="178" ry="118" style="fill:#64d8b1"/>
@@ -423,7 +423,7 @@
                   <text x="1058" y="735" dx="107" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">RIBA Premiere</text>
                 
                 
-                  <rect x="1324" y="614" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="1324" y="614" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <rect x="1369" y="643" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.21,0,0,0.21,1385,668)">
                     <rect x="0" y="0" width="462" height="120" rx="48" style="fill:#771"/>
@@ -436,7 +436,7 @@
                 
 
                 
-                  <rect x="526" y="822" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="526" y="822" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <rect x="570" y="852" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.31,0,0,0.31,592,871)">
                     <rect x="0" y="0" width="275" height="102" rx="24" style="fill:#fff"/>
@@ -447,7 +447,7 @@
                   <text x="526" y="945" dx="106" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">Q NEWS</text>
                 
                 
-                  <rect x="792" y="822" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="792" y="822" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <rect x="837" y="852" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.21,0,0,0.21,846,880)">
                     <rect x="433" y="0" width="96" height="96" style="fill:#099"/>
@@ -457,14 +457,14 @@
                   <text x="792" y="945" dx="107" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">Shopping G</text>
                 
                 
-                  <rect x="1058" y="822" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="1058" y="822" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <g transform="matrix(0.9,0,0,0.9,1099.5,850)">
                     <use href="#pun"/>
                   </g>
                   <text x="1058" y="945" dx="107" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">Service 1120</text>
                 
                 
-                  <rect x="1324" y="822" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
+                  <rect x="1324" y="822" width="220" height="171" rx="16" style="fill:none;stroke:#252525;stroke-width:11px;stroke-dasharray:15px,0px,48px,16px"/>
                   <rect x="1369" y="852" width="130" height="75" rx="6" style="fill:url(#pvg);stroke:#aaabbb;stroke-width:1.7px"/>
                   <g transform="matrix(0.2,0,0,0.2,1377,878)">
                     <text x="0" y="0" dy="96" style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:97px;fill:#600900;stroke-width:1px" transform="matrix(0.76,0,0,1,0,0)">GLOBALFLARE</text>

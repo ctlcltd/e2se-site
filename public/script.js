@@ -134,8 +134,6 @@ function load_images(evt) {
       id = 'a';
       img += 'sat-list-editor';
       color = i++ ? 'd' : 'l';
-      // 
-      color = platform == 'w' ? 'l' : color;
     } else if (id == 'a' || id == 'b' || id == 'd' || id == 'e') {
       if (id == 'a') {
         img += 'sat-list-editor';
@@ -147,7 +145,6 @@ function load_images(evt) {
         img += 'picons-editor-sat';
       }
       color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'd' : 'l');
-      color = platform == 'w' ? 'l' : color;
     } else {
       return;
     }

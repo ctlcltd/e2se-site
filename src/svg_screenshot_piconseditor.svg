@@ -438,7 +438,7 @@
               <rect class="bg" x="502" y="346" width="1296" height="687" style="fill:#fff" />
               <g class="list-items">
                 <g>
-                  <rect x="526" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="526" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="picon" x="570" y="399" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.34,0,0,0.34,588,422)">
                     <rect x="0" y="0" width="273" height="88" style="fill:#f5b4e4" />
@@ -451,7 +451,7 @@
                   <text class="txt" x="526" y="493" dx="106" dy="18" text-anchor="middle" style="font-size:18px">NTI 1</text>
                 </g>
                 <g>
-                  <rect x="792" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="792" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="picon" x="837" y="399" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.34,0,0,0.34,856,422)">
                     <rect x="0" y="0" width="273" height="88" style="fill:#f5b4e4" />
@@ -464,7 +464,7 @@
                   <text class="txt" x="792" y="493" dx="108" dy="18" text-anchor="middle" style="font-size:18px">NTI 2</text>
                 </g>
                 <g>
-                  <rect x="1058" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="1058" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="picon" x="1103" y="399" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.32,0,0,0.32,1111,420)">
                     <rect x="256" y="21" width="93" height="65" style="fill:#cb0000" />
@@ -474,7 +474,7 @@
                   <text class="txt" x="1058" y="493" dx="108" dy="18" text-anchor="middle" style="font-size:18px">Image 4K</text>
                 </g>
                 <g>
-                  <rect x="1324" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="1324" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="picon" x="1369" y="399" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.23,0,0,0.23,1401,415)">
                     <rect x="50" y="4" width="180" height="180" style="fill:#881" />
@@ -486,14 +486,14 @@
 
                 <g>
                   <rect class="focused" x="525" y="579" width="223" height="174" rx="20" style="fill:#0044e2" />
-                  <rect x="526" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="526" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <g class="img" transform="matrix(0.9,0,0,0.9,566.5,608)">
                     <use href="#picon" />
                   </g>
                   <text class="txt active" x="526" y="701" dx="106" dy="18" text-anchor="middle" style="font-size:18px;fill:#fff">7 Channel</text>
                 </g>
                 <g>
-                  <rect x="792" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="792" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="ico" x="827" y="605" width="151" height="80" style="fill:none" />
                   <rect class="ico" x="837" y="609" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.13,0,0,0.13,849,631)">
@@ -506,7 +506,7 @@
                   <text class="txt" x="792" y="701" dx="110" dy="18" text-anchor="middle" style="font-size:18px;fill:#000">RIBA Sports</text>
                 </g>
                 <g>
-                  <rect x="1058" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="1058" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="picon" x="1103" y="609" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.13,0,0,0.13,1109,631)">
                     <ellipse cx="186" cy="116" rx="178" ry="118" style="fill:#64d8b1" />
@@ -518,7 +518,7 @@
                   <text class="txt" x="1058" y="701" dx="107" dy="18" text-anchor="middle" style="font-size:18px">RIBA Premiere</text>
                 </g>
                 <g>
-                  <rect x="1324" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="1324" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="picon" x="1369" y="609" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.21,0,0,0.21,1385,634)">
                     <rect x="0" y="0" width="462" height="120" rx="48" style="fill:#771" />
@@ -531,7 +531,7 @@
                 </g>
 
                 <g>
-                  <rect x="526" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="526" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="picon" x="570" y="818" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.31,0,0,0.31,592,837)">
                     <rect x="0" y="0" width="275" height="102" rx="24" style="fill:#fff" />
@@ -542,7 +542,7 @@
                   <text class="txt" x="526" y="911" dx="106" dy="18" text-anchor="middle" style="font-size:18px">Q NEWS</text>
                 </g>
                 <g>
-                  <rect x="792" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="792" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="picon" x="837" y="818" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.21,0,0,0.21,846,846)">
                     <rect x="433" y="0" width="96" height="96" style="fill:#099" />
@@ -552,14 +552,14 @@
                   <text class="txt" x="792" y="911" dx="107" dy="18" text-anchor="middle" style="font-size:18px">Shopping G</text>
                 </g>
                 <g>
-                  <rect x="1058" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="1058" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <g class="img" transform="matrix(0.9,0,0,0.9,1099.5,816)">
                     <use href="#picon" />
                   </g>
                   <text class="txt" x="1058" y="911" dx="107" dy="18" text-anchor="middle" style="font-size:18px">Service 1120</text>
                 </g>
                 <g>
-                  <rect x="1324" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
+                  <rect class="shape" x="1324" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#eee;stroke-width:11px;stroke-dasharray:15px 0 48px 16px" />
                   <rect class="picon" x="1369" y="818" width="130" height="75" rx="6" style="fill:url(#picon-bg);stroke:#aaabbb;stroke-width:1.7px" />
                   <g class="img" transform="matrix(0.2,0,0,0.2,1377,844)">
                     <text class="color" x="0" y="0" dy="96" style="font-family:Arial,Helvetica,sans-serif;font-size:97px;font-weight:bold;fill:#600900;stroke:#60900;stroke-width:1px" transform="matrix(0.76,0,0,1,0,0)">GLOBALFLARE</text>
