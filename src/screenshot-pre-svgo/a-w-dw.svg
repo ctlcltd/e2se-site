@@ -106,7 +106,7 @@
   <g style="font-family:'Segoe UI',Tahoma,sans-serif">
     <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:#1e1e1e;stroke:#2b2b2b;stroke-width:1px"/>
     
-      <rect x="82" y="82" width="1716" height="60" rx="0" style="fill:#000;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
+      <rect x="82" y="82" width="1716" height="92.5" rx="0" style="fill:#000;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
       
       <text x="82" y="83.7" dx="42" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:19.1px;letter-spacing:-0.1px;fill:#fff">e2 SAT Editor</text>
       
@@ -132,7 +132,7 @@
     
       
       <text x="80" y="128.3" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#fff;opacity:0.97">File Edit Find Tools Window Help</text>
-      <rect x="81" y="160.5" width="1718" height="1" style="fill:#000"/>
+      
     
     
       

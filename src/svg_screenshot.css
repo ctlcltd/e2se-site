@@ -547,13 +547,12 @@
 
 .dw .w-bg { fill: #1e1e1e !important; stroke: #2b2b2b !important; }
 .dw .w-stroke { stroke: #8a9b9c !important; }
-.dw .t-bg { height: 60px; fill: #000 !important; }
+.dw .t-bg { fill: #000 !important; }
 
 #channelbook .dw#addchannel .w-stroke, #wide .dw#editservice .w-stroke { stroke: #677073 !important; stroke-opacity: 0.28 !important; }
 #channelbook .dw#addchannel .w-stroke { stroke-width: 2.3px !important; }
 #wide .dw#editservice .w-stroke { stroke: #a0b6b4 !important; stroke-opacity: 0.55 !important; stroke-width: 2.8px !important; }
 
-.dw #mb-stroke { display: block; fill: #000 !important; transform: translate(0, 6.5px); }
 .dw #menu-stroke, .dw #main-stroke, .dw #sb-stroke { stroke: #000 !important; }
 
 .dw .ts-bg { fill: #141414 !important; }

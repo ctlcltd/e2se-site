@@ -107,7 +107,7 @@ function platform_detect() {
   function test(s) {
     if (/win/i.test(s)) {
       return 'w';
-    } else if (/mac/i.test(s)) {
+    } else if (/mac/i.test(s) || /safari/i.test(s)) {
       return 'm';
     }
   }
