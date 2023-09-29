@@ -815,6 +815,7 @@
 
 
 .f { font-family: 'Sans-Serif', system-ui, sans-serif !important; }
+/* svg { text-rendering: geometricprecision; } */
 
 .f .t-ctrs-m { display: none; }
 .f .t-ctrs-l { display: block !important; }
