@@ -42,7 +42,7 @@ function authentication($user_name, $user_password) {
 
 function sanitize_uri(string $uri, int $limit = 16) {
 	$uri = substr($uri, 0, $limit);
-	$uri = preg_replace('/[^a-z0-9]/', '', $uri);
+	$uri = preg_replace('/[^a-zA-Z0-9_-]/', '', $uri);
 	return $uri;
 }
 
@@ -116,8 +116,9 @@ function db_update(PDO $dbh, string $table_name, array $arr, mixed $clauses, mix
 		$cols = array_merge($cols, array_keys($params));
 		$arr = array_merge($arr, $params);
 		$vars = array_map($_param_transfunc, $cols);
-		$params = array_combine($vars, $arr);
 	}
+
+	$params = array_combine($vars, $arr);
 
 	$sth = $dbh->prepare($sql);
 	$sth->execute($params);
@@ -177,14 +178,28 @@ if (isset($_COOKIE['PHPSESSID'])) {
 
 $status = 403;
 $response = 0;
-$authorized = isset($_SESSION['authorized']) ? $_SESSION['authorized'] : false;
+$authorized = false;
+
+if (isset($_SESSION['authorized'])) {
+	$authorized = $_SESSION['authorized'];
+} else if (defined('CLI')) {
+	$auth = false;
+
+	if (! empty(getenv('CLI_USRIAM')) && ! empty(getenv('CLI_USRPWD'))) {
+		if (authentication(getenv('CLI_USRIAM'), getenv('CLI_USRPWD')) === true) {
+			$auth = true;
+		}
+	}
+
+	$authorized = $auth;
+}
 
 $endpoint = NULL;
-$method = strtolower($_SERVER['REQUEST_METHOD']);
+$method = isset($_SERVER['REQUEST_METHOD']) ? strtolower($_SERVER['REQUEST_METHOD']) : NULL;
 $request = [];
 
 
-if ($method != 'get' && $method != 'post'):
+if ($method != 'get' && $method != 'post' && ! defined('CLI')):
 
 $status = 405;
 
@@ -195,6 +210,8 @@ if ($authorized) {
 		$request = (array) $_POST;
 	} else if (! empty($_GET)) {
 		$request = (array) $_GET;
+	} else if (defined('CLI')) {
+		$request = getopt('', ['body:', 'call::', 'sub::', 'query::']);
 	}
 } else {
 	if (! empty($_POST)) {
@@ -251,6 +268,12 @@ if ($endpoint == 'login' && $method == 'post') {
 	if (isset($request['call'])) {
 		$request['call'] = sanitize_uri($request['call']);
 	}
+	if (isset($request['sub'])) {
+		$request['sub'] = sanitize_uri($request['sub']);
+	}
+	if (isset($request['query'])) {
+		$request['query'] = sanitize_uri($request['query']);
+	}
 
 	$called = call_user_func("\app\\route_{$endpoint}", $authorized, $request, $method);
 
@@ -278,3 +301,7 @@ header('Content-Type: application/json');
 http_response_code($status);
 $output = [ 'status' => $status, 'data' => $response ];
 echo json_encode($output);
+
+if (defined('CLI')) {
+	echo PHP_EOL;
+}

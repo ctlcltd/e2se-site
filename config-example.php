@@ -14,13 +14,13 @@ define('backend_password', '0123456789');
 
 
 define('routes', [
-	'' => [ '' => 'main' ],
-	'service' => [ '' => 'service' ],
-	'inspect' => [ '' => 'list', 'add' => 'edit', 'edit' => 'edit' ],
-	'userland' => [ 'resume' => 'resume', 'history' => 'history', 'submit' => 'submit' ],
-	'test' => [ '' => 'api_test' ],
-	'login' => [ '' => 'signin' ],
-	'logout' => [ '' => 'signout' ]
+	'' => ['' => 'main'],
+	'service' => ['' => 'service'],
+	'inspect' => ['' => 'list', 'add' => 'edit', 'edit' => 'edit'],
+	'userland' => ['resume' => 'resume', 'history' => 'history', 'submit' => 'submit'],
+	'test' => ['' => 'api_test'],
+	'login' => ['' => 'signin'],
+	'logout' => ['' => 'signout']
 ]);
 
 

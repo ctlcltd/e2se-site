@@ -21,7 +21,7 @@ if (! defined('API')) {
 $status = 502;
 $response = [];
 
-if (! defined('authorized')) {
+if (! (defined('authorized') && authorized)) {
 	$status = 401;
 	return;
 }
@@ -62,6 +62,8 @@ try {
 }
 
 
+$autoi = 0;
+$check = [];
 $index = [];
 $order = [];
 $langs = [];
@@ -69,18 +71,36 @@ $strings = [];
 $translated = [];
 $disambiguation = [];
 $notes = [];
+$update = [];
+$ndpass = isset($request['query']);
 
 
 if ($read_db) {
 	$language = array_flip($languages);
 
 	try {
-		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id', 'ts_guid', 'ts_notes'], 'WHERE ts_notes!=""');
+		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id'], 'ORDER BY ts_id DESC LIMIT 1');
+		$autoi = intval($sth->fetchColumn());
+	} catch (PDOException $e) {
+		return false;
+	} catch (Error $e) {
+		return false;
+	}
+
+	try {
+		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id', 'ts_guid', 'ts_notes', 'ts_update']);
 		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
 
 		foreach ($results as $arr) {
+			$ts_id = $arr['ts_id'];
 			$guid = $arr['ts_guid'];
-			$notes['ts'][$guid] = $arr['ts_notes'];
+			$check[$guid] = $ts_id;
+
+			if ($ndpass && ! $arr['ts_update'])
+				$update[$ts_id] = $guid;
+
+			if (! empty($arr['ts_notes']))
+				$notes['ts'][$guid] = $arr['ts_notes'];
 		}
 	} catch (PDOException $e) {
 		return false;
@@ -265,8 +285,21 @@ foreach ($ts_files as $ts_file) {
 				$completed++;
 
 			if (! $sourced && $lang == $source_ts_lang) {
+				$ts_id = $id;
 
-				$index[$guid] = $ts_id = $id;
+				if (update) {
+					if (isset($check[$guid])) {
+						$ts_id = $check[$guid];
+					} else {
+						$autoi++;
+						$ts_id = $autoi;
+
+						if (! $ndpass)
+							$update[$ts_id] = $guid;
+					}
+				}
+
+				$index[$guid] = $ts_id;
 
 				$strings[$id] = [
 					'ts_id' => $ts_id,
@@ -280,7 +313,7 @@ foreach ($ts_files as $ts_file) {
 					'ts_notes' => isset($notes['ts'][$guid]) ? $notes['ts'][$guid] : ''
 				];
 
-				$disambiguation[$key][] = $id;
+				$disambiguation[$key][] = $guid;
 			} else {
 
 				// vanished
@@ -289,6 +322,7 @@ foreach ($ts_files as $ts_file) {
 				$translated[$lang][$id] = [
 					'lang_id' => $lang_id,
 					'ts_id' => $ts_id,
+					'ts_guid' => $guid,
 					'tr_msg_tr' => decode_entities($translation),
 					'tr_line' => $src_line,
 					'tr_status' => $status,
@@ -334,6 +368,8 @@ foreach ($order as $lang => &$table) {
 	asort($table);
 }
 
+//FIXME wrong id
+
 $disambigua = [];
 
 foreach ($disambiguation as $arr) {
@@ -341,15 +377,16 @@ foreach ($disambiguation as $arr) {
 		continue;
 	}
 
-	$ts_id = $arr[0];
+	$guid = $arr[0];
+	$id = isset($index[$guid]) ? $index[$guid] : 0;
 
-	foreach ($arr as $i => $id) {
+	foreach ($arr as $i => $guid) {
 		if ($i == 0) {
 			continue;
 		}
 
-		$guid = $strings[$id]['ts_guid'];
-		$disambigua[$ts_id][$id] = $guid;
+		$ts_id = isset($index[$guid]) ? $index[$guid] : 0;
+		$disambigua[$id][$ts_id] = $guid;
 	}
 }
 
@@ -368,8 +405,10 @@ foreach ($disambigua as $ts_id => $arr) {
 // var_dump($strings);
 // var_dump($translated);
 // var_dump($notes);
+// var_dump($update);
 
 
+if (! $ndpass) :
 
 if ($write_db)
 	$dbh->beginTransaction();
@@ -392,8 +431,15 @@ foreach ($langs as $code => $lang) {
 
 	$json[$code] = $arr;
 
-	if ($write_db)
-		\api\db_insert($dbh, 'e2se_langs', $lang);
+	if ($write_db) {
+		if (update) {
+			unset($lang['lang_id']);
+
+			\api\db_update($dbh, 'e2se_langs', $lang, 'WHERE lang_guid=:_lang_guid', ['_lang_guid' => $lang['lang_guid']]);
+		} else {
+			\api\db_insert($dbh, 'e2se_langs', $lang);
+		}
+	}
 }
 
 if ($write_db)
@@ -410,6 +456,12 @@ $response['langs'] = [
 ];
 
 
+if ($write_db && update) {
+	$dbh->beginTransaction();
+	\api\db_delete($dbh, 'e2se_disambigua', '');
+	$dbh->commit();
+}
+
 if ($write_db)
 	$dbh->beginTransaction();
 
@@ -420,8 +472,9 @@ foreach ($disambigua as $ts_id => $arr) {
 			'disambigua' => $id
 		];
 
-		if ($write_db)
+		if ($write_db) {
 			\api\db_insert($dbh, 'e2se_disambigua', $dis);
+		}
 	}
 }
 
@@ -460,8 +513,15 @@ foreach ($strings as $ts) {
 
 	$json[] = $arr;
 
-	if ($write_db)
-		\api\db_insert($dbh, 'e2se_ts', $ts);
+	if ($write_db) {
+		if (update && ! isset($update[$ts['ts_id']])) {
+			unset($ts['ts_id']);
+
+			\api\db_update($dbh, 'e2se_ts', $ts, 'WHERE ts_guid=:_ts_guid', ['_ts_guid' => $ts['ts_guid']]);
+		} else {
+			\api\db_insert($dbh, 'e2se_ts', $ts);
+		}
+	}
 }
 
 if ($write_db)
@@ -477,10 +537,17 @@ $response['strings'] = [
 	]
 ];
 
+endif;
+
+
+if (! update || $ndpass):
 
 $sizes = [];
 
 foreach ($order as $lang => $table) {
+	if (update && $ndpass && $lang != $request['query'])
+		continue;
+
 	if ($write_db)
 		$dbh->beginTransaction();
 
@@ -488,17 +555,21 @@ foreach ($order as $lang => $table) {
 
 	foreach ($table as $id => $ts_id) {
 		$tr = $translated[$lang][$id];
+		$guid = $tr['ts_guid'];
+		unset($tr['ts_guid']);
 
 		// vanished
 		if ($tr['ts_id'] == 0) {
-			if ($write_db)
-				\api\db_insert($dbh, 'e2se_tr', $tr);
+			if ($write_db) {
+				if (update && ! isset($update[$tr['ts_id']])) {
+					\api\db_update($dbh, 'e2se_tr', $tr, 'WHERE lang_id=:_lang_id AND ts_id=:_ts_id', ['_lang_guid' => $tr['lang_guid'], '_ts_id' => $tr['ts_id']]);
+				} else {
+					\api\db_insert($dbh, 'e2se_tr', $tr);
+				}
+			}
 
 			continue;
 		}
-
-		$ts = $strings[$tr['ts_id']];
-		$guid = $ts['ts_guid'];
 
 		$arr = [
 			'guid' => $guid,
@@ -513,8 +584,13 @@ foreach ($order as $lang => $table) {
 
 		$json[] = $arr;
 
-		if ($write_db)
-			\api\db_insert($dbh, 'e2se_tr', $tr);
+		if ($write_db) {
+			if (update && ! isset($update[$tr['ts_id']])) {
+				\api\db_update($dbh, 'e2se_tr', $tr, 'WHERE lang_id=:_lang_id AND ts_id=:_ts_id', ['_lang_id' => $tr['lang_id'], '_ts_id' => $tr['ts_id']]);
+			} else {
+				\api\db_insert($dbh, 'e2se_tr', $tr);
+			}
+		}
 	}
 
 	if ($write_db)
@@ -530,6 +606,8 @@ $response['translated'] = [
 	'count' => count($translated),
 	'sizes' => $sizes
 ];
+
+endif;
 
 
 $status = 200;

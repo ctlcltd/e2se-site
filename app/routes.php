@@ -24,8 +24,9 @@ use \api\db_connect;
 
 function route_service($authorized, $request, $method) {
 	if (isset($request['call']) && $authorized) {
-		if ($request['call'] == 'generator') {
-			define('authorized', true);
+		if ($request['call'] == 'generator-source') {
+			define('authorized', defined('CLI'));
+			define('update', isset($request['sub']) && $request['sub'] === 'update');
 
 			require_once __DIR__ . '/' . 'generator_source.php';
 
@@ -38,10 +39,8 @@ function route_service($authorized, $request, $method) {
 		}
 	} else {
 		return [
-			'status' => 200,
-			'response' => [
-				'generator' => 'Generator source'
-			]
+			'status' => 401,
+			'response' => 0
 		];
 	}
 }
