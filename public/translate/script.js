@@ -218,7 +218,7 @@ function edit_translate(uri, search) {
     'ctx_name': 'Node',
     'msg_src': 'Source',
     'msg_tr': 'Translation',
-    'disambigua': 'Disambigua',
+    'disambigua': 'Disambiguation',
     'notes': 'Notes',
     'msg_extra': 'Comment',
     'msg_comment': 'Context',
@@ -358,7 +358,7 @@ function edit_translate(uri, search) {
     if (doc.getElementById('ctrbar-submit-form').hasAttribute('hidden') && Object.keys(storage).length > 1) {
       doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
       doc.querySelector('.submit-form').classList.remove('placeholder');
-    } else {
+    } else if (! evt) {
       try {
         let storage;
         for (const lang in languages) {
@@ -721,9 +721,7 @@ function add_language(uri, search) {
       setTimeout(function() {
         form.removeAttribute('data-loading');
 
-        // FIXME
-        // Wrong base path
-        route('');
+        route(basepath + '/');
       }, 300);
     } catch (err) {
       console.error('submit', err);
@@ -944,30 +942,37 @@ function send_translation() {
 
   let form;
 
-  function submit() {
+  function submit(evt) {
+    evt.preventDefault();
+
     try {
       let translation;
       let lang_code;
+      let lang_guid;
       let language;
       let user;
 
       let storage;
 
       for (const lang in languages) {
-        if (storage = localStorage.getItem(lang)) {
+        const tr_key = 'tr-' + lang;
+        const obj = languages[lang];
+        if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
           if (Object.keys(storage).length > 1) {
             translation = storage;
             lang_code = lang;
+            lang_guid = obj.guid;
             break;
           }
         }
       }
 
       for (const lang in languages) {
-        if (! lang.guid) {
-          if (lang.code === lang_code) {
-            language = lang;
+        const obj = languages[lang];
+        if (! obj.guid) {
+          if (obj.code === lang_code) {
+            language = obj;
           } else {
             translation = null;
           }
@@ -979,12 +984,12 @@ function send_translation() {
         throw 'Not a valid translation submit';
       }
 
-      let data;
+      let data = {};
 
       if (language) {
         data['language'] = language;
-      } else if (lang_code) {
-        data['lang'] = lang_code;
+      } else if (lang_guid) {
+        data['lang'] = lang_guid;
       } else {
         throw 'Not a valid submit';
       }
@@ -997,7 +1002,7 @@ function send_translation() {
         data['user'] = input.value;
       }
 
-      const token = token();
+      const token = get_token();
       const request = api_request('post', 'userland', 'submit', {token, data});
 
       form.setAttribute('data-loading', '');
@@ -1013,7 +1018,7 @@ function send_translation() {
 
     if (el.nodeName == 'BUTTON' && el.type == 'button') {
       send_unlock();
-      route();
+      route(basepath + '/');
     }
   }
 
@@ -1027,23 +1032,30 @@ function send_translation() {
         return error(xhr);
       }
 
-      if (obj.token && validate_token(obj.token)) {
-        localStorage.clear();
+      if (obj.data) {
+        const data = obj.data;
 
-        localStorage.setItem('_time', new Date().toJSON());
-        localStorage.setItem('_token', 1);
-        localStorage.setItem('your-token', obj.token);
+        if (data && data.token && validate_token(data.token)) {
+          reset_data(false);
 
-        message('your-token', '', 1);
+          localStorage.setItem('_token', 1);
+          localStorage.setItem('your-token', data.token);
+
+          message('your-token', '', 1);
+        } else {
+          throw 'An error occurred';
+        }
       } else {
         throw 'An error occurred';
       }
     } catch (err) {
+      message('error');
+
       console.error('loader', err);
     }
 
     send_unlock();
-    route();
+    route(basepath + '/');
   }
 
   function error(xhr) {
@@ -1140,6 +1152,8 @@ function send_translation() {
 
       view.setAttribute('hidden', '');
     }
+
+    window.scrollTo(window.scrollX, 0);
   }
 
   function load() {
@@ -1198,7 +1212,7 @@ function send_resume() {
   }
 }
 
-function token() {
+function get_token() {
   var w = 10;
   const a = [
     [ 48, 57 ],         // 0-9
@@ -1233,6 +1247,7 @@ send_resume();
 function resume_translation(token) {
   const doc = document;
   const page = doc.getElementById('page');
+  const field = doc.getElementById('token');
 
   function allowResume() {
     try {
@@ -1251,17 +1266,20 @@ function resume_translation(token) {
       }
 
       for (const lang in languages) {
-        if (! lang.guid) {
+        const obj = languages[lang];
+        if (! obj.guid) {
           allow = false;
           break;
         }
       }
 
       if (allow) {
-        const request = api_request('post', 'userland', {token});
+        const request = api_request('post', 'userland', 'resume', {token});
 
         page.setAttribute('data-loading', '');
         request.then(loader).catch(error);
+
+        // field.value = '';
       } else {
         localStorage.setItem('_resume', token);
         localStorage.setItem('_lock', 'resume');
@@ -1283,6 +1301,8 @@ function resume_translation(token) {
         return error(xhr);
       }
 
+      let success = false;
+
       if (obj.data) {
         const data = obj.data;
         let lang_code;
@@ -1292,25 +1312,35 @@ function resume_translation(token) {
           lang_code = language.code;
           languages[lang_code] = language;
           localStorage.setItem('languages', JSON.stringify(languages));
-        } else if (data.guid) {
+          success = true;
+        } else if (data.lang) {
           for (const lang in languages) {
-            if (lang.guid === data.guid) {
-              lang_code = lang.code;
+            const obj = languages[lang];
+            if (obj.guid === data.lang) {
+              lang_code = lang;
               break;
             }
           }
         }
-        if (lang_code && data.utr) {
-          const translation = data.utr;
+
+        if (lang_code && data.data && data.data.utr) {
+          const translation = data.data.utr;
           const tr_key = 'tr-' + lang_code;
           localStorage.setItem(tr_key, JSON.stringify(translation));
+          success = true;
         } else {
           throw 'An error occurred';
         }
       } else {
         throw 'An error occurred';
       }
+
+      if (success) {
+        message('resumed');
+      }
     } catch (err) {
+      message('error');
+
       console.error('loader', err);
     }
   }
@@ -1336,19 +1366,23 @@ function form_token() {
   const field = form.querySelector('#token');
 
   function textInput(evt) {
-    const el = evt.target;
-    const token = el.value;
+    if (evt.target === form) {
+      evt.preventDefault();
+    }
+
+    const token = field.value;
 
     if (token.length === 10 && validate_token(token)) {
-      el.setAttribute('disabled', '');
+      field.setAttribute('disabled', '');
       resume_translation(token);
-      el.removeAttribute('disabled');
+      field.removeAttribute('disabled');
     }
   }
 
   const _textInput = debounce(textInput, false, 50);
 
   field.addEventListener('input', _textInput);
+  form.addEventListener('submit', textInput);
 }
 
 function your_token() {
@@ -1361,7 +1395,7 @@ function your_token() {
   }
 }
 
-function token_box_html() {
+function token_box_html(type) {
   try {
     const token = localStorage.getItem('your-token');
 
@@ -1369,7 +1403,7 @@ function token_box_html() {
       throw 'Not a valid token';
     }
 
-    let html;
+    let html = '';
 
     if (type == 1) {
       html = '<p><b>Thank you for contribution</b></p>';
@@ -1380,6 +1414,8 @@ function token_box_html() {
     html += '<p>This is useful to resume the translation you have sent</p>';
     html += '</div>';
     html += '<div><input type="text" id="your-token" value="' + token + '" readonly></div>';
+
+    return html;
   } catch (err) {
     console.error('token_box_html', err);
   }
@@ -1394,7 +1430,7 @@ function token_box_dismiss() {
 }
 
 function validate_token(token) {
-  return /[a-zA-Z$&=@]{10}/g.test(token);
+  return /[a-zA-Z0-9$&=@]{10}/g.test(token);
 }
 
 
@@ -1423,7 +1459,7 @@ function message(id, text, type, buttons) {
       html = '<p><b>An error occurred<b></p><p>Please try again</p>';
       type = 0;
     } else if (id == 'edit-prev') {
-      html = '<p>You have a previous translation edit that was not sent</p><p><b>Do you want to submit or discard the previous edit?</b></p>';
+      html = '<p>You have a previous translation edit that was not sent</p><p><b>Do you want to SUBMIT or DISCARD the previous edit?</b></p>';
       type = 2;
       buttons = [
         {'label': 'Submit', 'class': 'primary', 'callback': send_translation},
@@ -1432,10 +1468,29 @@ function message(id, text, type, buttons) {
       ];
     } else if (id == 'your-token') {
       html = token_box_html(type);
+      if (! html) {
+        return message('error');
+      }
       type = 1;
       buttons = [
         {'label': 'Dismiss', 'class': 'secondary tiny', 'callback': token_box_dismiss}
       ];
+    } else if (id == 'reset') {
+      html = '<p>RESET DATA</p><p>This will re-initialize data</p><p><b>Do you want to RESET all data?</b></p>';
+      type = 2;
+      buttons = [
+        {'label': 'Reset', 'class': 'primary', 'callback': reset_data},
+        {'label': 'Cancel', 'class': 'tiny', 'callback': close}
+      ];
+    } else if (id == 'cleared') {
+      html = '<p><b>Session cleared!<b></p>';
+      type = 1;
+    } else if (id == 'resumed') {
+      html = '<p><b>Session resumed!<b></p>';
+      type = 1;
+    } else if (id == 'error') {
+      html = '<p><b>An error occurred<b></p>';
+      type = 0;
     }
 
     box.innerHTML = html;
@@ -1457,9 +1512,11 @@ function message(id, text, type, buttons) {
   if (type != undefined) {
     doc.body.classList.add('backdrop');
     box.className += ' top';
-    btns = [
-      {'label': 'OK', 'callback': close}
-    ];
+    if (! buttons) {
+      buttons = [
+        {'label': 'OK', 'class': 'secondary tiny', 'callback': close}
+      ];
+    }
   }
 
   if (buttons && typeof buttons == 'object') {
@@ -1523,6 +1580,48 @@ function discard_edit() {
   }
 }
 
+function reset_data(front) {
+  const request = source_request('langs');
+
+  function done(xhr) {
+    try {
+      const obj = JSON.parse(xhr.response);
+
+      languages = obj;
+
+      localStorage.setItem('languages', JSON.stringify(languages));
+    } catch (err) {
+      console.error('done', err);
+    }
+  }
+
+  function error(xhr) {
+    console.warn(xhr);
+  }
+
+  try {
+    const color = localStorage.getItem('preferred-color');
+
+    localStorage.clear();
+
+    localStorage.setItem('_time', new Date().toJSON());
+
+    if (color == 'light' || color == 'dark') {
+      localStorage.setItem('preferred-color', color);
+    }
+
+    request.then(done).catch(error);
+
+    if (front !== false) {
+      message('cleared');
+
+      route(basepath + '/');
+    }
+  } catch (err) {
+    console.error('reset_data', err);
+  }
+}
+
 function debounce(fn, once, timeout) {
   timeout = timeout ?? 300;
   let timer;
@@ -1564,7 +1663,8 @@ function api_request(method, endpoint, route, data) {
         if (typeof value === 'object') {
           value = JSON.stringify(value);
         }
-        data.push(key + '=' + value.toString());
+        value = encodeURIComponent(value.toString());
+        data.push(key + '=' + value);
       }
     } catch (err) {
       console.error(err);
@@ -1674,6 +1774,10 @@ function route(href, title) {
   }
 
   routes[uri].call(this, uri, search);
+
+  if (history) {
+    window.scrollTo(window.scrollX, 0);
+  }
 }
 
 
@@ -1741,6 +1845,16 @@ function init() {
     }
   }
 
+  function resetButton() {
+    const button = doc.getElementById('reset');
+
+    function click(evt) {
+      message('reset');
+    }
+
+    button.addEventListener('click', click);
+  }
+
   function view() {
     try {
       if (localStorage.getItem('_lock') != 'send') {
@@ -1749,6 +1863,7 @@ function init() {
       }
 
       your_token();
+      form_token();
     } catch (err) {
       console.error('view', err);
 
@@ -1789,7 +1904,7 @@ function init() {
   }
 
   function error(xhr) {
-    // console.warn(xhr);
+    console.warn(xhr);
   }
 
   function popState(evt) {
@@ -1802,6 +1917,7 @@ function init() {
   doc.getElementById('head').addEventListener('click', switchColor);
   window.addEventListener('popstate', popState);
   resume();
+  resetButton();
 }
 
 init();

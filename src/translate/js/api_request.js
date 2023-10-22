@@ -18,7 +18,8 @@ function api_request(method, endpoint, route, data) {
         if (typeof value === 'object') {
           value = JSON.stringify(value);
         }
-        data.push(key + '=' + value.toString());
+        value = encodeURIComponent(value.toString());
+        data.push(key + '=' + value);
       }
     } catch (err) {
       console.error(err);

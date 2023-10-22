@@ -69,6 +69,16 @@ function init() {
     }
   }
 
+  function resetButton() {
+    const button = doc.getElementById('reset');
+
+    function click(evt) {
+      message('reset');
+    }
+
+    button.addEventListener('click', click);
+  }
+
   function view() {
     try {
       if (localStorage.getItem('_lock') != 'send') {
@@ -77,6 +87,7 @@ function init() {
       }
 
       your_token();
+      form_token();
     } catch (err) {
       console.error('view', err);
 
@@ -117,7 +128,7 @@ function init() {
   }
 
   function error(xhr) {
-    // console.warn(xhr);
+    console.warn(xhr);
   }
 
   function popState(evt) {
@@ -130,6 +141,7 @@ function init() {
   doc.getElementById('head').addEventListener('click', switchColor);
   window.addEventListener('popstate', popState);
   resume();
+  resetButton();
 }
 
 init();

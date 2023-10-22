@@ -33,7 +33,7 @@ use \api\db_insert;
 
 
 function filter_request($value, $key) {
-	if (empty($value) || ! in_array($key, [ 'token', 'data' ]))
+	if (empty($value) || ! in_array($key, ['token', 'data']))
 		return false;
 
 	return $value;
@@ -44,7 +44,7 @@ function validate_language(array $content) {
 		return false;
 
 	foreach ($content as $key)
-		if (! array_key_exists($key, [ 'locale', 'code', 'name', 'tr_name', 'dir', 'type', 'numerus' ] ))
+		if (! array_key_exists($key, ['locale', 'code', 'name', 'tr_name', 'dir', 'type', 'numerus'] ))
 			return false;
 
 	if (! (isset($content['locale']) && preg_match('/[a-z]{2}/', $content['locale'])))
@@ -61,6 +61,8 @@ function validate_language(array $content) {
 		return false;
 	if (! (is_numeric($content['numerus']) && (int) $content['numerus'] > 0 && (int) $content['numerus']) < 9)
 		return false;
+
+	return true;
 }
 
 function validate_translation(PDO $dbh, array $content) {
@@ -68,19 +70,25 @@ function validate_translation(PDO $dbh, array $content) {
 		return false;
 
 	$sth = \api\db_select($dbh, 'e2se_ts', ['ts_guid']);
-	$results = $sth->fetchColumn();
+	$results = $sth->fetchAll(PDO::FETCH_COLUMN);
 
-	foreach ($content as $key => $value)
-		if (! array_key_exists($key, $results) || empty($value))
+	foreach ($content as $key => $value) {
+		//FIXME empty($value)
+		if (! in_array($key, $results) || empty($value))
 			return false;
+	}
+
+	return true;
 }
 
 function validate_user(string $content) {
 	if (empty($content) || strlen($content) > 99)
 		return false;
+
+	return true;
 }
 
-function token_generator() {
+function get_token() {
 	$w = 10;
 	$a = [
 		[ 48, 57 ],         // 0-9
@@ -124,7 +132,7 @@ function get_saved_id(PDO $dbh, string $token, bool $check) {
 	return $saved_id;
 }
 
-function get_lang_guid(string $guid, bool $check) {
+function get_lang_guid(PDO $dbh, string $guid, bool $check) {
 	if (empty($guid)) {
 		throw new Exception('Not a valid language');
 	}
@@ -159,7 +167,7 @@ function ul_resume(PDO $dbh, array $request) {
 			'token' => $results[0]['saved_token'],
 			'lang' => is_null($results[0]['lang_guid']) ? '' : $results[0]['lang_guid'],
 			'time' => $results[0]['saved_time'],
-			'data' => $results[0]['saved_content']
+			'data' => json_decode($results[0]['saved_content'], true)
 		];
 	} catch (PDOException $e) {
 		var_dump($e);
@@ -215,7 +223,7 @@ function ul_submit(PDO $dbh, array $request) {
 
 	try {
 		if (get_saved_id($dbh, $token, false)) {
-			$token = token_generator();
+			$token = get_token();
 
 			if (get_saved_id($dbh, $token, false)) {
 				throw new Exception('An error occurred');
@@ -233,14 +241,14 @@ function ul_submit(PDO $dbh, array $request) {
 		if (isset($data['language']) && ! validate_language($data['language'])) {
 			throw new Exception('Not a valid language submit');
 		} else if (isset($data['lang'])) {
-			$lang_id = get_lang_guid($data['lang'], true);
+			$lang_id = get_lang_guid($dbh, $data['lang'], true);
 		}
 
 		if (! validate_translation($dbh, $data['translation'])) {
 			throw new Exception('Not a valid translation submit');
 		}
 
-		if (! validate_user($data['user'])) {
+		if (isset($data['user']) && ! validate_user($data['user'])) {
 			throw new Exception('Not a valid user submit');
 		}
 
@@ -255,18 +263,19 @@ function ul_submit(PDO $dbh, array $request) {
 		$saved = [
 			'saved_token' => $token,
 			'lang_id' => $lang_id,
-			'saved_user' => $data['user'],
+			'saved_user' => $data['user'] ?? '',
 			'saved_time' => date('Y-m-d H:i:s'),
 			'saved_content' => json_encode($content)
 		];
 
 		$sth = \api\db_insert($dbh, 'e2se_saved', $saved);
-		$sth->debugDumpParams();
+		// $sth->debugDumpParams();
 
 		// 
 		// history
 
 		$response['token'] = $token;
+
 	} catch (PDOException $e) {
 		var_dump($e);
 		return false;
@@ -282,7 +291,7 @@ function ul_submit(PDO $dbh, array $request) {
 
 
 if ($method == 'post' && isset($request['call'])) {
-	if (! in_array($request['call'], [ 'resume', 'history', 'submit' ])) {
+	if (! in_array($request['call'], ['resume', 'history', 'submit'])) {
 		return false;
 	}
 	$call = $request['call'];

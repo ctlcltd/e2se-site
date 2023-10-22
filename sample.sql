@@ -72,6 +72,7 @@ CREATE TABLE IF NOT EXISTS `e2se_ts` (
   `ts_msg_extra` varchar(255) NOT NULL,
   `ts_msg_numerus` tinyint(1) UNSIGNED NOT NULL,
   `ts_line` int(11) UNSIGNED NOT NULL,
+  `ts_status` tinyint(1) NOT NULL,
   `ts_notes` text NOT NULL,
   PRIMARY KEY (`ts_id`),
   UNIQUE KEY `ts_guid` (`ts_guid`) USING BTREE

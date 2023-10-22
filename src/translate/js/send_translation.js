@@ -13,30 +13,37 @@ function send_translation() {
 
   let form;
 
-  function submit() {
+  function submit(evt) {
+    evt.preventDefault();
+
     try {
       let translation;
       let lang_code;
+      let lang_guid;
       let language;
       let user;
 
       let storage;
 
       for (const lang in languages) {
-        if (storage = localStorage.getItem(lang)) {
+        const tr_key = 'tr-' + lang;
+        const obj = languages[lang];
+        if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
           if (Object.keys(storage).length > 1) {
             translation = storage;
             lang_code = lang;
+            lang_guid = obj.guid;
             break;
           }
         }
       }
 
       for (const lang in languages) {
-        if (! lang.guid) {
-          if (lang.code === lang_code) {
-            language = lang;
+        const obj = languages[lang];
+        if (! obj.guid) {
+          if (obj.code === lang_code) {
+            language = obj;
           } else {
             translation = null;
           }
@@ -48,12 +55,12 @@ function send_translation() {
         throw 'Not a valid translation submit';
       }
 
-      let data;
+      let data = {};
 
       if (language) {
         data['language'] = language;
-      } else if (lang_code) {
-        data['lang'] = lang_code;
+      } else if (lang_guid) {
+        data['lang'] = lang_guid;
       } else {
         throw 'Not a valid submit';
       }
@@ -66,7 +73,7 @@ function send_translation() {
         data['user'] = input.value;
       }
 
-      const token = token();
+      const token = get_token();
       const request = api_request('post', 'userland', 'submit', {token, data});
 
       form.setAttribute('data-loading', '');
@@ -82,7 +89,7 @@ function send_translation() {
 
     if (el.nodeName == 'BUTTON' && el.type == 'button') {
       send_unlock();
-      route();
+      route(basepath + '/');
     }
   }
 
@@ -96,23 +103,30 @@ function send_translation() {
         return error(xhr);
       }
 
-      if (obj.token && validate_token(obj.token)) {
-        localStorage.clear();
+      if (obj.data) {
+        const data = obj.data;
 
-        localStorage.setItem('_time', new Date().toJSON());
-        localStorage.setItem('_token', 1);
-        localStorage.setItem('your-token', obj.token);
+        if (data && data.token && validate_token(data.token)) {
+          reset_data(false);
 
-        message('your-token', '', 1);
+          localStorage.setItem('_token', 1);
+          localStorage.setItem('your-token', data.token);
+
+          message('your-token', '', 1);
+        } else {
+          throw 'An error occurred';
+        }
       } else {
         throw 'An error occurred';
       }
     } catch (err) {
+      message('error');
+
       console.error('loader', err);
     }
 
     send_unlock();
-    route();
+    route(basepath + '/');
   }
 
   function error(xhr) {
@@ -209,6 +223,8 @@ function send_translation() {
 
       view.setAttribute('hidden', '');
     }
+
+    window.scrollTo(window.scrollX, 0);
   }
 
   function load() {
@@ -267,7 +283,7 @@ function send_resume() {
   }
 }
 
-function token() {
+function get_token() {
   var w = 10;
   const a = [
     [ 48, 57 ],         // 0-9

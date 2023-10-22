@@ -121,9 +121,7 @@ function add_language(uri, search) {
       setTimeout(function() {
         form.removeAttribute('data-loading');
 
-        // FIXME
-        // Wrong base path
-        route('');
+        route(basepath + '/');
       }, 300);
     } catch (err) {
       console.error('submit', err);

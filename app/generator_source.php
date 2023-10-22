@@ -88,7 +88,7 @@ if ($read_db) {
 	}
 
 	try {
-		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id', 'ts_guid', 'ts_notes', 'ts_update']);
+		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id', 'ts_guid', 'ts_notes', 'ts_status']);
 		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
 
 		foreach ($results as $arr) {
@@ -96,7 +96,7 @@ if ($read_db) {
 			$guid = $arr['ts_guid'];
 			$check[$guid] = $ts_id;
 
-			if ($ndpass && ! $arr['ts_update'])
+			if ($ndpass && ! $arr['ts_status'])
 				$update[$ts_id] = $guid;
 
 			if (! empty($arr['ts_notes']))

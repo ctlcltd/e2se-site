@@ -28,7 +28,7 @@ function edit_translate(uri, search) {
     'ctx_name': 'Node',
     'msg_src': 'Source',
     'msg_tr': 'Translation',
-    'disambigua': 'Disambigua',
+    'disambigua': 'Disambiguation',
     'notes': 'Notes',
     'msg_extra': 'Comment',
     'msg_comment': 'Context',
@@ -168,7 +168,7 @@ function edit_translate(uri, search) {
     if (doc.getElementById('ctrbar-submit-form').hasAttribute('hidden') && Object.keys(storage).length > 1) {
       doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
       doc.querySelector('.submit-form').classList.remove('placeholder');
-    } else {
+    } else if (! evt) {
       try {
         let storage;
         for (const lang in languages) {
