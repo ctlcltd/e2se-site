@@ -55,4 +55,8 @@ function route(href, title) {
   }
 
   routes[uri][path].call(this, uri, path, search);
+
+  if (history) {
+    window.scrollTo(window.scrollX, 0);
+  }
 }

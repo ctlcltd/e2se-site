@@ -30,34 +30,27 @@ function route_service($authorized, $request, $method) {
 
 			require_once __DIR__ . '/' . 'generator_source.php';
 
-			return [
-				'status' => $status,
-				'response' => $response
-			];
-		} else {
-			return \api\deny();
+			\api\deny(502);
+		} else if ($request['call'] == 'generator-ts') {
+			define('authorized', defined('CLI'));
+
+			require_once __DIR__ . '/' . 'generator_ts.php';
+
+			\api\deny(502);
 		}
 	} else {
-		return [
-			'status' => 401,
-			'response' => 0
-		];
+		\api\deny(401);
 	}
 }
 
 function route_userland($authorized, $request, $method) {
 	if (isset($request['call'])) {
-		if ($method == 'post' && in_array($request['call'], [ 'resume', 'history', 'submit' ])) {
+		if ($method == 'post' && in_array($request['call'], ['resume', 'history', 'submit'])) {
 			require_once __DIR__ . '/' . 'userland.php';
 
-			return [
-				'status' => $status,
-				'response' => $response
-			];
+			\api\deny(502);
 		}
 	}
-
-	return \api\deny();
 }
 
 function route_inspect($authorized, $request, $method) {
@@ -65,12 +58,29 @@ function route_inspect($authorized, $request, $method) {
 		try {
 			$dbh = \api\db_connect();
 		} catch (Exception $e) {
-			return \api\error();
+			return \api\dump($e);
 		}
-	}
 
-	return [
-		'status' => 200,
-		'response' => 0
-	];
+		\api\response(200);
+	} else {
+		\api\deny(401);
+	}
+}
+
+function route_test($authorized, $request, $method) {
+	if ($authorized) {
+		$response = [
+			'' => ['' => 'main'],
+			'service' => ['' => 'service'],
+			'inspect' => ['' => 'list', 'add' => 'edit', 'edit' => 'edit'],
+			'userland' => ['resume' => 'resume', 'history' => 'history', 'submit' => 'submit'],
+			'test' => ['' => 'api_test'],
+			'login' => ['' => 'signin'],
+			'logout' => ['' => 'signout']
+		];
+
+		\api\response(200, $response);
+	} else {
+		\api\deny(401);
+	}
 }

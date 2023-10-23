@@ -414,6 +414,18 @@ function signin() {
 function signout() {
   sessionStorage.clear();
 
+  function loader(xhr) {
+    console.log('signout');
+  }
+
+  function error(xhr) {
+    console.warn(xhr);
+  }
+
+  const request = api_request('post', 'logout', '', obj);
+
+  request.then(loader).catch(error);
+
   return route(basepath + '/?login');
 }
 
@@ -425,7 +437,7 @@ function api_request(method, endpoint, route, data) {
 
   if (method === 'get') {
     if (endpoint) {
-      url += '?data=' + endpoint;
+      url += '?body=' + endpoint;
     }
     if (route) {
       url += endpoint ? '&' : '?' + '&call=' + route;
@@ -467,7 +479,7 @@ function api_test() {
   const response_form = doc.getElementById('api_response');
 
   const methods = ['get', 'post'];
-  const request = api_request('get');
+  const request = api_request('get', 'test');
 
   const endpoint_select = request_form.querySelector('[name="endpoint"]');
   const method_select = request_form.querySelector('[name="method"]');
@@ -677,6 +689,10 @@ function route(href, title) {
   }
 
   routes[uri][path].call(this, uri, path, search);
+
+  if (history) {
+    window.scrollTo(window.scrollX, 0);
+  }
 }
 
 

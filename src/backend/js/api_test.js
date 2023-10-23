@@ -13,7 +13,7 @@ function api_test() {
   const response_form = doc.getElementById('api_response');
 
   const methods = ['get', 'post'];
-  const request = api_request('get');
+  const request = api_request('get', 'test');
 
   const endpoint_select = request_form.querySelector('[name="endpoint"]');
   const method_select = request_form.querySelector('[name="method"]');

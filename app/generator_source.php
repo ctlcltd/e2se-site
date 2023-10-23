@@ -18,12 +18,8 @@ if (! defined('API')) {
 	exit;
 }
 
-$status = 502;
-$response = [];
-
 if (! (defined('authorized') && authorized)) {
-	$status = 401;
-	return;
+	return \api\deny(401);
 }
 
 
@@ -58,7 +54,7 @@ try {
 	if ($read_db || $write_db)
 		$dbh = \api\db_connect();
 } catch (Exception $e) {
-	return false;
+	return \api\dump($e);
 }
 
 
@@ -73,19 +69,19 @@ $disambiguation = [];
 $notes = [];
 $update = [];
 $ndpass = isset($request['query']);
+$query = isset($request['query']) ? substr($request['query'], 0, 5) : NULL;
 
 
-if ($read_db) {
-	$language = array_flip($languages);
-
+if ($read_db):
 	try {
 		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id'], 'ORDER BY ts_id DESC LIMIT 1');
 		$autoi = intval($sth->fetchColumn());
 	} catch (PDOException $e) {
-		return false;
+		return \api\dump($e);
 	} catch (Error $e) {
-		return false;
+		return \api\dump($e);
 	}
+
 
 	try {
 		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id', 'ts_guid', 'ts_notes', 'ts_status']);
@@ -103,10 +99,13 @@ if ($read_db) {
 				$notes['ts'][$guid] = $arr['ts_notes'];
 		}
 	} catch (PDOException $e) {
-		return false;
+		return \api\dump($e);
 	} catch (Error $e) {
-		return false;
+		return \api\dump($e);
 	}
+
+
+	$language = array_flip($languages);
 
 	try {
 		$sth = \api\db_select($dbh, 'e2se_tr', ['e2se_tr.ts_id', 'ts_guid', 'lang_id', 'tr_notes'], 'LEFT JOIN e2se_ts ON e2se_ts.ts_id=e2se_tr.ts_id WHERE tr_notes!=""');
@@ -120,11 +119,11 @@ if ($read_db) {
 			$notes[$lang][$guid] = $arr['tr_notes'];
 		}
 	} catch (PDOException $e) {
-		return false;
+		return \api\dump($e);
 	} catch (Error $e) {
-		return false;
+		return \api\dump($e);
 	}
-}
+endif;
 
 
 // sourced lang first in array
@@ -142,15 +141,15 @@ array_unshift($ts_files, $ts_files[$src_ts_lang_i]);
 
 $sourced = false;
 
-foreach ($ts_files as $ts_file) {
+foreach ($ts_files as $ts_file):
 
 	try {
 		$ts_xml = file_get_contents($ts_path . '/' . $ts_file);
 		$ts_xml = explode("\n", $ts_xml);
-	} catch (\Exception $e) {
-		return false;
-	} catch (\Error $e) {
-		return false;
+	} catch (Exception $e) {
+		return \api\dump($e);
+	} catch (Error $e) {
+		return \api\dump($e);
 	}
 
 	$lang = substr($ts_file, strpos($ts_file, '_') + 1, - 3);
@@ -199,6 +198,7 @@ foreach ($ts_files as $ts_file) {
 			$name = substr($tree, strpos($tree, '<name>') + 6, strrpos($tree, '</name>') - 10);
 		}
 
+		//FIXME numerus
 		if (strpos($tree, '<message numerus="yes">') !== false) {
 			$msg_numerous = true;
 		}
@@ -362,7 +362,7 @@ foreach ($ts_files as $ts_file) {
 		$sourced = true;
 	}
 
-}
+endforeach;
 
 foreach ($order as $lang => &$table) {
 	asort($table);
@@ -408,6 +408,8 @@ foreach ($disambigua as $ts_id => $arr) {
 // var_dump($update);
 
 
+$response = [];
+
 if (! $ndpass) :
 
 if ($write_db)
@@ -415,7 +417,7 @@ if ($write_db)
 
 $json = [];
 
-foreach ($langs as $code => $lang) {
+foreach ($langs as $code => $lang):
 	$arr = [
 		'guid' => $lang['lang_guid'],
 		'code' => $lang['lang_code'],
@@ -440,7 +442,7 @@ foreach ($langs as $code => $lang) {
 			\api\db_insert($dbh, 'e2se_langs', $lang);
 		}
 	}
-}
+endforeach;
 
 if ($write_db)
 	$dbh->commit();
@@ -465,7 +467,7 @@ if ($write_db && update) {
 if ($write_db)
 	$dbh->beginTransaction();
 
-foreach ($disambigua as $ts_id => $arr) {
+foreach ($disambigua as $ts_id => $arr):
 	foreach ($arr as $id => $guid) {
 		$dis = [
 			'ts_id' => $ts_id,
@@ -476,7 +478,7 @@ foreach ($disambigua as $ts_id => $arr) {
 			\api\db_insert($dbh, 'e2se_disambigua', $dis);
 		}
 	}
-}
+endforeach;
 
 if ($write_db)
 	$dbh->commit();
@@ -494,7 +496,7 @@ if ($write_db)
 
 $json = [];
 
-foreach ($strings as $ts) {
+foreach ($strings as $ts):
 	$arr = [
 		'guid' => $ts['ts_guid'],
 		'ctx_name' => $ts['ts_ctx_name'],
@@ -522,7 +524,7 @@ foreach ($strings as $ts) {
 			\api\db_insert($dbh, 'e2se_ts', $ts);
 		}
 	}
-}
+endforeach;
 
 if ($write_db)
 	$dbh->commit();
@@ -544,8 +546,8 @@ if (! update || $ndpass):
 
 $sizes = [];
 
-foreach ($order as $lang => $table) {
-	if (update && $ndpass && $lang != $request['query'])
+foreach ($order as $lang => $table):
+	if (update && $ndpass && $lang != $query)
 		continue;
 
 	if ($write_db)
@@ -600,7 +602,7 @@ foreach ($order as $lang => $table) {
 		file_put_contents($sources_path . '/' . 'e2se-ts-' . $lang . '-tr.json', json_encode($json));
 
 	$sizes['e2se-ts-' . $lang . '-tr.json'] = strlen(json_encode($json));
-}
+endforeach;
 
 $response['translated'] = [
 	'count' => count($translated),
@@ -610,4 +612,4 @@ $response['translated'] = [
 endif;
 
 
-$status = 200;
+\api\response(200, $response);

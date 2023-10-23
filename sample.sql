@@ -40,6 +40,11 @@ CREATE TABLE IF NOT EXISTS `e2se_langs` (
   KEY `lang_code` (`lang_code`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE IF NOT EXISTS `e2se_log` (
+  `log_addr` varchar(40) NOT NULL,
+  `log_epoch` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 CREATE TABLE IF NOT EXISTS `e2se_saved` (
   `saved_id` bigint(21) UNSIGNED NOT NULL AUTO_INCREMENT,
   `saved_token` varchar(100) NOT NULL,

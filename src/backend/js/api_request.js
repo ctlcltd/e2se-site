@@ -12,7 +12,7 @@ function api_request(method, endpoint, route, data) {
 
   if (method === 'get') {
     if (endpoint) {
-      url += '?data=' + endpoint;
+      url += '?body=' + endpoint;
     }
     if (route) {
       url += endpoint ? '&' : '?' + '&call=' + route;

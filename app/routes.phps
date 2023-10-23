@@ -16,10 +16,5 @@ use \api\db_connect;
 
 
 /*function route_example($authorized, $request, $method) {
-	return [
-		'status' => 200,
-		'response' => [
-			'test' => 1
-		]
-	];
+	\api\response(200, ['test' => 1]);
 }*/

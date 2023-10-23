@@ -131,7 +131,8 @@ if (defined('generator_ts')) {
 }
 
 $ts_path = isset($generator['ts_path']) && file_exists($generator['ts_path']) ? $generator['ts_path'] : __DIR__ . '/../translations';
-$sources_path = isset($generator['sources_path']) && file_exists($generator['ts_path']) ? $generator['ts_path'] : __DIR__ . '/../public/sources';
+$dst_ts_path = isset($generator['dst_ts_path']) && file_exists($generator['dst_ts_path']) ? $generator['dst_ts_path'] : __DIR__ . '/../translations/out';
+$sources_path = isset($generator['sources_path']) && file_exists($generator['sources_path']) ? $generator['sources_path'] : __DIR__ . '/../public/sources';
 
 
 $source_ts_lang = isset($generator['source_ts_lang']) && array_key_exists($generator['source_ts_lang'], $languages) ? $generator['source_ts_lang'] : array_key_first($languages);

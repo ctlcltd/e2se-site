@@ -13,14 +13,11 @@ define('backend_username', 'admin');
 define('backend_password', '0123456789');
 
 
-define('routes', [
-	'' => ['' => 'main'],
-	'service' => ['' => 'service'],
-	'inspect' => ['' => 'list', 'add' => 'edit', 'edit' => 'edit'],
-	'userland' => ['resume' => 'resume', 'history' => 'history', 'submit' => 'submit'],
-	'test' => ['' => 'api_test'],
-	'login' => ['' => 'signin'],
-	'logout' => ['' => 'signout']
+define('routes', ['service', 'inspect', 'userland', 'test', 'login', 'logout']);
+
+define('rate_limit', [
+	'public' => ['routes' => ['userland']],
+	'restrict' => ['limit' => 3]
 ]);
 
 
@@ -32,3 +29,14 @@ define('db_password', 'password');
 define('db_table_prefix', '');
 
 // define('date_timezone', 'UTC');
+
+define('debug', false);
+
+
+// define('generator_ts', [
+// 	'ts_path' => __DIR__ . '/translations',
+// 	'read_db' => true,
+// 	'write_db' => true,
+// 	'read_file' => true,
+// 	'write_files' => true
+// ]);

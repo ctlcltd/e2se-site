@@ -13,14 +13,12 @@ define('backend_username', 'admin');
 define('backend_password', '0123456789');
 
 
-define('routes', [
-	'' => ['' => 'main' ],
-	// 'example' => ['' => 'example'],
-	'test' => ['' => 'api_test'],
-	'login' => ['' => 'signin'],
-	'logout' => ['' => 'signout']
-]);
+define('routes', ['test', 'login', 'logout'/*, 'example'*/]);
 
+// define('rate_limit', [
+// 	'public' => ['time' => 1, 'limit' => 5, 'stop' => 360, 'routes' => ['example']],
+// 	'restrict' => ['time' => 30, 'limit' => 3, 'stop' => 180]
+// ]);
 
 define('db_driver', 'sqlite');
 define('db_host', 'localhost');
@@ -30,3 +28,5 @@ define('db_password', 'password');
 define('db_table_prefix', '');
 
 // define('date_timezone', 'UTC');
+
+define('debug', false);
