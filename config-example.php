@@ -13,7 +13,7 @@ define('backend_username', 'admin');
 define('backend_password', '0123456789');
 
 
-define('routes', ['service', 'inspect', 'userland', 'test', 'login', 'logout']);
+define('routes', ['service', 'inspect', 'userland', 'task', 'test', 'login', 'logout']);
 
 define('rate_limit', [
 	'public' => ['routes' => ['userland']],

@@ -28,6 +28,8 @@ function get_remote_addr() {
 		return $_SERVER['HTTP_CLIENT_IP'];
 	else if (! empty($_SERVER['HTTP_X_FORWARDED_FOR']))
 		return $_SERVER['HTTP_X_FORWARDED_FOR'];
+	else if (defined('CLI'))
+		return '0.0.0.0';
 	return $_SERVER['REMOTE_ADDR'];
 }
 
@@ -185,7 +187,34 @@ function check_rate_limit(string $endpoint, bool $authorized) {
 	if (! $pass)
 		error(429);
 
-	return $pass;
+	return ! $pass;
+}
+
+function task_rate_limit() {
+	if (! defined('CLI'))
+		return error();
+
+	$time = strtotime('-1 hour');
+	$response = 0;
+	$dbh = NULL;
+
+	try {
+		$dbh = \api\db_connect();
+		$sth = \api\db_select($dbh, 'e2se_log', 'COUNT(*)', 'WHERE log_epoch<:log_epoch', ['log_epoch' => $time]);
+
+		if ($sth->fetchColumn()) {
+			\api\db_delete($dbh, 'e2se_log', 'WHERE log_epoch<:log_epoch', ['log_epoch' => $time]);
+
+			$response = 1;
+		}
+
+		$dbh = NULL;
+
+		\api\response(200, $response);
+	} catch (PDOException $e) {
+		$dbh = NULL;
+		dump($e);
+	}
 }
 
 function response(int $status, mixed $response = 0) {
@@ -266,6 +295,8 @@ if ($authorized) {
 } else {
 	if (! empty($_POST))
 		$request = (array) $_POST;
+	else if (defined('CLI'))
+		$request = getopt('', ['body:', 'call::', 'sub::', 'query::']);
 }
 
 // route
@@ -320,9 +351,6 @@ if ($endpoint == 'login' && $method == 'post') {
 	call_user_func("\app\\route_{$endpoint}", $authorized, $request, $method);
 
 }
-
-// 
-// forbidden 403
 
 deny(400);
 

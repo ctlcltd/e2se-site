@@ -44,8 +44,8 @@ function route_service($authorized, $request, $method) {
 }
 
 function route_userland($authorized, $request, $method) {
-	if (isset($request['call'])) {
-		if ($method == 'post' && in_array($request['call'], ['resume', 'history', 'submit'])) {
+	if (isset($request['call']) && $method == 'post') {
+		if (in_array($request['call'], ['resume', 'history', 'submit'])) {
 			require_once __DIR__ . '/' . 'userland.php';
 
 			\api\deny(502);
@@ -64,6 +64,14 @@ function route_inspect($authorized, $request, $method) {
 		\api\response(200);
 	} else {
 		\api\deny(401);
+	}
+}
+
+function route_task($authorized, $request, $method) {
+	if (isset($request['call']) && defined('CLI')) {
+		if ($request['call'] === 'rate-limit') {
+			\api\task_rate_limit();
+		}
 	}
 }
 
