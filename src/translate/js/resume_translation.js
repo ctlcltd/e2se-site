@@ -45,7 +45,7 @@ function resume_translation(token) {
         localStorage.setItem('_resume', token);
         localStorage.setItem('_lock', 'resume');
 
-        message('edit-prev');
+        message('editprev');
       }
     } catch (err) {
       console.error('allowResume', err);
@@ -56,11 +56,11 @@ function resume_translation(token) {
     page.removeAttribute('data-loading');
 
     try {
+      checker(xhr.status);
+
       const obj = JSON.parse(xhr.response);
 
-      if (! obj.status) {
-        return error(xhr);
-      }
+      checker(obj.status);
 
       let success = false;
 
@@ -90,17 +90,19 @@ function resume_translation(token) {
           localStorage.setItem(tr_key, JSON.stringify(translation));
           success = true;
         } else {
-          throw 'An error occurred';
+          throw except(1);
         }
       } else {
-        throw 'An error occurred';
+        throw except(1);
       }
 
       if (success) {
         message('resumed');
       }
     } catch (err) {
-      message('error');
+      page.removeAttribute('data-loading');
+
+      fault(err);
 
       console.error('loader', err);
     }
@@ -111,13 +113,13 @@ function resume_translation(token) {
 
     page.removeAttribute('data-loading');
 
-    message('request-error');
+    message('reqerr');
   }
 
   if (validate_token(token)) {
     allowResume();
   } else {
-    throw 'Not a valid token';
+    throw except(12);
   }
 }
 
@@ -149,7 +151,7 @@ function form_token() {
 function your_token() {
   try {
     if (localStorage.getItem('_token')) {
-      message('your-token');
+      message('token');
     }
   } catch (err) {
     console.error('your_token', err);
@@ -158,10 +160,10 @@ function your_token() {
 
 function token_box_html(type) {
   try {
-    const token = localStorage.getItem('your-token');
+    const token = localStorage.getItem('token');
 
     if (! validate_token(token)) {
-      throw 'Not a valid token';
+      throw except(12);
     }
 
     let html = '';

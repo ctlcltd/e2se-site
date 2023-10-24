@@ -14,7 +14,7 @@ use \PDO;
 use \PDOException;
 
 if (! defined('API')) {
-	http_response_code(503);
+	http_response_code(403);
 	exit;
 }
 
@@ -262,7 +262,7 @@ function ul_submit(PDO $dbh, array $request) {
 
 		$content['utr'] = sanitize_text($data['translation']);
 
-		$user = $data['user'] ? sanitize_text($data['user']) : '';
+		$user = isset($data['user']) ? sanitize_text($data['user']) : '';
 
 		$saved = [
 			'saved_token' => $token,

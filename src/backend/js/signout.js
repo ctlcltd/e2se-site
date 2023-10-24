@@ -16,7 +16,7 @@ function signout() {
     console.warn(xhr);
   }
 
-  const request = api_request('post', 'logout', '', obj);
+  const request = api_request('post', 'logout');
 
   request.then(loader).catch(error);
 

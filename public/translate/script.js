@@ -366,7 +366,7 @@ function edit_translate(uri, search) {
           if (storage = localStorage.getItem(tr_key)) {
             storage = JSON.parse(storage);
             if (Object.keys(storage).length > 1) {
-              message('edit-prev');
+              message('editprev');
               break;
             }
           }
@@ -549,16 +549,22 @@ function edit_translate(uri, search) {
 
   function loader(xhr) {
     try {
+      checker(xhr.status);
+
       const obj = JSON.parse(xhr.response);
 
       disambiguation(obj);
       render_table(obj);
     } catch (err) {
+      fault(err);
+
       console.error('loader', err);
     }
   }
 
   function error(xhr) {
+    message('reqerr');
+
     console.warn(xhr);
   }
 
@@ -657,7 +663,7 @@ function add_language(uri, search) {
         if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
           if (Object.keys(storage).length > 1) {
-            message('edit-prev');
+            message('editprev');
             break;
           }
         }
@@ -687,15 +693,16 @@ function add_language(uri, search) {
       if (storage) {
         storage = JSON.parse(storage);
       } else {
-        throw 'Storage Error';
+        throw except(2);
       }
       if (lang in storage) {
-        message('lang-exists');
+        message('langexists');
 
-        throw 'Language already exists';
+        throw except(13);
       }
     } catch (err) {
       console.error('submit', err);
+
       return;
     }
 
@@ -981,7 +988,7 @@ function send_translation() {
       }
 
       if (! translation) {
-        throw 'Not a valid translation submit';
+        throw except(10);
       }
 
       let data = {};
@@ -991,7 +998,7 @@ function send_translation() {
       } else if (lang_guid) {
         data['lang'] = lang_guid;
       } else {
-        throw 'Not a valid submit';
+        throw except(8);
       }
 
       data['translation'] = translation;
@@ -1026,11 +1033,11 @@ function send_translation() {
     form.removeAttribute('data-loading');
 
     try {
+      checker(xhr.status);
+
       const obj = JSON.parse(xhr.response);
 
-      if (! obj.status) {
-        return error(xhr);
-      }
+      checker(obj.status);
 
       if (obj.data) {
         const data = obj.data;
@@ -1039,19 +1046,21 @@ function send_translation() {
           reset_data(false);
 
           localStorage.setItem('_token', 1);
-          localStorage.setItem('your-token', data.token);
+          localStorage.setItem('token', data.token);
 
-          message('your-token', '', 1);
+          message('token', '', 1);
         } else {
-          throw 'An error occurred';
+          throw except(1);
         }
       } else {
-        throw 'An error occurred';
+        throw except(1);
       }
     } catch (err) {
-      message('error');
+      form.removeAttribute('data-loading');
 
-      console.error('loader', err);
+      fault(err);
+
+      console.error('sent', err);
     }
 
     send_unlock();
@@ -1063,7 +1072,7 @@ function send_translation() {
 
     form.removeAttribute('data-loading');
 
-    message('request-error');
+    message('reqerr');
 
     send_unlock();
   }
@@ -1284,7 +1293,7 @@ function resume_translation(token) {
         localStorage.setItem('_resume', token);
         localStorage.setItem('_lock', 'resume');
 
-        message('edit-prev');
+        message('editprev');
       }
     } catch (err) {
       console.error('allowResume', err);
@@ -1295,11 +1304,11 @@ function resume_translation(token) {
     page.removeAttribute('data-loading');
 
     try {
+      checker(xhr.status);
+
       const obj = JSON.parse(xhr.response);
 
-      if (! obj.status) {
-        return error(xhr);
-      }
+      checker(obj.status);
 
       let success = false;
 
@@ -1329,17 +1338,19 @@ function resume_translation(token) {
           localStorage.setItem(tr_key, JSON.stringify(translation));
           success = true;
         } else {
-          throw 'An error occurred';
+          throw except(1);
         }
       } else {
-        throw 'An error occurred';
+        throw except(1);
       }
 
       if (success) {
         message('resumed');
       }
     } catch (err) {
-      message('error');
+      page.removeAttribute('data-loading');
+
+      fault(err);
 
       console.error('loader', err);
     }
@@ -1350,13 +1361,13 @@ function resume_translation(token) {
 
     page.removeAttribute('data-loading');
 
-    message('request-error');
+    message('reqerr');
   }
 
   if (validate_token(token)) {
     allowResume();
   } else {
-    throw 'Not a valid token';
+    throw except(12);
   }
 }
 
@@ -1388,7 +1399,7 @@ function form_token() {
 function your_token() {
   try {
     if (localStorage.getItem('_token')) {
-      message('your-token');
+      message('token');
     }
   } catch (err) {
     console.error('your_token', err);
@@ -1397,10 +1408,10 @@ function your_token() {
 
 function token_box_html(type) {
   try {
-    const token = localStorage.getItem('your-token');
+    const token = localStorage.getItem('token');
 
     if (! validate_token(token)) {
-      throw 'Not a valid token';
+      throw except(12);
     }
 
     let html = '';
@@ -1451,14 +1462,14 @@ function message(id, text, type, buttons) {
     let html;
 
     if (id == 'storage') {
-      html = '<p><b>WebStorage is required</b></p><p>localStorage seems to be unavailable<br>Please reload your browser and try again</p>';
-    } else if (id == 'lang-exists') {
+      html = '<p><b>WebStorage is required</b></p><p>localStorage seems to be unavailable</p><p>Please reload your browser and try again</p>';
+    } else if (id == 'langexists') {
       html = '<p>Language already exists</p>';
       type = 0;
-    } else if (id == 'request-error') {
+    } else if (id == 'reqerr') {
       html = '<p><b>An error occurred<b></p><p>Please try again</p>';
       type = 0;
-    } else if (id == 'edit-prev') {
+    } else if (id == 'editprev') {
       html = '<p>You have a previous translation edit that was not sent</p><p><b>Do you want to SUBMIT or DISCARD the previous edit?</b></p>';
       type = 2;
       buttons = [
@@ -1466,7 +1477,7 @@ function message(id, text, type, buttons) {
         {'label': 'Discard', 'class': 'secondary tiny', 'callback': discard_edit},
         {'label': 'Cancel', 'class': 'tiny', 'callback': close}
       ];
-    } else if (id == 'your-token') {
+    } else if (id == 'token') {
       html = token_box_html(type);
       if (! html) {
         return message('error');
@@ -1488,6 +1499,9 @@ function message(id, text, type, buttons) {
     } else if (id == 'resumed') {
       html = '<p><b>Session resumed!<b></p>';
       type = 1;
+    } else if (id == 'busy') {
+      html = '<p><b>Service is busy</b></p><p>You have reach the send limit quota</p><p>Please wait few seconds and try again</p>';
+      type = 0;
     } else if (id == 'error') {
       html = '<p><b>An error occurred<b></p>';
       type = 0;
@@ -1549,6 +1563,40 @@ function message(id, text, type, buttons) {
   msg = box;
 }
 
+function fault(err) {
+  switch (err) {
+    case 429:
+    case 503:
+      message('busy');
+    break;
+    default:
+      message('error');
+  }
+}
+
+function except(id) {
+  switch (id) {
+    case 1: return 'An error occurred';
+    case 2: return 'Storage Error';
+    case 3: return 'Wrong base path';
+    case 4: return 'Wrong URI Route';
+    case 6: return 'No Function Route';
+    case 8: return 'Not a valid submit';
+    case 10: return 'Not a valid translation submit';
+    case 12: return 'Not a valid token';
+    case 13: return 'Language already exists';
+  }
+}
+
+function checker(status) {
+  if (! status) {
+    throw except(1);
+  }
+  if (status > 399) {
+    throw status;
+  }
+}
+
 function what_this() {
   const what_this_areas = document.querySelectorAll('.what-this-area');
   if (what_this_areas.length) {
@@ -1585,17 +1633,23 @@ function reset_data(front) {
 
   function done(xhr) {
     try {
+      checker(xhr.status);
+
       const obj = JSON.parse(xhr.response);
 
       languages = obj;
 
       localStorage.setItem('languages', JSON.stringify(languages));
     } catch (err) {
+      fault(err);
+
       console.error('done', err);
     }
   }
 
   function error(xhr) {
+    message('reqerr');
+
     console.warn(xhr);
   }
 
@@ -1733,7 +1787,7 @@ function route(href, title) {
   title = title ?? document.title;
 
   if (href.indexOf(basepath) === -1) {
-    throw 'Wrong base path';
+    throw except(3);
   }
 
   const url = href.replace(window.location.protocol + '//' + window.location.host, '');
@@ -1760,10 +1814,10 @@ function route(href, title) {
   }
 
   if (uri != undefined && uri in routes === false) {
-    throw 'Wrong URI Route';
+    throw except(4);
   }
   if (typeof routes[uri] != 'function') {
-    throw 'No Function Route';
+    throw except(6);
   }
 
   const e = new Event('unload');
@@ -1795,7 +1849,7 @@ function init() {
         localStorage.setItem('_time', new Date().toJSON());
       }
       if (! localStorage.getItem('_time')) {
-        throw 'Storage Error';
+        throw except(2);
       }
     } catch (err) {
       console.error('requiredStorage', err);
@@ -1873,6 +1927,8 @@ function init() {
 
   function loader(xhr) {
     try {
+      checker(xhr.status);
+
       const obj = JSON.parse(xhr.response);
 
       languages = obj;
@@ -1881,6 +1937,8 @@ function init() {
 
       localStorage.setItem('languages', JSON.stringify(languages));
     } catch (err) {
+      fault(err);
+
       console.error('loader', err);
     }
   }
@@ -1899,11 +1957,15 @@ function init() {
         request.then(loader).catch(error);
       }
     } catch (err) {
+      message('error');
+
       console.error('resume', err);
     }
   }
 
   function error(xhr) {
+    message('reqerr');
+
     console.warn(xhr);
   }
 

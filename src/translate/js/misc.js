@@ -22,14 +22,14 @@ function message(id, text, type, buttons) {
     let html;
 
     if (id == 'storage') {
-      html = '<p><b>WebStorage is required</b></p><p>localStorage seems to be unavailable<br>Please reload your browser and try again</p>';
-    } else if (id == 'lang-exists') {
+      html = '<p><b>WebStorage is required</b></p><p>localStorage seems to be unavailable</p><p>Please reload your browser and try again</p>';
+    } else if (id == 'langexists') {
       html = '<p>Language already exists</p>';
       type = 0;
-    } else if (id == 'request-error') {
+    } else if (id == 'reqerr') {
       html = '<p><b>An error occurred<b></p><p>Please try again</p>';
       type = 0;
-    } else if (id == 'edit-prev') {
+    } else if (id == 'editprev') {
       html = '<p>You have a previous translation edit that was not sent</p><p><b>Do you want to SUBMIT or DISCARD the previous edit?</b></p>';
       type = 2;
       buttons = [
@@ -37,7 +37,7 @@ function message(id, text, type, buttons) {
         {'label': 'Discard', 'class': 'secondary tiny', 'callback': discard_edit},
         {'label': 'Cancel', 'class': 'tiny', 'callback': close}
       ];
-    } else if (id == 'your-token') {
+    } else if (id == 'token') {
       html = token_box_html(type);
       if (! html) {
         return message('error');
@@ -59,6 +59,9 @@ function message(id, text, type, buttons) {
     } else if (id == 'resumed') {
       html = '<p><b>Session resumed!<b></p>';
       type = 1;
+    } else if (id == 'busy') {
+      html = '<p><b>Service is busy</b></p><p>You have reach the send limit quota</p><p>Please wait few seconds and try again</p>';
+      type = 0;
     } else if (id == 'error') {
       html = '<p><b>An error occurred<b></p>';
       type = 0;
@@ -120,6 +123,40 @@ function message(id, text, type, buttons) {
   msg = box;
 }
 
+function fault(err) {
+  switch (err) {
+    case 429:
+    case 503:
+      message('busy');
+    break;
+    default:
+      message('error');
+  }
+}
+
+function except(id) {
+  switch (id) {
+    case 1: return 'An error occurred';
+    case 2: return 'Storage Error';
+    case 3: return 'Wrong base path';
+    case 4: return 'Wrong URI Route';
+    case 6: return 'No Function Route';
+    case 8: return 'Not a valid submit';
+    case 10: return 'Not a valid translation submit';
+    case 12: return 'Not a valid token';
+    case 13: return 'Language already exists';
+  }
+}
+
+function checker(status) {
+  if (! status) {
+    throw except(1);
+  }
+  if (status > 399) {
+    throw status;
+  }
+}
+
 function what_this() {
   const what_this_areas = document.querySelectorAll('.what-this-area');
   if (what_this_areas.length) {
@@ -156,17 +193,23 @@ function reset_data(front) {
 
   function done(xhr) {
     try {
+      checker(xhr.status);
+
       const obj = JSON.parse(xhr.response);
 
       languages = obj;
 
       localStorage.setItem('languages', JSON.stringify(languages));
     } catch (err) {
+      fault(err);
+
       console.error('done', err);
     }
   }
 
   function error(xhr) {
+    message('reqerr');
+
     console.warn(xhr);
   }
 

@@ -52,7 +52,7 @@ function send_translation() {
       }
 
       if (! translation) {
-        throw 'Not a valid translation submit';
+        throw except(10);
       }
 
       let data = {};
@@ -62,7 +62,7 @@ function send_translation() {
       } else if (lang_guid) {
         data['lang'] = lang_guid;
       } else {
-        throw 'Not a valid submit';
+        throw except(8);
       }
 
       data['translation'] = translation;
@@ -97,11 +97,11 @@ function send_translation() {
     form.removeAttribute('data-loading');
 
     try {
+      checker(xhr.status);
+
       const obj = JSON.parse(xhr.response);
 
-      if (! obj.status) {
-        return error(xhr);
-      }
+      checker(obj.status);
 
       if (obj.data) {
         const data = obj.data;
@@ -110,19 +110,21 @@ function send_translation() {
           reset_data(false);
 
           localStorage.setItem('_token', 1);
-          localStorage.setItem('your-token', data.token);
+          localStorage.setItem('token', data.token);
 
-          message('your-token', '', 1);
+          message('token', '', 1);
         } else {
-          throw 'An error occurred';
+          throw except(1);
         }
       } else {
-        throw 'An error occurred';
+        throw except(1);
       }
     } catch (err) {
-      message('error');
+      form.removeAttribute('data-loading');
 
-      console.error('loader', err);
+      fault(err);
+
+      console.error('sent', err);
     }
 
     send_unlock();
@@ -134,7 +136,7 @@ function send_translation() {
 
     form.removeAttribute('data-loading');
 
-    message('request-error');
+    message('reqerr');
 
     send_unlock();
   }

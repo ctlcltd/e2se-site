@@ -57,7 +57,7 @@ function add_language(uri, search) {
         if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
           if (Object.keys(storage).length > 1) {
-            message('edit-prev');
+            message('editprev');
             break;
           }
         }
@@ -87,15 +87,16 @@ function add_language(uri, search) {
       if (storage) {
         storage = JSON.parse(storage);
       } else {
-        throw 'Storage Error';
+        throw except(2);
       }
       if (lang in storage) {
-        message('lang-exists');
+        message('langexists');
 
-        throw 'Language already exists';
+        throw except(13);
       }
     } catch (err) {
       console.error('submit', err);
+
       return;
     }
 

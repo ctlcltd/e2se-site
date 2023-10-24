@@ -184,6 +184,8 @@ function check_rate_limit(string $endpoint, bool $authorized) {
 
 	if (! $pass)
 		error(429);
+
+	return $pass;
 }
 
 function response(int $status, mixed $response = 0) {
@@ -197,7 +199,7 @@ function response(int $status, mixed $response = 0) {
 	exit;
 }
 
-function error(int $status = 503) {
+function error(int $status = 403) {
 	http_response_code($status);
 	exit;
 }

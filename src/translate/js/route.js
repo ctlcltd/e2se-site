@@ -14,7 +14,7 @@ function route(href, title) {
   title = title ?? document.title;
 
   if (href.indexOf(basepath) === -1) {
-    throw 'Wrong base path';
+    throw except(3);
   }
 
   const url = href.replace(window.location.protocol + '//' + window.location.host, '');
@@ -41,10 +41,10 @@ function route(href, title) {
   }
 
   if (uri != undefined && uri in routes === false) {
-    throw 'Wrong URI Route';
+    throw except(4);
   }
   if (typeof routes[uri] != 'function') {
-    throw 'No Function Route';
+    throw except(6);
   }
 
   const e = new Event('unload');

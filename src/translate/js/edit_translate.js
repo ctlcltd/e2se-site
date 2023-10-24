@@ -176,7 +176,7 @@ function edit_translate(uri, search) {
           if (storage = localStorage.getItem(tr_key)) {
             storage = JSON.parse(storage);
             if (Object.keys(storage).length > 1) {
-              message('edit-prev');
+              message('editprev');
               break;
             }
           }
@@ -359,16 +359,22 @@ function edit_translate(uri, search) {
 
   function loader(xhr) {
     try {
+      checker(xhr.status);
+
       const obj = JSON.parse(xhr.response);
 
       disambiguation(obj);
       render_table(obj);
     } catch (err) {
+      fault(err);
+
       console.error('loader', err);
     }
   }
 
   function error(xhr) {
+    message('reqerr');
+
     console.warn(xhr);
   }
 

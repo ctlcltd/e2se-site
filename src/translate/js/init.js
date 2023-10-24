@@ -19,7 +19,7 @@ function init() {
         localStorage.setItem('_time', new Date().toJSON());
       }
       if (! localStorage.getItem('_time')) {
-        throw 'Storage Error';
+        throw except(2);
       }
     } catch (err) {
       console.error('requiredStorage', err);
@@ -97,6 +97,8 @@ function init() {
 
   function loader(xhr) {
     try {
+      checker(xhr.status);
+
       const obj = JSON.parse(xhr.response);
 
       languages = obj;
@@ -105,6 +107,8 @@ function init() {
 
       localStorage.setItem('languages', JSON.stringify(languages));
     } catch (err) {
+      fault(err);
+
       console.error('loader', err);
     }
   }
@@ -123,11 +127,15 @@ function init() {
         request.then(loader).catch(error);
       }
     } catch (err) {
+      message('error');
+
       console.error('resume', err);
     }
   }
 
   function error(xhr) {
+    message('reqerr');
+
     console.warn(xhr);
   }
 

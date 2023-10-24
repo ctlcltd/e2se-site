@@ -9,7 +9,7 @@
 namespace app;
 
 if (! defined('API')) {
-	http_response_code(503);
+	http_response_code(403);
 	exit;
 }
 
