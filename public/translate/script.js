@@ -109,21 +109,21 @@ function main() {
       thead.setAttribute('data-rendered', '');
     }
 
-    for (const idx in data) {
-      const guid = data[idx]['guid'].toString();
-      const lang_code = data[idx]['code'].toString();
-      const lang_type = data[idx]['type'].toString();
-      const lang_dir = data[idx]['dir'].toString();
+    for (const i in data) {
+      const guid = data[i]['guid'].toString();
+      const lang_code = data[i]['code'].toString();
+      const lang_type = data[i]['type'].toString();
+      const lang_dir = data[i]['dir'].toString();
 
       const el_tr = tbody.querySelector('[data-guid="' + guid + '"]');
       const tr = el_tr ? el_tr : doc.createElement('tr');
 
       for (const field in fields) {
         if (field in fields) {
-          const text = data[idx][field];
+          const text = data[i][field];
 
-          const i = Object.keys(fields).indexOf(field);
-          const el_td = tr.children.item(i);
+          const td_i = Object.keys(fields).indexOf(field);
+          const el_td = tr.children.item(td_i);
 
           const td = el_td ?? doc.createElement('td');
 
@@ -131,7 +131,7 @@ function main() {
             td._parent = tr;
             render_row(td, field, text);
             td.setAttribute('data-rendered', '');
-          } else if (field in data[idx]) {
+          } else if (field in data[i]) {
             render_row(td, field, text);
           }
 
@@ -237,7 +237,7 @@ function edit_translate(uri, search) {
   const thead = table.querySelector('thead');
   const tbody = table.querySelector('tbody');
 
-  let disambigua = {};
+  let tdata = {};
 
   const lang = search['lang'];
   let lang_code;
@@ -277,11 +277,11 @@ function edit_translate(uri, search) {
 
   const request = source_request(ts_src);
 
-  function disambiguation(data) {
-      if (Object.keys(disambigua).length == 0) {
-        for (const idx in data) {
-          const guid = data[idx]['guid'];
-          disambigua[guid] = idx;
+  function index(data) {
+      if (Object.keys(tdata).length == 0) {
+        for (const i in data) {
+          const guid = data[i]['guid'];
+          tdata[guid] = parseInt(i);
         }
       }
   }
@@ -290,9 +290,9 @@ function edit_translate(uri, search) {
     const el = evt.target;
 
     if (el.hasAttribute('data-scroll-row')) {
-      const idx = el.getAttribute('data-scroll-row');
-      const i = parseInt(idx) - 1;
-      const tr = tbody.rows.item(i);
+      const i = el.getAttribute('data-scroll-row');
+      const tr_i = parseInt(i) - 1;
+      const tr = tbody.rows.item(tr_i);
       const offset = tr.previousElementSibling ? tr.previousElementSibling.offsetTop : tr.offsetTop;
 
       scrollTo(0, offset);
@@ -300,6 +300,37 @@ function edit_translate(uri, search) {
       setTimeout(function() {
         tr.classList.remove('highlight');
       }, 2e3);
+    }
+  }
+
+  function sortByColumns(evt) {
+    const el = evt.target;
+
+    if (el.classList.contains('sort')) {
+      const th = el.parentElement;
+      let sort = th.getAttribute('data-sort-column');
+      let column = -1;
+      let order = 0;
+      if (sort != '1') {
+        column = th.cellIndex;
+        order = sort == '' ? 0 : ! parseInt(sort);
+        sort = order ? 1 : 0;
+      } else {
+        sort = '';
+      }
+
+      for (const cell of thead.rows[0].cells) {
+        cell.setAttribute('data-sort-column', '');
+      }
+
+      th.setAttribute('data-sort-column', sort);
+      sort_table(column, order);
+
+      try {
+        localStorage.setItem('_tristate', JSON.stringify([column, order]));
+      } catch (err) {
+        console.error('sortByColumns', err);
+      }
     }
   }
 
@@ -428,7 +459,7 @@ function edit_translate(uri, search) {
         td._element = toggler;
 
         for (const guid of obj) {
-          const i = disambigua[guid];
+          const i = tdata[guid];
           const item = doc.createElement('li');
           const anchor = doc.createElement('a');
           anchor.href = 'javascript:';
@@ -492,9 +523,22 @@ function edit_translate(uri, search) {
       }
       thead.setAttribute('data-rendered', '');
     }
+    if (! table.hasAttribute('data-sortable')) {
+      let i = 0;
+      for (const field in fields) {
+        const th = thead.rows[0].cells.item(i++);
+        const button = document.createElement('button');
+        button.className = 'sort';
+        button.innerText = fields[field] ?? field;
+        th.setAttribute('data-sort-column', '');
+        th.innerText = '';
+        th.append(button);
+      }
+      table.setAttribute('data-sortable', '');
+    }
 
-    for (const idx in data) {
-      const guid = data[idx]['guid'].toString();
+    for (const i in data) {
+      const guid = data[i]['guid'].toString();
       // completed + revised
 
       const el_tr = tbody.querySelector('[data-guid="' + guid + '"]');
@@ -502,10 +546,10 @@ function edit_translate(uri, search) {
 
       for (const field in fields) {
         if (field in fields) {
-          const obj = data[idx][field];
+          const obj = data[i][field];
 
-          const i = Object.keys(fields).indexOf(field);
-          const el_td = tr.children.item(i);
+          const td_i = Object.keys(fields).indexOf(field);
+          const el_td = tr.children.item(td_i);
 
           const td = el_td ?? doc.createElement('td');
 
@@ -515,7 +559,7 @@ function edit_translate(uri, search) {
             td.setAttribute('data-rendered', '');
           } else if (field == 'msg_tr' && storage[guid]) {
             render_row(td, field, storage[guid]);
-          } else if (field in data[idx] || lang_user) {
+          } else if (field in data[i] || lang_user) {
             render_row(td, field, obj);
           }
 
@@ -533,7 +577,7 @@ function edit_translate(uri, search) {
         }
 
         tr.setAttribute('data-guid', guid);
-        tr.title = parseInt(idx);
+        tr.title = parseInt(i);
 
         tbody.append(tr);
       }
@@ -547,14 +591,118 @@ function edit_translate(uri, search) {
     table.classList.remove('placeholder');
   }
 
+  function sortByColumns(evt) {
+    const el = evt.target;
+
+    if (el.classList.contains('sort')) {
+      const th = el.parentElement;
+      let sort = th.getAttribute('data-sort-column');
+      let column = -1;
+      let order = 0;
+      if (sort != '1') {
+        column = th.cellIndex;
+        order = sort == '' ? 0 : ! parseInt(sort);
+        sort = order ? 1 : 0;
+      } else {
+        sort = '';
+      }
+
+      for (const cell of thead.rows[0].cells) {
+        cell.setAttribute('data-sort-column', '');
+      }
+      th.setAttribute('data-sort-column', sort);
+
+      sort_table(column, order);
+
+      try {
+        localStorage.setItem('_tristate', JSON.stringify([column, order]));
+      } catch (err) {
+        console.error('sortByColumns', err);
+      }
+    }
+  }
+
+  function resume_sort() {
+    try {
+      let storage = localStorage.getItem('_tristate');
+      let column = 7;
+      let order = 1;
+
+      if (storage) {
+        const obj = JSON.parse(storage);
+        column = obj[0];
+        order = obj[1];
+      }
+
+      if (column != -1 && thead.rows[0].cells.item(column)) {
+        const th = thead.rows[0].cells.item(column);
+        const sort = order ? 1 : 0;
+        th.setAttribute('data-sort-column', sort);
+
+        sort_table(column, order);
+
+        if (! storage) {
+          localStorage.setItem('_tristate', JSON.stringify([column, order]));
+        }
+      }
+    } catch (err) {
+      console.error('resume_sort', err);
+    }
+  }
+
+  function sort_table(column, order) {
+    let rows = [];
+    let items = [];
+    let i = 0;
+
+    if (column != -1) {
+      for (const row of tbody.rows) {
+        rows.push(row);
+        let val = row.cells.item(column).textContent;
+        if (isNaN(val)) {
+          val = val.trim().toLowerCase().replace('&', '');
+        } else {
+          val = val ? parseFloat(val) : 0;
+        }
+        items.push([i++, val]);
+      }
+    } else {
+      for (const row of tbody.rows) {
+        rows.push(row);
+        const val = parseInt(row.title);
+        items.push([i++, val]);
+      }
+    }
+
+    sort(items, order);
+
+    while (tbody.firstChild) {
+      tbody.removeChild(tbody.lastChild);
+    }
+    for (const i in items) {
+      tbody.appendChild(rows[items[i][0]]);
+    }
+  }
+
+  function sort(items, order) {
+    items.sort(function(a, b) {
+      if (typeof a[1] == 'string' && typeof b[1] == 'string') {
+        return order ? b[1].localeCompare(a[1]) : a[1].localeCompare(b[1]);
+      } else {
+        return order ? b[1] - a[1] : a[1] - b[1];
+      }
+    });
+  }
+
   function loader(xhr) {
     try {
       checker(xhr.status);
 
       const obj = JSON.parse(xhr.response);
 
-      disambiguation(obj);
+      index(obj);
       render_table(obj);
+      resume_sort();
     } catch (err) {
       fault(err);
 
@@ -592,6 +740,7 @@ function edit_translate(uri, search) {
     tbody.addEventListener('click', scrollToRow);
     tbody.addEventListener('input', _textInput);
     tbody.addEventListener('input', _allowSubmit);
+    thead.addEventListener('click', sortByColumns);
     window.addEventListener('scroll', _scrollBody);
   }
 
@@ -601,6 +750,7 @@ function edit_translate(uri, search) {
     tbody.removeEventListener('click', scrollToRow);
     tbody.removeEventListener('input', _textInput);
     tbody.removeEventListener('input', _allowSubmit);
+    thead.addEventListener('click', sortByColumns);
     window.removeEventListener('scroll', _scrollBody);
     page.removeEventListener('unload', unload);
   }

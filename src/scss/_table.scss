@@ -7,6 +7,7 @@
 
 table {
   border-collapse: collapse;
+  &[data-sortable] th { padding: 0; }
 }
 th {
   background: $th-background;
@@ -29,6 +30,35 @@ tbody tr {
   &[data-href]:hover td { background: $tr-href-background-hover; }
   &[data-href]:focus td { background: $tr-href-background-focus; }
   &.highlight { background: $tr-background-highlight; }
+}
+
+thead button {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+  font: inherit;
+  text-align: inherit;
+  text-transform: inherit;
+  color: inherit;
+  background: inherit;
+}
+th[data-sort-column] button:after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0;
+  display: inline-block;
+  margin: 0;
+  margin-top: 6px;
+  margin-inline-end: 3px;
+  border: 6px solid transparent;
+}
+th[data-sort-column="0"] button:after {
+  margin-top: 0;
+  border-top-color: transparent;
+  border-bottom-color: currentColor;
+}
+th[data-sort-column="1"] button:after {
+  border-top-color: currentColor;
 }
 
 .table {

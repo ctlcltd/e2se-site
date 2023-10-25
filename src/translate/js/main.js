@@ -97,21 +97,21 @@ function main() {
       thead.setAttribute('data-rendered', '');
     }
 
-    for (const idx in data) {
-      const guid = data[idx]['guid'].toString();
-      const lang_code = data[idx]['code'].toString();
-      const lang_type = data[idx]['type'].toString();
-      const lang_dir = data[idx]['dir'].toString();
+    for (const i in data) {
+      const guid = data[i]['guid'].toString();
+      const lang_code = data[i]['code'].toString();
+      const lang_type = data[i]['type'].toString();
+      const lang_dir = data[i]['dir'].toString();
 
       const el_tr = tbody.querySelector('[data-guid="' + guid + '"]');
       const tr = el_tr ? el_tr : doc.createElement('tr');
 
       for (const field in fields) {
         if (field in fields) {
-          const text = data[idx][field];
+          const text = data[i][field];
 
-          const i = Object.keys(fields).indexOf(field);
-          const el_td = tr.children.item(i);
+          const td_i = Object.keys(fields).indexOf(field);
+          const el_td = tr.children.item(td_i);
 
           const td = el_td ?? doc.createElement('td');
 
@@ -119,7 +119,7 @@ function main() {
             td._parent = tr;
             render_row(td, field, text);
             td.setAttribute('data-rendered', '');
-          } else if (field in data[idx]) {
+          } else if (field in data[i]) {
             render_row(td, field, text);
           }
 

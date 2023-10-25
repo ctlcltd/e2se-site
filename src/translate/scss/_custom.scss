@@ -23,6 +23,14 @@ main > div:first-child {
   padding: 1.5rem 0 .5rem;
 }
 
+.beta {
+  padding: 0 .1rem;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: normal;
+  vertical-align: sub;
+}
+
 p {
   margin: 0 0 1rem;
 }
