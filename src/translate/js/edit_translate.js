@@ -100,16 +100,17 @@ function edit_translate(uri, search) {
     const el = evt.target;
 
     if (el.hasAttribute('data-scroll-row')) {
-      const i = el.getAttribute('data-scroll-row');
-      const tr_i = parseInt(i) - 1;
-      const tr = tbody.rows.item(tr_i);
-      const offset = tr.previousElementSibling ? tr.previousElementSibling.offsetTop : tr.offsetTop;
+      const guid = el.getAttribute('data-scroll-row');
+      const tr = tbody.querySelector('[data-guid="' + guid + '"]');
+      if (tr) {
+        const offset = tr.previousElementSibling ? tr.previousElementSibling.offsetTop : tr.offsetTop;
 
-      scrollTo(0, offset);
-      tr.classList.add('highlight');
-      setTimeout(function() {
-        tr.classList.remove('highlight');
-      }, 2e3);
+        scrollTo(0, offset);
+        tr.classList.add('highlight');
+        setTimeout(function() {
+          tr.classList.remove('highlight');
+        }, 2e3);
+      }
     }
   }
 
@@ -274,7 +275,7 @@ function edit_translate(uri, search) {
           const anchor = doc.createElement('a');
           anchor.href = 'javascript:';
           anchor.innerText = i.toString();
-          anchor.setAttribute('data-scroll-row', i);
+          anchor.setAttribute('data-scroll-row', guid);
           item.append(anchor);
           list.append(item);
         }
