@@ -1371,8 +1371,6 @@ function send_resume() {
   }
 }
 
-var recurr = 0;
-
 function get_token() {
   var w = 10;
   const a = [
@@ -1391,7 +1389,7 @@ function get_token() {
     let n;
     let i = rand(0, 3);
     if (i == 3 && rand(0, 1)) {
-      i = rand(0, 2);
+      i = rand(0, 3);
     }
     if (i == 3) {
       n = rand(0, 3);
