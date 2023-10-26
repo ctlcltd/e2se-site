@@ -1405,7 +1405,6 @@ function get_token() {
       break;
     } else {
       s = get_token();
-      recurr++;
     }
   }
 
