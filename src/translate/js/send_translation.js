@@ -305,9 +305,18 @@ function get_token() {
       n = Math.floor(Math.random() * a[i].length);
       n = a[i][n];
     } else {
+      //FIXME undefined reading '1'
       n = Math.floor((Math.random() * (a[i][1] - a[i][0] + 1)) + a[i][0]);
     }
     s += String.fromCharCode(n);
+  }
+
+  for (let i = 0; i != 5; i++) {
+    if (validate_token(s)) {
+      break;
+    } else {
+      s = get_token();
+    }
   }
 
   return s;

@@ -1391,9 +1391,18 @@ function get_token() {
       n = Math.floor(Math.random() * a[i].length);
       n = a[i][n];
     } else {
+      //FIXME undefined reading '1'
       n = Math.floor((Math.random() * (a[i][1] - a[i][0] + 1)) + a[i][0]);
     }
     s += String.fromCharCode(n);
+  }
+
+  for (let i = 0; i != 5; i++) {
+    if (validate_token(s)) {
+      break;
+    } else {
+      s = get_token();
+    }
   }
 
   return s;
@@ -1591,7 +1600,43 @@ function token_box_dismiss() {
 }
 
 function validate_token(token) {
-  return /[a-zA-Z0-9$&=@]{10}/g.test(token);
+  if (! (typeof token == 'string' && token.length == 10 && /[a-zA-Z0-9$&=@]{10}/.test(token))) {
+    return false;
+  }
+
+  let m = 0;
+
+  /[a-z]{2}/.test(token) && m++;
+  /[A-Z]{2}/.test(token) && m++;
+  /[0-9]{2}/.test(token) && m++;
+  /[$&=@]{2}/.test(token) && m++;
+
+  if (m > 2) {
+    return false;
+  }
+
+  m = 0;
+  /[a-z]/.test(token) && m++;
+  /[A-Z]/.test(token) && m++;
+  /[0-9]/.test(token) && m++;
+  /[$&=@]/.test(token) && m++;
+
+  if (m != 4) {
+    return false;
+  }
+
+  let o = [];
+  for (let i = 0; i < 10; i++) {
+    const char = token[i];
+    if (! o[char]) {
+      o[char] = 0;
+    }
+    o[char]++;
+  }
+
+  const e = Math.max(...Object.values(o));
+
+  return ! (e > 2);
 }
 
 
@@ -1805,6 +1850,7 @@ function reset_data(front) {
 
   try {
     const color = localStorage.getItem('preferred-color');
+    const _tristate = localStorage.getItem('_tristate');
 
     localStorage.clear();
 
@@ -1812,6 +1858,10 @@ function reset_data(front) {
 
     if (color == 'light' || color == 'dark') {
       localStorage.setItem('preferred-color', color);
+    }
+    if (_tristate) {
+      const obj = JSON.parse(_tristate);
+      localStorage.setItem('_tristate', JSON.stringify([parseInt(obj[0]), parseInt(obj[1])]));
     }
 
     request.then(done).catch(error);

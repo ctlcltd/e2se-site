@@ -37,11 +37,38 @@ function filter_request($value, $key) {
 }
 
 function validate_token(string $token) {
-	//FIXME &&&&&&&&&&
-	if (strlen($token) != 10 || ! preg_match('/[a-zA-Z0-9$&=@]{10}/', $token))
+	if (strlen($token) != 10 && ! preg_match('/[a-zA-Z0-9$&=@]{10}/', $token))
 		return false;
 
-	return true;
+	$m = 0;
+	preg_match('/[a-z]{2}/', $token) && $m++;
+	preg_match('/[A-Z]{2}/', $token) && $m++;
+	preg_match('/[0-9]{2}/', $token) && $m++;
+	preg_match('/[$&=@]{2}/', $token) && $m++;
+
+	if ($m > 2)
+		return false;
+
+	$m = 0;
+	preg_match('/[a-z]/', $token) && $m++;
+	preg_match('/[A-Z]/', $token) && $m++;
+	preg_match('/[0-9]/', $token) && $m++;
+	preg_match('/[$&=@]/', $token) && $m++;
+
+	if ($m != 4)
+		return false;
+
+	$o = [];
+	for ($i = 0; $i < 10; $i++) {
+		$char = $token[$i];
+
+		if (! isset($o[$char]))
+			$o[$char] = 0;
+
+		$o[$char]++;
+	}
+
+	return ! (max($o) > 2);
 }
 
 function validate_language(array $arr) {
@@ -124,6 +151,13 @@ function get_token() {
 		  $n = rand($a[$i][1], $a[$i][0]);
 		}
 		$str .= chr($n);
+	}
+
+	for ($i = 0; $i != 5; $i++) {
+		if (validate_token($str)
+			break;
+		else
+			$str = get_token();
 	}
 
 	return $str;

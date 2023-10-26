@@ -215,6 +215,7 @@ function reset_data(front) {
 
   try {
     const color = localStorage.getItem('preferred-color');
+    const _tristate = localStorage.getItem('_tristate');
 
     localStorage.clear();
 
@@ -222,6 +223,10 @@ function reset_data(front) {
 
     if (color == 'light' || color == 'dark') {
       localStorage.setItem('preferred-color', color);
+    }
+    if (_tristate) {
+      const obj = JSON.parse(_tristate);
+      localStorage.setItem('_tristate', JSON.stringify([parseInt(obj[0]), parseInt(obj[1])]));
     }
 
     request.then(done).catch(error);
