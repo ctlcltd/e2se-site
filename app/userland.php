@@ -75,23 +75,23 @@ function validate_language(array $arr) {
 	if (empty($arr))
 		return false;
 
-	foreach ($arr as $key)
-		if (! array_key_exists($key, ['locale', 'code', 'name', 'tr_name', 'dir', 'type', 'numerus']))
+	foreach ($arr as $key => $value)
+		if (! in_array($key, ['code', 'locale', 'name', 'tr_name', 'dir', 'type', 'numerus']))
 			return false;
 
-	if (! (isset($arr['locale']) && preg_match('/[a-z]{2}/', $arr['locale'])))
+	if (! (! empty($arr['code']) && preg_match('/[a-z]{2}/', $arr['code'])))
 		return false;
-	if (! (isset($arr['code']) && preg_match('/[a-z]{2}_[A-Z]{2}/', $arr['code'])))
+	if (! (! empty($arr['locale']) && preg_match('/[a-z]{2}_[A-Z]{2}/', $arr['locale'])))
 		return false;
 	if (empty($arr['name']))
 		return false;
 	if (empty($arr['tr_name']))
 		return false;
-	if ($arr['dir'] != 'ltr' || $arr['dir'] != 'rtl')
+	if ($arr['dir'] != 'ltr' && $arr['dir'] != 'rtl')
 		return false;
-	if (! (is_numeric($arr['type']) && (int) $arr['type'] > 0 && (int) $arr['type']) < 3)
+	if (! (is_numeric($arr['type']) && (int) $arr['type'] > 0 && (int) $arr['type'] < 3))
 		return false;
-	if (! (is_numeric($arr['numerus']) && (int) $arr['numerus'] > 0 && (int) $arr['numerus']) < 9)
+	if (! (is_numeric($arr['numerus']) && (int) $arr['numerus'] > 0 && (int) $arr['numerus'] < 9))
 		return false;
 
 	return true;
@@ -104,7 +104,6 @@ function validate_translation(PDO $dbh, array $arr) {
 	$sth = \api\db_select($dbh, 'e2se_ts', ['ts_guid']);
 	$results = $sth->fetchAll(PDO::FETCH_COLUMN);
 
-	//FIXME empty($value)
 	foreach ($arr as $key => $value)
 		if (! in_array($key, $results) || empty($value))
 			return false;
@@ -154,7 +153,7 @@ function get_token() {
 	}
 
 	for ($i = 0; $i != 5; $i++) {
-		if (validate_token($str)
+		if (validate_token($str))
 			break;
 		else
 			$str = get_token();
@@ -179,7 +178,7 @@ function get_saved_id(PDO $dbh, string $token, bool $check) {
 }
 
 function get_lang_guid(PDO $dbh, string $guid, bool $check) {
-	if (empty($guid))
+	if (! (! empty($guid) && strlen($guid) == 32))
 		throw new Exception('Not a valid language');
 
 	$sth = \api\db_select($dbh, 'e2se_langs', ['lang_id'], 'WHERE lang_guid=:lang_guid', ['lang_guid' => $guid]);
@@ -276,7 +275,7 @@ function ul_submit(PDO $dbh, array $request) {
 		if (! isset($data['translation']) && ! (isset($data['lang']) || isset($data['language'])))
 			throw new Exception('Malformed data');
 
-		$lang_id = NULL;
+		$lang_id = 0;
 
 		if (isset($data['language']) && ! validate_language($data['language']))
 			throw new Exception('Not a valid language submit');

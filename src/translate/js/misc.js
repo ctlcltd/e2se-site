@@ -169,9 +169,13 @@ function what_this() {
 function discard_edit() {
   try {
     for (const lang in languages) {
+      const obj = languages[lang];
       const tr_key = 'tr-' + lang;
       if (localStorage.getItem(tr_key)) {
         localStorage.removeItem(tr_key);
+      }
+      if (! obj.guid) {
+        delete languages[lang];
       }
     }
 
@@ -239,6 +243,15 @@ function reset_data(front) {
   } catch (err) {
     console.error('reset_data', err);
   }
+}
+
+function filed(obj) {
+  for (const key of Object.keys(obj)) {
+    if (obj[key] == '') {
+      delete obj[key];
+    }
+  }
+  return obj;
 }
 
 function debounce(fn, once, timeout) {

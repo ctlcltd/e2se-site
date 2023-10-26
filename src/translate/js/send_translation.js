@@ -58,14 +58,14 @@ function send_translation() {
       let data = {};
 
       if (language) {
-        data['language'] = language;
+        data['language'] = filed(language);
       } else if (lang_guid) {
         data['lang'] = lang_guid;
       } else {
         throw except(8);
       }
 
-      data['translation'] = translation;
+      data['translation'] = filed(translation);
 
       const input = form.querySelector('[name="send_user"]');
 

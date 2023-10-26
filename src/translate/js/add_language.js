@@ -107,7 +107,7 @@ function add_language(uri, search) {
       'name': obj.lang_name,
       'tr_name': obj.lang_tr_name,
       'dir': obj.lang_dir,
-      'type': 0,
+      'type': obj.lang_type,
       'numerus': parseInt(obj.lang_numerus),
       'completed': 0,
       'revised': 0
@@ -116,6 +116,7 @@ function add_language(uri, search) {
     try {
       storage[lang] = language;
       localStorage.setItem('languages', JSON.stringify(storage));
+      languages = storage;
 
       form.setAttribute('data-loading', '');
 

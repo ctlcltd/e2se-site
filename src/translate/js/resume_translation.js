@@ -68,9 +68,11 @@ function resume_translation(token) {
         const data = obj.data;
         let lang_code;
 
-        if (data.ulang) {
-          const language = data.ulang;
+        if (data.data && data.data.ulang) {
+          const language = data.data.ulang;
           lang_code = language.code;
+          language.guid = '';
+          language.completed = language.revised = 0;
           languages[lang_code] = language;
           localStorage.setItem('languages', JSON.stringify(languages));
           success = true;

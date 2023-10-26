@@ -864,7 +864,7 @@ function add_language(uri, search) {
       'name': obj.lang_name,
       'tr_name': obj.lang_tr_name,
       'dir': obj.lang_dir,
-      'type': 0,
+      'type': obj.lang_type,
       'numerus': parseInt(obj.lang_numerus),
       'completed': 0,
       'revised': 0
@@ -873,6 +873,7 @@ function add_language(uri, search) {
     try {
       storage[lang] = language;
       localStorage.setItem('languages', JSON.stringify(storage));
+      languages = storage;
 
       form.setAttribute('data-loading', '');
 
@@ -1145,14 +1146,14 @@ function send_translation() {
       let data = {};
 
       if (language) {
-        data['language'] = language;
+        data['language'] = filed(language);
       } else if (lang_guid) {
         data['lang'] = lang_guid;
       } else {
         throw except(8);
       }
 
-      data['translation'] = translation;
+      data['translation'] = filed(translation);
 
       const input = form.querySelector('[name="send_user"]');
 
@@ -1479,9 +1480,11 @@ function resume_translation(token) {
         const data = obj.data;
         let lang_code;
 
-        if (data.ulang) {
-          const language = data.ulang;
+        if (data.data && data.data.ulang) {
+          const language = data.data.ulang;
           lang_code = language.code;
+          language.guid = '';
+          language.completed = language.revised = 0;
           languages[lang_code] = language;
           localStorage.setItem('languages', JSON.stringify(languages));
           success = true;
@@ -1808,9 +1811,13 @@ function what_this() {
 function discard_edit() {
   try {
     for (const lang in languages) {
+      const obj = languages[lang];
       const tr_key = 'tr-' + lang;
       if (localStorage.getItem(tr_key)) {
         localStorage.removeItem(tr_key);
+      }
+      if (! obj.guid) {
+        delete languages[lang];
       }
     }
 
@@ -1878,6 +1885,15 @@ function reset_data(front) {
   } catch (err) {
     console.error('reset_data', err);
   }
+}
+
+function filed(obj) {
+  for (const key of Object.keys(obj)) {
+    if (obj[key] == '') {
+      delete obj[key];
+    }
+  }
+  return obj;
 }
 
 function debounce(fn, once, timeout) {
