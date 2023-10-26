@@ -148,7 +148,7 @@ function get_token() {
 		  $n = rand(0, 3);
 		  $n = $a[$i][$n];
 		} else {
-		  $n = rand($a[$i][1], $a[$i][0]);
+		  $n = rand($a[$i][0], $a[$i][1]);
 		}
 		$str .= chr($n);
 	}

@@ -1371,6 +1371,8 @@ function send_resume() {
   }
 }
 
+var recurr = 0;
+
 function get_token() {
   var w = 10;
   const a = [
@@ -1381,18 +1383,21 @@ function get_token() {
   ];
   var s = '';
 
+  function rand(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
   while (w--) {
     let n;
-    let i = Math.floor(Math.random() * 4);
-    if (i == 3 && Math.random() * 100 < 50) {
-      i = parseInt(Math.random() * 3);
+    let i = rand(0, 3);
+    if (i == 3 && rand(0, 1)) {
+      i = rand(0, 2);
     }
     if (i == 3) {
-      n = Math.floor(Math.random() * a[i].length);
+      n = rand(0, 3);
       n = a[i][n];
     } else {
-      //FIXME undefined reading '1'
-      n = Math.floor((Math.random() * (a[i][1] - a[i][0] + 1)) + a[i][0]);
+      n = rand(a[i][0], a[i][1]);
     }
     s += String.fromCharCode(n);
   }
@@ -1402,6 +1407,7 @@ function get_token() {
       break;
     } else {
       s = get_token();
+      recurr++;
     }
   }
 
