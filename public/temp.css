@@ -1,0 +1,32 @@
+#help {
+  max-width: 800px;
+}
+#toc {
+  display: inline-block;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+ul.grid {
+  list-style: none;
+}
+.card {
+  display: block;
+  margin: 0;
+  padding: .2em 1rem;
+  border: 1px solid;
+}
+a.card {
+  text-decoration: none;
+}
+a.card h3 {
+  text-decoration: underline;
+}
+.card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+.card p {
+  margin: 0 0 .1rem;
+}
