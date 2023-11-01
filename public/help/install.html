@@ -19,22 +19,90 @@
     <main>
       <h1>Online Help</h1>
       <h2>Installation</h2>
-      <div>
+      <p>Below are the instructions for installing the software.</p>
+      <p>The software has no setup, it can be run without installing.</p>
+      <p>To try it directly without downloading, you can try the demo, available at: <a href="https://ctlcltd.github.io/e2se-wasm-demo/" rel="nofollow" target="_blank">https://ctlcltd.github.io/e2se-wasm-demo/</a>. Note: the demo has limitations imposed by remote use, you cannot open and save files other than the demo ones included.</p>
+      <div id="download">
         <h3>Download</h3>
+        <p>The original executable files can be downloaded only in one place, the GitHub Releases page of the official repository at: <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a></p>
+        <p>There are 4 executable files available, for systems: Windows 64-bit, Windows 32-bit, macOS Intel 64-bit, Linux 64-bit.</p>
+        <p>All executables are not digitally signed, except the Linux AppImage 64-bit one. The software is distributed free of charge and it is free software. Digitally signing the software requires costs and fees to be paid, the software will not be signed.</p>
+        <p>You can verify the checksum of the downloaded files, MD5 and SHA-256 hashes are available in <samp>&quot;MD5SUMS.txt&quot;</samp> and <samp>&quot;SHA256SUMS.txt&quot;</samp> files, from the same page Releases of the repository.</p>
+        <p><b>Windows</b> For new versions, Windows 11, Windows 10, Windows 8, download the 64-bit version. For older versions of Windows, example Windows 7, download the 32-bit version.</p>
+        <p><b>macOS</b> The file distributed for macOS is compatible with Intel 64-bit. macOS should be at least version 12.6.0 (Monterey). There are no Silicon versions currently distributed. The executable file may not be compatible with Macs launched after 2020.</p>
+        <p><b>Linux</b> The file distributed for GNU/Linux distributions in 64-bit is an AppImage executable. The software is also distributed in software stores: Snap Store, Flathub, and also in AUR (Arch Linux).</p>
+        <p>In case of incompatibility it is recommended to use the software in a virtual machine.</p>
       </div>
       <div>
-        <div>
+        <div id="windows">
           <h4>Windows</h4>
+          <p>Download the zip file for 64-bit version, the file name has the following nomenclature <samp>&quot;e2-sat-editor-VERSION-unsigned-win64.zip&quot;</samp>.</p>
+          <p>The Zip package contains a portable version of the software, without installer.</p>
+          <ul>
+            <li>Uncompress the Zip package by double-clicking on it, or by right-clicking on the file and selecting <b>&quot;Extract here&quot;</b> from the context menu.</li>
+            <li>Place the directory created by File Explorer, for example <samp>&quot;e2-sat-editor-VERSION-unsigned-win64&quot;</samp>, where you prefer.</li>
+            <li>Launch the software, the name of the executable file is <b>&quot;e2-sat-editor&quot; [.exe]</b>.</li>
+          </ul>
+          <p>A warning message may be shown, confirm the execution and allow the software to run.</p>
+          <p>For S editions of Windows, which allow the installation of software exclusively from the Windows Store, refer to the Windows documentation to disable &quot;S mode&quot;, or use the software in a virtual machine.</p>
         </div>
-        <div>
+        <div id="macos">
           <h4>macOS</h4>
+          <p>Download the zip file, the file name has the following nomenclature <samp>&quot;e2-sat-editor-VERSION-unsigned-intel-macos.zip&quot;</samp>.</p>
+          <p>The Zip package contains the executable software, without installer.</p>
+          <ul>
+            <li>Uncompress the Zip package by double-clicking on it, or by right-clicking on the file and selecting <b>&quot;Extract here&quot;</b> from the context menu.</li>
+            <li>Place the directory created by Finder utility, for example <samp>&quot;e2-sat-editor-VERSION-unsigned-intel-macos&quot;</samp>, where you prefer.</li>
+            <li>Launch the software, the name of the executable file is <b>&quot;e2 SAT Editor&quot; [.app]</b>.</li>
+          </ul>
+          <p>Depending on your system settings, a warning message may be shown.</p>
+          <p>If your system is restricted to running apps from Identified developers only, you can manually authorize the app. <br><em>Recommendation: Do not do this if you do not understand what you are doing.</em> <br>To manually authorize the execution of the app, launch the software by holding down the <kbd>Shift</kbd> key on the keyboard and double-clicking on the <b>&quot;e2 SAT Editor&quot; [.app]</b> executable file.</p>
+          <p>If you are restricted to running apps from the App Store only, temporarily change the system setting, or use the software in a virtual machine.</p>
         </div>
-        <div>
+        <div id="linux">
           <h4>Linux</h4>
+          <div>
+            <h5>AppImage</h5>
+            <p>Download the AppImage 64-bit file, the file name has the following nomenclature <samp>&quot;e2-sat-editor-VERSION-x86_64-linux.AppImage&quot;</samp>.</p>
+            <p>The downloaded file is the executable software, no installation is required.</p>
+            <p>You may need to give permissions to run the file. Refer to your Linux distribution documentation, or open a terminal and give permission to run the binary file. <br><em>Recommendation: Do not do this if you do not understand what you are doing.</em> <br>Open a terminal at the location of the AppImage file, give the execution permission with the following command: <code>chmod +x e2-sat-editor-VERSION-x86_64-linux.AppImage</code></p>
+            <p>To run AppImage Linux binaries, dependencies are required: FUSE 2, GCC >= 9, GLIBC >= 2.36. Depending on the Linux distribution you are using, these may already be present on your system.</p>
+          </div>
+          <div>
+            <h5>Snap Store, Flathub</h5>
+            <p>Refer to the documentation of the Linux distribution you are using to find out whether the software is distributed by Snap Store or by Flathub.</p>
+            <p>To install the software, search <i>&quot;e2 SAT Editor&quot;</i> in the software store of the Linux distribution you are using and click on the <b>&quot;Install&quot;</b> button.</p>
+            <p>The software will be installed and available in one of the categories: AudioVideo, Video, TV, Utility, Other. Recall it using the search function, looking <i>&quot;e2 SAT Editor&quot;</i>.</p>
+            <p>Depending on the Linux distribution in use, it is possible to launch the installation directly from the browser, navigating the page and clicking on the <b>&quot;Install&quot;</b> button.</p>
+            <ul>
+              <li>The &quot;e2 SAT Editor&quot; software page on Snap Store at: <a href="https://snapcraft.io/e2-sat-editor" rel="nofollow noopener" target="_blank">https://snapcraft.io/e2-sat-editor</a></li>
+              <li>The &quot;e2 SAT Editor&quot; software page on Flathub at: <a href="https://flathub.org/apps/io.github.ctlcltd.e2se" rel="nofollow noopener" target="_blank">https://flathub.org/apps/io.github.ctlcltd.e2se</a></li>
+            </ul>
+          </div>
+          <div>
+            <h5>AUR (Arch Linux)</h5>
+            <p>Refer to the Arch Linux documentation at: [...] for installing software from the AUR repository.</p>
+            <p>If you use a Linux distribution derived from Arch Linux there may be an easy way to install software from AUR repositories, in which case please refer to the documentation of the distribution you are using.</p>
+            <ul>
+              <li>The &quot;e2 SAT Editor&quot; software repository page on the Arch Linux AUR at: <a href="https://aur.archlinux.org/packages/e2-sat-editor" rel="nofollow noopener" target="_blank">https://aur.archlinux.org/packages/e2-sat-editor</a></li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h4>Other systems</h4>
+        <div id="other-system">
+          <h4>Other system</h4>
+          <p>The software is compatible with BSD-like distributions, such as FreeBSD and OpenBSD.</p>
+          <p>Follow the instructions to compile, in the official repository at: <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a></p>
+          <p>The software may also be compatible with other systems but not tested.</p>
+          <p>Some systems may have emulation capabilities and allow you to run software distributed for Linux. For example: Chrome OS and the &quot;Crostini&quot; project, refer to the page at <a href="https://chromeos.dev/linux" rel="noreferer noopener" target="_blank">https://chromeos.dev/linux</a>.</p>
+          <p>Please refer to the documentation of the system in use for more information about Linux binary compatibility.</p>
         </div>
+      </div>
+      <div id="safety">
+        <h3>Safety</h3>
+        <p>The executables downloaded from the repository at the address: <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a> do not contain malware or malicious code of any kind.</p>
+        <p>Builds are produced in environments protected by anti-virus and anti-malware devices.</p>
+        <p>The software distributed by authorized software stores: Snap Store, Flathub, and from the AUR repository (Arch Linux), does not contain malware or malicious code of any kind.</p>
+        <p><strong>The software is not distributed in any other channels other than those indicated above.</strong></p>
       </div>
     </main>
     <div id="side">
@@ -42,8 +110,17 @@
         <h4>Contents</h4>
         <nav>
           <ul>
-            <li><a href=".">Online Help</a></li>
-            <li><a class="active" href="install.html">Installation</a></li>
+            <li><a href="index.html">Online Help</a></li>
+            <li><a class="active" href="install.html">Installation</a>
+              <ul>
+                <li><a href="#download">Download</a></li>
+                <li><a href="#windows">Windows</a></li>
+                <li><a href="#macos">macOS</a></li>
+                <li><a href="#linux">Linux</a></li>
+                <li><a href="#other-system">Other system</a></li>
+                <li><a href="#safety">Safety</a></li>
+              </ul>
+            </li>
             <li><a href="quick-start.html">Quick Start</a></li>
             <li><a href="channel-lists.html">Channel List operations</a></li>
             <li><a href="edit-service.html">Edit Services</a></li>
