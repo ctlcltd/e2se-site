@@ -170,6 +170,12 @@ body.dark .image [stroke] {
 body.dark .image [fill="#dff"] {
   fill: #023;
 }
+body.dark .image text.mark {
+  fill: #dff;
+}
+body.dark .image ellipse[stroke] {
+  stroke: #dff;
+}
 body.dark .image text {
   fill: #fff;
 }
