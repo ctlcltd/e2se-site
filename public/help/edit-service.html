@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="../style.css">
+<title>Edit Services - Online Help</title>
+<meta name="description" content="How to edit service channels, edit all service parameters">
+<style>@import "../temp.css"</style>
+</head>
+<body>
+<div id="head">
+  <div>
+    <button type="button" id="switch-color">switch to dark</button>
+  </div>
+</div>
+<div id="page">
+  <div id="help">
+    <main>
+      <h1>Online Help</h1>
+      <h2>Edit Services</h2>
+      <p>Edit service channels and service parameters.</p>
+      <p>Properties, parameters, tuner, transponder, package, PID, Card ID, flags.</p>
+      <div class="">
+        <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
+      </div>
+      <div id="howto">
+        <h3>How to edit</h3>
+        <p>Select the service channel to edit, open the context menu and click on <b>&quot;Edit Service&quot;</b>.</p>
+        <p>In the dialog, edit the service parameters, then press <b>&quot;Save&quot;</b>.</p>
+        <div>
+          <p><i>The service will be changed in every position where found.</i></p>
+          <p>Service can be quickly edited by <b>double-click</b>ing on the selected service channel.</p>
+        </div>
+      </div>
+      <div id="properties">
+        <h3>Properties</h3>
+        <p>From <b>Service</b> group you will change the following service properties:</p>
+        <ul>
+          <li><b>Service name</b>, name of the service channel</li>
+          <li><b>Service type</b>, to enter a custom numeric type press <b>&quot;Custom&quot;</b></li>
+          <li><b>Service ID</b>, service identifier</li>
+        </ul>
+      </div>
+      <div id="transponder">
+        <h3>Transponder</h3>
+        <p>From <b>Tuner</b> group you will change the transponder:</p>
+        <ul>
+          <li><b>Satellite</b>, position selection</li>
+          <li><b>Transponder</b>, transponder selection</li>
+          <li>to create a transponder, press <b>&quot;New Transponder&quot;</b></li>
+        </ul>
+        <p>To change the transponder parameters, go to <b>Transponder</b> tab.</p>
+        <p>Edit the transponder parameters, then return to <b>Service</b> tab or press <b>&quot;Save&quot;</b>.</p>
+        <div class="">
+          <p>For further information, view <a href="edit-transponder.html">Edit Tranponders</a> page of online help.</p>
+        </div>
+        <div>
+          <p>Note: <i>The transponder parameters will be changed for any service associated with the transponder.</i></p>
+        </div>
+      </div>
+      <div id="parameters">
+        <h3>Parameters</h3>
+        <p>From <b>Parameters</b> group you will change service parameters:</p>
+        <ul>
+          <li><b>Package</b>, contains provider name</li>
+          <li><b>PIDs</b>, contains service PID parameters, eg. VPID, APID, PCRPID, ...</li>
+          <li><b>CAIDs</b>, contains Card ID parameters of the service in comma-separated-value, eg. C:0100,C:0200</li>
+          <li><b>Flags</b>, contains service flags, eg. Flag as new service, ...</li>
+          <li><b>Custom</b>, to raw edit service parameters in comma-separated-value, eg. p:ProviderName,c:0100,C:0200</li>
+          <li><b>Extras</b>, contains extra parameters: Service Number, Src ID</li>
+        </ul>
+      </div>
+      <div class="">
+        <p>For channel lists guide follow <a href="channel-lists.html">Channel List operations</a> page of online help.</p>
+        <p>For transponders guide follow <a href="transponders.html">Transponder operations</a> page of online help.</p>
+      </div>
+    </main>
+    <div id="side">
+      <aside id="toc">
+        <h4>Contents</h4>
+        <nav>
+          <ul>
+            <li><a href=".">Online Help</a></li>
+            <li><a href="install.html">Installation</a></li>
+            <li><a href="quick-start.html">Quick Start</a></li>
+            <li><a href="channel-lists.html">Channel List operations</a></li>
+            <li><a class="active" href="edit-service.html">Edit Services</a>
+              <ul>
+                <li><a href="#howto">How to edit</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="#transponder">Transponder</a></li>
+                <li><a href="#parameters">Parameters</a></li>
+              </ul>
+            </li>
+            <li><a href="edit-transponder.html">Edit Transponders</a></li>
+            <li><a href="transponders.html">Transponder operations</a></li>
+            <li><a href="settings.html">Settings</a></li>
+            <li><a href="file-transfers-stb.html">Transfers from and to Decoder</a></li>
+            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <aside id="localize">
+        <h4>Language</h4>
+        <nav>
+          <a href="https://translate.google.com/?sl=en&amp;text={{protocol}}://{{host}}/help/troubleshooting.html">Translate this page in your language with Google Translate</a>
+        </nav>
+      </aside>
+    </div>
+  </div>
+  <div id="footer">
+    <div>
+      <nav>
+        <ul>
+          <li><a href="/">About e2 SAT Editor</a></li>
+          <li><a href="/help/">Help</a></li>
+          <li class="separator"></li>
+          <li><a href="/translate/">Translations</a></li>
+          <li><a href="https://github.com/ctlcltd/e2-sat-editor">e2SE repository</a></li>
+          <li class="separator"></li>
+          <li><a href="/privacy.html">Your Privacy</a></li>
+          <li class="separator"></li>
+          <li><a href="/donate/">Donate!</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+      <p>Copyright &copy; 2023 e2 SAT Editor Team <span>[Leonardo Laureti]</span></p>
+    </div>
+  </div>
+</div>
+<script src="../script.js"></script>
+</body>
+</html>

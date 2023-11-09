@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="../style.css">
-<title>Online Help</title>
-<meta name="description" content="Online Help for e2 SAT Editor">
+<title>Troubleshooting - Online Help</title>
+<meta name="description" content="How to solve problems, eg. dealing with FTP">
 <style>@import "../temp.css"</style>
 </head>
 <body>
@@ -19,6 +19,217 @@
     <main>
       <h1>Online Help</h1>
       <h2>Troubleshooting</h2>
+      <p>[INTRODUCTION]</p>
+      <div class="">
+        <p>Before using the software you could read <a href="quick-start.html">Quick Start</a> page of online help for a brief introduction.</p>
+      </div>
+      <div class="table">
+        <table>
+          <tr id="installation">
+            <td colspan="2"><strong>Installation</strong></td>
+          </tr>
+          <tr id="software-open">
+            <td>Software does not open</td>
+            <td>See <a href="install.html">Installation</a> in online help</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>In case of incompatibility it is recommended to use the software in a virtual machine</td>
+          </tr>
+          <tr id="common">
+            <td colspan="2"><strong>Common issues</strong></td>
+          </tr>
+          <tr id="software-issue">
+            <td>Software crashes, freezes, does not work correctly</td>
+            <td>Report an issue on the GitHub repository at [...], attach a log if possible, <a href="#view-software-logs">View software logs</a></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Check any error messages displayed</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Check that the version you are using is the latest, <a href="#check-version">Check the version</a></td>
+          </tr>
+          <tr id="menu-issue">
+            <td>Main menu items are grayed out</td>
+            <td>A known issue, being resolved</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Open a new tab using <b>&quot;+ New Tab&quot;</b> and close it, menu items will become visible again</td>
+          </tr>
+          <tr id="ftp">
+            <td colspan="2"><strong>FTP</strong></td>
+          </tr>
+          <tr id="ftp-connect">
+            <td>FTP not connecting</td>
+            <td>Check the cables connecting the Decoder STB to the local network</td>
+          </tr>
+            <td></td>
+            <td>Check your local network settings</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Check your firewall settings</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Verify the connection parameters to the Decoder STB in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Verify that the FTP connection and login parameters are correct</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Try to connect via HTTP with your browser to the Decoder STB at its IP address (when equipped with Webif)</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Try to connect via FTP with an FTP client to the Decoder STB at its IP address</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Attempt a connection with Passive FTP, unchecking Active FTP, and viceversa</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Press <b>"Connect"</b> and <b>"Disconnect"</b> in quick menu to attempt an FTP connection</td>
+          </tr>
+          <tr id="ftp-connect-next">
+            <td>FTP not connecting, after previous steps</td>
+            <td>Restart the Decoder STB and if necessary restart the local network router</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Repeat all <a href="#ftp-connect">&quot;FTP not connecting&quot;</a> troubleshooting steps</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Report an issue on the GitHub repository at [...], attach a log if possible, <a href="#enable-ftp-debug">Enable FTP debug</a></td>
+          </tr>
+          <tr id="ftp-load">
+            <td>FTP does not upload / download</td>
+            <td>Check connection parameters to the Decoder STB in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Verify the correctness of parameters in the <b>Configuration</b> group: Transponders, Services, Bouquets</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Press <b>&quot;Connect&quot;</b> and <b>&quot;Disconnect&quot;</b> in quick menu to attempt an FTP connection</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Note: <i>the software does not currently upload/download picons, these must be uploaded manually to the Decoder STB</i></td>
+          </tr>
+          <tr id="stb-update">
+            <td>STB Decoder does not update channel lists</td>
+            <td>Try to restart the Decoder STB manually, or if you have the specific parameters for the Decoder STB, enter them, and follow the next steps</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Modify the parameters in the <b>Commands</b> group, in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Enter the specific parameters for updating the Decoder STB lists, URL address and/or Telnet command</td>
+          </tr>
+          <tr id="file">
+            <td colspan="2"><strong>File</strong></td>
+          </tr>
+          <tr id="file-open">
+            <td>File does not open</td>
+            <td>Check error messages displayed</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Verify the compatibility of the channel list file</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Verify read file permissions</td>
+          </tr>
+          <tr id="file-save">
+            <td>File not saved</td>
+            <td>Check error messages displayed</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Verify the compatibility of the channel list file</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Verify write and read file permissions</td>
+          </tr>
+          <tr id="interop">
+            <td colspan="2"><strong>CSV / spreadsheet</strong></td>
+          </tr>
+          <tr id="csv-import">
+            <td>CSV file not imported</td>
+            <td>Verify CSV tabular structure has not been altered</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Make sure each row has the same number of columns</td>
+          </tr>
+          <tr id="clipboard-past">
+            <td>Contents of clipboard not pasted</td>
+            <td>Verify TSV tabular structure has not been altered</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Make sure each row has the same number of columns</td>
+          </tr>
+        </table>
+      </div>
+      <div id="check-version">
+        <h3>Check the version</h3>
+        <p>Check that the version you are using is the most recent.</p>
+        <div>
+          <p><b>From main menu</b>, click menu <b>Help</b> &gt; <b>About e2 SAT Editor</b>.</p>
+          <p>Check the version number and on the Releases page of the GitHub repository at [...], for more recent updates.</p>
+        </div>
+        <p>In the case of distributed installation (Snap Store, Flathub, Arch AUR), check for updates or reinstall the software. <br>See <a href="install.html">Installation</a> in online help.</p>
+      </div>
+      <div id="enable-ftp-debug">
+        <h3>Enable FTP debug</h3>
+        <p>FTP debugging is disabled by default to avoid slowing down execution.</p>
+        <p>It can be useful to solve problems and report issues on the GitHub repository at [...].</p>
+        <p>Note: <i>FTP debugging may not be available on Windows PowerShell.</i></p>
+        <div>
+          <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
+          <div>
+            <p>To enable FTP debugging, go to <b>&quot;Settings&quot;</b> &gt; <b>Advanced</b> &gt; [confirm].</p>
+            <p>Change the <samp>ftpcom.debug</samp> line from FALSE to TRUE, typing <samp>TRUE</samp>.</p>
+            <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
+          </div>
+          <div>
+            <p>Open a terminal window and launch the software from its current location.</p>
+            <p>Press <b>&quot;Connect&quot;</b> and <b>&quot;Disconnect&quot;</b> from quick menu to attempt an FTP connection.</p>
+            <p>All FTP messages will be shown in the terminal.</p>
+          </div>
+        </div>
+        <div>
+          <p>To attach the log to the issue, select all the output and <b>Copy</b>, <b>Paste</b> to a plain text file.</p>
+          <p>Next, disable FTP debugging, change the <samp>ftpcom.debug</samp> line from TRUE to FALSE again, typing <samp>FALSE</samp>.</p>
+        </div>
+      </div>
+      <div id="view-logs">
+        <h3>View software logs</h3>
+        <p>The software creates a log in memory.</p>
+        <p>It can be useful to solve problems and report issues on the GitHub repository at [...].</p>
+        <div>
+          <p>To view the log, open <b>Inspector</b>.</p>
+          <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Log Inspect</b>.</p>
+          <div>
+            <p>The log of the current execution will be shown in the dialog.</p>
+            <p>To attach the log to the issue, select all the text and <b>Copy</b>, <b>Paste</b> into a plain text file.</p>
+          </div>
+        </div>
+      </div>
     </main>
     <div id="side">
       <aside id="toc">
@@ -26,24 +237,35 @@
         <nav>
           <ul>
             <li><a href=".">Online Help</a></li>
-            <li><a class="active" href="install.html">Installation</a></li>
+            <li><a href="install.html">Installation</a></li>
             <li><a href="quick-start.html">Quick Start</a></li>
             <li><a href="channel-lists.html">Channel List operations</a></li>
             <li><a href="edit-service.html">Edit Services</a></li>
             <li><a href="edit-transponder.html">Edit Transponders</a></li>
             <li><a href="transponders.html">Transponder operations</a></li>
             <li><a href="settings.html">Settings</a></li>
-            <li><a href="import-export.html">Import and Export</a></li>
             <li><a href="file-transfers-stb.html">Transfers from and to Decoder</a></li>
-            <li><a href="troubleshooting.html">Troubleshooting</a></li>
+            <li><a class="active" href="troubleshooting.html">Troubleshooting</a>
+              <ul>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#common">Common issues</a></li>
+                <li><a href="#ftp">FTP</a></li>
+                <li><a href="#file">File</a></li>
+                <li><a href="#interop">CSV / spreadsheet</a></li>
+              </ul>
+              <ul>
+                <li><a href="#check-version">Check the version</a></li>
+                <li><a href="#enable-ftp-debug">Enable FTP debug</a></li>
+                <li><a href="#view-logs">View software logs</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
       </aside>
       <aside id="localize">
         <h4>Language</h4>
         <nav>
-          <a href="#">Translate this page in your language with Google Translate</a>
-          <a href="#">Translate this page in your language with Bing Translator</a>
+          <a href="https://translate.google.com/?sl=en&amp;text={{protocol}}://{{host}}/help/troubleshooting.html">Translate this page in your language with Google Translate</a>
         </nav>
       </aside>
     </div>

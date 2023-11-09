@@ -118,10 +118,12 @@ a.card h3 {
 
 @media screen {
   .card {
-    border-color: #ffff;
-  }
-  .card {
+    border-color: #fff;
     background: #eee;
+  }
+  body.dark .card {
+    border-color: #101010;
+    background: #222;
   }
 }
 
@@ -155,6 +157,9 @@ kbd {
   border-radius: 2px;
   color: #fff;
   background: #444;
+}
+kbd span {
+  margin: 0 -.1rem;
 }
 
 .image {
