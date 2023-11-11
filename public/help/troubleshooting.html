@@ -24,7 +24,7 @@
       <h1>Online Help</h1>
       <h2>Troubleshooting</h2>
       <p>[INTRODUCTION]</p>
-      <div class="">
+      <div class="info">
         <p>Before using the software you could read <a href="quick-start.html">Quick Start</a> page of online help for a brief introduction.</p>
       </div>
       <div class="table">
@@ -33,158 +33,134 @@
             <td colspan="2"><strong>Installation</strong></td>
           </tr>
           <tr id="software-open">
-            <td>Software does not open</td>
+            <td rowspan="2">Software does not open</td>
             <td>See <a href="install.html">Installation</a> in online help</td>
           </tr>
           <tr>
-            <td></td>
             <td>In case of incompatibility it is recommended to use the software in a virtual machine</td>
           </tr>
           <tr id="common">
             <td colspan="2"><strong>Common issues</strong></td>
           </tr>
           <tr id="software-issue">
-            <td>Software crashes, freezes, does not work correctly</td>
+            <td rowspan="3">Software crashes, freezes, does not work correctly</td>
             <td>Report an issue on the GitHub repository at [...], attach a log if possible, <a href="#view-software-logs">View software logs</a></td>
           </tr>
           <tr>
-            <td></td>
             <td>Check any error messages displayed</td>
           </tr>
           <tr>
-            <td></td>
             <td>Check that the version you are using is the latest, <a href="#check-version">Check the version</a></td>
           </tr>
           <tr id="menu-issue">
-            <td>Main menu items are grayed out</td>
+            <td rowspan="2">Main menu items are grayed out</td>
             <td>A known issue, being resolved</td>
           </tr>
           <tr>
-            <td></td>
             <td>Open a new tab using <b>&quot;+ New Tab&quot;</b> and close it, menu items will become visible again</td>
           </tr>
           <tr id="ftp">
             <td colspan="2"><strong>FTP</strong></td>
           </tr>
           <tr id="ftp-connect">
-            <td>FTP not connecting</td>
+            <td rowspan="9">FTP not connecting</td>
             <td>Check the cables connecting the Decoder STB to the local network</td>
           </tr>
-            <td></td>
+          <tr>
             <td>Check your local network settings</td>
           </tr>
           <tr>
-            <td></td>
             <td>Check your firewall settings</td>
           </tr>
           <tr>
-            <td></td>
             <td>Verify the connection parameters to the Decoder STB in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
           </tr>
           <tr>
-            <td></td>
             <td>Verify that the FTP connection and login parameters are correct</td>
           </tr>
           <tr>
-            <td></td>
             <td>Try to connect via HTTP with your browser to the Decoder STB at its IP address (when equipped with Webif)</td>
           </tr>
           <tr>
-            <td></td>
             <td>Try to connect via FTP with an FTP client to the Decoder STB at its IP address</td>
           </tr>
           <tr>
-            <td></td>
             <td>Attempt a connection with Passive FTP, unchecking Active FTP, and viceversa</td>
           </tr>
           <tr>
-            <td></td>
             <td>Press <b>"Connect"</b> and <b>"Disconnect"</b> in quick menu to attempt an FTP connection</td>
           </tr>
           <tr id="ftp-connect-next">
-            <td>FTP not connecting, after previous steps</td>
+            <td rowspan="3">FTP not connecting, <br>after previous steps</td>
             <td>Restart the Decoder STB and if necessary restart the local network router</td>
           </tr>
           <tr>
-            <td></td>
             <td>Repeat all <a href="#ftp-connect">&quot;FTP not connecting&quot;</a> troubleshooting steps</td>
           </tr>
           <tr>
-            <td></td>
             <td>Report an issue on the GitHub repository at [...], attach a log if possible, <a href="#enable-ftp-debug">Enable FTP debug</a></td>
           </tr>
           <tr id="ftp-load">
-            <td>FTP does not upload / download</td>
+            <td rowspan="4">FTP does not upload / download</td>
             <td>Check connection parameters to the Decoder STB in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
           </tr>
           <tr>
-            <td></td>
             <td>Verify the correctness of parameters in the <b>Configuration</b> group: Transponders, Services, Bouquets</td>
           </tr>
           <tr>
-            <td></td>
             <td>Press <b>&quot;Connect&quot;</b> and <b>&quot;Disconnect&quot;</b> in quick menu to attempt an FTP connection</td>
           </tr>
           <tr>
-            <td></td>
             <td>Note: <i>the software does not currently upload/download picons, these must be uploaded manually to the Decoder STB</i></td>
           </tr>
           <tr id="stb-update">
-            <td>STB Decoder does not update channel lists</td>
+            <td rowspan="3">STB Decoder does not update channel lists</td>
             <td>Try to restart the Decoder STB manually, or if you have the specific parameters for the Decoder STB, enter them, and follow the next steps</td>
           </tr>
           <tr>
-            <td></td>
             <td>Modify the parameters in the <b>Commands</b> group, in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
           </tr>
           <tr>
-            <td></td>
             <td>Enter the specific parameters for updating the Decoder STB lists, URL address and/or Telnet command</td>
           </tr>
           <tr id="file">
             <td colspan="2"><strong>File</strong></td>
           </tr>
           <tr id="file-open">
-            <td>File does not open</td>
+            <td rowspan="3">File does not open</td>
             <td>Check error messages displayed</td>
           </tr>
           <tr>
-            <td></td>
             <td>Verify the compatibility of the channel list file</td>
           </tr>
           <tr>
-            <td></td>
             <td>Verify read file permissions</td>
           </tr>
           <tr id="file-save">
-            <td>File not saved</td>
+            <td rowspan="3">File not saved</td>
             <td>Check error messages displayed</td>
           </tr>
           <tr>
-            <td></td>
             <td>Verify the compatibility of the channel list file</td>
           </tr>
           <tr>
-            <td></td>
             <td>Verify write and read file permissions</td>
           </tr>
           <tr id="interop">
             <td colspan="2"><strong>CSV / spreadsheet</strong></td>
           </tr>
           <tr id="csv-import">
-            <td>CSV file not imported</td>
+            <td rowspan="2">CSV file not imported</td>
             <td>Verify CSV tabular structure has not been altered</td>
           </tr>
           <tr>
-            <td></td>
             <td>Make sure each row has the same number of columns</td>
           </tr>
           <tr id="clipboard-past">
-            <td>Contents of clipboard not pasted</td>
+            <td rowspan="2">Contents of clipboard not pasted</td>
             <td>Verify TSV tabular structure has not been altered</td>
           </tr>
           <tr>
-            <td></td>
             <td>Make sure each row has the same number of columns</td>
           </tr>
         </table>
@@ -238,8 +214,8 @@
     <div id="side">
       <aside id="toc">
         <h4>Contents</h4>
-        <nav>
-          <ul>
+        <nav class="nav nav-side">
+          <ul class="toc">
             <li><a href=".">Online Help</a></li>
             <li><a href="install.html">Installation</a></li>
             <li><a href="quick-start.html">Quick Start</a></li>

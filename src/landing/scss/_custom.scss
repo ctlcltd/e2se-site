@@ -33,18 +33,16 @@ em {
 }
 
 ul, ol, dl {
-  margin: -0.3rem 0 0;
-  // line-height: 2.2;
+  margin: -0.3rem 0 1rem;
 }
 ul, ol {
   padding: 0;
-  list-style-position: inside;
 }
 ul {
   list-style-type: square;
 }
 li {
-  margin: 0 .2rem 0;
+  margin: .3rem 1em 0;
 }
 dt {
   float: left;
