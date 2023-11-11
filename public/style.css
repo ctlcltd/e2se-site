@@ -186,7 +186,6 @@ em {
 
 ul, ol, dl {
   margin: -0.3rem 0 0;
-  line-height: 2.2;
 }
 
 ul, ol {
@@ -268,11 +267,11 @@ abbr:after {
   background: none !important;
 }
 
-body.dark abbr:after {
+.dark abbr:after {
   color: #aaa;
   background: #444;
 }
-body.dark .abbrbox {
+.dark .abbrbox {
   color: #000;
   background: #ddd !important;
 }
@@ -339,33 +338,24 @@ body.dark .abbrbox {
 }
 
 #head {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background: #fff;
-}
-
-#head {
-  position: fixed;
-  right: 0;
-  left: 0;
+  padding: 0.05rem 0.1rem 0.1rem;
   z-index: 10;
 }
 
 #head > div {
   position: relative;
-  margin-inline-start: auto;
+  top: 0;
   z-index: 10;
 }
 
-#head,
-#head > div {
-  top: 0;
-}
-
-#head {
-  padding: 0.05rem 0.1rem 0.1rem;
-}
 
 #switch-color {
   position: relative;
@@ -441,6 +431,7 @@ body.dark .abbrbox {
     font-size: 0.9rem;
   }
 
+  
   #head {
     position: static;
     padding: 0;
@@ -448,11 +439,22 @@ body.dark .abbrbox {
 
   #head > div {
     position: fixed;
+  }
+
+  #head > div:first-child {
+    inset-inline-start: 5rem;
+  }
+
+  #head > div:last-child {
     inset-inline-end: 5rem;
   }
 
   #head {
     background: #fff;
+  }
+
+  .dark #head {
+    background: #181818;
   }
 
   #privacy {
@@ -540,11 +542,11 @@ body.dark .abbrbox {
   opacity: 0.6;
 }
 
-body.dark #t:before {
+.dark #t:before {
   opacity: 0.5;
 }
-body.dark #m:before,
-body.dark #b:before {
+.dark #m:before,
+.dark #b:before {
   opacity: 0.5;
 }
 
@@ -605,18 +607,18 @@ body.dark #b:before {
 }
 
 body .cnt .button,
-body.dark .cnt .button {
+.dark .cnt .button {
   color: #464646;
   background: #cff;
   box-shadow: inset 0 -6px 33px 0 #0ff7, inset 0 0 1px 0 #0cc;
   transition: box-shadow ease-out 200ms;
 }
 body .cnt .button:hover,
-body.dark .cnt .button:hover {
+.dark .cnt .button:hover {
   box-shadow: inset 0 -6px 33px -22px #0fff, inset 0 0 1px 0 #0cc;
 }
 body .cnt .button:focus,
-body.dark .cnt .button:focus {
+.dark .cnt .button:focus {
   inset: 3px 3px 0;
 }
 
@@ -627,10 +629,10 @@ body .cnt .button:focus {
   filter: drop-shadow(2px 2px 0 #0cc);
 }
 
-body.dark .cnt .button {
+.dark .cnt .button {
   filter: drop-shadow(4px 4px 0 #088);
 }
-body.dark .cnt .button:focus {
+.dark .cnt .button:focus {
   filter: drop-shadow(2px 2px 0 #088);
 }
 
@@ -712,7 +714,7 @@ body.dark .cnt .button:focus {
   letter-spacing: -0.0001em;
 }
 
-body.dark #hwi .txt div {
+.dark #hwi .txt div {
   background: #000;
 }
 
@@ -837,12 +839,12 @@ body.dark #hwi .txt div {
   background: none;
 }
 
-body.dark #lsa .txt div,
-body.dark #whc .txt div,
-body.dark #req, body.dark #req p {
+.dark #lsa .txt div,
+.dark #whc .txt div,
+.dark #req, .dark #req p {
   background: #00000096;
 }
-body.dark .txt div {
+.dark .txt div {
   background: #000000e5;
 }
 
@@ -1198,7 +1200,7 @@ body.dark .txt div {
     background: none;
   }
 
-  body.dark #lsa .txt div {
+  .dark #lsa .txt div {
     background: #000000e5;
   }
 

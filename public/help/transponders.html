@@ -4,12 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../help.css">
 <title>Transponder operations - Online Help</title>
 <meta name="description" content="How to edit and create transponders, edit and move transponders">
-<style>@import "../temp.css"</style>
 </head>
 <body>
 <div id="head">
+  <div>
+    <button type="button" id="btn-toc" title="Contents">a</button>
+    <button type="button" id="btn-language" title="Language">b</button>
+  </div>
   <div>
     <button type="button" id="switch-color">switch to dark</button>
   </div>
@@ -31,19 +35,19 @@
       <div id="transponder-sort">
         <h3>Transponder sorting</h3>
         <p>Transponders can be sorted according to the column name (e.g. sorted by <i>Frequency 0-9</i> or <i>Frequency 9-0</i>) in ascending and descending order.</p>
-        <p>To use the sort click on the <b>column name</b> in the tree view, inside the <b>Transponders</b> area.</p>
+        <p>To use the sort click on <b>column name</b> in the tree view, inside the <b>Transponders</b> area.</p>
       </div>
       <div id="move-transponders">
         <h3>Move transponders</h3>
         <p>The transponders move with <b>Drag and Drop</b>, or alternatively with the <b>Cut - Copy - Paste</b> functionality.</p>
         <p>Select transponders then drag them with the mouse cursor to the desired position.</p>
-        <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on the keyboard, or <kbd>Command</kbd> on the Mac keyboard, for <b>continuous selection</b> press <kbd><span>&#8679;</span> Shift</kbd> on the keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into transponder item.</p>
+        <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span>&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span>&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into transponder item.</p>
         <p>[XML only] Note: <i>It is not possible to move transponders to other positions (satellites).</i></p>
       </div>
       <div id="create-transponder">
         <h3>Create transponder</h3>
         <p>To create a transponder, click on <b>&quot;+ New Transponder&quot;</b>.</p>
-        <p>In the dialog, enter the transponder parameters, then press <b>&quot;Save&quot;</b>.</p>
+        <p>In <b>dialog</b>, enter the transponder parameters, then press <b>&quot;Save&quot;</b>.</p>
         <p>[XML only] <i>The transponder will be added at the current position.</i></p>
         <div class="">
           <p>For further information, view <a href="edit-transponder.html">Edit Transponders</a> page of online help.</p>
@@ -52,25 +56,25 @@
       <div id="edit-transponder">
         <h3>Edit transponder</h3>
         <p>Select the transponder to edit, open the context menu and click on <b>&quot;Edit Transponder&quot;</b>.</p>
-        <p>In the dialog, edit the transponder parameters, then press <b>&quot;Save&quot;</b>.</p>
+        <p>In <b>dialog</b>, edit the transponder parameters, then press <b>&quot;Save&quot;</b>.</p>
         <div class="">
           <p>For further information, view <a href="edit-transponder.html">Edit Transponders</a> page of online help.</p>
         </div>
-        <p>Transponder can be quickly changed by <b>double-click</b>ing on the selected service channel.</p>
+        <p>Transponder can be quickly changed by <b>double-click</b>ing on selected service channel.</p>
         <p>Note: <i>Transponder parameters will be changed for any service associated with the transponder.</i></p>
       </div>
       <div id="delete-transponder">
         <h3>Delete transponder</h3>
         <p>To delete a transponder, select the transponders, open the context menu and click on <b>&quot;Delete&quot;</b>.</p>
         <p>[XML only] <i>The transponder will be deleted from the current position.</i></p>
-        <p>Transponder can also be deleted with keyboard by pressing on <kbd><span>&#8678;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
+        <p>Transponder can also be deleted with keyboard by pressing on <kbd><span>&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
         <p>Note: <i>The services associated with the transponder will be orphaned.</i></p>
       </div>
       <hr id="settings-xml">
       <div id="edit-settings">
         <h3>Edit settings [XML only]</h3>
-        <p>To edit the settings, click on the [IMG] icon in the <b>Positions</b> area.</p>
-        <p>In the dialog, modify the settings properties, then press <b>&quot;Save&quot;</b>.</p>
+        <p>To edit the settings, click on icon <span class="icon"><svg width="16" height="16"><use href="#edit-tunersets" fill="currentColor"/></svg></span> in the <b>Positions</b> area.</p>
+        <p>In <b>dialog</b>, modify the settings properties, then press <b>&quot;Save&quot;</b>.</p>
       </div>
       <div id="move-positions">
         <h3>Move positions [XML only]</h3>
@@ -81,13 +85,13 @@
       <div id="edit-position">
         <h3>Edit position [XML only]</h3>
         <p>Select the position to edit, open the context menu and click on <b>&quot;Edit Position&quot;</b>.</p>
-        <p>In the dialog, edit the position properties, then press <b>&quot;Save&quot;</b>.</p>
-        <p>The position can be quickly changed by double-clicking on the selected position.</p>
+        <p>In <b>dialog</b>, edit the position properties, then press <b>&quot;Save&quot;</b>.</p>
+        <p>The position can be quickly changed by double-clicking on selected position.</p>
       </div>
       <div id="create-position">
         <h3>Create position [XML only]</h3>
         <p>To create a position, click on <b>&quot;+ New Position&quot;</b>.</p>
-        <p>In the dialog, enter the position properties, then press <b>&quot;Save&quot;</b>.</p>
+        <p>In <b>dialog</b>, enter the position properties, then press <b>&quot;Save&quot;</b>.</p>
       </div>
       <div id="import-export">
         <h3>Import and export [XML only]</h3>
@@ -96,13 +100,13 @@
           <h5>Import</h5>
           <p><b>From quick menu</b>, click on <b>&quot;Import&quot;</b>.</p>
           <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Import</b> menu.</p>
-          <p>In the <b>File dialog</b> select the settings file to import.</p>
+          <p>In <b>File dialog</b> select the settings file to import.</p>
         </div>
         <div>
           <h5>Export</h5>
           <p><b>From quick menu</b>, click on <b>&quot;Export&quot;</b>.</p>
           <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Export</b> menu.</p>
-          <p>In <b>File dialog</b> select the location where you want to export the settings.</p>
+          <p>In <b>File dialog</b> select the location where you want to export settings.</p>
         </div>
       </div>
     </main>
@@ -141,10 +145,10 @@
           </ul>
         </nav>
       </aside>
-      <aside id="localize">
+      <aside id="language">
         <h4>Language</h4>
         <nav>
-          <a href="https://translate.google.com/?sl=en&amp;text={{protocol}}://{{host}}/help/troubleshooting.html">Translate this page in your language with Google Translate</a>
+          <a href="https://translate.google.com/?sl=en&amp;text={{protocol}}://{{host}}/help/transponders.html">Translate this page in your language with Google Translate</a>
         </nav>
       </aside>
     </div>
@@ -170,6 +174,13 @@
     </div>
   </div>
 </div>
+<svg style="display:none">
+  <defs>
+    <symbol id="edit-tunersets" viewBox="0 0 64 64">
+      <path d="M32.032 50.518c-4.79-2.886-8.032-8.409-8.032-14.742 0-9.314 7.011-16.876 15.648-16.876 8.636 0 15.647 7.562 15.647 16.876s-7.011 16.875-15.647 16.875c-0.924 0-1.828-0.086-2.709-0.252l-0.191 10.501-4.943-0.144 0.227-12.238zM6.057 26.78c-0.001-0.001 0.023 14.969 0.023 14.969-0.866 0.414-1.706 0.922-2.43 1.563-4.358 3.853-4.35 10.108 0.019 13.972 0.971 0.858 2.137 1.495 3.319 1.965l1.369-0.931-0.011-7.239c-0.001-0.885 0.89-1.557 1.892-1.556 0 0 2.771 0.003 2.771 0.003 0.536 0.001 1.068 0.166 1.418 0.476 0.306 0.27 0.483 0.677 0.484 1.091 0 0 0.011 7.016 0.011 7.016l1.416 0.908c0.975-0.446 1.946-0.994 2.763-1.716 4.357-3.853 4.35-10.108-0.019-13.972-0.727-0.643-1.569-1.153-2.438-1.57l-0.023-14.969c0.866-0.414 1.706-0.923 2.43-1.563 4.358-3.853 4.35-10.108-0.019-13.972-0.895-0.791-1.965-1.383-3.043-1.844l-1.393 0.921 0.010 6.793c0.002 0.875-0.84 1.502-1.829 1.501 0 0-2.897-0.003-2.897-0.003-0.992-0.002-1.837-0.634-1.839-1.511 0 0-0.010-6.794-0.010-6.794l-1.392-0.918c-1.078 0.459-2.146 1.048-3.039 1.838-4.357 3.853-4.35 10.108 0.019 13.972 0.727 0.642 1.569 1.153 2.438 1.57zM50.271 51.811l-0.523-0.46-5.453 3.436 0.662 1.988 5.986-1.196c1.277 1.246 2.819 1.484 3.871 0.785-0.004 0.002 7.388-4.581 7.388-4.581 0.786-0.485 1.326-1.441 1.398-2.711 0.046-0.806-0.219-1.238-0.491-1.487-0.236-0.215-0.539-0.342-0.917-0.337-0.336 0.004-0.81 0.167-1.33 0.351-0.245 0.086-0.508 0.175-0.77 0.205-0.142 0.017-0.286 0.022-0.415-0.049-1.014-0.553-2.017-0.529-2.787-0.049l-6.619 4.105z"/>
+    </symbol>
+  </defs>
+</svg>
 <script src="../script.js"></script>
 </body>
 </html>

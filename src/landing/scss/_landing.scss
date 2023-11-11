@@ -48,7 +48,7 @@
 #b:before {
   opacity: 0.6;
 }
-body.dark {
+.dark {
   #t:before {
     opacity: 0.5;
   }
@@ -120,7 +120,7 @@ body.dark {
   }
 }
 body,
-body.dark {
+.dark {
   .cnt .button {
     color: #464646;
     background: #cff;
@@ -144,7 +144,7 @@ body {
     }
   }
 }
-body.dark {
+.dark {
   .cnt .button {
     filter: drop-shadow(4px 4px 0 #088);
 
@@ -222,7 +222,7 @@ body.dark {
   font-size: 1.032rem;
   letter-spacing: -0.0001em;
 }
-body.dark {
+.dark {
   #hwi .txt div {
     background: #000;
   }
@@ -330,7 +330,7 @@ body.dark {
 #lsb .txt div {
   background: none;
 }
-body.dark {
+.dark {
   #lsa .txt div,
   #whc .txt div,
   #req, #req p {
@@ -650,7 +650,7 @@ body.dark {
   #whc .txt div {
     background: none;
   }
-  body.dark {
+  .dark {
     #lsa .txt div {
       background: #000000e5;
     }

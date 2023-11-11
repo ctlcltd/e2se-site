@@ -34,7 +34,7 @@ em {
 
 ul, ol, dl {
   margin: -0.3rem 0 0;
-  line-height: 2.2;
+  // line-height: 2.2;
 }
 ul, ol {
   padding: 0;
@@ -107,7 +107,7 @@ abbr:after {
     background: none !important;
   }
 }
-body.dark {
+.dark {
   abbr:after {
     color: #aaa;
     background: #444;
@@ -175,6 +175,24 @@ body.dark {
 }
 
 #head {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+  padding: .05rem .1rem .1rem;
+  z-index: 10;
+}
+#head > div {
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+
+/*#head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -197,7 +215,7 @@ body.dark {
 }
 #head {
   padding: .05rem .1rem .1rem;
-}
+}*/
 
 #switch-color {
   position: relative;
@@ -278,7 +296,7 @@ body.dark {
     }
   }
 
-  #head {
+  /*#head {
     position: static;
     padding: 0;
   }
@@ -287,7 +305,25 @@ body.dark {
     inset-inline-end: 5rem;
   }
 
+  #head { background: #fff; }*/
+
+  #head {
+    position: static;
+    padding: 0;
+  }
+  #head > div {
+    position: fixed;
+  }
+  #head > div:first-child {
+    inset-inline-start: 5rem;
+  }
+  #head > div:last-child {
+    inset-inline-end: 5rem;
+  }
   #head { background: #fff; }
+  .dark {
+    #head { background: #181818; }
+  }
 
   #privacy {
     max-width: 1200px;

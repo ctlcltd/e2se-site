@@ -22,6 +22,6 @@
 @import "../../scss/_message.scss";
 @import "custom";
 
-body.dark {
+.dark {
   @include variant_dark($print: true);
 }

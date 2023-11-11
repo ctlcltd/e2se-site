@@ -5,7 +5,7 @@ const sass = require('sass');
 
 const argv = process.argv;
 const src = argv[2];
-const dst = argv[2] != 'landing' ? argv[2] : '';
+const dst = argv[2] != 'landing' && argv[2] != 'help' ? argv[2] : '';
 const options = fs.readFileSync('./' + src + '/build_options.jsx');
 
 const dest = '../public';
@@ -198,7 +198,7 @@ class Build {
   }
 
   compile_scss(filename, path, no_uglify) {
-    const name = 'style';
+    const name = argv[2] == 'help' ? 'help' : 'style';
     const file = path + '/' + filename + '.scss';
 
     sass.render({ file }, (err, result) => {
@@ -231,7 +231,7 @@ class Build {
 
     if (end < this.contents[type].length - 1) return;
 
-    const name = (type === 'js') ? 'script' : 'style';
+    const name = (type === 'js') ? 'script' : (argv[2] == 'help' ? 'help' : 'style');
 
     fs.writeFile(
       dest + '/' + dst + '/' + name + '.' + type,

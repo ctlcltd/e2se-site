@@ -4,12 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../help.css">
 <title>Channel List operations - Online Help</title>
 <meta name="description" content="How to edit and create channel lists, edit and move services and bouquets">
-<style>@import "../temp.css"</style>
 </head>
 <body>
 <div id="head">
+  <div>
+    <button type="button" id="btn-toc" title="Contents">a</button>
+    <button type="button" id="btn-language" title="Language">b</button>
+  </div>
   <div>
     <button type="button" id="switch-color">switch to dark</button>
   </div>
@@ -53,7 +57,7 @@
       <div id="convert-list">
         <h3>Convert channel lists</h3>
         <p>Channel lists can be converted between formats, from Enigma 2 to Neutrino and from Neutrino to Enigma 2.</p>
-        <p>From the <b>&quot;Services&quot;</b> side list above <i>All services</i>, click on the [IMG] icon.</p>
+        <p>From the <b>&quot;Services&quot;</b> side list above <i>All services</i>, click on icon <span class="icon"><svg width="16" height="16"><use href="#service-sets-menu" fill="currentColor"/></svg></span>.</p>
         <p>Then from the drop-down menu, press <b>Convert</b> menu item, select the option responding to the desired conversion.</p>
         <p>Available from / to conversion options are:</p>
         <ul>
@@ -93,16 +97,16 @@
       <div id="channel-sort">
         <h3>Channel sorting</h3>
         <p>Channels can be sorted according to the column name (e.g. sorted by <i>Name A-Z</i> or <i>Name Z-A</i>) in ascending and descending order.</p>
-        <p>To use the sort click on the <b>column name</b> in the tree view, inside the <b>Channels</b> area.</p>
-        <p>When using channel sort, Drag and Drop is not available, to quickly re-enable Drag and Drop click on the <b>&quot;Drag&Drop&quot;</b> button.</p>
+        <p>To use the sort click on <b>column name</b> in the tree view, inside the <b>Channels</b> area.</p>
+        <p>When using channel sort, Drag and Drop is not available, to quickly re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
       </div>
       <div id="move-channels">
         <h3>Move channels</h3>
         <p>Channels move with <b>Drag and Drop</b>, or alternatively with the <b>Cut - Copy - Paste</b> functionality.</p>
         <p>Select services, channels, markers, then drag them onto the <b>Bouquets</b> area with the mouse cursor, into the bouquet item.</p>
-        <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on the keyboard, or <kbd>Command</kbd> on the Mac keyboard, for <b>continuous selection</b> press <kbd><span>&#8679;</span> Shift</kbd> on the keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into channel item or bouquet item onto the <b>Bouquets</b> area.</p>
+        <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span>&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span>&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into channel item or bouquet item onto the <b>Bouquets</b> area.</p>
         <div>
-          <p>When using channel sort, Drag and Drop is not available, to quickly re-enable Drag and Drop click on the <b>&quot;Drag&Drop&quot;</b> button.</p>
+          <p>When using channel sort, Drag and Drop is not available, to quickly re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
         </div>
       </div>
       <div id="reference">
@@ -117,7 +121,7 @@
           <li><b>Bouquets</b>, the parent group of channels, <i>TV</i> or <i>Radio</i>, where the service is</li>
           <li><b>Tuner</b>, tuning information, eg. satellite, position</li>
         </ul>
-        <p>Lot of details can be found in <b>Edit Service dialog</b>, which can be reached from the contextual menu by <b>double-click</b>ing on the selected service.</p>
+        <p>Lot of details can be found in <b>Edit Service dialog</b>, which can be reached from the contextual menu by <b>double-click</b>ing on selected service.</p>
         <ul>
           <li>When editing <b>Service</b>, these parameters will be shown: PID, Card ID, Flag, Service Number, Src ID.</li>
           <li>When editing <b>Transponder</b>, all the transponder parameters associated with the service will be shown.</li>
@@ -137,23 +141,23 @@
       <div id="edit-channel">
         <h3>Edit channel</h3>
         <p>Select the service channel to edit, open the context menu and click on <b>&quot;Edit Service&quot;</b>.</p>
-        <p>In the dialog, edit the service parameters, then press <b>&quot;Save&quot;</b>.</p>
+        <p>In <b>dialog</b>, edit the service parameters, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The service will be modified in every position where found.</i></p>
         <div class="">
           <p>For further information, view <a href="edit-service.html">Edit Services</a> page of online help.</p>
         </div>
-        <p>Service can be quickly edited by <b>double-click</b>ing on the selected service channel.</p>
+        <p>Service can be quickly edited by <b>double-click</b>ing on selected service channel.</p>
       </div>
       <div id="delete-channel">
         <h3>Delete channel</h3>
         <p>To delete a channel, select the channels, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
         <p><i>The service channel will be deleted in the current bouquet.</i></p>
-        <p>Channel can also be deleted with keyboard by clicking on <kbd><span>&#8678;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
+        <p>Channel can also be deleted with keyboard by clicking on <kbd><span>&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
       </div>
       <div id="create-channel">
         <h3>Create service channel</h3>
         <p>To create a service channel, click <b>&quot;+ New Service&quot;</b>.</p>
-        <p>In the dialog, enter the service parameters, then press <b>&quot;Save&quot;</b>.</p>
+        <p>In <b>dialog</b>, enter the service parameters, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The service channel will be added into the current bouquet.</i></p>
         <div class="">
           <p>For further information, view <a href="edit-service.html">Edit Services</a> page of online help.</p>
@@ -163,7 +167,7 @@
       <div id="create-marker">
         <h3>Create marker</h3>
         <p>To create a marker, click <b>&quot;+ Add Marker&quot;</b>.</p>
-        <p>In the dialog, enter a name for marker, then press <b>&quot;Save&quot;</b>.</p>
+        <p>In <b>dialog</b>, enter a name for marker, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The marker will be created in the current bouquet.</i></p>
         <div>
           <p>Note: <i>Markers cannot be created in the Services lists: All services, TV, Radio, Data.</i></p>
@@ -173,15 +177,15 @@
       <div id="edit-marker">
         <h3>Edit marker</h3>
         <p>Select the marker to edit, open the context menu and click on <b>&quot;Edit Marker&quot;</b>.</p>
-        <p>In the dialog, change the name of the marker, then press <b>&quot;Save&quot;</b>.</p>
+        <p>In <b>dialog</b>, change the name of the marker, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The marker will be changed in the current bouquet.</i></p>
-        <p>Marker can be quickly edited by <b>double-click</b>ing on the selected marker.</p>
+        <p>Marker can be quickly edited by <b>double-click</b>ing on selected marker.</p>
       </div>
       <div id="delete-marker">
         <h3>Delete marker</h3>
         <p>To delete a marker, select markers, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
         <p><i>The marker will be deleted from the current bouquet.</i></p>
-        <p>Marker can also be deleted with keyboard by pressing on <kbd><span>&#8678;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
+        <p>Marker can also be deleted with keyboard by pressing on <kbd><span>&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
       </div>
       <hr id="bouquets">
       <div id="move-bouquets">
@@ -195,14 +199,14 @@
       <div id="create-bouquet">
         <h3>Create bouquet</h3>
         <p>To create a bouquet, click on <b>&quot;+ New Bouquet&quot;</b>.</p>
-        <p>In the dialog, enter a name for bouquet, then press <b>&quot;Save&quot;</b>.</p>
+        <p>In <b>dialog</b>, enter a name for bouquet, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The bouquet will be created below the current parent group of channels, TV or Radio.</i></p>
       </div>
       <div id="edit-bouquet">
         <h3>Edit bouquet</h3>
         <p>Select the bouquet to edit, open the context menu and click on <b>&quot;Edit Userbouquet&quot;</b>.</p>
-        <p>In the dialog, change the name of the bouquet, then press <b>&quot;Save&quot;</b>.</p>
-        <p>Bouquet can be quickly edited by <b>double-click</b>ing on the selected bouquet.</p>
+        <p>In <b>dialog</b>, change the name of the bouquet, then press <b>&quot;Save&quot;</b>.</p>
+        <p>Bouquet can be quickly edited by <b>double-click</b>ing on selected bouquet.</p>
       </div>
       <div id="delete-bouquet">
         <h3>Delete bouquet</h3>
@@ -280,10 +284,10 @@
           </ul>
         </nav>
       </aside>
-      <aside id="localize">
+      <aside id="language">
         <h4>Language</h4>
         <nav>
-          <a href="https://translate.google.com/?sl=en&amp;text={{protocol}}://{{host}}/help/troubleshooting.html">Translate this page in your language with Google Translate</a>
+          <a href="https://translate.google.com/?sl=en&amp;text={{protocol}}://{{host}}/help/channel-lists.html">Translate this page in your language with Google Translate</a>
         </nav>
       </aside>
     </div>
@@ -309,6 +313,15 @@
     </div>
   </div>
 </div>
+<svg style="display:none">
+  <defs>
+    <symbol id="menu" viewBox="0 0 64 64">
+    </symbol>
+    <symbol id="service-sets-menu" viewBox="0 0 64 64">
+      <path d="M19.144 57.582c0-2.301-1.868-4.169-4.169-4.169 0 0-7.557 0-7.557 0-2.3 0-4.168 1.868-4.168 4.169s1.868 4.168 4.168 4.168c0 0 7.557 0 7.557 0 2.301 0 4.169-1.868 4.169-4.168zM60.75 57.582c0-2.301-1.868-4.169-4.168-4.169 0 0-29.147 0-29.147 0-2.301 0-4.169 1.868-4.169 4.169s1.868 4.168 4.169 4.168c0 0 29.147 0 29.147 0 2.3 0 4.168-1.868 4.168-4.168zM19.144 45.617c0-2.301-1.868-4.169-4.169-4.169h-7.557c-2.3 0-4.168 1.868-4.168 4.169s1.868 4.168 4.168 4.168h7.557c2.301 0 4.169-1.867 4.169-4.168zM60.75 45.617c0-2.301-1.868-4.169-4.168-4.169h-29.147c-2.301 0-4.169 1.868-4.169 4.169s1.868 4.168 4.169 4.168h29.147c2.3 0 4.168-1.867 4.168-4.168zM19.144 33.652c0-2.3-1.868-4.168-4.169-4.168 0 0-7.557 0-7.557 0-2.3 0-4.168 1.868-4.168 4.168 0 2.301 1.868 4.169 4.168 4.169 0 0 7.557 0 7.557 0 2.301 0 4.169-1.868 4.169-4.169zM60.75 33.652c0-2.3-1.868-4.168-4.168-4.168 0 0-29.147 0-29.147 0-2.301 0-4.169 1.868-4.169 4.168 0 2.301 1.868 4.169 4.169 4.169 0 0 29.147 0 29.147 0 2.3 0 4.168-1.868 4.168-4.169zM19.144 21.688c0-2.301-1.868-4.169-4.169-4.169 0 0-7.557 0-7.557 0-2.3 0-4.168 1.868-4.168 4.169 0 2.3 1.868 4.168 4.168 4.168 0 0 7.557 0 7.557 0 2.301 0 4.169-1.868 4.169-4.168zM48.088 15.692l4.859 4.858c1.614 1.614 4.234 1.614 5.848 0 1.613-1.613 1.613-4.234 0-5.847 0 0-7.711-7.711-7.711-7.711-0.825-0.825-1.914-1.228-2.996-1.21-1.082-0.018-2.17 0.385-2.995 1.21 0 0-7.711 7.711-7.711 7.711-1.614 1.613-1.614 4.234 0 5.847s4.234 1.614 5.847 0l4.859-4.858z"/>
+    </symbol>
+  </defs>
+</svg>
 <script src="../script.js"></script>
 </body>
 </html>
