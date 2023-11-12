@@ -10,19 +10,15 @@
 @import "../../scss/_dark.scss";
 @import "../../scss/_light.scss";
 @include variant_light();
-// @import "page";
+@import "page";
 
 @import "custom";
 @import "help";
 
-// @media (prefers-color-scheme: dark) {
-//   body {
-//     @include variant_dark($print: true);
-//   }
-// 
-//   @include custom_variant_dark();
-// }
+@media (prefers-color-scheme: dark) {
+  body {
+    @include variant_dark($print: true);
+  }
 
-.dark {
   @include custom_variant_dark();
 }

@@ -11,11 +11,19 @@
 <body>
 <div id="head">
   <div>
-    <button type="button" id="btn-toc" title="Contents">a</button>
-    <button type="button" id="btn-language" title="Language">b</button>
+    <button type="button" id="btn-toc" title="Contents">
+      <svg width="22" height="22"><use href="#menu" fill="currentColor"/></svg>
+    </button>
+    <button type="button" id="btn-language" title="Language">
+      <svg width="22" height="22"><use href="#l10n" fill="currentColor"/></svg>
+    </button>
   </div>
   <div>
-    <button type="button" id="switch-color">switch to dark</button>
+    <button type="button" id="switch-color">
+      <svg width="22" height="22"><use href="#tone" fill="currentColor"/></svg>
+      <span class="d">switch to light</span>
+      <span class="l">switch to dark</span>
+    </button>
   </div>
 </div>
 <div id="page">
@@ -28,33 +36,34 @@
       <p>Create, edit, import, export, convert, channel lists.</p>
       <p>Move, edit, delete and lock channels.<br>Move, modify, delete bouquets (group of channels).</p>
       <div class="info">
+        <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
         <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
       </div>
       <hr id="lists">
-      <div id="create-list">
+      <div id="create-list" class="l1">
         <h3>Create channel lists</h3>
         <p>To create a new list of channels, open a new tab by clicking on <b>&quot;+ New Tab&quot;</b> at top window.</p>
-        <div>
+        <div class="l2">
           <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>New</b>.</p>
         </div>
       </div>
-      <div id="edit-list">
+      <div id="edit-list" class="l1">
         <h3>Edit channel lists</h3>
         <p>Open the channel list.</p>
-        <div>
+        <div class="l2">
           <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Open</b>.</p>
           <p><b>From quick menu</b>, click on <b>&quot;Open&quot;</b>.</p>
         </div>
       </div>
-      <div id="save-list">
+      <div id="save-list" class="l1">
         <h3>Save channel lists</h3>
-        <div>
+        <div class="l2">
           <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Save</b>, or to save with another name or to another location, click menu <b>File</b> &gt; <b>Save as</b>.</p>
           <p><b>From quick menu</b>, click <b>&quot;Save&quot;</b>.</p>
         </div>
         <p>You may see a message about overwriting of existing files, choose <b>&quot;Save&quot;</b> or <b>&quot;Cancel&quot;</b>.</p>
       </div>
-      <div id="convert-list">
+      <div id="convert-list" class="l1">
         <h3>Convert channel lists</h3>
         <p>Channel lists can be converted between formats, from Enigma 2 to Neutrino and from Neutrino to Enigma 2.</p>
         <p>From the <b>&quot;Services&quot;</b> side list above <i>All services</i>, click on icon <span class="icon"><svg width="16" height="16"><use href="#service-sets-menu" fill="currentColor"/></svg></span>.</p>
@@ -71,21 +80,21 @@
           <li>Zapit api-v1 [Neutrino]</li>
         </ul>
       </div>
-      <div id="import-export">
+      <div id="import-export" class="l1">
         <h3>Import and export</h3>
         <p>To selectively import and export parts of channel lists and merge with the opened channel list, use Import and Export functionality.</p>
-        <div>
+        <div class="l2">
           <h5>Import</h5>
-          <div>
+          <div class="l3">
             <p><b>From quick menu</b>, click on <b>&quot;Import&quot;</b>.</p>
             <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Import</b>.</p>
           </div>
           <p>In <b>File dialog</b>, select file or directory to import. In dialog you can select the type of file to import from File type selector.</p>
         </div>
-        <div>
+        <div class="l2">
           <h5>Export</h5>
           <p>The current selected service channel list or bouquet will be exported.</p>
-          <div>
+          <div class="l3">
             <p><b>From quick menu</b>, click on <b>&quot;Export&quot;</b>.</p>
             <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Export</b>.</p>
             <p><b>From bouquet</b> you want to export, open the context menu and click on <b>&quot;Export&quot;</b>.</p>
@@ -94,22 +103,22 @@
         </div>
       </div>
       <hr id="channels">
-      <div id="channel-sort">
+      <div id="channel-sort" class="l1">
         <h3>Channel sorting</h3>
         <p>Channels can be sorted according to the column name (e.g. sorted by <i>Name A-Z</i> or <i>Name Z-A</i>) in ascending and descending order.</p>
         <p>To use the sort click on <b>column name</b> in the tree view, inside the <b>Channels</b> area.</p>
         <p>When using channel sort, Drag and Drop is not available, to quickly re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
       </div>
-      <div id="move-channels">
+      <div id="move-channels" class="l1">
         <h3>Move channels</h3>
         <p>Channels move with <b>Drag and Drop</b>, or alternatively with the <b>Cut - Copy - Paste</b> functionality.</p>
         <p>Select services, channels, markers, then drag them onto the <b>Bouquets</b> area with the mouse cursor, into the bouquet item.</p>
-        <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span>&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span>&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into channel item or bouquet item onto the <b>Bouquets</b> area.</p>
-        <div>
+        <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span class="symbol">&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span class="symbol">&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into channel item or bouquet item onto the <b>Bouquets</b> area.</p>
+        <div class="l2">
           <p>When using channel sort, Drag and Drop is not available, to quickly re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
         </div>
       </div>
-      <div id="reference">
+      <div id="reference" class="l1">
         <h3>View channel details <span class="type">[Reference]</span></h3>
         <p>Further channel details are available by pressing the <b>&quot;Reference&quot;</b> button.</p>
         <p>The details of the selected service channel will be shown in a box:</p>
@@ -127,18 +136,18 @@
           <li>When editing <b>Transponder</b>, all the transponder parameters associated with the service will be shown.</li>
         </ul>
       </div>
-      <div id="add-channels">
+      <div id="add-channels" class="l1">
         <h3>Add channels</h3>
         <p>To add channels click on <b>&quot;+ Add Channel&quot;</b>.</p>
         <p>The channel selector, with filters, will be shown in the pop-up window.</p>
         <p>Select the channels to add and press <b>&quot;Add&quot;</b>.</p>
         <p><i>When you done, close the pop-up window.</i></p>
-        <div>
+        <div class="l2">
           <p>Note: <i>Channels cannot be added to the Services lists: All services, TV, Radio, Data.</i></p>
         </div>
         <p>Make sure you have selected a bouquet in the <b>Bouquets</b> area or have created one and select it.</p>
       </div>
-      <div id="edit-channel">
+      <div id="edit-channel" class="l1">
         <h3>Edit channel</h3>
         <p>Select the service channel to edit, open the context menu and click on <b>&quot;Edit Service&quot;</b>.</p>
         <p>In <b>dialog</b>, edit the service parameters, then press <b>&quot;Save&quot;</b>.</p>
@@ -148,13 +157,13 @@
         </div>
         <p>Service can be quickly edited by <b>double-click</b>ing on selected service channel.</p>
       </div>
-      <div id="delete-channel">
+      <div id="delete-channel" class="l1">
         <h3>Delete channel</h3>
         <p>To delete a channel, select the channels, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
         <p><i>The service channel will be deleted in the current bouquet.</i></p>
-        <p>Channel can also be deleted with keyboard by clicking on <kbd><span>&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
+        <p>Channel can also be deleted with keyboard by clicking on <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
       </div>
-      <div id="create-channel">
+      <div id="create-channel" class="l1">
         <h3>Create service channel</h3>
         <p>To create a service channel, click <b>&quot;+ New Service&quot;</b>.</p>
         <p>In <b>dialog</b>, enter the service parameters, then press <b>&quot;Save&quot;</b>.</p>
@@ -164,67 +173,67 @@
         </div>
       </div>
       <hr id="markers">
-      <div id="create-marker">
+      <div id="create-marker" class="l1">
         <h3>Create marker</h3>
         <p>To create a marker, click <b>&quot;+ Add Marker&quot;</b>.</p>
         <p>In <b>dialog</b>, enter a name for marker, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The marker will be created in the current bouquet.</i></p>
-        <div>
+        <div class="l2">
           <p>Note: <i>Markers cannot be created in the Services lists: All services, TV, Radio, Data.</i></p>
         </div>
         <p>Make sure you have selected a bouquet in the <b>Bouquets</b> area or have created one and select it.</p>
       </div>
-      <div id="edit-marker">
+      <div id="edit-marker" class="l1">
         <h3>Edit marker</h3>
         <p>Select the marker to edit, open the context menu and click on <b>&quot;Edit Marker&quot;</b>.</p>
         <p>In <b>dialog</b>, change the name of the marker, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The marker will be changed in the current bouquet.</i></p>
         <p>Marker can be quickly edited by <b>double-click</b>ing on selected marker.</p>
       </div>
-      <div id="delete-marker">
+      <div id="delete-marker" class="l1">
         <h3>Delete marker</h3>
         <p>To delete a marker, select markers, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
         <p><i>The marker will be deleted from the current bouquet.</i></p>
-        <p>Marker can also be deleted with keyboard by pressing on <kbd><span>&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
+        <p>Marker can also be deleted with keyboard by pressing on <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
       </div>
       <hr id="bouquets">
-      <div id="move-bouquets">
+      <div id="move-bouquets" class="l1">
         <h3>Move bouquets</h3>
         <p>The bouquets move with <b>Drag and Drop</b>.</p>
         <p>Select bouquets then drag them with the mouse cursor to the desired position.</p>
-        <div>
+        <div class="l2">
           <p>Note: <i>Multiple selection is not available for moving bouquets.</i></p>
         </div>
       </div>
-      <div id="create-bouquet">
+      <div id="create-bouquet" class="l1">
         <h3>Create bouquet</h3>
         <p>To create a bouquet, click on <b>&quot;+ New Bouquet&quot;</b>.</p>
         <p>In <b>dialog</b>, enter a name for bouquet, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The bouquet will be created below the current parent group of channels, TV or Radio.</i></p>
       </div>
-      <div id="edit-bouquet">
+      <div id="edit-bouquet" class="l1">
         <h3>Edit bouquet</h3>
         <p>Select the bouquet to edit, open the context menu and click on <b>&quot;Edit Userbouquet&quot;</b>.</p>
         <p>In <b>dialog</b>, change the name of the bouquet, then press <b>&quot;Save&quot;</b>.</p>
         <p>Bouquet can be quickly edited by <b>double-click</b>ing on selected bouquet.</p>
       </div>
-      <div id="delete-bouquet">
+      <div id="delete-bouquet" class="l1">
         <h3>Delete bouquet</h3>
         <p>To delete a bouquet, select the bouquet, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
         <p><i>The bouquet will be deleted with all the contained channels.</i></p>
       </div>
-      <div id="parental">
+      <div id="parental" class="l1">
         <h3>Lock channels <span class="type">[Parental]</span></h3>
         <p>The Parental lock functionality is available with both blacklist and whitelist, this preference is found in <b>&quot;Settings&quot;</b> &gt; <b>Preferences</b>.</p>
-        <div>
+        <div class="l2">
           <h5>Single channel lock</h5>
           <p>To lock a channel, select the channel, open the context menu and click on <b>&quot;Set Parental lock&quot;</b>.</p>
           <p>To unlock a previously locked channel, select the channel, open the contextual menu and click on <b>&quot;Unset Parental lock&quot;</b>.</p>
-          <div>
+          <div class="l3">
             <p>Note: <i>Multiple selection is not available to lock channels.</i></p>
           </div>
         </div>
-        <div>
+        <div class="l2">
           <h5>Channel group lock</h5>
           <p>Bouquets can be created with channels to lock [blacklist] or unlock [whitelist].</p>
           <p>Create a bouquet with the channels to lock/unlock.</p>
@@ -238,7 +247,7 @@
         <h4>Contents</h4>
         <nav class="nav nav-side">
           <ul class="toc">
-            <li><a href=".">Online Help</a></li>
+            <li><a href="index.html">Online Help</a></li>
             <li><a href="install.html">Installation</a></li>
             <li><a href="quick-start.html">Quick Start</a></li>
             <li><a class="active" href="channel-lists.html">Channel List operations</a>
@@ -315,7 +324,17 @@
 </div>
 <svg style="display:none">
   <defs>
+    <symbol id="tone" viewBox="0 0 64 64">
+      <path d="M7 32c0 13.798 11.202 25 25 25l0.569-0.006c13.536-0.303 24.431-11.386 24.431-24.994 0-13.294-10.399-24.178-23.5-24.955v0c-0.499-0.030-0.999-0.045-1.5-0.045-13.798 0-25 11.202-25 25v0zM33.5 9.049c11.996 0.773 21.5 10.761 21.5 22.951s-9.504 22.178-21.5 22.952v-45.903z"/>
+    </symbol>
     <symbol id="menu" viewBox="0 0 64 64">
+      <path d="M55 44.25h-46v4.5h46v-4.5zM55 29.75h-46v4.5h46v-4.5zM55 15.25h-46v4.5h46v-4.5z"/>
+    </symbol>
+    <symbol id="l10n" viewBox="0 0 64 64">
+      <path d="M14.799 44h-3.959c-3.775 0-6.84-3.065-6.84-6.84v-24.32c0-3.775 3.065-6.84 6.84-6.84h42.32c3.775 0 6.84 3.065 6.84 6.84v24.32c0 3.775-3.065 6.84-6.84 6.84h-22.451l-15.592 17.668-0.318-17.668zM32 9.7v30.6h21.32c2.583 0 4.68-2.097 4.68-4.68v-21.24c0-2.583-2.097-4.68-4.68-4.68h-21.32zM29.5 9.7h-19.27c-2.335 0-4.23 1.895-4.23 4.23v22.14c0 2.335 1.895 4.23 4.23 4.23h19.27v-30.6zM37.744 20.063h-4.831v-3.933h10.512v-3.043h1.995l0.012-0.009h1.265l0.515 1.228-0.637 0.648v1.176h10.512v3.933h-5.067c-0.757 2.707-2.221 5.663-4.358 8.436 2.438 2.216 4.965 3.411 7.093 3.742l1.469 0.229-1.611 3.244-0.702-0.025c-2.661-0.097-5.892-1.429-8.943-4.191-3.226 3.037-6.686 4.483-9.511 4.586l-0.958 0.035-1.966-3.957 2.004-0.312c2.161-0.337 4.739-1.596 7.205-3.939-1.934-2.591-3.277-5.327-3.998-7.848zM23.405 35.7l0.060 0.162h4.896l-7.841-20.31h-5.539l-7.872 20.31h4.942l1.867-5.063c0 0 7.679 0 7.679 0s1.808 4.901 1.808 4.901zM17.76 19.687l0.069 0.212c0 0.002 0.644 1.917 0.644 1.917 0.001 0.003 1.956 5.366 1.956 5.366s-5.343 0-5.343 0c1.498-4.107 2.316-6.371 2.452-6.792 0.080-0.25 0.155-0.484 0.222-0.703zM47.248 20.063h-5.576c0.686 1.571 1.608 3.196 2.759 4.78 1.173-1.579 2.115-3.206 2.817-4.78zM17.698 19.030l0.052-0.178 0.038 0.117-0.038 0.13-0.052-0.069z"/>
+    </symbol>
+    <symbol id="read" viewBox="0 0 64 64">
+      <path d="M32 16.066c0.045-0.001 0.091 0 0.137 0.003l19.273 1.348c0.866 0.060 1.569 0.816 1.569 1.686v26.686c0 0.87-0.703 1.527-1.569 1.466l-15.217-1.064c-0.549 1.051-1.648 1.768-2.915 1.768h-2.556c-1.267 0-2.366-0.717-2.915-1.768l-15.217 1.064c-0.866 0.061-1.569-0.596-1.569-1.466v-26.686c0-0.87 0.703-1.626 1.569-1.686l19.273-1.348c0.046-0.003 0.092-0.004 0.137-0.003zM47.6 37.3h-13v1.7h13v-1.7zM29.3 37.3h-13v1.7h13v-1.7zM47.6 32.767h-13v1.7h13v-1.7zM29.3 32.767h-13v1.7h13v-1.7zM47.6 28.233h-13v1.7h13v-1.7zM29.3 28.233h-13v1.7h13v-1.7zM29.3 23.7h-13v1.7h13v-1.7zM47.6 23.7h-13v1.7h13v-1.7z"/>
     </symbol>
     <symbol id="service-sets-menu" viewBox="0 0 64 64">
       <path d="M19.144 57.582c0-2.301-1.868-4.169-4.169-4.169 0 0-7.557 0-7.557 0-2.3 0-4.168 1.868-4.168 4.169s1.868 4.168 4.168 4.168c0 0 7.557 0 7.557 0 2.301 0 4.169-1.868 4.169-4.168zM60.75 57.582c0-2.301-1.868-4.169-4.168-4.169 0 0-29.147 0-29.147 0-2.301 0-4.169 1.868-4.169 4.169s1.868 4.168 4.169 4.168c0 0 29.147 0 29.147 0 2.3 0 4.168-1.868 4.168-4.168zM19.144 45.617c0-2.301-1.868-4.169-4.169-4.169h-7.557c-2.3 0-4.168 1.868-4.168 4.169s1.868 4.168 4.168 4.168h7.557c2.301 0 4.169-1.867 4.169-4.168zM60.75 45.617c0-2.301-1.868-4.169-4.168-4.169h-29.147c-2.301 0-4.169 1.868-4.169 4.169s1.868 4.168 4.169 4.168h29.147c2.3 0 4.168-1.867 4.168-4.168zM19.144 33.652c0-2.3-1.868-4.168-4.169-4.168 0 0-7.557 0-7.557 0-2.3 0-4.168 1.868-4.168 4.168 0 2.301 1.868 4.169 4.168 4.169 0 0 7.557 0 7.557 0 2.301 0 4.169-1.868 4.169-4.169zM60.75 33.652c0-2.3-1.868-4.168-4.168-4.168 0 0-29.147 0-29.147 0-2.301 0-4.169 1.868-4.169 4.168 0 2.301 1.868 4.169 4.169 4.169 0 0 29.147 0 29.147 0 2.3 0 4.168-1.868 4.168-4.169zM19.144 21.688c0-2.301-1.868-4.169-4.169-4.169 0 0-7.557 0-7.557 0-2.3 0-4.168 1.868-4.168 4.169 0 2.3 1.868 4.168 4.168 4.168 0 0 7.557 0 7.557 0 2.301 0 4.169-1.868 4.169-4.168zM48.088 15.692l4.859 4.858c1.614 1.614 4.234 1.614 5.848 0 1.613-1.613 1.613-4.234 0-5.847 0 0-7.711-7.711-7.711-7.711-0.825-0.825-1.914-1.228-2.996-1.21-1.082-0.018-2.17 0.385-2.995 1.21 0 0-7.711 7.711-7.711 7.711-1.614 1.613-1.614 4.234 0 5.847s4.234 1.614 5.847 0l4.859-4.858z"/>

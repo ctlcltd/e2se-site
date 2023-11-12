@@ -10,7 +10,11 @@
 <body>
 <div id="head">
   <div>
-    <button type="button" id="switch-color">switch to dark</button>
+    <button type="button" id="switch-color">
+      <svg width="22" height="22"><use href="#tone" fill="currentColor"/></svg>
+      <span class="d">switch to light</span>
+      <span class="l">switch to dark</span>
+    </button>
   </div>
 </div>
 <div id="page">
@@ -118,6 +122,12 @@
     </div>
   </div>
 </div>
+<svg style="display:none">
+  <defs>
+    <symbol id="tone" viewBox="0 0 64 64">
+    </symbol>
+  </defs>
+</svg>
 <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,59 @@
+/*
+ * help/_variant.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+@mixin variant {
+  color: $color;
+  background: $background;
+
+
+  // landing
+
+  mark, .lead {
+    color: #dff;
+    background: #023;
+  }
+
+}
+
+@mixin custom_variant_dark {
+  #side {
+    background: #0a0a0a;
+  }
+
+  @media screen {
+    .toc > li > a {
+      border-color: #101010;
+      background: #222;
+    }
+  }
+
+  samp,
+  code,
+  .icon {
+    background: #555;
+  }
+
+  .image {
+    background: #0a0a0a;
+
+    [stroke] {
+      stroke: #fff;
+    }
+    [fill="#dff"] {
+      fill: #023;
+    }
+    text.mark {
+      fill: #dff;
+    }
+    ellipse[stroke] {
+      stroke: #dff;
+    }
+    text {
+      fill: #fff;
+    }
+  }
+}

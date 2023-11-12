@@ -11,11 +11,19 @@
 <body>
 <div id="head">
   <div>
-    <button type="button" id="btn-toc" title="Contents">a</button>
-    <button type="button" id="btn-language" title="Language">b</button>
+    <button type="button" id="btn-toc" title="Contents">
+      <svg width="22" height="22"><use href="#menu" fill="currentColor"/></svg>
+    </button>
+    <button type="button" id="btn-language" title="Language">
+      <svg width="22" height="22"><use href="#l10n" fill="currentColor"/></svg>
+    </button>
   </div>
   <div>
-    <button type="button" id="switch-color">switch to dark</button>
+    <button type="button" id="switch-color">
+      <svg width="22" height="22"><use href="#tone" fill="currentColor"/></svg>
+      <span class="d">switch to light</span>
+      <span class="l">switch to dark</span>
+    </button>
   </div>
 </div>
 <div id="page">
@@ -27,7 +35,7 @@
       <div class="info">
         <p>To get started and need quick help, refer to <a href="quick-start.html">Quick Start</a>.</p>
       </div>
-      <div id="index">
+      <div id="index" class="l1">
         <h2>Table of contents</h2>
         <p>The contents of Online Help.</p>
         <nav class="nav nav-index">
@@ -95,7 +103,7 @@
         <h4>Contents</h4>
         <nav class="nav nav-side">
           <ul class="toc">
-            <li><a href=".">Online Help</a></li>
+            <li><a href="index.html">Online Help</a></li>
             <li><a href="install.html">Installation</a></li>
             <li><a href="quick-start.html">Quick Start</a></li>
             <li><a href="channel-lists.html">Channel List operations</a></li>
@@ -137,6 +145,19 @@
     </div>
   </div>
 </div>
+<svg style="display:none">
+  <defs>
+    <symbol id="tone" viewBox="0 0 64 64">
+      <path d="M7 32c0 13.798 11.202 25 25 25l0.569-0.006c13.536-0.303 24.431-11.386 24.431-24.994 0-13.294-10.399-24.178-23.5-24.955v0c-0.499-0.030-0.999-0.045-1.5-0.045-13.798 0-25 11.202-25 25v0zM33.5 9.049c11.996 0.773 21.5 10.761 21.5 22.951s-9.504 22.178-21.5 22.952v-45.903z"/>
+    </symbol>
+    <symbol id="menu" viewBox="0 0 64 64">
+      <path d="M55 44.25h-46v4.5h46v-4.5zM55 29.75h-46v4.5h46v-4.5zM55 15.25h-46v4.5h46v-4.5z"/>
+    </symbol>
+    <symbol id="l10n" viewBox="0 0 64 64">
+      <path d="M14.799 44h-3.959c-3.775 0-6.84-3.065-6.84-6.84v-24.32c0-3.775 3.065-6.84 6.84-6.84h42.32c3.775 0 6.84 3.065 6.84 6.84v24.32c0 3.775-3.065 6.84-6.84 6.84h-22.451l-15.592 17.668-0.318-17.668zM32 9.7v30.6h21.32c2.583 0 4.68-2.097 4.68-4.68v-21.24c0-2.583-2.097-4.68-4.68-4.68h-21.32zM29.5 9.7h-19.27c-2.335 0-4.23 1.895-4.23 4.23v22.14c0 2.335 1.895 4.23 4.23 4.23h19.27v-30.6zM37.744 20.063h-4.831v-3.933h10.512v-3.043h1.995l0.012-0.009h1.265l0.515 1.228-0.637 0.648v1.176h10.512v3.933h-5.067c-0.757 2.707-2.221 5.663-4.358 8.436 2.438 2.216 4.965 3.411 7.093 3.742l1.469 0.229-1.611 3.244-0.702-0.025c-2.661-0.097-5.892-1.429-8.943-4.191-3.226 3.037-6.686 4.483-9.511 4.586l-0.958 0.035-1.966-3.957 2.004-0.312c2.161-0.337 4.739-1.596 7.205-3.939-1.934-2.591-3.277-5.327-3.998-7.848zM23.405 35.7l0.060 0.162h4.896l-7.841-20.31h-5.539l-7.872 20.31h4.942l1.867-5.063c0 0 7.679 0 7.679 0s1.808 4.901 1.808 4.901zM17.76 19.687l0.069 0.212c0 0.002 0.644 1.917 0.644 1.917 0.001 0.003 1.956 5.366 1.956 5.366s-5.343 0-5.343 0c1.498-4.107 2.316-6.371 2.452-6.792 0.080-0.25 0.155-0.484 0.222-0.703zM47.248 20.063h-5.576c0.686 1.571 1.608 3.196 2.759 4.78 1.173-1.579 2.115-3.206 2.817-4.78zM17.698 19.030l0.052-0.178 0.038 0.117-0.038 0.13-0.052-0.069z"/>
+    </symbol>
+  </defs>
+</svg>
 <script src="../script.js"></script>
 </body>
 </html>

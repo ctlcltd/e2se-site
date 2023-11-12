@@ -11,11 +11,19 @@
 <body>
 <div id="head">
   <div>
-    <button type="button" id="btn-toc" title="Contents">a</button>
-    <button type="button" id="btn-language" title="Language">b</button>
+    <button type="button" id="btn-toc" title="Contents">
+      <svg width="22" height="22"><use href="#menu" fill="currentColor"/></svg>
+    </button>
+    <button type="button" id="btn-language" title="Language">
+      <svg width="22" height="22"><use href="#l10n" fill="currentColor"/></svg>
+    </button>
   </div>
   <div>
-    <button type="button" id="switch-color">switch to dark</button>
+    <button type="button" id="switch-color">
+      <svg width="22" height="22"><use href="#tone" fill="currentColor"/></svg>
+      <span class="d">switch to light</span>
+      <span class="l">switch to dark</span>
+    </button>
   </div>
 </div>
 <div id="page">
@@ -29,22 +37,23 @@
       <p>Move, edit, delete positions [XML only].</p>
       <p>Import, export settings.</p>
       <div class="info">
+        <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
         <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
       </div>
       <hr id="transponders">
-      <div id="transponder-sort">
+      <div id="transponder-sort" class="l1">
         <h3>Transponder sorting</h3>
         <p>Transponders can be sorted according to the column name (e.g. sorted by <i>Frequency 0-9</i> or <i>Frequency 9-0</i>) in ascending and descending order.</p>
         <p>To use the sort click on <b>column name</b> in the tree view, inside the <b>Transponders</b> area.</p>
       </div>
-      <div id="move-transponders">
+      <div id="move-transponders" class="l1">
         <h3>Move transponders</h3>
         <p>The transponders move with <b>Drag and Drop</b>, or alternatively with the <b>Cut - Copy - Paste</b> functionality.</p>
         <p>Select transponders then drag them with the mouse cursor to the desired position.</p>
-        <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span>&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span>&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into transponder item.</p>
+        <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span class="symbol">&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span class="symbol">&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into transponder item.</p>
         <p><span class="type">[XML only]</span> Note: <i>It is not possible to move transponders to other positions (satellites).</i></p>
       </div>
-      <div id="create-transponder">
+      <div id="create-transponder" class="l1">
         <h3>Create transponder</h3>
         <p>To create a transponder, click on <b>&quot;+ New Transponder&quot;</b>.</p>
         <p>In <b>dialog</b>, enter the transponder parameters, then press <b>&quot;Save&quot;</b>.</p>
@@ -53,7 +62,7 @@
           <p>For further information, view <a href="edit-transponder.html">Edit Transponders</a> page of online help.</p>
         </div>
       </div>
-      <div id="edit-transponder">
+      <div id="edit-transponder" class="l1">
         <h3>Edit transponder</h3>
         <p>Select the transponder to edit, open the context menu and click on <b>&quot;Edit Transponder&quot;</b>.</p>
         <p>In <b>dialog</b>, edit the transponder parameters, then press <b>&quot;Save&quot;</b>.</p>
@@ -63,46 +72,46 @@
         <p>Transponder can be quickly changed by <b>double-click</b>ing on selected service channel.</p>
         <p>Note: <i>Transponder parameters will be changed for any service associated with the transponder.</i></p>
       </div>
-      <div id="delete-transponder">
+      <div id="delete-transponder" class="l1">
         <h3>Delete transponder</h3>
         <p>To delete a transponder, select the transponders, open the context menu and click on <b>&quot;Delete&quot;</b>.</p>
         <p><span class="type">[XML only]</span> <i>The transponder will be deleted from the current position.</i></p>
-        <p>Transponder can also be deleted with keyboard by pressing on <kbd><span>&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
+        <p>Transponder can also be deleted with keyboard by pressing on <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
         <p>Note: <i>The services associated with the transponder will be orphaned.</i></p>
       </div>
       <hr id="settings-xml">
-      <div id="edit-settings">
+      <div id="edit-settings" class="l1">
         <h3>Edit settings <span class="type">[XML only]</span></h3>
         <p>To edit the settings, click on icon <span class="icon"><svg width="16" height="16"><use href="#edit-tunersets" fill="currentColor"/></svg></span> in the <b>Positions</b> area.</p>
         <p>In <b>dialog</b>, modify the settings properties, then press <b>&quot;Save&quot;</b>.</p>
       </div>
-      <div id="move-positions">
+      <div id="move-positions" class="l1">
         <h3>Move positions <span class="type">[XML only]</span></h3>
         <p>Positions move with <b>Drag and Drop</b>.</p>
         <p>Select the position then drag it with the mouse cursor to the desired position.</p>
         <p>Note: <i>Multiple selection is not available to move positions.</i></p>
       </div>
-      <div id="edit-position">
+      <div id="edit-position" class="l1">
         <h3>Edit position <span class="type">[XML only]</span></h3>
         <p>Select the position to edit, open the context menu and click on <b>&quot;Edit Position&quot;</b>.</p>
         <p>In <b>dialog</b>, edit the position properties, then press <b>&quot;Save&quot;</b>.</p>
         <p>The position can be quickly changed by double-clicking on selected position.</p>
       </div>
-      <div id="create-position">
+      <div id="create-position" class="l1">
         <h3>Create position <span class="type">[XML only]</span></h3>
         <p>To create a position, click on <b>&quot;+ New Position&quot;</b>.</p>
         <p>In <b>dialog</b>, enter the position properties, then press <b>&quot;Save&quot;</b>.</p>
       </div>
-      <div id="import-export">
+      <div id="import-export" class="l1">
         <h3>Import and export <span class="type">[XML only]</span></h3>
         <p>To import and export settings.</p>
-        <div>
+        <div class="l2">
           <h5>Import</h5>
           <p><b>From quick menu</b>, click on <b>&quot;Import&quot;</b>.</p>
           <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Import</b> menu.</p>
           <p>In <b>File dialog</b> select the settings file to import.</p>
         </div>
-        <div>
+        <div class="l2">
           <h5>Export</h5>
           <p><b>From quick menu</b>, click on <b>&quot;Export&quot;</b>.</p>
           <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Export</b> menu.</p>
@@ -115,7 +124,7 @@
         <h4>Contents</h4>
         <nav class="nav nav-side">
           <ul class="toc">
-            <li><a href=".">Online Help</a></li>
+            <li><a href="index.html">Online Help</a></li>
             <li><a href="install.html">Installation</a></li>
             <li><a href="quick-start.html">Quick Start</a></li>
             <li><a href="channel-lists.html">Channel List operations</a></li>
@@ -176,6 +185,18 @@
 </div>
 <svg style="display:none">
   <defs>
+    <symbol id="tone" viewBox="0 0 64 64">
+      <path d="M7 32c0 13.798 11.202 25 25 25l0.569-0.006c13.536-0.303 24.431-11.386 24.431-24.994 0-13.294-10.399-24.178-23.5-24.955v0c-0.499-0.030-0.999-0.045-1.5-0.045-13.798 0-25 11.202-25 25v0zM33.5 9.049c11.996 0.773 21.5 10.761 21.5 22.951s-9.504 22.178-21.5 22.952v-45.903z"/>
+    </symbol>
+    <symbol id="menu" viewBox="0 0 64 64">
+      <path d="M55 44.25h-46v4.5h46v-4.5zM55 29.75h-46v4.5h46v-4.5zM55 15.25h-46v4.5h46v-4.5z"/>
+    </symbol>
+    <symbol id="l10n" viewBox="0 0 64 64">
+      <path d="M14.799 44h-3.959c-3.775 0-6.84-3.065-6.84-6.84v-24.32c0-3.775 3.065-6.84 6.84-6.84h42.32c3.775 0 6.84 3.065 6.84 6.84v24.32c0 3.775-3.065 6.84-6.84 6.84h-22.451l-15.592 17.668-0.318-17.668zM32 9.7v30.6h21.32c2.583 0 4.68-2.097 4.68-4.68v-21.24c0-2.583-2.097-4.68-4.68-4.68h-21.32zM29.5 9.7h-19.27c-2.335 0-4.23 1.895-4.23 4.23v22.14c0 2.335 1.895 4.23 4.23 4.23h19.27v-30.6zM37.744 20.063h-4.831v-3.933h10.512v-3.043h1.995l0.012-0.009h1.265l0.515 1.228-0.637 0.648v1.176h10.512v3.933h-5.067c-0.757 2.707-2.221 5.663-4.358 8.436 2.438 2.216 4.965 3.411 7.093 3.742l1.469 0.229-1.611 3.244-0.702-0.025c-2.661-0.097-5.892-1.429-8.943-4.191-3.226 3.037-6.686 4.483-9.511 4.586l-0.958 0.035-1.966-3.957 2.004-0.312c2.161-0.337 4.739-1.596 7.205-3.939-1.934-2.591-3.277-5.327-3.998-7.848zM23.405 35.7l0.060 0.162h4.896l-7.841-20.31h-5.539l-7.872 20.31h4.942l1.867-5.063c0 0 7.679 0 7.679 0s1.808 4.901 1.808 4.901zM17.76 19.687l0.069 0.212c0 0.002 0.644 1.917 0.644 1.917 0.001 0.003 1.956 5.366 1.956 5.366s-5.343 0-5.343 0c1.498-4.107 2.316-6.371 2.452-6.792 0.080-0.25 0.155-0.484 0.222-0.703zM47.248 20.063h-5.576c0.686 1.571 1.608 3.196 2.759 4.78 1.173-1.579 2.115-3.206 2.817-4.78zM17.698 19.030l0.052-0.178 0.038 0.117-0.038 0.13-0.052-0.069z"/>
+    </symbol>
+    <symbol id="read" viewBox="0 0 64 64">
+      <path d="M32 16.066c0.045-0.001 0.091 0 0.137 0.003l19.273 1.348c0.866 0.060 1.569 0.816 1.569 1.686v26.686c0 0.87-0.703 1.527-1.569 1.466l-15.217-1.064c-0.549 1.051-1.648 1.768-2.915 1.768h-2.556c-1.267 0-2.366-0.717-2.915-1.768l-15.217 1.064c-0.866 0.061-1.569-0.596-1.569-1.466v-26.686c0-0.87 0.703-1.626 1.569-1.686l19.273-1.348c0.046-0.003 0.092-0.004 0.137-0.003zM47.6 37.3h-13v1.7h13v-1.7zM29.3 37.3h-13v1.7h13v-1.7zM47.6 32.767h-13v1.7h13v-1.7zM29.3 32.767h-13v1.7h13v-1.7zM47.6 28.233h-13v1.7h13v-1.7zM29.3 28.233h-13v1.7h13v-1.7zM29.3 23.7h-13v1.7h13v-1.7zM47.6 23.7h-13v1.7h13v-1.7z"/>
+    </symbol>
     <symbol id="edit-tunersets" viewBox="0 0 64 64">
       <path d="M32.032 50.518c-4.79-2.886-8.032-8.409-8.032-14.742 0-9.314 7.011-16.876 15.648-16.876 8.636 0 15.647 7.562 15.647 16.876s-7.011 16.875-15.647 16.875c-0.924 0-1.828-0.086-2.709-0.252l-0.191 10.501-4.943-0.144 0.227-12.238zM6.057 26.78c-0.001-0.001 0.023 14.969 0.023 14.969-0.866 0.414-1.706 0.922-2.43 1.563-4.358 3.853-4.35 10.108 0.019 13.972 0.971 0.858 2.137 1.495 3.319 1.965l1.369-0.931-0.011-7.239c-0.001-0.885 0.89-1.557 1.892-1.556 0 0 2.771 0.003 2.771 0.003 0.536 0.001 1.068 0.166 1.418 0.476 0.306 0.27 0.483 0.677 0.484 1.091 0 0 0.011 7.016 0.011 7.016l1.416 0.908c0.975-0.446 1.946-0.994 2.763-1.716 4.357-3.853 4.35-10.108-0.019-13.972-0.727-0.643-1.569-1.153-2.438-1.57l-0.023-14.969c0.866-0.414 1.706-0.923 2.43-1.563 4.358-3.853 4.35-10.108-0.019-13.972-0.895-0.791-1.965-1.383-3.043-1.844l-1.393 0.921 0.010 6.793c0.002 0.875-0.84 1.502-1.829 1.501 0 0-2.897-0.003-2.897-0.003-0.992-0.002-1.837-0.634-1.839-1.511 0 0-0.010-6.794-0.010-6.794l-1.392-0.918c-1.078 0.459-2.146 1.048-3.039 1.838-4.357 3.853-4.35 10.108 0.019 13.972 0.727 0.642 1.569 1.153 2.438 1.57zM50.271 51.811l-0.523-0.46-5.453 3.436 0.662 1.988 5.986-1.196c1.277 1.246 2.819 1.484 3.871 0.785-0.004 0.002 7.388-4.581 7.388-4.581 0.786-0.485 1.326-1.441 1.398-2.711 0.046-0.806-0.219-1.238-0.491-1.487-0.236-0.215-0.539-0.342-0.917-0.337-0.336 0.004-0.81 0.167-1.33 0.351-0.245 0.086-0.508 0.175-0.77 0.205-0.142 0.017-0.286 0.022-0.415-0.049-1.014-0.553-2.017-0.529-2.787-0.049l-6.619 4.105z"/>
     </symbol>

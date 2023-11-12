@@ -1,5 +1,5 @@
 /*
- * help/_custom.scss
+ * help/help.scss
  * 
  * @author Leonardo Laureti
  * @license MIT License
@@ -20,14 +20,17 @@
   font-size: 1rem;
 }
 
-#help main > div {
+.l1 {
   padding: 2rem 0 0;
 }
-#help #quick > div {
-  padding: 2rem 0 1.5rem;
-}
-#help main > div div {
+.l2 {
   padding: .5rem 0 1.5rem;
+}
+.l3 {
+  padding: .5rem 0 .75rem;
+}
+.lh {
+  padding: 2rem 0 1.5rem;
 }
 
 #side {
@@ -36,12 +39,7 @@
   background: #f9f9f9;
 }
 #side aside + aside {
-  margin: 0 0 2rem;
-}
-.dark {
-  #side {
-    background: #0a0a0a;
-  }
+  margin: 0 0 2.5rem;
 }
 #side h4 {
   padding: 0 .5rem;
@@ -52,7 +50,7 @@
 
 #toc {
   position: sticky;
-  top: 4rem;
+  top: 6rem;
   height: fit-content;
 }
 
@@ -143,6 +141,10 @@
 .toc ul {
   margin: .7rem 0 1rem;
 }
+.chapter {
+  font-weight: bold;
+  font-size: .91rem;
+}
 
 @media (min-width: 992px) {
   .nav-index ul {
@@ -155,12 +157,6 @@
     border-color: #fff;
     background: #eee;
   }
-  .dark {
-    .toc > li > a {
-      border-color: #101010;
-      background: #222;
-    }
-  }
 }
 
 samp,
@@ -169,13 +165,6 @@ code,
   padding: .1rem .2rem;
   background: #ddd;
   border-radius: 3px;
-}
-.dark {
-  samp,
-  code,
-  .icon {
-    background: #555;
-  }
 }
 samp {
   font-family: inherit;
@@ -201,7 +190,7 @@ kbd {
   color: #fff;
   background: #444;
 }
-kbd span {
+kbd .symbol {
   margin: 0 -.1rem;
 }
 
@@ -209,26 +198,6 @@ kbd span {
   margin: .5rem 0 0;
   background: #f9f9f9;
   user-select: none;
-}
-.dark {
-  .image {
-    background: #0a0a0a;
-  }
-  .image [stroke] {
-    stroke: #fff;
-  }
-  .image [fill="#dff"] {
-    fill: #023;
-  }
-  .image text.mark {
-    fill: #dff;
-  }
-  .image ellipse[stroke] {
-    stroke: #dff;
-  }
-  .image text {
-    fill: #fff;
-  }
 }
 
 table {
@@ -243,7 +212,7 @@ td {
 .table {
   position: relative;
   display: block;
-  margin: 0 -.5rem;
+  margin: 0 -.5rem 0;
   border: 0;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
@@ -258,13 +227,17 @@ td {
 }
 
 .info {
-  margin: 2rem 0 1.5rem !important;
-  padding: .7rem !important;
+  margin: 2rem 0 1.5rem;
+  padding: .7rem;
   background: #8883;
   opacity: .96;
 }
 .info p:last-child {
   margin: 0;
+}
+.read {
+  float: inline-start;
+  margin-inline-end: .5rem;
 }
 
 .type {
