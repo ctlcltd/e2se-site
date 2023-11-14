@@ -4,7 +4,7 @@
   "description": "Static files for e2se-site",
   "scripts": {
     "watch.site": "grunt watch.site",
-    "watch.help": "grunt watch.site",
+    "watch.help": "grunt watch.help",
     "watch.translate": "grunt watch.translate",
     "watch.backend": "grunt watch.backend",
     "build.site": "grunt build.site",

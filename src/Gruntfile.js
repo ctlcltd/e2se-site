@@ -1,22 +1,91 @@
+const path = require('path');
+const { Liquid } = require('liquidjs');
+
 module.exports = function(grunt) {
+
+  grunt.registerMultiTask('liquid', async function() {
+    const done = this.async();
+
+    const filedest = this.files[0].dest;
+    let files = [];
+
+    if (! grunt.file.isDir(filedest)) {
+      return;
+    }
+    this.files.forEach(function(file) {
+      files = file.src.filter(function(filepath) {
+        if (! grunt.file.exists(filepath)) {
+          grunt.log.warn('Source file "' + filepath + '" not found.');
+          return false;
+        }
+        if (grunt.file.isDir(filepath)) {
+          return false;
+        }
+        if (/^_/.test(path.basename(filepath))) {
+          return false;
+        }
+        return true;
+      });
+    });
+
+    const engine = new Liquid({
+      root: files.map(function(filepath, i) {
+        return path.dirname(filepath);
+      }).filter(function(v, i, a) {
+        return a.indexOf(v) === i; 
+      })
+    });
+
+    await files.map(async function(filepath, i) {
+      const fname = path.basename(filepath, '.liquid');
+      const filename = path.format({dir: filedest, name: fname, ext: 'html'});
+      const src = grunt.file.read(filepath);
+      var dst = '';
+      await engine
+        .parseAndRender(src, {})
+        .then(function(output) {
+          dst = output;
+        });
+
+      grunt.file.write(filename, dst);
+    });
+
+    done();
+  });
 
   grunt.initConfig({
     watch: {
       site: {
         files: ['site/liquid/*.liquid', 'site/js/*.js', 'scss/*.scss', 'translate/scss/*.scss'],
-        tasks: ['concat:site', 'sass:site']
+        tasks: ['liquid:site', 'concat:site', 'sass:site'],
+        options: {
+          spawn: false
+        }
       },
       help: {
-        files: ['help/liquid/*.liquid', 'scss/*.scss', 'help/scss/*.scss', 'translate/js/*.js'],
-        tasks: ['sass:help', 'concat:translate']
+        files: ['help/liquid/*.liquid', 'scss/*.scss', 'help/scss/*.scss'],
+        tasks: ['liquid:help', 'sass:help'],
+        options: {
+          spawn: false
+        }
       },
       translate: {
-        files: ['scss/*.scss', 'translate/scss/*.scss'],
-        tasks: ['sass:translate']
+        files: ['scss/*.scss', 'translate/scss/*.scss', 'translate/js/*.js'],
+        tasks: ['sass:translate', 'concat:translate']
       },
       backend: {
         files: ['backend/js/*.js', 'scss/*.scss', 'backend/scss/*.scss'],
         tasks: ['concat:backend', 'sass:backend']
+      }
+    },
+    liquid: {
+      site: {
+        src: ['site/liquid/*.liquid'],
+        dest: '../public'
+      },
+      help: {
+        src: ['help/liquid/*.liquid'],
+        dest: '../public/help'
       }
     },
     concat: {
@@ -49,6 +118,9 @@ module.exports = function(grunt) {
       }
     },
     sass: {
+      options: {
+        sourceMap: false
+      },
       site: {
         files: {
           '../public/style.css': 'site/scss/index.scss'
@@ -71,6 +143,9 @@ module.exports = function(grunt) {
       }
     },
     terser: {
+      options: {
+        sourceMap: false
+      },
       site: {
         files: {
           '../public/script.min.js': ['<%= concat.site.dest %>']
@@ -89,17 +164,26 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.event.on('watch', function(action, filepath, target) {
+    if (! /^_/.test(path.basename(filepath))) {
+      return;
+    }
+
+    grunt.config('liquid.site.src', filepath);
+    grunt.config('liquid.help.src', filepath);
+  });
+
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-terser');
 
   // site tasks
-  grunt.registerTask('build.site', ['concat:site', 'terser:site', 'sass:site']);
+  grunt.registerTask('build.site', ['liquid:site', 'concat:site', 'terser:site', 'sass:site']);
   grunt.registerTask('watch.site', ['build.site', 'watch:site']);
 
   // help tasks
-  grunt.registerTask('build.help', ['sass:help']);
+  grunt.registerTask('build.help', ['liquid:help', 'sass:help']);
   grunt.registerTask('watch.help', ['build.help', 'watch:help']);
   grunt.registerTask('dist.help', []);
 
