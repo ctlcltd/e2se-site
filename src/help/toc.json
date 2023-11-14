@@ -1,0 +1,146 @@
+{
+  "index": {
+    "href": "index.html",
+    "title": "Online Help",
+    "description": "Online Help for e2 SAT Editor"
+  },
+  "install": {
+    "href": "install.html",
+    "title": "Installation",
+    "description": "How to install the software",
+    "anchors": [
+      {
+        "#download": "Download",
+        "#windows": "Windows",
+        "#macos": "macOS",
+        "#linux": "Linux",
+        "#other-system": "Other systems"
+      },
+      {
+        "#safety": "Safety"
+      }
+    ]
+  },
+  "quick-start": {
+    "href": "quick-start.html",
+    "title": "Quick start",
+    "description": "A useful quick guide on using the software"
+  },
+  "channel-lists": {
+    "href": "channel-lists.html",
+    "title": "Channel List operations",
+    "description": "How to edit and create channel lists, edit and move services and bouquets",
+    "anchors": [
+      {
+        "@lists": "Channel lists",
+        "#create-list": "Create channel lists",
+        "#edit-list": "Edit channel lists",
+        "#save-list": "Save channel lists",
+        "#convert-list": "Convert channel lists",
+        "#import-export": "Import and export",
+        "#parental": "Lock channels [Parental]"
+      },
+      {
+        "@channels": "Channels",
+        "#channel-sort": "Channel sorting",
+        "#move-channels": "Move channels",
+        "#reference": "View channel details [Reference]",
+        "#add-channels": "Add channels",
+        "#edit-channel": "Edit channel",
+        "#delete-channel": "Delete channel",
+        "#create-channel": "Create service channel"
+      },
+      {
+        "@markers": "Markers",
+        "#create-marker": "Create marker",
+        "#edit-marker": "Edit marker",
+        "#delete-marker": "Delete marker"
+      },
+      {
+        "@bouquets": "Bouquets",
+        "#move-bouquets": "Move bouquets",
+        "#create-bouquet": "Create bouquet",
+        "#edit-bouquet": "Edit bouquet",
+        "#delete-bouquet": "Delete bouquet"
+      }
+    ]
+  },
+  "edit-service": {
+    "href": "edit-service.html",
+    "title": "Edit Services",
+    "description": "How to edit service channels, edit all service parameters",
+    "anchors": [
+      {
+        "#howto": "How to edit",
+        "#properties": "Properties",
+        "#transponder": "Transponder",
+        "#parameters": "Parameters"
+      }
+    ]
+  },
+  "edit-transponder": {
+    "href": "edit-transponder.html",
+    "title": "Edit Transponders",
+    "description": "How to edit transponders, edit all transponder parameters",
+    "anchors": [
+      {
+        "#howto": "How to edit",
+        "#properties": "Properties",
+        "#parameters": "Parameters [Type]",
+        "#channel": "Edit from channel"
+      }
+    ]
+  },
+  "transponders": {
+    "href": "transponders.html",
+    "title": "Transponder operations",
+    "description": "How to edit and create transponders, edit and move transponders",
+    "anchors": [
+      {
+        "@transponders": "Transponders",
+        "#transponder-sort": "Transponder sorting",
+        "#move-transponders": "Move transponders",
+        "#create-transponder": "Create transponder",
+        "#edit-transponder": "Edit transponder",
+        "#delete-transponder": "Delete transponder"
+      },
+      {
+        "@settings-xml": "Settings [XML]",
+        "#edit-settings": "Edit settings [XML]",
+        "#move-positions": "Move positions [XML]",
+        "#edit-position": "Edit position [XML]",
+        "#create-position": "Create position [XML]",
+        "#import-export": "Import and export [XML]"
+      }
+    ]
+  },
+  "settings": {
+    "href": "settings.html",
+    "title": "Settings",
+    "description": "How to change settings, handle connection profiles and engine"
+  },
+  "file-transfers-stb": {
+    "href": "file-transfers-stb.html",
+    "title": "Transfers from and to Decoder",
+    "description": "How to transfer files from and to Decoder (STB)"
+  },
+  "troubleshooting": {
+    "href": "troubleshooting.html",
+    "title": "Troubleshooting",
+    "description": "How to solve problems, eg. dealing with FTP",
+    "anchors": [
+      {
+        "#installation": "Installation",
+        "#common": "Common issues",
+        "#ftp": "FTP",
+        "#file": "File",
+        "#interop": "CSV / spreadsheet"
+      },
+      {
+        "#check-version": "Check the version",
+        "#enable-ftp-debug": "Enable FTP debug",
+        "#view-logs": "View software logs"
+      }
+    ]
+  }
+}

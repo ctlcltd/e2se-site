@@ -4,8 +4,8 @@
  * @author Leonardo Laureti
  * @license MIT License
  */
-(function() {
 
+(function() {
 
 const doc = document;
 const body = doc.body;
@@ -208,4 +208,4 @@ load_images();
 window.addEventListener('appearance-changed', load_images);
 abbrbox();
 
-})();
+});

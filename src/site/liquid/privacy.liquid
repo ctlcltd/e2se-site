@@ -8,15 +8,7 @@
 <meta name="description" content="Information concerning user privacy using the website and the software">
 </head>
 <body>
-<div id="head">
-  <div>
-    <button type="button" id="switch-color">
-      <svg width="22" height="22"><use href="#tone" fill="currentColor"/></svg>
-      <span class="d">switch to light</span>
-      <span class="l">switch to dark</span>
-    </button>
-  </div>
-</div>
+{% render '_page-head.liquid' %}
 <div id="page">
   <main id="privacy">
     <h1>Your Privacy</h1>
@@ -101,34 +93,8 @@
       <p>Last update (d/m/y): <strong>15/09/2023</strong></p>
     </div>
   </main>
-  <div id="footer">
-    <div>
-      <nav>
-        <ul>
-          <li><a href="/">About e2 SAT Editor</a></li>
-          <li><a href="/help/">Help</a></li>
-          <li class="separator"></li>
-          <li><a href="/translate/">Translations</a></li>
-          <li><a href="https://github.com/ctlcltd/e2-sat-editor">e2SE repository</a></li>
-          <li class="separator"></li>
-          <li><a href="/privacy.html">Your Privacy</a></li>
-          <li class="separator"></li>
-          <li><a href="/donate/">Donate!</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div>
-      <p>Copyright &copy; 2023 e2 SAT Editor Team <span>[Leonardo Laureti]</span></p>
-    </div>
-  </div>
+{% render '_page-foot.liquid' %}
 </div>
-<svg style="display:none">
-  <defs>
-    <symbol id="tone" viewBox="0 0 64 64">
-      <path d="M30.32 4.051c-14.672 0.87-26.32 13.060-26.32 27.949 0 15.241 12.203 27.653 27.363 27.993h0.014l0.081 0.002 0.096 0.001 0.025 0.001h0.017l0.042 0.001 0.113 0.001h0.068l0.181 0.001c15.453 0 28-12.546 28-28s-12.547-28-28-28c-0.561 0-1.121 0.017-1.68 0.050v0.001zM30.32 6.255v51.491c-13.457-0.866-24.12-12.070-24.12-25.746 0-13.675 10.663-24.879 24.12-25.745z"/>
-    </symbol>
-  </defs>
-</svg>
-<script src="script.js"></script>
+{% render '_page-vars.liquid' %}
 </body>
 </html>

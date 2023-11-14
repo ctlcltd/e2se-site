@@ -2,109 +2,88 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     watch: {
-      site_liquid: {
-        files: ['site/liquid/*.liquid'],
-        tasks: []
+      site: {
+        files: ['site/liquid/*.liquid', 'site/js/*.js', 'scss/*.scss', 'translate/scss/*.scss'],
+        tasks: ['concat:site', 'sass:site']
       },
-      site_js: {
-        files: ['site/js/*.js'],
-        tasks: ['concat:site']
+      help: {
+        files: ['help/liquid/*.liquid', 'scss/*.scss', 'help/scss/*.scss', 'translate/js/*.js'],
+        tasks: ['sass:help', 'concat:translate']
       },
-      site_sass: {
+      translate: {
         files: ['scss/*.scss', 'translate/scss/*.scss'],
-        tasks: ['sass:site']
+        tasks: ['sass:translate']
       },
-      help_liquid: {
-        files: ['help/liquid/*.liquid'],
-        tasks: []
-      },
-      help_sass: {
-        files: ['scss/*.scss', 'help/scss/*.scss'],
-        tasks: ['sass:help']
-      },
-      translate_js: {
-        files: ['translate/js/*.js'],
-        tasks: ['concat:translate_js']
-      },
-      translate_sass: {
-        files: ['scss/*.scss', 'translate/scss/*.scss'],
-        tasks: ['translate_build_sass']
-      },
-      backend_js: {
-        files: ['backend/js/*.js'],
-        tasks: ['backend_concat_js']
-      },
-      backend_sass: {
-        files: ['scss/*.scss', 'backend/scss/*.scss'],
-        tasks: ['translate_build_sass']
+      backend: {
+        files: ['backend/js/*.js', 'scss/*.scss', 'backend/scss/*.scss'],
+        tasks: ['concat:backend', 'sass:backend']
       }
     },
     concat: {
       site: {
         options: {
-          stripBanners: true
+          stripBanners: true,
+          banner: grunt.file.read('site/js/_banner.js') + '\n(function() {\n\n',
+          footer: '\n});'
         },
-        dist: {
-          src: ['site/js/*.js'],
-          dest: '../public/script.js'
-        }
+        src: ['site/js/index.js'],
+        dest: '../public/script.js'
       },
       translate: {
         options: {
-          stripBanners: true
+          stripBanners: true,
+          banner: grunt.file.read('translate/js/_banner.js') + '\n(function() {\n\n',
+          footer: '\n});'
         },
-        dist: {
-          src: ['translate/js/*.js'],
-          dest: '../public/translate/script.js'
-        }
+        src: ['translate/js/config.js', 'translate/js/main.js', 'translate/js/edit_translate.js', 'translate/js/add_language.js', 'translate/js/send_translation.js', 'translate/js/resume_translation.js', 'translate/js/misc.js', 'translate/js/api_request.js', 'translate/js/source_request.js', 'translate/js/route.js', 'translate/js/init.js'],
+        dest: '../public/translate/script.js'
       },
       backend: {
         options: {
-          stripBanners: true
+          stripBanners: true,
+          banner: grunt.file.read('backend/js/_banner.js') + '\n(function() {\n\n',
+          footer: '\n});'
         },
-        dist: {
-          src: ['backend/js/*.js'],
-          dest: '../public/backend/script.js'
-        }
+        src: ['backend/js/config.js', 'backend/js/main.js', 'backend/js/list.js', 'backend/js/edit.js', 'backend/js/service.js', 'backend/js/signin.js', 'backend/js/signout.js', 'backend/js/api_request.js', 'backend/js/api_test.js', 'backend/js/nav.js', 'backend/js/route.js', 'backend/js/init.js'],
+        dest: '../public/backend/script.js'
       }
     },
     sass: {
       site: {
-        dist: {
-          files: {
-            '../public/style.css': 'site/scss/index.scss'
-          }
+        files: {
+          '../public/style.css': 'site/scss/index.scss'
+        }
+      },
+      help: {
+        files: {
+          '../public/help.css': 'help/scss/index.scss'
         }
       },
       translate: {
-        dist: {
-          files: {
-            '../public/translate/style.css': 'translate/scss/index.scss'
-          }
+        files: {
+          '../public/translate/style.css': 'translate/scss/index.scss'
         }
       },
       backend: {
-        dist: {
-          files: {
-            '../public/backend/style.css': 'backend/scss/index.scss'
-          }
+        files: {
+          '../public/backend/style.css': 'backend/scss/index.scss'
         }
       }
     },
     terser: {
       site: {
         files: {
-          '../public/script.min.js': ['<%= concat:site.dist.dest %>']
+          '../public/script.min.js': ['<%= concat.site.dest %>']
         }
       },
       translate: {
         files: {
-          '../public/translate/script.min.js': ['<%= concat:translate.dist.dest %>']
+          '../public/translate/script.min.js': ['<%= concat.translate.dest %>']
         }
       },
       backend: {
         files: {
-          '../public/backend/script.min.js': ['<%= concat:backend.dist.dest %>']
+          '../public/backend/script.min.js': ['<%= concat.backend.dest %>']
         }
       }
     }
@@ -116,40 +95,22 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-terser');
 
   // site tasks
-  grunt.registerTask('build-site-liquid', []);
-  grunt.registerTask('build-site-js', ['concat:site', 'terser:site']);
-  grunt.registerTask('build-site-sass', ['sass:site']);
-  grunt.registerTask('build-site', ['build-site-liquid', 'build-site-js', 'build-site-sass']);
-  grunt.registerTask('watch-site-liquid', []);
-  grunt.registerTask('watch-site-js', ['concat:site', 'watch:site_js', 'terser:site']);
-  grunt.registerTask('watch-site-sass', ['sass:site', 'watch:site_sass']);
-  grunt.registerTask('watch-site', ['site-watch-liquid', 'site-watch-js', 'site-watch-sass']);
+  grunt.registerTask('build.site', ['concat:site', 'terser:site', 'sass:site']);
+  grunt.registerTask('watch.site', ['build.site', 'watch:site']);
 
   // help tasks
-  grunt.registerTask('build-help-liquid', []);
-  grunt.registerTask('build-help-sass', ['sass:site']);
-  grunt.registerTask('build-site', ['build-help-liquid', 'build-help-js', 'build-help-sass']);
-  grunt.registerTask('watch-help-liquid', []);
-  grunt.registerTask('watch-help-sass', ['sass:site', 'watch:site_sass']);
-  grunt.registerTask('watch-site', ['help-watch-liquid', 'help-watch-js', 'help-watch-sass']);
-  grunt.registerTask('dist-help', []);
+  grunt.registerTask('build.help', ['sass:help']);
+  grunt.registerTask('watch.help', ['build.help', 'watch:help']);
+  grunt.registerTask('dist.help', []);
 
   // translate tasks
-  grunt.registerTask('build-translate-js', ['concat:translate', 'terser:translate']);
-  grunt.registerTask('build-translate-sass', ['sass:translate']);
-  grunt.registerTask('build-translate-build', ['build-translate-js', 'build-translate-sass']);
-  grunt.registerTask('watch-translate-js', ['concat:translate', 'watch:translate_js', 'terser:translate']);
-  grunt.registerTask('watch-translate-sass', ['sass:translate', 'watch:translate_sass']);
-  grunt.registerTask('watch-translate', ['watch-translate-js', 'watch-translate-sass']);
+  grunt.registerTask('build.translate', ['concat:translate', 'terser:translate', 'sass:translate']);
+  grunt.registerTask('watch.translate', ['build.translate', 'watch:translate']);
 
   // backend tasks
-  grunt.registerTask('build-backend-js', ['concat:translate', 'terser:translate']);
-  grunt.registerTask('build-backend-sass', ['sass:translate']);
-  grunt.registerTask('build-backend-build', ['build-backend-js', 'build-backend-sass']);
-  grunt.registerTask('watch-backend-js', ['concat:translate', 'watch:translate_js', 'terser:translate']);
-  grunt.registerTask('watch-backend-sass', ['sass:translate', 'watch:translate_sass']);
-  grunt.registerTask('watch-translate', ['watch-backend-js', 'watch-backend-sass']);
+  grunt.registerTask('build.backend', ['concat:backend', 'terser:backend', 'sass:backend']);
+  grunt.registerTask('watch.backend', ['build.backend', 'watch:backend']);
 
-  grunt.registerTask('default', ['site-build', 'translate-build', 'backend-build']);
+  grunt.registerTask('default', ['build.site', 'build.translate', 'build.backend']);
 
 };
