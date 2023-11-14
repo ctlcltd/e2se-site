@@ -45,9 +45,20 @@
 }
 
 #side {
-  position: relative;
-  display: none;
+  position: fixed;
+  inset: 0 auto;
+  inset-inline-end: 0;
+  width: 0;
   background: #f9f9f9;
+  transition: width linear 150ms;
+}
+
+#side aside {
+  display: none;
+  width: 36ch;
+}
+#side aside.on {
+  display: block;
 }
 
 #side aside + aside {
@@ -60,6 +71,19 @@
 
 #side a {
   color: currentColor;
+}
+
+.offcanvas {
+  overflow-y: hidden;
+}
+
+.offcanvas #side {
+  width: 36ch;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
 }
 
 #toc {
@@ -91,6 +115,7 @@
     padding: 4rem 0 0 0;
   }
 
+  
   #toc {
     order: 1;
   }

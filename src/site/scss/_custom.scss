@@ -105,16 +105,6 @@ abbr:after {
     background: none !important;
   }
 }
-.dark {
-  abbr:after {
-    color: #aaa;
-    background: #444;
-  }
-  .abbrbox {
-    color: #000;
-    background: #ddd !important;
-  }
-}
 
 #footer {
   display: flex;
@@ -189,58 +179,21 @@ abbr:after {
   top: 0;
   z-index: 10;
 }
-
-/*#head {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: #fff;
+#head button {
+  padding: 0;
 }
-#head {
-  position: fixed;
-  right: 0;
-  left: 0;
-  z-index: 10;
+#head svg {
+  display: block;
 }
-#head > div {
-  position: relative;
-  margin-inline-start: auto;
-  z-index: 10;
-}
-#head,
-#head > div {
-  top: 0;
-}
-#head {
-  padding: .05rem .1rem .1rem;
-}*/
 
 #switch-color {
   position: relative;
   padding: .75rem;
-  padding-inline-start: 2.25rem;
   text-transform: none;
   white-space: nowrap;
-
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    inset-inline-start: .75rem;
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    border: 1px solid;
-    border-radius: 16px;
-    overflow: hidden;
-  }
-  &:after {
-    width: 0;
-    margin: 1px 0;
-    border-width: 0 9px;
-    border-right-color: transparent;
-    border-left-color: currentColor;
-  }
+}
+#switch-color svg {
+  display: inline-block;
 }
 #switch-color .d {
   display: none;
@@ -294,20 +247,10 @@ abbr:after {
     }
   }
 
-  /*#head {
-    position: static;
-    padding: 0;
-  }
-  #head > div {
-    position: fixed;
-    inset-inline-end: 5rem;
-  }
-
-  #head { background: #fff; }*/
-
   #head {
     position: static;
     padding: 0;
+    background: #fff;
   }
   #head > div {
     position: fixed;
@@ -317,10 +260,6 @@ abbr:after {
   }
   #head > div:last-child {
     inset-inline-end: 5rem;
-  }
-  #head { background: #fff; }
-  .dark {
-    #head { background: #181818; }
   }
 
   #privacy {

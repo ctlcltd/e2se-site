@@ -9,6 +9,7 @@
 
 const doc = document;
 const body = doc.body;
+const head = doc.getElementById('head');
 // var platform;
 
 function preferredColor() {
@@ -23,20 +24,18 @@ function preferredColor() {
     } else {
       body.classList.remove('dark');
     }
-
-    const button = doc.getElementById('switch-color');
-    button.innerText = 'switch to ' + (color == 'light' ? 'dark' : 'light');
   }
 }
 
 function switchColor(evt) {
-  const el = evt.target;
-  if (el.id == 'switch-color') {
+  let el = evt.target;
+  el = el.id == 'switch-color' ? el : el.closest('#switch-color');
+
+  if (el) {
     let color = body.hasAttribute('data-color') ? body.getAttribute('data-color') : 'light';
 
     if (color == 'light' || color == 'dark') {
       const switched = color == 'light' ? 'dark' : 'light';
-      el.innerText = 'switch to ' + color;
       body.setAttribute('data-color', switched);
 
       if (color == 'light') {
@@ -52,6 +51,53 @@ function switchColor(evt) {
       sessionStorage.setItem('preferred-color', switched);
       load_images();
     }
+  }
+}
+
+function offCanvas(evt) {
+  let el = evt.target;
+  el = el.hasAttribute('data-target') ? el : el.closest('[data-target]');
+
+  function close(evt) {
+    const el = evt.target;
+
+    if (el.className == 'backdrop') {
+      const sides = doc.querySelectorAll('#side aside');
+      body.classList.remove('offcanvas');
+      body._backdrop.remove();
+    }
+  }
+
+  function backdrop() {
+    const el = document.createElement('div');
+    el.className = 'backdrop';
+    body._backdrop = el;
+    body.append(el);
+    body.addEventListener('click', close);
+  }
+
+  function toggle(el) {
+    if (body.classList.contains('offcanvas')) {
+      body.removeEventListener('click', close);
+    } else {
+      backdrop();
+    }
+    if (el) {
+      body.classList.toggle('offcanvas');
+      el.classList.toggle('on');
+    }
+  }
+
+  if (el) {
+    const query = el.getAttribute('data-target');
+    const side = doc.querySelector(query);
+    console.log(query);
+
+    toggle(side);
+
+    setTimeout(function() {
+      el.blur();
+    }, 100);
   }
 }
 
@@ -156,7 +202,8 @@ function load_images(evt) {
 }
 
 preferredColor();
-doc.getElementById('head').addEventListener('click', switchColor);
+head.addEventListener('click', switchColor);
+head.addEventListener('click', offCanvas);
 load_images();
 window.addEventListener('appearance-changed', load_images);
 abbrbox();

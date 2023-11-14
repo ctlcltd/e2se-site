@@ -56,9 +56,14 @@
   #switch-color .l {
     display: none;
   }
-  #switch-color:after {
-    border-right-color: currentColor;
-    border-left-color: transparent;
+
+  abbr:after {
+    color: #aaa;
+    background: #444;
+  }
+  .abbrbox {
+    color: #000;
+    background: #ddd !important;
   }
 
   @media (min-width: 992px) {

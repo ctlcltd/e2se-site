@@ -9,7 +9,6 @@
 
 
 
-
 * {
   box-sizing: border-box;
 }
@@ -266,15 +265,6 @@ abbr:after {
   background: none !important;
 }
 
-.dark abbr:after {
-  color: #aaa;
-  background: #444;
-}
-.dark .abbrbox {
-  color: #000;
-  background: #ddd !important;
-}
-
 #footer {
   display: flex;
   flex-direction: row;
@@ -355,31 +345,23 @@ abbr:after {
   z-index: 10;
 }
 
+#head button {
+  padding: 0;
+}
+
+#head svg {
+  display: block;
+}
 
 #switch-color {
   position: relative;
   padding: 0.75rem;
-  padding-inline-start: 2.25rem;
   text-transform: none;
   white-space: nowrap;
 }
-#switch-color:before, #switch-color:after {
-  content: "";
-  position: absolute;
-  inset-inline-start: 0.75rem;
+
+#switch-color svg {
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  border: 1px solid;
-  border-radius: 16px;
-  overflow: hidden;
-}
-#switch-color:after {
-  width: 0;
-  margin: 1px 0;
-  border-width: 0 9px;
-  border-right-color: transparent;
-  border-left-color: currentColor;
 }
 
 #switch-color .d {
@@ -430,10 +412,10 @@ abbr:after {
     font-size: 0.9rem;
   }
 
-  
   #head {
     position: static;
     padding: 0;
+    background: #fff;
   }
 
   #head > div {
@@ -446,14 +428,6 @@ abbr:after {
 
   #head > div:last-child {
     inset-inline-end: 5rem;
-  }
-
-  #head {
-    background: #fff;
-  }
-
-  .dark #head {
-    background: #181818;
   }
 
   #privacy {
@@ -1417,9 +1391,13 @@ body .cnt .button:focus {
 .dark #switch-color .l {
   display: none;
 }
-.dark #switch-color:after {
-  border-right-color: currentColor;
-  border-left-color: transparent;
+.dark abbr:after {
+  color: #aaa;
+  background: #444;
+}
+.dark .abbrbox {
+  color: #000;
+  background: #ddd !important;
 }
 @media (min-width: 992px) {
   .dark #head {

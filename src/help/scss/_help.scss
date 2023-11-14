@@ -34,9 +34,18 @@
 }
 
 #side {
-  position: relative;
-  display: none;
+  position: fixed;
+  inset: 0 auto;
+  inset-inline-end: 0;
+  width: 0;
   background: #f9f9f9;
+  transition: width linear 150ms;
+}
+#side aside {
+  display: none;
+  width: 36ch;
+
+  &.on { display: block; }
 }
 #side aside + aside {
   margin: 0 0 2.5rem;
@@ -46,6 +55,17 @@
 }
 #side a {
   color: currentColor;
+}
+
+.offcanvas {
+  overflow-y: hidden;
+}
+.offcanvas #side {
+  width: 36ch;
+}
+.backdrop {
+  position: fixed;
+  inset: 0;
 }
 
 #toc {
@@ -74,6 +94,10 @@
     width: 32ch;
     padding: 4rem 0 0 0;
   }
+  /*#side aside {
+    display: block;
+    width: auto;
+  }*/
   #toc {
     order: 1;
   }
