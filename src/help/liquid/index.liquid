@@ -16,13 +16,13 @@
         <h2>Table of contents</h2>
         <p>The contents of Online Help.</p>
         <nav class="nav nav-index">
-          <ul class="toc">
+          <ul class="toc">{% for page in toc offset: 1 %}
             <li>
-              <a href="">
-                <h3></h3>
-                <p></p>
+              <a href="{{ page[1].href }}">
+                <h3>{{ page[1].title }}</h3>
+                <p>{{ page[1].description }}</p>
               </a>
-            </li>
+            </li>{% endfor %}
           </ul>
         </nav>
       </div>

@@ -4,13 +4,47 @@
  * @author Leonardo Laureti
  * @license MIT License
  */
-
-
-
-
-
-
-
+/*
+ * scss/_setup.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+/*
+ * help/_variant.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+/*
+ * scss/_dark.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+/*
+ * scss/_light.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+/*
+ * help/_custom.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+/*@media (min-width: 992px) {
+	#head div:first-child {
+		display: none;
+	}
+}*/
+/*
+ * help/help.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
 #help {
   display: flex;
   flex-direction: row;
@@ -112,10 +146,10 @@
     width: 32ch;
     padding: 4rem 0 0 0;
   }
-  /*#side aside {
+  #side aside {
     display: block;
     width: auto;
-  }*/
+  }
   #toc {
     order: 1;
   }

@@ -4,11 +4,36 @@
  * @author Leonardo Laureti
  * @license MIT License
  */
-
-
-
-
-
+/*
+ * scss/_setup.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+/*
+ * landing/_variant.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+/*
+ * scss/_dark.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+/*
+ * scss/_light.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+/*
+ * scss/_common.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
 * {
   box-sizing: border-box;
 }

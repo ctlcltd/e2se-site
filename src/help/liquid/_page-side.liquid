@@ -2,19 +2,20 @@
       <aside id="toc">
         <h4>Contents</h4>
         <nav class="nav nav-side">
-          <ul class="toc">
-            <li><a href=""></a>
-              <ul>
-                <li><a class="" href=""></a></li>
-              </ul>
-            </li>
+          <ul class="toc">{% for page in toc %}{% if templateName == page[0] and page[1].anchors %}
+            <li><a {% if templateName == page[0] %}class="active" {% endif %}href="{{ page[1].href }}">{{ page[1].title }}</a>{% for anchors in page[1].anchors %}
+              <ul>{% for anchor in anchors %}
+                <li><a {% if anchor[0] contains "@" %}class="chapter" {% endif %}href="{{ anchor[0] | replace: "@", "#" }}">{{ anchor[1] | replace: "[", "<span class=\"type\">[" | replace: "]", "]</span>" }}</a></li>{% endfor %}
+              </ul>{% endfor %}
+            </li>{% else %}
+            <li><a {% if templateName == page[0] %}class="active" {% endif %}href="{{ page[1].href }}">{{ page[1].title }}</a></li>{% endif %}{% endfor %}
           </ul>
         </nav>
       </aside>
       <aside id="language">
         <h4>Language</h4>
         <nav>
-          <a href="https://translate.google.com/?sl=en&amp;text={{protocol}}://{{host}}{{path}}">Translate this page in your language with Google Translate</a>
+          <a href="https://translate.google.com/?sl=en&amp;text=[PAGE_URL]">Translate this page in your language with Google Translate</a>
         </nav>
       </aside>
     </div>

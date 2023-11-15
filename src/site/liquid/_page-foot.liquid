@@ -2,13 +2,13 @@
     <div>
       <nav>
         <ul>
-          <li><a href="/">About e2 SAT Editor</a></li>
+          <li><a {% if templateName == "index" %}class="active" {% endif %}href="/">About e2 SAT Editor</a></li>
           <li><a href="/help/">Help</a></li>
           <li class="separator"></li>
           <li><a href="/translate/">Translations</a></li>
           <li><a href="https://github.com/ctlcltd/e2-sat-editor">e2SE repository</a></li>
           <li class="separator"></li>
-          <li><a href="/privacy.html">Your Privacy</a></li>
+          <li><a {% if templateName == "privacy" %}class="active" {% endif %}href="/privacy.html">Your Privacy</a></li>
           <li class="separator"></li>
           <li><a href="/donate/">Donate!</a></li>
         </ul>

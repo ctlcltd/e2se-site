@@ -5,6 +5,10 @@ module.exports = function(grunt) {
 
   grunt.registerMultiTask('liquid', async function() {
     const done = this.async();
+    var options = this.options({
+      globals: {},
+      data: {}
+    });
 
     const filedest = this.files[0].dest;
     let files = [];
@@ -42,7 +46,7 @@ module.exports = function(grunt) {
       const src = grunt.file.read(filepath);
       var dst = '';
       await engine
-        .parseAndRender(src, {})
+        .parseAndRender(src, options.data, { globals: { templateName: fname, ...options.globals }})
         .then(function(output) {
           dst = output;
         });
@@ -80,10 +84,24 @@ module.exports = function(grunt) {
     },
     liquid: {
       site: {
+        options: {
+          globals: {
+            deploy: false
+          },
+          data: {
+            privacy_rev: new Date('2023-09-15')
+          }
+        },
         src: ['site/liquid/*.liquid'],
         dest: '../public'
       },
       help: {
+        options: {
+          globals: {
+            deploy: false,
+            toc: grunt.file.readJSON('help/toc.json')
+          }
+        },
         src: ['help/liquid/*.liquid'],
         dest: '../public/help'
       }
@@ -119,7 +137,7 @@ module.exports = function(grunt) {
     },
     sass: {
       options: {
-        sourceMap: false
+        noSourceMap: true
       },
       site: {
         files: {

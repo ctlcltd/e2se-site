@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="style.css">
-<title>Your Privacy</title>
-<meta name="description" content="Information concerning user privacy using the website and the software">
-</head>
+{% render '_doc-head.liquid' %}
 <body>
 {% render '_page-head.liquid' %}
 <div id="page">
@@ -90,7 +84,7 @@
     </div>
     <div>
       <p>This page will be updated for revisions to the state of the privacy.</p>
-      <p>Last update (d/m/y): <strong>15/09/2023</strong></p>
+      <p>Last update (d/m/y): <strong>{{ privacy_rev | date: "%d/%m/%Y" }}</strong></p>
     </div>
   </main>
 {% render '_page-foot.liquid' %}
