@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+{% render '_doc-head.liquid' %}
+<body>
+{% render '_page-head.liquid' %}
+<div id="page">
+  <div id="help">
+    <main>
+      <h1>Online Help</h1>
+      <h2>Settings</h2>
+      <p>How to change settings, handle connection profiles and engine.</p>
+      <p>Connections, contains connection profiles and connection parameters to Decoder STB. <br>Preferences, contains appearance and behavior preferences. <br>Engine, contains behavior preferences of the contained engine. <br>Advanced, contains access to advanced settings.</p>
+      <div class="info">
+        <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
+        <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
+      </div>
+      <div id="settings" class="l1">
+        <h3>Settings</h3>
+        <p>Software preferences are found in <b>&quot;Settings&quot;</b>.</p>
+        <div class="l2">
+          <p><b>From quick menu</b>, click on <b>&quot;Settings&quot;</b></p>
+          <p><b>From main menu</b>, click on <b>File</b> &gt; <b>Settings</b>, or on Mac click menu <b>&quot;e2 SAT Editor&quot;</b> &gt; <b>Preferences&hellip;.</b></p>
+        </div>
+        <p>A <b>dialog</b> will open, to save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        <div class="l2">
+          <p>Note: <i>Not all the settings are changed real-time, in some cases it might necessary to restart the software.</i></p>
+        </div>
+      </div>
+      <div id="connection" class="l1">
+        <h3>Connection settings</h3>
+        <p><b>Connections</b> tab contains all the settings for connecting to Decoder (STB).</p>
+        <p>To save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        <div class="l2">
+          <h5>Profiles</h5>
+          <p>Connection profiles are found in the side panel.</p>
+          <div class="l3">
+            <p>To <b>create</b> a new connection profile, press on <b>&quot;+&quot;</b>, then name the profile.</p>
+            <p>To <b>remove</b> a connection profile, press on <b>&quot;&ndash;&quot;</b>.</p>
+          </div>
+          <p>By <b>double-click</b>ing on the item panel you can rename the profile.</p>
+        </div>
+        <div class="l2">
+          <h5>Profile properties</h5>
+          <p>Select a profile from the side panel.</p>
+          <p>The software automatically creates a profile with the most common settings, named <b>&quot;Default&quot;</b>.</p>
+          <div class="l3">
+            <h5>Connection</h5>
+            <p><b>Connection</b> group contains the following connection parameters to STB:</p>
+            <ul>
+              <li><b>IP Address</b>, IP address of STB connected to the network</li>
+              <li><b>FTP Port</b>, FTP connection port to STB, eg. 21</li>
+              <li><b>Use Active FTP</b>, on / off, set the FTP connection as FTP Active instead of FTP Passive</li>
+              <li><b>HTTP Port</b>, Webif connection port to STB, eg. 80</li>
+            </ul>
+          </div>
+          <div class="l3">
+            <h5>Login</h5>
+            <p><b>Login</b> group contains the following connection parameters to STB:</p>
+            <ul>
+              <li><b>Username</b>, FTP / Telnet login username of STB</li>
+              <li><b>Password</b>, FTP / Telnet login password of STB</li>
+            </ul>
+          </div>
+          <div class="l3">
+            <h5>Configuration</h5>
+            <p><b>Configuration</b> group contains the following properties for interfacing with STB:</p>
+            <ul>
+              <li><b>Transponders</b>, path containing XML settings (satellites.xml, ...) related to transponders, eg. /etc/enigma2/</li>
+              <li><b>Services</b>, path containing service channel lists (lamedb, blacklist, ...), eg. /etc/tuxbox/</li>
+              <li><b>Bouquets</b>, path containing groups of channels (userbouquet.dbe01.tv, bouquet.tv, ...), eg. /etc/enigma2/</li>
+              <li><b>Picons</b>, path containing channel logo (picons), eg. /usr/share/enigma2/picon/</li>
+            </ul>
+          </div>
+          <div class="l3">
+            <h5>Commands</h5>
+            <p><b>Commands</b> group contains the following advanced properties for interfacing with STB:</p>
+            <ul>
+              <li><b>Custom webif reload URL address</b>, URL address parameter for updating the STB lists, eg. /web/servicelistreload?mode=0</li>
+              <li><b>Custom telnet reload command</b>, Telnet command parameter for updating the STB lists, eg. init 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="preferences" class="l1">
+        <h3>Preferences settings</h3>
+        <p><b>Preferences</b> tab contains all the settings related to the appearance and behavior of the software.</p>
+        <p>To save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        <div class="l2">
+          <h5>General</h5>
+          <p><b>General</b> group contains the following preferences:</p>
+          <ul>
+            <li><b>Show confirmation messages when deleting</b>, on / off</li>
+            <li><b>Parental lock whitelist (exclusion instead inclusion list)</b>, on / off</li>
+          </ul>
+        </div>
+        <div class="l2">
+          <h5>Language</h5>
+          <p><b>Language</b> group contains language settings.</p>
+          <p>System detected language is selected by default.</p>
+          <ul>
+            <li><b>&quot;Default (system language)&quot;</b>, <i>auto</i>, selected by default</li>
+            <li>...</li>
+          </ul>
+        </div>
+        <div class="l2">
+          <h5>Theme</h5>
+          <p><b>Theme</b> group contains settings related to the appearance of the software.</p>
+          <ul>
+            <li><b>&quot;Default (system theme)&quot;</b>, <i>auto</i>, selected by default</li>
+            <li><b><b>&quot;Dark&quot;</b> variant</b>, dark theme</li>
+            <li><b><b>&quot;Light&quot;</b> variant</b>, light theme</li>
+          </ul>
+        </div>
+        <div class="l2">
+          <h5>Drag and Drop</h5>
+          <p><b>Drag and Drop</b> group contains settings related to Drag and Drop behavior.</p>
+          <ul>
+            <li><b>Switch to current bouquet item after the drop</b>, on / off</li>
+          </ul>
+          <p>Channel operations, choice:</p>
+          <ul>
+            <li><b>Copy channels</b> (preserving)</li>
+            <li><b>Move channels</b> (deleting)</li>
+          </ul>
+        </div>
+        <div class="l2">
+          <h5>Picons editor</h5>
+          <p><b>Picons editor</b> group contains settings related to the behavior of Picons Editor.</p>
+          <ul>
+            <li><b>Backup picon when replaced</b>, on / off</li>
+          </ul>
+          <p>Filename format, choice:</p>
+          <ul>
+            <li><b>Use reference ID</b>, will generate picon using Reference ID, eg. 1_1_0_10_1234_13E_820000_0_0_0.png</li>
+            <li><b>Use service name</b>, will generate picon using channel Service Name, eg. ribasports.png</li>
+          </ul>
+        </div>
+      </div>
+      <div id="engine" class="l1">
+        <h3>Engine settings</h3>
+        <p>The <b>&quot;Engine&quot;</b> tab contains all preferences related to the behavior of the engine contained in the software.</p>
+        <p>To save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        <div class="l2">
+          <h5>Settings</h5>
+          <p><b>Settings</b> group contains preferences related to settings.</p>
+          <p>Select a default format with which new channel lists will be created.</p>
+          <p><b>&quot;Default format&quot;</b> selector contains these options:</p>
+          <ul>
+            <li>Lamedb 2.4 [Enigma 2]</li>
+            <li>Lamedb 2.5 [Enigma 2]</li>
+            <li>Lamedb 2.3 [Enigma 1]</li>
+            <li>Lamedb 2.2 [Enigma 1]</li>
+            <li>Zapit api-v4 [Neutrino]</li>
+            <li>Zapit api-v3 [Neutrino]</li>
+            <li>Zapit api-v2 [Neutrino]</li>
+            <li>Zapit api-v1 [Neutrino]</li>
+          </ul>
+        </div>
+        <div class="l2">
+          <h5>Tools</h5>
+          <p><b>Tools</b> group contains preferences related to tools: import and export.</p>
+          <ul>
+            <li><b>CSV Import/Export</b>, preferences related to CSV</li>
+            <li><b>Fields Import/Export</b>, preferences related to fields to import / export</li>
+          </ul>
+        </div>
+      </div>
+      <div id="advanced" class="l1">
+        <h3>Advanced settings</h3>
+        <p><b>&quot;Advanced&quot;</b> tab gives access to the advanced settings of the software.</p>
+        <p>A cautionary warning will be shown, you should [confirm] to access advanced settings.</p>
+        <div class="l2">
+          <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
+          <p>In the editable table, <b>double-click</b> on the cell in the VALUE column to change the value.</p>
+          <p>For boolean values (TRUE or FALSE), input text: <samp>true</samp> or <samp>false</samp>.</p>
+          <p>To save the settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        </div>
+      </div>
+      <div id="reset-settings" class="l1">
+        <h3>Reset settings</h3>
+        <p>The software can be reset to factory settings.</p>
+        <p><b>All settings previously saved will be erased.</b></p>
+        <div class="l2">
+          <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
+          <p>To reset to factory settings, go to <b>&quot;Settings&quot;</b> &gt; <b>Advanced</b> &gt; [confirm].</p>
+          <p>Change the <samp>settings.reset</samp> line from FALSE to TRUE, typing <samp>true</samp>.</p>
+          <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
+        </div>
+        <p>The next time the software is opened it will be reset to factory defaults.</p>
+      </div>
+
+
+      <div class="info">
+        <p>To manually edit the settings file, please refer to the Qt toolkit documentation at: <a href="https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes" rel="nofollow noopener" target="_blank">https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes</a></p>
+        <p>The software uses the identifier &quot;io.github.ctlcltd.e2se&quot;.</p>
+      </div>
+    </main>
+{% render '_page-side.liquid' %}
+  </div>
+{% render '_page-foot.liquid' %}
+</div>
+{% render '_page-vars.liquid' %}
+</body>
+</html>

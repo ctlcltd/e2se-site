@@ -117,12 +117,33 @@
   "settings": {
     "href": "settings.html",
     "title": "Settings",
-    "description": "How to change settings, handle connection profiles and engine"
+    "description": "How to change settings, handle connection profiles and engine",
+    "anchors": [
+      {
+        "#settings": "Settings",
+        "#connection": "Connection settings",
+        "#preferences": "Preferences settings",
+        "#engine": "Engine settings",
+        "#advanced": "Advanced settings"
+      },
+      {
+        "#reset-settings": "Reset settings"
+      }
+    ]
   },
   "file-transfers-stb": {
     "href": "file-transfers-stb.html",
     "title": "Transfers from and to Decoder",
-    "description": "How to transfer files from and to Decoder (STB)"
+    "description": "How to transfer files from and to Decoder STB",
+    "anchors": [
+      {
+        "#profiles": "Connection profiles",
+        "#connection": "Connect and Disconnect",
+        "#download": "Download files",
+        "#upload": "Upload files",
+        "#troubleshooting": "Troubleshooting"
+      }
+    ]
   },
   "troubleshooting": {
     "href": "troubleshooting.html",
@@ -139,7 +160,8 @@
       {
         "#check-version": "Check the version",
         "#enable-ftp-debug": "Enable FTP debug",
-        "#view-logs": "View software logs"
+        "#view-logs": "View software logs",
+        "#reset-settings": "Reset settings"
       }
     ]
   }

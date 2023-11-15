@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+{% render '_doc-head.liquid' %}
+<body>
+{% render '_page-head.liquid' %}
+<div id="page">
+  <div id="help">
+    <main>
+      <h1>Online Help</h1>
+      <h2>Transfers from and to Decoder</h2>
+      <p>How to transfer files from and to Decoder (STB).</p>
+      <p>Handle connection profile, add and remove profiles. <br>Connect and disconnect the software to STB. <br>Download and Upload channel lists from / to software from / to STB.</p>
+      <div class="info">
+        <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
+        <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
+      </div>
+      <div id="profiles" class="l1">
+        <h3>Connection profiles</h3>
+        <p><b>From quick menu</b>, select the desired connection profile in the dropdown menu.</p>
+        <p>This is usually &quot;Default&quot; profile.</p>
+        <div class="l2">
+          <p>To add and remove connection profiles, open <b>&quot;Settings&quot;</b>.</p>
+          <div class="l3">
+            <p><b>From quick menu</b>, click on <b>&quot;Settings&quot;</b></p>
+            <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Settings</b>, or on Mac click menu <b>&quot;e2 SAT Editor&quot;</b> &gt; <b>Preferences&hellip;</b></p>
+          </div>
+        </div>
+      </div>
+      <div id="connection" class="l1">
+        <h3>Connect and Disconnect</h3>
+        <p>Select the desired connection profile, usually &quot;Default&quot; profile.</p>
+        <div class="l2">
+          <h5>Connect</h5>
+          <p><b>From quick menu</b>, press <b>&quot;Connect&quot;</b></p>
+          <p>The software will attempt a connection to Decoder (STB).</p>
+        </div>
+        <div class="l2">
+          <h5>Disconnect</h5>
+          <p><b>From quick menu</b>, press <b>&quot;Disconnect&quot;</b></p>
+          <p>The software will attempt a connection to Decoder (STB).</p>
+        </div>
+      </div>
+      <div id="download" class="l1">
+        <h3>Download files</h3>
+        <p>Select the desired connection profile, usually &quot;Default&quot; profile.</p>
+        <p>Open a channel list or create a new one by clicking on <b>&quot;+ New Tab&quot;</b> at top window.</p>
+        <p><i>When use an existing channel list, downloaded lists will merged with pre-existing channels.</i></p>
+        <div class="l2">
+          <p><b>From quick menu</b>, press <b>&quot;Download&quot;</b></p>
+          <p>The software will attempt a connection to Decoder (STB).</p>
+        </div>
+        <p><i>The channel lists will be downloaded and displayed in the software.</i></p>
+        <div class="">
+          <p>For channel lists guide follow <a href="channel-lists.html">Channel List operations</a> page of online help.</p>
+        </div>
+      </div>
+      <div id="upload" class="l1">
+        <h3>Upload files</h3>
+        <p>Select the desired connection profile, usually &quot;Default&quot; profile.</p>
+        <p>Open an existing channel list.</p>
+        <div class="l2">
+          <p><b>From quick menu</b>, press <b>&quot;Upload&quot;</b></p>
+          <p>The software will attempt a connection to Decoder (STB).</p>
+        </div>
+        <p><i>The channel lists will be loaded into the STB.</i></p>
+        <p>Therefore, the software will attempt to update channel lists on STB.</p>
+        <p><i>Now STB will display fresh loaded channel lists.</i></p>
+        <div class="l2">
+          <p>Note: <i>the software does not currently upload / download picons, these must be uploaded manually to the STB.</i></p>
+        </div>
+        <div class="">
+          <p>For channel lists guide follow <a href="channel-lists.html">Channel List operations</a> page of online help.</p>
+        </div>
+      </div>
+      <div id="troubleshooting" class="l1">
+        <h3>Troubleshooting</h3>
+        <p>For problems when transferring files via FTP, refer to <a href="troubleshooting.html">Troubleshooting</a>.</p>
+      </div>
+    </main>
+{% render '_page-side.liquid' %}
+  </div>
+{% render '_page-foot.liquid' %}
+</div>
+{% render '_page-vars.liquid' %}
+</body>
+</html>

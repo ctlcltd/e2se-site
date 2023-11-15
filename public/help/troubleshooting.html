@@ -11,10 +11,10 @@
 <body>
 <div id="head">
   <div>
-    <button type="button" id="btn-toc" title="Contents">
+    <button type="button" id="btn-menu" title="Contents" data-target="#toc">
       <svg width="32" height="32"><use href="#menu" fill="currentColor"/></svg>
     </button>
-    <button type="button" id="btn-language" title="Language">
+    <button type="button" id="btn-l10n" title="Language" data-target="#language">
       <svg width="32" height="32"><use href="#l10n" fill="currentColor"/></svg>
     </button>
   </div>
@@ -31,8 +31,7 @@
     <main>
       <h1>Online Help</h1>
       <h2>Troubleshooting</h2>
-
-      <p>[INTRODUCTION]</p>
+      <p>How to solve problems, eg. dealing with FTP.</p>
       <div class="info">
         <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
         <p>Before using the software you could read <a href="quick-start.html">Quick Start</a> page of online help for a brief introduction.</p>
@@ -74,7 +73,7 @@
           </tr>
           <tr id="ftp-connect">
             <td rowspan="9">FTP not connecting</td>
-            <td>Check the cables connecting the Decoder STB to the local network</td>
+            <td>Check the cables connecting the Decoder (STB) to the local network</td>
           </tr>
           <tr>
             <td>Check your local network settings</td>
@@ -83,26 +82,26 @@
             <td>Check your firewall settings</td>
           </tr>
           <tr>
-            <td>Verify the connection parameters to the Decoder STB in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
+            <td>Verify the connection parameters to STB in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
           </tr>
           <tr>
             <td>Verify that the FTP connection and login parameters are correct</td>
           </tr>
           <tr>
-            <td>Try to connect via HTTP with your browser to the Decoder STB at its IP address, <i>when equipped with Webif</i></td>
+            <td>Try to connect via HTTP with your browser to STB at its IP address, <i>when equipped with Webif</i></td>
           </tr>
           <tr>
-            <td>Try to connect via FTP with an FTP client to the Decoder STB at its IP address</td>
+            <td>Try to connect via FTP with an FTP client to STB at its IP address</td>
           </tr>
           <tr>
             <td>Attempt a connection with Passive FTP, unchecking Active FTP, and viceversa</td>
           </tr>
           <tr>
-            <td>Press <b>"Connect"</b> and <b>"Disconnect"</b> in quick menu to attempt an FTP connection</td>
+            <td>Press <b>&quot;Connect&quot;</b> and <b>&quot;Disconnect&quot;</b> in quick menu to attempt an FTP connection</td>
           </tr>
           <tr id="ftp-connect-next">
             <td rowspan="3">FTP not connecting, <br>after previous steps</td>
-            <td>Restart the Decoder STB and if necessary restart the local network router</td>
+            <td>Restart the Decoder (STB) and if necessary restart the local network router</td>
           </tr>
           <tr>
             <td>Repeat all <a href="#ftp-connect">&quot;FTP not connecting&quot;</a> troubleshooting steps</td>
@@ -112,7 +111,7 @@
           </tr>
           <tr id="ftp-load">
             <td rowspan="4">FTP does not upload / download</td>
-            <td>Check connection parameters to the Decoder STB in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
+            <td>Check connection parameters to the Decoder (STB) in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
           </tr>
           <tr>
             <td>Verify the correctness of parameters in the <b>Configuration</b> group: Transponders, Services, Bouquets</td>
@@ -121,17 +120,17 @@
             <td>Press <b>&quot;Connect&quot;</b> and <b>&quot;Disconnect&quot;</b> in quick menu to attempt an FTP connection</td>
           </tr>
           <tr>
-            <td>Note: <i>the software does not currently upload/download picons, these must be uploaded manually to the Decoder STB</i></td>
+            <td>Note: <i>the software does not currently upload/download picons, these must be uploaded manually to the STB</i></td>
           </tr>
           <tr id="stb-update">
-            <td rowspan="3">STB Decoder does not update channel lists</td>
-            <td>Try to restart the Decoder STB manually, or if you have the specific parameters for the Decoder STB, enter them, and follow the next steps</td>
+            <td rowspan="3">Decoder (STB) does not update channel lists</td>
+            <td>Try to restart the STB manually, or if you have the specific parameters for STB, enter them, and follow the next steps</td>
           </tr>
           <tr>
             <td>Modify the parameters in the <b>Commands</b> group, in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
           </tr>
           <tr>
-            <td>Enter the specific parameters for updating the Decoder STB lists, URL address and/or Telnet command</td>
+            <td>Enter the specific parameters for updating the STB lists, URL address and/or Telnet command</td>
           </tr>
           <tr id="file">
             <td colspan="2"><strong>File</strong></td>
@@ -193,18 +192,18 @@
           <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
           <div class="l3">
             <p>To enable FTP debugging, go to <b>&quot;Settings&quot;</b> &gt; <b>Advanced</b> &gt; [confirm].</p>
-            <p>Change the <samp>ftpcom.debug</samp> line from FALSE to TRUE, typing <samp>TRUE</samp>.</p>
+            <p>Change the <samp>ftpcom.debug</samp> line from FALSE to TRUE, typing <samp>true</samp>.</p>
             <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
           </div>
           <div class="l3">
             <p>Open a terminal window and launch the software from its current location.</p>
             <p>Press <b>&quot;Connect&quot;</b> and <b>&quot;Disconnect&quot;</b> from quick menu to attempt an FTP connection.</p>
-            <p>All FTP messages will be shown in the terminal.</p>
+            <p><i>All FTP messages will be shown in the terminal.</i></p>
           </div>
         </div>
         <div class="l2">
           <p>To attach the log to the issue, select all the output and <b>Copy</b>, <b>Paste</b> to a plain text file.</p>
-          <p>Next, disable FTP debugging, change the <samp>ftpcom.debug</samp> line from TRUE to FALSE again, typing <samp>FALSE</samp>.</p>
+          <p>Next, disable FTP debugging, change the <samp>ftpcom.debug</samp> line from TRUE to FALSE again, typing <samp>false</samp>.</p>
         </div>
       </div>
       <div id="view-logs" class="lh">
@@ -215,10 +214,22 @@
           <p>To view the log, open <b>Inspector</b>.</p>
           <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Log Inspect</b>.</p>
           <div class="l3">
-            <p>The log of the current execution will be shown in the dialog.</p>
+            <p><i>The log of the current execution will be shown in the dialog.</i></p>
             <p>To attach the log to the issue, select all the text and <b>Copy</b>, <b>Paste</b> into a plain text file.</p>
           </div>
         </div>
+      </div>
+      <div id="reset-settings" class="lh">
+        <h3>Reset settings</h3>
+        <p>The software can be reset to factory settings.</p>
+        <p><b>All settings previously saved will be erased.</b></p>
+        <div class="l2">
+          <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
+          <p>To reset to factory settings, go to <b>&quot;Settings&quot;</b> &gt; <b>Advanced</b> &gt; [confirm].</p>
+          <p>Change the <samp>settings.reset</samp> line from FALSE to TRUE, typing <samp>true</samp>.</p>
+          <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
+        </div>
+        <p>The next time the software is opened it will be reset to factory defaults.</p>
       </div>
     </main>
     <div id="side">
@@ -247,6 +258,7 @@
                 <li><a href="#check-version">Check the version</a></li>
                 <li><a href="#enable-ftp-debug">Enable FTP debug</a></li>
                 <li><a href="#view-logs">View software logs</a></li>
+                <li><a href="#reset-settings">Reset settings</a></li>
               </ul>
             </li>
           </ul>
