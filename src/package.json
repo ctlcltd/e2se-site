@@ -12,13 +12,17 @@
     "build.translate": "npx grunt build.translate",
     "build.backend": "npx grunt build.backend",
     "build.all": "npx grunt",
-    "dist.help": "npx grunt dist.help"
+    "dist.help": "npx grunt dist.help",
+    "copy": "npx grunt copy"
   },
   "author": "Leonardo Laureti",
   "license": "MIT",
   "devDependencies": {
+    "clean-css": "^5.3.2",
     "grunt": "^1.6.1",
     "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^5.0.0",
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-terser": "^2.0.0",

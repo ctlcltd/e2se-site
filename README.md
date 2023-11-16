@@ -2,11 +2,9 @@
 
 Website for [e2-sat-editor](https://github.com/ctlcltd/e2-sat-editor).
 
-Contains all the website parts: translation app, landing page, backend.
+Contains all the website parts: translation app, landing site and backend.
 
-:construction: *work in progress* :construction:
-
-&nbsp;
+ 
 
 ### Requirements
 
@@ -15,21 +13,57 @@ Contains all the website parts: translation app, landing page, backend.
 * webserver
 * database
 
-### Brief
+
+### Get started
+
+First clone this repository.
+```
+git clone https://github.com/ctlcltd/e2se-site.git
+```
+
+Then install Node.js, npm, and all required packages, from `src` path.
+```
+npm install
+```
+
+Most files are served statically.
+
+The project use these JS libraries to generate static files:
+- grunt
+- liquidjs
+- sass
+- clean-css
+- terser
+
+Copy all the assets to `public` path.
+
+Then build needed files and assets.
+```
+npm run build.all
+```
 
 Setup with the script `setup.sh` to install needed translation files from **e2-sat-editor** repository.
 ```
 chmod +x setup.sh
-./setup.sh
+sh setup.sh
 ```
-
-Then rename `config-example.php` or use with your custom settings.
-
-Sample configuration files are `config.phps` and `app/routes.phps`.
 
 Needs a database started from `sample.sql` source file.
 
+To run the website use a webserver, as the PHP built-in for example:
+```
+php -S localhost:8000 -t public/
+```
+
+
+### Configuration
+
+Rename `config-example.php` or use with your custom settings.
+
+Sample configuration files are `config.phps` and `app/routes.phps`.
+
 Serve from `public` root.
+
 
 ### License
 

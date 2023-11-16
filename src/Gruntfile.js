@@ -88,6 +88,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    copy: {
+      public: {
+        files: [
+          {src: 'img/*', dest: '../public/'},
+          {src: 'favicon/favicon.ico', dest: '../public/favicon.ico'}
+        ]
+      }
+    },
     liquid: {
       site: {
         options: {
@@ -159,6 +167,28 @@ module.exports = function(grunt) {
         dest: '../public/backend/script.js'
       }
     },
+    terser: {
+      options: {
+        compress: false,
+        mangle: true,
+        sourceMap: false
+      },
+      site: {
+        files: {
+          '../public/script.min.js': ['../public/script.js']
+        }
+      },
+      translate: {
+        files: {
+          '../public/translate/script.min.js': ['../public/translate/script.js']
+        }
+      },
+      backend: {
+        files: {
+          '../public/backend/script.min.js': ['../public/backend/script.js']
+        }
+      }
+    },
     sass: {
       options: {
         noSourceMap: true
@@ -184,25 +214,29 @@ module.exports = function(grunt) {
         }
       }
     },
-    terser: {
+    cssmin: {
       options: {
-        compress: false,
-        mangle: true,
+        compatibility: '-properties.colors,-properties.merging',
         sourceMap: false
       },
       site: {
         files: {
-          '../public/script.min.js': ['<%= concat.site.dest %>']
+          '../public/style.min.css': ['../public/style.css']
+        }
+      },
+      help: {
+        files: {
+          '../public/help.min.css': ['../public/help.css']
         }
       },
       translate: {
         files: {
-          '../public/translate/script.min.js': ['<%= concat.translate.dest %>']
+          '../public/translate/style.min.css': ['../public/translate/style.css']
         }
       },
       backend: {
         files: {
-          '../public/backend/script.min.js': ['<%= concat.backend.dest %>']
+          '../public/backend/style.min.css': ['../public/backend/style.css']
         }
       }
     }
@@ -220,25 +254,27 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-copy');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-terser');
 
   // site tasks
-  grunt.registerTask('build.site', ['liquid:site', 'concat:site', 'terser:site', 'sass:site']);
+  grunt.registerTask('build.site', ['liquid:site', 'concat:site', 'terser:site', 'sass:site', 'cssmin:site']);
   grunt.registerTask('watch.site', ['build.site', 'watch:site']);
 
   // help tasks
-  grunt.registerTask('build.help', ['liquid:help', 'sass:help']);
+  grunt.registerTask('build.help', ['liquid:help', 'sass:help', 'cssmin:help']);
   grunt.registerTask('watch.help', ['build.help', 'watch:help']);
   grunt.registerTask('dist.help', []);
 
   // translate tasks
-  grunt.registerTask('build.translate', ['liquid:translate', 'concat:translate', 'terser:translate', 'sass:translate']);
+  grunt.registerTask('build.translate', ['liquid:translate', 'concat:translate', 'terser:translate', 'sass:translate', 'cssmin:translate']);
   grunt.registerTask('watch.translate', ['build.translate', 'watch:translate']);
 
   // backend tasks
-  grunt.registerTask('build.backend', ['liquid:backend', 'concat:backend', 'terser:backend', 'sass:backend']);
+  grunt.registerTask('build.backend', ['liquid:backend', 'concat:backend', 'terser:backend', 'sass:backend', 'cssmin:backend']);
   grunt.registerTask('watch.backend', ['build.backend', 'watch:backend']);
 
   grunt.registerTask('default', ['build.site', 'build.help', 'build.translate', 'build.backend']);
