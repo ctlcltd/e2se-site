@@ -2,7 +2,7 @@
 
 Website for [e2-sat-editor](https://github.com/ctlcltd/e2-sat-editor).
 
-Contains all the website parts: translation app, landing site and backend.
+Contains all the website parts: translation app, landing site, online help, backend.
 
  
 
@@ -39,6 +39,7 @@ Copy all the assets to `public` path.
 
 Then build needed files and assets.
 ```
+npm run copy
 npm run build.all
 ```
 
