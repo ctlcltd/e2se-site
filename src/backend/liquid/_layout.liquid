@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex,nofollow,noarchive">
-<link rel="stylesheet" href="style.css">
-<title>Backend</title>
-</head>
-<body>
-<main id="signin" hidden>
+{% case part %}{% when "signin" %}<main id="signin" hidden>
   <div>
-    <form id="sign_login" action method="post">
+    <form id="sign_login" action="." method="post">
       <legend>Login</legend>
       <div class="placeholder message"></div>
       <fieldset>
@@ -28,13 +18,11 @@
       </fieldset>
     </form>
   </div>
-</main>
-<main id="main" hidden>
+</main>{% when "main" %}<main id="main" hidden>
   <div>
     <div class="placeholder nav"></div>
   </div>
-</main>
-<main class="view-service" hidden>
+</main>{% when "view-service" %}<main class="view-service" hidden>
   <div>
     <div class="placeholder nav"></div>
     <h2 class="placeholder">Service</h2>
@@ -53,8 +41,7 @@
       </table>
     </div>
   </div>
-</main>
-<main class="view-list" hidden>
+</main>{% when "view-list" %}<main class="view-list" hidden>
   <div>
     <div class="placeholder nav"></div>
     <h2 class="placeholder">List</h2>
@@ -76,24 +63,22 @@
       </table>
     </div>
   </div>
-</main>
-<main class="view-edit" hidden>
+</main>{% when "view-edit" %}<main class="view-edit" hidden>
   <div>
     <div class="placeholder nav"></div>
     <h2 class="placeholder">Edit</h2>
-    <form class="placeholder view-edit_form" action>
+    <form class="placeholder view-edit_form" action=".">
       <fieldset>
         <button type="submit">Save</button>
         <button type="reset">Reset</button>
       </fieldset>
     </form>
   </div>
-</main>
-<main id="api-test" hidden>
+</main>{% when "api-test" %}<main id="api-test" hidden>
   <div>
     <div class="placeholder nav"></div>
     <h2>API Test</h2>
-    <form id="api_request" action method="post">
+    <form id="api_request" action="." method="post">
       <legend>Request</legend>
       <fieldset>
         <div>
@@ -136,14 +121,4 @@
       </fieldset>
     </form>
   </div>
-</main>
-<nav id="nav" class="nav" hidden>
-  <a href="">Main</a>
-  <a href="?service">Service</a>
-  <a href="?inspect">Inspect</a>
-  <a href="?test">API Test</a>
-  <a href="?logout">Logout</a>
-</nav>
-<script src="script.js"></script>
-</body>
-</html>
+</main>{% endcase %}

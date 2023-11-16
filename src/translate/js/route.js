@@ -1,9 +1,4 @@
-/*
- * translate/route.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* translate/route.js */
 
 function route(href, title) {
   const page = document.getElementById('page');

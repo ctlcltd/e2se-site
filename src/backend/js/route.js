@@ -1,9 +1,4 @@
-/*
- * backend/route.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/route.js */
 
 function route(href, title) {
   const views = document.querySelectorAll('main');

@@ -1,9 +1,4 @@
-/*
- * backend/main.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/main.js */
 
 function main() {
   const view = document.getElementById('main');

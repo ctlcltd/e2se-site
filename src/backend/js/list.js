@@ -1,9 +1,4 @@
-/*
- * backend/list.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/list.js */
 
 function list(uri, path, search) {
   const doc = document;

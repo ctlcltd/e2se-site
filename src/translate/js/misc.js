@@ -1,9 +1,4 @@
-/*
- * translate/misc.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* translate/misc.js */
 
 function message(id, text, type, buttons) {
   const doc = document;

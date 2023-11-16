@@ -1,9 +1,4 @@
-/*
- * translate/config.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* translate/config.js */
 
 const basepath = '/translate';
 const apipath = '/api';

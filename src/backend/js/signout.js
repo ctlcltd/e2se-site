@@ -1,9 +1,4 @@
-/*
- * backend/signout.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/signout.js */
 
 function signout() {
   sessionStorage.clear();

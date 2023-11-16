@@ -1,9 +1,4 @@
-/*
- * translate/edit_translate.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* translate/edit_translate.js */
 
 function edit_translate(uri, search) {
   console.log('edit_translate()');

@@ -1,9 +1,4 @@
-/*
- * translate/add_language.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* translate/add_language.js */
 
 function add_language(uri, search) {
   console.log('add_language()');

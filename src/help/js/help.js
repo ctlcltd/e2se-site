@@ -1,9 +1,4 @@
-/*
- * help/help.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* help/help.js */
 
 const doc = document;
 const body = doc.body;

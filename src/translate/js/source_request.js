@@ -1,9 +1,4 @@
-/*
- * translate/source_request.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* translate/source_request.js */
 
 function source_request(name) {
   const xhr = new XMLHttpRequest();

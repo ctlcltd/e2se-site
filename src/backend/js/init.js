@@ -1,9 +1,4 @@
-/*
- * backend/init.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/init.js */
 
 var apiroutes;
 var navigation;

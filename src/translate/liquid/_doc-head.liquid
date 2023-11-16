@@ -1,0 +1,12 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="/translate/style.css">{% case templateName %}{% when "index" %}
+<title>Translations</title>
+<meta name="description" content="Translation website for e2 SAT Editor">{% when "edit" %}
+<title>Edit - Translations</title>
+<meta name="description" content="Edit translation strings of a language">{% when "add-language" %}
+<title>Add language - Translations</title>
+<meta name="description" content="Add a new language to translations">{% endcase %}{% if deploy %}
+<link rel="canonical" href="[CANONICAL_URL]">{% endif %}
+</head>

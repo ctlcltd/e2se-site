@@ -1,9 +1,4 @@
-/*
- * backend/api_request.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/api_request.js */
 
 function api_request(method, endpoint, route, data) {
   const xhr = new XMLHttpRequest();

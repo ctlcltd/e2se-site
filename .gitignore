@@ -2,9 +2,10 @@
 .project
 src/node_modules
 src/package-lock.json
-src/grunt
 config.php
 /test
 translations/**/*.ts
 src/e2-sat-editor
-public/sources/*.json
+public/**/*
+!public/api
+!.empty

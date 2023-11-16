@@ -1,9 +1,4 @@
-/*
- * translate/init.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* translate/init.js */
 
 var languages;
 var msg;

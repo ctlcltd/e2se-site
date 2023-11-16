@@ -1,9 +1,4 @@
-/*
- * backend/edit.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/edit.js */
 
 function edit(uri, path, search) {
   const doc = document;

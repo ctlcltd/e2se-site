@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+{% render '_doc-head.liquid' %}
+<body>
+{% render '_page-head.liquid' %}
+<div id="page">
+{% render '_layout.liquid', part: 'edit-translate' %}
+{% render '_layout.liquid', part: 'main' %}
+{% render '_layout.liquid', part: 'add-language' %}
+{% render '_layout.liquid', part: 'send-translation' %}
+{% render '_page-foot.liquid' %}
+</div>
+{% render '_page-vars.liquid' %}
+</body>
+</html>

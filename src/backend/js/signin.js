@@ -1,9 +1,4 @@
-/*
- * backend/signin.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/signin.js */
 
 function signin() {
   const doc = document;

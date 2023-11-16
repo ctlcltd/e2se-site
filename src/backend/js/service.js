@@ -1,9 +1,4 @@
-/*
- * backend/service.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/service.js */
 
 function service(uri, path, search) {
   const doc = document;

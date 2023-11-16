@@ -1,9 +1,4 @@
-/*
- * backend/nav.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/nav.js */
 
 function nav(menu) {
   const nav = document.getElementById('nav').cloneNode(true);

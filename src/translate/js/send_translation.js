@@ -1,9 +1,4 @@
-/*
- * translate/send_translation.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* translate/send_translation.js */
 
 function send_translation() {
   console.log('send_translation()');

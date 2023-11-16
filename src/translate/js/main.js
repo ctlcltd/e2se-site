@@ -1,9 +1,4 @@
-/*
- * translate/main.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* translate/main.js */
 
 function main() {
   console.log('main()');

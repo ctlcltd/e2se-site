@@ -1,9 +1,4 @@
-/*
- * translate/resume_translation.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* translate/resume_translation.js */
 
 function resume_translation(token) {
   const doc = document;

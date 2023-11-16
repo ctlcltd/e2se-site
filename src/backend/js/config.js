@@ -1,9 +1,4 @@
-/*
- * backend/config.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/config.js */
 
 const basepath = '/backend';
 const apipath = '/api';

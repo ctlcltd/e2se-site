@@ -1,0 +1,79 @@
+{% case part %}{% when "main" %}  <main id="main"{% unless templateName == "index" %} hidden{% endunless %}>
+    <div>
+      <h1>Translations <sub class="beta">beta</sub></h1>
+      <p>Welcome to <strong>e2 SAT Editor translation website</strong>.</p>
+    </div>
+    <div>
+      <h2>Language list</h2>
+      <div class="table">
+        <table class="placeholder main-table">
+          <thead data-rendered>
+            <tr>
+              <th>Language</th>
+              <th>Name</th>
+              <th>Translated name</th>
+              <th>Completed</th>
+              <th>Revised</th>
+              <th class="actions">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="loading">
+              <td colspan="6"></td>
+            </tr>
+            <tr class="placeholder" hidden>
+              <td colspan="5"></td>
+              <td class="actions">
+                <span class="action action-edit"><a class="button tiny" href="edit.html">Edit</a></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>{% when "edit-translate" %}  <main class="edit-translate"{% unless templateName == "edit" %} hidden{% endunless %}>
+    <div>
+      <h2 class="placeholder">Edit language</h2>
+      <div class="table">
+        <table class="placeholder edit-table">
+          <thead data-rendered>
+            <tr>
+              <th>Node</th>
+              <th>Source</th>
+              <th>Translation</th>
+              <th>Disambiguation</th>
+              <th>Notes</th>
+              <th>Comment</th>
+              <th>Context</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="loading">
+              <td colspan="8"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>{% when "add-language" %}  <main class="add-language"{% unless templateName == "add-language" %} hidden{% endunless %}>
+    <div>
+      <h2 class="placeholder">Add language</h2>
+      <form class="placeholder add-form" action=".">
+        <fieldset>
+          <button type="submit">Save</button>
+          <button type="reset" class="tiny secondary">Reset</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>{% when "send-translation" %}  <main class="send-translation" hidden>
+    <div>
+      <h2 class="placeholder">Send translation</h2>
+      <form class="placeholder send-form" action=".">
+        <fieldset>
+          <button type="submit" class="big">Submit Translation</button>
+          <button type="button">Cancel</button>
+        </fieldset>
+      </form>
+    </div>
+  </main>{% endcase %}

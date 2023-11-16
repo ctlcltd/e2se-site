@@ -1,9 +1,4 @@
-/*
- * backend/api_test.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* backend/api_test.js */
 
 function api_test() {
   const doc = document;

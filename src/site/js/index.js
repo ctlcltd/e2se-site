@@ -1,9 +1,4 @@
-/*
- * landing/index.js
- * 
- * @author Leonardo Laureti
- * @license MIT License
- */
+/* site/index.js */
 
 const doc = document;
 const body = doc.body;
