@@ -4,6 +4,7 @@ src/node_modules
 src/package-lock.json
 config.php
 /test
+/out
 translations/**/*.ts
 src/e2-sat-editor
 public/**/*

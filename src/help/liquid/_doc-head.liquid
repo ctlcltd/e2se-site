@@ -1,8 +1,9 @@
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">{% unless distributable %}
 <link rel="stylesheet" href="../style.css">
-<link rel="stylesheet" href="../help.css">
+<link rel="stylesheet" href="../help.css">{% endunless %}
 <title>{% unless templateName == "index" %}{{ toc[templateName].title | append: " - " | append: "Online Help" | escape }}{% else %}{{ toc[templateName].title | escape }}{% endunless %}</title>
-<meta name="description" content="{{ toc[templateName].description | escape }}">
+<meta name="description" content="{{ toc[templateName].description | escape }}">{% if distributable %}
+<style>{% render "{{ stylesheet }}" %}</style>{% endif %}
 </head>

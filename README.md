@@ -66,6 +66,13 @@ Sample configuration files are `config.phps` and `app/routes.phps`.
 Serve from `public` root.
 
 
+### Distributable Online Help
+
+To make a distributable Online Help, use `dist.help` Grunt task.
+```
+npm run dist.help --dest=out
+```
+
 ### License
 
 Source code licensed under the terms of the [MIT License](https://github.com/ctlcltd/e2se-site/blob/main/LICENSE).
