@@ -66,11 +66,11 @@ Sample configuration files are `config.phps` and `app/routes.phps`.
 Serve from `public` root.
 
 
-### Distributable Online Help
+### Distributable documentation
 
-To make a distributable Online Help, use `dist.help` Grunt task.
+To make a distributable documentation (Online Help), use `dist.help` Grunt task.
 ```
-npm run dist.help --dest=out
+npm run dist.help -- --dest=out/
 ```
 
 ### License

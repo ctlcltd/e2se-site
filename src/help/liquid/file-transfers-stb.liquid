@@ -76,10 +76,11 @@
         <h3>Troubleshooting</h3>
         <p>For problems when transferring files via FTP, refer to <a href="troubleshooting.html">Troubleshooting</a>.</p>
       </div>
+{% render '_page-dist.liquid', help_rev: help_rev %}
     </main>
 {% render '_page-side.liquid' %}
-  </div>
-{% render '_page-foot.liquid' %}
+  </div>{% unless distributable %}
+{% render '_page-foot.liquid' %}{% endunless %}
 </div>
 {% render '_page-vars.liquid' %}
 </body>

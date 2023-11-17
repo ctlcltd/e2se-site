@@ -3,7 +3,7 @@ const { Liquid } = require('liquidjs');
 
 module.exports = function(grunt) {
 
-  const DIST_HELP_BASE_DEST = path.normalize(grunt.option('dest', '../out'));
+  const DIST_HELP_BASE_DEST = path.normalize(grunt.option('dest') || '../out');
 
   grunt.registerMultiTask('liquid', function() {
     var options = this.options({
@@ -136,13 +136,16 @@ module.exports = function(grunt) {
       },
       dist_help: {
         options: {
-          root: DIST_HELP_BASE_DEST + '/.tmp',
+          root: DIST_HELP_BASE_DEST + '/temp_files',
           globals: {
             deploy: false,
-            toc: grunt.file.readJSON('help/toc.json'),
             distributable: true,
-            stylesheet: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/.tmp/style.min.css'),
-            script: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/.tmp/script.min.js')
+            stylesheet: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/style.min.css'),
+            script: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/script.min.js'),
+            toc: grunt.file.readJSON('help/toc.json')
+          },
+          data: {
+            help_rev: new Date()
           }
         },
         src: ['help/liquid/*.liquid'],
@@ -184,7 +187,7 @@ module.exports = function(grunt) {
           footer: '\n});\n'
         },
         src: ['help/js/help.js'],
-        dest: DIST_HELP_BASE_DEST + '/.tmp/script.js'
+        dest: DIST_HELP_BASE_DEST + '/temp_files/script.js'
       }
     },
     terser: {
@@ -215,7 +218,7 @@ module.exports = function(grunt) {
           }
         },
         files: [
-          {src: DIST_HELP_BASE_DEST + '/.tmp/script.js', dest: DIST_HELP_BASE_DEST + '/.tmp/script.min.js'}
+          {src: DIST_HELP_BASE_DEST + '/temp_files/script.js', dest: DIST_HELP_BASE_DEST + '/temp_files/script.min.js'}
         ]
       }
     },
@@ -245,7 +248,7 @@ module.exports = function(grunt) {
       },
       dist_help: {
         files: [
-          {src: 'help/scss/dist.scss', dest: DIST_HELP_BASE_DEST + '/.tmp/style.css'}
+          {src: 'help/scss/dist.scss', dest: DIST_HELP_BASE_DEST + '/temp_files/style.css'}
         ]
       }
     },
@@ -281,12 +284,15 @@ module.exports = function(grunt) {
           }
         },
         files: [
-          {src: DIST_HELP_BASE_DEST + '/.tmp/style.css', dest: DIST_HELP_BASE_DEST + '/.tmp/style.min.css'}
+          {src: DIST_HELP_BASE_DEST + '/temp_files/style.css', dest: DIST_HELP_BASE_DEST + '/temp_files/style.min.css'}
         ]
       }
     },
     clean: {
-      dist_help: [DIST_HELP_BASE_DEST + '/.tmp/']
+      dist_help: {
+        options: {force: true},
+        src: [DIST_HELP_BASE_DEST + '/temp_files/']
+      }
     }
   });
 
@@ -301,6 +307,7 @@ module.exports = function(grunt) {
     grunt.config('liquid.backend.src', filepath);
   });
 
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -315,7 +322,7 @@ module.exports = function(grunt) {
   // help tasks
   grunt.registerTask('build.help', ['liquid:help', 'sass:help', 'cssmin:help']);
   grunt.registerTask('watch.help', ['build.help', 'watch:help']);
-  grunt.registerTask('dist.help', ['concat:dist_help', 'terser:dist_help', 'sass:dist_help', 'cssmin:dist_help', 'liquid:dist_help'/*, 'clean:dist_help'*/]);
+  grunt.registerTask('dist.help', ['concat:dist_help', 'terser:dist_help', 'sass:dist_help', 'cssmin:dist_help', 'liquid:dist_help', 'clean:dist_help']);
 
   // translate tasks
   grunt.registerTask('build.translate', ['liquid:translate', 'concat:translate', 'terser:translate', 'sass:translate', 'cssmin:translate']);

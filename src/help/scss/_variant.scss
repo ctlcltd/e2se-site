@@ -5,11 +5,30 @@
   background: $background;
 
 
+  // buttons
+
+  button {
+    color: $button-color;
+    background: $button-background;
+
+    box-shadow: 0 0 .18rem $button-shadow-color;
+    &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
+    &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
+  }
+
+
   // landing
 
   mark, .lead {
     color: #dff;
     background: #023;
+  }
+
+
+  // custom
+
+  #head {
+    background: #181818;
   }
 
 }

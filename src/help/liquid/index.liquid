@@ -26,10 +26,11 @@
           </ul>
         </nav>
       </div>
+{% render '_page-dist.liquid', help_rev: help_rev %}
     </main>
 {% render '_page-side.liquid' %}
-  </div>
-{% render '_page-foot.liquid' %}
+  </div>{% unless distributable %}
+{% render '_page-foot.liquid' %}{% endunless %}
 </div>
 {% render '_page-vars.liquid' %}
 </body>

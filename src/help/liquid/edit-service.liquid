@@ -65,10 +65,11 @@
         <p>For channel lists guide follow <a href="channel-lists.html">Channel List operations</a> page of online help.</p>
         <p>For transponders guide follow <a href="transponders.html">Transponder operations</a> page of online help.</p>
       </div>
+{% render '_page-dist.liquid', help_rev: help_rev %}
     </main>
 {% render '_page-side.liquid' %}
-  </div>
-{% render '_page-foot.liquid' %}
+  </div>{% unless distributable %}
+{% render '_page-foot.liquid' %}{% endunless %}
 </div>
 {% render '_page-vars.liquid' %}
 </body>

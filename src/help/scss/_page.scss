@@ -3,6 +3,25 @@
 @import "../../scss/_common.scss";
 @import "../../site/scss/_headings.scss";
 
+button {
+  display: inline-block;
+  margin: auto;
+  padding: .75rem 1.25rem;
+  font-size: .9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $button-color;
+  background: $button-background;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+
+  box-shadow: 0 0 .18rem $button-shadow-color;
+  &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
+  &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
+}
+
 #page {
   max-width: 2048px;
   margin: 0 auto;
@@ -50,13 +69,47 @@ mark, .lead {
   padding: 0.3rem 0.2rem;
 }
 
+#head {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+  padding: .05rem .1rem .1rem;
+  z-index: 10;
+}
+#head > div {
+  position: relative;
+  top: 0;
+  z-index: 10;
+}
+#head button {
+  padding: 0;
+}
+#head svg {
+  display: block;
+}
 
 @media (min-width: 992px) {
   #page {
     padding: 2.5rem 0 0;
   }
+
+  #head {
+    position: static;
+    padding: 0;
+    background: #fff;
+  }
+  #head > div {
+    position: fixed;
+    inset-inline-start: 5rem;
+  }
 }
 
 @media print {
   main { min-height: unset; }
+  #head { display: none; }
 }

@@ -194,10 +194,11 @@
         <p>To manually edit the settings file, please refer to the Qt toolkit documentation at: <a href="https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes" rel="nofollow noopener" target="_blank">https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes</a></p>
         <p>The software uses the identifier &quot;io.github.ctlcltd.e2se&quot;.</p>
       </div>
+{% render '_page-dist.liquid', help_rev: help_rev %}
     </main>
 {% render '_page-side.liquid' %}
-  </div>
-{% render '_page-foot.liquid' %}
+  </div>{% unless distributable %}
+{% render '_page-foot.liquid' %}{% endunless %}
 </div>
 {% render '_page-vars.liquid' %}
 </body>

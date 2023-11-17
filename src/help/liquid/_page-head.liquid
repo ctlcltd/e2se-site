@@ -6,12 +6,12 @@
     <button type="button" id="btn-l10n" title="Language" data-target="#language">
       <svg width="32" height="32"><use href="#l10n" fill="currentColor"/></svg>
     </button>
-  </div>
+  </div>{% unless distributable %}
   <div>
     <button type="button" id="switch-color">
       <svg width="22" height="22"><use href="#tone" fill="currentColor"/></svg>
       <span class="d">switch to light</span>
       <span class="l">switch to dark</span>
     </button>
-  </div>
+  </div>{% endunless %}
 </div>

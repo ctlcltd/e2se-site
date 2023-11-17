@@ -47,6 +47,7 @@ function switchColor(evt) {
   }
 }
 
+// 
 function offCanvas(evt) {
   let el = evt.target;
   el = el.hasAttribute('data-target') ? el : el.closest('[data-target]');
