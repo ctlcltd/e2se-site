@@ -11,9 +11,9 @@
 @import "../../scss/_light.scss";
 @include variant_light();
 @import "page";
-
 @import "custom";
 @import "help";
+@include custom_dist();
 
 @media (prefers-color-scheme: dark) {
   body {

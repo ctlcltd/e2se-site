@@ -4,6 +4,7 @@ const { Liquid } = require('liquidjs');
 module.exports = function(grunt) {
 
   const DIST_HELP_BASE_DEST = path.normalize(grunt.option('dest') || '../out');
+  const REMOTE_HELP_BASE_URL = grunt.option('remote-help-url') || '//localhost';
 
   grunt.registerMultiTask('liquid', function() {
     var options = this.options({
@@ -110,6 +111,7 @@ module.exports = function(grunt) {
         options: {
           globals: {
             deploy: false,
+            remoteHelpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
             toc: grunt.file.readJSON('help/toc.json')
           }
         },
@@ -140,6 +142,7 @@ module.exports = function(grunt) {
           globals: {
             deploy: false,
             distributable: true,
+            remoteHelpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
             stylesheet: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/style.min.css'),
             script: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/script.min.js'),
             toc: grunt.file.readJSON('help/toc.json')
@@ -157,7 +160,7 @@ module.exports = function(grunt) {
         options: {
           stripBanners: true,
           banner: grunt.file.read('site/js/_banner.js') + '\n(function() {\n\n',
-          footer: '\n});\n'
+          footer: '\n})();\n'
         },
         src: ['site/js/index.js'],
         dest: '../public/script.js'
@@ -166,7 +169,7 @@ module.exports = function(grunt) {
         options: {
           stripBanners: true,
           banner: grunt.file.read('translate/js/_banner.js') + '\n(function() {\n\n',
-          footer: '\n});\n'
+          footer: '\n})();\n'
         },
         src: ['translate/js/config.js', 'translate/js/main.js', 'translate/js/edit_translate.js', 'translate/js/add_language.js', 'translate/js/send_translation.js', 'translate/js/resume_translation.js', 'translate/js/misc.js', 'translate/js/api_request.js', 'translate/js/source_request.js', 'translate/js/route.js', 'translate/js/init.js'],
         dest: '../public/translate/script.js'
@@ -175,7 +178,7 @@ module.exports = function(grunt) {
         options: {
           stripBanners: true,
           banner: grunt.file.read('backend/js/_banner.js') + '\n(function() {\n\n',
-          footer: '\n});\n'
+          footer: '\n})();\n'
         },
         src: ['backend/js/config.js', 'backend/js/main.js', 'backend/js/list.js', 'backend/js/edit.js', 'backend/js/service.js', 'backend/js/signin.js', 'backend/js/signout.js', 'backend/js/api_request.js', 'backend/js/api_test.js', 'backend/js/nav.js', 'backend/js/route.js', 'backend/js/init.js'],
         dest: '../public/backend/script.js'
@@ -184,7 +187,7 @@ module.exports = function(grunt) {
         options: {
           stripBanners: true,
           banner: grunt.file.read('help/js/_banner.js') + '\n(function() {\n\n',
-          footer: '\n});\n'
+          footer: '\n})();\n'
         },
         src: ['help/js/help.js'],
         dest: DIST_HELP_BASE_DEST + '/temp_files/script.js'

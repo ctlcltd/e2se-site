@@ -1,7 +1,29 @@
 /* help/_custom.scss */
 
-/*@media (min-width: 992px) {
-	#head div:first-child {
-		display: none;
-	}
-}*/
+@media (min-width: 992px) {
+  #head div:first-child {
+    display: none;
+  }
+}
+
+@mixin custom_dist {
+  .l10n-note {
+    display: block;
+    margin: .2rem 0 0;
+    padding: .2rem .5rem;
+    font-size: .7rem;
+  }
+  .l10n-note:after {
+    content: "";
+    position: relative;
+    inset: .05rem .5rem 0;
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+    border-radius: .8em;
+    background: #ccc;
+  }
+  .online .l10n-note:after {
+    background: #0c0;
+  }
+}

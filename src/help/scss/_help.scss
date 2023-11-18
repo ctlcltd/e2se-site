@@ -35,6 +35,7 @@
   width: 0;
   background: #f9f9f9;
   transition: width linear 150ms;
+  z-index: 5;
 }
 #side aside {
   display: none;
@@ -58,9 +59,14 @@
 .offcanvas #side {
   width: 36ch;
 }
+.offcanvas.off #side {
+  display: none;
+  transition: none;
+}
 .backdrop {
   position: fixed;
   inset: 0;
+  z-index: 0;
 }
 
 #toc {

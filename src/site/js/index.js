@@ -47,7 +47,6 @@ function switchColor(evt) {
   }
 }
 
-// 
 function offCanvas(evt) {
   let el = evt.target;
   el = el.hasAttribute('data-target') ? el : el.closest('[data-target]');
@@ -56,38 +55,66 @@ function offCanvas(evt) {
     const el = evt.target;
 
     if (el.className == 'backdrop') {
-      const sides = doc.querySelectorAll('#side aside');
-      body.classList.remove('offcanvas');
-      body._backdrop.remove();
+      backdrop(false);
+      setTimeout(function() {
+        body.classList.add('off');
+      }, 50);
+      setTimeout(function() {
+        body._side.classList.remove('on');
+        body.classList.remove('offcanvas');
+        body.classList.remove('off');
+        delete body._side;
+      }, 100);
     }
   }
 
-  function backdrop() {
-    const el = document.createElement('div');
-    el.className = 'backdrop';
-    body._backdrop = el;
-    body.append(el);
-    body.addEventListener('click', close);
-  }
-
-  function toggle(el) {
-    if (body.classList.contains('offcanvas')) {
-      body.removeEventListener('click', close);
+  function backdrop(toggle) {
+    if (toggle) {
+      const el = document.createElement('div');
+      el.className = 'backdrop';
+      body._backdrop = el;
+      body.append(el);
+      el.addEventListener('click', close);
     } else {
-      backdrop();
-    }
-    if (el) {
-      body.classList.toggle('offcanvas');
-      el.classList.toggle('on');
+      const el = body._backdrop;
+      el.removeEventListener('click', close);
+      el.remove();
+      delete body._backdrop;
     }
   }
 
   if (el) {
     const query = el.getAttribute('data-target');
     const side = doc.querySelector(query);
-    console.log(query);
 
-    toggle(side);
+    if (body.classList.contains('offcanvas')) {
+      if (side != body._side) {
+        body.classList.remove('offcanvas');
+
+        setTimeout(function() {
+          body._side.classList.remove('on');
+          body.classList.add('offcanvas');
+          side.classList.add('on');
+          body._side = side;
+        }, 100);
+      } else {
+        backdrop(false);
+        setTimeout(function() {
+          body.classList.add('off');
+        }, 50);
+        setTimeout(function() {
+          body._side.classList.remove('on');
+          body.classList.remove('offcanvas');
+          body.classList.remove('off');
+          delete body._side;
+        }, 100);
+      }
+    } else {
+      body._side = side;
+      body.classList.toggle('offcanvas');
+      side.classList.toggle('on');
+      backdrop(true);
+    }
 
     setTimeout(function() {
       el.blur();
