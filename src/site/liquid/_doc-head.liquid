@@ -1,11 +1,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="/style.css">{% case templateName %}{% when "index" %}
+<link rel="stylesheet" href="{{ 'style.css' | asset: deploy }}">{% case templateName %}{% when "index" %}
 <title>e2 SAT Editor</title>
 <meta name="description" content="e2 SAT Editor software, Satellite channel list editor for decoder: Enigma2, Neutrino">
 <link rel="image_src" href="/img/e2-sat-editor_featured.png" type="image/png">{% when "privacy" %}
 <title>Your Privacy</title>
 <meta name="description" content="Information concerning user privacy using the website and the software">{% endcase %}{% if deploy %}
-<link rel="canonical" href="[CANONICAL_URL]">{% endif %}
+<link rel="canonical" href="{% canonicalUrl %}">{% endif %}
 </head>

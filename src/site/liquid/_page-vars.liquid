@@ -5,5 +5,5 @@
     </symbol>
   </defs>
 </svg>
-<script src="/script.js"></script>{% if templateName == "index" %}
+<script src="{{ 'script.js' | asset: deploy }}"></script>{% if templateName == "index" %}
 <script>delete document.body.dataset.lazy</script>{% endif %}

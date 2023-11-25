@@ -1,59 +1,14 @@
 const path = require('path');
-const { Liquid } = require('liquidjs');
+const liquidjsTask = require('./grunt/liquidjsTask.js');
 
 module.exports = function(grunt) {
 
   const DIST_HELP_BASE_DEST = path.normalize(grunt.option('dest') || '../out');
-  const REMOTE_HELP_BASE_URL = grunt.option('remote-help-url') || '//localhost';
+  const REMOTE_HELP_BASE_URL = grunt.option('remote-help-url') || 'https://e2sateditor.com/help/';
+  const REMOTE_ORIGIN = grunt.option('remote-origin') || 'http://localhost';
+  const DEPLOY = grunt.option('deploy') && true || false;
 
-  grunt.registerMultiTask('liquid', function() {
-    var options = this.options({
-      root: [],
-      globals: {},
-      data: {}
-    });
-
-    const filedest = this.files[0].dest;
-    let files = [];
-
-    if (! grunt.file.isDir(filedest)) {
-      return;
-    }
-    this.files.forEach(function(file) {
-      files = file.src.filter(function(filepath) {
-        if (! grunt.file.exists(filepath)) {
-          grunt.log.warn('Source file "' + filepath + '" not found.');
-          return false;
-        }
-        if (grunt.file.isDir(filepath)) {
-          return false;
-        }
-        if (/^_/.test(path.basename(filepath))) {
-          return false;
-        }
-        return true;
-      });
-    });
-
-    const engine = new Liquid({
-      root: files.map(function(filepath, i) {
-          return path.dirname(filepath);
-        }).filter(function(v, i, a) {
-          return a.indexOf(v) === i; 
-        }).concat(options.root)
-    });
-
-    files.map(function(filepath, i) {
-      const fname = path.basename(filepath, '.liquid');
-      const filename = path.format({dir: filedest, name: fname, ext: 'html'});
-      const src = grunt.file.read(filepath);
-      const dst = engine.parseAndRenderSync(src, options.data, {
-        globals: {templateName: fname, ...options.globals}
-      });
-
-      grunt.file.write(filename, dst);
-    });
-  });
+  grunt.registerMultiTask('liquid', liquidjsTask);
 
   grunt.initConfig({
     watch: {
@@ -98,7 +53,8 @@ module.exports = function(grunt) {
       site: {
         options: {
           globals: {
-            deploy: false
+            deploy: DEPLOY,
+            origin: REMOTE_ORIGIN
           },
           data: {
             privacy_rev: new Date('2023-09-15')
@@ -110,8 +66,9 @@ module.exports = function(grunt) {
       help: {
         options: {
           globals: {
-            deploy: false,
-            remoteHelpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
+            deploy: DEPLOY,
+            origin: REMOTE_ORIGIN,
+            helpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
             toc: grunt.file.readJSON('help/toc.json')
           }
         },
@@ -121,7 +78,8 @@ module.exports = function(grunt) {
       translate: {
         options: {
           globals: {
-            deploy: false
+            deploy: DEPLOY,
+            origin: REMOTE_ORIGIN
           }
         },
         src: ['translate/liquid/*.liquid'],
@@ -130,7 +88,8 @@ module.exports = function(grunt) {
       backend: {
         options: {
           globals: {
-            deploy: false
+            deploy: DEPLOY,
+            origin: REMOTE_ORIGIN
           }
         },
         src: ['backend/liquid/*.liquid'],
@@ -142,7 +101,8 @@ module.exports = function(grunt) {
           globals: {
             deploy: false,
             distributable: true,
-            remoteHelpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
+            origin: REMOTE_ORIGIN,
+            helpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
             stylesheet: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/style.min.css'),
             script: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/script.min.js'),
             toc: grunt.file.readJSON('help/toc.json')

@@ -14,8 +14,8 @@
       </aside>
       <aside id="language">
         <h4>Language</h4>
-        <nav>{% unless templateName == "index" %}{% assign remotePath = templateName | append: ".html" %}{% endunless %}{% assign remoteUrl = "https://translate.google.com/?sl=en&text=" | append: remoteHelpBaseUrl | append: remotePath %}
-          <a href="{{ remoteUrl | escape }}">Translate this page in your language with Google Translate</a>
+        <nav>{% unless templateName == "index" %}{% assign helpPath = templateName | append: ".html" %}{% endunless %}{% assign translateUrl = "https://translate.google.com/?sl=en&text=" | append: helpBaseUrl | append: helpPath %}
+          <a href="{{ translateUrl | escape }}">Translate this page in your language with Google Translate</a>
         </nav>{% if distributable %}
         <span class="l10n-note">Requires internet connection</span>{% endif %}
       </aside>

@@ -20,5 +20,5 @@
     </symbol>{% endif %}
   </defs>
 </svg>{% unless distributable %}
-<script src="../script.js"></script>{% else %}
+<script src="{{ '../script.js' | asset: deploy }}"></script>{% else %}
 <script>{% render "{{ script }}" %}</script>{% endunless %}
