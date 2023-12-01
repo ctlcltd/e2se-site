@@ -260,7 +260,7 @@ module.exports = function(grunt) {
   });
 
   grunt.event.on('watch', function(action, filepath, target) {
-    if (! /^_/.test(path.basename(filepath))) {
+    if (/^_/.test(path.basename(filepath))) {
       return;
     }
 

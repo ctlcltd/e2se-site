@@ -28,7 +28,7 @@ em {
 }
 
 ul, ol, dl {
-  margin: -0.3rem 0 1rem;
+  margin: -.3rem 0 1rem;
 }
 ul, ol {
   padding: 0;
@@ -41,24 +41,24 @@ li {
 }
 dt {
   float: left;
-  margin: 0 0.4rem 0 0;
+  margin: 0 .4rem 0 0;
 }
 dd {
   padding: 0;
 }
 
 mark, .lead {
-  padding: 0.1rem 0.2rem;
+  padding: .1rem .2rem;
   color: $color;
   background: #dff;
   border-radius: 1.5px;
 }
 .lead {
   display: inline;
-  padding: 0.3rem 0.2rem;
+  padding: .3rem .2rem;
 }
 .sym {
-  font-size: 0.93rem;
+  font-size: .93rem;
   font-family: Arial, sans-serif;
 }
 
@@ -69,8 +69,8 @@ abbr {
 abbr:after {
   content: "?";
   position: relative;
-  top: -0.5em;
-  left: 0.2em;
+  top: -.5em;
+  left: .2em;
   display: inline-block;
   width: 1.2em;
   height: 1.2em;
@@ -87,8 +87,8 @@ abbr:after {
   position: absolute;
   display: block;
   margin: 0 !important;
-  padding: 0.5em 1em !important;
-  font-size: 0.8rem;
+  padding: .5em 1em !important;
+  font-size: .8rem;
   border-radius: 7px;
   color: #fff;
   background: #444 !important;
@@ -139,10 +139,10 @@ abbr:after {
     font-size: .95rem;
   }
   p {
-    font-size: 0.8rem;
+    font-size: .8rem;
   }
   p span {
-    margin: 0.2rem;
+    margin: .2rem;
     font-size: .7rem;
   }
 
@@ -198,7 +198,7 @@ abbr:after {
   padding: 0 1rem 2rem;
 
   > p {
-    font-size: 0.97rem;
+    font-size: .97rem;
   }
 
   > div {
@@ -211,6 +211,11 @@ abbr:after {
   .lead {
     display: inline-block;
   }
+}
+
+#donate svg {
+  display: block;
+  max-width: 480px;
 }
 
 @media (min-width: 992px) {
@@ -238,7 +243,7 @@ abbr:after {
       line-height: 1.5;
     }
     p {
-      font-size: 0.9rem;
+      font-size: .9rem;
     }
   }
 
@@ -260,7 +265,7 @@ abbr:after {
   #privacy {
     max-width: 1200px;
     margin: auto;
-    padding: 0 0.5rem 2rem;
+    padding: 0 .5rem 2rem;
   }
 }
 

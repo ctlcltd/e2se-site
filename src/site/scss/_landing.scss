@@ -25,31 +25,31 @@
 #t:before {
   top: 0;
   height: 51%;
-  background-image: url(img/ttten-bg-t.svg);
+  background-image: url(/img/ttten-bg-t.svg);
   background-position: 50% 0;
   opacity: 1;
 }
 #m:before {
   bottom: 0;
-  background-image: url(img/ttten-bg-m.svg);
+  background-image: url(/img/ttten-bg-m.svg);
   background-position: 50% 0;
 }
 #b:before {
   bottom: 0;
-  background-image: url(img/ttten-bg-b.svg);
+  background-image: url(/img/ttten-bg-b.svg);
   background-position: 50% 100%;
 }
 #m:before,
 #b:before {
-  opacity: 0.6;
+  opacity: .6;
 }
 .dark {
   #t:before {
-    opacity: 0.5;
+    opacity: .5;
   }
   #m:before,
   #b:before {
-    opacity: 0.5;
+    opacity: .5;
   }
 }
 
@@ -61,24 +61,24 @@
     display: inline-block;
     font-family: sans-serif-condensed, HelveticaNeue-CondensedBold, "Franklin Gothic", sans-serif;
     font-weight: bold;
-    transform: matrix(1.21, 0, 0.01, 1.02, -1, -1);
+    transform: matrix(1.21, 0, .01, 1.02, -1, -1);
     transform-origin: left;
   }
 
   h2 {
     font-size: 1.56rem;
-    letter-spacing: -0.02em;
-    word-spacing: -0.04em;
+    letter-spacing: -.02em;
+    word-spacing: -.04em;
   }
   h3 {
     font-size: 1.51rem;
-    letter-spacing: -0.016em;
-    word-spacing: -0.01em;
+    letter-spacing: -.016em;
+    word-spacing: -.01em;
   }
   h4 {
     font-size: 1.49rem;
-    letter-spacing: -0.018em;
-    word-spacing: -0.01em;
+    letter-spacing: -.018em;
+    word-spacing: -.01em;
   }
   h4 em {
     font-size: 78%;
@@ -86,8 +86,8 @@
   }
 
   p {
-    font-size: 0.976rem;
-    letter-spacing: 0.002em;
+    font-size: .976rem;
+    letter-spacing: .002em;
   }
 
   strong {
@@ -96,7 +96,7 @@
 
   .button {
     position: relative;
-    margin: 0.2rem 0 -0.2rem;
+    margin: .2rem 0 -.2rem;
     font-size: 1rem;
     text-transform: none;
     color: #464646;
@@ -106,7 +106,7 @@
 
   .lead {
     font-size: 1.01rem;
-    letter-spacing: 0.009em;
+    letter-spacing: .009em;
   }
   .lead:before {
     content: "";
@@ -119,11 +119,11 @@ body,
   .cnt .button {
     color: #464646;
     background: #cff;
-    box-shadow: inset 0 -6px 33px 0 #0ff7, inset 0 0 1px 0 #0cc;
+    box-shadow: inset 0 -6px 33px 0 unquote("#0ff7"), inset 0 0 1px 0 #0cc;
     transition: box-shadow ease-out 200ms;
 
     &:hover {
-      box-shadow: inset 0 -6px 33px -22px #0fff, inset 0 0 1px 0 #0cc;
+      box-shadow: inset 0 -6px 33px -22px unquote("#0fff"), inset 0 0 1px 0 #0cc;
     }
     &:focus {
       inset: 3px 3px 0;
@@ -202,20 +202,20 @@ body {
   padding: 1.5rem 0 .5rem;
 }
 #hwi .txt {
-  padding: 0 0.8rem;
+  padding: 0 .8rem;
 }
 #hwi .txt div {
   background: #fff;
-  padding: 1.1rem 0.6rem 0.1rem;
+  padding: 1.1rem .6rem .1rem;
 }
 #hwi h1 {
   margin: 0 0 1rem;
   font-size: 1.5rem;
-  letter-spacing: -0.003em;
+  letter-spacing: -.003em;
 }
 #hwi p {
   font-size: 1.032rem;
-  letter-spacing: -0.0001em;
+  letter-spacing: -.0001em;
 }
 .dark {
   #hwi .txt div {
@@ -224,17 +224,17 @@ body {
 }
 
 .txt {
-  padding: 0 0.7rem;
+  padding: 0 .7rem;
 }
 .txt div {
-  padding: 0.5rem 0.6rem 0.6rem;
+  padding: .5rem .6rem .6rem;
 }
 
 #lsa .txt {
-  padding: 0.2em 0 0;
+  padding: .2em 0 0;
 }
 #lsa .txt div {
-  padding: 1.1rem 0.9rem 0.6rem;
+  padding: 1.1rem .9rem .6rem;
 }
 #lsb .txt {
   padding: 0;
@@ -244,20 +244,20 @@ body {
   padding: 0 0 1.1em;
 }
 #dde .txt {
-  padding: 0 0.7em 1.1em;
+  padding: 0 .7em 1.1em;
 }
 #lsb .txt div,
 #whc .txt div {
-  padding: 0.5rem 0.9rem 0.6rem;
+  padding: .5rem .9rem .6rem;
 }
 #epf .txt div {
-  padding: 0.8rem 0.9rem 1.5rem;
+  padding: .8rem .9rem 1.5rem;
 }
 #sbd .txt:nth-child(1) {
-  padding: 2em 0.7em 1em;
+  padding: 2em .7em 1em;
 }
 #sbd .txt:nth-child(2) {
-  padding: 1em 0.7em 0;
+  padding: 1em .7em 0;
 }
 
 #epf .img {
@@ -300,27 +300,27 @@ body {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-  margin: 1.8em 0.7em 0;
-  padding: 0.4rem 0.3rem;
+  margin: 1.8em .7em 0;
+  padding: .4rem .3rem;
   border-radius: 15px;
 }
 #req p {
   width: 75%;
   margin: 0;
-  padding: 0.3rem 0.6rem;
-  font-size: 0.9rem;
+  padding: .3rem .6rem;
+  font-size: .9rem;
 }
 #req a {
   display: block;
 }
 
 .txt div {
-  background: #ffffffdf;
+  background: unquote("#ffffffdf");
 }
 #lsa .txt div,
 #whc .txt div,
 #req, #req p {
-  background: #fff9;
+  background: unquote("#fff9");
 }
 #lsb .txt div {
   background: none;
@@ -329,10 +329,10 @@ body {
   #lsa .txt div,
   #whc .txt div,
   #req, #req p {
-    background: #00000096;
+    background: unquote("#00000096");
   }
   .txt div {
-    background: #000000e5;
+    background: unquote("#000000e5");
   }
 }
 
@@ -341,9 +341,9 @@ body {
   padding: 2.5rem 1.5rem 3rem;
 }
 #foot-notes p {
-  margin: 0 0 0.6rem;
-  font-size: 0.78rem;
-  opacity: 0.9;
+  margin: 0 0 .6rem;
+  font-size: .78rem;
+  opacity: .9;
 }
 #foot-notes b {
   font-weight: normal;
@@ -351,15 +351,15 @@ body {
 
 @media (min-width: 576px) {
   .txt {
-    padding: 0 0.8rem;
+    padding: 0 .8rem;
   }
   .txt div {
-    padding: 0.8rem 1.2em 1rem;
+    padding: .8rem 1.2em 1rem;
   }
   #lsa .txt div,
   #lsb .txt div,
   #whc .txt div {
-    padding: 0.8rem 2rem 1rem;
+    padding: .8rem 2rem 1rem;
   }
   #epf .txt div {
     padding: 1.1rem 2rem 1.5rem;
@@ -390,7 +390,7 @@ body {
   }
 
   #lsa .txt {
-    padding: 0.3em 0 0;
+    padding: .3em 0 0;
   }
   #sbd .txt:nth-child(1) {
     padding: 2em 2.2em 1em;
@@ -422,13 +422,13 @@ body {
     padding: 0;
   }
   #hwi .txt div {
-    padding: 1.1rem 0.9rem 0.2rem;
+    padding: 1.1rem .9rem .2rem;
   }
 
   #req {
     width: 67%;
     margin: 2.2em 2em 0;
-    padding: 0.6rem 0.4rem;
+    padding: .6rem .4rem;
   }
   #req a {
     display: inline-block;
@@ -522,7 +522,7 @@ body {
   }
 
   #hwi .txt div {
-    padding: 1.5rem 1.8rem 0.5rem;
+    padding: 1.5rem 1.8rem .5rem;
   }
 
   #lsa {
@@ -552,7 +552,7 @@ body {
   }
   #lsb .txt div {
     margin: 0 0 2.6rem;
-    padding: 1.2rem 3rem 1.1rem 0.8rem;
+    padding: 1.2rem 3rem 1.1rem .8rem;
   }
   #lsb .img {
     // 
@@ -628,7 +628,7 @@ body {
   }
 
   #lwg .txt {
-    padding: 0 1.5em 0.5em 4em;
+    padding: 0 1.5em .5em 4em;
   }
 
   #req {
@@ -636,18 +636,18 @@ body {
     margin: 2.2em 4em 0;
   }
   #req p {
-    font-size: 0.96rem;
+    font-size: .96rem;
   }
 
   #lsa .txt div {
-    background: #ffffffdf;
+    background: unquote("#ffffffdf");
   }
   #whc .txt div {
     background: none;
   }
   .dark {
     #lsa .txt div {
-      background: #000000e5;
+      background: unquote("#000000e5");
     }
   }
 
@@ -676,16 +676,16 @@ body {
     }
     h3 {
       font-size: 2.051rem;
-      letter-spacing: -0.013em;
+      letter-spacing: -.013em;
     }
     h4 {
       font-size: 1.86rem;
-      letter-spacing: -0.0022em;
+      letter-spacing: -.0022em;
     }
 
     p {
       font-size: 1.022rem;
-      letter-spacing: 0.001em;
+      letter-spacing: .001em;
     }
 
     .lead:before {
@@ -695,7 +695,7 @@ body {
 
   #hwi p {
     font-size: 1.06rem;
-    letter-spacing: 0.0001em;
+    letter-spacing: .0001em;
   }
 
   #lsa {
