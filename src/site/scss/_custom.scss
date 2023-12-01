@@ -213,9 +213,13 @@ abbr:after {
   }
 }
 
-#donate svg {
+.donate {
   display: block;
-  max-width: 480px;
+  width: fit-content;
+}
+.btn-pp {
+  display: block;
+  max-width: 100%;
 }
 
 @media (min-width: 992px) {
@@ -266,6 +270,11 @@ abbr:after {
     max-width: 1200px;
     margin: auto;
     padding: 0 .5rem 2rem;
+  }
+
+  .btn-pp-d {
+    width: 320px;
+    height: 60px;
   }
 }
 

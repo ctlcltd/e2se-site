@@ -184,6 +184,7 @@ kbd .symbol {
 .image {
   margin: .5rem 0 0;
   background: #f9f9f9;
+  pointer-events: none;
   user-select: none;
 }
 

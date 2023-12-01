@@ -61,9 +61,8 @@
     background: #ddd !important;
   }
 
-  #donate svg .pp path {
-    fill: #fff;
-  }
+  .btn-pp .pp path { fill: #fff; }
+  .btn-pp .s { stroke: #eee; }
 
   @media (min-width: 992px) {
     #head { background: #181818; }
