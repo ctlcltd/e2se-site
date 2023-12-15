@@ -1,7 +1,13 @@
 {% if templateName == "index" %}<script>document.body.dataset.lazy=''</script>
 {% endif %}<div id="head">
   <div>
-    <button type="button" id="switch-color">
+    <button id="btn-fund">
+      <svg width="32" height="32"><use href="#fund" fill="currentColor"/></svg>
+      <span>donate</span>
+    </button>
+  </div>
+  <div>
+    <button id="btn-color">
       <svg width="22" height="22"><use href="#tone" fill="currentColor"/></svg>
       <span class="d">switch to light</span>
       <span class="l">switch to dark</span>

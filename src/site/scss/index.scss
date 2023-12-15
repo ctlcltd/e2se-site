@@ -20,11 +20,11 @@
   @include variant_dark($print: true);
 }
 
-#switch-color {
+#btn-color {
   visibility: hidden;
 }
 [data-color] {
-  #switch-color {
+  #btn-color {
     visibility: visible;
   }
 }

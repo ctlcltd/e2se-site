@@ -22,7 +22,7 @@ function preferredColor() {
 
 function switchColor(evt) {
   let el = evt.target;
-  el = el.id == 'switch-color' ? el : el.closest('#switch-color');
+  el = el.id == 'btn-color' ? el : el.closest('#btn-color');
 
   if (el) {
     let color = body.hasAttribute('data-color') ? body.getAttribute('data-color') : 'light';
@@ -44,6 +44,21 @@ function switchColor(evt) {
       sessionStorage.setItem('preferred-color', switched);
       load_images();
     }
+  }
+}
+
+function fundRaise(evt) {
+  let el = evt.target;
+  el = el.id == 'btn-fund' ? el : el.closest('#btn-fund');
+
+  if (el) {
+    setTimeout(function() {
+      el.blur();
+    }, 100);
+
+    setTimeout(function() {
+      window.location.href = '/donate.html';
+    }, 300);
   }
 }
 
@@ -224,6 +239,7 @@ function load_images(evt) {
 
 preferredColor();
 head.addEventListener('click', switchColor);
+head.addEventListener('click', fundRaise);
 head.addEventListener('click', offCanvas);
 load_images();
 window.addEventListener('appearance-changed', load_images);

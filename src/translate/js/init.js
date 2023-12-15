@@ -34,14 +34,14 @@ function init() {
         body.classList.remove('dark');
       }
 
-      const button = doc.getElementById('switch-color');
+      const button = doc.getElementById('btn-color');
       button.innerText = 'switch to ' + (color == 'light' ? 'dark' : 'light');
     }
   }
 
   function switchColor(evt) {
     const el = evt.target;
-    if (el.id == 'switch-color') {
+    if (el.id == 'btn-color') {
       let color = body.hasAttribute('data-color') ? body.getAttribute('data-color') : 'light';
 
       if (color == 'light' || color == 'dark') {

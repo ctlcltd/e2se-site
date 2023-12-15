@@ -230,7 +230,7 @@ body {
   padding-inline-end: 32px;
 }
 
-#switch-color {
+#btn-color {
   position: relative;
   padding: .75rem;
   padding-inline-start: 2.25rem;
@@ -248,6 +248,7 @@ body {
     border: 1px solid;
     border-radius: 16px;
     overflow: hidden;
+    transform: scaleX(-1);
   }
   &:after {
     width: 0;
@@ -258,7 +259,7 @@ body {
   }
 }
 .dark {
-  #switch-color:after {
+  #btn-color:after {
     border-right-color: currentColor;
     border-left-color: transparent;
   }

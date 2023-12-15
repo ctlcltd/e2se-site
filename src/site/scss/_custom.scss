@@ -8,7 +8,7 @@
 
 main {
   min-height: 80vh;
-  padding: 0 .5rem 2rem;
+  padding: 1rem 1rem 2rem;
 }
 main a {
   color: inherit;
@@ -60,6 +60,13 @@ mark, .lead {
 .sym {
   font-size: .93rem;
   font-family: Arial, sans-serif;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+.nobreak {
+  word-break: break-all;
 }
 
 abbr {
@@ -175,28 +182,33 @@ abbr:after {
   z-index: 10;
 }
 #head button {
-  padding: 0;
-}
-#head svg {
-  display: block;
+  height: 40.5px;
+  padding: 0 .5rem;
+
+  span, svg {
+    display: inline-block;
+    line-height: 40.5px;
+  }
+  svg {
+    margin: -1px 0 0 0;
+    vertical-align: middle;
+  }
+  span {
+    margin: 0 1px;
+  }
 }
 
-#switch-color {
+#btn-color {
   position: relative;
   padding: .75rem;
   text-transform: none;
   white-space: nowrap;
 }
-#switch-color svg {
-  display: inline-block;
-}
-#switch-color .d {
+#btn-color .d {
   display: none;
 }
 
 #privacy {
-  padding: 0 1rem 2rem;
-
   > p {
     font-size: .97rem;
   }
@@ -210,6 +222,17 @@ abbr:after {
 
   .lead {
     display: inline-block;
+  }
+}
+
+#donate {
+  > div {
+    padding: .2rem 0 1rem;
+  }
+  div:last-child {
+    margin: .5rem 0 0;
+
+    p { font-size: .9rem; }
   }
 }
 
@@ -228,7 +251,7 @@ abbr:after {
   }
 
   main {
-    padding: 0 5rem 4rem;
+    padding: 2.5rem 5rem 4rem;
   }
 
   .abbrbox {
@@ -269,12 +292,27 @@ abbr:after {
   #privacy {
     max-width: 1200px;
     margin: auto;
-    padding: 0 .5rem 2rem;
+    padding: 2.5rem .5rem 4rem;
+  }
+
+  #donate {
+    margin: 0 4%;
+    padding: 2.5rem 2rem 4rem;
+
+    > div {
+      padding: .5rem 0 2rem;
+    }
   }
 
   .btn-pp-d {
     width: 320px;
     height: 60px;
+  }
+}
+
+@media (min-width: 1320px) {
+  #donate {
+    margin: 0 8%;
   }
 }
 

@@ -90,7 +90,20 @@ mark, .lead {
   z-index: 10;
 }
 #head button {
-  padding: 0;
+  height: 40.5px;
+  padding: 0 .5rem;
+
+  span, svg {
+    display: inline-block;
+    line-height: 40.5px;
+  }
+  svg {
+    margin: -1px 0 0 0;
+    vertical-align: middle;
+  }
+  span {
+    margin: 0 1px;
+  }
 }
 #head svg {
   display: block;
