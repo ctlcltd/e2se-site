@@ -61,6 +61,13 @@ li {
   margin: .3rem 1em 0;
 }
 
+hr {
+  height: .75rem;
+  margin: 2rem 0 1.5rem;
+  border: 0;
+  background: unquote("#8883");
+}
+
 mark, .lead {
   padding: .1rem .2rem;
   color: $color;
