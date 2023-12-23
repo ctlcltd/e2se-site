@@ -57,8 +57,12 @@
   }
 
   .image {
-    background: #0a0a0a;
-
+    &:after {
+      background: linear-gradient(90deg, transparent, #0a0a0a);
+    }
+    svg {
+      background: #0a0a0a;
+    }
     [stroke] {
       stroke: #fff;
     }

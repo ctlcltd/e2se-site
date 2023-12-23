@@ -9,11 +9,11 @@
       <h1>Online Help</h1>
       <h2>Troubleshooting</h2>
       <p>How to solve problems, eg. dealing with FTP.</p>
-      <div class="info">
+      <div class="info info-read">
         <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
         <p>Before using the software you could read <a href="quick-start.html">Quick Start</a> page of online help for a brief introduction.</p>
       </div>
-      <div class="table l1">
+      <div class="table">
         <table>
           <tr id="installation">
             <td colspan="2"><strong>Installation</strong></td>
@@ -97,7 +97,7 @@
             <td>Press <b>&quot;Connect&quot;</b> and <b>&quot;Disconnect&quot;</b> in quick menu to attempt an FTP connection</td>
           </tr>
           <tr>
-            <td>Note: <i>the software does not currently upload/download picons, these must be uploaded manually to the STB</i></td>
+            <td>Note: <i>the software does not currently upload/download picon images, these must be uploaded manually to the STB</i></td>
           </tr>
           <tr id="stb-update">
             <td rowspan="3">Decoder (STB) does not update channel lists</td>
@@ -151,6 +151,7 @@
           </tr>
         </table>
       </div>
+      <hr>
       <div id="check-version" class="lh">
         <h3>Check the version</h3>
         <p>Check that the version you are using is the most recent.</p>
@@ -169,7 +170,7 @@
           <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
           <div class="l3">
             <p>To enable FTP debugging, go to <b>&quot;Settings&quot;</b> &gt; <b>Advanced</b> &gt; [confirm].</p>
-            <p>Change the <samp>ftpcom.debug</samp> line from FALSE to TRUE, typing <samp>true</samp>.</p>
+            <p>Change the <samp translate="no">ftpcom.debug</samp> line from <span translate="no">FALSE</span> to <span translate="no">TRUE</span>, typing <samp translate="no">true</samp>.</p>
             <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
           </div>
           <div class="l3">
@@ -180,7 +181,7 @@
         </div>
         <div class="l2">
           <p>To attach the log to the issue, select all the output and <b>Copy</b>, <b>Paste</b> to a plain text file.</p>
-          <p>Next, disable FTP debugging, change the <samp>ftpcom.debug</samp> line from TRUE to FALSE again, typing <samp>false</samp>.</p>
+          <p>Next, disable FTP debugging, change the <samp translate="no">ftpcom.debug</samp> line from <span translate="no">TRUE</span> to <span translate="no">FALSE</span> again, typing <samp translate="no">false</samp>.</p>
         </div>
       </div>
       <div id="view-logs" class="lh">
@@ -203,7 +204,7 @@
         <div class="l2">
           <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
           <p>To reset to factory settings, go to <b>&quot;Settings&quot;</b> &gt; <b>Advanced</b> &gt; [confirm].</p>
-          <p>Change the <samp>settings.reset</samp> line from FALSE to TRUE, typing <samp>true</samp>.</p>
+          <p>Change the <samp translate="no">settings.reset</samp> line from <span translate="no">FALSE</span> to <span translate="no">TRUE</span>, typing <samp translate="no">true</samp>.</p>
           <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
         </div>
         <p>The next time the software is opened it will be reset to factory defaults.</p>

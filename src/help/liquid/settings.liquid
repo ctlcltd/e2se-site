@@ -10,7 +10,7 @@
       <h2>Settings</h2>
       <p>How to change settings, handle connection profiles and engine.</p>
       <p>Connections, contains connection profiles and connection parameters to Decoder STB. <br>Preferences, contains appearance and behavior preferences. <br>Engine, contains behavior preferences of the contained engine. <br>Advanced, contains access to advanced settings.</p>
-      <div class="info">
+      <div class="info info-read">
         <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
         <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
       </div>
@@ -65,18 +65,18 @@
             <h5>Configuration</h5>
             <p><b>Configuration</b> group contains the following properties for interfacing with STB:</p>
             <ul>
-              <li><b>Transponders</b>, path containing XML settings (satellites.xml, ...) related to transponders, eg. /etc/enigma2/</li>
-              <li><b>Services</b>, path containing service channel lists (lamedb, blacklist, ...), eg. /etc/tuxbox/</li>
-              <li><b>Bouquets</b>, path containing groups of channels (userbouquet.dbe01.tv, bouquet.tv, ...), eg. /etc/enigma2/</li>
-              <li><b>Picons</b>, path containing channel logo (picons), eg. /usr/share/enigma2/picon/</li>
+              <li><b>Transponders</b>, path containing XML settings (satellites.xml, ...) related to transponders, eg. <span translate="no">/etc/enigma2/</span></li>
+              <li><b>Services</b>, path containing service channel lists (lamedb, blacklist, ...), eg. <span translate="no">/etc/tuxbox/</span></li>
+              <li><b>Bouquets</b>, path containing groups of channels (userbouquet.dbe01.tv, bouquet.tv, ...), eg. <span translate="no">/etc/enigma2/</span></li>
+              <li><b>Picons</b>, path containing channel logo (picons), eg. <span translate="no">/usr/share/enigma2/picon/</span></li>
             </ul>
           </div>
           <div class="l3">
             <h5>Commands</h5>
             <p><b>Commands</b> group contains the following advanced properties for interfacing with STB:</p>
             <ul>
-              <li><b>Custom webif reload URL address</b>, URL address parameter for updating the STB lists, eg. /web/servicelistreload?mode=0</li>
-              <li><b>Custom telnet reload command</b>, Telnet command parameter for updating the STB lists, eg. init 3</li>
+              <li><b>Custom webif reload URL address</b>, URL address parameter for updating the STB lists, eg. <span translate="no">/web/servicelistreload?mode=0</span></li>
+              <li><b>Custom telnet reload command</b>, Telnet command parameter for updating the STB lists, eg. <span translate="no">init 3</span></li>
             </ul>
           </div>
         </div>
@@ -131,8 +131,8 @@
           </ul>
           <p>Filename format, choice:</p>
           <ul>
-            <li><b>Use reference ID</b>, will generate picon using Reference ID, eg. 1_1_0_10_1234_13E_820000_0_0_0.png</li>
-            <li><b>Use service name</b>, will generate picon using channel Service Name, eg. ribasports.png</li>
+            <li><b>Use reference ID</b>, will generate picon using Reference ID, eg. <span translate="no">1_1_0_10_1234_13E_820000_0_0_0.png</span></li>
+            <li><b>Use service name</b>, will generate picon using channel Service Name, eg. <span translate="no">ribasports.png</span></li>
           </ul>
         </div>
       </div>
@@ -171,8 +171,8 @@
         <p>A cautionary warning will be shown, you should [confirm] to access advanced settings.</p>
         <div class="l2">
           <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
-          <p>In the editable table, <b>double-click</b> on the cell in the VALUE column to change the value.</p>
-          <p>For boolean values (TRUE or FALSE), input text: <samp>true</samp> or <samp>false</samp>.</p>
+          <p>In the editable table, <b>double-click</b> on the cell in the <span translate="no">VALUE</span> column to change the value.</p>
+          <p>For boolean values (<span translate="no">TRUE</span> or <span translate="no">FALSE</span>), input text: <samp translate="no">true</samp> or <samp translate="no">false</samp>.</p>
           <p>To save the settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
         </div>
       </div>
@@ -183,13 +183,11 @@
         <div class="l2">
           <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
           <p>To reset to factory settings, go to <b>&quot;Settings&quot;</b> &gt; <b>Advanced</b> &gt; [confirm].</p>
-          <p>Change the <samp>settings.reset</samp> line from FALSE to TRUE, typing <samp>true</samp>.</p>
+          <p>Change the <samp translate="no">settings.reset</samp> line from <span translate="no">FALSE</span> to <span translate="no">TRUE</span>, typing <samp translate="no">true</samp>.</p>
           <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
         </div>
         <p>The next time the software is opened it will be reset to factory defaults.</p>
       </div>
-
-
       <div class="info">
         <p>To manually edit the settings file, please refer to the Qt toolkit documentation at: <a href="https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes" rel="nofollow noopener" target="_blank">https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes</a></p>
         <p>The software uses the identifier &quot;io.github.ctlcltd.e2se&quot;.</p>

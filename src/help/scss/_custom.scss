@@ -1,5 +1,9 @@
 /* help/_custom.scss */
 
+#head button + button {
+  margin-inline-start: 1rem;
+}
+
 @media (min-width: 992px) {
   #head div:first-child {
     display: none;
