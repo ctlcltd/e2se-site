@@ -1,8 +1,10 @@
 /* help/_variant.scss */
 
 @mixin variant {
-  color: $color;
-  background: $background;
+  body {
+    color: $color;
+    background: $background;
+  }
 
 
   // buttons
@@ -19,7 +21,7 @@
 
   // landing
 
-  mark, .lead {
+  mark {
     color: #dff;
     background: #023;
   }

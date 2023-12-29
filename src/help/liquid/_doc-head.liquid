@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="{{ '../help.css' | asset: deploy }}">{% endunless %}
 <title>{% unless templateName == "index" %}{{ toc[templateName].title | append: " - " | append: "Online Help" | escape }}{% else %}{{ toc[templateName].title | escape }}{% endunless %}</title>
 <meta name="description" content="{{ toc[templateName].description | escape }}">{% if distributable %}
+<meta name="robots" content="noindex,noarchive">
 <style>{% render "{{ stylesheet }}" %}</style>{% endif %}{% if deploy %}
 <link rel="canonical" href="{% canonicalUrl %}">{% endif %}
 </head>

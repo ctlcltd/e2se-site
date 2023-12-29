@@ -21,9 +21,6 @@ button {
   &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
   &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
 }
-button + button {
-  margin-inline-start: 2rem;
-}
 
 #page {
   max-width: 2048px;
@@ -68,15 +65,11 @@ hr {
   background: unquote("#8883");
 }
 
-mark, .lead {
+mark {
   padding: .1rem .2rem;
   color: $color;
   background: #dff;
   border-radius: 1.5px;
-}
-.lead {
-  display: inline;
-  padding: .3rem .2rem;
 }
 
 #head {
@@ -116,6 +109,20 @@ mark, .lead {
   display: block;
 }
 
+#foot {
+  position: relative;
+  top: 3rem;
+  opacity: .95;
+
+  #help & p {
+    font-size: .85rem;
+  }
+  #help & p span {
+    margin: .2rem;
+    font-size: .8rem;
+  }
+}
+
 @media (min-width: 992px) {
   #page {
     padding: 2.5rem 0 0;
@@ -129,6 +136,10 @@ mark, .lead {
   #head > div {
     position: fixed;
     inset-inline-start: 5rem;
+  }
+
+  #foot {
+    top: 4rem;
   }
 }
 

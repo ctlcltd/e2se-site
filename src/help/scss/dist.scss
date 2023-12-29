@@ -16,9 +16,7 @@
 @include custom_dist();
 
 @media (prefers-color-scheme: dark) {
-  body {
-    @include variant_dark($print: true);
-  }
+  @include variant_dark($print: true);
 
   @include custom_variant_dark();
 }
