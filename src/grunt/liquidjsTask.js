@@ -60,7 +60,7 @@ function liquidjsTask() {
   files.map(function(filepath, i) {
     const basePath = path.dirname(path.dirname(filepath) + '..');
     const templateName = path.basename(filepath, '.liquid');
-    const filename = path.format({dir: filedest, name: templateName, ext: 'html'});
+    const filename = path.format({dir: filedest, name: templateName, ext: '.html'});
     const src = grunt.file.read(filepath);
     const dst = engine.parseAndRenderSync(src, options.data, {
       globals: {templateName, basePath, ...options.globals}
