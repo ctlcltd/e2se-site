@@ -9,7 +9,7 @@
       <h1>Online Help</h1>
       <h2>Settings</h2>
       <p>How to change settings, handle connection profiles and engine.</p>
-      <p>Connections, contains connection profiles and connection parameters to Decoder STB. <br>Preferences, contains appearance and behavior preferences. <br>Engine, contains behavior preferences of the contained engine. <br>Advanced, contains access to advanced settings.</p>
+      <p>Connections, contains connection profiles and connection parameters for Decoder STB. <br>Preferences, contains software appearance and behavior preferences. <br>Engine, contains built-in engine behavior preferences. <br>Advanced, contains access to advanced settings.</p>
       <div class="info info-read">
         <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
         <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
@@ -28,21 +28,27 @@
       </div>
       <div id="connection" class="l1">
         <h3>Connection settings</h3>
-        <p><b>Connections</b> tab contains all the settings for connecting to Decoder (STB).</p>
+        <p><b>Connections</b> tab contains all the parameters for connecting to Decoder (STB).</p>
         <p>To save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
         <div class="l2">
           <h5>Profiles</h5>
           <p>Connection profiles are found in the side panel.</p>
           <div class="l3">
-            <p>To <b>create</b> a new connection profile, press on <b>&quot;+&quot;</b>, then name the profile.</p>
-            <p>To <b>remove</b> a connection profile, press on <b>&quot;&ndash;&quot;</b>.</p>
+            <p>To <b>create</b> a new connection profile, press on <span class="symbolic">+</span>, below the side panel, then name the profile.</p>
+            <p>To <b>remove</b> connection profiles, select one or more profiles, then press on <span class="symbolic">&ndash;</span>, below the side panel.</p>
+            <p>To <b>remove</b> a connection profile, open the context menu and click on <b>&quot;Delete&quot;</b>.</p>
+            <p>To <b>rename</b> a connection profile, open the context menu and click on <b>&quot;Rename&quot;</b>.</p>
           </div>
           <p>By <b>double-click</b>ing on the item panel you can rename the profile.</p>
         </div>
         <div class="l2">
           <h5>Profile properties</h5>
           <p>Select a profile from the side panel.</p>
-          <p>The software automatically creates a profile with the most common settings, named <b>&quot;Default&quot;</b>.</p>
+          <p>The software automatically creates a profile with default settings, named <b>&quot;Default&quot;</b>.</p>
+          <div class="info">
+            <p>Most common STB parameters are available through the <a href="#presets">Connection Presets</a> feature.</p>
+            <p><em>Parameters, Username, Password, vary by STB, rely on specialistic forum on the internet.</em></p>
+          </div>
           <div class="l3">
             <h5>Connection</h5>
             <p><b>Connection</b> group contains the following connection parameters to STB:</p>
@@ -60,6 +66,7 @@
               <li><b>Username</b>, FTP / Telnet login username of STB</li>
               <li><b>Password</b>, FTP / Telnet login password of STB</li>
             </ul>
+            <p>To show or hide the password, press the <i>eye</i> icon in Password input field.</p>
           </div>
           <div class="l3">
             <h5>Configuration</h5>
@@ -70,6 +77,13 @@
               <li><b>Bouquets</b>, path containing groups of channels (userbouquet.dbe01.tv, bouquet.tv, ...), eg. <span translate="no">/etc/enigma2</span></li>
               <li><b>Picons</b>, path containing channel logo (picons), eg. <span translate="no">/usr/share/enigma2/picon</span></li>
             </ul>
+            <div class="l3">
+              <p><b>Picons</b> common paths for channel logo (picons)</p>
+              <p>eg. <samp>/usr/share/enigma2/picon</samp> <samp>/usr/share/enigma2/picon_oled</samp> <samp>/media/usb/picons</samp> <samp>/media/hdd/picons</samp> <samp>/data/picon</samp></p>
+              <div class="l2">
+                <p>Note: <i>the software does not currently upload / download picon images, these must be uploaded manually to the STB.</i></p>
+              </div>
+            </div>
           </div>
           <div class="l3">
             <h5>Commands</h5>
@@ -79,6 +93,43 @@
               <li><b>Custom telnet reload command</b>, Telnet command parameter for updating the STB lists, eg. <span translate="no">init 3</span></li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div id="presets" class="l1">
+        <h3>Connection Presets</h3>
+        <p>To auto-fill the connection profile with most common STB parameters use <b>Connection Presets</b>.</p>
+        <ul>
+          <li>To use a <b>preset</b> to auto-fill profile, press on side panel menu, 3-dots icon <span class="symbolic symbolic-big">&vellip;</span> or <span class="symbolic">&hellip;</span> on Mac, below the side panel.</li>
+          <li>Select a preset from the <b>Presets</b> menu list.</li>
+        </ul>
+        <p><b>&quot;Presets&quot;</b> menu list contains these options:</p>
+        <ul translate="none">
+          <li>Enigma 2.4</li>
+          <li>Neutrino</li>
+          <li>Enigma 2.3 / 2.4</li>
+          <li>GX NationalChip Octagon 2.4</li>
+          <li>Triple Dragon</li>
+          <li>WeTek Play</li>
+          <li>Enigma 1</li>
+        </ul>
+      </div>
+      <div id="import-export" class="l1">
+        <h3>Profile Import and Export</h3>
+        <p>To import and export connection profiles, use Import and Export features.</p>
+        <div class="l2">
+          <h5>Import Connection Profile</h5>
+          <div class="l3">
+            <p><b>From side panel menu</b>, below the side panel, press on 3-dots icon <span class="symbolic symbolic-big">&vellip;</span> or <span class="symbolic">&hellip;</span> on Mac, click on <b>&quot;Import Profiles&hellip;&quot;</b>.</p>
+          </div>
+          <p>In <b>File dialog</b>, select file to import.</p>
+        </div>
+        <div class="l2">
+          <h5>Export Connection Profile</h5>
+          <div class="l3">
+            <p><b>From side panel menu</b>, below the side panel, press on 3-dots icon <span class="symbolic symbolic-big">&vellip;</span> or <span class="symbolic">&hellip;</span> on Mac, click on <b>&quot;Export Profiles&hellip;&quot;</b>.</p>
+            <p><b>From side panel profile</b> you want to export, open the context menu and click on <b>&quot;Export Profile&quot;</b>.</p>
+          </div>
+          <p>In <b>File dialog</b>, select the location where you want to export connection profiles.</p>
         </div>
       </div>
       <div id="preferences" class="l1">

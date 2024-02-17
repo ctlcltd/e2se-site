@@ -5,7 +5,7 @@
           <ul class="toc">{% for page in toc %}{% if templateName == page[0] and page[1].anchors %}
             <li><a {% if templateName == page[0] %}class="active" {% endif %}href="{% if deploy and page[0] == "index" %}.{% else %}{{ page[1].href }}{% endif %}">{{ page[1].title }}</a>{% for anchors in page[1].anchors %}
               <ul>{% for anchor in anchors %}
-                <li><a {% if anchor[0] contains "@" %}class="chapter" {% endif %}href="{{ anchor[0] | replace: "@", "#" }}">{{ anchor[1] | replace: "[", "<span class=\"type\">[" | replace: "]", "]</span>" }}</a></li>{% endfor %}
+                <li><a {% if anchor[0] contains "@" %}class="chapter" {% endif %}href="{{ anchor[0] | replace: "@", "#" }}"{% if anchor[0] == "#windows" or anchor[0] == "#macos" or anchor[0] == "#linux" %} translate="no"{% endif %}>{{ anchor[1] | replace: "[", "<span class=\"type\">[" | replace: "]", "]</span>" }}</a></li>{% endfor %}
               </ul>{% endfor %}
             </li>{% else %}
             <li><a {% if templateName == page[0] %}class="active" {% endif %}href="{% if deploy and page[0] == "index" %}.{% else %}{{ page[1].href }}{% endif %}">{{ page[1].title }}</a></li>{% endif %}{% endfor %}

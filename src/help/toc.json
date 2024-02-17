@@ -37,7 +37,7 @@
         "#edit-list": "Edit channel lists",
         "#save-list": "Save channel lists",
         "#convert-list": "Convert channel lists",
-        "#import-export": "Import and export",
+        "#import-export": "Import and Export",
         "#parental": "Lock channels [Parental]"
       },
       {
@@ -110,7 +110,7 @@
         "#move-positions": "Move positions [XML]",
         "#edit-position": "Edit position [XML]",
         "#create-position": "Create position [XML]",
-        "#import-export": "Import and export [XML]"
+        "#import-export": "Import and Export [XML]"
       }
     ]
   },
@@ -122,6 +122,8 @@
       {
         "#settings": "Settings",
         "#connection": "Connection settings",
+        "#presets": "Presets",
+        "#import-export": "Profile Import and Export",
         "#preferences": "Preferences settings",
         "#engine": "Engine settings",
         "#advanced": "Advanced settings"
@@ -142,6 +144,18 @@
         "#download": "Download files",
         "#upload": "Upload files",
         "#troubleshooting": "Troubleshooting"
+      }
+    ]
+  },
+  "command-line": {
+    "href": "command-line.html",
+    "title": "Command line",
+    "description": "How to use the command line options or e2se-cli",
+    "anchors": [
+      {
+        "#options": "Command line options",
+        "#debug": "Debugging option",
+        "#cli": "CLI [e2se-cli]"
       }
     ]
   },

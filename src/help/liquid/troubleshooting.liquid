@@ -40,7 +40,7 @@
           </tr>
           <tr id="menu-issue">
             <td rowspan="3">Main menu items are grayed out</td>
-            <td>A known issue, fixed in version 1.0</td>
+            <td>A known issue, fixed since software version 1.0</td>
           </tr>
           <tr>
             <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
@@ -52,7 +52,10 @@
             <td colspan="2"><strong>FTP</strong></td>
           </tr>
           <tr id="ftp-connect">
-            <td rowspan="9">FTP not connecting</td>
+            <td rowspan="10">FTP not connecting</td>
+            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
+          </tr>
+          <tr>
             <td>Check the cables connecting the Decoder (STB) to the local network</td>
           </tr>
           <tr>
@@ -168,7 +171,7 @@
         <h3>Enable FTP debug</h3>
         <p>FTP debugging is disabled by default to avoid slowing down execution.</p>
         <p>It can be useful to solve problems and report issues on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a></p>
-        <p>Note: <i>FTP debugging may not be available on Windows PowerShell.</i></p>
+        <p>Note: <i>FTP debugging may not be available on Windows, in software versions lesser then 1.2 <b>**</b></i></p>
         <div class="l2">
           <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
           <div class="l3">
@@ -177,7 +180,18 @@
             <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
           </div>
           <div class="l3">
-            <p>Open a terminal window and launch the software from its current location.</p>
+            <p>Open a terminal window and launch the software &ndash; from its current location &ndash; eg. <samp>cd e2-sat-editor-directory</samp></p>
+            <p><b>Windows PowerShell <i>*</i> (win64)</b> <code>$env:QT_WIN_DEBUG_CONSOLE="new"; .\e2-sat-editor.exe</code></p>
+            <p><b>Windows PowerShell <i>**</i></b> <code>.\e2-sat-editor.exe | tee log.txt</code></p>
+            <p><b>Windows CMD <i>**</i></b> <code>e2-sat-editor.exe 2>&1 > log.txt</code></p>
+            <p><b>macOS</b> <code>./e2\ SAT\ Editor.app/Contents/MacOS/e2\ SAT\ Editor</code></p>
+            <p><b>Linux (AppImage)</b> <code>./e2-sat-editor-VERSION-x86_64-linux.AppImage</code></p>
+            <p><b>Linux (Snap)</b> <code>snap run e2-sat-editor</code></p>
+            <p><b>Linux (Flatpak)</b> <code>flatpak run io.github.ctlcltd.e2se</code></p>
+            <p><b>Other shell</b> <code>./e2-sat-editor</code></p>
+          </div>
+          <div class="l3">
+            <p>After launched the software from the terminal.</p>
             <p>Press <b>&quot;Connect&quot;</b> and <b>&quot;Disconnect&quot;</b> from quick menu to attempt an FTP connection.</p>
             <p><i>All FTP messages will be shown in the terminal.</i></p>
           </div>
@@ -192,12 +206,15 @@
         <p>The software creates a log in memory.</p>
         <p>It can be useful to solve problems and report issues on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/issues" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/issues</a></p>
         <div class="l2">
-          <p>To view the log, open <b>Inspector</b>.</p>
+          <p>To show the log, open <b>Inspector</b>.</p>
           <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Log Inspect</b>.</p>
           <div class="l3">
             <p><i>The log of the current execution will be shown in the dialog.</i></p>
             <p>To attach the log to the issue, select all the text and <b>Copy</b>, <b>Paste</b> into a plain text file.</p>
           </div>
+        </div>
+        <div class="l2">
+          <p>Software logs are available also using debugging option, see <a href="command-line.html#debug">Command line</a> page of online help.</p>
         </div>
       </div>
       <div id="reset-settings" class="lh">
