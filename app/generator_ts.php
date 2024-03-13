@@ -139,7 +139,7 @@ foreach ($ts_files as $ts_file):
 			} else {
 				if (strpos($tree, '</source>') != 0) {
 					$source .= $tmp_source;
-					$source .= substr($tree, 0, strrpos($tree, '</source>') - 16);
+					$source .= substr($tree, 0, strrpos($tree, '</source>'));
 					$key = $source;
 					$tmp_source = '';
 				} else {

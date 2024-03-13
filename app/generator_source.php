@@ -84,7 +84,7 @@ if ($read_db):
 
 
 	try {
-		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id', 'ts_guid', 'ts_notes', 'ts_status']);
+		$sth = \api\db_select($dbh, 'e2se_ts', ['ts_id', 'ts_guid', 'ts_update']);
 		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
 
 		foreach ($results as $arr) {
@@ -92,11 +92,8 @@ if ($read_db):
 			$guid = $arr['ts_guid'];
 			$check[$guid] = $ts_id;
 
-			if ($ndpass && ! $arr['ts_status'])
+			if ($ndpass && ! $arr['ts_update'])
 				$update[$ts_id] = $guid;
-
-			if (! empty($arr['ts_notes']))
-				$notes['ts'][$guid] = $arr['ts_notes'];
 		}
 	} catch (PDOException $e) {
 		return \api\dump($e);
@@ -108,15 +105,19 @@ if ($read_db):
 	$language = array_flip($languages);
 
 	try {
-		$sth = \api\db_select($dbh, 'e2se_tr', ['e2se_tr.ts_id', 'ts_guid', 'lang_id', 'tr_notes'], 'LEFT JOIN e2se_ts ON e2se_ts.ts_id=e2se_tr.ts_id WHERE tr_notes!=""');
+		$sth = \api\db_select($dbh, 'e2se_notes', ['e2se_notes.ts_guid', 'lang_id', 'ts_notes', 'tr_notes']);
 		$results = $sth->fetchAll(PDO::FETCH_ASSOC);
 
 		foreach ($results as $arr) {
 			$guid = $arr['ts_guid'];
 			$lang_id = $arr['lang_id'];
-			$lang = $language[$lang_id];
+			$lang = $lang_id != 0 ? $language[$lang_id] : '';
 
-			$notes[$lang][$guid] = $arr['tr_notes'];
+			if (! empty($arr['ts_notes']))
+				$notes['ts'][$guid] = $arr['ts_notes'];
+
+			if (! empty($arr['tr_notes']))
+				$notes[$lang][$guid] = $arr['tr_notes'];
 		}
 	} catch (PDOException $e) {
 		return \api\dump($e);
@@ -215,7 +216,7 @@ foreach ($ts_files as $ts_file):
 			} else {
 				if (strpos($tree, '</source>') !== false) {
 					$source .= $tmp_source;
-					$source .= substr($tree, 0, strrpos($tree, '</source>') - 16);
+					$source .= substr($tree, 0, strrpos($tree, '</source>'));
 					$tmp_source = '';
 				} else {
 					$tmp_source .= $tree . "\n";
@@ -310,7 +311,7 @@ foreach ($ts_files as $ts_file):
 					'ts_msg_extra' => decode_entities($extracomment),
 					'ts_msg_numerus' => (int) $msg_numerous,
 					'ts_line' => $src_line,
-					'ts_notes' => isset($notes['ts'][$guid]) ? $notes['ts'][$guid] : ''
+					'ts_update' => update ? 1 : 0
 				];
 
 				$disambiguation[$key][] = $guid;
@@ -326,8 +327,7 @@ foreach ($ts_files as $ts_file):
 					'tr_msg_tr' => decode_entities($translation),
 					'tr_line' => $src_line,
 					'tr_status' => $status,
-					'tr_revised' => 0,
-					'tr_notes' => isset($notes[$lang][$guid]) ? $notes[$lang][$guid] : ''
+					'tr_revised' => 0
 				];
 
 				$order[$lang][$id] = $ts_id;
@@ -497,6 +497,8 @@ if ($write_db)
 $json = [];
 
 foreach ($strings as $ts):
+	$guid = $ts['ts_guid'];
+
 	$arr = [
 		'guid' => $ts['ts_guid'],
 		'ctx_name' => $ts['ts_ctx_name'],
@@ -509,8 +511,8 @@ foreach ($strings as $ts):
 	if (isset($disambigua[$ts['ts_id']])) {
 		$arr['disambigua'] = array_values($disambigua[$ts['ts_id']]);
 	}
-	if (! empty($ts['ts_notes'])) {
-		$arr['notes'] = $ts['ts_notes'];
+	if (isset($notes['ts'][$guid])) {
+		$arr['notes'] = $notes['ts'][$guid];
 	}
 
 	$json[] = $arr;
@@ -580,8 +582,8 @@ foreach ($order as $lang => $table):
 			'revised' => $tr['tr_revised']
 		];
 
-		if (! empty($tr['tr_notes'])) {
-			$arr['notes'] = $tr['tr_notes'];
+		if (isset($notes[$lang][$guid])) {
+			$arr['notes'] = $notes[$lang][$guid];
 		}
 
 		$json[] = $arr;
