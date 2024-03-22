@@ -66,9 +66,9 @@ Sample configuration files are `config.phps` and `app/routes.phps`.
 Serve from `public` root.
 
 
-### Distributable documentation
+### Build the User Manual
 
-To make a distributable documentation (Online Help), use `dist.help` Grunt task.
+To make distributable User Manual (Online Help), use `dist.help` Grunt task.
 ```
 npm run dist.help -- --dest=out/
 ```
