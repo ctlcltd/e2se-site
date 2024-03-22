@@ -6,7 +6,8 @@
 <div id="page">
   <div id="help">
     <main>
-      <h1>Online Help</h1>
+{% unless distributable %}      <h1>Online Help</h1>
+{% else %}      <h1>User Manual</h1>{% endunless %}
       <h2>Transfers from and to Decoder</h2>
       <p>How to transfer files from and to Decoder (STB).</p>
       <p>Handle connection profile, add and remove profiles. <br>Connect and disconnect the software to STB. <br>Download and Upload channel lists from / to software from / to STB.</p>
@@ -43,7 +44,7 @@
       <div id="download" class="l1">
         <h3>Download files</h3>
         <p>Select the desired connection profile, usually &quot;Default&quot; profile.</p>
-        <p>Open a channel list or create a new one by clicking on <b>&quot;+ New Tab&quot;</b> at top window.</p>
+        <p>Open a channel list or create a new one by clicking on <b>&quot;<span class="symbolic">+</span> New Tab&quot;</b> at top window.</p>
         <p><i>When use an existing channel list, downloaded lists will merged with pre-existing channels.</i></p>
         <div class="l2">
           <p><b>From quick menu</b>, press <b>&quot;Download&quot;</b></p>

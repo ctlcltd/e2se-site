@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+{% render '_doc-head.liquid' %}
+<body>
+{% render '_page-head.liquid' %}
+<div id="page">
+  <div id="help">
+    <main>
+{% unless distributable %}      <h1>Online Help</h1>
+{% else %}      <h1>User Manual</h1>{% endunless %}
+      <h2>File interoperability</h2>
+      <p>How to use tools to import and export: CSV, M3U, HTML</p>
+      <div id="csv" class="l1">
+        <h3>Import and Export <span class="type">[CSV]</span></h3>
+        <p>To import and export to and from CSV files.</p>
+        <div class="l2">
+          <h5>Import</h5>
+          <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Import from CSV</b> menu.</p>
+          <p>Select an import option from the following:</p>
+          <ul>
+            <li>Import Services</li>
+            <li>Import Bouquet</li>
+            <li>Import Userbouquet</li>
+            <li>Import Tuner settings</li>
+          </ul>
+          <p>In <b>File dialog</b> select the CSV settings file to import.</p>
+        </div>
+        <div class="l2">
+          <h5>Export</h5>
+          <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Export to CSV</b> menu.</p>
+          <p>Select an export option from the following:</p>
+          <ul>
+            <li>Export current</li>
+            <li>Export All</li>
+            <li>Export Bouquets</li>
+            <li>Export Userbouquets</li>
+            <li>Export Tuner settings</li>
+          </ul>
+          <p>In <b>File dialog</b> select the location where you want to export CSV settings files.</p>
+        </div>
+      </div>
+      <div id="m3u" class="l1">
+        <h3>Import and Export <span class="type">[M3U]</span></h3>
+        <p>To import and export to and from M3U files.</p>
+        <div class="l2">
+          <h5>Import</h5>
+          <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Import from M3U</b> menu.</p>
+          <p>In <b>File dialog</b> select the M3U file to import.</p>
+          <p>The <b>M3U Import dialog</b> will be opened, to set your import preferences.</p>
+        </div>
+        <div class="l2">
+          <h5>Export</h5>
+          <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Export to M3U</b> menu.</p>
+          <p>The <b>M3U Export dialog</b> will be opened, to set your export preferences.</p>
+          <p>In <b>File dialog</b> select the location where you want to export M3U files.</p>
+        </div>
+      </div>
+      <div id="csv" class="l1">
+        <h3>Export <span class="type">[HTML]</span></h3>
+        <p>To export to HTML files.</p>
+        <div class="l2">
+          <h5>Export</h5>
+          <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Export to HTML</b> menu.</p>
+          <p>Select an export option from the following:</p>
+          <ul>
+            <li>Export current</li>
+            <li>Export All</li>
+            <li>Export Index</li>
+            <li>Export Bouquets</li>
+            <li>Export Userbouquets</li>
+            <li>Export Tuner settings</li>
+          </ul>
+          <p>In <b>File dialog</b> select the location where you want to export HTML files.</p>
+        </div>
+      </div>
+{% render '_page-dist.liquid', help_rev: help_rev %}
+    </main>
+{% render '_page-side.liquid' %}
+  </div>{% unless distributable %}
+{% render '_page-foot.liquid' %}{% endunless %}
+</div>
+{% render '_page-vars.liquid' %}
+</body>
+</html>

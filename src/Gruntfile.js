@@ -105,7 +105,7 @@ module.exports = function(grunt) {
             helpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
             stylesheet: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/style.min.css'),
             script: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/script.min.js'),
-            toc: grunt.file.readJSON('help/toc.json')
+            toc: { ...grunt.file.readJSON('help/toc.json'), ...grunt.file.readJSON('help/toc-dist.json') }
           },
           data: {
             help_rev: new Date()

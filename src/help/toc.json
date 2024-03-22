@@ -47,8 +47,13 @@
         "#reference": "View channel details [Reference]",
         "#add-channels": "Add channels",
         "#edit-channel": "Edit channel",
-        "#delete-channel": "Delete channel",
-        "#create-channel": "Create service channel"
+        "#delete-channel": "Delete channel"
+      },
+      {
+        "@favourites": "Favourites",
+        "#create-favourite": "Create favourite",
+        "#edit-favourite": "Edit favourite",
+        "#delete-favourite": "Delete favourite"
       },
       {
         "@markers": "Markers",
@@ -73,21 +78,9 @@
       {
         "#howto": "How to edit",
         "#properties": "Properties",
+        "#parameters": "Parameters",
         "#transponder": "Transponder",
-        "#parameters": "Parameters"
-      }
-    ]
-  },
-  "edit-transponder": {
-    "href": "edit-transponder.html",
-    "title": "Edit Transponders",
-    "description": "How to edit transponders, edit all transponder parameters",
-    "anchors": [
-      {
-        "#howto": "How to edit",
-        "#properties": "Properties",
-        "#parameters": "Parameters [Type]",
-        "#channel": "Edit from channel"
+        "#favourite": "Favourite [Bouquet]"
       }
     ]
   },
@@ -114,10 +107,36 @@
       }
     ]
   },
+  "edit-transponder": {
+    "href": "edit-transponder.html",
+    "title": "Edit Transponders",
+    "description": "How to edit transponders, edit all transponder parameters",
+    "anchors": [
+      {
+        "#howto": "How to edit",
+        "#properties": "Properties",
+        "#parameters": "Parameters [Type]",
+        "#channel": "Edit from channel"
+      }
+    ]
+  },
+  "edit-favourite": {
+    "href": "edit-favourite.html",
+    "title": "Edit Favourites",
+    "description": "How to edit favourite channels, channel reference, stream type",
+    "anchors": [
+      {
+        "#howto": "How to edit",
+        "#reference": "Properties [Reference]",
+        "#stream": "Properties [Stream]",
+        "#channel": "Edit from channel [Bouquet]"
+      }
+    ]
+  },
   "settings": {
     "href": "settings.html",
     "title": "Settings",
-    "description": "How to change settings, handle connection profiles and engine",
+    "description": "How to change software preferences, handle connection profiles and engine",
     "anchors": [
       {
         "#settings": "Settings",
@@ -144,6 +163,18 @@
         "#download": "Download files",
         "#upload": "Upload files",
         "#troubleshooting": "Troubleshooting"
+      }
+    ]
+  },
+  "file-interop": {
+    "href": "file-interop.html",
+    "title": "File interoperability",
+    "description": "How to use tools to import and export: CSV, M3U, HTML",
+    "anchors": [
+      {
+        "#csv": "Import and Export [CSV]",
+        "#m3u": "Import and Export [M3U]",
+        "#html": "Export [HTML]"
       }
     ]
   },

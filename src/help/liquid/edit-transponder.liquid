@@ -6,13 +6,10 @@
 <div id="page">
   <div id="help">
     <main>
-      <h1>Online Help</h1>
+{% unless distributable %}      <h1>Online Help</h1>
+{% else %}      <h1>User Manual</h1>{% endunless %}
       <h2>Edit Transponders</h2>
       <p>Edit transponders and transponder parameters.</p>
-      <div class="info info-read">
-        <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
-        <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
-      </div>
       <div id="howto" class="l1">
         <h3>How to edit</h3>
         <p>Select the transponder to edit, open the context menu and click on <b>&quot;Edit Transponder&quot;</b>.</p>

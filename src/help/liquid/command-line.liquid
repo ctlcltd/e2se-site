@@ -6,7 +6,8 @@
 <div id="page">
   <div id="help">
     <main>
-      <h1>Online Help</h1>
+{% unless distributable %}      <h1>Online Help</h1>
+{% else %}      <h1>User Manual</h1>{% endunless %}
       <h2>Command line</h2>
       <p>How to use command line options or <em>e2se-cli</em> command line interface.</p>
       <div id="options" class="l1">
@@ -49,7 +50,7 @@
         </div>
       </div>
       <div id="cli" class="l1">
-        <h3>Command line interface <span class="type">e2se-cli</span></h3>
+        <h3>Command line interface <span class="type">[e2se-cli]</span></h3>
         <p>Command line interface is provided by <em>e2se-cli</em> application binary.</p>
         <p>It offers an interactive shell with almost the same features of the software GUI counterpart.</p>
         <div class="l2">

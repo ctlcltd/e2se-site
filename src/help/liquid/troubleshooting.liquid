@@ -6,7 +6,8 @@
 <div id="page">
   <div id="help">
     <main>
-      <h1>Online Help</h1>
+{% unless distributable %}      <h1>Online Help</h1>
+{% else %}      <h1>User Manual</h1>{% endunless %}
       <h2>Troubleshooting</h2>
       <p>How to solve problems, eg. dealing with FTP.</p>
       <div class="info info-read">
@@ -46,7 +47,7 @@
             <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
           </tr>
           <tr>
-            <td>Open a new tab using <b>&quot;+ New Tab&quot;</b> and close it, menu items will become visible again</td>
+            <td>Open a new tab using <b>&quot;<span class="symbolic">+</span> New Tab&quot;</b> and close it, menu items will become visible again</td>
           </tr>
           <tr id="ftp">
             <td colspan="2"><strong>FTP</strong></td>

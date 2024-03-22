@@ -6,8 +6,9 @@
 <div id="page">
   <div id="help">
     <main>
-      <h1>Online Help</h1>
-      <p>This is the online help for &quot;e2 SAT Editor&quot; software.</p>
+{% unless distributable %}      <h1>Online Help</h1>
+      <p>This is the online help for <strong>e2 SAT Editor</strong> software.</p>{% else %}      <h1>User Manual</h1>
+      <p>This is the user manual for <strong>e2 SAT Editor</strong> software.</p>{% endunless %}
       <p>Here are all information for using the software.</p>
       <div class="info">
         <p>To get started and need quick help, refer to <a href="quick-start.html">Quick Start</a>.</p>

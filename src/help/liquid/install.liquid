@@ -6,7 +6,8 @@
 <div id="page">
   <div id="help">
     <main>
-      <h1>Online Help</h1>
+{% unless distributable %}      <h1>Online Help</h1>
+{% else %}      <h1>User Manual</h1>{% endunless %}
       <h2>Installation</h2>
       <p>How to install &quot;e2 SAT Editor&quot; software.</p>
       <p>The software has no setup, it can be run without installing.</p>

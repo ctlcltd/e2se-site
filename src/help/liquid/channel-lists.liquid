@@ -6,7 +6,8 @@
 <div id="page">
   <div id="help">
     <main>
-      <h1>Online Help</h1>
+{% unless distributable %}      <h1>Online Help</h1>
+{% else %}      <h1>User Manual</h1>{% endunless %}
       <h2>Channel List operations</h2>
       <p>How to edit and create channel lists, edit and move services and bouquets.</p>
       <p>Create, edit, import, export, convert, channel lists.</p>
@@ -18,7 +19,7 @@
       <hr id="lists">
       <div id="create-list" class="l1">
         <h3>Create channel lists</h3>
-        <p>To create a new list of channels, open a new tab by clicking on <b>&quot;+ New Tab&quot;</b> at top window.</p>
+        <p>To create a new list of channels, open a new tab by clicking on <b>&quot;<span class="symbolic">+</span> New Tab&quot;</b> at top window.</p>
         <div class="l2">
           <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>New</b>.</p>
         </div>
@@ -114,7 +115,7 @@
       </div>
       <div id="add-channels" class="l1">
         <h3>Add channels</h3>
-        <p>To add channels click on <b>&quot;+ Add Channel&quot;</b>.</p>
+        <p>To add channels click on <b>&quot;<span class="symbolic">+</span> Channel&quot;</b>.</p>
         <p>The channel selector, with filters, will be shown in the pop-up window.</p>
         <p>Select the channels to add and press <b>&quot;Add&quot;</b>.</p>
         <p><i>When you done, close the pop-up window.</i></p>
@@ -139,19 +140,37 @@
         <p><i>The service channel will be deleted in the current bouquet.</i></p>
         <p>Channel can also be deleted with keyboard by clicking on <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
       </div>
-      <div id="create-channel" class="l1">
-        <h3>Create service channel</h3>
-        <p>To create a service channel, click <b>&quot;+ New Service&quot;</b>.</p>
-        <p>In <b>dialog</b>, enter the service parameters, then press <b>&quot;Save&quot;</b>.</p>
-        <p><i>The service channel will be added into the current bouquet.</i></p>
-        <div class="ls">
-          <p>For further information, see <a href="edit-service.html">Edit Services</a> page of online help.</p>
+      <hr id="favourites">
+      <div id="create-favourite" class="l1">
+        <h3>Create favourite</h3>
+        <p>To create a favourite, click <b>&quot;<span class="symbolic">+</span> Favourite&quot;</b>.</p>
+        <p>In <b>dialog</b>, enter parameters for favourite, then press <b>&quot;Save&quot;</b>.</p>
+        <p><i>The favourite will be created in the current bouquet.</i></p>
+        <div class="l2">
+          <p>Note: <i>Favourites cannot be created in the Services lists: All services, TV, Radio, Data.</i></p>
         </div>
+        <p>Make sure you have selected a bouquet in the <b>Bouquets</b> area or have created one and select it.</p>
+        <div class="ls">
+          <p>For further information, see <a href="edit-favourite.html">Edit Favourites</a> page of online help.</p>
+        </div>
+      </div>
+      <div id="edit-favourite" class="l1">
+        <h3>Edit favourites</h3>
+        <p>Select a favourite to edit, open the context menu and click on <b>&quot;Edit Favourite&quot;</b>.</p>
+        <p>In <b>dialog</b>, change the parameters of the favourite, then press <b>&quot;Save&quot;</b>.</p>
+        <p><i>The favourite will be changed in the current bouquet.</i></p>
+        <p>Favourite can be quickly edited by <b>double-click</b>ing on selected marker.</p>
+      </div>
+      <div id="delete-favourite" class="l1">
+        <h3>Delete favourite</h3>
+        <p>To delete favourite, select favourites, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
+        <p><i>Favourites will be deleted from the current bouquet.</i></p>
+        <p>Favourite can also be deleted with keyboard by pressing on <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
       </div>
       <hr id="markers">
       <div id="create-marker" class="l1">
         <h3>Create marker</h3>
-        <p>To create a marker, click <b>&quot;+ Add Marker&quot;</b>.</p>
+        <p>To create a marker, click <b>&quot;<span class="symbolic">+</span> Marker&quot;</b>.</p>
         <p>In <b>dialog</b>, enter a name for marker, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The marker will be created in the current bouquet.</i></p>
         <div class="l2">
@@ -161,15 +180,15 @@
       </div>
       <div id="edit-marker" class="l1">
         <h3>Edit marker</h3>
-        <p>Select the marker to edit, open the context menu and click on <b>&quot;Edit Marker&quot;</b>.</p>
+        <p>Select a marker to edit, open the context menu and click on <b>&quot;Edit Marker&quot;</b>.</p>
         <p>In <b>dialog</b>, change the name of the marker, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The marker will be changed in the current bouquet.</i></p>
         <p>Marker can be quickly edited by <b>double-click</b>ing on selected marker.</p>
       </div>
       <div id="delete-marker" class="l1">
         <h3>Delete marker</h3>
-        <p>To delete a marker, select markers, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
-        <p><i>The marker will be deleted from the current bouquet.</i></p>
+        <p>To delete marker, select markers, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
+        <p><i>Markers will be deleted from the current bouquet.</i></p>
         <p>Marker can also be deleted with keyboard by pressing on <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
       </div>
       <hr id="bouquets">
@@ -183,7 +202,7 @@
       </div>
       <div id="create-bouquet" class="l1">
         <h3>Create bouquet</h3>
-        <p>To create a bouquet, click on <b>&quot;+ New Bouquet&quot;</b>.</p>
+        <p>To create a bouquet, click on <b>&quot;<span class="symbolic">+</span> Bouquet&quot;</b>.</p>
         <p>In <b>dialog</b>, enter a name for bouquet, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The bouquet will be created below the current parent group of channels, TV or Radio.</i></p>
       </div>
