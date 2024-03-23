@@ -98,6 +98,7 @@
 
 #wide .dm .gbox-bg { fill: #697171 !important; fill-opacity: 0.1 !important; stroke: #f5f7f7 !important; stroke-width: 1.2px !important; }
 
+#wide .dm .tab-divid { width: 1.5px; fill: #555 !important; fill-opacity: 0.8 !important; }
 #wide .dm .tab-item rect { fill: #636565 !important; stroke: url(#btn-stroke-d-m) !important; }
 #wide .dm .tab-item.active rect { fill: url(#btn-bg-a-d-m) !important; }
 
@@ -109,6 +110,8 @@
 #wide .dm .qt-fold rect { fill: #000 !important; stroke: #363838 !important; stroke-width: 3.7px !important; }
 
 #wide .dm .qt-inner .bg { fill: #202020 !important; fill-opacity: 0.34 !important; }
+
+.dm #statusbar #sbnf .ico use { fill: #fff !important; fill-opacity: 0.76 !important; }
 
 
 
@@ -152,7 +155,7 @@
 .w .ellipsis { font-size: 97% !important; }
 .w .ay { text-decoration: underline; }
 
-.w #mb-txt { font-size: 19.3px !important; letter-spacing: -0.1px; word-spacing: 17px; transform: matrix(1, 0, 0, 1, -2, 7.3); }
+.w #mb-txt { font-size: 19.3px !important; letter-spacing: -0.1px; word-spacing: 17px; transform: matrix(1, 0, 0, 1, -2, 7.1); }
 .w #mb-stroke { display: none; fill: none !important; }
 
 .w #tb-corner .bg { width: 106px; }
@@ -179,9 +182,11 @@
 
 .w #statusbar { transform: translate(0, 8px); }
 .w #sb-bg { height: 48px; }
-.w #sb-stroke { height: 34px; }
+.w #sb-stroke { height: 34px; clip-path: inset(0 2px 2px) !important; }
 .w #statusbar text { font-size: 19px !important; transform: translate(-13px, -3px); }
-.w #statusbar #sbte { transform: translate(18px, -3px); }
+.w #statusbar #sbte { transform: translate(37px, -3px); }
+.w #statusbar #sbnf { transform: matrix(1, 0, 0, 1, 1732, 1181); }
+.w #statusbar #sbnf .ico use { fill: #505050 !important; }
 #wide .w #statusbar #sbte { transform: translate(5px, -3px); }
 
 .w #sb-stroke, .w #menu-stroke, .w #main-stroke { stroke-width: 2.2px !important; }
@@ -311,10 +316,10 @@
 .w .search-item .input-txt { transform: translate(-33px, 2px); }
 
 .w .li-divid .divid { display: block !important; height: 30px; }
-.w .li-item:nth-child(4) .btn-bg, .w .li-item:nth-child(4) .btn-txt { width: 118px; }
-.w .li-item:nth-child(6) .btn-bg, .w .li-item:nth-child(6) .btn-txt { width: 122px; }
-.w .li-item:nth-child(4) .btn-txt { transform: translate(-6px, 0); }
-.w .li-item:nth-child(6) .btn-txt { transform: translate(-15px, 0); }
+.w .li-item:nth-child(5) .btn-bg, .w .li-item:nth-child(5) .btn-txt { width: 118px; }
+.w .li-item:nth-child(7) .btn-bg, .w .li-item:nth-child(7) .btn-txt { width: 122px; }
+.w .li-item:nth-child(5) .btn-txt { transform: translate(-6px, 0); }
+.w .li-item:nth-child(7) .btn-txt { transform: translate(-15px, 0); }
 #piconseditor .w .li-item:nth-child(1) .txt { transform: translate(-3px, 1px); }
 #piconseditor .w .li-item:nth-child(1) .input-bg { width: 352px; height: 34px; transform: translate(-6px, -2px); }
 #piconseditor .w .li-item:nth-child(1) .btn-bg { width: 112px; transform: translate(136px, -1px); }
@@ -322,8 +327,8 @@
 
 .w .sbh .bg, .w .sbv .bg, .w .sbh .btn-bg, .w .sbv .btn-bg, .w .sbh .xy, .w .sbv .xy { display: block !important; }
 
-.w .sbh { clip-path: inset(0 2px 2px 2px); }
-.w .sbv { clip-path: inset(2px 2px 2px 0); }
+.w .sbh { clip-path: inset(2px 3px 2px 4.5px); }
+.w .sbv { clip-path: inset(3px 3px 2px 0.5px); }
 .w .sbh .bg, .w .sbv .bg { fill: #f0f0f0; stroke: #fff !important; stroke-width: 3px !important; }
 .w .sbh .btn-bg, .w .sbv .btn-bg { rx: 0; fill: none !important; stroke: none !important; stroke-width: 0 !important; }
 .w .sbh .xy, .w .sbv .xy { rx: 0; fill: #cdcdcd !important; }
@@ -443,10 +448,11 @@
 
 .w .li-item:nth-child(1) { transform: translate(5px, 1px); }
 .w .li-item:nth-child(2) { transform: translate(0, 1px); }
-.w .li-item:nth-child(3) { transform: translate(-5px, 1px); opacity: 0.25 !important; }
-.w .li-item:nth-child(4) { transform: translate(-10px, 0); }
-.w .li-divid:nth-child(5) { transform: translate(-25px, 0); }
-.w .li-item:nth-child(6) { transform: translate(-25px, 0); opacity: 0.25 !important; }
+.w .li-item:nth-child(3) { transform: translate(-5px, 1px); }
+.w .li-item:nth-child(4) { transform: translate(-10px, 1px); opacity: 0.25 !important; }
+.w .li-item:nth-child(5) { transform: translate(-15px, 0); }
+.w .li-divid:nth-child(6) { transform: translate(-30px, 0); }
+.w .li-item:nth-child(7) { transform: translate(-30px, 0); opacity: 0.25 !important; }
 #piconseditor .w .li-item:nth-child(2) { transform: translate(16px, 2px); }
 #wide .w .li-item:nth-child(2) { transform: translate(20px, 2px); opacity: 1 !important; }
 
@@ -462,11 +468,17 @@
 
 #wide .w #editservice-tabs { transform: translate(-331px, 13px); }
 #wide .w .tab-item { clip-path: none !important; }
-#wide .w .tab-item rect { stroke: #ccc !important; stroke-width: 2.3px !important; filter: none !important; clip-path: inset(0 0 2.3px); }
-#wide .w .tab-item text { letter-spacing: 0 !important; fill: #000 !important; transform: translate(0.5px, 6.5px); }
-#wide .w .tab-item.active text { transform: translate(2px, 5px); }
-#wide .w .tab-item rect { x: 460px; y: 71px; width: 136px; height: 35.7px; fill: #f0f0f0 !important; }
-#wide .w .tab-item.active rect { x: 363px; y: 68px; width: 98px; height: 40px; fill: #fff !important; }
+#wide .w .tab-divid { display: none !important; }
+#wide .w .tab-item rect { fill: #f0f0f0 !important; stroke: #ccc !important; stroke-width: 1.9px !important; filter: none !important; clip-path: inset(0.5px 0.5px 2.3px 2.3px); }
+#wide .w .tab-item.active rect { fill: #fff !important; clip-path: inset(0.5px 0.5px 2.3px); }
+#wide .w .tab-item text { letter-spacing: 0 !important; fill: #000 !important; }
+
+#wide .w .tab-item:nth-child(1) rect { x: 363px; y: 68px; width: 98px; height: 40px; }
+#wide .w .tab-item:nth-child(1) text { transform: translate(68px, 5px); }
+#wide .w .tab-item:nth-child(2) rect { x: 460px; y: 71px; width: 137px; height: 35.7px; }
+#wide .w .tab-item:nth-child(2) text { transform: translate(62px, 6.5px); }
+#wide .w .tab-item:nth-child(3) rect { x: 596px; y: 71px; width: 110px; height: 35.7px; }
+#wide .w .tab-item:nth-child(3) text { transform: translate(61px, 6.5px); }
 
 #wide .w .gbox-bg { fill: #fff !important; stroke: #d2d2d2 !important; stroke-width: 1.3px !important; }
 #wide .w .gbox-shape { fill: #fff !important; }
@@ -516,7 +528,7 @@
 #wide .w #editservice-transponder .btn-txt { transform: translate(48.5px, 5px); }
 
 #wide .w .qt-fold { display: none !important; }
-#wide .w .qt-shape { width: 382px; height: 40px; fill: #f0f0f0 !important; stroke: #a3a3a3; stroke-width: 3px; clip-path: inset(3px 0 0 3px); }
+#wide .w .qt-shape { width: 382px; height: 40px; fill: #f0f0f0 !important; stroke: #a3a3a3; stroke-width: 3px; clip-path: inset(3px 0.5px 0.5px 3px); }
 #wide .w .qt-txt { transform: translate(1px, 2.5px); }
 
 #wide .w .qt-item:nth-child(2) { transform: translate(0, -1px); }
@@ -773,8 +785,8 @@
 #wide .dw #editservice-tabs { transform: translate(-331.3px, 13px);  }
 
 #wide .dw .tab-item text { fill: #fff !important; }
-#wide .dw .tab-item rect { fill: #222 !important; stroke-width: 3px !important; }
-#wide .dw .tab-item.active rect { fill: #282828 !important; }
+#wide .dw .tab-item rect { fill: #222 !important; stroke-width: 3px !important; clip-path: inset(1px 1px 3px 3px); }
+#wide .dw .tab-item.active rect { fill: #282828 !important; clip-path: inset(1px 1px 3px); }
 
 #wide .dw .gbox-bg { rx: 2.5px !important; fill: none !important; stroke: #4e4d4d !important; stroke-opacity: 0.5 !important; }
 
@@ -801,17 +813,24 @@
 #wide .dw .qt-item:nth-child(5) { transform: translate(0, 38px); }
 #wide .dw .qt-item:nth-child(6) { transform: translate(0, 34px); }
 
-#editor .dw .li-item:nth-child(3), #editor .dw .li-item:nth-child(6) { opacity: 0.45 !important; }
+#editor .dw .li-item:nth-child(4), #editor .dw .li-item:nth-child(7) { opacity: 0.45 !important; }
 
 .dw .qt-shape { opacity: 0.98; }
 .dw #mb-txt, .dw #statusbar text { opacity: 0.97; }
 .dw #tb-corner text, .dw .menu-item .txt, .dw .menu-item .btn-txt, .dw .ch-item .ico, .dw .ch-item .txt, .dw .ch-item .tool-txt { opacity: 0.96; }
 
+.dw #statusbar text { transform: translate(-13px, -4px); }
+.dw #statusbar #sbte { transform: translate(37px, -4px); }
+.dw #statusbar #sbnf rect { stroke: #5d5d5d !important; stroke-width: 2.8px !important; }
+.dw #statusbar #sbnf .ico use { fill: #b0b0b0 !important; }
 
 
-.f .divid { width: 4px; height: 44px; fill: #fff !important; stroke: #dfdfdf; stroke-width: 2px; stroke-style: solid; transform: translate(6px, 8px); clip-path: inset(1px 1px 1px 0); }
+
+.f .divid { width: 4px; height: 44px; fill: #fff !important; stroke: #dfdfdf; stroke-width: 2px; stroke-style: solid; transform: translate(6px, 8px); clip-path: inset(2px 2px 2px 0.5px); }
 .f #statusbar .divid { display: none; }
 .df .divid { fill: #252323 !important; stroke: #1d1c1c; }
+#channelbook .f .li-divid .divid { clip-path: inset(2px 4px 2px 0.5px); }
+#channelbook .df .li-divid .divid { opacity: 0.8; }
 
 
 .f { font-family: 'Sans-Serif', system-ui, sans-serif !important; }
@@ -858,7 +877,9 @@
 .f #sb-bg { height: 51px; }
 .f #sb-stroke { height: 37px; stroke: none !important; }
 .f #statusbar text { font-size: 19.5px !important; transform: translate(-6px, -3px); }
-.f #statusbar #sbte { transform: translate(28px, -3px); }
+.f #statusbar #sbte { transform: translate(47px, -3px); }
+.f #statusbar #sbnf { transform: matrix(1, 0, 0, 1, 1747, 1182); }
+.f #statusbar #sbnf .ico use { fill: #5c5c5c !important; }
 .f #sb-stroke { stroke: #e4e4e4 !important; }
 
 .f #tb-corner .bg { width: 128px; }
@@ -1009,8 +1030,8 @@
 
 .f .sbh .bg, .f .sbv .bg, .f .sbh .btn-bg, .f .sbv .btn-bg, .f .sbh .xy, .f .sbv .xy, .f .sbr { display: block !important; }
 
-.f .sbh { clip-path: inset(0 0 1px 1px); }
-.f .sbv { clip-path: inset(1px 1px 0 0); }
+.f .sbh { clip-path: inset(0.5px 1px 1px 1px); }
+.f .sbv { clip-path: inset(1px 1px 0 0.5px); }
 .f .sbh .bg, .f .sbv .bg, .f .sbr { fill: #e6e6e6; stroke: #bcbcbc !important; stroke-width: 2px; }
 .f .sbh .btn-bg, .f .sbv .btn-bg, .f .sbh .xy, .f .sbv .xy { rx: 0 !important; fill: url(#btn-bg-f) !important; stroke: #ababab !important; stroke-width: 1px; }
 .f .sbh .btn-bg, .f .sbh .xy { fill: url(#btn-bg-f) !important }
@@ -1100,6 +1121,8 @@
 #wide .f .qt-item .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 862, 489.5); }
 #wide .f .qt-item .sbv .xy { x: 862px; y: 297.5px; height: 58px; fill-opacity: 1 !important; }
 
+#wide .f #statusbar #sbte { transform: translate(32px, -3px); }
+
 .f #icon-ico { transform: translate(0, 5px); }
 .f #icon-ico rect { rx: 4.4px !important; stroke: #000; stroke-opacity: 0.25; stroke-width: 0.9px; }
 .f #icon-shape { width: 134px; height: 167px; fill: #f1f0f0 !important; }
@@ -1147,10 +1170,11 @@
 
 .f .li-item:nth-child(1) { transform: translate(0, 0.5px); }
 .f .li-item:nth-child(2) { transform: translate(-8px, 0.5px); }
-.f .li-item:nth-child(3) { transform: translate(-20px, 0.5px); opacity: 0.25 !important; }
-.f .li-item:nth-child(4) { transform: translate(-22px, 1px); }
-.f .li-divid:nth-child(5) { transform: translate(-28px, -5px); }
-.f .li-item:nth-child(6) { transform: translate(-24px, 1px); opacity: 0.25 !important; }
+.f .li-item:nth-child(3) { transform: translate(-14px, 0.5px); }
+.f .li-item:nth-child(4) { transform: translate(-22px, 0.5px); opacity: 0.25 !important; }
+.f .li-item:nth-child(5) { transform: translate(-22px, 1px); }
+.f .li-divid:nth-child(6) { transform: translate(-28px, -5px); }
+.f .li-item:nth-child(7) { transform: translate(-24px, 1px); opacity: 0.25 !important; }
 #piconseditor .f .li-item:nth-child(2) { transform: translate(23px, 2px); }
 #wide .f .li-item:nth-child(2) { transform: translate(27px, 2px); opacity: 1 !important; }
 
@@ -1174,11 +1198,17 @@
 
 #wide .f #editservice-tabs { transform: translate(-331.5px, 12px); }
 #wide .f .tab-item { clip-path: none !important; }
-#wide .f .tab-item rect { rx: 3px !important; stroke-width: 3.8px !important; filter: none !important; clip-path: inset(0 0 2.3px); }
-#wide .f .tab-item text { font-size: 19.5px !important; letter-spacing: 0 !important; fill: #000 !important; transform: translate(12px, 9.5px); }
-#wide .f .tab-item.active text { transform: translate(7px, 7.5px); }
-#wide .f .tab-item rect { x: 467px; y: 71px; width: 151px; height: 42px; fill: #efefef !important; transform: translate(0.5px, 0.5px) !important; }
-#wide .f .tab-item.active rect { x: 363px; y: 67px; width: 106px; height: 48px; fill: #f9f9f9 !important; }
+#wide .f .tab-divid { display: none !important; }
+#wide .f .tab-item rect { rx: 3px !important; fill: #efefef !important; stroke-width: 3.8px !important; filter: none !important; transform: translate(0.5px, 0.5px) !important; clip-path: inset(1.5px 1.5px 4.2px 4.2px); }
+#wide .f .tab-item.active rect { fill: #f9f9f9 !important; clip-path: inset(1.5px 1.5px 4.2px); }
+#wide .f .tab-item text { font-size: 19.5px !important; letter-spacing: 0 !important; fill: #000 !important; }
+
+#wide .f .tab-item:nth-child(1) rect { x: 363px; y: 67px; width: 106px; height: 48px;  }
+#wide .f .tab-item:nth-child(1) text { transform: translate(71px, 7.5px); }
+#wide .f .tab-item:nth-child(2) rect { x: 467px; y: 71px; width: 151px; height: 42px; }
+#wide .f .tab-item:nth-child(2) text { transform: translate(76px, 9.5px); }
+#wide .f .tab-item:nth-child(3) rect { x: 616px; y: 71px; width: 121px; height: 42px; }
+#wide .f .tab-item:nth-child(3) text { transform: translate(85px, 9.5px); }
 
 #wide .f .gbox-bg { rx: 2.5px !important; fill: #000 !important; fill-opacity: 0.015 !important; stroke: #000 !important; stroke-opacity: 0.15 !important; stroke-width: 1.2px !important; }
 #wide .f .gbox-txt { font-size: 20px !important; letter-spacing: 0 !important; transform: translate(-8px, 4px); }
@@ -1218,10 +1248,10 @@
 #wide .f .gbox:nth-child(3) .btn-bg { width: 151px; transform: translate(-8px, -16px); }
 #wide .f .gbox:nth-child(3) .btn-txt { word-spacing: 8px !important; transform: translate(-13px, -12px); }
 #wide .f .gbox:nth-child(3) .btn-caret { transform: matrix(1, 0, 0, 1, 215, 291); }
-#wide .f #editservice-custom .btn-bg { width: 244px; stroke: #8bb9d1 !important; transform: translate(1.5px, -18.5px); }
+#wide .f #editservice-custom .btn-bg { width: 241px; stroke: #8bb9d1 !important; transform: translate(1.5px, -18.5px); }
 #wide .f#editservice .fg-item #editservice-custom .btn-bg { stroke-width: 2.2px !important; }
-#wide .f #editservice-custom .btn-fg { display: block !important; width: 252px; height: 46px; fill: #308cc6; fill-opacity: 0.07; transform: translate(-2.5px, -22.5px); }
-#wide .f #editservice-custom .btn-txt { fill: #000 !important; transform: translate(71px, -13px); }
+#wide .f #editservice-custom .btn-fg { display: block !important; width: 249px; height: 46px; fill: #308cc6; fill-opacity: 0.07; transform: translate(-2.5px, -22.5px); }
+#wide .f #editservice-custom .btn-txt { fill: #000 !important; transform: translate(68px, -13px); }
 #wide .f .gbox:nth-child(4) .btn-bg { width: 274px; fill: #fff !important; stroke-width: 1.5px !important; }
 #wide .f .gbox:nth-child(4) .btn-fix { display: block !important; width: 31px; height: 39px; fill: url(#btn-bg-f) !important; rx: 2.2px !important; stroke: #ababab !important; stroke-width: 2.2px !important; clip-path: inset(1.3px 1.1px 1.3px 0); }
 #wide .f .gbox:nth-child(4) .gbox-inner .fg-item:nth-child(1) .btn-bg { transform: translate(10px, 2px); }
@@ -1381,8 +1411,8 @@
 
 #wide .df .gbox-bg { fill: #222020 !important; fill-opacity: 0.1 !important; stroke: #4e4d4d !important; stroke-opacity: 0.5 !important; }
 
-#wide .df #editservice-custom .btn-bg { stroke: #315162 !important; }
-#wide .df #editservice-custom .btn-fg { width: 253px; height: 47px; fill-opacity: 0.1; transform: translate(-3px, -23px); }
+#wide .df #editservice-custom .btn-bg { width: 240px; stroke: #315162 !important; }
+#wide .df #editservice-custom .btn-fg { width: 249px; height: 47px; fill-opacity: 0.1; transform: translate(-3px, -23px); }
 #wide .df #editservice-custom .btn-txt { fill: #fff !important; }
 #wide .df .gbox:nth-child(4) .btn-bg { fill: #131312 !important; }
 #wide .df .gbox:nth-child(4) .btn-fix { fill: url(#btn-bg-d-f) !important; stroke: url(#btn-stroke-d-f) !important; stroke-width: 2.2px !important; }
@@ -1396,6 +1426,13 @@
 #wide .df .qt-item .input-bg { stroke-width: 1.1px !important; }
 
 #wide .df .qt-fold rect { fill: #222020 !important; stroke: #5e5e5e !important; }
+
+.df #statusbar #sbnf .ico use { fill: #c4c4c4 !important; }
+
+.df .qe-ti { transform: translate(18px, 2px); }
+.df .qe-li { transform: translate(23px, 2px); }
+#wide .df .li-item:nth-child(2) { transform: translate(23px, 2px); }
+#piconseditor .df .li-item:nth-child(2) { transform: translate(19px, 2px); }
 
 
 

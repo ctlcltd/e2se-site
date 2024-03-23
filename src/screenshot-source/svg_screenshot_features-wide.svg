@@ -19,23 +19,26 @@
     <symbol id="edit-tunersets">
       <path d="M32.032 50.518c-4.79-2.886-8.032-8.409-8.032-14.742 0-9.314 7.011-16.876 15.648-16.876 8.636 0 15.647 7.562 15.647 16.876s-7.011 16.875-15.647 16.875c-0.924 0-1.828-0.086-2.709-0.252l-0.191 10.501-4.943-0.144 0.227-12.238zM6.057 26.78c-0.001-0.001 0.023 14.969 0.023 14.969-0.866 0.414-1.706 0.922-2.43 1.563-4.358 3.853-4.35 10.108 0.019 13.972 0.971 0.858 2.137 1.495 3.319 1.965l1.369-0.931-0.011-7.239c-0.001-0.885 0.89-1.557 1.892-1.556 0 0 2.771 0.003 2.771 0.003 0.536 0.001 1.068 0.166 1.418 0.476 0.306 0.27 0.483 0.677 0.484 1.091 0 0 0.011 7.016 0.011 7.016l1.416 0.908c0.975-0.446 1.946-0.994 2.763-1.716 4.357-3.853 4.35-10.108-0.019-13.972-0.727-0.643-1.569-1.153-2.438-1.57l-0.023-14.969c0.866-0.414 1.706-0.923 2.43-1.563 4.358-3.853 4.35-10.108-0.019-13.972-0.895-0.791-1.965-1.383-3.043-1.844l-1.393 0.921 0.010 6.793c0.002 0.875-0.84 1.502-1.829 1.501 0 0-2.897-0.003-2.897-0.003-0.992-0.002-1.837-0.634-1.839-1.511 0 0-0.010-6.794-0.010-6.794l-1.392-0.918c-1.078 0.459-2.146 1.048-3.039 1.838-4.357 3.853-4.35 10.108 0.019 13.972 0.727 0.642 1.569 1.153 2.438 1.57zM50.271 51.811l-0.523-0.46-5.453 3.436 0.662 1.988 5.986-1.196c1.277 1.246 2.819 1.484 3.871 0.785-0.004 0.002 7.388-4.581 7.388-4.581 0.786-0.485 1.326-1.441 1.398-2.711 0.046-0.806-0.219-1.238-0.491-1.487-0.236-0.215-0.539-0.342-0.917-0.337-0.336 0.004-0.81 0.167-1.33 0.351-0.245 0.086-0.508 0.175-0.77 0.205-0.142 0.017-0.286 0.022-0.415-0.049-1.014-0.553-2.017-0.529-2.787-0.049l-6.619 4.105z" />
     </symbol>
-    <symbol id="export">
+    <symbol id="file-export">
       <path d="M56.256 31.057h-42.438c-7.074 0-12.818 5.744-12.818 12.818v61.295c0 7.074 5.744 12.818 12.818 12.818h54.476c7.075 0 12.818-5.744 12.818-12.818v-51.051c-16.616 14.040-16.649 30.281-17.025 36.965-0.151 2.687-1.869 5.034-4.385 5.99s-5.359 0.343-7.257-1.565c-14.421-14.502-16.181-43.133 3.811-64.452zM57.293 90.694c-14.624-14.705-13.039-45.988 15.234-64.344l-10.365-12.362 42.838 1.084-7.263 41.344-11.808-14.082c-28.127 16.992-28.15 39.728-28.636 48.36z" />
     </symbol>
-    <symbol id="import">
+    <symbol id="file-import">
       <path d="M87.8 55.714h8.488c5.912 0 10.712 4.753 10.712 10.606v45.074c0 5.854-4.8 10.606-10.712 10.606h-84.576c-5.912 0-10.712-4.752-10.712-10.606v-45.074c0-5.853 4.8-10.606 10.712-10.606h19.788l22.5 21.827c1.413 1.374 4.32 2.133 6.3 2.109 1.98-0.023 4.821-0.828 6.2-2.236l21.3-21.7zM93.982 6.385c-17.881-3.082-49.582 12.531-44.921 39.525h-15.517l27.127 26.376 25.847-26.376h-14.41c-4.833-24.162 15.844-35.121 21.874-39.525z" />
+    </symbol>
+    <symbol id="file-info">
+      <path d="M32 62.5c-16.833 0-30.5-13.667-30.5-30.5s13.667-30.5 30.5-30.5v9.611c-0.352-0.073-0.717-0.111-1.090-0.111-2.99 0-5.42 2.43-5.42 5.41 0 2.99 2.43 5.42 5.42 5.42 0.373 0 0.738-0.038 1.090-0.111v5.111l-7.44 0.18 2.82 1.23v22.7l-2.82 2.060h7.44v9.5zM32 11.111v-9.611c16.833 0 30.5 13.667 30.5 30.5s-13.667 30.5-30.5 30.5v-9.5h9.46l-5.76-2.060v-24.2l-3.7 0.090v-5.111c2.46-0.506 4.32-2.693 4.32-5.309 0-2.607-1.86-4.793-4.32-5.299z" />
+    </symbol>
+    <symbol id="file-open">
+      <path d="M21 42.973h89.077c2.783 0 4.643 2.26 4.153 5.042l-9.34 52.943c-0.491 2.783-3.149 5.042-5.932 5.042h-91.118c-2.119 0-3.84-1.721-3.84-3.84v-80.16h67.2l16.8 14h-72v32h5v-25.027z" />
+    </symbol>
+    <symbol id="file-save">
+      <path d="M114 22v86.16c0 2.119-1.721 3.84-3.84 3.84h-92.32c-2.119 0-3.84-1.721-3.84-3.84v-88.32c0-2.119 1.721-3.84 3.84-3.84h91.16l5 6zM94 59.014v-40h-56v40h56zM84.5 26v30h-15v-30h15z" />
     </symbol>
     <symbol id="list-prefs-menu">
       <path d="M56.25 57.423c0-2.388-1.939-4.327-4.327-4.327h-39.846c-2.388 0-4.327 1.939-4.327 4.327s1.939 4.327 4.327 4.327c0 0 39.846 0 39.846 0 2.388 0 4.327-1.939 4.327-4.327zM56.25 44.903c0-2.389-1.939-4.328-4.327-4.328h-39.846c-2.388 0-4.327 1.939-4.327 4.328 0 2.388 1.939 4.327 4.327 4.327 0 0 39.846 0 39.846 0 2.388 0 4.327-1.939 4.327-4.327zM56.25 32.382c0-2.388-1.939-4.327-4.327-4.327h-39.846c-2.388 0-4.327 1.939-4.327 4.327s1.939 4.327 4.327 4.327h39.846c2.388 0 4.327-1.939 4.327-4.327zM13.803 19.471v3.446h10.579v-5.844c0.837-0.373 1.624-0.848 2.343-1.41 2.237-1.745 3.347-4.068 3.371-6.392s-1.039-4.671-3.239-6.471v0c-0.887-0.725-1.951-1.273-3.024-1.702l-1.372 0.918-0.062 6.154c-0.003 0.286-0.167 0.503-0.402 0.659-0.376 0.249-0.899 0.364-1.472 0.364h-2.85c-0.565-0.008-1.082-0.142-1.452-0.406-0.242-0.173-0.413-0.406-0.41-0.702 0 0 0.062-6.155 0.062-6.155l-1.348-0.947c-1.083 0.403-2.158 0.924-3.060 1.628-2.237 1.746-3.347 4.068-3.371 6.392-0.023 2.323 1.039 4.671 3.239 6.471 0.725 0.593 1.567 1.067 2.437 1.454 0.016 0.617 0.026 1.607 0.031 2.543z" />
     </symbol>
-    <symbol id="open">
-      <path d="M21 42.973h89.077c2.783 0 4.643 2.26 4.153 5.042l-9.34 52.943c-0.491 2.783-3.149 5.042-5.932 5.042h-91.118c-2.119 0-3.84-1.721-3.84-3.84v-80.16h67.2l16.8 14h-72v32h5v-25.027z" />
-    </symbol>
     <symbol id="picons-view">
       <path d="M14.762 29.23h34.49c0 0 13.928 14.478 11.463 15.596-1.067 0.483-6.127-1.117-11.524-3.087v20.261h-34.389v-20.253c-5.389 1.967-10.437 3.562-11.502 3.079-2.465-1.118 11.462-15.596 11.462-15.596zM36.774 11.359h-20.475v13.19h6.364v-10.552h14.111v-2.638zM38.538 16.635h-14.111v7.914h14.111v-7.914zM45.299 10.4v14.149h-4.283v-9.233h-2.478v-4.916h6.761zM36.632 3.482h-18.173v5.276h18.173v-5.276z" />
-    </symbol>
-    <symbol id="save">
-      <path d="M114 22v86.16c0 2.119-1.721 3.84-3.84 3.84h-92.32c-2.119 0-3.84-1.721-3.84-3.84v-88.32c0-2.119 1.721-3.84 3.84-3.84h91.16l5 6zM94 59.014v-40h-56v40h56zM84.5 26v30h-15v-30h15z" />
     </symbol>
     <symbol id="search">
       <path d="M40.023 45.152c-3.477 2.591-7.729 4.192-12.407 4.221-10.406 0.066-20.276-8.26-21.806-18.699-1.731-11.814 7.58-24.164 20.12-25.040 0.561-0.039 1.124-0.055 1.686-0.053 10 0.095 19.38 7.75 21.337 17.619 1.156 5.829-0.437 11.92-3.87 16.758l13.82 13.819-5.128 5.128-13.752-13.753zM27.395 14.645c-6.236 0.060-12 5.17-12.677 11.431-0.588 5.436 2.691 11.076 7.773 13.229 6.62 2.806 15.346-1.167 17.352-8.391 2.055-7.404-3.759-16.031-12.032-16.265-0.139-0.003-0.278-0.004-0.416-0.004z" />
@@ -190,13 +193,18 @@
       <rect id="editservice-frame" x="33" y="82" width="895" height="638" rx="6" style="fill:#888;fill-opacity:0.08;stroke:#555;stroke-opacity:0.1;stroke-width:0.5px" />
       <g id="editservice-tabs">
         <g class="tab-item active" style="clip-path:inset(0 8px 0 0)">
-          <rect x="363" y="68" width="103" height="29" rx="7" style="fill:url(#btn-bg-a-m);stroke:#def;stroke-width:1px;transform:translate(0.5px,1px)" />
-          <text x="363" y="68" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#fff">Service</text>
+          <rect x="299" y="68" width="103" height="29" rx="7" style="fill:url(#btn-bg-a-m);stroke:#def;stroke-width:1px;transform:translate(0.5px,1px)" />
+          <text x="299" y="68" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#fff">Service</text>
         </g>
         <g class="tab-item" style="clip-path:inset(0 0 0 8px)">
-          <rect x="450" y="68" width="147" height="29" rx="7" style="fill:#f7f8f8;stroke:#d1d2d2;stroke-width:1px;transform:translate(0.5px,1px)" />
-          <text x="450" y="68" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#000;fill-opacity:0.9">Transponder</text>
+          <rect x="387" y="68" width="151" height="29" rx="7" style="fill:#f7f8f8;stroke:#d1d2d2;stroke-width:1px;transform:translate(0.5px,1px)" />
+          <text x="387" y="68" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#000;fill-opacity:0.9">Transponder</text>
         </g>
+        <g class="tab-item" style="clip-path:inset(0 0 0 8px)">
+          <rect x="525" y="68" width="120" height="29" rx="7" style="fill:#f7f8f8;stroke:#d1d2d2;stroke-width:1px;transform:translate(0.5px,1px)" />
+          <text x="525" y="68" dx="67" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:0.3px;fill:#000;fill-opacity:0.9">Favourite</text>
+        </g>
+        <rect class="tab-divid" x="536" y="69.5" width="1" height="28" style="fill:#555;fill-opacity:0.1" />
       </g>
       <g class="gbox">
         <rect class="gbox-bg" x="66" y="131" width="418" height="323" rx="5" style="fill:#999;fill-opacity:0.09;stroke:#444;stroke-opacity:0.1;stroke-width:0.5px" />
@@ -206,7 +214,7 @@
           <g class="fg-item">
             <text class="txt" x="87" y="150" dy="22" style="font-size:19.5px;fill:#000">Service name</text>
             <g>
-              <rect class="input-bg" x="87" y="187" width="346" height="33" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0)" />
+              <rect class="input-bg" x="87" y="187" width="346" height="33" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)" />
               <text class="input-txt" x="87" y="187" dx="4" dy="23" style="font-size:19px;fill:#000">NASA TV HD</text>
             </g>
           </g>
@@ -246,7 +254,7 @@
           <g class="fg-item">
             <text class="txt" x="87" y="365" dy="22" style="font-size:19.5px;fill:#000">Service ID</text>
             <g>
-              <rect class="input-bg" x="87" y="401" width="87" height="33" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0.2px)" />
+              <rect class="input-bg" x="87" y="401" width="87" height="33" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)" />
               <text class="input-txt" x="87" y="401" dx="4" dy="23" style="font-size:19px;fill:#000">504</text>
               <text class="input-xr" x="188" y="401" dy="23" style="font-size:19.5px;fill:#000">[SID]</text>
             </g>
@@ -330,18 +338,18 @@
           <g class="qt-item">
             <rect class="qt-shape" x="526" y="178" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,178)">
-              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="rotate(45)" />
             </g>
             <text class="qt-txt" x="526" y="178" dx="8" dy="26" style="font-size:19.5px;fill:#000">Package</text>
           </g>
           <g class="qt-item">
             <rect class="qt-shape" x="526" y="227" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,227)">
-              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="rotate(45)" />
             </g>
             <text class="qt-txt" x="526" y="227" dx="8" dy="26" style="font-size:19.5px;fill:#000">PIDs</text>
             <g class="qt-inner" style="clip-path:inset(0 0 59px)">
@@ -349,7 +357,7 @@
               <g class="fg-item">
                 <text class="txt" x="632" y="295" dy="22" style="font-size:19.5px;fill:#000">video</text>
                 <g>
-                  <rect class="input-bg" x="691" y="294" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0)" />
+                  <rect class="input-bg" x="691" y="294" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)" />
                   <text class="input-txt" x="691" y="294" dx="4" dy="23" style="font-size:19px;fill:#000">5041</text>
                   <text class="input-xr" x="775" y="294" dy="23" style="font-size:19px;fill:#000">[VPID]</text>
                 </g>
@@ -357,7 +365,7 @@
               <g class="fg-item">
                 <text class="txt" x="574" y="340" dy="22" style="font-size:19.5px;fill:#000">mpeg-audio</text>
                 <g>
-                  <rect class="input-bg" x="691" y="339" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0.1px)" />
+                  <rect class="input-bg" x="691" y="339" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)" />
                   <text class="input-txt" x="691" y="339" dx="4" dy="23" style="font-size:19px;fill:#000">8191</text>
                   <text class="input-xr" x="775" y="339" dy="23" style="font-size:19px;fill:#000">[APID]</text>
                 </g>
@@ -365,14 +373,14 @@
               <g class="fg-item">
                 <text class="txt" x="660" y="384" dy="22" style="font-size:19.5px;fill:#000">tp</text>
                 <g>
-                  <rect class="input-bg" x="691" y="383" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0.4px)" />
+                  <rect class="input-bg" x="691" y="383" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)" />
                   <text class="input-xr" x="775" y="383" dy="23" style="font-size:19px;fill:#000">[TXTPID]</text>
                 </g>
               </g>
               <g class="fg-item">
                 <text class="txt" x="650" y="429" dy="22" style="font-size:19.5px;fill:#000">pcr</text>
                 <g>
-                  <rect class="input-bg" x="691" y="428" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0.1px)" />
+                  <rect class="input-bg" x="691" y="428" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)" />
                   <text class="input-txt" x="691" y="428" dx="4" dy="23" style="font-size:19px;fill:#000">5041</text>
                   <text class="input-xr" x="775" y="428" dy="23" style="font-size:19px;fill:#000">[PCRPID]</text>
                 </g>
@@ -380,7 +388,7 @@
               <g class="fg-item">
                 <text class="txt" x="650" y="473" dy="22" style="font-size:19.5px;fill:#000">ac3</text>
                 <g>
-                  <rect class="input-bg" x="691" y="472" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:4.4px;clip-path:inset(1.6px 1.6px 0.4px)" />
+                  <rect class="input-bg" x="691" y="472" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)" />
                   <text class="input-xr" x="775" y="472" dy="23" style="font-size:19px;fill:#000">[AC3PID]</text>
                 </g>
               </g>
@@ -411,36 +419,36 @@
           <g class="qt-item">
             <rect class="qt-shape" x="526" y="457" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,457)">
-              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="rotate(45)" />
             </g>
             <text class="qt-txt" x="526" y="457" dx="8" dy="26" style="font-size:19.5px;fill:#000">CAIDs</text>
           </g>
           <g class="qt-item">
             <rect class="qt-shape" x="526" y="506" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,506)">
-              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="rotate(45)" />
             </g>
             <text class="qt-txt" x="526" y="506" dx="8" dy="26" style="font-size:19.5px;fill:#000">Flags</text>
           </g>
           <g class="qt-item">
             <rect class="qt-shape" x="526" y="555" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,555)">
-              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="rotate(45)" />
             </g>
             <text class="qt-txt" x="526" y="555" dx="8" dy="26" style="font-size:19.5px;fill:#000">Custom</text>
           </g>
           <g class="qt-item">
             <rect class="qt-shape" x="526" y="604" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,604)">
-              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" />
-              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(2px 1px 0)" transform="rotate(45)" />
+              <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
+              <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
+              <rect x="205" y="-205" width="46" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="rotate(45)" />
             </g>
             <text class="qt-txt" x="526" y="604" dx="8" dy="26" style="font-size:19.5px;fill:#000">Extras</text>
           </g>
@@ -603,13 +611,13 @@
         <g id="menu-items">
           <g class="menu-item">
             <g class="ico" transform="matrix(0.38,0,0,0.38,106,217)">
-              <use href="#open" style="fill:#4c4c4c" />
+              <use href="#file-open" style="fill:#4c4c4c" />
             </g>
             <text class="txt" x="90" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Open</text>
           </g>
           <g class="menu-item">
             <g class="ico" transform="matrix(0.38,0,0,0.38,259,217)">
-              <use href="#save" style="fill:#4c4c4c" />
+              <use href="#file-save" style="fill:#4c4c4c" />
             </g>
             <text class="txt" x="244" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Save</text>
           </g>
@@ -618,13 +626,13 @@
           </g>
           <g class="menu-item">
             <g class="ico" transform="matrix(0.38,0,0,0.38,424,217)">
-              <use href="#import" style="fill:#4c4c4c" />
+              <use href="#file-import" style="fill:#4c4c4c" />
             </g>
             <text class="txt" x="408" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
           </g>
           <g class="menu-item">
             <g class="ico" transform="matrix(0.38,0,0,0.38,592,217)">
-              <use href="#export" style="fill:#4c4c4c" />
+              <use href="#file-export" style="fill:#4c4c4c" />
             </g>
             <text class="txt" x="574" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
           </g>
@@ -724,7 +732,7 @@
                 <g class="tool-ico ico" transform="matrix(0.25,0,0,0.25,101,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
-                <text class="tool-txt" x="95" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">New Position</text>
+                <text class="tool-txt" x="95" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Position</text>
               </g>
               <g class="ti-item qe qe-ti">
                 <rect class="btn-bg" x="314" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
@@ -765,21 +773,21 @@
               <rect class="bg" x="473" y="366" width="1325" height="687" style="fill:#fff" />
               <g class="items">
                 <rect class="focused" x="473" y="576" width="1325" height="44" style="fill:#ebebeb" />
-                <text x="473" y="366" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10719/V/27500</tspan> <tspan x="719">10719</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="407" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10728/H/30000</tspan> <tspan x="719">10728</tspan> <tspan x="838">H</tspan> <tspan x="957">30000</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="448" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10758/V/27500</tspan> <tspan x="719">10758</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
+                <text x="473" y="366" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10719/V/27500</tspan> <tspan x="719">10719</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
+                <text x="473" y="407" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10728/H/30000</tspan> <tspan x="719">10728</tspan> <tspan x="838">H</tspan> <tspan x="957">30000</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
+                <text x="473" y="448" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10758/V/27500</tspan> <tspan x="719">10758</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
                 <text x="473" y="491" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10775/H/27500</tspan> <tspan x="719">10775</tspan> <tspan x="838">H</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
                 <text x="473" y="533" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10775/H/29900</tspan> <tspan x="719">10775</tspan> <tspan x="838">H</tspan> <tspan x="957">29900</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text class="active" x="473" y="576" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10796/V/27500</tspan> <tspan x="719">10796</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="618" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10815/H/27500</tspan> <tspan x="719">10815</tspan> <tspan x="838">H</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
+                <text class="active" x="473" y="576" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10796/V/27500</tspan> <tspan x="719">10796</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
+                <text x="473" y="618" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10815/H/27500</tspan> <tspan x="719">10815</tspan> <tspan x="838">H</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">5/6</tspan> <tspan x="1276">QPSK</tspan></text>
                 <text x="473" y="662" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10834/V/27500</tspan> <tspan x="719">10834</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
                 <text x="473" y="705" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10853/H/29900</tspan> <tspan x="719">10853</tspan> <tspan x="838">H</tspan> <tspan x="957">29900</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="749" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10872/V/27500</tspan> <tspan x="719">10872</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="791" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10873/V/27500</tspan> <tspan x="719">10873</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
+                <text x="473" y="749" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10872/V/27500</tspan> <tspan x="719">10872</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
+                <text x="473" y="791" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10873/V/27500</tspan> <tspan x="719">10873</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
                 <text x="473" y="834" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10892/H/27500</tspan> <tspan x="719">10892</tspan> <tspan x="838">H</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="876" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10911/V/27500</tspan> <tspan x="719">10911</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="918" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10930/H/30000</tspan> <tspan x="719">10930</tspan> <tspan x="838">H</tspan> <tspan x="957">30000</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="959" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10949/V/27500</tspan> <tspan x="719">10949</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
+                <text x="473" y="876" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10911/V/27500</tspan> <tspan x="719">10911</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
+                <text x="473" y="918" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10930/H/30000</tspan> <tspan x="719">10930</tspan> <tspan x="838">H</tspan> <tspan x="957">30000</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">2/3</tspan> <tspan x="1276">8PSK</tspan></text>
+                <text x="473" y="959" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10949/V/27500</tspan> <tspan x="719">10949</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">2/3</tspan> <tspan x="1276">8PSK</tspan></text>
               </g>
             </g>
             <g class="sbv">
@@ -831,7 +839,7 @@
               </g>
             </g>
             <g class="search-item">
-              <rect class="input-bg" x="667" y="1003" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:3.4px;clip-path:inset(1px 1px 0.2px)" />
+              <rect class="input-bg" x="667" y="1003" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:2.4px;clip-path:inset(1px 1px 0.2px)" />
               <text class="input-txt" x="667" y="1003" dx="4" dy="23" style="font-size:19px;fill:#000">10796/V</text>
             </g>
             <g class="search-item">
@@ -863,7 +871,7 @@
                 <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,492,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
-                <text class="tool-txt" x="487" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">New Transponder</text>
+                <text class="tool-txt" x="487" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Transponder</text>
               </g>
               <g class="li-item qe qe-li">
                 <rect class="btn-bg" x="1652" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
@@ -880,12 +888,19 @@
     </g>
     <g id="statusbar">
       <rect id="sb-bg" x="82" y="1164" width="1716" height="56" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0 0)" />
-      <rect id="sb-stroke" x="80" y="1179" width="1720" height="42" style="fill:none;stroke:#d8d9d9;stroke-width:2.5px;clip-path:inset(0 2px 2px)" />
+      <rect id="sb-stroke" x="80" y="1179" width="1720" height="42" style="fill:none;stroke:#d8d9d9;stroke-width:2.5px;clip-path:inset(0 2px 42px)" />
       <text id="sbts" x="82" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Transponders: 119</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
       <rect class="divid sbds-w" x="402" y="1184" width="1" height="25" style="fill:none" />
-      <rect class="divid sbdl-w" x="1651" y="1184" width="1" height="25" style="fill:none" />
-      <text id="sbte" x="82" y="1179" dx="1593" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 411</tspan></text>
-      <rect class="divid sbdr-w" x="1770" y="1184" width="1" height="25" style="fill:none" />
+      <rect class="divid sbdl-w" x="1608" y="1184" width="1" height="25" style="fill:none" />
+      <text id="sbte" x="82" y="1179" dx="1535" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 411</tspan></text>
+      <rect class="divid sbdr-w" x="1721" y="1184" width="1" height="25" style="fill:none" />
+      <rect class="divid sbdr-i" x="1770" y="1184" width="1" height="25" style="fill:none" />
+      <g id="sbnf" transform="matrix(1,0,0,1,1737,1184)">
+        <rect x="-1.8" y="4" width="36" height="24" style="fill:none" />
+        <g class="ico" transform="matrix(0.38,0,0,0.38,4,4)">
+          <use href="#file-info" style="fill:#545454" />
+        </g>
+      </g>
       <g id="sbcb-w" transform="matrix(1,0,0,1,1769,1188)">
         <rect x="0" y="0" width="25" height="25" style="fill:none" />
       </g>
