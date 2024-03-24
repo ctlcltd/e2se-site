@@ -31,8 +31,11 @@ function replace(value) {
 }
 
 function round(value) {
-  value = value.toPrecision(3);
-  value = value.trimEnd('0');
+  if (! Number.isInteger(value)) {
+    value = Math.fround(value);
+    value = value.toFixed(3);
+    value = value.trimEnd('0');
+  }
   return Number(value);
 }
 
@@ -198,28 +201,31 @@ for (const el of elements) {
         for (const child of el.children) {
           if (child.hasAttribute('transform')) {
             const cm = child.transform.baseVal[0].matrix;
-            const matrix = { a: cm.a, b: cm.b, c: cm.c, d: cm.d, e: cm.e, f: cm.f };
+            const matrix = {};
 
             matrix.a = round(cm.a);
             matrix.b = round(cm.b);
             matrix.c = round(cm.c);
             matrix.d = round(cm.d);
-            matrix.e = cm.e + m.e;
-            matrix.f = cm.f + m.f;
+            matrix.e = round(cm.e + m.e);
+            matrix.f = round(cm.f + m.f);
 
             child.setAttribute('transform', 'matrix(' + Object.values(matrix).join(',') + ')');
           } else if (el.nodeName == 'g') {
-            const matrix = { a: 1, b: 0, c: 0, d: 1, e: m.e, f: m.f };
+            const matrix = { a: 1, b: 0, c: 0, d: 1 };
+
+            matrix.e = round(m.e);
+            matrix.f = round(m.f);
 
             child.setAttribute('transform', 'matrix(' + Object.values(matrix).join(',') + ')');
           } else if (child.nodeName == 'g') {
             console.log(child);
           } else {
             const pos = { x: child.hasAttribute('x') ? parseFloat(child.getAttribute('x')) : 0, y: child.hasAttribute('y') ? parseFloat(child.getAttribute('y')) : 0 };
-            const matrix = { e: 0, f: 0 };
+            const matrix = {};
 
-            matrix.e = pos.x + m.e;
-            matrix.f = pos.y + m.f;
+            matrix.e = round(pos.x + m.e);
+            matrix.f = round(pos.y + m.f);
 
             if (matrix.e) {
               child.setAttribute('x', matrix.e);
@@ -235,10 +241,10 @@ for (const el of elements) {
         }
       } else {
         const pos = { x: el.hasAttribute('x') ? parseFloat(el.getAttribute('x')) : 0, y: el.hasAttribute('y') ? parseFloat(el.getAttribute('y')) : 0 };
-        const matrix = { e: m.e, f: m.f };
+        const matrix = {};
 
-        matrix.e = pos.x + m.e;
-        matrix.f = pos.y + m.f;
+        matrix.e = round(pos.x + m.e);
+        matrix.f = round(pos.y + m.f);
 
         if (matrix.e) {
           el.setAttribute('x', matrix.e);
@@ -254,12 +260,14 @@ for (const el of elements) {
 
       el.removeAttribute('transform');
     } else {
-      const matrix = { a: m.a, b: m.b, c: m.c, d: m.d, e: m.e, f: m.f };
+      const matrix = {};
 
       matrix.a = round(m.a);
       matrix.b = round(m.b);
       matrix.c = round(m.c);
       matrix.d = round(m.d);
+      matrix.e = round(m.e);
+      matrix.f = round(m.f);
 
       el.setAttribute('transform', 'matrix(' + Object.values(matrix).join(',') + ')');
     }

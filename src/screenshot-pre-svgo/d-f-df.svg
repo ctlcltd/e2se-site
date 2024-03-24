@@ -17,38 +17,41 @@
     <symbol id="ees">
       <path d="M32.032 50.518c-4.79-2.886-8.032-8.409-8.032-14.742 0-9.314 7.011-16.876 15.648-16.876 8.636 0 15.647 7.562 15.647 16.876s-7.011 16.875-15.647 16.875c-0.924 0-1.828-0.086-2.709-0.252l-0.191 10.501-4.943-0.144 0.227-12.238zM6.057 26.78c-0.001-0.001 0.023 14.969 0.023 14.969-0.866 0.414-1.706 0.922-2.43 1.563-4.358 3.853-4.35 10.108 0.019 13.972 0.971 0.858 2.137 1.495 3.319 1.965l1.369-0.931-0.011-7.239c-0.001-0.885 0.89-1.557 1.892-1.556 0 0 2.771 0.003 2.771 0.003 0.536 0.001 1.068 0.166 1.418 0.476 0.306 0.27 0.483 0.677 0.484 1.091 0 0 0.011 7.016 0.011 7.016l1.416 0.908c0.975-0.446 1.946-0.994 2.763-1.716 4.357-3.853 4.35-10.108-0.019-13.972-0.727-0.643-1.569-1.153-2.438-1.57l-0.023-14.969c0.866-0.414 1.706-0.923 2.43-1.563 4.358-3.853 4.35-10.108-0.019-13.972-0.895-0.791-1.965-1.383-3.043-1.844l-1.393 0.921 0.010 6.793c0.002 0.875-0.84 1.502-1.829 1.501 0 0-2.897-0.003-2.897-0.003-0.992-0.002-1.837-0.634-1.839-1.511 0 0-0.010-6.794-0.010-6.794l-1.392-0.918c-1.078 0.459-2.146 1.048-3.039 1.838-4.357 3.853-4.35 10.108 0.019 13.972 0.727 0.642 1.569 1.153 2.438 1.57zM50.271 51.811l-0.523-0.46-5.453 3.436 0.662 1.988 5.986-1.196c1.277 1.246 2.819 1.484 3.871 0.785-0.004 0.002 7.388-4.581 7.388-4.581 0.786-0.485 1.326-1.441 1.398-2.711 0.046-0.806-0.219-1.238-0.491-1.487-0.236-0.215-0.539-0.342-0.917-0.337-0.336 0.004-0.81 0.167-1.33 0.351-0.245 0.086-0.508 0.175-0.77 0.205-0.142 0.017-0.286 0.022-0.415-0.049-1.014-0.553-2.017-0.529-2.787-0.049l-6.619 4.105z"/>
     </symbol>
-    <symbol id="eft">
+    <symbol id="fft">
       <path d="M56.256 31.057h-42.438c-7.074 0-12.818 5.744-12.818 12.818v61.295c0 7.074 5.744 12.818 12.818 12.818h54.476c7.075 0 12.818-5.744 12.818-12.818v-51.051c-16.616 14.040-16.649 30.281-17.025 36.965-0.151 2.687-1.869 5.034-4.385 5.99s-5.359 0.343-7.257-1.565c-14.421-14.502-16.181-43.133 3.811-64.452zM57.293 90.694c-14.624-14.705-13.039-45.988 15.234-64.344l-10.365-12.362 42.838 1.084-7.263 41.344-11.808-14.082c-28.127 16.992-28.15 39.728-28.636 48.36z"/>
     </symbol>
-    <symbol id="igt">
+    <symbol id="fgt">
       <path d="M87.8 55.714h8.488c5.912 0 10.712 4.753 10.712 10.606v45.074c0 5.854-4.8 10.606-10.712 10.606h-84.576c-5.912 0-10.712-4.752-10.712-10.606v-45.074c0-5.853 4.8-10.606 10.712-10.606h19.788l22.5 21.827c1.413 1.374 4.32 2.133 6.3 2.109 1.98-0.023 4.821-0.828 6.2-2.236l21.3-21.7zM93.982 6.385c-17.881-3.082-49.582 12.531-44.921 39.525h-15.517l27.127 26.376 25.847-26.376h-14.41c-4.833-24.162 15.844-35.121 21.874-39.525z"/>
     </symbol>
-    
-    <symbol id="ohn">
+    <symbol id="fho">
+      <path d="M32 62.5c-16.833 0-30.5-13.667-30.5-30.5s13.667-30.5 30.5-30.5v9.611c-0.352-0.073-0.717-0.111-1.090-0.111-2.99 0-5.42 2.43-5.42 5.41 0 2.99 2.43 5.42 5.42 5.42 0.373 0 0.738-0.038 1.090-0.111v5.111l-7.44 0.18 2.82 1.23v22.7l-2.82 2.060h7.44v9.5zM32 11.111v-9.611c16.833 0 30.5 13.667 30.5 30.5s-13.667 30.5-30.5 30.5v-9.5h9.46l-5.76-2.060v-24.2l-3.7 0.090v-5.111c2.46-0.506 4.32-2.693 4.32-5.309 0-2.607-1.86-4.793-4.32-5.299z"/>
+    </symbol>
+    <symbol id="fin">
       <path d="M21 42.973h89.077c2.783 0 4.643 2.26 4.153 5.042l-9.34 52.943c-0.491 2.783-3.149 5.042-5.932 5.042h-91.118c-2.119 0-3.84-1.721-3.84-3.84v-80.16h67.2l16.8 14h-72v32h5v-25.027z"/>
     </symbol>
-    <symbol id="piw">
-      <path d="M14.762 29.23h34.49c0 0 13.928 14.478 11.463 15.596-1.067 0.483-6.127-1.117-11.524-3.087v20.261h-34.389v-20.253c-5.389 1.967-10.437 3.562-11.502 3.079-2.465-1.118 11.462-15.596 11.462-15.596zM36.774 11.359h-20.475v13.19h6.364v-10.552h14.111v-2.638zM38.538 16.635h-14.111v7.914h14.111v-7.914zM45.299 10.4v14.149h-4.283v-9.233h-2.478v-4.916h6.761zM36.632 3.482h-18.173v5.276h18.173v-5.276z"/>
-    </symbol>
-    <symbol id="sje">
+    <symbol id="fje">
       <path d="M114 22v86.16c0 2.119-1.721 3.84-3.84 3.84h-92.32c-2.119 0-3.84-1.721-3.84-3.84v-88.32c0-2.119 1.721-3.84 3.84-3.84h91.16l5 6zM94 59.014v-40h-56v40h56zM84.5 26v30h-15v-30h15z"/>
     </symbol>
-    <symbol id="skh">
+    
+    <symbol id="pkw">
+      <path d="M14.762 29.23h34.49c0 0 13.928 14.478 11.463 15.596-1.067 0.483-6.127-1.117-11.524-3.087v20.261h-34.389v-20.253c-5.389 1.967-10.437 3.562-11.502 3.079-2.465-1.118 11.462-15.596 11.462-15.596zM36.774 11.359h-20.475v13.19h6.364v-10.552h14.111v-2.638zM38.538 16.635h-14.111v7.914h14.111v-7.914zM45.299 10.4v14.149h-4.283v-9.233h-2.478v-4.916h6.761zM36.632 3.482h-18.173v5.276h18.173v-5.276z"/>
+    </symbol>
+    <symbol id="slh">
       <path d="M40.023 45.152c-3.477 2.591-7.729 4.192-12.407 4.221-10.406 0.066-20.276-8.26-21.806-18.699-1.731-11.814 7.58-24.164 20.12-25.040 0.561-0.039 1.124-0.055 1.686-0.053 10 0.095 19.38 7.75 21.337 17.619 1.156 5.829-0.437 11.92-3.87 16.758l13.82 13.819-5.128 5.128-13.752-13.753zM27.395 14.645c-6.236 0.060-12 5.17-12.677 11.431-0.588 5.436 2.691 11.076 7.773 13.229 6.62 2.806 15.346-1.167 17.352-8.391 2.055-7.404-3.759-16.031-12.032-16.265-0.139-0.003-0.278-0.004-0.416-0.004z"/>
     </symbol>
     
     
-    <symbol id="sls">
+    <symbol id="sms">
       <path d="M73.934 15.359c-6.491-1.302-13.177-1.302-19.668 0 0.828 4.128 1.452 8.287 1.871 12.477-4.352 0.948-8.5 2.666-12.249 5.073-2.666-3.259-5.165-6.641-7.499-10.146-5.511 3.67-10.238 8.397-13.908 13.908 3.505 2.334 6.887 4.834 10.146 7.499-2.407 3.749-4.125 7.897-5.073 12.249-4.19-0.419-8.349-1.043-12.477-1.871-1.303 6.491-1.303 13.177 0 19.668 4.128-0.828 8.287-1.452 12.477-1.871 0.948 4.352 2.666 8.501 5.073 12.249-3.259 2.666-6.641 5.165-10.146 7.499 3.67 5.511 8.397 10.238 13.908 13.908 2.334-3.505 4.833-6.887 7.499-10.146 3.749 2.407 7.897 4.125 12.249 5.074-0.419 4.189-1.043 8.348-1.871 12.476 6.491 1.303 13.177 1.303 19.668 0-0.828-4.128-1.452-8.287-1.871-12.476 4.352-0.949 8.5-2.667 12.249-5.074 2.666 3.259 5.165 6.641 7.499 10.146 5.511-3.67 10.238-8.397 13.908-13.908-3.505-2.334-6.887-4.833-10.146-7.499 2.407-3.748 4.125-7.897 5.073-12.249 4.19 0.419 8.349 1.043 12.477 1.871 1.303-6.491 1.303-13.177 0-19.668-4.128 0.828-8.287 1.452-12.477 1.871-0.948-4.352-2.666-8.5-5.073-12.249 3.259-2.665 6.641-5.165 10.146-7.499-3.67-5.511-8.397-10.238-13.908-13.908-2.334 3.505-4.833 6.887-7.499 10.146-3.749-2.407-7.897-4.125-12.249-5.073 0.419-4.19 1.043-8.349 1.871-12.477zM64.1 50.882c7.451 0 13.5 6.049 13.5 13.5s-6.049 13.5-13.5 13.5c-7.451 0-13.5-6.049-13.5-13.5s6.049-13.5 13.5-13.5z"/>
     </symbol>
-    <symbol id="tmw">
+    <symbol id="tnw">
       <path d="M64 64v-19h-64v19h64zM38.975 58.253l0.001 1.834c0.001 1.076-0.872 1.949-1.947 1.949s-1.949-0.873-1.95-1.949l-0.002-6.41-1.968 1.774c-0.407 0.367-0.947 0.542-1.48 0.524-0.533 0.018-1.073-0.157-1.48-0.524l-1.968-1.774-0.003 6.41c0 1.076-0.874 1.949-1.949 1.949s-1.948-0.873-1.948-1.949l0.002-5.24h-6.669l4.099 3.89c0.751 0.713 0.751 1.869 0.002 2.581-0.75 0.711-1.968 0.71-2.719-0.002l-4.104-3.895-4.104 3.895c-0.751 0.712-1.969 0.713-2.719 0.002-0.75-0.712-0.749-1.868 0.002-2.581l4.104-3.895-4.104-3.895c-0.751-0.712-0.752-1.868-0.002-2.58s1.968-0.711 2.719 0.002l4.104 3.895 4.104-3.895c0.751-0.713 1.969-0.713 2.719-0.002 0.749 0.712 0.749 1.868-0.002 2.58l-4.099 3.89h6.669l0.002-5.24c0-0.024 0.001-0.048 0.002-0.072-0.031-0.488 0.159-0.985 0.571-1.356 0.276-0.249 0.614-0.408 0.97-0.477 0.131-0.028 0.267-0.043 0.406-0.043 0.058 0 0.115 0.002 0.172 0.007 0.454 0.033 0.899 0.206 1.247 0.52l3.976 3.583 3.975-3.583c0.348-0.314 0.793-0.487 1.248-0.52 0.056-0.005 0.114-0.007 0.171-0.007 0.14 0 0.276 0.015 0.407 0.043 0.356 0.069 0.694 0.228 0.97 0.477 0.412 0.371 0.602 0.868 0.571 1.356 0.001 0.024 0.001 0.048 0.001 0.072l0.003 8.646h2.912l0.003-8.83c0-1.076 0.874-1.949 1.949-1.949s1.948 0.873 1.948 1.949l-0.004 8.839 6.372 0.002c0.993 0.001 1.798 0.807 1.798 1.799 0 0.993-0.805 1.798-1.798 1.798l-8.471-0.003c-0.992 0-1.798-0.806-1.798-1.799l0.001-1.796h-2.912zM25.286 39.498c-0.095 0.001-0.19 0.002-0.286 0.002-10.072 0-18.25-8.402-18.25-18.75s8.178-18.75 18.25-18.75c10.072 0 18.25 8.402 18.25 18.75 0 3.307-0.835 6.416-2.301 9.115l11.051-4.023v-3.071c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v11c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-1.543l-25.926 9.436-0.788-2.166z"/>
     </symbol>
 
     
     
     
-    <symbol id="anl">
+    <symbol id="aol">
       <path d="M32 45.423l26.667-26.846h-53.334l26.667 26.846z"/>
     </symbol>
     
@@ -62,15 +65,15 @@
 
     
     
-    <linearGradient id="bof" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="bpf" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" style="stop-color:#3d3c3b"/>
       <stop offset="1" style="stop-color:#333332"/>
     </linearGradient>
-    <linearGradient id="bpf" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="bqf" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" style="stop-color:#3d3c3b"/>
       <stop offset="1" style="stop-color:#333332"/>
     </linearGradient>
-    <linearGradient id="bqf" x1="0" y1="0" x2="0" y2="1">
+    <linearGradient id="brf" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" style="stop-color:#545452"/>
       <stop offset="1" style="stop-color:#4b4b4a"/>
     </linearGradient>
@@ -78,7 +81,7 @@
     
     
 
-    <filter id="brf" color-interpolation-filters="sRGB">
+    <filter id="bsf" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="0" stdDeviation="0.75"/>
       <feDropShadow dx="0" dy="0" stdDeviation="0.5"/>
       <feDropShadow dx="0" dy="0" stdDeviation="1"/>
@@ -89,7 +92,7 @@
 
     
     
-    <filter id="msf" color-interpolation-filters="sRGB">
+    <filter id="mtf" color-interpolation-filters="sRGB">
       <feDropShadow dx="-3" dy="12" stdDeviation="20" flood-opacity="0.2"/>
       <feDropShadow dx="3" dy="12" stdDeviation="10" flood-opacity="0.2"/>
     </filter>
@@ -100,10 +103,10 @@
   
 
   <g transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Sans-Serif',system-ui,sans-serif">
-    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:#222020;stroke:#acc6c3;stroke-width:1px;filter:url(#msf)"/>
+    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:#222020;stroke:#acc6c3;stroke-width:1px;filter:url(#mtf)"/>
     
-      <rect x="0" y="1" width="962" height="48" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1px 0px)"/>
-      <rect x="0" y="47" width="962" height="1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0px 1px)"/>
+      <rect x="1" y="1" width="960" height="48" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1px 0px)"/>
+      <rect x="1" y="47" width="960" height="1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0px 1px)"/>
       <text x="-1" y="3.5" dx="478" dy="28" text-anchor="middle" style="font-family:'Sans-Serif',system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#aaa">Edit Service</text>
       
       
@@ -121,18 +124,23 @@
       <rect x="33" y="124" width="894" height="601" rx="0" style="fill:#363635;fill-opacity:1;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:1.8px"/>
       
         <g style="clip-path:none">
-          <rect x="32" y="79.5" width="106" height="48" rx="3" style="fill:#363635;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3.8px;clip-path:inset(0px 0px 2.3px)"/>
-          <text x="38.5" y="87.5" dx="46" dy="22" text-anchor="middle" style="font-size:19.5px;fill:#fff">Service</text>
+          <rect x="32" y="79.5" width="106" height="48" rx="3" style="fill:#363635;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3.8px;clip-path:inset(1.5px 1.5px 4.2px)"/>
+          <text x="38.5" y="87.5" dx="46" dy="22" text-anchor="middle" style="font-size:19.5px;letter-spacing:normal;fill:#fff">Service</text>
         </g>
         <g style="clip-path:none">
-          <rect x="136" y="83.5" width="151" height="42" rx="3" style="fill:#303029;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3.8px;clip-path:inset(0px 0px 2.3px)"/>
-          <text x="130.5" y="89.5" dx="80" dy="22" text-anchor="middle" style="font-size:19.5px;fill:#fff;fill-opacity:0.9">Transponder</text>
+          <rect x="136" y="83.5" width="151" height="42" rx="3" style="fill:#303029;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3.8px;clip-path:inset(1.5px 1.5px 4.2px 4.2px)"/>
+          <text x="131.5" y="89.5" dx="80" dy="22" text-anchor="middle" style="font-size:19.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Transponder</text>
         </g>
+        <g style="clip-path:none">
+          <rect x="285" y="83.5" width="121" height="42" rx="3" style="fill:#303029;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3.8px;clip-path:inset(1.5px 1.5px 4.2px 4.2px)"/>
+          <text x="278.5" y="89.5" dx="67" dy="22" text-anchor="middle" style="font-size:19.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Favourite</text>
+        </g>
+        
       
       
         <rect x="52" y="174" width="442" height="304" rx="2.5" style="fill:#222020;fill-opacity:0.1;stroke:#4e4d4d;stroke-opacity:0.5;stroke-width:1.2px"/>
         
-        <text x="43" y="145" dx="10" dy="17" style="font-size:20px;fill:#fff">Service</text>
+        <text x="43" y="145" dx="10" dy="17" style="font-size:20px;letter-spacing:normal;fill:#fff">Service</text>
         
           
             <text x="70" y="190" dy="22" style="font-size:20px;fill:#fff">Service name</text>
@@ -145,7 +153,7 @@
             <text x="70" y="286" dy="22" style="font-size:20px;fill:#fff">Service type</text>
             
               
-                <rect x="70" y="325" width="151" height="38" rx="3" style="fill:url(#bof);stroke:url(#bqf);stroke-width:1.1px;filter:url(#brf)"/>
+                <rect x="70" y="325" width="151" height="38" rx="3" style="fill:url(#bpf);stroke:url(#brf);stroke-width:1.1px;filter:url(#bsf)"/>
                 <text x="65" y="329" dx="12" dy="22" style="font-size:20px;word-spacing:8px;fill:#fff">1 TV</text>
                 
                   <rect x="198.5" y="334" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
@@ -153,15 +161,15 @@
                     
                     
                     <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,198,338)">
-                      <use href="#anl"/>
+                      <use href="#aol"/>
                     </g>
                   
                 
               
               
-                <rect x="232.5" y="325.5" width="244" height="38" rx="3" style="fill:url(#bof);stroke:#315162;stroke-width:2.2px;filter:url(#brf)"/>
-                <rect x="228" y="321" width="253" height="47" rx="8" style="fill:#308cc6;fill-opacity:0.1"/>
-                <text x="302" y="331" dx="20" dy="20" style="font-size:19.5px;word-spacing:8px;fill:#fff">custom</text>
+                <rect x="232.5" y="325.5" width="240" height="38" rx="3" style="fill:url(#bpf);stroke:#315162;stroke-width:2.2px;filter:url(#bsf)"/>
+                <rect x="228" y="321" width="249" height="47" rx="8" style="fill:#308cc6;fill-opacity:0.1"/>
+                <text x="299" y="331" dx="20" dy="20" style="font-size:19.5px;word-spacing:8px;fill:#fff">custom</text>
               
             
           
@@ -178,22 +186,22 @@
       
         <rect x="52" y="523" width="442" height="186" rx="2.5" style="fill:#222020;fill-opacity:0.1;stroke:#4e4d4d;stroke-opacity:0.5;stroke-width:1.2px"/>
         
-        <text x="43" y="494" dx="10" dy="17" style="font-size:20px;fill:#fff">Tuner</text>
+        <text x="43" y="494" dx="10" dy="17" style="font-size:20px;letter-spacing:normal;fill:#fff">Tuner</text>
         
           
             <text x="70" y="544" dy="22" style="font-size:20px;fill:#fff">Satellite</text>
             
-              <rect x="202" y="540" width="274" height="38" rx="3" style="fill:#131312;stroke:url(#bqf);stroke-width:1.1px;filter:url(#brf)"/>
+              <rect x="202" y="540" width="274" height="38" rx="3" style="fill:#131312;stroke:url(#brf);stroke-width:1.1px;filter:url(#bsf)"/>
               <rect x="200.5" y="539.5" width="247" height="39" rx="3" style="clip-path:inset(0px 3px 0px 0px);opacity:0.2"/>
               <text x="195" y="544" dx="12" dy="22" style="font-size:20px;fill:#fff">Hot Bird</text>
-              <rect x="445" y="539.5" width="31" height="39" rx="2.2" style="fill:url(#bof);stroke:url(#bqf);stroke-width:2.2px;clip-path:inset(1.3px 1.1px 1.3px 0px)"/>
+              <rect x="445" y="539.5" width="31" height="39" rx="2.2" style="fill:url(#bpf);stroke:url(#brf);stroke-width:2.2px;clip-path:inset(1.3px 1.1px 1.3px 0px)"/>
               
                 <rect x="454.2" y="548" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
                   
                   <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,453.7,552)">
-                    <use href="#anl"/>
+                    <use href="#aol"/>
                   </g>
                 
               
@@ -202,17 +210,17 @@
           
             <text x="70" y="602" dy="22" style="font-size:20px;fill:#fff">Transponder</text>
             
-              <rect x="202" y="597" width="274" height="38" rx="3" style="fill:#131312;stroke:url(#bqf);stroke-width:1.1px;filter:url(#brf)"/>
+              <rect x="202" y="597" width="274" height="38" rx="3" style="fill:#131312;stroke:url(#brf);stroke-width:1.1px;filter:url(#bsf)"/>
               <rect x="200.5" y="596.5" width="247" height="39" rx="3" style="clip-path:inset(0px 3px 0px 0px);opacity:0.2"/>
               <text x="195" y="601" dx="12" dy="22" style="font-size:20px;fill:#fff">11373/H/27500</text>
-              <rect x="445" y="596.5" width="31" height="39" rx="2.2" style="fill:url(#bof);stroke:url(#bqf);stroke-width:2.2px;clip-path:inset(1.3px 1.1px 1.3px 0px)"/>
+              <rect x="445" y="596.5" width="31" height="39" rx="2.2" style="fill:url(#bpf);stroke:url(#brf);stroke-width:2.2px;clip-path:inset(1.3px 1.1px 1.3px 0px)"/>
               
                 <rect x="454.2" y="605" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
                   
                   <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,453.7,609)">
-                    <use href="#anl"/>
+                    <use href="#aol"/>
                   </g>
                 
               
@@ -220,7 +228,7 @@
           
           
             
-              <rect x="202" y="654" width="274" height="38" rx="3" style="fill:url(#bof);stroke:url(#bqf);stroke-width:1.1px;filter:url(#brf)"/>
+              <rect x="202" y="654" width="274" height="38" rx="3" style="fill:url(#bpf);stroke:url(#brf);stroke-width:1.1px;filter:url(#bsf)"/>
               <text x="244" y="659" dx="20" dy="21" style="font-size:19.5px;fill:#fff">New Transponder</text>
             
           
@@ -229,23 +237,23 @@
       
         <rect x="507" y="174" width="403" height="535" rx="2.5" style="fill:#222020;fill-opacity:0.1;stroke:#4e4d4d;stroke-opacity:0.5;stroke-width:1.2px"/>
         
-        <text x="497" y="145" dx="10" dy="17" style="font-size:20px;fill:#fff">Parameters</text>
+        <text x="497" y="145" dx="10" dy="17" style="font-size:20px;letter-spacing:normal;fill:#fff">Parameters</text>
         
           
             
             
-              <rect x="522" y="195" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="861" y="225" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,521,195)"/>
+              <rect x="522" y="195" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)"/>
+              <rect x="861" y="225" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)"/>
+              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="matrix(0.707,0.707,-0.707,0.707,521,195)"/>
             
             <text x="522" y="196" dx="8" dy="26" style="font-size:19.5px;fill:#fff">Package</text>
           
           
             
             
-              <rect x="522" y="237" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="861" y="267" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,521,237)"/>
+              <rect x="522" y="237" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)"/>
+              <rect x="861" y="267" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)"/>
+              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="matrix(0.707,0.707,-0.707,0.707,521,237)"/>
             
             <text x="522" y="238" dx="8" dy="26" style="font-size:19.5px;fill:#fff">PIDs</text>
             <g style="clip-path:inset(0px 0px 22px)">
@@ -289,58 +297,58 @@
                 
               
             </g>
-            <g transform="matrix(0.994,0,0,0.994,11,7.5)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#brf)">
+            <g transform="matrix(0.994,0,0,0.994,11,7.5)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#bsf)">
               <rect x="862" y="277" width="23" height="236" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0px 1px 0px 0px)"/>
-              <rect x="862.5" y="275.5" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e;filter:url(#brf)" rx="0"/>
+              <rect x="862.5" y="275.5" width="22" height="22" style="fill:url(#bqf);stroke:#4f4f4e;filter:url(#bsf)" rx="0"/>
               
                 
                 <g transform="matrix(0.22,0,0,-0.22,866.3,294)">
-                  <use href="#anl" style="fill:#d3d2d2"/>
+                  <use href="#aol" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="862.5" y="491" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e;filter:url(#brf)" rx="0"/>
+              <rect x="862.5" y="491" width="22" height="22" style="fill:url(#bqf);stroke:#4f4f4e;filter:url(#bsf)" rx="0"/>
               
                 
                 <g transform="matrix(0.22,0,0,0.22,866.3,495.5)">
-                  <use href="#anl" style="fill:#d3d2d2"/>
+                  <use href="#aol" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="862.5" y="300" width="22" height="58" rx="0" style="fill:url(#bpf);fill-opacity:1;stroke:#4f4f4e"/>
+              <rect x="862.5" y="300" width="22" height="58" rx="0" style="fill:url(#bqf);fill-opacity:1;stroke:#4f4f4e"/>
             </g>
           
           
             
             
-              <rect x="522" y="527" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="861" y="557" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,521,527)"/>
+              <rect x="522" y="527" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)"/>
+              <rect x="861" y="557" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)"/>
+              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="matrix(0.707,0.707,-0.707,0.707,521,527)"/>
             
             <text x="522" y="528" dx="8" dy="26" style="font-size:19.5px;fill:#fff">CAIDs</text>
           
           
             
             
-              <rect x="522" y="569" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="861" y="599" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,521,569)"/>
+              <rect x="522" y="569" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)"/>
+              <rect x="861" y="599" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)"/>
+              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="matrix(0.707,0.707,-0.707,0.707,521,569)"/>
             
             <text x="522" y="570" dx="8" dy="26" style="font-size:19.5px;fill:#fff">Flags</text>
           
           
             
             
-              <rect x="522" y="611" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="861" y="641" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,521,611)"/>
+              <rect x="522" y="611" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)"/>
+              <rect x="861" y="641" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)"/>
+              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="matrix(0.707,0.707,-0.707,0.707,521,611)"/>
             
             <text x="522" y="612" dx="8" dy="26" style="font-size:19.5px;fill:#fff">Custom</text>
           
           
             
             
-              <rect x="522" y="651" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="861" y="681" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)"/>
-              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(2px 1px 0px)" transform="matrix(0.707,0.707,-0.707,0.707,521,651)"/>
+              <rect x="522" y="651" width="314" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)"/>
+              <rect x="861" y="681" width="32" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)"/>
+              <rect x="222" y="-222" width="46" height="5" style="fill:#222020;stroke:#5e5e5e;stroke-width:3px;clip-path:inset(3px 3px 1px)" transform="matrix(0.707,0.707,-0.707,0.707,521,651)"/>
             
             <text x="522" y="652" dx="8" dy="26" style="font-size:19.5px;fill:#fff">Extras</text>
           
@@ -398,7 +406,7 @@
         
           <rect x="1522" y="167" width="128" height="67" style="fill:#222020"/>
           
-            <rect x="1530" y="173" width="112" height="53" rx="3" style="fill:url(#bof);stroke:url(#bqf);stroke-width:1px;filter:url(#brf)"/>
+            <rect x="1530" y="173" width="112" height="53" rx="3" style="fill:url(#bpf);stroke:url(#brf);stroke-width:1px;filter:url(#bsf)"/>
             <g transform="matrix(0.26,0,0,0.26,1536,191)">
               <use href="#aad" style="fill:#c3c3c3"/>
             </g>
@@ -422,7 +430,7 @@
           
             <rect x="1808" y="166" width="292" height="69" style="fill:#2a2a29;stroke:#363636;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <g transform="matrix(0.38,0,0,0.38,1820,186)">
-              <use href="#piw" style="fill:#fff"/>
+              <use href="#pkw" style="fill:#fff"/>
             </g>
             <text x="1808" y="165.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Picons <tspan style="font-size:15px">…</tspan></text>
             
@@ -449,7 +457,7 @@
           
             <rect x="2254" y="166" width="292" height="69" style="fill:#12608a;stroke:#12608a;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <g transform="matrix(0.38,0,0,0.38,2266,186)">
-              <use href="#tmw" style="fill:#fff"/>
+              <use href="#tnw" style="fill:#fff"/>
             </g>
             <text x="2254" y="165.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Edit Set<tspan style="font-size:15px">…</tspan></text>
             
@@ -484,50 +492,50 @@
         
           
             <g transform="matrix(0.38,0,0,0.38,1546,257)">
-              <use href="#ohn" style="fill:#c4c4c4"/>
+              <use href="#fin" style="fill:#c4c4c4"/>
             </g>
             <text x="1528.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Open</text>
           
           
             <g transform="matrix(0.38,0,0,0.38,1691,257)">
-              <use href="#sje" style="fill:#c4c4c4"/>
+              <use href="#fje" style="fill:#c4c4c4"/>
             </g>
             <text x="1674.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Save</text>
           
           
-            <rect x="1828" y="262" width="4" height="44" style="fill:#252323;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(1px 1px 1px 0px)"/>
+            <rect x="1828" y="262" width="4" height="44" style="fill:#252323;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
           
           
             <g transform="matrix(0.38,0,0,0.38,1840,257)">
-              <use href="#igt" style="fill:#c4c4c4"/>
+              <use href="#fgt" style="fill:#c4c4c4"/>
             </g>
             <text x="1822.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Import</text>
           
           
             <g transform="matrix(0.38,0,0,0.38,2000,257)">
-              <use href="#eft" style="fill:#c4c4c4"/>
+              <use href="#fft" style="fill:#c4c4c4"/>
             </g>
             <text x="1980.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Export</text>
           
           
-            <rect x="2154" y="262" width="4" height="44" style="fill:#252323;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(1px 1px 1px 0px)"/>
+            <rect x="2154" y="262" width="4" height="44" style="fill:#252323;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
           
           
             <g transform="matrix(0.38,0,0,0.38,2165,257)">
-              <use href="#sls" style="fill:#c4c4c4"/>
+              <use href="#sms" style="fill:#c4c4c4"/>
             </g>
             <text x="2148.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Settings</text>
           
           
             
-              <rect x="2574" y="264" width="100" height="34" rx="3" style="fill:url(#bof);stroke:url(#bqf);stroke-width:1px;filter:url(#brf)"/>
+              <rect x="2574" y="264" width="100" height="34" rx="3" style="fill:url(#bpf);stroke:url(#brf);stroke-width:1px;filter:url(#bsf)"/>
               
                 <rect x="2666.5" y="269" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
                   
                   <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,2654,273)">
-                    <use href="#anl"/>
+                    <use href="#aol"/>
                   </g>
                 
               
@@ -541,7 +549,7 @@
             <text x="2807.5" y="232" dx="15" dy="59" style="font-size:25.5px;fill:#fff">Disconnect</text>
           
           
-            <rect x="2967" y="262" width="4" height="44" style="fill:#252323;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(1px 1px 1px 0px)"/>
+            <rect x="2967" y="262" width="4" height="44" style="fill:#252323;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
           
           
             <text x="2967.5" y="232" dx="15" dy="59" style="font-size:25.5px;fill:#fff">Upload</text>
@@ -562,7 +570,7 @@
               <text x="1522" y="328" dx="10" dy="33" style="font-weight:bold;font-size:19px;fill:#fff">Satellites</text>
               
                 
-                  <rect x="1860" y="335" width="38" height="32" rx="3" style="fill:url(#bof);stroke:url(#bqf);filter:url(#brf)"/>
+                  <rect x="1860" y="335" width="38" height="32" rx="3" style="fill:url(#bpf);stroke:url(#brf);filter:url(#bsf)"/>
                   <g transform="matrix(0.38,0,0,0.38,1868,338)">
                     <use href="#ees" style="fill:#c4c4c4"/>
                   </g>
@@ -571,14 +579,14 @@
             
             
               
-                <rect x="1522" y="377" width="380" height="26" style="fill:url(#bof);stroke:#4e4d4d;stroke-width:2px;clip-path:inset(1px 1px 0px)"/>
+                <rect x="1522" y="377" width="380" height="26" style="fill:url(#bpf);stroke:#4e4d4d;stroke-width:2px;clip-path:inset(1px 1px 0px)"/>
                 <text x="1522" y="379" dy="18" style="font-size:17px;fill:#fff"><tspan x="1526">Name</tspan> <tspan x="1823">Position</tspan></text>
                 <rect x="1817" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
               
               
                 <rect x="1522" y="403" width="380" height="687" style="fill:#131312"/>
                 
-                  <rect x="82" y="448" width="380" height="44" style="fill:#12608a" transform="matrix(1,0,0,0.996,1440,40.400001525878906)"/>
+                  <rect x="82" y="448" width="380" height="44" style="fill:#12608a" transform="matrix(1,0,0,0.996,1440,40.4)"/>
                   <text x="1522" y="404" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Hispasat 30W-4-5</tspan> <tspan x="1825">30.0W</tspan></text>
                   <text x="1522" y="445" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Eutelsat / Nilesat</tspan> <tspan x="1825">7.0W</tspan></text>
                   <text x="1522" y="486" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Hot Bird</tspan> <tspan x="1825">13.0E</tspan></text>
@@ -596,14 +604,14 @@
                 <g transform="matrix(0.25,0,0,0.25,1541,1106.5)">
                   <use href="#aad" style="fill:#c4c4c4"/>
                 </g>
-                <text x="1535" y="1090.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">New Position</text>
+                <text x="1535" y="1090.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Position</text>
               
               
-                <rect x="1789" y="1099" width="100" height="34" rx="3" style="fill:url(#bof);stroke:url(#bqf);stroke-width:1px;filter:url(#brf)"/>
-                <g transform="matrix(0.38,0,0,0.38,1794,1103)">
-                  <use href="#skh" style="fill:#c4c4c4" x="15"/>
+                <rect x="1787" y="1099" width="100" height="34" rx="3" style="fill:url(#bpf);stroke:url(#brf);stroke-width:1px;filter:url(#bsf)"/>
+                <g transform="matrix(0.38,0,0,0.38,1792,1103)">
+                  <use href="#slh" style="fill:#c4c4c4" x="15"/>
                 </g>
-                <text x="1774" y="1101" dx="54" dy="22" style="font-size:20px;fill:#fff">Find<tspan style="font-size:15px">…</tspan></text>
+                <text x="1772" y="1101" dx="54" dy="22" style="font-size:20px;fill:#fff">Find<tspan style="font-size:15px">…</tspan></text>
               
             
           
@@ -621,7 +629,7 @@
           
           
             
-              <rect x="1909" y="377" width="1325" height="26" style="fill:url(#bof);stroke:#4e4d4d;stroke-width:2px;clip-path:inset(1px 1px 0px)"/>
+              <rect x="1909" y="377" width="1325" height="26" style="fill:url(#bpf);stroke:#4e4d4d;stroke-width:2px;clip-path:inset(1px 1px 0px)"/>
               <text x="1909" y="379" dy="18" style="font-size:17px;fill:#fff"><tspan x="1914">Freq/Pol/SR</tspan> <tspan x="2150">Frequency</tspan> <tspan x="2269">Polarization</tspan> <tspan x="2388">Symbol Rate</tspan> <tspan x="2508">System</tspan> <tspan x="2609">FEC</tspan> <tspan x="2708">Modulation</tspan> <tspan x="2819">Inversion</tspan> <tspan x="2913">Roll offset</tspan> <tspan x="3014">Pilot</tspan></text>
               <rect x="2143" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
               <rect x="2262" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
@@ -637,46 +645,46 @@
               <rect x="1909" y="403" width="1325" height="687" style="fill:#131312"/>
               
                 <rect x="473" y="576" width="1325" height="44" style="fill:#12608a" transform="matrix(1,0,0,0.996,1436,39.1)"/>
-                <text x="1909" y="404" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10719/V/27500</tspan> <tspan x="2151">10719</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="445" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10728/H/30000</tspan> <tspan x="2151">10728</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="486" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10758/V/27500</tspan> <tspan x="2151">10758</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="404" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10719/V/27500</tspan> <tspan x="2151">10719</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="445" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10728/H/30000</tspan> <tspan x="2151">10728</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="486" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10758/V/27500</tspan> <tspan x="2151">10758</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
                 <text x="1909" y="529" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10775/H/27500</tspan> <tspan x="2151">10775</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
                 <text x="1909" y="571" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10775/H/29900</tspan> <tspan x="2151">10775</tspan> <tspan x="2270">H</tspan> <tspan x="2389">29900</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="614" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10796/V/27500</tspan> <tspan x="2151">10796</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="656" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10815/H/27500</tspan> <tspan x="2151">10815</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="614" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10796/V/27500</tspan> <tspan x="2151">10796</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="656" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10815/H/27500</tspan> <tspan x="2151">10815</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">5/6</tspan> <tspan x="2708">QPSK</tspan></text>
                 <text x="1909" y="700" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10834/V/27500</tspan> <tspan x="2151">10834</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
                 <text x="1909" y="743" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10853/H/29900</tspan> <tspan x="2151">10853</tspan> <tspan x="2270">H</tspan> <tspan x="2389">29900</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="787" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10872/V/27500</tspan> <tspan x="2151">10872</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="829" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10873/V/27500</tspan> <tspan x="2151">10873</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="787" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10872/V/27500</tspan> <tspan x="2151">10872</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="829" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10873/V/27500</tspan> <tspan x="2151">10873</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
                 <text x="1909" y="872" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10892/H/27500</tspan> <tspan x="2151">10892</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="914" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10911/V/27500</tspan> <tspan x="2151">10911</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="956" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10930/H/30000</tspan> <tspan x="2151">10930</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="997" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10949/V/27500</tspan> <tspan x="2151">10949</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="914" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10911/V/27500</tspan> <tspan x="2151">10911</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="956" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10930/H/30000</tspan> <tspan x="2151">10930</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">2/3</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="997" dy="29" style="font-size:20px;fill:#fff"><tspan x="1916">10949/V/27500</tspan> <tspan x="2151">10949</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">2/3</tspan> <tspan x="2708">8PSK</tspan></text>
               
             
-            <g transform="matrix(0.997,0,0,0.997,1435.5,37.5)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#brf)">
+            <g transform="matrix(0.997,0,0,0.997,1435.5,37.5)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#bsf)">
               <rect x="1784" y="341" width="23" height="658" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0px 1px 0px 0px)"/>
-              <rect x="1784.5" y="341.5" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e;filter:url(#brf)" rx="0"/>
+              <rect x="1784.5" y="341.5" width="22" height="22" style="fill:url(#bqf);stroke:#4f4f4e;filter:url(#bsf)" rx="0"/>
               
                 
                 <g transform="matrix(0.22,0,0,-0.22,1788.3,359.5)">
-                  <use href="#anl" style="fill:#d3d2d2"/>
+                  <use href="#aol" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="1784.5" y="976.5" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e;filter:url(#brf)" rx="0"/>
+              <rect x="1784.5" y="976.5" width="22" height="22" style="fill:url(#bqf);stroke:#4f4f4e;filter:url(#bsf)" rx="0"/>
               
                 
                 <g transform="matrix(0.22,0,0,0.22,1788.3,981)">
-                  <use href="#anl" style="fill:#d3d2d2"/>
+                  <use href="#aol" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="1784.5" y="366" width="22" height="76" rx="0" style="fill:url(#bpf);fill-opacity:0.7;stroke:#4f4f4e;stroke-opacity:0.8"/>
+              <rect x="1784.5" y="366" width="22" height="76" rx="0" style="fill:url(#bqf);fill-opacity:0.7;stroke:#4f4f4e;stroke-opacity:0.8"/>
             </g>
           
           
             <rect x="1909" y="1034" width="1325" height="61" style="fill:#0c0b0b"/>
             
-              <rect x="1917" y="1040" width="162.5" height="34" rx="3" style="fill:url(#bof);stroke:url(#bqf);stroke-width:1px;filter:url(#brf)"/>
+              <rect x="1917" y="1040" width="162.5" height="34" rx="3" style="fill:url(#bpf);stroke:url(#brf);stroke-width:1px;filter:url(#bsf)"/>
               <text x="1914" y="1042" dx="12" dy="22" style="font-size:20px;fill:#fff">Freq/Pol/SR</text>
               
                 <rect x="2066.5" y="1045" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
@@ -684,7 +692,7 @@
                   
                   
                   <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,2060,1049)">
-                    <use href="#anl"/>
+                    <use href="#aol"/>
                   </g>
                 
               
@@ -722,14 +730,14 @@
                 <g transform="matrix(0.26,0,0,0.26,1928,1106.5)">
                   <use href="#aad" style="fill:#c4c4c4"/>
                 </g>
-                <text x="1923" y="1090.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">New Transponder</text>
+                <text x="1923" y="1090.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Transponder</text>
               
               
-                <rect x="3125" y="1099" width="100" height="34" rx="3" style="fill:url(#bof);stroke:url(#bqf);stroke-width:1px;filter:url(#brf)"/>
-                <g transform="matrix(0.38,0,0,0.38,3127,1103)">
-                  <use href="#skh" style="fill:#c4c4c4" x="15"/>
+                <rect x="3121" y="1099" width="100" height="34" rx="3" style="fill:url(#bpf);stroke:url(#brf);stroke-width:1px;filter:url(#bsf)"/>
+                <g transform="matrix(0.38,0,0,0.38,3123,1103)">
+                  <use href="#slh" style="fill:#c4c4c4" x="15"/>
                 </g>
-                <text x="3115" y="1101.5" dx="46" dy="22" style="font-size:20px;fill:#fff">Find<tspan style="font-size:15px">…</tspan></text>
+                <text x="3111" y="1101.5" dx="46" dy="22" style="font-size:20px;fill:#fff">Find<tspan style="font-size:15px">…</tspan></text>
               
             
           
@@ -743,7 +751,14 @@
       <text x="1516" y="1181" dx="29" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Transponders: 119</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
       
       
-      <text x="1550" y="1181" dx="1593" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Total: 411</tspan></text>
+      <text x="1554" y="1181" dx="1535" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Total: 411</tspan></text>
+      
+      
+      
+        
+        <g transform="matrix(0.38,0,0,0.38,3191,1191)">
+          <use href="#fho" style="fill:#c4c4c4"/>
+        </g>
       
       
         

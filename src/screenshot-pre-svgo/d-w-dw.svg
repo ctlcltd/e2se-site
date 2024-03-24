@@ -17,38 +17,41 @@
     <symbol id="ees">
       <path d="M32.032 50.518c-4.79-2.886-8.032-8.409-8.032-14.742 0-9.314 7.011-16.876 15.648-16.876 8.636 0 15.647 7.562 15.647 16.876s-7.011 16.875-15.647 16.875c-0.924 0-1.828-0.086-2.709-0.252l-0.191 10.501-4.943-0.144 0.227-12.238zM6.057 26.78c-0.001-0.001 0.023 14.969 0.023 14.969-0.866 0.414-1.706 0.922-2.43 1.563-4.358 3.853-4.35 10.108 0.019 13.972 0.971 0.858 2.137 1.495 3.319 1.965l1.369-0.931-0.011-7.239c-0.001-0.885 0.89-1.557 1.892-1.556 0 0 2.771 0.003 2.771 0.003 0.536 0.001 1.068 0.166 1.418 0.476 0.306 0.27 0.483 0.677 0.484 1.091 0 0 0.011 7.016 0.011 7.016l1.416 0.908c0.975-0.446 1.946-0.994 2.763-1.716 4.357-3.853 4.35-10.108-0.019-13.972-0.727-0.643-1.569-1.153-2.438-1.57l-0.023-14.969c0.866-0.414 1.706-0.923 2.43-1.563 4.358-3.853 4.35-10.108-0.019-13.972-0.895-0.791-1.965-1.383-3.043-1.844l-1.393 0.921 0.010 6.793c0.002 0.875-0.84 1.502-1.829 1.501 0 0-2.897-0.003-2.897-0.003-0.992-0.002-1.837-0.634-1.839-1.511 0 0-0.010-6.794-0.010-6.794l-1.392-0.918c-1.078 0.459-2.146 1.048-3.039 1.838-4.357 3.853-4.35 10.108 0.019 13.972 0.727 0.642 1.569 1.153 2.438 1.57zM50.271 51.811l-0.523-0.46-5.453 3.436 0.662 1.988 5.986-1.196c1.277 1.246 2.819 1.484 3.871 0.785-0.004 0.002 7.388-4.581 7.388-4.581 0.786-0.485 1.326-1.441 1.398-2.711 0.046-0.806-0.219-1.238-0.491-1.487-0.236-0.215-0.539-0.342-0.917-0.337-0.336 0.004-0.81 0.167-1.33 0.351-0.245 0.086-0.508 0.175-0.77 0.205-0.142 0.017-0.286 0.022-0.415-0.049-1.014-0.553-2.017-0.529-2.787-0.049l-6.619 4.105z"/>
     </symbol>
-    <symbol id="eft">
+    <symbol id="fft">
       <path d="M56.256 31.057h-42.438c-7.074 0-12.818 5.744-12.818 12.818v61.295c0 7.074 5.744 12.818 12.818 12.818h54.476c7.075 0 12.818-5.744 12.818-12.818v-51.051c-16.616 14.040-16.649 30.281-17.025 36.965-0.151 2.687-1.869 5.034-4.385 5.99s-5.359 0.343-7.257-1.565c-14.421-14.502-16.181-43.133 3.811-64.452zM57.293 90.694c-14.624-14.705-13.039-45.988 15.234-64.344l-10.365-12.362 42.838 1.084-7.263 41.344-11.808-14.082c-28.127 16.992-28.15 39.728-28.636 48.36z"/>
     </symbol>
-    <symbol id="igt">
+    <symbol id="fgt">
       <path d="M87.8 55.714h8.488c5.912 0 10.712 4.753 10.712 10.606v45.074c0 5.854-4.8 10.606-10.712 10.606h-84.576c-5.912 0-10.712-4.752-10.712-10.606v-45.074c0-5.853 4.8-10.606 10.712-10.606h19.788l22.5 21.827c1.413 1.374 4.32 2.133 6.3 2.109 1.98-0.023 4.821-0.828 6.2-2.236l21.3-21.7zM93.982 6.385c-17.881-3.082-49.582 12.531-44.921 39.525h-15.517l27.127 26.376 25.847-26.376h-14.41c-4.833-24.162 15.844-35.121 21.874-39.525z"/>
     </symbol>
-    
-    <symbol id="ohn">
+    <symbol id="fho">
+      <path d="M32 62.5c-16.833 0-30.5-13.667-30.5-30.5s13.667-30.5 30.5-30.5v9.611c-0.352-0.073-0.717-0.111-1.090-0.111-2.99 0-5.42 2.43-5.42 5.41 0 2.99 2.43 5.42 5.42 5.42 0.373 0 0.738-0.038 1.090-0.111v5.111l-7.44 0.18 2.82 1.23v22.7l-2.82 2.060h7.44v9.5zM32 11.111v-9.611c16.833 0 30.5 13.667 30.5 30.5s-13.667 30.5-30.5 30.5v-9.5h9.46l-5.76-2.060v-24.2l-3.7 0.090v-5.111c2.46-0.506 4.32-2.693 4.32-5.309 0-2.607-1.86-4.793-4.32-5.299z"/>
+    </symbol>
+    <symbol id="fin">
       <path d="M21 42.973h89.077c2.783 0 4.643 2.26 4.153 5.042l-9.34 52.943c-0.491 2.783-3.149 5.042-5.932 5.042h-91.118c-2.119 0-3.84-1.721-3.84-3.84v-80.16h67.2l16.8 14h-72v32h5v-25.027z"/>
     </symbol>
-    <symbol id="piw">
-      <path d="M14.762 29.23h34.49c0 0 13.928 14.478 11.463 15.596-1.067 0.483-6.127-1.117-11.524-3.087v20.261h-34.389v-20.253c-5.389 1.967-10.437 3.562-11.502 3.079-2.465-1.118 11.462-15.596 11.462-15.596zM36.774 11.359h-20.475v13.19h6.364v-10.552h14.111v-2.638zM38.538 16.635h-14.111v7.914h14.111v-7.914zM45.299 10.4v14.149h-4.283v-9.233h-2.478v-4.916h6.761zM36.632 3.482h-18.173v5.276h18.173v-5.276z"/>
-    </symbol>
-    <symbol id="sje">
+    <symbol id="fje">
       <path d="M114 22v86.16c0 2.119-1.721 3.84-3.84 3.84h-92.32c-2.119 0-3.84-1.721-3.84-3.84v-88.32c0-2.119 1.721-3.84 3.84-3.84h91.16l5 6zM94 59.014v-40h-56v40h56zM84.5 26v30h-15v-30h15z"/>
     </symbol>
-    <symbol id="skh">
+    
+    <symbol id="pkw">
+      <path d="M14.762 29.23h34.49c0 0 13.928 14.478 11.463 15.596-1.067 0.483-6.127-1.117-11.524-3.087v20.261h-34.389v-20.253c-5.389 1.967-10.437 3.562-11.502 3.079-2.465-1.118 11.462-15.596 11.462-15.596zM36.774 11.359h-20.475v13.19h6.364v-10.552h14.111v-2.638zM38.538 16.635h-14.111v7.914h14.111v-7.914zM45.299 10.4v14.149h-4.283v-9.233h-2.478v-4.916h6.761zM36.632 3.482h-18.173v5.276h18.173v-5.276z"/>
+    </symbol>
+    <symbol id="slh">
       <path d="M40.023 45.152c-3.477 2.591-7.729 4.192-12.407 4.221-10.406 0.066-20.276-8.26-21.806-18.699-1.731-11.814 7.58-24.164 20.12-25.040 0.561-0.039 1.124-0.055 1.686-0.053 10 0.095 19.38 7.75 21.337 17.619 1.156 5.829-0.437 11.92-3.87 16.758l13.82 13.819-5.128 5.128-13.752-13.753zM27.395 14.645c-6.236 0.060-12 5.17-12.677 11.431-0.588 5.436 2.691 11.076 7.773 13.229 6.62 2.806 15.346-1.167 17.352-8.391 2.055-7.404-3.759-16.031-12.032-16.265-0.139-0.003-0.278-0.004-0.416-0.004z"/>
     </symbol>
     
     
-    <symbol id="sls">
+    <symbol id="sms">
       <path d="M73.934 15.359c-6.491-1.302-13.177-1.302-19.668 0 0.828 4.128 1.452 8.287 1.871 12.477-4.352 0.948-8.5 2.666-12.249 5.073-2.666-3.259-5.165-6.641-7.499-10.146-5.511 3.67-10.238 8.397-13.908 13.908 3.505 2.334 6.887 4.834 10.146 7.499-2.407 3.749-4.125 7.897-5.073 12.249-4.19-0.419-8.349-1.043-12.477-1.871-1.303 6.491-1.303 13.177 0 19.668 4.128-0.828 8.287-1.452 12.477-1.871 0.948 4.352 2.666 8.501 5.073 12.249-3.259 2.666-6.641 5.165-10.146 7.499 3.67 5.511 8.397 10.238 13.908 13.908 2.334-3.505 4.833-6.887 7.499-10.146 3.749 2.407 7.897 4.125 12.249 5.074-0.419 4.189-1.043 8.348-1.871 12.476 6.491 1.303 13.177 1.303 19.668 0-0.828-4.128-1.452-8.287-1.871-12.476 4.352-0.949 8.5-2.667 12.249-5.074 2.666 3.259 5.165 6.641 7.499 10.146 5.511-3.67 10.238-8.397 13.908-13.908-3.505-2.334-6.887-4.833-10.146-7.499 2.407-3.748 4.125-7.897 5.073-12.249 4.19 0.419 8.349 1.043 12.477 1.871 1.303-6.491 1.303-13.177 0-19.668-4.128 0.828-8.287 1.452-12.477 1.871-0.948-4.352-2.666-8.5-5.073-12.249 3.259-2.665 6.641-5.165 10.146-7.499-3.67-5.511-8.397-10.238-13.908-13.908-2.334 3.505-4.833 6.887-7.499 10.146-3.749-2.407-7.897-4.125-12.249-5.073 0.419-4.19 1.043-8.349 1.871-12.477zM64.1 50.882c7.451 0 13.5 6.049 13.5 13.5s-6.049 13.5-13.5 13.5c-7.451 0-13.5-6.049-13.5-13.5s6.049-13.5 13.5-13.5z"/>
     </symbol>
-    <symbol id="tmw">
+    <symbol id="tnw">
       <path d="M64 64v-19h-64v19h64zM38.975 58.253l0.001 1.834c0.001 1.076-0.872 1.949-1.947 1.949s-1.949-0.873-1.95-1.949l-0.002-6.41-1.968 1.774c-0.407 0.367-0.947 0.542-1.48 0.524-0.533 0.018-1.073-0.157-1.48-0.524l-1.968-1.774-0.003 6.41c0 1.076-0.874 1.949-1.949 1.949s-1.948-0.873-1.948-1.949l0.002-5.24h-6.669l4.099 3.89c0.751 0.713 0.751 1.869 0.002 2.581-0.75 0.711-1.968 0.71-2.719-0.002l-4.104-3.895-4.104 3.895c-0.751 0.712-1.969 0.713-2.719 0.002-0.75-0.712-0.749-1.868 0.002-2.581l4.104-3.895-4.104-3.895c-0.751-0.712-0.752-1.868-0.002-2.58s1.968-0.711 2.719 0.002l4.104 3.895 4.104-3.895c0.751-0.713 1.969-0.713 2.719-0.002 0.749 0.712 0.749 1.868-0.002 2.58l-4.099 3.89h6.669l0.002-5.24c0-0.024 0.001-0.048 0.002-0.072-0.031-0.488 0.159-0.985 0.571-1.356 0.276-0.249 0.614-0.408 0.97-0.477 0.131-0.028 0.267-0.043 0.406-0.043 0.058 0 0.115 0.002 0.172 0.007 0.454 0.033 0.899 0.206 1.247 0.52l3.976 3.583 3.975-3.583c0.348-0.314 0.793-0.487 1.248-0.52 0.056-0.005 0.114-0.007 0.171-0.007 0.14 0 0.276 0.015 0.407 0.043 0.356 0.069 0.694 0.228 0.97 0.477 0.412 0.371 0.602 0.868 0.571 1.356 0.001 0.024 0.001 0.048 0.001 0.072l0.003 8.646h2.912l0.003-8.83c0-1.076 0.874-1.949 1.949-1.949s1.948 0.873 1.948 1.949l-0.004 8.839 6.372 0.002c0.993 0.001 1.798 0.807 1.798 1.799 0 0.993-0.805 1.798-1.798 1.798l-8.471-0.003c-0.992 0-1.798-0.806-1.798-1.799l0.001-1.796h-2.912zM25.286 39.498c-0.095 0.001-0.19 0.002-0.286 0.002-10.072 0-18.25-8.402-18.25-18.75s8.178-18.75 18.25-18.75c10.072 0 18.25 8.402 18.25 18.75 0 3.307-0.835 6.416-2.301 9.115l11.051-4.023v-3.071c0-0.828 0.672-1.5 1.5-1.5h3c0.828 0 1.5 0.672 1.5 1.5v11c0 0.828-0.672 1.5-1.5 1.5h-3c-0.828 0-1.5-0.672-1.5-1.5v-1.543l-25.926 9.436-0.788-2.166z"/>
     </symbol>
 
     
     
     
-    <symbol id="anl">
+    <symbol id="aol">
       <path d="M32 45.423l26.667-26.846h-53.334l26.667 26.846z"/>
     </symbol>
     
@@ -63,7 +66,7 @@
     
     
     
-    <linearGradient id="bof" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="bpf" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" style="stop-color:#3d3c3b"/>
       <stop offset="1" style="stop-color:#333332"/>
     </linearGradient>
@@ -72,21 +75,21 @@
     
     
 
-    <filter id="bpf" color-interpolation-filters="sRGB">
+    <filter id="bqf" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="0" stdDeviation="0.75"/>
       <feDropShadow dx="0" dy="0" stdDeviation="0.5"/>
       <feDropShadow dx="0" dy="0" stdDeviation="1"/>
     </filter>
 
-    <filter id="tqw" color-interpolation-filters="sRGB">
+    <filter id="trw" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="0" stdDeviation="2" flood-opacity="0.15"/>
     </filter>
-    <filter id="trw" color-interpolation-filters="sRGB">
+    <filter id="tsw" color-interpolation-filters="sRGB">
       <feColorMatrix type="saturate" values="0"/>
     </filter>
 
     
-    <filter id="msw" color-interpolation-filters="sRGB">
+    <filter id="mtw" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="0" stdDeviation="4" flood-opacity="0.2"/>
       <feDropShadow dx="0" dy="6" stdDeviation="16" flood-opacity="0.25"/>
     </filter>
@@ -98,7 +101,7 @@
   
 
   <g transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Segoe UI',Tahoma,sans-serif">
-    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:#1e1e1e;stroke:#2b2b2b;stroke-width:1px;filter:url(#msw)"/>
+    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:#1e1e1e;stroke:#2b2b2b;stroke-width:1px;filter:url(#mtw)"/>
     
       <rect x="2" y="2" width="958" height="59.5" rx="0" style="fill:#000;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
       
@@ -121,13 +124,18 @@
       <rect x="33" y="119" width="894" height="600" rx="0" style="fill:#262626;fill-opacity:1;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:1.7px"/>
       
         <g style="clip-path:none">
-          <rect x="32.2" y="82" width="98" height="40" rx="0" style="fill:#282828;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3px;clip-path:inset(0px 0px 2.3px)"/>
-          <text x="33.7" y="86" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff">Service</text>
+          <rect x="32.2" y="82" width="98" height="40" rx="0" style="fill:#282828;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3px;clip-path:inset(1px 1px 3px)"/>
+          <text x="35.7" y="86" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff">Service</text>
         </g>
         <g style="clip-path:none">
-          <rect x="129.3" y="85" width="136" height="35.7" rx="0" style="fill:#222;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3px;clip-path:inset(0px 0px 2.3px)"/>
-          <text x="119.3" y="87.5" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Transponder</text>
+          <rect x="129.2" y="85" width="137" height="35.7" rx="0" style="fill:#222;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3px;clip-path:inset(1px 1px 3px 3px)"/>
+          <text x="117.7" y="87.5" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Transponder</text>
         </g>
+        <g style="clip-path:none">
+          <rect x="265.2" y="85" width="110" height="35.7" rx="0" style="fill:#222;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3px;clip-path:inset(1px 1px 3px 3px)"/>
+          <text x="254.7" y="87.5" dx="67" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Favourite</text>
+        </g>
+        
       
       
         <rect x="50" y="167" width="437" height="316" rx="2.5" style="fill:none;fill-opacity:1;stroke:#4e4d4d;stroke-opacity:0.5;stroke-width:1.3px"/>
@@ -153,7 +161,7 @@
                     
                     
                     <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,202,340)">
-                      <use href="#anl"/>
+                      <use href="#aol"/>
                     </g>
                   
                 
@@ -193,7 +201,7 @@
                   
                   
                   <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,454,555)">
-                    <use href="#anl"/>
+                    <use href="#aol"/>
                   </g>
                 
               
@@ -212,7 +220,7 @@
                   
                   
                   <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,454,611)">
-                    <use href="#anl"/>
+                    <use href="#aol"/>
                   </g>
                 
               
@@ -281,23 +289,23 @@
                 
               
             </g>
-            <g transform="matrix(0.92,0,0,0.92,77.5,28)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#bpf)">
+            <g transform="matrix(0.92,0,0,0.92,77.5,28)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#bqf)">
               <rect x="862" y="277" width="23" height="236" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0px 1px 0px 0px)"/>
-              <rect x="862.5" y="275.5" width="22" height="22" style="fill:url(#bof);stroke:#4f4f4e;stroke-width:2.4px" rx="0"/>
+              <rect x="862.5" y="275.5" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e;stroke-width:2.4px" rx="0"/>
               
                 
                 <g transform="matrix(0.22,0,0,-0.22,866.3,294)">
-                  <use href="#anl" style="fill:#d3d2d2"/>
+                  <use href="#aol" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="862.5" y="491" width="22" height="22" style="fill:url(#bof);stroke:#4f4f4e;stroke-width:2.4px" rx="0"/>
+              <rect x="862.5" y="491" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e;stroke-width:2.4px" rx="0"/>
               
                 
                 <g transform="matrix(0.22,0,0,0.22,866.3,495.5)">
-                  <use href="#anl" style="fill:#d3d2d2"/>
+                  <use href="#aol" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="862.5" y="300" width="22" height="58" rx="0" style="fill:url(#bof);fill-opacity:1;stroke:#4f4f4e"/>
+              <rect x="862.5" y="300" width="22" height="58" rx="0" style="fill:url(#bpf);fill-opacity:1;stroke:#4f4f4e"/>
             </g>
           
           
@@ -368,7 +376,7 @@
     
     
       
-      <text x="1520" y="128.3" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#fff;opacity:0.97">File Edit Find Tools Window Help</text>
+      <text x="1520" y="128.1" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#fff;opacity:0.97">File Edit Find Tools Window Help</text>
       
     
     
@@ -389,8 +397,8 @@
           
             <rect x="1644" y="161" width="157" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <text x="1644" y="162.5" dx="15" dy="41" style="font-size:19px;fill:#fff">enigma_db</text>
-            <g style="filter:url(#trw);opacity:0.5">
-              <g style="filter:url(#tqw)">
+            <g style="filter:url(#tsw);opacity:0.5">
+              <g style="filter:url(#trw)">
                 <rect rx="3" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="1769.5" y="185"/>
                 <g transform="matrix(0.15,0,0,0.15,1774.5,190)">
                   <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
@@ -401,11 +409,11 @@
           
             <rect x="1801" y="161" width="292" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <g transform="matrix(0.38,0,0,0.38,1813,181)">
-              <use href="#piw" style="fill:#fff"/>
+              <use href="#pkw" style="fill:#fff"/>
             </g>
             <text x="1801" y="162.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Picons <tspan style="font-size:18.43px">…</tspan></text>
-            <g style="filter:url(#trw);opacity:0.5">
-              <g style="filter:url(#tqw)">
+            <g style="filter:url(#tsw);opacity:0.5">
+              <g style="filter:url(#trw)">
                 <rect rx="3" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2062.5" y="185"/>
                 <g transform="matrix(0.15,0,0,0.15,2067.5,190)">
                   <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
@@ -416,8 +424,8 @@
           
             <rect x="2093" y="161" width="154" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <text x="2093" y="162.5" dx="15" dy="41" style="font-size:19px;fill:#fff">neutrino</text>
-            <g style="filter:url(#trw);opacity:0.5">
-              <g style="filter:url(#tqw)">
+            <g style="filter:url(#tsw);opacity:0.5">
+              <g style="filter:url(#trw)">
                 <rect rx="3" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2216.5" y="185"/>
                 <g transform="matrix(0.15,0,0,0.15,2221.5,190)">
                   <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
@@ -428,11 +436,11 @@
           
             <rect x="2247" y="161" width="292" height="69" style="fill:#0078d7;stroke:#0078d7;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <g transform="matrix(0.38,0,0,0.38,2259,181)">
-              <use href="#tmw" style="fill:#fff"/>
+              <use href="#tnw" style="fill:#fff"/>
             </g>
             <text x="2247" y="162.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Edit Set<tspan style="font-size:18.43px">…</tspan></text>
             
-              <g style="filter:url(#tqw)">
+              <g style="filter:url(#trw)">
                 <rect rx="3" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2509.5" y="185"/>
                 <g transform="matrix(0.15,0,0,0.15,2514.5,190)">
                   <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
@@ -446,8 +454,8 @@
               <use href="#cbw" style="fill:#fff"/>
             </g>
             <text x="2539" y="162.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Channe<tspan style="font-size:18.43px">…</tspan></text>
-            <g style="filter:url(#trw);opacity:0.5">
-              <g style="filter:url(#tqw)">
+            <g style="filter:url(#tsw);opacity:0.5">
+              <g style="filter:url(#trw)">
                 <rect rx="3" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2801.5" y="185"/>
                 <g transform="matrix(0.15,0,0,0.15,2806.5,190)">
                   <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
@@ -463,13 +471,13 @@
         
           
             <g transform="matrix(0.38,0,0,0.38,1546,251)">
-              <use href="#ohn" style="fill:#c4c4c4"/>
+              <use href="#fin" style="fill:#c4c4c4"/>
             </g>
             <text x="1530" y="226" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Open</text>
           
           
             <g transform="matrix(0.38,0,0,0.38,1694,251)">
-              <use href="#sje" style="fill:#c4c4c4"/>
+              <use href="#fje" style="fill:#c4c4c4"/>
             </g>
             <text x="1679" y="226" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Save</text>
           
@@ -478,13 +486,13 @@
           
           
             <g transform="matrix(0.38,0,0,0.38,1841,251)">
-              <use href="#igt" style="fill:#c4c4c4"/>
+              <use href="#fgt" style="fill:#c4c4c4"/>
             </g>
             <text x="1825" y="226" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Import</text>
           
           
             <g transform="matrix(0.38,0,0,0.38,2005,251)">
-              <use href="#eft" style="fill:#c4c4c4"/>
+              <use href="#fft" style="fill:#c4c4c4"/>
             </g>
             <text x="1987" y="226" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Export</text>
           
@@ -493,7 +501,7 @@
           
           
             <g transform="matrix(0.38,0,0,0.38,2171,251)">
-              <use href="#sls" style="fill:#c4c4c4"/>
+              <use href="#sms" style="fill:#c4c4c4"/>
             </g>
             <text x="2156" y="226" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Settings</text>
           
@@ -506,7 +514,7 @@
                   
                   
                   <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,2634,267)">
-                    <use href="#anl"/>
+                    <use href="#aol"/>
                   </g>
                 
               
@@ -575,12 +583,12 @@
                 <g transform="matrix(0.25,0,0,0.25,1541,1097)">
                   <use href="#aad" style="fill:#b0b0b0" y="1"/>
                 </g>
-                <text x="1535" y="1081" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#fff">New Position</text>
+                <text x="1535" y="1081" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#fff">Position</text>
               
               
                 <rect x="1778" y="1090" width="110" height="32" rx="0" style="fill:none;stroke:#5d5d5d;stroke-width:2.8px;filter:none"/>
                 <g transform="matrix(0.38,0,0,0.38,1786,1094)">
-                  <use href="#skh" style="fill:#b0b0b0" x="16" y="-1"/>
+                  <use href="#slh" style="fill:#b0b0b0" x="16" y="-1"/>
                 </g>
                 <text x="1766" y="1092" dx="54" dy="22" style="font-size:19.5px;fill:#fff">Find<tspan style="font-size:18.915px">…</tspan></text>
               
@@ -616,40 +624,40 @@
               <rect x="1909" y="409" width="1325" height="687" style="fill:#1e1e1e"/>
               
                 <rect x="1909" y="622" width="1325" height="44" style="fill:#181818"/>
-                <text x="1909" y="412" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10719/V/27500</tspan> <tspan x="2151">10719</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="453" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10728/H/30000</tspan> <tspan x="2151">10728</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="494" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10758/V/27500</tspan> <tspan x="2151">10758</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="412" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10719/V/27500</tspan> <tspan x="2151">10719</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="453" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10728/H/30000</tspan> <tspan x="2151">10728</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="494" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10758/V/27500</tspan> <tspan x="2151">10758</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
                 <text x="1909" y="537" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10775/H/27500</tspan> <tspan x="2151">10775</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
                 <text x="1909" y="579" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10775/H/29900</tspan> <tspan x="2151">10775</tspan> <tspan x="2270">H</tspan> <tspan x="2389">29900</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="622" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10796/V/27500</tspan> <tspan x="2151">10796</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="664" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10815/H/27500</tspan> <tspan x="2151">10815</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="622" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10796/V/27500</tspan> <tspan x="2151">10796</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="664" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10815/H/27500</tspan> <tspan x="2151">10815</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">5/6</tspan> <tspan x="2708">QPSK</tspan></text>
                 <text x="1909" y="708" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10834/V/27500</tspan> <tspan x="2151">10834</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
                 <text x="1909" y="751" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10853/H/29900</tspan> <tspan x="2151">10853</tspan> <tspan x="2270">H</tspan> <tspan x="2389">29900</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="795" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10872/V/27500</tspan> <tspan x="2151">10872</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="837" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10873/V/27500</tspan> <tspan x="2151">10873</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="795" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10872/V/27500</tspan> <tspan x="2151">10872</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="837" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10873/V/27500</tspan> <tspan x="2151">10873</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
                 <text x="1909" y="880" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10892/H/27500</tspan> <tspan x="2151">10892</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="922" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10911/V/27500</tspan> <tspan x="2151">10911</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="964" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10930/H/30000</tspan> <tspan x="2151">10930</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="1005" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10949/V/27500</tspan> <tspan x="2151">10949</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="922" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10911/V/27500</tspan> <tspan x="2151">10911</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="964" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10930/H/30000</tspan> <tspan x="2151">10930</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">2/3</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="1005" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10949/V/27500</tspan> <tspan x="2151">10949</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">2/3</tspan> <tspan x="2708">8PSK</tspan></text>
               
             
-            <g transform="matrix(0.997,0,0,0.997,1435.5,33.5)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#bpf)">
+            <g transform="matrix(0.997,0,0,0.997,1435.5,33.5)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#bqf)">
               <rect x="1784" y="341" width="23" height="651" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0px 1px 0px 0px)"/>
-              <rect x="1784.5" y="341.5" width="22" height="22" style="fill:url(#bof);stroke:#4f4f4e" rx="0"/>
+              <rect x="1784.5" y="341.5" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e" rx="0"/>
               
                 
                 <g transform="matrix(0.22,0,0,-0.22,1788.3,359.5)">
-                  <use href="#anl" style="fill:#d3d2d2"/>
+                  <use href="#aol" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="1784.5" y="969.5" width="22" height="22" style="fill:url(#bof);stroke:#4f4f4e" rx="0"/>
+              <rect x="1784.5" y="969.5" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e" rx="0"/>
               
                 
                 <g transform="matrix(0.22,0,0,0.22,1788.3,974)">
-                  <use href="#anl" style="fill:#d3d2d2"/>
+                  <use href="#aol" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="1784.5" y="366" width="22" height="69" rx="0" style="fill:url(#bof);stroke:#4f4f4e;stroke-opacity:0.8"/>
+              <rect x="1784.5" y="366" width="22" height="69" rx="0" style="fill:url(#bpf);stroke:#4f4f4e;stroke-opacity:0.8"/>
             </g>
           
           
@@ -663,7 +671,7 @@
                   
                   
                   <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,2049,1042)">
-                    <use href="#anl"/>
+                    <use href="#aol"/>
                   </g>
                 
               
@@ -701,12 +709,12 @@
                 <g transform="matrix(0.26,0,0,0.26,1933,1098)">
                   <use href="#aad" style="fill:#b0b0b0" y="1"/>
                 </g>
-                <text x="1928" y="1082" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#fff">New Transponder</text>
+                <text x="1928" y="1082" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#fff">Transponder</text>
               
               
                 <rect x="3113" y="1090" width="110" height="32" rx="0" style="fill:none;stroke:#5d5d5d;stroke-width:2.8px;filter:none"/>
                 <g transform="matrix(0.38,0,0,0.38,3120,1094)">
-                  <use href="#skh" style="fill:#b0b0b0" x="16" y="-1"/>
+                  <use href="#slh" style="fill:#b0b0b0" x="16" y="-1"/>
                 </g>
                 <text x="3108" y="1092" dx="46" dy="22" style="font-size:19.5px;fill:#fff"><tspan style="text-decoration:underline">F</tspan>ind<tspan style="font-size:18.915px">…</tspan></text>
               
@@ -719,10 +727,17 @@
     
       <rect x="1522" y="1172" width="1716" height="48" rx="0" style="fill:none;clip-path:inset(15px 0px 0px)"/>
       <rect x="1520" y="1187" width="1720" height="34" style="fill:none;stroke:#000;stroke-width:2.2px;clip-path:inset(0px 2px 2px)"/>
-      <text x="1509" y="1184" dx="29" dy="29" style="font-size:19px;fill:#fff;opacity:0.97"><tspan>Transponders: 119</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
+      <text x="1509" y="1183" dx="29" dy="29" style="font-size:19px;fill:#fff;opacity:0.97"><tspan>Transponders: 119</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
       
       
-      <text x="1527" y="1184" dx="1593" dy="29" style="font-size:19px;fill:#fff;opacity:0.97"><tspan>Total: 411</tspan></text>
+      <text x="1527" y="1184" dx="1535" dy="29" style="font-size:19px;fill:#fff;opacity:0.97"><tspan>Total: 411</tspan></text>
+      
+      
+      
+        <rect x="3170.2" y="1193" width="36" height="24" style="fill:none;stroke:#5d5d5d;stroke-width:2.8px"/>
+        <g transform="matrix(0.38,0,0,0.38,3176,1193)">
+          <use href="#fho" style="fill:#b0b0b0"/>
+        </g>
       
       <g style="clip-path:inset(0px 27px 27px 0px)">
         <rect x="0" y="0" width="25" height="25" style="fill:#6c6c6c" transform="matrix(-0.8,-1,-1,1,3261,1219)"/>

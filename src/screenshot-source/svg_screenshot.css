@@ -449,10 +449,10 @@
 .w .li-item:nth-child(1) { transform: translate(5px, 1px); }
 .w .li-item:nth-child(2) { transform: translate(0, 1px); }
 .w .li-item:nth-child(3) { transform: translate(-5px, 1px); }
-.w .li-item:nth-child(4) { transform: translate(-10px, 1px); opacity: 0.25 !important; }
+.w .li-item:nth-child(4) { transform: translate(-10px, 1px); opacity: 0.45 !important; }
 .w .li-item:nth-child(5) { transform: translate(-15px, 0); }
 .w .li-divid:nth-child(6) { transform: translate(-30px, 0); }
-.w .li-item:nth-child(7) { transform: translate(-30px, 0); opacity: 0.25 !important; }
+.w .li-item:nth-child(7) { transform: translate(-30px, 0); opacity: 0.45 !important; }
 #piconseditor .w .li-item:nth-child(2) { transform: translate(16px, 2px); }
 #wide .w .li-item:nth-child(2) { transform: translate(20px, 2px); opacity: 1 !important; }
 
@@ -856,7 +856,7 @@
 .f .w-bg { fill: #f9f9f9 !important; stroke: #acc6c3 !important; }
 .f .w-stroke { stroke: #9bb1ab !important; }
 .f .t-bg { y: 81px; height: 48px; fill: #fafafa !important; stroke: #e8e8e8 !important; stroke-width: 2px !important; clip-path: inset(1px 1px 0px) !important; }
-.f .t-stroke { y: 127px; stroke: #cbcdcc !important; stroke-width: 2px !important; clip-path: inset(0 1px); }
+.f .t-stroke { y: 127px; stroke: #cbcdcc !important; stroke-width: 2px !important; clip-path: inset(0 1px 1.1px); }
 #editor .f .t-bg { x: 81px; width: 1718px; }
 #piconseditor .f .t-bg { x: 501px; width: 1298px; }
 
@@ -1335,7 +1335,7 @@
 .df .find-bg { fill: #2a2a29 !important; }
 .df .find-h-bg { fill: #0d4867 !important; stroke: #2a2a29 !important; }
 
-.df .t-stroke { stroke: #222020 !important; }
+.df .t-stroke { stroke: #222020 !important; clip-path: inset(0 1px); }
 .df #mb-stroke, .df #sb-stroke { stroke: #1d1c1c !important; }
 .df #menu-stroke { stroke: #fff !important; stroke-opacity: 0.09 !important; }
 .df #main-stroke { stroke: #fff !important; stroke-opacity: 0.05 !important; }
@@ -1440,6 +1440,7 @@
 #piconseditor .list .sbh, #piconseditor .sbr { display: none !important; }
 
 .disabled { opacity: 0.25; }
+.w .disabled { opacity: 0.45; }
 
 
 

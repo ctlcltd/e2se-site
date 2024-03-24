@@ -9,15 +9,13 @@
     
     
     
-    <symbol id="ebt">
+    <symbol id="fbt">
       <path d="M56.256 31.057h-42.438c-7.074 0-12.818 5.744-12.818 12.818v61.295c0 7.074 5.744 12.818 12.818 12.818h54.476c7.075 0 12.818-5.744 12.818-12.818v-51.051c-16.616 14.040-16.649 30.281-17.025 36.965-0.151 2.687-1.869 5.034-4.385 5.99s-5.359 0.343-7.257-1.565c-14.421-14.502-16.181-43.133 3.811-64.452zM57.293 90.694c-14.624-14.705-13.039-45.988 15.234-64.344l-10.365-12.362 42.838 1.084-7.263 41.344-11.808-14.082c-28.127 16.992-28.15 39.728-28.636 48.36z"/>
     </symbol>
     
     <symbol id="lcu">
       <path d="M56.25 57.423c0-2.388-1.939-4.327-4.327-4.327h-39.846c-2.388 0-4.327 1.939-4.327 4.327s1.939 4.327 4.327 4.327c0 0 39.846 0 39.846 0 2.388 0 4.327-1.939 4.327-4.327zM56.25 44.903c0-2.389-1.939-4.328-4.327-4.328h-39.846c-2.388 0-4.327 1.939-4.327 4.328 0 2.388 1.939 4.327 4.327 4.327 0 0 39.846 0 39.846 0 2.388 0 4.327-1.939 4.327-4.327zM56.25 32.382c0-2.388-1.939-4.327-4.327-4.327h-39.846c-2.388 0-4.327 1.939-4.327 4.327s1.939 4.327 4.327 4.327h39.846c2.388 0 4.327-1.939 4.327-4.327zM13.803 19.471v3.446h10.579v-5.844c0.837-0.373 1.624-0.848 2.343-1.41 2.237-1.745 3.347-4.068 3.371-6.392s-1.039-4.671-3.239-6.471v0c-0.887-0.725-1.951-1.273-3.024-1.702l-1.372 0.918-0.062 6.154c-0.003 0.286-0.167 0.503-0.402 0.659-0.376 0.249-0.899 0.364-1.472 0.364h-2.85c-0.565-0.008-1.082-0.142-1.452-0.406-0.242-0.173-0.413-0.406-0.41-0.702 0 0 0.062-6.155 0.062-6.155l-1.348-0.947c-1.083 0.403-2.158 0.924-3.060 1.628-2.237 1.746-3.347 4.068-3.371 6.392-0.023 2.323 1.039 4.671 3.239 6.471 0.725 0.593 1.567 1.067 2.437 1.454 0.016 0.617 0.026 1.607 0.031 2.543z"/>
     </symbol>
-    
-    
     
     <symbol id="sdh">
       <path d="M40.023 45.152c-3.477 2.591-7.729 4.192-12.407 4.221-10.406 0.066-20.276-8.26-21.806-18.699-1.731-11.814 7.58-24.164 20.12-25.040 0.561-0.039 1.124-0.055 1.686-0.053 10 0.095 19.38 7.75 21.337 17.619 1.156 5.829-0.437 11.92-3.87 16.758l13.82 13.819-5.128 5.128-13.752-13.753zM27.395 14.645c-6.236 0.060-12 5.17-12.677 11.431-0.588 5.436 2.691 11.076 7.773 13.229 6.62 2.806 15.346-1.167 17.352-8.391 2.055-7.404-3.759-16.031-12.032-16.265-0.139-0.003-0.278-0.004-0.416-0.004z"/>
@@ -92,7 +90,7 @@
             
             
               <g transform="matrix(0.38,0,0,0.38,575,214)">
-                <use href="#ebt" style="fill:#505050"/>
+                <use href="#fbt" style="fill:#505050"/>
               </g>
               <text x="557" y="189" dx="69" dy="59" style="font-size:26.5px;fill:#000">Export</text>
             
@@ -177,11 +175,11 @@
                   <text x="469" y="804" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">47</tspan> <tspan x="572">Super!</tspan></text>
                   <text x="469" y="853" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">48</tspan> <tspan x="572">Rai News 24 HD</tspan></text>
                   <text x="469" y="901" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">49</tspan> <tspan x="572">Mediaset Italia2 HD</tspan></text>
-                  <text x="469" y="950" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">50</tspan> <tspan x="572">Explorer HD Channel</tspan> <tspan x="982">13534</tspan> <tspan x="1106">6900</tspan> <tspan x="1227">HD</tspan> <tspan x="1425">SkyItalia</tspan> <tspan x="1695">DVB-S</tspan></text>
+                  <text x="469" y="949" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">50</tspan> <tspan x="572">Sky TG24</tspan> <tspan x="982">90</tspan> <tspan x="1106">512</tspan> <tspan x="1227">H.264</tspan> <tspan x="1425">Persidera</tspan> <tspan x="1695">DVB-T</tspan></text>
                   
                 
               
-              <g style="clip-path:inset(2px 2px 2px 0px)">
+              <g style="clip-path:inset(3px 3px 2px 0.5px)">
                 <rect x="1773" y="334" width="28" height="678" style="fill:#f0f0f0;stroke:#fff;stroke-width:3px"/>
                 <rect x="1774.5" y="336" width="23" height="26" style="fill:none;stroke-width:0px" rx="0"/>
                 
@@ -199,7 +197,7 @@
                 
                 <rect x="1774.5" y="504" width="23" height="38" rx="0" style="fill:#cdcdcd"/>
               </g>
-              <g style="clip-path:inset(0px 2px 2px)">
+              <g style="clip-path:inset(2px 3px 2px 4.5px)">
                 <rect x="467" y="1007" width="1334" height="28" style="fill:#f0f0f0;stroke:#fff;stroke-width:3px"/>
                 <rect x="469" y="1008.5" width="26" height="23" style="fill:none;stroke-width:0px" rx="0"/>
                 
@@ -228,28 +226,36 @@
                   <g transform="matrix(0.26,0,0,0.26,493,1056)">
                     <use href="#aad" style="fill:#505050" y="1"/>
                   </g>
-                  <text x="488" y="1040" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Add Channel</text>
+                  <text x="488" y="1040" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Channel</text>
                 
                 
-                  <g transform="matrix(0.26,0,0,0.26,675,1056)">
+                  <g transform="matrix(0.26,0,0,0.26,621,1056)">
                     <use href="#aad" style="fill:#505050" y="1"/>
                   </g>
-                  <text x="671" y="1040" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Add Marker</text>
+                  <text x="617" y="1040" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Stream</text>
+                
+                
+                  <g transform="matrix(0.26,0,0,0.26,737,1056)">
+                    <use href="#aad" style="fill:#505050" y="1"/>
+                  </g>
+                  <text x="733" y="1040" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Marker</text>
                 
                 <g style="opacity:0.45">
-                  <g transform="matrix(0.26,0,0,0.26,846,1056)">
+                  <g transform="matrix(0.26,0,0,0.26,853,1056)">
                     <use href="#aad" style="fill:#505050" y="1"/>
                   </g>
-                  <text x="841" y="1040" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">New Service</text>
+                  <text x="848" y="1040" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Service</text>
                 </g>
                 
-                  <rect x="1020" y="1047" width="118" height="32" rx="0" style="fill:#e1e1e1;stroke:#a3a3a3;stroke-width:1.2px;filter:none"/>
-                  <text x="1014" y="1047" dx="22" dy="22" style="font-size:19.5px;fill:#000" width="118">Reference</text>
+                  <rect x="974" y="1047" width="118" height="32" rx="0" style="fill:#e1e1e1;stroke:#a3a3a3;stroke-width:1.2px;filter:none"/>
+                  <text x="968" y="1047" dx="22" dy="22" style="font-size:19.5px;fill:#000" width="118">Reference</text>
                 
+                
+                  <rect x="1107" y="1050" width="1.2" height="30" style="fill:#d0d0d0"/>
                 
                 <g style="opacity:0.45">
-                  <rect x="1170" y="1047" width="122" height="32" rx="0" style="fill:#e1e1e1;stroke:#a3a3a3;stroke-width:1.2px;filter:none"/>
-                  <text x="1155" y="1047" dx="25" dy="22" style="font-size:19.5px;fill:#000" width="122">Drag&amp;Drop</text>
+                  <rect x="1123" y="1047" width="122" height="32" rx="0" style="fill:#e1e1e1;stroke:#a3a3a3;stroke-width:1.2px;filter:none"/>
+                  <text x="1108" y="1047" dx="25" dy="22" style="font-size:19.5px;fill:#000" width="122">Drag&amp;Drop</text>
                 </g>
                 
                   <rect x="1673" y="1048" width="110" height="32" rx="0" style="fill:#e1e1e1;stroke:#a3a3a3;stroke-width:1.2px;filter:none"/>
@@ -338,7 +344,7 @@
               <text x="252" y="542" dy="29" style="font-size:19.5px">Radio RTR</text>
             
           
-          <g style="clip-path:inset(2px 2px 2px 0px)">
+          <g style="clip-path:inset(3px 3px 2px 0.5px)">
             <rect x="469" y="73" width="28" height="511" style="fill:#f0f0f0;stroke:#fff;stroke-width:3px"/>
             <rect x="470.5" y="73" width="23" height="26" style="fill:none;stroke-width:0px" rx="0"/>
             
@@ -391,7 +397,7 @@
               
             
           
-          <g style="clip-path:inset(2px 2px 2px 0px)">
+          <g style="clip-path:inset(3px 3px 2px 0.5px)">
             <rect x="1036" y="73" width="28" height="511" style="fill:#f0f0f0;stroke:#fff;stroke-width:3px"/>
             <rect x="1037.5" y="73" width="23" height="26" style="fill:none;stroke-width:0px" rx="0"/>
             
@@ -409,7 +415,7 @@
             
             <rect x="1037.5" y="100" width="23" height="48" rx="0" style="fill:#cdcdcd;fill-opacity:1"/>
           </g>
-          <g style="clip-path:inset(0px 2px 2px)">
+          <g style="clip-path:inset(2px 3px 2px 4.5px)">
             <rect x="500" y="557.5" width="559" height="28" style="fill:#f0f0f0;stroke:#fff;stroke-width:3px"/>
             <rect x="500" y="559" width="26" height="23" style="fill:none;stroke-width:0px" rx="0"/>
             
