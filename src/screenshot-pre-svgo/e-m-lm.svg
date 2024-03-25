@@ -504,7 +504,7 @@
               
             
             
-              <rect x="656" y="1003" width="208" height="33" rx="0" style="fill:#fff;stroke:#d1d2d2;stroke-width:2.4px;clip-path:inset(1px 1px 0.2px)"/>
+              <rect x="656" y="1003" width="208" height="33" rx="0" style="fill:#fff;stroke:#d1d2d2;stroke-width:2.4px;clip-path:inset(1.8px 1.8px 0.4px)"/>
               <text x="656" y="1003" dx="4" dy="23" style="font-size:19px;fill:#000">riba</text>
             
             
@@ -533,7 +533,7 @@
             
               
                 <text x="509" y="1072" dx="4" dy="23" style="font-size:19px;fill:#000">Folder</text>
-                <rect x="580" y="1072" width="208" height="33" rx="0" style="fill:#fff;stroke:#d1d2d2;stroke-width:2.8px;clip-path:inset(1px 1px 0.3px)"/>
+                <rect x="580" y="1072" width="208" height="33" rx="0" style="fill:#fff;stroke:#d1d2d2;stroke-width:2.8px;clip-path:inset(2px 2px 0.8px)"/>
                 <rect x="800" y="1072" width="126" height="32" rx="8" style="fill:#fff;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
                 <text x="800" y="1072" dx="24" dy="22" style="font-size:20px;fill:#000">Browse<tspan style="font-size:15px">…</tspan></text>
               

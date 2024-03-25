@@ -37,8 +37,8 @@
 
 .dm .btn-bg { fill: #fff !important; fill-opacity: 0.24 !important; stroke: url(#btn-stroke-d-m) !important; }
 .dm .btn-bg { filter: url(#btn-shadow-d-m) !important; }
-.dm .input-bg { fill: #fff !important; fill-opacity: 0.08 !important; stroke: #fff !important; stroke-opacity: 0.11 !important; }
-#piconseditor .dm #list-tool .input-bg { fill-opacity: 0 !important; stroke-opacity: 0.13 !important; }
+.dm .input-bg { fill: #fff !important; fill-opacity: 0.08 !important; stroke: #fff !important; stroke-opacity: 0.11 !important; stroke-width: 4px !important; clip-path: inset(3px 3px 0.4px) !important; }
+#piconseditor .dm #list-tool .input-bg { fill-opacity: 0 !important; stroke-opacity: 0.13 !important; clip-path: inset(2.8px 2.8px 0.4px) !important; }
 
 .dm .tb-button rect { fill: url(#btn-bg-d-m) !important; }
 .dm .find-bg, .dm .list-cols .bg { fill: #323232 !important; }
@@ -102,7 +102,7 @@
 #wide .dm .tab-item rect { fill: #636565 !important; stroke: url(#btn-stroke-d-m) !important; }
 #wide .dm .tab-item.active rect { fill: url(#btn-bg-a-d-m) !important; }
 
-#wide .dm#editservice .input-bg { fill: #222 !important; fill-opacity: 1 !important; stroke-opacity: 0.21 !important; }
+#wide .dm#editservice .input-bg { fill: #222 !important; fill-opacity: 1 !important; stroke-opacity: 0.21 !important; stroke-width: 4px !important; clip-path: inset(3.3px 3.3px 1.8px) !important; }
 
 #wide .dm #editservice-custom .btn-bg { fill: url(#btn-bg-a-d-m) !important; fill-opacity: 1 !important; stroke: url(#btn-stroke-d-m) !important; stroke-width: 1px !important; filter: none !important; }
 #wide .dm #editservice-custom .btn-txt { fill-opacity: 1 !important; }
@@ -1083,11 +1083,12 @@
 #channelbook .f #tree .sbv .ve { y: 1016px; }
 #channelbook .f #tree .sbv .xy { height: 308px; }
 #channelbook .f #tree .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 448, 1014); }
-#channelbook .f .list .sbh { transform: translate(0, 16px); }
+#channelbook .f .list .sbh { transform: translate(-1px, 16px); clip-path: inset(-1px 4px 0 0) !important; }
+#channelbook .f .list .sbv { transform: matrix(0.997, 0, 0, 0.997, -1.5, 0.5); }
 #channelbook .f .list .sbv .bg { height: 696px; }
 #channelbook .f .list .sbv .ve { y: 994px; }
 #channelbook .f .list .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 991); }
-#channelbook .f .list .sbr { y: 1013px; }
+#channelbook .f .list .sbr { x: 1776px; y: 1013px; }
 
 #channelbook .f #ch-start .sbv { transform: translate(-5px, 0); }
 #channelbook .f #ch-start .sbv .ve { transform: translate(0, -7px); }
@@ -1347,6 +1348,7 @@
 .df .menu-item .ico use { fill: #c4c4c4 !important; }
 .df #split-start .ico use { fill: #c4c4c4 !important; }
 .df #split-end .ico use, #piconseditor .df #main .ico use, .df .ch-item .ico use, .df #btn-collapse .arrow use { fill: #c4c4c4 !important; }
+.df #btn-collapse .box-button { transform: translate(-17px, 4.5px); }
 .df #btn-collapse .txt { fill: #fff !important; }
 
 .df #tb-arrows { transform: translate(1px, 0); }

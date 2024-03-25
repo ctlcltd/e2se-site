@@ -509,7 +509,7 @@
               
             
             
-              <rect x="627" y="1003" width="208" height="33" rx="0" style="fill:#fff;stroke:#d1d2d2;stroke-width:2.4px;clip-path:inset(1px 1px 0.2px)"/>
+              <rect x="627" y="1003" width="208" height="33" rx="0" style="fill:#fff;stroke:#d1d2d2;stroke-width:2.4px;clip-path:inset(1.8px 1.8px 0.4px)"/>
               <text x="627" y="1003" dx="4" dy="23" style="font-size:19px;fill:#000">Nasa</text>
             
             

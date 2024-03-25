@@ -306,15 +306,15 @@
     
       
         
-          <rect x="923" y="49.5" width="138" height="26" rx="3" style="fill:url(#bhf);stroke:url(#bjf);filter:url(#bkf)"/>
+          <rect x="923" y="48.5" width="138" height="26" rx="3" style="fill:url(#bhf);stroke:url(#bjf);filter:url(#bkf)"/>
           
             
             
-            <g style="fill:#676767" transform="matrix(-0.22,0,0,-0.22,941,69.5)">
+            <g style="fill:#676767" transform="matrix(-0.22,0,0,-0.22,941,68.5)">
               <use href="#afl" style="fill:#c4c4c4"/>
             </g>
           
-          <text x="946" y="53.5" dy="15" style="font-weight:normal;font-size:16.5px;fill:#fff">collapse</text>
+          <text x="946" y="52.5" dy="15" style="font-weight:normal;font-size:16.5px;fill:#fff">collapse</text>
         
       
       

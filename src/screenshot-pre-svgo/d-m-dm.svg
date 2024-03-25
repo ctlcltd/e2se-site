@@ -141,7 +141,7 @@
           
             <text x="87" y="150" dy="22" style="font-size:19.5px;fill:#fff">Service name</text>
             
-              <rect x="87" y="187" width="346" height="33" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)"/>
+              <rect x="87" y="187" width="346" height="33" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:4px;clip-path:inset(3.3px 3.3px 1.8px)"/>
               <text x="87" y="187" dx="4" dy="23" style="font-size:19px;fill:#fff">NASA TV HD</text>
             
           
@@ -177,7 +177,7 @@
           
             <text x="87" y="365" dy="22" style="font-size:19.5px;fill:#fff">Service ID</text>
             
-              <rect x="87" y="401" width="87" height="33" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)"/>
+              <rect x="87" y="401" width="87" height="33" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:4px;clip-path:inset(3.3px 3.3px 1.8px)"/>
               <text x="87" y="401" dx="4" dy="23" style="font-size:19px;fill:#fff">504</text>
               <text x="188" y="401" dy="23" style="font-size:19.5px;fill:#fff">[SID]</text>
             
@@ -272,7 +272,7 @@
               
                 <text x="632" y="295" dy="22" style="font-size:19.5px;fill:#fff">video</text>
                 
-                  <rect x="691" y="294" width="70" height="31" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)"/>
+                  <rect x="691" y="294" width="70" height="31" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:4px;clip-path:inset(3.3px 3.3px 1.8px)"/>
                   <text x="691" y="294" dx="4" dy="23" style="font-size:19px;fill:#fff">5041</text>
                   <text x="775" y="294" dy="23" style="font-size:19px;fill:#fff">[VPID]</text>
                 
@@ -280,7 +280,7 @@
               
                 <text x="574" y="340" dy="22" style="font-size:19.5px;fill:#fff">mpeg-audio</text>
                 
-                  <rect x="691" y="339" width="70" height="31" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)"/>
+                  <rect x="691" y="339" width="70" height="31" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:4px;clip-path:inset(3.3px 3.3px 1.8px)"/>
                   <text x="691" y="339" dx="4" dy="23" style="font-size:19px;fill:#fff">8191</text>
                   <text x="775" y="339" dy="23" style="font-size:19px;fill:#fff">[APID]</text>
                 
@@ -288,14 +288,14 @@
               
                 <text x="660" y="384" dy="22" style="font-size:19.5px;fill:#fff">tp</text>
                 
-                  <rect x="691" y="383" width="70" height="31" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)"/>
+                  <rect x="691" y="383" width="70" height="31" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:4px;clip-path:inset(3.3px 3.3px 1.8px)"/>
                   <text x="775" y="383" dy="23" style="font-size:19px;fill:#fff">[TXTPID]</text>
                 
               
               
                 <text x="650" y="429" dy="22" style="font-size:19.5px;fill:#fff">pcr</text>
                 
-                  <rect x="691" y="428" width="70" height="31" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)"/>
+                  <rect x="691" y="428" width="70" height="31" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:4px;clip-path:inset(3.3px 3.3px 1.8px)"/>
                   <text x="691" y="428" dx="4" dy="23" style="font-size:19px;fill:#fff">5041</text>
                   <text x="775" y="428" dy="23" style="font-size:19px;fill:#fff">[PCRPID]</text>
                 
@@ -303,7 +303,7 @@
               
                 <text x="650" y="473" dy="22" style="font-size:19.5px;fill:#fff">ac3</text>
                 
-                  <rect x="691" y="472" width="70" height="31" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:3.4px;clip-path:inset(1.6px 1.6px 1.2px)"/>
+                  <rect x="691" y="472" width="70" height="31" rx="0" style="fill:#222;stroke:#fff;stroke-opacity:0.21;stroke-width:4px;clip-path:inset(3.3px 3.3px 1.8px)"/>
                   <text x="775" y="472" dy="23" style="font-size:19px;fill:#fff">[AC3PID]</text>
                 
               
@@ -653,7 +653,7 @@
                 <text x="1913" y="834" dy="29" style="font-size:19px;fill:#fff"><tspan x="1924">10892/H/27500</tspan> <tspan x="2159">10892</tspan> <tspan x="2278">H</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S</tspan> <tspan x="2618">Auto</tspan> <tspan x="2716">Auto</tspan></text>
                 <text x="1913" y="876" dy="29" style="font-size:19px;fill:#fff"><tspan x="1924">10911/V/27500</tspan> <tspan x="2159">10911</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S2</tspan> <tspan x="2618">3/4</tspan> <tspan x="2716">8PSK</tspan></text>
                 <text x="1913" y="918" dy="29" style="font-size:19px;fill:#fff"><tspan x="1924">10930/H/30000</tspan> <tspan x="2159">10930</tspan> <tspan x="2278">H</tspan> <tspan x="2397">30000</tspan> <tspan x="2515">DVB-S2</tspan> <tspan x="2618">2/3</tspan> <tspan x="2716">8PSK</tspan></text>
-                <text x="1913" y="959" dy="29" style="font-size:19px;fill:#fff"><tspan x="1924">10949/V/27500</tspan> <tspan x="2159">10949</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S2</tspan> <tspan x="2618">2/3</tspan> <tspan x="2716">8PSK</tspan></text>
+                <text x="1913" y="958" dy="29" style="font-size:19px;fill:#fff"><tspan x="1924">10949/V/27500</tspan> <tspan x="2159">10949</tspan> <tspan x="2278">V</tspan> <tspan x="2397">27500</tspan> <tspan x="2515">DVB-S2</tspan> <tspan x="2618">2/3</tspan> <tspan x="2716">8PSK</tspan></text>
               
             
             
@@ -687,7 +687,7 @@
               
             
             
-              <rect x="2107" y="1003" width="208" height="33" rx="0" style="fill:#fff;fill-opacity:0.08;stroke:#fff;stroke-opacity:0.11;stroke-width:2.4px;clip-path:inset(1px 1px 0.2px)"/>
+              <rect x="2107" y="1003" width="208" height="33" rx="0" style="fill:#fff;fill-opacity:0.08;stroke:#fff;stroke-opacity:0.11;stroke-width:4px;clip-path:inset(3px 3px 0.4px)"/>
               <text x="2107" y="1003" dx="4" dy="23" style="font-size:19px;fill:#fff">10796/V</text>
             
             
