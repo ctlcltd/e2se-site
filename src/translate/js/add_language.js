@@ -1,11 +1,12 @@
 /* translate/add_language.js */
 
 function add_language(uri, search) {
-  console.log('add_language()');
+  // console.log('add_language()');
 
   const doc = document;
   doc.title = 'Add language - Translations';
   doc.description.setAttribute('content', 'Add a new language to translations');
+  urlc(uri, search);
 
   const page = doc.getElementById('page');
   const source = doc.querySelector('.add-language');
@@ -42,23 +43,21 @@ function add_language(uri, search) {
 
   const form = view.querySelector('form');
 
-  function allowSubmit(evt) {
-    console.log('allowSubmit');
-
+  function check_submit() {
     try {
       let storage;
       for (const lang in languages) {
         const tr_key = 'tr-' + lang;
         if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
-          if (Object.keys(storage).length > 1) {
+          if (Object.keys(storage).length != 0) {
             message('editprev');
             break;
           }
         }
       }
     } catch (err) {
-      console.error('allowSubmit', err);
+      console.error('check_submit', err);
     }
   }
 
@@ -316,7 +315,7 @@ function add_language(uri, search) {
     doc.querySelector('.submit-form').classList.add('placeholder');
 
     render_form(data);
-    allowSubmit();
+    check_submit();
   }
 
   function unload() {

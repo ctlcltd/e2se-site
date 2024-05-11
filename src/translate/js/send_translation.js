@@ -1,7 +1,7 @@
 /* translate/send_translation.js */
 
 function send_translation() {
-  console.log('send_translation()');
+  // console.log('send_translation()');
 
   const doc = document;
   const page = doc.getElementById('page');
@@ -25,7 +25,7 @@ function send_translation() {
         const obj = languages[lang];
         if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
-          if (Object.keys(storage).length > 1) {
+          if (Object.keys(storage).length != 0) {
             translation = storage;
             lang_code = lang;
             lang_guid = obj.guid;
@@ -136,21 +136,21 @@ function send_translation() {
     send_unlock();
   }
 
-  function allowSubmit(evt) {
+  function check_submit() {
     try {
       let storage;
       for (const lang in languages) {
         const tr_key = 'tr-' + lang;
         if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
-          if (Object.keys(storage).length > 1) {
+          if (Object.keys(storage).length != 0) {
             page_view();
             break;
           }
         }
       }
     } catch (err) {
-      console.error('allowSubmit', err);
+      console.error('check_submit', err);
     }
   }
 
@@ -237,7 +237,7 @@ function send_translation() {
     page.removeEventListener('unload', unload);
   }
 
-  allowSubmit();
+  check_submit();
 }
 
 function form_submit() {

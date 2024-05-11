@@ -276,6 +276,9 @@ table.placeholder tbody tr:not(tbody:first-child) {
 #main th:last-of-type {
   font-weight: bold;
 }
+#main table td:nth-child(1) {
+  font-style: italic;
+}
 
 tbody td:nth-child(2) {
   font-size: .82rem;
@@ -336,10 +339,12 @@ label {
 .level {
   position: relative;
   display: block;
-  width: 70px;
+  min-width: 70px;
+  width: 7vw;
   height: 18px;
   background: #f0f0f0;
   box-shadow: inset 0 0 1px currentColor;
+  filter: opacity(.72);
 
   &:before {
     content: "";
@@ -357,11 +362,21 @@ label {
     width: 0 !important;
   }
   [data-rendered] &:before {
-    width: calc(.8 * var(--completed));
+    width: calc(.95 * var(--completed));
   }
 }
 .dark {
   .level { background: #222; }
+}
+.revised .level {
+  filter: none;
+}
+
+span.revised {
+  text-transform: uppercase;
+}
+.revised span.revised {
+  font-size: 95%;
 }
 
 .message-box {
@@ -429,10 +444,21 @@ label {
   }
 
   main {
-    padding: 0 5rem 4rem;
+    padding: 0 0 4rem;
   }
-  main > div:first-child {
+
+  #main > div:first-child {
+    padding: 3rem 1rem 1.5rem;
+  }
+  #edit-translate > div:first-child {
     padding: 3rem 0 1.5rem;
+  }
+  #add-language > div:first-child {
+    padding: 3rem 5rem 1.5rem;
+  }
+
+  h2 {
+    padding: 0 1rem;
   }
 
   #footer {
@@ -458,10 +484,10 @@ label {
     position: fixed;
   }
   .ctrbar > div:first-child {
-    inset-inline-start: 5rem;
+    inset-inline-start: 1rem;
   }
   .ctrbar > div:last-child {
-    inset-inline-end: 5rem;
+    inset-inline-end: 1rem;
   }
 
   .ctrbar-head { background: #fff; }

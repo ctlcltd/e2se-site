@@ -1,11 +1,12 @@
 /* translate/main.js */
 
 function main() {
-  console.log('main()');
+  // console.log('main()');
 
   const doc = document;
   doc.title = 'Translations';
   doc.description.setAttribute('content', 'Translation website for e2 SAT Editor');
+  urlc();
 
   const view = doc.getElementById('main');
 
@@ -29,7 +30,7 @@ function main() {
     return false;
   }
 
-  function allowSubmit() {
+  function check_submit() {
     if (! doc.getElementById('ctrbar-submit-form').hasAttribute('hidden')) {
       return;
     }
@@ -39,7 +40,7 @@ function main() {
         const tr_key = 'tr-' + lang;
         if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
-          if (Object.keys(storage).length > 1) {
+          if (Object.keys(storage).length != 0) {
             doc.getElementById('ctrbar-add-language').setAttribute('hidden', '');
             doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
             doc.querySelector('.submit-form').classList.remove('placeholder');
@@ -48,25 +49,31 @@ function main() {
         }
       }
     } catch (err) {
-      console.error('allowSubmit', err);
+      console.error('check_submit', err);
     }
   }
 
-  function render_row(td, field, text) {
+  function render_row(td, field, obj) {
     if (field == 'completed') {
       if (! td._element) {
         const level = doc.createElement('span');
         level.className = 'level';
-        level.title = text.toString() + '%';
-        level.dataset.completed = text.toString();
-        level.style = '--completed: ' + text.toString() + '%;';
+        level.title = obj.toString() + '%';
+        level.dataset.completed = obj.toString();
+        level.style = '--completed: ' + obj.toString() + '%;';
         td.append(level);
         td._element = level;
       }
     } else if (field == 'revised') {
-      td.innerText = text ? 'yes' : 'none';
-    } else if (text) {
-      td.innerText = text.toString();
+      if (! td._element) {
+        const revised = doc.createElement('span');
+        revised.className = 'revised';
+        revised.innerText = obj ? 'yes' : 'none';
+        td.append(revised);
+        td._element = revised;
+      }
+    } else if (obj) {
+      td.innerText = obj.toString();
     }
   }
 
@@ -103,7 +110,7 @@ function main() {
 
       for (const field in fields) {
         if (field in fields) {
-          const text = data[i][field];
+          const obj = data[i][field];
 
           const td_i = Object.keys(fields).indexOf(field);
           const el_td = tr.children.item(td_i);
@@ -112,10 +119,15 @@ function main() {
 
           if (! td.hasAttribute('data-rendered')) {
             td._parent = tr;
-            render_row(td, field, text);
+            render_row(td, field, obj);
             td.setAttribute('data-rendered', '');
           } else if (field in data[i]) {
-            render_row(td, field, text);
+            render_row(td, field, obj);
+          }
+
+          // revised
+          if (field == 'revised' && obj) {
+            tr.classList.add('revised');
           }
 
           if (! el_td) {
@@ -167,7 +179,7 @@ function main() {
       table.setAttribute('data-loading', '');
       render_table(languages);
     }
-    allowSubmit();
+    check_submit();
     setTimeout(function() {
       animation();
     }, 300);

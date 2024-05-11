@@ -14,7 +14,7 @@ function resume_translation(token) {
         const tr_key = 'tr-' + lang;
         if (storage = localStorage.getItem(tr_key)) {
           storage = JSON.parse(storage);
-          if (Object.keys(storage).length > 1) {
+          if (Object.keys(storage).length != 0) {
             allow = false;
             break;
           }

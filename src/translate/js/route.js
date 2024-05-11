@@ -25,7 +25,7 @@ function route(href, title) {
     }
   }
 
-  console.info('route', { qs, uri, search });
+  // console.info('route', { qs, uri, search });
 
   for (const view of views) {
     if (view._cloned) {

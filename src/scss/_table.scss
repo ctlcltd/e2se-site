@@ -36,6 +36,9 @@ thead button {
   text-transform: inherit;
   color: inherit;
   background: inherit;
+  box-shadow: inset 0 0 0 .09rem $button-shadow-color;
+  &:hover { box-shadow: inset 0 0 .03rem .09rem $button-shadow-color-hover; }
+  &:focus { box-shadow: inset 0 0 0 .09rem $button-shadow-color-focus; }
 }
 th[data-sort-column] button:after {
   content: "";

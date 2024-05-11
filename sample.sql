@@ -45,6 +45,14 @@ CREATE TABLE IF NOT EXISTS `e2se_log` (
   `log_epoch` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+CREATE TABLE IF NOT EXISTS `e2se_notes` (
+  `ts_guid` varchar(32) NOT NULL,
+  `lang_id` int(21) NOT NULL,
+  `ts_notes` text NOT NULL,
+  `tr_notes` text NOT NULL,
+  KEY `ts_guid` (`ts_guid`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 CREATE TABLE IF NOT EXISTS `e2se_saved` (
   `saved_id` bigint(21) UNSIGNED NOT NULL AUTO_INCREMENT,
   `saved_token` varchar(100) NOT NULL,
@@ -64,7 +72,6 @@ CREATE TABLE IF NOT EXISTS `e2se_tr` (
   `tr_line` int(11) UNSIGNED NOT NULL,
   `tr_status` tinyint(1) UNSIGNED NOT NULL,
   `tr_revised` tinyint(3) UNSIGNED NOT NULL,
-  `tr_notes` text NOT NULL,
   PRIMARY KEY (`tr_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -77,8 +84,7 @@ CREATE TABLE IF NOT EXISTS `e2se_ts` (
   `ts_msg_extra` varchar(255) NOT NULL,
   `ts_msg_numerus` tinyint(1) UNSIGNED NOT NULL,
   `ts_line` int(11) UNSIGNED NOT NULL,
-  `ts_status` tinyint(1) NOT NULL,
-  `ts_notes` text NOT NULL,
+  `ts_update` tinyint(1) NOT NULL,
   PRIMARY KEY (`ts_id`),
   UNIQUE KEY `ts_guid` (`ts_guid`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

@@ -1,12 +1,13 @@
 /* translate/edit_translate.js */
 
 function edit_translate(uri, search) {
-  console.log('edit_translate()');
+  // console.log('edit_translate()');
 
   const doc = document;
   const body = doc.body;
   doc.title = 'Edit - Translations';
   doc.description.setAttribute('content', 'Edit translation strings of a language');
+  urlc(uri, search);
 
   const page = doc.getElementById('page');
   const source = doc.querySelector('.edit-translate');
@@ -20,13 +21,13 @@ function edit_translate(uri, search) {
   const heading = view.querySelector('h2');
 
   const fields = {
-    'ctx_name': 'Node',
+    'ctx_name': 'Context',
     'msg_src': 'Source',
     'msg_tr': 'Translation',
     'disambigua': 'Disambiguation',
     'notes': 'Notes',
     'msg_extra': 'Comment',
-    'msg_comment': 'Context',
+    'msg_comment': 'Label',
     'status': 'Status'
   };
   const notes = {
@@ -189,32 +190,49 @@ function edit_translate(uri, search) {
 
   const _textInput = debounce(textInput, false, 50);
 
-  function allowSubmit(evt) {
-    console.log('allowSubmit');
-
-    if (doc.getElementById('ctrbar-submit-form').hasAttribute('hidden') && Object.keys(storage).length > 1) {
+  function check_submit() {
+    if (doc.getElementById('ctrbar-submit-form').hasAttribute('hidden') && Object.keys(storage).length != 0) {
       doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
       doc.querySelector('.submit-form').classList.remove('placeholder');
-    } else if (! evt) {
+    } else {
       try {
         let storage;
         for (const lang in languages) {
           const tr_key = 'tr-' + lang;
           if (storage = localStorage.getItem(tr_key)) {
             storage = JSON.parse(storage);
-            if (Object.keys(storage).length > 1) {
+            if (Object.keys(storage).length != 0) {
               message('editprev');
               break;
             }
           }
         }
       } catch (err) {
-        console.error('allowSubmit', err);
+        console.error('check_submit', err);
       }
     }
   }
 
-  const _allowSubmit = debounce(allowSubmit, true);
+  let submitTimer;
+
+  function load_submit_allow() {
+    function allow() {
+      if (doc.getElementById('ctrbar-submit-form').hasAttribute('hidden') && Object.keys(storage).length != 0) {
+        doc.getElementById('ctrbar-submit-form').removeAttribute('hidden');
+        doc.querySelector('.submit-form').classList.remove('placeholder');
+
+        window.clearInterval(submitTimer);
+      } else if (! doc.getElementById('ctrbar-submit-form').hasAttribute('hidden')) {
+        window.clearInterval(submitTimer);
+      }
+    }
+
+    submitTimer = window.setInterval(allow, 3e3);
+  }
+
+  function unload_submit_allow() {
+    window.clearInterval(submitTimer);
+  }
 
   function scrollBody(evt) {
     if (window.pageYOffset > 300) {
@@ -367,6 +385,11 @@ function edit_translate(uri, search) {
             render_row(td, field, storage[guid]);
           } else if (field in data[i] || lang_user) {
             render_row(td, field, obj);
+          }
+
+          // vanished
+          if (field == 'status' && obj == 2) {
+            tr.setAttribute('hidden', '');
           }
 
           if (! el_td) {
@@ -539,25 +562,25 @@ function edit_translate(uri, search) {
       }
 
       scrollBody();
-      allowSubmit();
+      check_submit();
     }).catch(error);
 
     tbody.addEventListener('click', toggler);
     tbody.addEventListener('click', scrollToRow);
     tbody.addEventListener('input', _textInput);
-    tbody.addEventListener('input', _allowSubmit);
     thead.addEventListener('click', sortByColumns);
     window.addEventListener('scroll', _scrollBody);
+    load_submit_allow();
   }
 
   function unload() {
-    body.classList.remove('dnm');
+    body.classList.remove('ndm');
     tbody.removeEventListener('click', toggler);
     tbody.removeEventListener('click', scrollToRow);
     tbody.removeEventListener('input', _textInput);
-    tbody.removeEventListener('input', _allowSubmit);
     thead.addEventListener('click', sortByColumns);
     window.removeEventListener('scroll', _scrollBody);
+    unload_submit_allow();
     page.removeEventListener('unload', unload);
   }
 

@@ -118,6 +118,37 @@ function message(id, text, type, buttons) {
   msg = box;
 }
 
+function urlc(uri, search) {
+  const doc = document;
+  const head = doc.head;
+  let link;
+
+  if (head.querySelector('link[rel=canonical]')) {
+    link = head.querySelector('link[rel=canonical]');
+  } else if (window._urlc && window._urlc.nodeName == 'LINK') {
+    link = window._urlc;
+  }
+
+  if (link) {
+    const url = basepath + '/' + (uri ?? '');
+    const href = new URL(url, window.location.origin);
+    let remove = false;
+
+    if (uri == 'edit.html' && search && 'lang' in search) {
+      remove = true;
+    }
+
+    link.setAttribute('href', href.toString());
+    window._urlc = link;
+
+    if (head.querySelector('link[rel=canonical]') && remove) {
+      head.removeChild(head.querySelector('link[rel=canonical]'));
+    } else {
+      head.appendChild(link);
+    }
+  }
+}
+
 function fault(err) {
   switch (err) {
     case 429:
