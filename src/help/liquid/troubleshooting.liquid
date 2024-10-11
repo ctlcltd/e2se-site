@@ -30,7 +30,7 @@
             <td colspan="2"><strong>Common issues</strong></td>
           </tr>
           <tr id="software-issue">
-            <td rowspan="3">Software crashes, freezes, does not work correctly</td>
+            <td rowspan="3">Software crashes, freezes or does not work correctly</td>
             <td>Report an issue on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/issues" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/issues</a> <br>Attach a log if possible, refer to <a href="#view-software-logs">View software logs</a></td>
           </tr>
           <tr>
@@ -38,6 +38,16 @@
           </tr>
           <tr>
             <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
+          </tr>
+          <tr id="ftp-profiles">
+            <td rowspan="3">FTP profile is buggy after deleting profiles</td>
+            <td>A known issue, fixed since software version 1.7</td>
+          </tr>
+          <tr>
+            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
+          </tr>
+          <tr>
+            <td>As possible workaround, rearrange profiles from <b>Settings</b>, <b>Advanced</b> tab, or <a href="#reset-settings">reset settings</a>; do not delete &quot;Default&quot; profile and reuse existing profiles</td>
           </tr>
           <tr id="menu-issue">
             <td rowspan="3">Main menu items are grayed out</td>
@@ -47,7 +57,7 @@
             <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
           </tr>
           <tr>
-            <td>Open a new tab using <b>&quot;<span class="symbolic">+</span> New Tab&quot;</b> and close it, menu items will become visible again</td>
+            <td>As workaround, open a new tab using <b>&quot;<span class="symbolic">+</span> New Tab&quot;</b> and close it, menu items will become visible again</td>
           </tr>
           <tr id="ctxmenu-issue">
             <td rowspan="3">Context menu is interfering with Drag and Drop</td>
@@ -57,21 +67,27 @@
             <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
           </tr>
           <tr>
-            <td>As workaround uncheck &quot;Enable experimental features&quot; under software Preferences, in <b>&quot;Settings&quot;</b>, in the <b>Preferences</b> tab, section <b>Theme</b></td>
+            <td>As workaround, uncheck &quot;Enable experimental features&quot; under software Preferences, in <b>&quot;Settings&quot;</b>, in the <b>Preferences</b> tab, section <b>Theme</b></td>
           </tr>
           <tr id="highlight-issue">
-            <td rowspan="2">Tree views highlight color is malfunctioning</td>
-            <td>A known issue, affecting software with light appearance on Windows 11</td>
+            <td rowspan="3">Tree views highlight color is malfunctioning</td>
+            <td>A known issue, affecting software version 1.5, when using light appearance on Windows 11</td>
           </tr>
           <tr>
-            <td>As possible workaround run the software with <samp>-style</samp> argument from PowerShell: <code>./e2-sat-editor.exe -style fusion</code></td>
+            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
+          </tr>
+          <tr>
+            <td>As possible workaround, run the software with <samp>-style</samp> argument from PowerShell: <code>./e2-sat-editor.exe -style fusion</code></td>
           </tr>
           <tr id="counters-issue">
-            <td rowspan="2">Channel numbers and counters are not visually updated after lists merge</td>
-            <td>A known issue</td>
+            <td rowspan="3">Channel numbers and counters are not visually updated</td>
+            <td>A known issue, fixed since software version 1.6</td>
           </tr>
           <tr>
-            <td>As workaround take an action on current bouquet</td>
+            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
+          </tr>
+          <tr>
+            <td>As workaround, take an action on current bouquet</td>
           </tr>
           <tr id="ftp">
             <td colspan="2"><strong>FTP</strong></td>
@@ -187,7 +203,7 @@
         <h3>Check the version</h3>
         <p>Check that the version you are using is the most recent.</p>
         <div class="l2">
-          <p><b>From main menu</b>, click menu <b>Help</b> &gt; <b>About e2 SAT Editor</b>.</p>
+          <p><b>From main menu</b>, click menu <b>Help</b> &gt; <b>About e2 SAT Editor</b></p>
           <p>Check the version number and on the Releases page of the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a> for more recent updates.</p>
         </div>
         <div class="l2">
@@ -239,7 +255,7 @@
         <p>It can be useful to solve problems and report issues on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/issues" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/issues</a></p>
         <div class="l2">
           <p>To show the log, open <b>Inspector</b>.</p>
-          <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Log Inspect</b>.</p>
+          <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Log Inspect</b></p>
           <div class="l3">
             <p><i>The log of the current execution will be shown in the dialog.</i></p>
             <p>To attach the log to the issue, select all the text and <b>Copy</b>, <b>Paste</b> into a plain text file.</p>

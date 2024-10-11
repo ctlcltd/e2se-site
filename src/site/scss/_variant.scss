@@ -31,11 +31,11 @@
   // custom
 
   #footer {
-    color: lighten(lightgray, 11%);
+    color: color.adjust(lightgray, $lightness: 11%);
 
     nav a,
     button.text {
-      color: lighten(lightgray, 11%);
+      color: color.adjust(lightgray, $lightness: 11%);
       &:hover { color: #eee; }
       &:focus { color: #fff; }
     }

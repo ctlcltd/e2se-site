@@ -122,7 +122,7 @@ abbr:after {
   justify-content: space-between;
   padding: 0 .5rem;
   font-size: .9rem;
-  color: darken(dimgray, 22%);
+  color: color.adjust(dimgray, $lightness: -22%);
 
   > div {
     width: 100%;
@@ -155,14 +155,14 @@ abbr:after {
   p {
     font-size: .8rem;
   }
-  p span {
+  p .whoiam {
     margin: .2rem;
     font-size: .7rem;
   }
 
   nav a,
   button.text {
-    color: darken(dimgray, 22%);
+    color: color.adjust(dimgray, $lightness: -22%);
     opacity: .95;
     transition: color linear 50ms;
 

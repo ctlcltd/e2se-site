@@ -37,7 +37,7 @@ p {
   justify-content: space-between;
   padding: 0 .5rem;
   font-size: .9rem;
-  color: darken(dimgray, 22%);
+  color: color.adjust(dimgray, $lightness: -22%);
 
   > div {
     width: 100%;
@@ -70,7 +70,7 @@ p {
   p {
     font-size: .8rem;
   }
-  p span {
+  p .whoiam {
     margin: .2rem;
     font-size: .7rem;
   }
@@ -79,18 +79,18 @@ p {
   button.text {
     transition: color linear 50ms;
 
-    color: darken(dimgray, 22%); opacity: .95;
+    color: color.adjust(dimgray, $lightness: -22%); opacity: .95;
     &:hover { color: #101010; }
     &:focus { color: #000; opacity: 1; }
   }
 }
 .dark {
   #footer {
-    color: lighten(lightgray, 11%);
+    color: color.adjust(lightgray, $lightness: 11%);
 
     nav a,
     button.text {
-      color: lighten(lightgray, 11%);
+      color: color.adjust(lightgray, $lightness: 11%);
       &:hover { color: #eee; }
       &:focus { color: #fff; }
     }
@@ -333,8 +333,8 @@ label {
   font-weight: bold;
 }
 .status-unfinished { color: darken(lighten(dimgray, 11%), 2%); }
-.status-completed { color: lighten(seagreen, 3%); }
-.status-vanished { color: darken(lightsteelblue, 22%); }
+.status-completed { color: color.adjust(seagreen, $lightness: 3%); }
+.status-vanished { color: color.adjust(lightsteelblue, $lightness: -22%); }
 
 .level {
   position: relative;

@@ -32,18 +32,23 @@
     "description": "How to edit and create channel lists, edit and move services and bouquets",
     "anchors": [
       {
-        "@lists": "Channel lists",
+        "@channel-list": "Channel list",
         "#create-list": "Create channel lists",
         "#edit-list": "Edit channel lists",
         "#save-list": "Save channel lists",
+        "#sort-column": "Sort by column",
         "#convert-list": "Convert channel lists",
         "#import-export": "Import and Export",
         "#parental": "Lock channels [Parental]"
       },
       {
+        "#tools": "Tools",
+        "#autofix": "Autofix"
+      },
+      {
         "@channels": "Channels",
-        "#channel-sort": "Channel sorting",
         "#move-channels": "Move channels",
+        "#sort-channels": "Sort channels",
         "#reference": "View channel details [Reference]",
         "#add-channels": "Add channels",
         "#edit-channel": "Edit channel",
@@ -64,6 +69,7 @@
       {
         "@bouquets": "Bouquets",
         "#move-bouquets": "Move bouquets",
+        "#sort-bouquets": "Sort bouquets",
         "#create-bouquet": "Create bouquet",
         "#edit-bouquet": "Edit bouquet",
         "#delete-bouquet": "Delete bouquet"
@@ -91,11 +97,16 @@
     "anchors": [
       {
         "@transponders": "Transponders",
-        "#transponder-sort": "Transponder sorting",
+        "#sort-column": "Sort by column",
         "#move-transponders": "Move transponders",
+        "#sort-transponders": "Sort transponders",
         "#create-transponder": "Create transponder",
         "#edit-transponder": "Edit transponder",
         "#delete-transponder": "Delete transponder"
+      },
+      {
+        "#tools": "Tools",
+        "#autofix": "Autofix"
       },
       {
         "@settings-xml": "Settings [XML]",
@@ -133,6 +144,20 @@
       }
     ]
   },
+  "file-transfers-stb": {
+    "href": "file-transfers-stb.html",
+    "title": "Transfers from and to Decoder",
+    "description": "How to transfer files from and to Decoder STB",
+    "anchors": [
+      {
+        "#profiles": "Connection profiles",
+        "#connection": "Connect and Disconnect",
+        "#download": "Download files",
+        "#upload": "Upload files",
+        "#troubleshooting": "Troubleshooting"
+      }
+    ]
+  },
   "settings": {
     "href": "settings.html",
     "title": "Settings",
@@ -149,20 +174,6 @@
       },
       {
         "#reset-settings": "Reset settings"
-      }
-    ]
-  },
-  "file-transfers-stb": {
-    "href": "file-transfers-stb.html",
-    "title": "Transfers from and to Decoder",
-    "description": "How to transfer files from and to Decoder STB",
-    "anchors": [
-      {
-        "#profiles": "Connection profiles",
-        "#connection": "Connect and Disconnect",
-        "#download": "Download files",
-        "#upload": "Upload files",
-        "#troubleshooting": "Troubleshooting"
       }
     ]
   },

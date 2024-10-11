@@ -16,18 +16,58 @@
         <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
         <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
       </div>
-      <hr id="transponders">
-      <div id="transponder-sort" class="l1">
-        <h3>Transponder sorting</h3>
-        <p>Transponders can be sorted according to the column name (e.g. sorted by <i>Frequency 0-9</i> or <i>Frequency 9-0</i>) in ascending and descending order.</p>
+      <div id="transponders" class="l1">
+        <h3>Transponders</h3>
+        <p>Transponder lists are managed on separate tabs from the main view.</p>
+        <div class="l2">
+          <p><b>From main menu</b>, click on menu <b>Editor</b> &gt; <b>Edit transponders</b> or <b>Edit (file).xml</b></p>
+        </div>
+        <div class="l2">
+          <p><span class="type">[XML only]</span> The [XML] tranponders list is handled side by side.</p>
+          <p>There is a side bar containing the area &quot;Positions&quot;, the item pressed on this area will be displayed in the adjacent area &quot;Transponders&quot;, in the prominent side.</p>
+        </div>
+        <div class="ls">
+          <p>For further information, open and save channel lists, see <a href="channel-lists.html">Channel lists</a> page of online help.</p>
+        </div>
+        <p>Transponders tabs are always shown in the tab switcher.</p>
+      </div>
+      <div id="sort-columns" class="l1">
+        <h3>Sort by column</h3>
+        <p>The transponder list tree can be visually sorted according to the column name (eg. sorted by <i>Frequency 0-9</i> or <i>Frequency 9-0</i>) in ascending and descending order.</p>
         <p>To use the sort click on <b>column name</b> in the tree view, inside the <b>Transponders</b> area.</p>
       </div>
       <div id="move-transponders" class="l1">
         <h3>Move transponders</h3>
         <p>The transponders move with <b>Drag and Drop</b>, or alternatively with the <b>Cut - Copy - Paste</b> functionality.</p>
-        <p>Select transponders then drag them with the mouse cursor to the desired position.</p>
-        <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span class="symbol">&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span class="symbol">&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into transponder item.</p>
-        <p><span class="type">[XML only]</span> Note: <i>It is not possible to move transponders to other positions (satellites).</i></p>
+        <div class="l2">
+          <p>Select transponders then drag them with the mouse cursor to the desired position.</p>
+          <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span class="symbol">&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span class="symbol">&#8679;</span> Shift</kbd> on keyboard, and select transponders with the mouse or touchpad, then drag them into transponder item.</p>
+          <div class="l3">
+            <p><span class="type">[XML only]</span> Note: <i>It is not possible to move transponders to other positions (satellites).</i></p>
+          </div>
+        </div>
+      </div>
+      <div id="sort-transponders" class="l1">
+        <h3>Sort transponders</h3>
+        <p>Sort transponders by their properties, eg. TSID, in ascending or descending order.</p>
+        <div class="l2">
+          <p>Select transponders, then press <b>Sort&hellip;</b> from context menu or <b>Tools</b>.</p>
+          <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span class="symbol">&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span class="symbol">&#8679;</span> Shift</kbd> on keyboard, and select transponders with the mouse or touchpad.</p>
+          <div class="l3">
+            <p><b>From transponders</b> you want to sort, open the context menu and click on <b>&quot;Sort&hellip;&quot;</b></p>
+            <p><b>From main menu</b>, click menu <b>Tools</b>, then click on menu <b>Sort</b> &gt; <b>Sort transponders&hellip;</b></p>
+            <p><b>From bottom toolbar</b>, click on <b>&quot;Tools&quot;</b>, then click on menu <b>Sort</b> &gt; <b>Sort transponders&hellip;</b></p>
+          </div>
+          <div class="l3">
+            <p>Repeat <b>last Sort</b></p>
+            <p>To quickly repeat the last sort options when calling <b>&quot;Sort&hellip;&quot;</b> from the context menu, check the option &quot;Recall this set when Sort from context menu&quot; from the Sort menu.</p>
+          </div>
+          <div class="l3">
+            <p><span class="type">[XML only]</span> Note: <i>It is not possible to sort [XML] positions and [XML] transponders.</i></p>
+          </div>
+          <div class="l2">
+            <p>Note: <i>Sort transponders available since software version 1.7</i></p>
+          </div>
       </div>
       <div id="create-transponder" class="l1">
         <h3>Create transponder</h3>
@@ -54,6 +94,77 @@
         <p><span class="type">[XML only]</span> <i>The transponder will be deleted from the current position.</i></p>
         <p>Transponder can also be deleted with keyboard by pressing on <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
         <p>Note: <i>The services associated with the transponder will be orphaned.</i></p>
+      </div>
+      <hr>
+      <div id="tools" class="l1">
+        <h3>Tools</h3>
+        <p>There are serveral utils <b>Tools</b> to perform batch operations on channel list.</p>
+        <div class="l2">
+          <p><b>From main menu</b>, click menu <b>Tools</b>, select the desired operation</p>
+          <p><b>From bottom toolbar</b>, click on <b>&quot;Tools&quot;</b>, select the desired operation</p>
+        </div>
+        <p>A related list of available operations:</p>
+        <ul>
+          <li>
+            <p><b>Clean</b></p>
+            <ul>
+              <li>Remove orphaned services &mdash; <i>without transponder reference</i></li>
+              <li>Fix (remove) references with errors</li>
+            </ul>
+          </li>
+          <li>
+            <p><b>Params</b></p>
+            <ul>
+              <li>Recalculate DVBNS for services</li>
+            </ul>
+          </li>
+          <li>
+            <p><b>Duplicates</b></p>
+            <ul>
+              <li>Remove duplicate transponders</li>
+              <li>Remove all duplicates</li>
+            </ul>
+          </li>
+          <li>
+            <p><b>Transform</b></p>
+            <ul>
+              <li>Transform transponders to XML settings</li>
+              <li>Transform XML settings to transponders</li>
+            </ul>
+          </li>
+          <li>
+            <p><b>Sort</b></p>
+            <ul>
+              <li>Sort transponders</li>
+            </ul>
+          </li>
+          <li><b>Autofix</b> &mdash; <i>automatic fixes channel list</i>, see <a href="#autofix">Autofix</a> chapter, on this page.</li>
+          <li><b>Import</b> &mdash; <i>imports from CSV, M3U files</i>, see <a href="file-interop.html">File interoperability</a> page.</li>
+          <li><b>Export</b> &mdash; <i>exports to CSV, M3U, HTML files</i>, see <a href="file-interop.html">File interoperability</a> page.</li>
+          <li><b>Log Inspect</b> &mdash; <i>inspects logs</i>, see <a href="troubleshooting.html#view-logs">View software logs</a> chapter, on <a href="troubleshooting.html#view-logs">Troubleshooting</a> page.</li>
+        </ul>
+        <div class="l2">
+          <p>Note: <i>Tools &quot;Utils&quot; available since software version 1.7</i></p>
+        </div>
+      </div>
+      <div id="autofix" class="l1">
+        <h3>Autofix</h3>
+        <p>Autofix is an util to automatic fix the channel list.</p>
+        <p>This macro does the following operations:</p>
+        <ul>
+          <li>remove all duplicates</li>
+          <li>fix and remove references with errors</li>
+          <li>recalculate DVBNS for services</li>
+          <li>fix bouquets</li>
+        </ul>
+        <div class="l2">
+          <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Autofix</b></p>
+          <p><b>From bottom toolbar</b>, click <b>&quot;Autofix&quot;</b></p>
+          <p><b>From bottom toolbar</b>, click on <b>&quot;Tools&quot;</b> &gt; <b>Autofix</b></p>
+        </div>
+        <div class="l2">
+          <p>Note: <i>Autofix available since software version 1.7</i></p>
+        </div>
       </div>
       <hr id="settings-xml">
       <div id="edit-settings" class="l1">
@@ -83,15 +194,15 @@
         <p>To import and export settings.</p>
         <div class="l2">
           <h5>Import</h5>
-          <p><b>From quick menu</b>, press <b>&quot;Import&quot;</b>.</p>
-          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Import</b> menu.</p>
-          <p>In <b>File dialog</b> select the settings file to import.</p>
+          <p><b>From quick menu</b>, press <b>&quot;Import&quot;</b></p>
+          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Import</b> menu</p>
+          <p>In <b>File dialog</b> select the settings file to import</p>
         </div>
         <div class="l2">
           <h5>Export</h5>
-          <p><b>From quick menu</b>, press <b>&quot;Export&quot;</b>.</p>
-          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Export</b> menu.</p>
-          <p>In <b>File dialog</b> select the location where you want to export settings.</p>
+          <p><b>From quick menu</b>, press <b>&quot;Export&quot;</b></p>
+          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Export</b> menu</p>
+          <p>In <b>File dialog</b> select the location where you want to export settings</p>
         </div>
       </div>
 {% render '_page-dist.liquid', help_rev: help_rev %}

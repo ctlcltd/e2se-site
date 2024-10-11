@@ -11,17 +11,30 @@
       <h2>Quick Start</h2>
       <p>Quick start guide for using the software.</p>
       <div class="lh">
-        <p>The software features can be accessed from the quick menu at the top, and from the main <b>application menu</b> <br>(File, Edit, Find, Tools, Window, Help).</p>
+        <p>The software features can be accessed from the <b>quick menu</b> at the top, and from the main <b>application menu</b>.</p>
+      </div>
+      <div class="lh">
+        <h3>Application Menu</h3>
+        <p>The <b>main menu</b> items: <br>File, Edit, Find, Tools, Editor, Window, Help</p>
+        <ul>
+          <li><b>File</b> &mdash; file operations: <br>New, Open, Save (As), Import, Export, Close (all) Tab(s), Convert, File info, Print (All), (Exit)</li>
+          <li><b>Edit</b> &mdash; actions involving selected items: <br>Cut, Copy, Paste, Delete, Select All, Edit (item)</li>
+          <li><b>Find</b> &mdash; finds items: <br>Find (item), Find Next, Find Previous, Find All, &hellip;</li>
+          <li><b>Tools</b> &mdash; contains powerful tools: <br>Import (CSV, M3U), Export (CSV, M3U, HTML), utils (Clean, Params, Remove, Duplicates, Transform, Sort), Autofix, Inspect</li>
+          <li><b>Editor</b> &mdash; editor tasks: <br>Edit Transponders, Edit (satellites.xml, terrestrial.xml, cables.xml, atsc.xml), Picons Editor, Channel Book</li>
+          <li><b>Window</b> &mdash; control above window and tabs: <br>Minimize, Hide / Show Status Bar, New Tab, tab switcher</li>
+          <li><b>Help</b> &mdash; with useful links and informations: <br>Online Help links, licensing info link, website and repository links, about the software</li>
+        </ul>
       </div>
       <div class="lh">
         <h3>Quick menu</h3>
-        <p>The <b>quick menu</b> items: <br>Open, Save, Import, Export, Settings, Connection profile selection, Connect, Disconnect, Upload, Download.</p>
+        <p>The <b>quick menu</b> items: <br>Open, Save, Import, Export, Settings, <em>Connection profile selector</em>, Connect, Disconnect, Upload, Download</p>
         <ul>
-          <li>To open and save channel lists: Open, Save.</li>
-          <li>To import and export channel lists, individual channel groups (bouquet and userbouquet), settings (eg. &quot;satellites.xml&quot;): Import, Export.</li>
-          <li>For software settings, connection profiles, engine, advanced settings: Settings.</li>
-          <li>To select connection profile: dropdown menu (eg. Default).</li>
-          <li>To control the connection, upload and download files via FTP from the Decoder STB: Connect, Disconnect, Upload, Download.</li>
+          <li><b>Open</b>, <b>Save</b> &mdash; to open and save channel lists.</li>
+          <li><b>Import</b>, <b>Export</b> &mdash; to import and export channel lists, individual channel groups (bouquet and userbouquet), settings (eg. &quot;satellites.xml&quot;).</li>
+          <li><b>Settings</b> &mdash; for software settings, connection profiles, engine, advanced settings.</li>
+          <li><em>Connection profile selector</em> &mdash; to select connection profile: dropdown menu (eg. Default).</li>
+          <li><b>Connect</b>, <b>Disconnect</b>, <b>Upload</b>, <b>Download</b> &mdash; to control the connection, upload and download files via FTP from the Decoder STB.</li>
         </ul>
       </div>
       <div class="lh">
@@ -29,53 +42,57 @@
         <p>To reach the editing functions of <mark>[item]</mark> (channels, services, transponders, markers) use the <b>context menu</b>.</p>
         <p><b>Context menu</b> can be reached by <b>right-click</b>ing on selected item (highlighted) with the button right of the mouse or touchpad. <br>Some keyboards also have a special key to call up the <b>context menu</b>.</p>
         <div class="image">
-          <svg xmlns="http://www.w3.org/2000/svg" width="640" height="136">
-            <rect x="8" y="8" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
-            <rect x="8" y="38" width="167" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
-            <rect x="8" y="68" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
-            <rect x="8" y="98" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
-            <text x="8" y="8" dy="20" font-size="14"><tspan dx="12">11</tspan> <tspan dx="15">Channel 11</tspan></text>
-            <text class="mark" x="8" y="38" dy="20" font-size="14"><tspan dx="12">12</tspan> <tspan dx="15">Channel 32</tspan></text>
-            <text x="8" y="68" dy="20" font-size="12" font-weight="bold"><tspan dx="46">MARKER</tspan></text>
-            <text x="8" y="98" dy="20" font-size="14"><tspan dx="12">13</tspan> <tspan dx="15">Channel 110</tspan></text>
-            <ellipse cx="150" cy="49" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="25%"/>
-            <ellipse cx="150" cy="49" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
-            <rect x="181" y="32" width="204" height="100" fill="none" stroke="#000" stroke-width="3" clip-path="inset(0 0 3)"/>
-            <text x="181" y="36" dx="12" dy="22" font-size="13" font-weight="bold">Edit Service</text>
-            <text x="181" y="68" dx="12" dy="22" font-size="13" font-weight="bold">Set Parental lock</text>
-            <text x="181" y="100" dx="12" dy="22" font-size="13" font-weight="bold">Cut</text>
-            <rect x="431" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="2"/>
-            <rect x="430" y="80" width="200" height="88" rx="30" fill="#dff" stroke="#000" stroke-width="2" clip-path="inset(0 0 0 105)"/>
-            <rect x="530" y="80" width="3" height="72" fill="none" stroke="#000" stroke-width="1"/>
-            <ellipse cx="585" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="33%"/>
-          </svg>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="640" height="136">
+              <rect x="8" y="8" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
+              <rect x="8" y="38" width="167" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
+              <rect x="8" y="68" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
+              <rect x="8" y="98" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
+              <text x="8" y="8" dy="20" font-size="14"><tspan dx="12">11</tspan> <tspan dx="15">Channel 11</tspan></text>
+              <text class="mark" x="8" y="38" dy="20" font-size="14"><tspan dx="12">12</tspan> <tspan dx="15">Channel 32</tspan></text>
+              <text x="8" y="68" dy="20" font-size="12" font-weight="bold"><tspan dx="46">MARKER</tspan></text>
+              <text x="8" y="98" dy="20" font-size="14"><tspan dx="12">13</tspan> <tspan dx="15">Channel 110</tspan></text>
+              <ellipse cx="150" cy="49" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="25%"/>
+              <ellipse cx="150" cy="49" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
+              <rect x="181" y="32" width="204" height="100" fill="none" stroke="#000" stroke-width="3" clip-path="inset(0 0 3)"/>
+              <text x="181" y="36" dx="12" dy="22" font-size="13" font-weight="bold">Edit Service</text>
+              <text x="181" y="68" dx="12" dy="22" font-size="13" font-weight="bold">Set Parental lock</text>
+              <text x="181" y="100" dx="12" dy="22" font-size="13" font-weight="bold">Cut</text>
+              <rect x="431" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="2"/>
+              <rect x="430" y="80" width="200" height="88" rx="30" fill="#dff" stroke="#000" stroke-width="2" clip-path="inset(0 0 0 105)"/>
+              <rect x="530" y="80" width="3" height="72" fill="none" stroke="#000" stroke-width="1"/>
+              <ellipse cx="585" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="33%"/>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="lh">
         <h3>Main editing function: [item] <em>double-click</em></h3>
         <p>The main editing function of <mark>[item]</mark> (channels, services, transponders, markers) can be reached by <b>double-click</b>ing on selected item (highlighted). <br>For example: <b>double-click</b>ing on channel will open &quot;Edit Service&quot; dialog window of the corresponding channel item.</p>
         <div class="image">
-          <svg xmlns="http://www.w3.org/2000/svg" width="640" height="136">
-            <rect x="8" y="8" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
-            <rect x="8" y="38" width="167" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
-            <rect x="8" y="68" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
-            <rect x="8" y="98" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
-            <text x="8" y="8" dy="20" font-size="14"><tspan dx="12">11</tspan> <tspan dx="15">Channel 11</tspan></text>
-            <text class="mark" x="8" y="38" dy="20" font-size="14"><tspan dx="12">12</tspan> <tspan dx="15">Channel 32</tspan></text>
-            <text x="8" y="68" dy="20" font-size="12" font-weight="bold"><tspan dx="46">MARKER</tspan></text>
-            <text x="8" y="98" dy="20" font-size="14"><tspan dx="12">13</tspan> <tspan dx="15">Channel 110</tspan></text>
-            <ellipse cx="150" cy="49" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="25%"/>
-            <ellipse cx="146" cy="49" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
-            <ellipse cx="153" cy="49" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
-            <rect x="192" y="15" width="450" height="105" fill="none" stroke="#000" stroke-width="4" clip-path="inset(0 10 10 0)"/>
-            <rect x="193" y="16" width="449" height="36" fill="none" stroke="#000" stroke-width="3" clip-path="inset(0 10 0 0)"/>
-            <text x="192" y="16" dx="10" dy="24" font-size="15" font-weight="bold">Edit Service</text>
-            <rect x="431" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="2"/>
-            <rect x="432" y="80" width="200" height="88" rx="30" fill="#dff" stroke="#000" stroke-width="2" clip-path="inset(0 102 0 0)"/>
-            <rect x="532" y="80" width="3" height="72" fill="none" stroke="#000" stroke-width="1"/>
-            <ellipse cx="460" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="25%"/>
-            <ellipse cx="495" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="33%"/>
-          </svg>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="640" height="136">
+              <rect x="8" y="8" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
+              <rect x="8" y="38" width="167" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
+              <rect x="8" y="68" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
+              <rect x="8" y="98" width="167" height="30" fill="none" stroke="#000" stroke-width="1"/>
+              <text x="8" y="8" dy="20" font-size="14"><tspan dx="12">11</tspan> <tspan dx="15">Channel 11</tspan></text>
+              <text class="mark" x="8" y="38" dy="20" font-size="14"><tspan dx="12">12</tspan> <tspan dx="15">Channel 32</tspan></text>
+              <text x="8" y="68" dy="20" font-size="12" font-weight="bold"><tspan dx="46">MARKER</tspan></text>
+              <text x="8" y="98" dy="20" font-size="14"><tspan dx="12">13</tspan> <tspan dx="15">Channel 110</tspan></text>
+              <ellipse cx="150" cy="49" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="25%"/>
+              <ellipse cx="146" cy="49" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
+              <ellipse cx="153" cy="49" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
+              <rect x="192" y="15" width="450" height="105" fill="none" stroke="#000" stroke-width="4" clip-path="inset(0 10 10 0)"/>
+              <rect x="193" y="16" width="449" height="36" fill="none" stroke="#000" stroke-width="3" clip-path="inset(0 10 0 0)"/>
+              <text x="192" y="16" dx="10" dy="24" font-size="15" font-weight="bold">Edit Service</text>
+              <rect x="431" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="2"/>
+              <rect x="432" y="80" width="200" height="88" rx="30" fill="#dff" stroke="#000" stroke-width="2" clip-path="inset(0 102 0 0)"/>
+              <rect x="532" y="80" width="3" height="72" fill="none" stroke="#000" stroke-width="1"/>
+              <ellipse cx="460" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="25%"/>
+              <ellipse cx="495" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="33%"/>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="lh">
@@ -83,34 +100,36 @@
         <p>The <mark>[item]</mark> (channels, services, transponders, markers) can be moved by <b>Drag and Drop</b>, or using <b>Cut - Copy - Paste</b>.</p>
         <p>The item(s) can be moved from the channel group (userbouquet) being viewed to another by dragging the selected channel item (highlighted) over the desired channel group (userbouquet) item.</p>
         <div class="image">
-          <svg xmlns="http://www.w3.org/2000/svg" width="640" height="136">
-            <rect x="8" y="8" width="186" height="34" fill="none" stroke="#000" stroke-width="1" clip-path="inset(1 1 0)"/>
-            <rect x="8" y="42" width="186" height="34" fill="#dff" stroke="#000" stroke-width="1" clip-path="inset(0 1 0)"/>
-            <rect x="8" y="75" width="186" height="34" fill="none" stroke="#000" stroke-width="1" clip-path="inset(0 1 0)"/>
-            <rect x="8" y="109" width="186" height="34" fill="none" stroke="#000" stroke-width="1" clip-path="inset(0 1 1)"/>
-            <text x="8" y="8" dx="8" dy="23" font-size="15">TV</text>
-            <text class="mark" x="8" y="42" dx="10" dy="22" font-size="15">My userbouquet</text>
-            <text x="8" y="75" dx="10" dy="22" font-size="15">Sport channels</text>
-            <text x="8" y="109" dx="10" dy="22" font-size="15">Other channels</text>
-            <rect x="192" y="8" width="1" height="122" fill="none" stroke="#000" stroke-width="1" clip-path="inset(1 0 1)"/>
-            <ellipse cx="161" cy="52" rx="14.3" ry="14.3" fill="none" stroke="#000" stroke-width="4" stroke-opacity="25%" stroke-dasharray="0 1 2"/>
-            <ellipse cx="161" cy="52" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="33%"/>
-            <rect x="204" y="8" width="251" height="30" fill="none" stroke="#000" stroke-width="1"/>
-            <rect x="204" y="38" width="251" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
-            <rect x="204" y="68" width="251" height="30" fill="none" stroke="#000" stroke-width="1"/>
-            <rect x="204" y="98" width="251" height="30" fill="none" stroke="#000" stroke-width="1"/>
-            <text x="204" y="8" dy="20" font-size="14"><tspan dx="12">11</tspan> <tspan dx="15">Channel 11</tspan></text>
-            <text class="mark" x="204" y="38" dy="20" font-size="14"><tspan dx="12">12</tspan> <tspan dx="15">Channel 32</tspan></text>
-            <text x="204" y="68" dy="20" font-size="12" font-weight="bold"><tspan dx="46">MARKER</tspan></text>
-            <text x="204" y="98" dy="20" font-size="14"><tspan dx="12">13</tspan> <tspan dx="15">Channel 110</tspan></text>
-            <rect x="138" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="4" stroke-opacity="25%"/>
-            <rect x="236" y="83" width="2" height="72" fill="none" stroke="#000" stroke-width="2" stroke-opacity="22%"/>
-            <ellipse cx="180" cy="110" rx="14.3" ry="14.3" fill="none" stroke="#000" stroke-width="4" stroke-opacity="33%" stroke-dasharray="0 1 2"/>
-            <rect x="381" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="2"/>
-            <rect x="382" y="80" width="200" height="88" rx="30" fill="#dff" stroke="#000" stroke-width="2" clip-path="inset(0 102 0 0)"/>
-            <rect x="482" y="80" width="3" height="72" fill="none" stroke="#000" stroke-width="1"/>
-            <ellipse cx="425" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="33%"/>
-          </svg>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="640" height="136">
+              <rect x="8" y="8" width="186" height="34" fill="none" stroke="#000" stroke-width="1" clip-path="inset(1 1 0)"/>
+              <rect x="8" y="42" width="186" height="34" fill="#dff" stroke="#000" stroke-width="1" clip-path="inset(0 1 0)"/>
+              <rect x="8" y="75" width="186" height="34" fill="none" stroke="#000" stroke-width="1" clip-path="inset(0 1 0)"/>
+              <rect x="8" y="109" width="186" height="34" fill="none" stroke="#000" stroke-width="1" clip-path="inset(0 1 1)"/>
+              <text x="8" y="8" dx="8" dy="23" font-size="15">TV</text>
+              <text class="mark" x="8" y="42" dx="10" dy="22" font-size="15">My userbouquet</text>
+              <text x="8" y="75" dx="10" dy="22" font-size="15">Sport channels</text>
+              <text x="8" y="109" dx="10" dy="22" font-size="15">Other channels</text>
+              <rect x="192" y="8" width="1" height="122" fill="none" stroke="#000" stroke-width="1" clip-path="inset(1 0 1)"/>
+              <ellipse cx="161" cy="52" rx="14.3" ry="14.3" fill="none" stroke="#000" stroke-width="4" stroke-opacity="25%" stroke-dasharray="0 1 2"/>
+              <ellipse cx="161" cy="52" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="33%"/>
+              <rect x="204" y="8" width="251" height="30" fill="none" stroke="#000" stroke-width="1"/>
+              <rect x="204" y="38" width="251" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
+              <rect x="204" y="68" width="251" height="30" fill="none" stroke="#000" stroke-width="1"/>
+              <rect x="204" y="98" width="251" height="30" fill="none" stroke="#000" stroke-width="1"/>
+              <text x="204" y="8" dy="20" font-size="14"><tspan dx="12">11</tspan> <tspan dx="15">Channel 11</tspan></text>
+              <text class="mark" x="204" y="38" dy="20" font-size="14"><tspan dx="12">12</tspan> <tspan dx="15">Channel 32</tspan></text>
+              <text x="204" y="68" dy="20" font-size="12" font-weight="bold"><tspan dx="46">MARKER</tspan></text>
+              <text x="204" y="98" dy="20" font-size="14"><tspan dx="12">13</tspan> <tspan dx="15">Channel 110</tspan></text>
+              <rect x="138" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="4" stroke-opacity="25%"/>
+              <rect x="236" y="83" width="2" height="72" fill="none" stroke="#000" stroke-width="2" stroke-opacity="22%"/>
+              <ellipse cx="180" cy="110" rx="14.3" ry="14.3" fill="none" stroke="#000" stroke-width="4" stroke-opacity="33%" stroke-dasharray="0 1 2"/>
+              <rect x="381" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="2"/>
+              <rect x="382" y="80" width="200" height="88" rx="30" fill="#dff" stroke="#000" stroke-width="2" clip-path="inset(0 102 0 0)"/>
+              <rect x="482" y="80" width="3" height="72" fill="none" stroke="#000" stroke-width="1"/>
+              <ellipse cx="425" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="33%"/>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="lh">
@@ -118,55 +137,59 @@
         <p>You can select multiple <mark>[items]</mark> (channels, services, transponders, markers) with <b>multiple selection</b>.</p>
         <p><b>Multiple selection</b> can be done by pressing the <kbd>Ctrl</kbd> key and the <kbd><span class="symbol">&#8679;</span> Shift</kbd> key on keyboard, or <kbd><span class="symbol">&#8984;</span> command</kbd> and <kbd><span class="symbol">&#8679;</span> Shift</kbd> on a Mac keyboard.</p>
         <div class="image">
-          <svg xmlns="http://www.w3.org/2000/svg" width="640" height="136">
-            <rect x="8" y="8" width="251" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
-            <rect x="8" y="38" width="251" height="30" fill="none" stroke="#000" stroke-width="1"/>
-            <rect x="8" y="68" width="251" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
-            <rect x="8" y="98" width="251" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
-            <text class="mark" x="8" y="8" dy="20" font-size="14"><tspan dx="12">11</tspan> <tspan dx="15">Channel 11</tspan></text>
-            <text x="8" y="38" dy="20" font-size="14"><tspan dx="12">12</tspan> <tspan dx="14">Channel 32</tspan></text>
-            <text class="mark" x="8" y="68" dy="20" font-size="12" font-weight="bold"><tspan dx="46">MARKER</tspan></text>
-            <text class="mark" x="8" y="98" dy="20" font-size="14"><tspan dx="12">13</tspan> <tspan dx="15">Channel 110</tspan></text>
-            <ellipse cx="190" cy="21" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
-            <ellipse cx="190" cy="81" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
-            <ellipse cx="190" cy="110" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
-            <rect x="281" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="2"/>
-            <rect x="282" y="80" width="200" height="88" rx="30" fill="#dff" stroke="#000" stroke-width="2" clip-path="inset(0 102 0 0)"/>
-            <rect x="382" y="80" width="3" height="72" fill="none" stroke="#000" stroke-width="1"/>
-            <ellipse cx="325" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="25%"/>
-            <rect x="402" y="15" width="97" height="30" rx="6" fill="#444"/>
-            <text x="402" y="15" dy="21" fill="#fff" font-size="14" font-weight="bold"><tspan dx="6">&#8984;</tspan> command</text>
-            <rect x="550" y="15" width="60" height="30" rx="6" fill="#444"/>
-            <text x="550" y="15" dx="10" dy="22" fill="#fff" font-size="15" font-weight="bold">Ctrl</text>
-            <rect x="540" y="80" width="70" height="30" rx="6" fill="#444"/>
-            <text x="540" y="80" dy="22" fill="#fff" font-size="15" font-weight="bold"><tspan dx="6">&#8679;</tspan> <tspan>Shift</tspan></text>
-          </svg>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="640" height="136">
+              <rect x="8" y="8" width="251" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
+              <rect x="8" y="38" width="251" height="30" fill="none" stroke="#000" stroke-width="1"/>
+              <rect x="8" y="68" width="251" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
+              <rect x="8" y="98" width="251" height="30" fill="#dff" stroke="#000" stroke-width="1"/>
+              <text class="mark" x="8" y="8" dy="20" font-size="14"><tspan dx="12">11</tspan> <tspan dx="15">Channel 11</tspan></text>
+              <text x="8" y="38" dy="20" font-size="14"><tspan dx="12">12</tspan> <tspan dx="14">Channel 32</tspan></text>
+              <text class="mark" x="8" y="68" dy="20" font-size="12" font-weight="bold"><tspan dx="46">MARKER</tspan></text>
+              <text class="mark" x="8" y="98" dy="20" font-size="14"><tspan dx="12">13</tspan> <tspan dx="15">Channel 110</tspan></text>
+              <ellipse cx="190" cy="21" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
+              <ellipse cx="190" cy="81" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
+              <ellipse cx="190" cy="110" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
+              <rect x="281" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="2"/>
+              <rect x="282" y="80" width="200" height="88" rx="30" fill="#dff" stroke="#000" stroke-width="2" clip-path="inset(0 102 0 0)"/>
+              <rect x="382" y="80" width="3" height="72" fill="none" stroke="#000" stroke-width="1"/>
+              <ellipse cx="325" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="25%"/>
+              <rect x="402" y="15" width="97" height="30" rx="6" fill="#444"/>
+              <text x="402" y="15" dy="21" fill="#fff" font-size="14" font-weight="bold"><tspan dx="6">&#8984;</tspan> command</text>
+              <rect x="550" y="15" width="60" height="30" rx="6" fill="#444"/>
+              <text x="550" y="15" dx="10" dy="22" fill="#fff" font-size="15" font-weight="bold">Ctrl</text>
+              <rect x="540" y="80" width="70" height="30" rx="6" fill="#444"/>
+              <text x="540" y="80" dy="22" fill="#fff" font-size="15" font-weight="bold"><tspan dx="6">&#8679;</tspan> <tspan>Shift</tspan></text>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="lh">
         <h3>Handle connection profiles: Settings</h3>
-        <p>The connection settings are found in <b>Settings</b>, reachable by pressing <b>&quot;Settings&quot;</b> on quick menu at top window, or from <b>Settings</b> and <b><i>Preferences&hellip;</i></b> depending on the system you are using, from the main application menu.</p>
+        <p>The connection settings are found in <b>Settings</b>, <b>Connections</b> tab, reachable by pressing <b>&quot;Settings&quot;</b> on quick menu at top window, or from <b>Settings</b> and <b><i>Preferences&hellip;</i></b> depending on the system you are using, from the main application menu.</p>
         <div class="image">
-          <svg xmlns="http://www.w3.org/2000/svg" width="640" height="136">
-            <rect x="-2" y="32" width="178" height="50" fill="none" stroke="#000" stroke-width="3" clip-path="inset(0 10)"/>
-            <rect x="21" y="49" width="18" height="18" fill="#888" fill-opacity="50%"/>
-            <text x="36" y="49" dx="10" dy="15" font-size="18" font-weight="bold">Settings</text>
-            <ellipse cx="120" cy="60" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="25%"/>
-            <ellipse cx="120" cy="60" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
-            <rect x="192" y="8" width="450" height="130" fill="none" stroke="#000" stroke-width="4" clip-path="inset(0 10 10 0)"/>
-            <rect x="193" y="9" width="449" height="36" fill="none" stroke="#000" stroke-width="3" clip-path="inset(0 10 0 0)"/>
-            <text x="192" y="9" dx="10" dy="24" font-size="15" font-weight="bold">Settings</text>
-            <rect x="204" y="78" width="186" height="30" fill="none" stroke="#000" stroke-width="1" clip-path="inset(0 1 1)"/>
-            <rect x="204" y="107" width="186" height="30" fill="none" stroke="#000" stroke-width="1" clip-path="inset(0 1 1)"/>
-            <text x="196" y="48" dx="10" dy="20" font-size="12" font-weight="bold">Connections</text>
-            <text x="204" y="78" dx="10" dy="20" font-size="15">Default</text>
-            <text x="204" y="107" dx="10" dy="20" font-size="15">Profile 1</text>
-            <rect x="389" y="77" width="1" height="52" fill="none" stroke="#000" stroke-width="1" clip-path="inset(1 0 1)"/>
-            <rect x="431" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="2"/>
-            <rect x="432" y="80" width="200" height="88" rx="30" fill="#dff" stroke="#000" stroke-width="2" clip-path="inset(0 102 0 0)"/>
-            <rect x="532" y="80" width="3" height="72" fill="none" stroke="#000" stroke-width="1"/>
-            <ellipse cx="475" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="33%"/>
-          </svg>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="640" height="136">
+              <rect x="-2" y="32" width="178" height="50" fill="none" stroke="#000" stroke-width="3" clip-path="inset(0 10)"/>
+              <rect x="21" y="49" width="18" height="18" fill="#888" fill-opacity="50%"/>
+              <text x="36" y="49" dx="10" dy="15" font-size="18" font-weight="bold">Settings</text>
+              <ellipse cx="120" cy="60" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="25%"/>
+              <ellipse cx="120" cy="60" rx="1" ry="1" fill="none" stroke="#000" stroke-width="3" stroke-opacity="50%"/>
+              <rect x="192" y="8" width="450" height="130" fill="none" stroke="#000" stroke-width="4" clip-path="inset(0 10 10 0)"/>
+              <rect x="193" y="9" width="449" height="36" fill="none" stroke="#000" stroke-width="3" clip-path="inset(0 10 0 0)"/>
+              <text x="192" y="9" dx="10" dy="24" font-size="15" font-weight="bold">Settings</text>
+              <rect x="204" y="78" width="186" height="30" fill="none" stroke="#000" stroke-width="1" clip-path="inset(0 1 1)"/>
+              <rect x="204" y="107" width="186" height="30" fill="none" stroke="#000" stroke-width="1" clip-path="inset(0 1 1)"/>
+              <text x="196" y="48" dx="10" dy="20" font-size="12" font-weight="bold">Connections</text>
+              <text x="204" y="78" dx="10" dy="20" font-size="15">Default</text>
+              <text x="204" y="107" dx="10" dy="20" font-size="15">Profile 1</text>
+              <rect x="389" y="77" width="1" height="52" fill="none" stroke="#000" stroke-width="1" clip-path="inset(1 0 1)"/>
+              <rect x="431" y="80" width="200" height="88" rx="30" fill="none" stroke="#000" stroke-width="2"/>
+              <rect x="432" y="80" width="200" height="88" rx="30" fill="#dff" stroke="#000" stroke-width="2" clip-path="inset(0 102 0 0)"/>
+              <rect x="532" y="80" width="3" height="72" fill="none" stroke="#000" stroke-width="1"/>
+              <ellipse cx="475" cy="110" rx="15" ry="15" fill="none" stroke="#000" stroke-width="3" stroke-opacity="33%"/>
+            </svg>
+          </div>
         </div>
       </div>
       <div class="info">

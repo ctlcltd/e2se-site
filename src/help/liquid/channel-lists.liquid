@@ -16,46 +16,63 @@
         <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
         <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
       </div>
-      <hr id="lists">
+      <div id="channel-list" class="l1">
+        <h3>Channel list</h3>
+        <div class="l2">
+          <p>The channel list is handled side by side in the main tab, every file has its main tab.</p>
+          <p>There is a side bar containing two areas: &quot;Services&quot; and &quot;Bouquets&quot;, the item pressed on these areas will be displayed in the adjacent area &quot;Channels&quot;, in the prominent side.</p>
+        </div>
+        <p>The main tab is always shown in the tab switcher.</p>
+      </div>
       <div id="create-list" class="l1">
         <h3>Create channel lists</h3>
         <p>To create a new list of channels, open a new tab by clicking on <b>&quot;<span class="symbolic">+</span> New Tab&quot;</b> at top window.</p>
         <div class="l2">
-          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>New</b>.</p>
+          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>New</b></p>
         </div>
       </div>
       <div id="edit-list" class="l1">
         <h3>Edit channel lists</h3>
         <p>Open the channel list.</p>
         <div class="l2">
-          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Open</b>.</p>
-          <p><b>From quick menu</b>, click on <b>&quot;Open&quot;</b>.</p>
+          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Open</b></p>
+          <p><b>From quick menu</b>, click on <b>&quot;Open&quot;</b></p>
         </div>
       </div>
       <div id="save-list" class="l1">
         <h3>Save channel lists</h3>
         <div class="l2">
-          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Save</b>, or to save with another name or to another location, click menu <b>File</b> &gt; <b>Save as</b>.</p>
-          <p><b>From quick menu</b>, click <b>&quot;Save&quot;</b>.</p>
+          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Save</b>, or to save with another name or to another location, click menu <b>File</b> &gt; <b>Save as</b></p>
+          <p><b>From quick menu</b>, click <b>&quot;Save&quot;</b></p>
         </div>
         <p>You may see a message about overwriting of existing files, choose <b>&quot;Save&quot;</b> or <b>&quot;Cancel&quot;</b>.</p>
+      </div>
+      <div id="sort-column" class="l1">
+        <h3>Sort by column</h3>
+        <p>The channel list tree can be visually sorted according to the column name (eg. sorted by <i>Name A-Z</i> or <i>Name Z-A</i>) in ascending and descending order.</p>
+        <p>To use the sort click on <b>column name</b> in the tree view, inside the <b>Channels</b> area.</p>
+        <p>When using sort by column, Drag and Drop is not available, to quickly re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
       </div>
       <div id="convert-list" class="l1">
         <h3>Convert channel lists</h3>
         <p>Channel lists can be converted between formats, from Enigma 2 to Neutrino and from Neutrino to Enigma 2.</p>
-        <p>From the <b>&quot;Services&quot;</b> side list above <i>All services</i>, click on icon <span class="icon"><svg width="20" height="20"><use href="#service-sets-menu" fill="currentColor"/></svg></span>.</p>
-        <p>Then from the drop-down menu, press <b>Convert</b> menu item, select the option responding to the desired conversion.</p>
-        <p>Available from / to conversion options are:</p>
-        <ul>
-          <li>Lamedb 2.4 [Enigma 2]</li>
-          <li>Lamedb 2.5 [Enigma 2]</li>
-          <li>Lamedb 2.3 [Enigma 1]</li>
-          <li>Lamedb 2.2 [Enigma 1]</li>
-          <li>Zapit api-v4 [Neutrino]</li>
-          <li>Zapit api-v3 [Neutrino]</li>
-          <li>Zapit api-v2 [Neutrino]</li>
-          <li>Zapit api-v1 [Neutrino]</li>
-        </ul>
+        <div class="l2">
+          <p><b>From &quot;Services&quot;</b> side list above <i>All services</i>, click on icon <span class="icon"><svg width="20" height="20"><use href="#service-sets-menu" fill="currentColor"/></svg></span>, then from the drop-down menu, press <b>Convert</b> menu item, select the option responding to the desired conversion</p>
+          <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Convert</b></p>
+          <div class="l3">
+            <p>Available from / to conversion options are:</p>
+            <ul>
+              <li>Lamedb 2.4 [Enigma 2]</li>
+              <li>Lamedb 2.5 [Enigma 2]</li>
+              <li>Lamedb 2.3 [Enigma 1]</li>
+              <li>Lamedb 2.2 [Enigma 1]</li>
+              <li>Zapit api-v4 [Neutrino]</li>
+              <li>Zapit api-v3 [Neutrino]</li>
+              <li>Zapit api-v2 [Neutrino]</li>
+              <li>Zapit api-v1 [Neutrino]</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div id="import-export" class="l1">
         <h3>Import and Export</h3>
@@ -63,8 +80,8 @@
         <div class="l2">
           <h5>Import</h5>
           <div class="l3">
-            <p><b>From quick menu</b>, click on <b>&quot;Import&quot;</b>.</p>
-            <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Import</b>.</p>
+            <p><b>From quick menu</b>, click on <b>&quot;Import&quot;</b></p>
+            <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Import</b></p>
           </div>
           <p>In <b>File dialog</b>, select file or directory to import. In dialog you can select the type of file to import from File type selector.</p>
         </div>
@@ -72,27 +89,127 @@
           <h5>Export</h5>
           <p>The current selected service channel list or bouquet will be exported.</p>
           <div class="l3">
-            <p><b>From quick menu</b>, click on <b>&quot;Export&quot;</b>.</p>
-            <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Export</b>.</p>
-            <p><b>From bouquet</b> you want to export, open the context menu and click on <b>&quot;Export&quot;</b>.</p>
+            <p><b>From quick menu</b>, click on <b>&quot;Export&quot;</b></p>
+            <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Export</b></p>
+            <p><b>From bouquet</b> you want to export, open the context menu and click on <b>&quot;Export&quot;</b></p>
           </div>
           <p>In <b>File dialog</b>, select the location where you want to export. In dialog you can select the type of file to export from the File type selector.</p>
         </div>
       </div>
-      <hr id="channels">
-      <div id="channel-sort" class="l1">
-        <h3>Channel sorting</h3>
-        <p>Channels can be sorted according to the column name (e.g. sorted by <i>Name A-Z</i> or <i>Name Z-A</i>) in ascending and descending order.</p>
-        <p>To use the sort click on <b>column name</b> in the tree view, inside the <b>Channels</b> area.</p>
-        <p>When using channel sort, Drag and Drop is not available, to quickly re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
+      <hr>
+      <div id="tools" class="l1">
+        <h3>Tools</h3>
+        <p>There are serveral utils <b>Tools</b> to perform batch operations on channel list.</p>
+        <div class="l2">
+          <p><b>From main menu</b>, click menu <b>Tools</b>, select the desired operation</p>
+          <p><b>From bottom toolbar</b>, click on <b>&quot;Tools&quot;</b>, select the desired operation</p>
+        </div>
+        <p>A related list of available operations:</p>
+        <ul>
+          <li>
+            <p><b>Clean</b></p>
+            <ul>
+              <li>Remove orphaned services &mdash; <i>without transponder reference</i></li>
+              <li>remove orphaned references &mdash; <i>without service reference</i></li>
+              <li>Fix bouquets unique userbouquets</li>
+              <li>Fix (remove) references with errors</li>
+            </ul>
+          </li>
+          <li>
+            <p><b>Params</b></p>
+            <ul>
+              <li>Remove cached CAID</li>
+              <li>Remove cached flags</li>
+              <li>Remove all service data</li>
+              <li>Recalculate DVBNS for services</li>
+            </ul>
+          </li>
+          <li>
+            <p><b>Remove</b></p>
+            <ul>
+              <li>Remove unreferenced entries (favourites)</li>
+              <li>Remove from bouquets (unused services)</li>
+              <li>Remove parental lock</li>
+              <li>Remove all bouquets</li>
+              <li>Remove all userbouquets</li>
+            </ul>
+          </li>
+          <li>
+            <p><b>Duplicates</b></p>
+            <ul>
+              <li>Remove duplicate markers (names)</li>
+              <li>Remove duplicate references</li>
+              <li>Remove duplicate services</li>
+              <li>Remove all duplicates</li>
+            </ul>
+          </li>
+          <li>
+            <p><b>Sort</b></p>
+            <ul>
+              <li>Sort references &mdash; <i>channels, favourites, markers</i></li>
+              <li>Sort services</li>
+              <li>Sort userbouquets</li>
+            </ul>
+          </li>
+          <li><b>Autofix</b> &mdash; <i>automatic fixes channel list</i>, see <a href="#autofix">Autofix</a> chapter, on this page.</li>
+          <li><b>Import</b> &mdash; <i>imports from CSV, M3U files</i>, see <a href="file-interop.html">File interoperability</a> page.</li>
+          <li><b>Export</b> &mdash; <i>exports to CSV, M3U, HTML files</i>, see <a href="file-interop.html">File interoperability</a> page.</li>
+          <li><b>Log Inspect</b> &mdash; <i>inspects logs</i>, see <a href="troubleshooting.html#view-logs">View software logs</a> chapter, on <a href="troubleshooting.html#view-logs">Troubleshooting</a> page.</li>
+        </ul>
+        <div class="l2">
+          <p>Note: <i>Tools &quot;Utils&quot; available since software version 1.7</i></p>
+        </div>
       </div>
+      <div id="autofix" class="l1">
+        <h3>Autofix</h3>
+        <p>Autofix is an util to automatic fix the channel list.</p>
+        <p>This macro does the following operations:</p>
+        <ul>
+          <li>remove all duplicates</li>
+          <li>fix and remove references with errors</li>
+          <li>recalculate DVBNS for services</li>
+          <li>fix bouquets</li>
+        </ul>
+        <div class="l2">
+          <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Autofix</b></p>
+          <p><b>From bottom toolbar</b>, click <b>&quot;Autofix&quot;</b></p>
+          <p><b>From bottom toolbar</b>, click on <b>&quot;Tools&quot;</b> &gt; <b>Autofix</b></p>
+        </div>
+        <div class="l2">
+          <p>Note: <i>Autofix available since software version 1.7</i></p>
+        </div>
+      </div>
+      <hr id="channels">
       <div id="move-channels" class="l1">
         <h3>Move channels</h3>
         <p>Channels move with <b>Drag and Drop</b>, or alternatively with the <b>Cut - Copy - Paste</b> functionality.</p>
-        <p>Select services, channels, markers, then drag them onto the <b>Bouquets</b> area with the mouse cursor, into the bouquet item.</p>
-        <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span class="symbol">&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span class="symbol">&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into channel item or bouquet item onto the <b>Bouquets</b> area.</p>
+        <div class="l2">
+          <p>Select services, channels, markers, then drag them onto the <b>Bouquets</b> area with the mouse cursor, into the bouquet item.</p>
+          <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span class="symbol">&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span class="symbol">&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into channel item or bouquet item onto the <b>Bouquets</b> area.</p>
+        </div>
         <div class="l2">
           <p>When using channel sort, Drag and Drop is not available, to quickly re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
+        </div>
+      </div>
+      <div id="sort-channels" class="l1">
+        <h3>Sort channels</h3>
+        <p>Sort channels by their properties, eg. Channel Name, in ascending or descending order.</p>
+        <div class="l2">
+          <p>Select services, channels, markers, then press <b>Sort&hellip;</b> from context menu or <b>Tools</b>.</p>
+          <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span class="symbol">&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span class="symbol">&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad.</p>
+          <div class="l3">
+            <p><b>From channels</b> you want to sort, open the context menu and click on <b>&quot;Sort&hellip;&quot;</b></p>
+            <p><b>From userbouquet</b>, to sort all channels in the bouquet, open the context menu and click on <b>Sort&hellip;</b></p>
+            <p><b>From main menu</b>, click menu <b>Tools</b>, then click on menu <b>Sort</b> &gt; <b>Sort references&hellip;</b> for channels, or <b>Sort services&hellip;</b> for services</p>
+            <p><b>From bottom toolbar</b>, click on <b>&quot;Tools&quot;</b>, then click on menu <b>Sort</b> &gt; <b>Sort references&hellip;</b> for channels, or <b>Sort services&hellip;</b> for services</p>
+          </div>
+          <div class="l3">
+            <p>Repeat <b>last Sort</b></p>
+            <p>To quickly repeat the last sort options when calling <b>&quot;Sort&hellip;&quot;</b> from the context menu, check the option &quot;Recall this set when Sort from context menu&quot; from the Sort menu.</p>
+          </div>
+          <div class="l2">
+            <p>Note: <i>Sort channels available since software version 1.7</i></p>
+          </div>
         </div>
       </div>
       <div id="reference" class="l1">
@@ -159,7 +276,7 @@
         <p>Select a favourite to edit, open the context menu and click on <b>&quot;Edit Favourite&quot;</b>.</p>
         <p>In <b>dialog</b>, change the parameters of the favourite, then press <b>&quot;Save&quot;</b>.</p>
         <p><i>The favourite will be changed in the current bouquet.</i></p>
-        <p>Favourite can be quickly edited by <b>double-click</b>ing on selected marker.</p>
+        <p>Favourite can be quickly edited by <b>double-click</b>ing on selected favourite.</p>
       </div>
       <div id="delete-favourite" class="l1">
         <h3>Delete favourite</h3>
@@ -195,9 +312,27 @@
       <div id="move-bouquets" class="l1">
         <h3>Move bouquets</h3>
         <p>The bouquets move with <b>Drag and Drop</b>.</p>
-        <p>Select bouquets then drag them with the mouse cursor to the desired position.</p>
         <div class="l2">
-          <p>Note: <i>Multiple selection is not available for moving bouquets.</i></p>
+          <p>Select bouquets then drag them with the mouse cursor to the desired position.</p>
+          <div class="l3">
+            <p>Note: <i>Multiple selection is not available for moving bouquets.</i></p>
+          </div>
+        </div>
+      </div>
+      <div id="sort-bouquets" class="l1">
+        <h3>Sort bouquets</h3>
+        <p>Sort userbouquets by their properties, eg. Userbouquet Name, in ascending or descending order.</p>
+        <div class="l2">
+          <div class="l3">
+            <p><b>From main menu</b>, click menu <b>Tools</b>, then click on menu <b>Sort&hellip;</b> &gt; <b>Sort userbouquets&hellip;</b></p>
+            <p><b>From bottom toolbar</b>, click on <b>&quot;Tools&quot;</b>, then click on menu <b>Sort</b> &gt; <b>Sort userbouquets&hellip;</b></p>
+          </div>
+          <div class="l3">
+            <p>Note: <i>Multiple selection is not available for sorting bouquets.</i></p>
+          </div>
+          <div class="l2">
+            <p>Note: <i>Sort bouquets available since software version 1.7</i></p>
+          </div>
         </div>
       </div>
       <div id="create-bouquet" class="l1">

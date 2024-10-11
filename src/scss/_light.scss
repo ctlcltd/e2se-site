@@ -37,10 +37,10 @@ $light_button-shadow-color-hover: rgba(0, 0, 0, .25);
 $light_button-shadow-color-focus: rgba(0, 0, 0, .2);
 
 $light_button-primary-color: #fff;
-$light_button-primary-background: lighten(dodgerblue, 2%);
+$light_button-primary-background: color.adjust(dodgerblue, $lightness: 2%);
 
 $light_button-secondary-color: #fff;
-$light_button-secondary-background: darken(dimgray, 6%);
+$light_button-secondary-background: color.adjust(dimgray, $lightness: -6%);
 
 
 
