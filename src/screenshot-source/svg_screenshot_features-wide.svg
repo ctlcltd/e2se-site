@@ -215,7 +215,7 @@
             <text class="txt" x="87" y="150" dy="22" style="font-size:19.5px;fill:#000">Service name</text>
             <g>
               <rect class="input-bg" x="87" y="187" width="346" height="33" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(2.6px 2.6px 1.8px)" />
-              <text class="input-txt" x="87" y="187" dx="4" dy="23" style="font-size:19px;fill:#000">NASA TV HD</text>
+              <text class="input-txt" x="87" y="187" dx="4" dy="23" style="font-size:19px;fill:#000">HotBird 4K1</text>
             </g>
           </g>
           <g class="fg-item">
@@ -255,7 +255,7 @@
             <text class="txt" x="87" y="365" dy="22" style="font-size:19.5px;fill:#000">Service ID</text>
             <g>
               <rect class="input-bg" x="87" y="401" width="87" height="33" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(2.6px 2.6px 1.8px)" />
-              <text class="input-txt" x="87" y="401" dx="4" dy="23" style="font-size:19px;fill:#000">504</text>
+              <text class="input-txt" x="87" y="401" dx="4" dy="23" style="font-size:19px;fill:#000">1209</text>
               <text class="input-xr" x="188" y="401" dy="23" style="font-size:19.5px;fill:#000">[SID]</text>
             </g>
           </g>
@@ -299,7 +299,7 @@
             <g class="btn-dropdown">
               <rect class="btn-bg" x="225" y="587" width="241" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
               <rect class="btn-fg" x="225" y="587" width="241" height="30" rx="1" style="display:none" />
-              <text class="btn-txt" x="225" y="587" dx="12" dy="22" style="font-size:20px;fill:#000">11373/H/27500</text>
+              <text class="btn-txt" x="225" y="587" dx="12" dy="22" style="font-size:20px;fill:#000">12558/V/27500</text>
               <rect class="btn-fix" x="225" y="587" width="241" height="30" rx="1" style="display:none" />
               <g class="btn-caret" transform="matrix(1,0,0,1,438,589)">
                 <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
@@ -358,7 +358,7 @@
                 <text class="txt" x="632" y="295" dy="22" style="font-size:19.5px;fill:#000">video</text>
                 <g>
                   <rect class="input-bg" x="691" y="294" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(2.6px 2.6px 1.8px)" />
-                  <text class="input-txt" x="691" y="294" dx="4" dy="23" style="font-size:19px;fill:#000">5041</text>
+                  <text class="input-txt" x="691" y="294" dx="4" dy="23" style="font-size:19px;fill:#000">2091</text>
                   <text class="input-xr" x="775" y="294" dy="23" style="font-size:19px;fill:#000">[VPID]</text>
                 </g>
               </g>
@@ -381,7 +381,7 @@
                 <text class="txt" x="650" y="429" dy="22" style="font-size:19.5px;fill:#000">pcr</text>
                 <g>
                   <rect class="input-bg" x="691" y="428" width="70" height="31" rx="1" style="rx:0;fill:#fff;stroke:#000;stroke-opacity:0.25;stroke-width:3.4px;clip-path:inset(2.6px 2.6px 1.8px)" />
-                  <text class="input-txt" x="691" y="428" dx="4" dy="23" style="font-size:19px;fill:#000">5041</text>
+                  <text class="input-txt" x="691" y="428" dx="4" dy="23" style="font-size:19px;fill:#000">2091</text>
                   <text class="input-xr" x="775" y="428" dy="23" style="font-size:19px;fill:#000">[PCRPID]</text>
                 </g>
               </g>
@@ -516,7 +516,7 @@
     </g>
     <g id="menubar" style="display:none">
       <rect id="mb-bg" x="82" y="121" width="1716" height="32" style="fill:#eee" />
-      <text id="mb-txt" x="82" y="121" dx="12" dy="24" style="font-size:19px;fill:#000">File Edit Find Tools Window Help</text>
+      <text id="mb-txt" x="82" y="121" dx="12" dy="24" style="font-size:19px;fill:#000">File Edit Find Tools Editor Window Help</text>
       <rect id="mb-stroke" x="81" y="154" width="1718" height="1" style="fill:#aaa" />
     </g>
     <g id="w-inner">
@@ -667,7 +667,7 @@
                   </g>
                 </g>
               </g>
-              <text class="btn-txt" x="1049" y="224" dx="12" dy="22" style="font-size:20px;fill:#000">Default</text>
+              <text class="btn-txt" x="1049" y="224" dx="12" dy="22" style="font-size:20px;fill:#000">Profile 1</text>
             </g>
           </g>
           <g class="menu-item">
@@ -715,11 +715,11 @@
                 <rect class="bg" x="82" y="366" width="380" height="687" style="fill:#fff" />
                 <g class="items">
                   <rect class="focused" x="82" y="448" width="380" height="44" style="fill:#ebebeb" />
-                  <text x="82" y="366" dy="29" style="font-size:19px;fill:#000"><tspan x="97">Hispasat 30W-4-5</tspan> <tspan x="389">30.0W</tspan></text>
-                  <text x="82" y="407" dy="29" style="font-size:19px;fill:#000"><tspan x="97">Eutelsat / Nilesat</tspan> <tspan x="389">7.0W</tspan></text>
+                  <text x="82" y="366" dy="29" style="font-size:19px;fill:#000"><tspan x="97">Hispasat 30W</tspan> <tspan x="389">30.0W</tspan></text>
+                  <text x="82" y="407" dy="29" style="font-size:19px;fill:#000"><tspan x="97">Eutelsat 7W</tspan> <tspan x="389">7.0W</tspan></text>
                   <text class="active" x="82" y="448" dy="29" style="font-size:19px;fill:#000"><tspan x="97">Hot Bird</tspan> <tspan x="389">13.0E</tspan></text>
-                  <text x="82" y="491" dy="29" style="font-size:19px;fill:#000"><tspan x="97">Badr 7</tspan> <tspan x="389">24.0E</tspan></text>
-                  <text x="82" y="533" dy="29" style="font-size:19px;fill:#000"><tspan x="97">Badr 4/5/6/7</tspan> <tspan x="389">26.0E</tspan></text>
+                  <text x="82" y="491" dy="29" style="font-size:19px;fill:#000"><tspan x="97">Badr 5/7/8 C</tspan> <tspan x="389">26.0E</tspan></text>
+                  <text x="82" y="531" dy="29" style="font-size:19px;fill:#000"><tspan x="97">Badr 5/7/8 Ku</tspan> <tspan x="389">26.0E</tspan></text>
                 </g>
               </g>
             </g>
@@ -889,10 +889,10 @@
     <g id="statusbar">
       <rect id="sb-bg" x="82" y="1164" width="1716" height="56" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0 0)" />
       <rect id="sb-stroke" x="80" y="1179" width="1720" height="42" style="fill:none;stroke:#d8d9d9;stroke-width:2.5px;clip-path:inset(0 2px 42px)" />
-      <text id="sbts" x="82" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Transponders: 119</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
+      <text id="sbts" x="82" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Transponders: 102</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
       <rect class="divid sbds-w" x="402" y="1184" width="1" height="25" style="fill:none" />
       <rect class="divid sbdl-w" x="1608" y="1184" width="1" height="25" style="fill:none" />
-      <text id="sbte" x="82" y="1179" dx="1535" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 411</tspan></text>
+      <text id="sbte" x="82" y="1179" dx="1535" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 251</tspan></text>
       <rect class="divid sbdr-w" x="1721" y="1184" width="1" height="25" style="fill:none" />
       <rect class="divid sbdr-i" x="1770" y="1184" width="1" height="25" style="fill:none" />
       <g id="sbnf" transform="matrix(1,0,0,1,1737,1184)">

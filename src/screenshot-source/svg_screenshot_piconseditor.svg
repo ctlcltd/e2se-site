@@ -241,7 +241,7 @@
     </g>
     <g id="menubar" style="display:none">
       <rect id="mb-bg" x="502" y="121" width="1296" height="32" style="fill:#eee" />
-      <text id="mb-txt" x="502" y="121" dx="12" dy="24" style="font-size:19px;fill:#000">File Edit Find Tools Window Help</text>
+      <text id="mb-txt" x="502" y="121" dx="12" dy="24" style="font-size:19px;fill:#000">File Edit Find Tools Editor Window Help</text>
       <rect id="mb-stroke" x="501" y="154" width="1298" height="1" style="fill:#aaa" />
     </g>
     <g id="w-inner">
@@ -402,7 +402,7 @@
                   </g>
                 </g>
               </g>
-              <text class="btn-txt" x="1473" y="224" dx="12" dy="22" style="font-size:20px;fill:#000">Default</text>
+              <text class="btn-txt" x="1473" y="224" dx="12" dy="22" style="font-size:20px;fill:#000">Profile 1</text>
             </g>
           </g>
           <g class="menu-item">

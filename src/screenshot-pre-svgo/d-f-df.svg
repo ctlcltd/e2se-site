@@ -146,7 +146,7 @@
             <text x="70" y="190" dy="22" style="font-size:20px;fill:#fff">Service name</text>
             
               <rect x="70" y="228" width="406" height="40" rx="3" style="fill:#131312;stroke:#4e4d4d;stroke-opacity:1;stroke-width:1.1px;clip-path:none"/>
-              <text x="70.5" y="232.5" dx="4" dy="23" style="font-size:20px;fill:#fff">NASA TV HD</text>
+              <text x="70.5" y="232.5" dx="4" dy="23" style="font-size:20px;fill:#fff">HotBird 4K1</text>
             
           
           
@@ -177,7 +177,7 @@
             <text x="70" y="382" dy="22" style="font-size:20px;fill:#fff">Service ID</text>
             
               <rect x="70" y="420" width="90" height="40" rx="3" style="fill:#131312;stroke:#4e4d4d;stroke-opacity:1;stroke-width:1.1px;clip-path:none"/>
-              <text x="70" y="424.5" dx="4" dy="23" style="font-size:19.5px;fill:#fff">504</text>
+              <text x="70" y="424.5" dx="4" dy="23" style="font-size:19.5px;fill:#fff">1209</text>
               <text x="170" y="423" dy="23" style="font-size:20px;fill:#fff">[SID]</text>
             
           
@@ -212,7 +212,7 @@
             
               <rect x="202" y="597" width="274" height="38" rx="3" style="fill:#131312;stroke:url(#brf);stroke-width:1.1px;filter:url(#bsf)"/>
               <rect x="200.5" y="596.5" width="247" height="39" rx="3" style="clip-path:inset(0px 3px 0px 0px);opacity:0.2"/>
-              <text x="195" y="601" dx="12" dy="22" style="font-size:20px;fill:#fff">11373/H/27500</text>
+              <text x="195" y="601" dx="12" dy="22" style="font-size:20px;fill:#fff">12558/V/27500</text>
               <rect x="445" y="596.5" width="31" height="39" rx="2.2" style="fill:url(#bpf);stroke:url(#brf);stroke-width:2.2px;clip-path:inset(1.3px 1.1px 1.3px 0px)"/>
               
                 <rect x="454.2" y="605" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
@@ -262,7 +262,7 @@
                 <text x="537" y="303" dy="22" style="font-size:19.5px;fill:#fff">video</text>
                 
                   <rect x="671" y="297" width="73" height="40" rx="3" style="fill:#131312;stroke:#4e4d4d;stroke-opacity:1;stroke-width:1.1px;clip-path:none"/>
-                  <text x="671.5" y="301.5" dx="4" dy="23" style="font-size:19px;fill:#fff">5041</text>
+                  <text x="671.5" y="301.5" dx="4" dy="23" style="font-size:19px;fill:#fff">2091</text>
                   <text x="754" y="301" dy="23" style="font-size:19px;fill:#fff">[VPID]</text>
                 
               
@@ -285,7 +285,7 @@
                 <text x="537" y="454" dy="22" style="font-size:19.5px;fill:#fff">pcr</text>
                 
                   <rect x="671" y="448" width="73" height="40" rx="3" style="fill:#131312;stroke:#4e4d4d;stroke-opacity:1;stroke-width:1.1px;clip-path:none"/>
-                  <text x="671.5" y="452.5" dx="4" dy="23" style="font-size:19px;fill:#fff">5041</text>
+                  <text x="671.5" y="452.5" dx="4" dy="23" style="font-size:19px;fill:#fff">2091</text>
                   <text x="754" y="452" dy="23" style="font-size:19px;fill:#fff">[PCRPID]</text>
                 
               
@@ -397,7 +397,7 @@
     
     
       <rect x="1522" y="129" width="1716" height="36" style="fill:#222020"/>
-      <text x="1523" y="131" dx="12" dy="24" style="font-size:20px;word-spacing:15px;fill:#fff;fill-opacity:0.9">File Edit Find Tools Window Help</text>
+      <text x="1523" y="131" dx="12" dy="24" style="font-size:20px;word-spacing:15px;fill:#fff;fill-opacity:0.9">File Edit Find Tools Editor Window Help</text>
       <rect x="1521" y="165.5" width="1718" height="1" style="fill:#e2e2e2;stroke:#1d1c1c"/>
     
     
@@ -539,7 +539,7 @@
                   </g>
                 
               
-              <text x="2569" y="266" dx="12" dy="22" style="font-size:20px;fill:#fff">Default</text>
+              <text x="2569" y="266" dx="12" dy="22" style="font-size:20px;fill:#fff">Profile 1</text>
             
           
           
@@ -587,11 +587,11 @@
                 <rect x="1522" y="403" width="380" height="687" style="fill:#131312"/>
                 
                   <rect x="82" y="448" width="380" height="44" style="fill:#12608a" transform="matrix(1,0,0,0.996,1440,40.4)"/>
-                  <text x="1522" y="404" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Hispasat 30W-4-5</tspan> <tspan x="1825">30.0W</tspan></text>
-                  <text x="1522" y="445" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Eutelsat / Nilesat</tspan> <tspan x="1825">7.0W</tspan></text>
+                  <text x="1522" y="404" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Hispasat 30W</tspan> <tspan x="1825">30.0W</tspan></text>
+                  <text x="1522" y="445" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Eutelsat 7W</tspan> <tspan x="1825">7.0W</tspan></text>
                   <text x="1522" y="486" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Hot Bird</tspan> <tspan x="1825">13.0E</tspan></text>
-                  <text x="1522" y="529" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Badr 7</tspan> <tspan x="1825">24.0E</tspan></text>
-                  <text x="1522" y="571" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Badr 4/5/6/7</tspan> <tspan x="1825">26.0E</tspan></text>
+                  <text x="1522" y="529" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Badr 5/7/8 C</tspan> <tspan x="1825">26.0E</tspan></text>
+                  <text x="1522" y="569" dy="29" style="font-size:20px;fill:#fff"><tspan x="1533">Badr 5/7/8 Ku</tspan> <tspan x="1825">26.0E</tspan></text>
                 
               
             
@@ -748,10 +748,10 @@
     
       <rect x="1522" y="1169" width="1716" height="51" rx="0" style="fill:#222020;clip-path:inset(15px 0px 0px)"/>
       <rect x="1520" y="1184" width="1720" height="37" style="fill:none;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(0px 2px 2px)"/>
-      <text x="1516" y="1181" dx="29" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Transponders: 119</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
+      <text x="1516" y="1181" dx="29" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Transponders: 102</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
       
       
-      <text x="1554" y="1181" dx="1535" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Total: 411</tspan></text>
+      <text x="1554" y="1181" dx="1535" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Total: 251</tspan></text>
       
       
       

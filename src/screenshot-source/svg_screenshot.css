@@ -821,7 +821,7 @@
 
 .dw #statusbar text { transform: translate(-13px, -4px); }
 .dw #statusbar #sbte { transform: translate(37px, -4px); }
-.dw #statusbar #sbnf rect { stroke: #5d5d5d !important; stroke-width: 2.8px !important; }
+.dw #statusbar #sbnf rect { display: none !important; }
 .dw #statusbar #sbnf .ico use { fill: #b0b0b0 !important; }
 
 

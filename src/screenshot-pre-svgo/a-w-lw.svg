@@ -124,7 +124,7 @@
     
     
       
-      <text x="80" y="128.1" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#000">File Edit Find Tools Window Help</text>
+      <text x="80" y="128.1" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#000">File Edit Find Tools Editor Window Help</text>
       
     
     
@@ -266,7 +266,7 @@
                   
                 
               
-              <text x="1109" y="259" dx="12" dy="22" style="font-size:19.5px;fill:#000">Default</text>
+              <text x="1109" y="259" dx="12" dy="22" style="font-size:19.5px;fill:#000">Profile 1</text>
             
           
           
@@ -462,15 +462,12 @@
                 <g transform="matrix(0.38,0,0,0.38,1360,716)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
-                <text x="469" y="753" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">45</tspan> <tspan x="572">NASA TV HD</tspan> <tspan x="982">504</tspan> <tspan x="1106">900</tspan> <tspan x="1227">TV</tspan> <tspan x="1426">NoName</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="753" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">45</tspan> <tspan x="572">NASA+</tspan> <tspan x="982">1958</tspan> <tspan x="1106">0</tspan> <tspan x="1227">STREAM</tspan> <tspan x="1695">[eservice]</tspan></text>
                 <text x="469" y="802" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">46</tspan> <tspan x="572">Cartoonito HD</tspan> <tspan x="982">133</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,814)">
                   <use href="#cdd" style="fill:#545454"/>
                 </g>
-                <text x="469" y="851" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">47</tspan> <tspan x="572">Super!</tspan> <tspan x="982">1327</tspan> <tspan x="1106">15700</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">M-ThreeSatcom Srl</tspan> <tspan x="1695">DVB-S2</tspan></text>
-                <g transform="matrix(0.38,0,0,0.38,1360,863)">
-                  <use href="#cdd" style="fill:#545454"/>
-                </g>
+                <text x="469" y="851" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">47</tspan> <tspan x="572">Super!</tspan> <tspan x="982">55</tspan> <tspan x="1106">512</tspan> <tspan x="1227">H.264</tspan> <tspan x="1425">Persidera</tspan> <tspan x="1695">DVB-T</tspan></text>
                 <text x="469" y="900" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">48</tspan> <tspan x="572">Rai News 24 HD</tspan> <tspan x="982">17711</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <text x="469" y="948" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">49</tspan> <tspan x="572">Mediaset Italia2 HD</tspan> <tspan x="982">130</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,960)">
@@ -612,10 +609,10 @@
     
       <rect x="82" y="1172" width="1716" height="48" rx="0" style="fill:none;clip-path:inset(15px 0px 0px)"/>
       <rect x="80" y="1187" width="1720" height="34" style="fill:none;stroke:#d0d0d0;stroke-width:2.2px;clip-path:inset(0px 2px 2px)"/>
-      <text x="69" y="1184" dx="29" dy="29" style="font-size:19px;fill:#000"><tspan>Channels: 136</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
+      <text x="69" y="1184" dx="29" dy="29" style="font-size:19px;fill:#000"><tspan>Channels: 143</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
       <rect x="508" y="1192" width="1.2" height="25" style="fill:#d0d0d0"/>
       <rect x="1315" y="1192" width="1.2" height="25" style="fill:#d0d0d0"/>
-      <text x="119" y="1184" dx="1212" dy="29" style="font-size:19px;fill:#000"><tspan>TV: 1127</tspan> <tspan dx="10">Radio: 279</tspan> <tspan dx="10">Data: 150</tspan> <tspan dx="10">Total: 1556</tspan></text>
+      <text x="119" y="1184" dx="1212" dy="29" style="font-size:19px;fill:#000"><tspan>TV: 1240</tspan> <tspan dx="10">Radio: 304</tspan> <tspan dx="10">Data: 148</tspan> <tspan dx="10">Total: 1692</tspan></text>
       <rect x="1721" y="1192" width="1.2" height="25" style="fill:#d0d0d0"/>
       <rect x="1770" y="1192" width="1.2" height="25" style="fill:#d0d0d0"/>
       

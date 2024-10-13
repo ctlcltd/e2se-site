@@ -159,7 +159,7 @@
     
     
       
-      <text x="500" y="128.1" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#fff;opacity:0.97">File Edit Find Tools Window Help</text>
+      <text x="500" y="128.1" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#fff;opacity:0.97">File Edit Find Tools Editor Window Help</text>
       
     
     
@@ -311,7 +311,7 @@
                   </g>
                 
               
-              <text x="1520" y="259" dx="12" dy="22" style="font-size:19.5px;fill:#fff;opacity:0.96">Default</text>
+              <text x="1520" y="259" dx="12" dy="22" style="font-size:19.5px;fill:#fff;opacity:0.96">Profile 1</text>
             
           
           
@@ -572,7 +572,7 @@
       
       
       
-        <rect x="1730.2" y="1193" width="36" height="24" style="fill:none;stroke:#5d5d5d;stroke-width:2.8px"/>
+        
         <g transform="matrix(0.38,0,0,0.38,1736,1193)">
           <use href="#ffo" style="fill:#b0b0b0"/>
         </g>

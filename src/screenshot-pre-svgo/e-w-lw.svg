@@ -150,7 +150,7 @@
     
     
       
-      <text x="500" y="128.1" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#000">File Edit Find Tools Window Help</text>
+      <text x="500" y="128.1" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#000">File Edit Find Tools Editor Window Help</text>
       
     
     
@@ -302,7 +302,7 @@
                   
                 
               
-              <text x="1520" y="259" dx="12" dy="22" style="font-size:19.5px;fill:#000">Default</text>
+              <text x="1520" y="259" dx="12" dy="22" style="font-size:19.5px;fill:#000">Profile 1</text>
             
           
           
