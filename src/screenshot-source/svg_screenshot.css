@@ -19,8 +19,9 @@
 .dm #sb-bg, .dm #tb-bg, .dm #main-bg { fill: #2f3131 !important; }
 
 #channelbook .dm#addchannel .w-stroke, #wide .dm#editservice .w-stroke { stroke: #020202 !important; }
-#wide .dm#editservice .t-ctrs-m ellipse:last-child { fill: #636766 !important; }
 #channelbook .dm#tint-d { fill-opacity: 0.7 !important; }
+#channelbook .dm#addchannel .t-ctrs-m ellipse:nth-child(2) { fill: #636766 !important; }
+#wide .dm#editservice .t-ctrs-m ellipse:nth-child(2), #wide .dm#editservice .t-ctrs-m ellipse:nth-child(3) { fill: #636766 !important; }
 
 #editor .dm #ss-bg, .dm #tb-corner .bg { fill: #485352 !important; }
 
