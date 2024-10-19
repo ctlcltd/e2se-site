@@ -1,5 +1,7 @@
 /* scss/_dropdown.scss */
 
+@use "variant" as *;
+
 .toggler {
   position: relative;
   padding: .75rem 1rem .75rem;

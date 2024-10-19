@@ -1,79 +1,48 @@
 /* scss/_dark.scss */
 
-$dark_color: #fff;
-$dark_background: #101010;
+@use "sass:color";
+@use "util";
 
-$dark_loading-animation-opacity-0: .77; 
-$dark_loading-animation-opacity-100: .89;
+$variant-name: 'dark';
+
+$color: #fff;
+$background: #101010;
+
+$loading-animation-opacity-0: .77; 
+$loading-animation-opacity-100: .89;
 
 
 // table
 
-$dark_table-border-color: #383838;
-$dark_th-background: #1a1a1a;
+$table-border-color: #383838;
+$th-background: #1a1a1a;
 
-$dark_tr-href-background: #141414;
-$dark_tr-href-background-hover: #1e1e1e;
-$dark_tr-href-background-focus: #023;
-$dark_tr-background-highlight: #034;
+$tr-href-background: #141414;
+$tr-href-background-hover: #1e1e1e;
+$tr-href-background-focus: #023;
+$tr-background-highlight: #034;
 
 
 // form
 
-$dark_input-color: #fff;
-$dark_input-background: #141414;
-$dark_input-border-color: #3a3a3a;
-$dark_input-shadow-color: transparent;
-$dark_input-shadow-color-hover: rgba(80, 80, 80, .7);
-$dark_input-shadow-color-focus: rgba(50, 50, 50, .5);
+$input-color: #fff;
+$input-background: #141414;
+$input-border-color: #3a3a3a;
+$input-shadow-color: transparent;
+$input-shadow-color-hover: rgba(80, 80, 80, .7);
+$input-shadow-color-focus: rgba(50, 50, 50, .5);
 
 
 // buttons
 
-$dark_button-color: #fff;
-$dark_button-background: #1e1e1e;
-$dark_button-shadow-color: transparent;
-$dark_button-shadow-color-hover: rgba(150, 150, 150, .4);
-$dark_button-shadow-color-focus: rgba(0, 0, 0, 1);
+$button-color: #fff;
+$button-background: #1e1e1e;
+$button-shadow-color: transparent;
+$button-shadow-color-hover: rgba(150, 150, 150, .4);
+$button-shadow-color-focus: rgba(0, 0, 0, 1);
 
-$dark_button-primary-color: #fff;
-$dark_button-primary-background: color.adjust(dodgerblue, $lightness: -8%);
+$button-primary-color: #fff;
+$button-primary-background: util.color-hex-str(color.adjust(dodgerblue, $lightness: -8%));
 
-$dark_button-secondary-color: #fff;
-$dark_button-secondary-background: color.adjust(dimgray, $lightness: -19%);
-
-
-
-
-@mixin variant_dark($print: false) {
-  $variant-name: 'dark' !global;
-  $color: $dark_color !global;
-  $background: $dark_background !global;
-  $loading-animation-opacity-0: $dark_loading-animation-opacity-0 !global; 
-  $loading-animation-opacity-100: $dark_loading-animation-opacity-100 !global;
-  $table-border-color: $dark_table-border-color !global;
-  $th-background: $dark_th-background !global;
-  $tr-href-background: $dark_tr-href-background !global;
-  $tr-href-background-hover: $dark_tr-href-background-hover !global;
-  $tr-href-background-focus: $dark_tr-href-background-focus !global;
-  $tr-background-highlight: $dark_tr-background-highlight !global;
-  $input-color: $dark_input-color !global;
-  $input-background: $dark_input-background !global;
-  $input-border-color: $dark_input-border-color !global;
-  $input-shadow-color: $dark_input-shadow-color !global;
-  $input-shadow-color-hover: $dark_input-shadow-color-hover !global;
-  $input-shadow-color-focus: $dark_input-shadow-color-focus !global;
-  $button-color: $dark_button-color !global;
-  $button-background: $dark_button-background !global;
-  $button-shadow-color: $dark_button-shadow-color !global;
-  $button-shadow-color-hover: $dark_button-shadow-color-hover !global;
-  $button-shadow-color-focus: $dark_button-shadow-color-focus !global;
-  $button-primary-color: $dark_button-primary-color !global;
-  $button-primary-background: $dark_button-primary-background !global;
-  $button-secondary-color: $dark_button-secondary-color !global;
-  $button-secondary-background: $dark_button-secondary-background !global;
-
-  @if $print {
-    @include variant();
-  }
-}
+$button-secondary-color: #fff;
+$button-secondary-background: util.color-hex-str(color.adjust(dimgray, $lightness: -19%));

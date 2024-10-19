@@ -187,7 +187,13 @@ module.exports = function(grunt) {
     },
     sass: {
       options: {
-        noSourceMap: true
+        noSourceMap: true,
+        verbose: true
+      },
+      bunch: {
+        files: {
+          './scss/bunch.css': 'scss/index.scss'
+        }
       },
       site: {
         files: {
@@ -295,6 +301,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build.backend', ['liquid:backend', 'concat:backend', 'terser:backend', 'sass:backend', 'cssmin:backend']);
   grunt.registerTask('watch.backend', ['build.backend', 'watch:backend']);
 
+  grunt.registerTask('build.bunch', ['sass:bunch']);
   grunt.registerTask('default', ['build.site', 'build.help', 'build.translate', 'build.backend']);
 
 };

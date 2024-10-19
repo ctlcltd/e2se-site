@@ -5,19 +5,15 @@
  * @license MIT License
  */
 
-@use "sass:color";
-@import "../../scss/_setup.scss";
-@import "variant";
-@import "../../scss/_dark.scss";
-@import "../../scss/_light.scss";
-@include variant_light();
-@import "page";
-@import "custom";
-@import "help";
-@include custom_dist();
+@use "variant" with ($name: "light");
+@use "page";
+@use "custom";
+@use "help";
+
+@include custom.l10n-note;
 
 @media (prefers-color-scheme: dark) {
-  @include variant_dark($print: true);
+  @include variant.print($name: "dark", $wrap: false);
 
-  @include custom_variant_dark();
+  @include variant.dist_styles_dark;
 }

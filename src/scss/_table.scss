@@ -1,5 +1,7 @@
 /* scss/_table.scss */
 
+@use "variant" as *;
+
 table {
   border-collapse: collapse;
   &[data-sortable] th { padding: 0; }

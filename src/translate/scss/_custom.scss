@@ -1,5 +1,8 @@
 /* translate/_custom.scss */
 
+@use "sass:color";
+@use "../../scss/util";
+
 #page {
   max-width: 2048px;
   margin: 0 auto;
@@ -37,7 +40,7 @@ p {
   justify-content: space-between;
   padding: 0 .5rem;
   font-size: .9rem;
-  color: color.adjust(dimgray, $lightness: -22%);
+  color: util.color-hex-str(color.adjust(dimgray, $lightness: -22%));
 
   > div {
     width: 100%;
@@ -79,18 +82,19 @@ p {
   button.text {
     transition: color linear 50ms;
 
-    color: color.adjust(dimgray, $lightness: -22%); opacity: .95;
+    color: util.color-hex-str(color.adjust(dimgray, $lightness: -22%));
+    opacity: .95;
     &:hover { color: #101010; }
     &:focus { color: #000; opacity: 1; }
   }
 }
 .dark {
   #footer {
-    color: color.adjust(lightgray, $lightness: 11%);
+    color: util.color-hex-str(color.adjust(lightgray, $lightness: 11%));
 
     nav a,
     button.text {
-      color: color.adjust(lightgray, $lightness: 11%);
+      color: util.color-hex-str(color.adjust(lightgray, $lightness: 11%));
       &:hover { color: #eee; }
       &:focus { color: #fff; }
     }
@@ -332,9 +336,9 @@ label {
   font-size: .7rem;
   font-weight: bold;
 }
-.status-unfinished { color: darken(lighten(dimgray, 11%), 2%); }
-.status-completed { color: color.adjust(seagreen, $lightness: 3%); }
-.status-vanished { color: color.adjust(lightsteelblue, $lightness: -22%); }
+.status-unfinished { color: util.color-hex-str(color.adjust(color.adjust(dimgray, $lightness: 11%), $lightness: -2%)); }
+.status-completed { color: util.color-hex-str(color.adjust(seagreen, $lightness: 3%)); }
+.status-vanished { color: util.color-hex-str(color.adjust(lightsteelblue, $lightness: -22%)); }
 
 .level {
   position: relative;
@@ -354,7 +358,7 @@ label {
     width: 0;
     height: 16px;
     margin: 1px;
-    background: linear-gradient(90deg, darken(lighten(lightseagreen, 22%), 11%), lighten(darken(limegreen, 16%), 14%));
+    background: linear-gradient(90deg, util.color-hex-str(color.adjust(color.adjust(lightseagreen, $lightness: 22%), $lightness: -11%)), util.color-hex-str(color.adjust(color.adjust(limegreen, $lightness: -16%), $lightness: 14%)));
     transition: width ease .5s;
     transition-delay: var(--delay);
   }

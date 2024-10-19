@@ -1,5 +1,11 @@
 /* scss/_common.scss */
 
+@use "variant" as *;
+
+$font-family: sans-serif !default;
+$font-size: 15px !default;
+$line-height: 1.5 !default;
+
 * {
   box-sizing: border-box;
 }

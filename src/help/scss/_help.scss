@@ -1,5 +1,7 @@
 /* help/_help.scss */
 
+@use "sass:string";
+
 #help {
   margin: auto;
   padding: 0 0 2rem;
@@ -263,7 +265,7 @@ td {
   display: block;
   margin: 2rem 0 1.5rem;
   padding: .7rem;
-  background: unquote("#8883");
+  background: string.unquote("#8883");
   opacity: .96;
 
   &.info-read {
@@ -282,7 +284,7 @@ td {
   margin: 0 .25rem;
   padding: .1rem .2rem;
   font-size: 81%;
-  background: unquote("#8883");
+  background: string.unquote("#8883");
   opacity: .85;
 }
 

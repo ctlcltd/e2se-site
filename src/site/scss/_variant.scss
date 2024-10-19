@@ -1,6 +1,10 @@
 /* site/_variant.scss */
 
-@mixin variant {
+@use "sass:color";
+@use "../../scss/variant" as *;
+@use "../../scss/util";
+
+@mixin styles {
   color: $color;
   background: $background;
 
@@ -31,11 +35,11 @@
   // custom
 
   #footer {
-    color: color.adjust(lightgray, $lightness: 11%);
+    color: util.color-hex-str(color.adjust(lightgray, $lightness: 11%));
 
     nav a,
     button.text {
-      color: color.adjust(lightgray, $lightness: 11%);
+      color: util.color-hex-str(color.adjust(lightgray, $lightness: 11%));
       &:hover { color: #eee; }
       &:focus { color: #fff; }
     }
@@ -79,3 +83,19 @@
   }
 
 }
+
+@mixin print ($name, $wrap: true) {
+  @include apply($name);
+
+  @if $wrap {
+    .#{$name} {
+      @include styles;
+    }
+  } @else {
+    @include styles;
+  }
+}
+
+$name: "light" !default;
+
+@include apply($name);

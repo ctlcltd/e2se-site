@@ -1,0 +1,19 @@
+/*!
+ * scss/_index.scss
+ * 
+ * @author Leonardo Laureti
+ * @license MIT License
+ */
+
+@use "variant";
+@use "common";
+@use "app";
+@use "headings";
+@use "nav";
+@use "main";
+@use "table";
+@use "form";
+@use "message";
+
+@include variant.print($name: "light");
+@include variant.print($name: "dark");

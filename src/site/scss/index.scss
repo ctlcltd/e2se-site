@@ -5,38 +5,13 @@
  * @license MIT License
  */
 
-@use "sass:color";
-@import "../../scss/_setup.scss";
-@import "variant";
-@import "../../scss/_dark.scss";
-@import "../../scss/_light.scss";
-@include variant_light();
-@import "../../scss/_common.scss";
-@import "headings";
-@import "../../scss/_buttons.scss";
-@import "custom";
-@import "landing";
+@use "variant" with ($name: "light");
+@use "../../scss/common";
+@use "headings";
+@use "../../scss/buttons";
+@use "custom";
+@use "landing";
 
-.dark {
-  @include variant_dark($print: true);
-}
+@include variant.print($name: "dark");
 
-#btn-color {
-  visibility: hidden;
-}
-[data-color] {
-  #btn-color {
-    visibility: visible;
-  }
-}
-
-[data-lazy] img {
-  display: none;
-}
-
-@media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
-  [data-lazy] {
-    color: #000;
-    background: #aaa;
-  }
-}
+@include custom.end;

@@ -1,5 +1,7 @@
 /* site/_landing.scss */
 
+@use "sass:string";
+
 #main {
   padding: 0;
 }
@@ -120,11 +122,11 @@ body,
   .cnt .button {
     color: #464646;
     background: #cff;
-    box-shadow: inset 0 -6px 33px 0 unquote("#0ff7"), inset 0 0 1px 0 #0cc;
+    box-shadow: inset 0 -6px 33px 0 string.unquote("#0ff7"), inset 0 0 1px 0 #0cc;
     transition: box-shadow ease-out 200ms;
 
     &:hover {
-      box-shadow: inset 0 -6px 33px -22px unquote("#0fff"), inset 0 0 1px 0 #0cc;
+      box-shadow: inset 0 -6px 33px -22px string.unquote("#0fff"), inset 0 0 1px 0 #0cc;
     }
     &:focus {
       inset: 3px 3px 0;
@@ -316,12 +318,12 @@ body {
 }
 
 .txt div {
-  background: unquote("#ffffffdf");
+  background: string.unquote("#ffffffdf");
 }
 #lsa .txt div,
 #whc .txt div,
 #req, #req p {
-  background: unquote("#fff9");
+  background: string.unquote("#fff9");
 }
 #lsb .txt div {
   background: none;
@@ -330,10 +332,10 @@ body {
   #lsa .txt div,
   #whc .txt div,
   #req, #req p {
-    background: unquote("#00000096");
+    background: string.unquote("#00000096");
   }
   .txt div {
-    background: unquote("#000000e5");
+    background: string.unquote("#000000e5");
   }
 }
 
@@ -641,14 +643,14 @@ body {
   }
 
   #lsa .txt div {
-    background: unquote("#ffffffdf");
+    background: string.unquote("#ffffffdf");
   }
   #whc .txt div {
     background: none;
   }
   .dark {
     #lsa .txt div {
-      background: unquote("#000000e5");
+      background: string.unquote("#000000e5");
     }
   }
 

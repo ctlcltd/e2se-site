@@ -5,16 +5,8 @@
  * @license MIT License
  */
 
-@use "sass:color";
-@import "../../scss/_setup.scss";
-@import "variant";
-@import "../../scss/_dark.scss";
-@import "../../scss/_light.scss";
-@include variant_light();
+@use "variant" with ($name: "light");
+@use "custom";
+@use "help";
 
-@import "custom";
-@import "help";
-
-.dark {
-  @include custom_variant_dark();
-}
+@include variant.print($name: "dark");

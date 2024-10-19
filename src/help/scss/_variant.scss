@@ -1,6 +1,8 @@
 /* help/_variant.scss */
 
-@mixin variant {
+@use "../../scss/variant" as *;
+
+@mixin styles {
   body {
     color: $color;
     background: $background;
@@ -35,7 +37,7 @@
 
 }
 
-@mixin custom_variant_dark {
+@mixin dist_styles_dark {
   #side {
     background: #0a0a0a;
   }
@@ -82,3 +84,19 @@
     }
   }
 }
+
+@mixin print ($name, $wrap: true) {
+  @include apply($name);
+
+  @if $wrap {
+    .#{$name} {
+      @include styles;
+    }
+  } @else {
+    @include styles;
+  }
+}
+
+$name: "light" !default;
+
+@include apply($name);

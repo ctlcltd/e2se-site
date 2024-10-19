@@ -1,7 +1,9 @@
 /* help/_page.scss */
 
-@import "../../scss/_common.scss";
-@import "../../site/scss/_headings.scss";
+@use "sass:string";
+@use "../../scss/variant" as *;
+@use "../../scss/common";
+@use "../../site/scss/headings";
 
 button {
   display: inline-block;
@@ -62,7 +64,7 @@ hr {
   height: .75rem;
   margin: 2rem 0 1.5rem;
   border: 0;
-  background: unquote("#8883");
+  background: string.unquote("#8883");
 }
 
 mark {

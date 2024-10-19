@@ -1,79 +1,48 @@
 /* scss/_light.scss */
 
-$light_color: #000;
-$light_background: #fcfcfc;
+@use "sass:color";
+@use "util";
 
-$light_loading-animation-opacity-0: .33; 
-$light_loading-animation-opacity-100: .89;
+$variant-name: 'light';
+
+$color: #000;
+$background: #fcfcfc;
+
+$loading-animation-opacity-0: .33; 
+$loading-animation-opacity-100: .89;
 
 
 // table
 
-$light_table-border-color: #aaa;
-$light_th-background:  #fff;
+$table-border-color: #aaa;
+$th-background: #fff;
 
-$light_tr-href-background: #f9f9f9;
-$light_tr-href-background-hover: #fff;
-$light_tr-href-background-focus: #cef;
-$light_tr-background-highlight: #dff;
+$tr-href-background: #f9f9f9;
+$tr-href-background-hover: #fff;
+$tr-href-background-focus: #cef;
+$tr-background-highlight: #dff;
 
 
 // form
 
-$light_input-color: #000;
-$light_input-background: #fff;
-$light_input-border-color: #505050;
-$light_input-shadow-color: transparent;
-$light_input-shadow-color-hover: rgba(0, 0, 0, .2);
-$light_input-shadow-color-focus: rgba(0, 0, 0, .15);
+$input-color: #000;
+$input-background: #fff;
+$input-border-color: #505050;
+$input-shadow-color: transparent;
+$input-shadow-color-hover: rgba(0, 0, 0, .2);
+$input-shadow-color-focus: rgba(0, 0, 0, .15);
 
 
 // buttons
 
-$light_button-color: #4b4b4b;
-$light_button-background: #fff;
-$light_button-shadow-color: transparent;
-$light_button-shadow-color-hover: rgba(0, 0, 0, .25);
-$light_button-shadow-color-focus: rgba(0, 0, 0, .2);
+$button-color: #4b4b4b;
+$button-background: #fff;
+$button-shadow-color: transparent;
+$button-shadow-color-hover: rgba(0, 0, 0, .25);
+$button-shadow-color-focus: rgba(0, 0, 0, .2);
 
-$light_button-primary-color: #fff;
-$light_button-primary-background: color.adjust(dodgerblue, $lightness: 2%);
+$button-primary-color: #fff;
+$button-primary-background: util.color-hex-str(color.adjust(dodgerblue, $lightness: 2%));
 
-$light_button-secondary-color: #fff;
-$light_button-secondary-background: color.adjust(dimgray, $lightness: -6%);
-
-
-
-
-@mixin variant_light($print: false) {
-  $variant-name: 'light';
-  $color: $light_color !global;
-  $background: $light_background !global;
-  $loading-animation-opacity-0: $light_loading-animation-opacity-0 !global;
-  $loading-animation-opacity-100: $light_loading-animation-opacity-100 !global;
-  $table-border-color: $light_table-border-color !global;
-  $th-background: $light_th-background !global;
-  $tr-href-background: $light_tr-href-background !global;
-  $tr-href-background-hover: $light_tr-href-background-hover !global;
-  $tr-href-background-focus: $light_tr-href-background-focus !global;
-  $tr-background-highlight: $light_tr-background-highlight !global;
-  $input-color: $light_input-color !global;
-  $input-background: $light_input-background !global;
-  $input-border-color: $light_input-border-color !global;
-  $input-shadow-color: $light_input-shadow-color !global;
-  $input-shadow-color-hover: $light_input-shadow-color-hover !global;
-  $input-shadow-color-focus: $light_input-shadow-color-focus !global;
-  $button-color: $light_button-color !global;
-  $button-background: $light_button-background !global;
-  $button-shadow-color: $light_button-shadow-color !global;
-  $button-shadow-color-hover: $light_button-shadow-color-hover !global;
-  $button-shadow-color-focus: $light_button-shadow-color-focus !global;
-  $button-primary-color: $light_button-primary-color !global;
-  $button-primary-background: $light_button-primary-background !global;
-  $button-secondary-color: $light_button-secondary-color !global;
-  $button-secondary-background: $light_button-secondary-background !global;
-
-  @if $print {
-    @include variant();
-  }
-}
+$button-secondary-color: #fff;
+$button-secondary-background: util.color-hex-str(color.adjust(dimgray, $lightness: -6%));

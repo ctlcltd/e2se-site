@@ -1,5 +1,7 @@
 /* scss/_form.scss */
 
+@use "variant" as *;
+
 form,
 fieldset {
   margin: 0;

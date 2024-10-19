@@ -1,5 +1,7 @@
 /* scss/_app.scss */
 
+@use "variant" as *;
+
 .placeholder {
   visibility: hidden;
 }

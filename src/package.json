@@ -11,6 +11,7 @@
     "build.help": "npx grunt build.help",
     "build.translate": "npx grunt build.translate",
     "build.backend": "npx grunt build.backend",
+    "build.bunch": "npx grunt build.bunch",
     "build.all": "npx grunt",
     "dist.help": "npx grunt dist.help",
     "copy": "npx grunt copy"
@@ -27,8 +28,8 @@
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-terser": "^2.0.0",
-    "liquidjs": "^10.17.0",
-    "sass": "^1.79.5",
-    "terser": "^5.34.1"
+    "liquidjs": "^10.18.0",
+    "sass": "^1.80.2",
+    "terser": "^5.36.0"
   }
 }

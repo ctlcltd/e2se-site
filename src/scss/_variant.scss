@@ -1,6 +1,69 @@
 /* scss/_variant.scss */
 
-@mixin variant {
+@use "sass:meta";
+@use "sass:map";
+@use "light";
+@use "dark";
+
+$variant-name: null !default;
+$color: null !default;
+$background: null !default;
+$loading-animation-opacity-0: null !default;
+$loading-animation-opacity-100: null !default;
+$table-border-color: null !default;
+$th-background: null !default;
+$tr-href-background: null !default;
+$tr-href-background-hover: null !default;
+$tr-href-background-focus: null !default;
+$tr-background-highlight: null !default;
+$input-color: null !default;
+$input-background: null !default;
+$input-border-color: null !default;
+$input-shadow-color: null !default;
+$input-shadow-color-hover: null !default;
+$input-shadow-color-focus: null !default;
+$button-color: null !default;
+$button-background: null !default;
+$button-shadow-color: null !default;
+$button-shadow-color-hover: null !default;
+$button-shadow-color-focus: null !default;
+$button-primary-color: null !default;
+$button-primary-background: null !default;
+$button-secondary-color: null !default;
+$button-secondary-background: null !default;
+
+@mixin apply ($name) {
+  $vars: meta.module-variables($name);
+
+  $variant-name: map.get($vars, "variant-name") !global;
+  $color: map.get($vars, "color") !global;
+  $background: map.get($vars, "background") !global;
+  $loading-animation-opacity-0: map.get($vars, "loading-animation-opacity-0") !global;
+  $loading-animation-opacity-100: map.get($vars, "loading-animation-opacity-100") !global;
+  $table-border-color: map.get($vars, "table-border-color") !global;
+  $th-background: map.get($vars, "th-background") !global;
+  $tr-href-background: map.get($vars, "tr-href-background") !global;
+  $tr-href-background-hover: map.get($vars, "tr-href-background-hover") !global;
+  $tr-href-background-focus: map.get($vars, "tr-href-background-focus") !global;
+  $tr-background-highlight: map.get($vars, "tr-background-highlight") !global;
+  $input-color: map.get($vars, "input-color") !global;
+  $input-background: map.get($vars, "input-background") !global;
+  $input-border-color: map.get($vars, "input-border-color") !global;
+  $input-shadow-color: map.get($vars, "input-shadow-color") !global;
+  $input-shadow-color-hover: map.get($vars, "input-shadow-color-hover") !global;
+  $input-shadow-color-focus: map.get($vars, "input-shadow-color-focus") !global;
+  $button-color: map.get($vars, "button-color") !global;
+  $button-background: map.get($vars, "button-background") !global;
+  $button-shadow-color: map.get($vars, "button-shadow-color") !global;
+  $button-shadow-color-hover: map.get($vars, "button-shadow-color-hover") !global;
+  $button-shadow-color-focus: map.get($vars, "button-shadow-color-focus") !global;
+  $button-primary-color: map.get($vars, "button-primary-color") !global;
+  $button-primary-background: map.get($vars, "button-primary-background") !global;
+  $button-secondary-color: map.get($vars, "button-secondary-color") !global;
+  $button-secondary-background: map.get($vars, "button-secondary-background") !global;
+}
+
+@mixin styles {
   color: $color;
   background: $background;
 
@@ -69,3 +132,19 @@
     }
   }
 }
+
+@mixin print ($name, $wrap: true) {
+  @include apply($name);
+
+  @if $wrap {
+    .#{$name} {
+      @include styles;
+    }
+  } @else {
+    @include styles;
+  }
+}
+
+$name: "light" !default;
+
+@include apply($name);
