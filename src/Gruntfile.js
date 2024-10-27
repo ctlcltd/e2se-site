@@ -187,8 +187,7 @@ module.exports = function(grunt) {
     },
     sass: {
       options: {
-        noSourceMap: true,
-        verbose: true
+        noSourceMap: true
       },
       bunch: {
         files: {
