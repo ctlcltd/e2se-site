@@ -257,8 +257,13 @@ td {
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
 
-  > table { width: 100%; }
-  [id] td { padding-top: .8rem; }
+  > table {
+    width: 100%;
+  }
+  [id] td {
+    padding-top: .8rem;
+    padding-inline-end: 1rem;
+  }
 }
 
 .info {

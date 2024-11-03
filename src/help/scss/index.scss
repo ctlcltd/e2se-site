@@ -9,4 +9,6 @@
 @use "custom";
 @use "help";
 
-@include variant.print($name: "dark");
+.dark {
+	@include variant.dist_styles_dark;
+}

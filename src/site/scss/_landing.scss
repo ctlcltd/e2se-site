@@ -61,7 +61,8 @@
 
   h2, h3, h4 {
     display: inline-block;
-    width: 100%;
+    width: fit-content;
+    max-width: 89%;
     font-family: sans-serif-condensed, HelveticaNeue-CondensedBold, "Franklin Gothic", sans-serif;
     font-weight: bold;
     transform: matrix(1.21, 0, .01, 1.02, -1, -1);

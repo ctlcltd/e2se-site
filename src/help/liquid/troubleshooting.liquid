@@ -26,7 +26,7 @@
           <tr>
             <td>In case of incompatibility it is recommended to use the software in a virtual machine</td>
           </tr>
-          <tr id="common">
+          <tr id="common-issues">
             <td colspan="2"><strong>Common issues</strong></td>
           </tr>
           <tr id="software-issue">
@@ -40,56 +40,73 @@
             <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
           </tr>
           <tr>
+            <td colspan="2">
+              <div class="info">
+                <p>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></p>
+              </div>
+            </td>
+          </tr>
+          <tr id="known-issues">
+            <td colspan="2"><strong>Known issues</strong></td>
+          </tr>
+          <tr id="fix-references-issues">
+            <td rowspan="2">&quot;Fix (remove) references&quot; or &quot;Autofix&quot; macro, goes wrong</td>
+            <td>Known issue, affecting software version 1.7</td>
+          </tr>
+          <tr>
+            <td>As alternative to the &quot;Autofix&quot; macro use this sequence instead: &quot;Remove all duplicates&quot;, &quot;Fix DVBNS for services&quot;, &quot;Fix bouquets&quot;</td>
+          </tr>
+          <tr id="stream-url-issues">
+            <td>Stream URL is not parsed</td>
+            <td>Known issue, affecting software version 1.7</td>
+          </tr>
+          <tr id="profiles-issues">
+            <td rowspan="2">Connection profile is buggy after deleting profiles</td>
+            <td>Known issue, affecting software version 1.5 and up &ndash; Fixed since software version 1.7</td>
+          </tr>
+          <tr>
             <td>As possible workaround, rearrange profiles from <b>Settings</b>, <b>Advanced</b> tab, or <a href="#reset-settings">reset settings</a>; do not delete &quot;Default&quot; profile and reuse existing profiles</td>
           </tr>
           <tr id="menu-issue">
-            <td rowspan="3">Main menu items are grayed out</td>
-            <td>A known issue, fixed since software version 1.0</td>
-          </tr>
-          <tr>
-            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
+            <td rowspan="2">Main menu items are grayed out</td>
+            <td>Known issue, affecting old software versions &ndash; Fixed since software version 1.7</td>
           </tr>
           <tr>
             <td>As workaround, open a new tab using <b>&quot;<span class="symbolic">+</span> New Tab&quot;</b> and close it, menu items will become visible again</td>
           </tr>
-          <tr id="ctxmenu-issue">
-            <td rowspan="3">Context menu is interfering with Drag and Drop</td>
-            <td>A known issue, affecting software version 1.4 on macOS</td>
+          <tr id="counters-issue">
+            <td rowspan="2">Channel numbers and counters are not visually updated</td>
+            <td>Known issue, affecting old software versions &ndash; Fixed since software version 1.6</td>
           </tr>
           <tr>
-            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
-          </tr>
-          <tr>
-            <td>As workaround, uncheck &quot;Enable experimental features&quot; under software Preferences, in <b>&quot;Settings&quot;</b>, in the <b>Preferences</b> tab, section <b>Theme</b></td>
+            <td>As workaround, take an action on current bouquet</td>
           </tr>
           <tr id="highlight-issue">
-            <td rowspan="3">Tree views highlight color is malfunctioning</td>
-            <td>A known issue, affecting software version 1.5, when using light appearance on Windows 11</td>
-          </tr>
-          <tr>
-            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
+            <td rowspan="2">Tree views highlight color is malfunctioning</td>
+            <td>Known issue, affecting software version 1.5 on Windows 11, when using light appearance &ndash; Fixed since software version 1.6</td>
           </tr>
           <tr>
             <td>As possible workaround, run the software with <samp>-style</samp> argument from PowerShell: <code>./e2-sat-editor.exe -style fusion</code></td>
           </tr>
-          <tr id="counters-issue">
-            <td rowspan="3">Channel numbers and counters are not visually updated</td>
-            <td>A known issue, fixed since software version 1.6</td>
+          <tr id="ctxmenu-issue">
+            <td rowspan="2">Context menu is interfering with Drag and Drop</td>
+            <td>Known issue, affecting software version 1.4 on macOS &ndash; Fixed since software version 1.5</td>
           </tr>
           <tr>
-            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
+            <td>As workaround, uncheck &quot;Enable experimental features&quot; under software Preferences, in <b>&quot;Settings&quot;</b>, in the <b>Preferences</b> tab, section <b>Theme</b></td>
           </tr>
           <tr>
-            <td>As workaround, take an action on current bouquet</td>
+            <td colspan="2">
+              <div class="info">
+                <p>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></p>
+              </div>
+            </td>
           </tr>
           <tr id="ftp">
             <td colspan="2"><strong>FTP</strong></td>
           </tr>
           <tr id="ftp-connect">
-            <td rowspan="10">FTP not connecting</td>
-            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
-          </tr>
-          <tr>
+            <td rowspan="9">FTP not connecting</td>
             <td>Check the cables connecting the Decoder (STB) to the local network</td>
           </tr>
           <tr>
@@ -126,13 +143,6 @@
           <tr>
             <td>Report an issue on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/issues" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/issues</a> <br>Attach a log if possible, refer to <a href="#enable-ftp-debug">Enable FTP debug</a></td>
           </tr>
-          <tr id="ftp-profiles">
-            <td rowspan="3">FTP profile is buggy after deleting profiles</td>
-            <td>A known issue, fixed since software version 1.7</td>
-          </tr>
-          <tr>
-            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
-          </tr>
           <tr id="ftp-load">
             <td rowspan="4">FTP does not upload / download</td>
             <td>Check connection parameters to the Decoder (STB) in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
@@ -155,6 +165,13 @@
           </tr>
           <tr>
             <td>Enter the specific parameters for updating the STB lists, URL address and/or Telnet command</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div class="info">
+                <p>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></p>
+              </div>
+            </td>
           </tr>
           <tr id="file">
             <td colspan="2"><strong>File</strong></td>
@@ -195,6 +212,13 @@
           </tr>
           <tr>
             <td>Make sure each row has the same number of columns</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <div class="info">
+                <p>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></p>
+              </div>
+            </td>
           </tr>
         </table>
       </div>

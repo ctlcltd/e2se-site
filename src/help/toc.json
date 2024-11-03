@@ -208,7 +208,8 @@
     "anchors": [
       {
         "#installation": "Installation",
-        "#common": "Common issues",
+        "#common-issues": "Common issues",
+        "#known-issues": "Known issues",
         "#ftp": "FTP",
         "#file": "File",
         "#interop": "CSV / spreadsheet"
