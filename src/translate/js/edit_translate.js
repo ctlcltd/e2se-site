@@ -454,8 +454,8 @@ function edit_translate(uri, search) {
   function resume_sort() {
     try {
       let storage = localStorage.getItem('_tristate');
-      let column = 7;
-      let order = 1;
+      let column = -1;
+      let order = 0;
 
       if (storage) {
         const obj = JSON.parse(storage);
