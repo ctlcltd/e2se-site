@@ -43,6 +43,7 @@
       },
       {
         "#tools": "Tools",
+        "#error-checker": "Error Checker",
         "#autofix": "Autofix"
       },
       {
@@ -106,6 +107,7 @@
       },
       {
         "#tools": "Tools",
+        "#error-checker": "Error Checker",
         "#autofix": "Autofix"
       },
       {

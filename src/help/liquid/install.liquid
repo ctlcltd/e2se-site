@@ -43,7 +43,9 @@
             <li>Launch the software, the name of the executable file is <b>&quot;e2-sat-editor&quot; [.exe]</b>.</li>
           </ul>
           <p>A warning message may be shown, confirm the execution and allow the software to run.</p>
-          <p>For S editions of Windows, which allow the installation of software exclusively from the Windows Store, refer to the Windows documentation to disable &quot;S mode&quot;, or use the software in a virtual machine.</p>
+          <div class="info">
+            <p>For S editions of Windows, which allow the installation of software exclusively from the Windows Store. Refer to the Windows documentation to disable &quot;S mode&quot;, or use the software in a virtual machine.</p>
+          </div>
         </div>
         <div id="macos" class="l2">
           <h4 translate="no">macOS</h4>
@@ -58,6 +60,10 @@
           <p>Depending on your system settings, a warning message may be shown.</p>
           <p>If your system is restricted to running apps from Identified developers only, you can manually authorize the app. <br><em>Recommendation: Do not do this if you do not understand what you are doing.</em> <br>To manually authorize the execution of the app, launch the software by holding down the <kbd><span class="symbol">&#8679;</span> Shift</kbd> key on the keyboard and double-clicking on the <b>&quot;e2 SAT Editor&quot; [.app]</b> executable file.</p>
           <p>If you are restricted to running apps from the App Store only, temporarily change the system setting, or use the software in a virtual machine.</p>
+          <div class="info">
+            <p>Files downloaded from the internet are quarantined by default. You may need to remove the quarantine attribute from the [.app] file and its contents, then move the [.app] file in the <em>Applications</em> folder.</p>
+          </div>
+          <p>To recursively remove the quarantine extended attribute. <br><em>Recommendation: Do not do this if you do not understand what you are doing.</em> <br>Open a terminal at the location of the [.app] file and use the following command: <code>xattr -r -d com.apple.quarantine e2\ SAT\ Editor.app</code></p>
         </div>
         <div id="linux" class="l2">
           <h4 translate="no">Linux</h4>
@@ -66,7 +72,9 @@
             <p>Download the AppImage 64-bit file, the file name has the following nomenclature <samp>&quot;e2-sat-editor-VERSION-x86_64-linux.AppImage&quot;</samp>.</p>
             <p>The downloaded file is the executable software, no installation is required.</p>
             <p>You may need to give permissions to run the file. Refer to your Linux distribution documentation, or open a terminal and give permission to run the binary file. <br><em>Recommendation: Do not do this if you do not understand what you are doing.</em> <br>Open a terminal at the location of the AppImage file, give the execution permission with the following command: <code>chmod +x e2-sat-editor-VERSION-x86_64-linux.AppImage</code></p>
-            <p>To run AppImage Linux binaries, dependencies are required: FUSE 2, GCC >= 9, GLIBC >= 2.36. Depending on the Linux distribution you are using, these may already be present on your system.</p>
+            <div class="info">
+              <p>To run AppImage Linux binaries, dependencies are required: FUSE 2, GCC >= 9, GLIBC >= 2.36. Depending on the Linux distribution you are using, these may already be present on your system.</p>
+            </div>
           </div>
           <div class="l3">
             <h5 translate="no">Snap Store, Flathub</h5>
