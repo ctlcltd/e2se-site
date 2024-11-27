@@ -137,7 +137,7 @@
             <td>Report an issue on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/issues" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/issues</a> <br>Attach a log if possible, refer to <a href="#enable-ftp-debug">Enable FTP debug</a></td>
           </tr>
           <tr id="ftp-load">
-            <td rowspan="4">FTP does not upload / download</td>
+            <td rowspan="4">FTP does not Upload or Download</td>
             <td>Check connection parameters to the Decoder (STB) in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
           </tr>
           <tr>
@@ -147,17 +147,33 @@
             <td>Press <b>&quot;Connect&quot;</b> and <b>&quot;Disconnect&quot;</b> in quick menu to attempt an FTP connection</td>
           </tr>
           <tr>
-            <td>Note: <i>the software does not currently upload/download picon images, these must be uploaded manually to the STB</i></td>
+            <td>Note: <i>the software does not currently Upload/Download picon images, these must be uploaded manually to the STB</i></td>
+          </tr>
+          <tr id="stb-notice">
+            <td rowspan="5">Errors occurred during STB reload operations</td>
+            <td>Check if the channel list has been updated. If not, follow the next steps</td>
+          </tr>
+          <tr>
+            <td>Try to <b>&quot;Upload&quot;</b> again, sometime <i>Webif reload</i> reaches the default timeout of 15 seconds</td>
+          </tr>
+          <tr>
+            <td>Timeout parameters are changeable from <b>Settings</b>, <b>Advanced</b> tab, <samp>profile.[number].[parameter]</samp> preferences</td>
+          </tr>
+          <tr>
+            <td>Sometime <i>Telnet reload</i> fails. Note: several STB models require <i>root</i> to reload from Telnet</td>
+          </tr>
+          <tr>
+            <td>Verify the correctness of parameters for your STB model and follow the above steps</td>
           </tr>
           <tr id="stb-update">
-            <td rowspan="3">Decoder (STB) does not update channel lists</td>
-            <td>Try to restart the STB manually, or if you have the specific parameters for STB, enter them, and follow the next steps</td>
+            <td rowspan="3">Decoder (STB) does not update the channel list</td>
+            <td>Try to restart the STB manually, or if you have the specific parameters for your STB, enter them, and follow the next steps</td>
           </tr>
           <tr>
             <td>Modify the parameters in the <b>Commands</b> group, in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
           </tr>
           <tr>
-            <td>Enter the specific parameters for updating the STB lists, URL address and/or Telnet command</td>
+            <td>Enter the specific parameters for updating the STB: paths, <i>Webif reload</i> URL address and/or <i>Telnet reload</i> command</td>
           </tr>
           <tr>
             <td colspan="2">
