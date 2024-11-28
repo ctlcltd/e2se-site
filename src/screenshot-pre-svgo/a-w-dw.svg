@@ -441,7 +441,7 @@
               <rect x="469" y="409" width="1325" height="687" style="fill:#1e1e1e"/>
               
                 <rect x="469" y="753" width="1325" height="49" style="fill:#18334a"/>
-                <text x="469" y="412" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">38</tspan> <tspan x="572">Giallo</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="412" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">38</tspan> <tspan x="572">Giallo</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN WBD</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,880,424)">
                   <use href="#smt" style="fill:#b0b0b0"/>
                 </g>
@@ -459,7 +459,7 @@
                 <g transform="matrix(0.38,0,0,0.38,1360,522)">
                   <use href="#cdd" style="fill:#b0b0b0"/>
                 </g>
-                <text x="469" y="558" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">41</tspan> <tspan x="572">K2</tspan> <tspan x="982">15204</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN Discovery Group</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="558" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">41</tspan> <tspan x="572">K2</tspan> <tspan x="982">15204</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Warner Bros. Discovery</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,570)">
                   <use href="#cdd" style="fill:#b0b0b0"/>
                 </g>
@@ -468,7 +468,7 @@
                 <g transform="matrix(0.38,0,0,0.38,1360,668)">
                   <use href="#cdd" style="fill:#b0b0b0"/>
                 </g>
-                <text x="469" y="704" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">44</tspan> <tspan x="572">Frisbee</tspan> <tspan x="982">15205</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN Discovery Group</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="704" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">44</tspan> <tspan x="572">Frisbee</tspan> <tspan x="982">15205</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">Warner Bros. Discovery</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,716)">
                   <use href="#cdd" style="fill:#b0b0b0"/>
                 </g>
