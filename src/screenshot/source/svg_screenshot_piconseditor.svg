@@ -747,10 +747,10 @@
     </g>
   </g>
 
-  <!--<image id="screen" href="../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
-  <!--<image id="screen" href="../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" />-->
-  <!--<image id="screen" href="../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
-  <!--<image id="screen-flip" href="../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" transform="matrix(-1,0,0,1,1880,0)" />-->
+  <!--<image id="screen" href="../../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
+  <!--<image id="screen-flip" href="../../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" transform="matrix(-1,0,0,1,1880,0)" />-->
 
   <g id="test" transform="matrix(1,0,0,1,50,1270)">
     <text id="test_lm" dx="95">macx light</text>

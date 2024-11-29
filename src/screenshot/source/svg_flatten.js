@@ -1,5 +1,5 @@
 /*!
- * src/svg_flatten.js
+ * src/screenshot/source/svg_flatten.js
  *
  * SVG image transform
  *
