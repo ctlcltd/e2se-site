@@ -151,9 +151,9 @@
 
   <g id="cropbox">
     <!--<rect x="81" y="81" width="1718" height="1140" style="fill:none;stroke:red;stroke-width:2px" />-->
-    <rect id="tint-d" class="m" x="0" y="0" width="1880" height="1330" style="fill:#000;fill-opacity:0.2" />
+    <rect id="tint-d" class="w" x="0" y="0" width="1880" height="1330" style="fill:#000;fill-opacity:0.2" />
 
-    <g id="window" class="m" transform="matrix(1.41,0,0,1.41,-656,-271)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif;opacity:0.8">
+    <g id="window" class="w" transform="matrix(1.41,0,0,1.41,-656,-271)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif;opacity:0.8">
       <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
       <g id="w-inner">
         <g id="menu">
@@ -166,27 +166,27 @@
             <g class="menu-divid">
             </g>
             <g class="menu-item">
-              <text class="txt" x="408" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
+              <text class="txt" x="409" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
             </g>
             <g class="menu-item">
-              <g class="ico" transform="matrix(0.38,0,0,0.38,592,217)">
+              <g class="ico" transform="matrix(0.38,0,0,0.38,594,217)">
                 <use href="#file-export" style="fill:#4c4c4c" />
               </g>
-              <text class="txt" x="574" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
+              <text class="txt" x="578" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
             </g>
             <g class="menu-divid">
-              <rect class="divid" x="756" y="212" width="1" height="61" style="fill:none" />
+              <rect class="divid" x="761" y="212" width="1" height="61" style="fill:none" />
             </g>
             <g class="menu-item">
-              <g class="ico" transform="matrix(0.38,0,0,0.38,773,217)">
+              <g class="ico" transform="matrix(0.38,0,0,0.38,779,217)">
                 <use href="#settings" style="fill:#4c4c4c" />
               </g>
-              <text class="txt" x="758" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
+              <text class="txt" x="763" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
             </g>
             <g class="menu-item">
               <g class="btn-dropdown">
-                <rect class="btn-bg" x="1049" y="224" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
-                <g class="btn-caret" transform="matrix(1,0,0,1,1146,226)">
+                <rect class="btn-bg" x="1045" y="223" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+                <g class="btn-caret" transform="matrix(1,0,0,1,1142,225)">
                   <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
                   <g class="arrow">
                     <g class="arrow-m">
@@ -205,11 +205,11 @@
                     </g>
                   </g>
                 </g>
-                <text class="btn-txt" x="1049" y="224" dx="12" dy="22" style="font-size:20px;fill:#000">Profile 1</text>
+                <text class="btn-txt" x="1045" y="223" dx="12" dy="22" style="font-size:20px;fill:#000">Profile 1</text>
               </g>
             </g>
             <g class="menu-item">
-              <text class="txt" x="1196" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
+              <text class="txt" x="1193" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
             </g>
             <g class="menu-item">
               <text class="txt" x="1329" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Disconnect</text>
@@ -221,7 +221,7 @@
               <text class="txt" x="1513" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Upload</text>
             </g>
             <g class="menu-item">
-              <text class="txt" x="1632" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
+              <text class="txt" x="1633" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
             </g>
           </g>
           <rect id="menu-stroke" class="stroke" x="80" y="192" width="1720" height="100" style="fill:none;stroke:#d5d6d6;stroke-width:2.4px;clip-path:inset(0 2px)" />
@@ -371,7 +371,7 @@
     </g>
   </g>
 
-  <g id="addchannel" class="m" transform="matrix(1.41,0,0,1.41,321,189)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="addchannel" class="w" transform="matrix(1.41,0,0,1.41,321,189)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect class="w-bg" x="1" y="1" width="1061" height="650" rx="15" style="fill:#f3f4f4;stroke:#a6bbb9;stroke-width:1px;filter: url(#modal-shadow-m)" />
     <g class="titlebar">
       <rect class="t-bg" x="2" y="2" width="1059" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
@@ -589,11 +589,11 @@
     <rect class="w-shade" x="3" y="3" width="1057" height="646" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
-  <!--<g id="screen" transform="matrix(1.015,0,0,1.015,297,139)" style="opacity:0.2"><image href="../../test/addchannel-dm.png" width="1624" height="1080" /></g>-->
-  <!--<image id="screen" href="../../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
-  <!--<image id="screen" href="../../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" />-->
-  <!--<image id="screen" href="../../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
-  <!--<image id="screen-flip" href="../../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" transform="matrix(-1,0,0,1,1880,0)" />-->
+  <!--<g id="screen" transform="matrix(1.015,0,0,1.015,297,139)" style="opacity:0.2"><image href="../../../test/addchannel-dm.png" width="1624" height="1080" /></g>-->
+  <!--<image id="screen" href="../../../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../../../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../../../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
+  <!--<image id="screen-flip" href="../../../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" transform="matrix(-1,0,0,1,1880,0)" />-->
 
   <g id="test" transform="matrix(1,0,0,1,50,1270)">
     <text id="test_lm" dx="95">macx light</text>

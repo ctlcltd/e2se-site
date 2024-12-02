@@ -158,14 +158,14 @@
     <rect id="wallpaper" x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd" />
   </g>
 
-  <g id="window" class="m" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="window" class="w" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
     <g class="titlebar">
       <rect class="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
       <rect class="t-stroke" x="81" y="124" width="1718" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
       <text class="t-txt" x="82" y="82" dx="857" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949;">e2 SAT Editor</text>
       <g class="t-ico-w" style="display:none">
-        <image x="93" y="92" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg==" />
+        <image x="94" y="91.5" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg==" />
       </g>
       <g class="t-ctrs-m">
         <ellipse cx="103" cy="103" rx="8.8" style="fill:#ff5f5a;stroke:#000;stroke-opacity:0.1" />
@@ -173,16 +173,16 @@
         <ellipse cx="164" cy="103" rx="8.8" style="fill:#28c840;stroke:#000;stroke-opacity:0.1" />
       </g>
       <g class="t-ctrs-w" style="display:none">
-        <rect x="1622" y="102" width="14.5" height="0.6" style="fill:none;stroke:#000;stroke-width:1px" />
-        <g transform="matrix(1,0,0,1,1687,110)">
+        <rect x="1619" y="104" width="14.5" height="0.6" style="fill:none;stroke:#000;stroke-width:1.1px" />
+        <g transform="matrix(.99,0,0,.99,1687,110)">
           <g transform="rotate(-90)">
-            <rect x="0" y="0" width="13.7" height="13.7" style="fill:none;stroke:#000;stroke-width:1.3px" />
+            <rect x="0" y="0" rx="1" width="13.7" height="13.7" style="fill:none;stroke:#000;stroke-width:1.7px" />
           </g>
         </g>
-        <g transform="matrix(1,0,0,1,1762,89)">
+        <g transform="matrix(.97,0,0,.97,1763,90)">
           <g transform="rotate(45)">
-            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:0.8px" />
-            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:0.8px" />
+            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:1px" />
+            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:1px" />
           </g>
         </g>
       </g>
@@ -302,39 +302,39 @@
             <text class="txt" x="90" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Open</text>
           </g>
           <g class="menu-item">
-            <g class="ico" transform="matrix(0.38,0,0,0.38,259,217)">
+            <g class="ico" transform="matrix(0.38,0,0,0.38,260,217)">
               <use href="#file-save" style="fill:#4c4c4c" />
             </g>
             <text class="txt" x="244" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Save</text>
           </g>
           <g class="menu-divid">
-            <rect class="divid" x="406" y="212" width="1" height="61" style="fill:none" />
+            <rect class="divid" x="408" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
-            <g class="ico" transform="matrix(0.38,0,0,0.38,424,217)">
+            <g class="ico" transform="matrix(0.38,0,0,0.38,426,217)">
               <use href="#file-import" style="fill:#4c4c4c" />
             </g>
-            <text class="txt" x="408" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
+            <text class="txt" x="409" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
           </g>
           <g class="menu-item">
-            <g class="ico" transform="matrix(0.38,0,0,0.38,592,217)">
+            <g class="ico" transform="matrix(0.38,0,0,0.38,594,217)">
               <use href="#file-export" style="fill:#4c4c4c" />
             </g>
-            <text class="txt" x="574" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
+            <text class="txt" x="578" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
           </g>
           <g class="menu-divid">
-            <rect class="divid" x="756" y="212" width="1" height="61" style="fill:none" />
+            <rect class="divid" x="761" y="212" width="1" height="61" style="fill:none" />
           </g>
           <g class="menu-item">
-            <g class="ico" transform="matrix(0.38,0,0,0.38,773,217)">
+            <g class="ico" transform="matrix(0.38,0,0,0.38,779,217)">
               <use href="#settings" style="fill:#4c4c4c" />
             </g>
-            <text class="txt" x="758" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
+            <text class="txt" x="763" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
           </g>
           <g class="menu-item">
             <g class="btn-dropdown">
-              <rect class="btn-bg" x="1049" y="224" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
-              <g class="btn-caret" transform="matrix(1,0,0,1,1146,226)">
+              <rect class="btn-bg" x="1045" y="223" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+              <g class="btn-caret" transform="matrix(1,0,0,1,1142,225)">
                 <rect class="bg" x="0" y="0" width="24" height="24" rx="8" style="fill:url(#btn-bg-a-m);stroke:url(#btn-stroke-m);stroke-opacity:0.06;stroke-width:2px;transform:translate(0.5px,1px)" />
                 <g class="arrow">
                   <g class="arrow-m">
@@ -353,11 +353,11 @@
                   </g>
                 </g>
               </g>
-              <text class="btn-txt" x="1049" y="224" dx="12" dy="22" style="font-size:20px;fill:#000">Profile 1</text>
+              <text class="btn-txt" x="1045" y="223" dx="12" dy="22" style="font-size:20px;fill:#000">Profile 1</text>
             </g>
           </g>
           <g class="menu-item">
-            <text class="txt" x="1196" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
+            <text class="txt" x="1193" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
           </g>
           <g class="menu-item">
             <text class="txt" x="1329" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Disconnect</text>
@@ -369,7 +369,7 @@
             <text class="txt" x="1513" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Upload</text>
           </g>
           <g class="menu-item">
-            <text class="txt" x="1632" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
+            <text class="txt" x="1633" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
           </g>
         </g>
         <rect id="menu-stroke" class="stroke" x="80" y="192" width="1720" height="100" style="fill:none;stroke:#d5d6d6;stroke-width:2.4px;clip-path:inset(0 2px)" />
@@ -685,33 +685,33 @@
                 <text class="tool-txt" x="487" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Channel</text>
               </g>
               <g class="li-item">
-                <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,625,1080)">
+                <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,632,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
-                <text class="tool-txt" x="621" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Stream</text>
+                <text class="tool-txt" x="627" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Stream</text>
               </g>
               <g class="li-item">
-                <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,746,1080)">
+                <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,761,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
-                <text class="tool-txt" x="742" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Marker</text>
+                <text class="tool-txt" x="756" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Marker</text>
               </g>
               <g class="li-item" style="opacity:0.24">
-                <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,867,1080)">
+                <g class="tool-ico ico" transform="matrix(0.26,0,0,0.26,889,1080)">
                   <use href="#add" style="fill:#545454" />
                 </g>
-                <text class="tool-txt" x="862" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Service</text>
+                <text class="tool-txt" x="884" y="1064" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Service</text>
               </g>
               <g class="li-item">
-                <rect class="btn-bg" x="993" y="1072" width="135" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
-                <text class="btn-txt" x="993" y="1072" dx="22" dy="22" style="font-size:20px;fill:#000">Reference</text>
+                <rect class="btn-bg" x="1017" y="1072" width="135" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+                <text class="btn-txt" x="1017" y="1072" dx="22" dy="22" style="font-size:20px;fill:#000">Reference</text>
               </g>
               <g class="li-divid">
-                <rect class="divid" x="1141" y="1075" width="1" height="32" style="display:none" />
+                <rect class="divid" x="1165" y="1075" width="1" height="32" style="display:none" />
               </g>
               <g class="li-item" style="opacity:0.24">
-                <rect class="btn-bg" x="1157" y="1072" width="147" height="32" rx="8" style="fill:#fff;stroke:#000;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
-                <text class="btn-txt" x="1157" y="1072" dx="25" dy="22" style="font-size:20px;fill:#000">Drag&amp;Drop</text>
+                <rect class="btn-bg" x="1182" y="1072" width="147" height="32" rx="8" style="fill:#fff;stroke:#000;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+                <text class="btn-txt" x="1182" y="1072" dx="24" dy="22" style="font-size:20px;fill:#000">Drag&amp;Drop</text>
               </g>
               <g class="li-item qe qe-li">
                 <rect class="btn-bg" x="1652" y="1072" width="128" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
@@ -724,6 +724,23 @@
           </g>
         </g>
         <rect id="main-stroke" class="stroke" x="80" y="291" width="1720" height="836" style="fill:none;stroke:#d5d6d6;stroke-width:2.4px;clip-path:inset(0 2px)" />
+      </g>
+    </g>
+    <g id="toolbar">
+      <rect id="toolbar-bg" class="bg" x="82" y="1116" width="1716" height="62" style="fill:none" />
+      <g id="toolbar-items">
+        <g class="toolbar-item">
+          <text class="txt" x="98" y="1116" dx="29" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Tools</text>
+        </g>
+        <g class="toolbar-divid">
+          <rect class="divid" x="211" y="1120" width="1" height="38" style="fill:none" />
+        </g>
+        <g class="toolbar-item">
+          <text class="txt" x="207" y="1116" dx="29" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Inspect</text>
+        </g>
+        <g class="toolbar-item">
+          <text class="txt" x="1660" dx="11" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">autofix</text>
+        </g>
       </g>
     </g>
     <g id="statusbar">
@@ -749,10 +766,10 @@
     <rect class="w-shade" x="83" y="83" width="1714" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
-  <!--<image id="screen" href="../../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
-  <!--<image id="screen" href="../../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" />-->
-  <!--<image id="screen" href="../../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
-  <!--<image id="screen-flip" href="../../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" transform="matrix(-1,0,0,1,1880,0)" />-->
+  <!--<image id="screen" href="../../../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../../../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" transform="matrix(1,0,0,1,2,15)" />-->
+  <!--<image id="screen" href="../../../test/screenshot-m.png" width="1880" height="1300" style="opacity:0.6" />-->
+  <!--<image id="screen-flip" href="../../../test/screenshot-m.png" width="1880" height="1300" style="opacity:0.6" transform="matrix(-1,0,0,1,1880,0)" />-->
 
   <g id="test" transform="matrix(1,0,0,1,50,1270)">
     <text id="test_lm" dx="95">macx light</text>
