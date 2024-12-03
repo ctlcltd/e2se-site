@@ -20,8 +20,8 @@ function rgbToHex(rgb) {
 }
 
 function replace(value) {
-  if (/rgb\(.+\)/.test(value)) {
-    value = rgbToHex(value);
+  if (/rgb\([^\)]+\)/.test(value)) {
+    value.match(/rgb\([^\)]+\)/g).map(function(x) { value = value.replace(x, rgbToHex(x)); });
   } else if (/url\(.+\)/.test(value)) {
     value = value.replace(/"/g, '');
   } else if (/,\s/.test(value)) {
@@ -116,6 +116,8 @@ for (const el of elements) {
           } else if (value == 400) {
             css[prop] = 'normal';
           }
+        } else if (prop == 'text-decoration') {
+          css[prop] = css[prop].split(' ')[0];
         }
       } else {
         atts[prop] = replace(value);
@@ -399,16 +401,8 @@ if (/w/.test(root.getAttribute('_class'))) {
 
 
 // 
-// fix text text-shadow
-
-// 
-// fix text text-decoration
-
-// 
 // fix font-family quotes  fusion
-
-// 
-// fix fill: none | stroke: none | filter: none
+// fix text-rendering      fusion
 
 
 

@@ -158,7 +158,7 @@
     <rect id="wallpaper" x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd" />
   </g>
 
-  <g id="window" class="w" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="window" class="f" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
     <g class="titlebar">
       <rect class="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
@@ -766,7 +766,7 @@
     <rect class="w-shade" x="83" y="83" width="1714" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
-  <!--<image id="screen" href="../../../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../../../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" transform="matrix(1,0,0,1,0,34)" />-->
   <!--<image id="screen" href="../../../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" transform="matrix(1,0,0,1,2,15)" />-->
   <!--<image id="screen" href="../../../test/screenshot-m.png" width="1880" height="1300" style="opacity:0.6" />-->
   <!--<image id="screen-flip" href="../../../test/screenshot-m.png" width="1880" height="1300" style="opacity:0.6" transform="matrix(-1,0,0,1,1880,0)" />-->
