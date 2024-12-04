@@ -158,7 +158,7 @@
     <rect id="wallpaper" x="0" y="0" width="3318" height="1300" style="fill:#b4d0cd" />
   </g>
 
-  <g id="editservice" class="f" transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="editservice" class="m" transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect class="w-bg" x="1" y="1" width="960" height="820" rx="15" style="fill:#f3f4f4;stroke:#a6bbb9;stroke-width:1px;filter: url(#modal-shadow-m)" />
     <g class="titlebar">
       <rect class="t-bg" x="2" y="2" width="958" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
@@ -472,7 +472,7 @@
     <rect class="w-shade" x="3" y="3" width="956" height="816" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
-  <g id="window" class="f" transform="matrix(1,0,0,1,1440,0)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="window" class="m" transform="matrix(1,0,0,1,1440,0)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
     <g class="titlebar">
       <rect class="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
@@ -907,7 +907,7 @@
       <rect id="sb-bg" x="82" y="1164" width="1716" height="56" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0 0)" />
       <rect id="sb-stroke" x="80" y="1179" width="1720" height="42" style="fill:none;stroke:#d8d9d9;stroke-width:2.5px;clip-path:inset(0 2px 42px)" />
       <text id="sbts" x="82" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Transponders: 102</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
-      <rect class="divid sbds-w" x="402" y="1184" width="1" height="25" style="fill:none" />
+      <rect class="divid sbds-w" x="413" y="1184" width="1" height="25" style="fill:none" />
       <rect class="divid sbdl-w" x="1608" y="1184" width="1" height="25" style="fill:none" />
       <text id="sbte" x="82" y="1179" dx="1535" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 251</tspan></text>
       <rect class="divid sbdr-w" x="1721" y="1184" width="1" height="25" style="fill:none" />

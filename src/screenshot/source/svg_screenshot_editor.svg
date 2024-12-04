@@ -158,7 +158,7 @@
     <rect id="wallpaper" x="0" y="0" width="1880" height="1300" style="fill:#b4d0cd" />
   </g>
 
-  <g id="window" class="f" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="window" class="m" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
     <g class="titlebar">
       <rect class="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
@@ -667,7 +667,7 @@
               <text class="find-txt" x="1111" y="1003" dx="55" dy="23" text-anchor="middle" style="font-size:19px;fill:#000;fill-opacity:0.89">Find All</text>
             </g>
             <g class="search-item">
-              <rect class="find-h-bg" x="1254" y="1004" width="126" height="31" rx="4" style="fill:#b1d7ff;stroke:#d1d2d2;stroke-width:1px" />
+              <rect class="find-h-bg" x="1254" y="1004" width="126" height="31" rx="4" style="fill:#b1d7ff;stroke:#bfbfbf;stroke-width:1px" />
               <text class="find-h-txt" x="1254" y="1004" dx="62" dy="22" text-anchor="middle" style="font-size:18px;fill:#fff;fill-opacity:0.9">Highlight</text>
             </g>
             <g class="ico" transform="matrix(0.23,0,0,0.23,1764,1013)">
@@ -747,7 +747,7 @@
       <rect id="sb-bg" x="82" y="1164" width="1716" height="56" rx="15" style="fill:#f3f4f4;clip-path:inset(15px 0 0)" />
       <rect id="sb-stroke" x="80" y="1179" width="1720" height="42" style="fill:none;stroke:#d8d9d9;stroke-width:2.5px;clip-path:inset(0 2px 42px)" />
       <text id="sbts" x="82" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Channels: 143</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
-      <rect class="divid sbds-w" x="508" y="1184" width="1" height="25" style="fill:none" />
+      <rect class="divid sbds-w" x="519" y="1184" width="1" height="25" style="fill:none" />
       <rect class="divid sbdl-w" x="1315" y="1184" width="1" height="25" style="fill:none" />
       <text id="sbte" x="82" y="1179" dx="1212" dy="29" style="font-size:20px;fill:#000"><tspan>TV: 1240</tspan> <tspan dx="10">Radio: 304</tspan> <tspan dx="10">Data: 148</tspan> <tspan dx="10">Total: 1692</tspan></text>
       <rect class="divid sbdr-w" x="1721" y="1184" width="1" height="25" style="fill:none" />
@@ -766,9 +766,9 @@
     <rect class="w-shade" x="83" y="83" width="1714" height="1136" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
   </g>
 
-  <!--<image id="screen" href="../../../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" transform="matrix(1,0,0,1,0,34)" />-->
+  <!--<image id="screen" href="../../../test/screenshot-l.png" width="1880" height="1300" style="opacity:0.6" transform="matrix(1,0,0,1,0,42)" />-->
   <!--<image id="screen" href="../../../test/screenshot-w.png" width="1880" height="1300" y="36" style="opacity:0.6" transform="matrix(1,0,0,1,2,15)" />-->
-  <!--<image id="screen" href="../../../test/screenshot-m.png" width="1880" height="1300" style="opacity:0.6" />-->
+  <!--<image id="screen" href="../../../test/screenshot-m.png" width="1880" height="1300" style="opacity:0.6" transform="matrix(1,0,0,1,157,0)" />-->
   <!--<image id="screen-flip" href="../../../test/screenshot-m.png" width="1880" height="1300" style="opacity:0.6" transform="matrix(-1,0,0,1,1880,0)" />-->
 
   <g id="test" transform="matrix(1,0,0,1,50,1270)">
