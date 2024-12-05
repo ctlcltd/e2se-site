@@ -63,11 +63,15 @@ function flatten() {
   flatten_transform();
 
   if (/w|f/.test(classname) || svg.getAttribute('id') === 'wide') {
-    fix_w_f_wide_text();
+    fix_list_text();
+
+    if (/m/.test(classname)) {
+      fix_m_wide();
+    }
   }
 
   if (/w/.test(classname)) {
-    fix_w_text();
+    fix_w_ttext();
   }
 
   flatten_resources();
@@ -77,6 +81,11 @@ function flatten() {
 
   var f = svg.cloneNode(true);
   f.setAttribute('style', 'pointer-events:none;user-select:none');
+
+  if (/f/.test(classname)) {
+    svg.style = 'text-rendering:geometricprecision';
+    f.style += ';text-rendering:geometricprecision';
+  }
 
   var elements = f.querySelectorAll(':scope > *');
 
@@ -95,8 +104,6 @@ function flatten() {
   console.info('dst size', dst_size);
 
   console.log(f.outerHTML);
-
-  svg.setAttribute('style', 'border:solid currentColor;border-width:1em 0;');
 }
 
 
@@ -171,6 +178,10 @@ function flatten_style() {
               css[prop] = 'bold';
             } else if (value == 400) {
               css[prop] = 'normal';
+            }
+          } else if (prop == 'font-family') {
+            if (/Sans-Serif/.test(css[prop])) {
+              css[prop] = css[prop].replace(/(Sans-Serif)/, '"Sans-Serif"');
             }
           } else if (prop == 'text-decoration') {
             css[prop] = css[prop].split(' ')[0];
@@ -450,15 +461,15 @@ function flatten_finalize() {
 
 
 //
-// fix text x pos
+// fix list text
 // 
-// .list text, .list text > tspan
+// cols text, list text, list text > tspan
 
-function fix_w_f_wide_text() {
+function fix_list_text() {
 
   root.setAttribute('class', root.getAttribute('_class'));
 
-  elements = svg.querySelectorAll('g[_class="list"]');
+  var elements = svg.querySelectorAll('g[_class="list"], g[_id="ch-end"]');
 
   for (const el of elements) {
     let parent;
@@ -467,6 +478,10 @@ function fix_w_f_wide_text() {
       parent = el.closest('g[_id="split-end"]');
     } else if (el.closest('g[_id="split-start"]')) {
       parent = el.closest('g[_id="split-start"]');
+    } else if (el.closest('g[_id="ch-start"]')) {
+      parent = el.closest('g[_id="ch-start"]');
+    } else if (el.closest('g[_id="ch-end"]')) {
+      parent = el.closest('g[_id="ch-end"]');
     } else {
       continue;
     }
@@ -502,6 +517,16 @@ function fix_w_f_wide_text() {
 
           if (svg.getAttribute('id') === 'wide') {
             tm.e += 1440;
+          } else if (svg.getAttribute('id') == 'channelbook') {
+            if (/w/.test(root.getAttribute('class'))) {
+              if (child.getAttribute('class') == 'list-cols') tm.e = 1;
+              else if (parent.getAttribute('id') == 'split-end' && txt == txt.parentElement.lastElementChild) tm.e = -4;
+              else if (tm.e == 0) tm.e = -3;
+            } else if (/f/.test(root.getAttribute('class'))) {
+              if (child.getAttribute('class') == 'list-cols') tm.e = -2;
+              else if (parent.getAttribute('id') == 'split-end' && txt == txt.parentElement.lastElementChild) tm.e = -4;
+              else if (tm.e == 0) tm.e = -3;
+            }
           }
         }
 
@@ -525,16 +550,16 @@ function fix_w_f_wide_text() {
 
 
 // 
-// fix text x pos  win
+// fix t-txt  win
 // 
-// #t-txt, text.focused
+// t-txt
 
-function fix_w_text() {
+function fix_w_ttext() {
 
   root.setAttribute('class', root.getAttribute('_class'));
 
-  if (root.querySelector('text[_class="t-txt"]')) {
-    elements = svg.querySelectorAll('text[_class="t-txt"]');
+  if (svg.querySelector('text[_class="t-txt"]')) {
+    var elements = svg.querySelectorAll('text[_class="t-txt"]');
 
     for (const txt of elements) {
       txt.setAttribute('class', txt.getAttribute('_class'));
@@ -544,10 +569,12 @@ function fix_w_text() {
         fix = 502;
       } else if (svg.getAttribute('id') === 'wide') {
         if (txt.closest('g[_id="editservice"]')) {
-          fix = -435;
+          fix = -436;
         } else {
           fix = 1522;
         }
+      } else if (svg.getAttribute('id') === 'channelbook') {
+        fix = -487;
       } else {
         fix = 82;
       }
@@ -576,8 +603,25 @@ function fix_w_text() {
 
 
 // 
-// fix font-family quotes  fusion
-// fix text-rendering      fusion
+// fix wide  macx
+// 
+// split, t-ctrs-m
+
+function fix_m_wide() {
+
+  root.setAttribute('class', root.getAttribute('_class'));
+
+  var elements = svg.querySelector('g[_id="window"]').querySelectorAll('g[_class="t-ctrs-m"] ellipse, g[_id="split"] ellipse');
+
+  for (const el of elements) {
+    let x = parseFloat(el.getAttribute('cx'));
+    x += 1440;
+    el.setAttribute('cx', x);
+  }
+
+  root.removeAttribute('class');
+}
+
 
 
 flatten_defaults();

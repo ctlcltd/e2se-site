@@ -17,7 +17,7 @@ var screenshots = {
 };
 
 var svg = document.rootElement;
-var current = null;
+var obj = null;
 
 
 function style(e) {
@@ -25,7 +25,7 @@ function style(e) {
   const name = id.length ? id.replace('selector_', '') : 'lm';
   const sys = id.length ? id[id.length - 1] : 'm';
 
-  (current !== null) && flatten_revert();
+  (obj !== null) && flatten_revert();
 
   if (name in screenshots) {
     for (const g of svg.querySelectorAll('#window, #tint-d, #addchannel, #editservice, #dnd')) {
@@ -41,8 +41,8 @@ function style(e) {
 
 
 function clone() {
-  current = svg.cloneNode(true);
-  var elements = current.querySelectorAll('*');
+  obj = svg.cloneNode(true);
+  var elements = obj.querySelectorAll('*');
 
   for (const el of elements) {
     if (el.nodeName == 'link' || el.nodeName == 'script') {
@@ -56,7 +56,7 @@ function clone() {
 
 
 function revert() {
-  if (current == null) {
+  if (obj == null) {
     return;
   }
 
@@ -74,15 +74,15 @@ function revert() {
     el.remove();
   }
 
-  elements = current.querySelectorAll(':scope > *');
+  elements = obj.querySelectorAll(':scope > *');
 
   for (const el of elements) {
     svg.append(el);
   }
 
   svg.removeAttribute('style');
-  svg.setAttribute('id', current.id);
-  current = null;
+  svg.setAttribute('id', obj.id);
+  obj = null;
 }
 
 
@@ -92,21 +92,26 @@ function flatten_trigger() {
 
   controller.getElementsByTagName('text')[0].removeEventListener('click', flatten_trigger);
   controller.getElementsByTagName('text')[1].removeEventListener('click', flatten_revert);
-  selector.removeEventListener('click', screenshot_selector);
+  selector.removeEventListener('click', style);
 
-  (current !== null) && flatten_revert();
+  (obj !== null) && flatten_revert();
   clone();
 
   ('flatten' in window) && flatten();
 
   controller.getElementsByTagName('text')[0].addEventListener('click', flatten_trigger);
   controller.getElementsByTagName('text')[1].addEventListener('click', flatten_revert);
-  selector.addEventListener('click', screenshot_selector);
+  selector.addEventListener('click', style);
+
+  const shot = document.createElementNS(svg.namespaceURI, 'rect');
+  shot.setAttribute('id', 'shoot');
+  shot.setAttribute('style', 'width:333%;height:100%;x:-100%;fill:none;stroke:#000;stroke-opacity:.25;stroke-width:50px;');
+  svg.insertBefore(shot, selector);
 }
 
 
 function flatten_revert() {
-  if (current == null) {
+  if (obj == null) {
     return;
   }
 

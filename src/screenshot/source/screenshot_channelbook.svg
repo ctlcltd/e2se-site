@@ -154,7 +154,7 @@
     <rect id="tint-d" class="m" x="0" y="0" width="1880" height="1330" style="fill:#000;fill-opacity:0.2" />
 
     <g id="window" class="m" transform="matrix(1.41,0,0,1.41,-656,-271)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif;opacity:0.8">
-      <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
+      <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#191919;stroke-width:1px" />
       <g id="w-inner">
         <g id="menu">
           <rect id="menu-bg" class="bg" x="82" y="192" width="1716" height="100" style="fill:#e7e8e8" />
@@ -372,7 +372,7 @@
   </g>
 
   <g id="addchannel" class="m" transform="matrix(1.41,0,0,1.41,321,189)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
-    <rect class="w-bg" x="1" y="1" width="1061" height="650" rx="15" style="fill:#f3f4f4;stroke:#a6bbb9;stroke-width:1px;filter: url(#modal-shadow-m)" />
+    <rect class="w-bg" x="1" y="1" width="1061" height="650" rx="15" style="fill:#f3f4f4;stroke:#191919;stroke-width:1.088px;filter: url(#modal-shadow-m)" />
     <g class="titlebar">
       <rect class="t-bg" x="2" y="2" width="1059" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
       <rect class="t-stroke" x="1" y="44" width="1061" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />

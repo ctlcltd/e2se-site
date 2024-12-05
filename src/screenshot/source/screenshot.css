@@ -171,14 +171,16 @@
 .w #sbcb-w { clip-path: inset(0 27px 27px 0); }
 .w #sbcb-w rect { fill: #c5c5c5 !important; transform: matrix(-0.8, -1, -1, 1, 52, 23); }
 
-.w .w-bg { fill: #f0f0f0 !important; stroke: #a2b5ba !important; }
-.w .w-stroke { stroke: #9bb3b3 !important; }
-.w .t-bg { height: 56.5px; fill: #f3f3f3 !important; stroke: none !important; }
+.w .w-bg { fill: #f0f0f0 !important; stroke: #9bb3b3 !important; stroke-width: 1px !important; }
+.w .w-stroke { stroke: #1d3331 !important; stroke-width: 0.5px !important; }
+.w .t-bg { height: 56.5px; fill: #f7f7f7 !important; fill-opacity: 0.4; stroke: none !important; }
 
 .w.w10 .t-bg { height: 92.5px; fill: #fff !important; }
 
-#channelbook .w#addchannel .w-bg, #wide .w#editservice .w-bg { filter: url(#modal-shadow-w) !important; }
-#channelbook .w#addchannel .w-stroke, #wide .w#editservice .w-stroke { stroke: #fff !important; stroke-opacity: 0.6; stroke-width: 1.5px !important; }
+#editor .w .w-bg, #wide .w#window .w-bg { x: 80px; y: 80px; width: 1720px; height: 1142px; }
+#piconseditor .w .w-bg { x: 500px; y: 80px; width: 1300px; height: 1142px; }
+#channelbook .w#addchannel .w-bg, #wide .w#editservice .w-bg { stroke: #aaa !important; filter: url(#modal-shadow-w) !important; }
+#channelbook .w#addchannel .w-stroke, #wide .w#editservice .w-stroke { stroke: #1c1c1c !important; stroke-opacity: 0.5; stroke-width: 0.5px !important; }
 #channelbook .w#addchannel .t-bg, #wide .w#editservice .t-bg { height: 59.5px; }
 
 .w #sb-bg, .w #tb-bg, .w #tb-corner .bg, .w #menu-bg, .w #ss-bg { fill: none !important; }
@@ -186,7 +188,7 @@
 
 .w .t-stroke { display: none; stroke: none !important; }
 .w .t-txt { text-anchor: start; font-family: 'Segoe UI', Tahoma, sans-serif !important; font-weight: normal !important; font-size: 18.6px !important; letter-spacing: -0.2px; fill: #000 !important; transform: translate(-812px, 1px); }
-#piconseditor .w .t-txt { transform: translate(-608px, 1px); }
+#piconseditor .w .t-txt { transform: translate(-605px, 1px); }
 #channelbook .w .t-txt { transform: translate(-489px, 0.5px); }
 #wide .w#editservice .t-txt { transform: translate(-438px, 0.5px); }
 
@@ -317,7 +319,7 @@
 #channelbook .w #ch-end .focused { transform: translate(0, 2.5px); }
 #channelbook .w #ch-end .items text:nth-child(15), #channelbook .w #ch-end .items text:nth-child(16) { display: none; }
 
-#channelbook .w #ch-list .focused { transform: translate(-0.5px, 0.5px); }
+#channelbook .w #ch-list .focused { transform: translate(-0.5px, 0.5px); clip-path: inset(0 0 0 1px); }
 #channelbook .w #ch-list text { font-size: 21px !important; transform: translate(-4px, 0); }
 
 /* toolbar */
@@ -780,13 +782,12 @@
 
 #channelbook .dw#tint-d { fill-opacity: 0.7 !important; }
 
-.dw .w-bg { fill: #1e1e1e !important; stroke: #2b2b2b !important; }
-.dw .w-stroke { stroke: #8a9b9c !important; }
-.dw .t-bg { fill: #000 !important; }
+.dw .w-bg { fill: #1e1e1e !important; stroke: #a2b5ba !important; }
+.dw .w-stroke { stroke: #5c7377 !important; stroke-width: 1px !important; }
+.dw .t-bg { fill: #222 !important; fill-opacity: 0.7; }
 
-#channelbook .dw#addchannel .w-stroke, #wide .dw#editservice .w-stroke { stroke: #677073 !important; stroke-opacity: 0.28 !important; }
-#channelbook .dw#addchannel .w-stroke { stroke-width: 2.3px !important; }
-#wide .dw#editservice .w-stroke { stroke: #a0b6b4 !important; stroke-opacity: 0.55 !important; stroke-width: 2.8px !important; }
+#channelbook .dw#addchannel .w-bg, #wide .dw#editservice .w-bg { stroke: #303030 !important; }
+#channelbook .dw#addchannel .w-stroke, #wide .dw#editservice .w-stroke { stroke: #677073 !important; stroke-opacity: 0.5 !important; stroke-width: 1px !important; }
 
 .dw #menu-stroke, .dw #main-stroke, .dw #sb-stroke { stroke: #000 !important; }
 
@@ -1086,7 +1087,7 @@
 .f .w-bg, .f .w-stroke, .f .w-shade, .f .t-bg, .f #sb-bg { rx: 0; }
 
 #channelbook .f#addchannel .w-bg, #wide .f#editservice .w-bg { fill: #efefef !important; filter: url(#modal-shadow-f) !important; }
-#channelbook .f#addchannel .w-stroke, #wide .f#editservice .w-stroke { stroke: #f9f9f9 !important; }
+#channelbook .f#addchannel .w-stroke, #wide .f#editservice .w-stroke { stroke: #808e8c !important; stroke-width: 1.2px !important; }
 #channelbook .f#addchannel .t-bg, #wide .f#editservice .t-bg { x: 0; y: 1px; }
 #channelbook .f#addchannel .t-stroke, #wide .f#editservice .t-stroke { x: 0; y: 47px; }
 #channelbook .f#addchannel .t-bg, #channelbook .f#addchannel .t-stroke { width: 1063px; }
@@ -1095,8 +1096,8 @@
 .f .btn-caret .bg, .f .btn-flag .bg { fill: none !important; stroke: none !important; }
 
 .f .w-bg { fill: #f9f9f9 !important; stroke: #acc6c3 !important; }
-.f .w-stroke { stroke: #9bb1ab !important; }
-.f .t-bg { y: 81px; height: 48px; fill: #fafafa !important; stroke: #e8e8e8 !important; stroke-width: 2px !important; clip-path: inset(1px 1px 0px) !important; }
+.f .w-stroke { stroke: #8c9695 !important; }
+.f .t-bg { y: 81px; height: 48px; fill: #fafafa !important; stroke: #e8e8e8 !important; stroke-width: 2px !important; clip-path: inset(1px 1.5px 0px) !important; }
 .f .t-stroke { y: 127px; stroke: #cbcdcc !important; stroke-width: 2px !important; clip-path: inset(0 1px 1.1px); }
 #editor .f .t-bg { x: 81px; width: 1718px; }
 #piconseditor .f .t-bg { x: 501px; width: 1298px; }
@@ -1556,11 +1557,14 @@
 #channelbook .df#tint-d { fill-opacity: 0.7 !important; }
 
 .df .w-bg { fill: #171717 !important; stroke: #acc6c3 !important; }
-.df .w-stroke { stroke: #a7bfba !important; }
+.df .w-stroke { stroke: #96bfba !important; }
 .df .t-bg { fill: #3a3a3a !important; stroke: #131312 !important; }
 
 #channelbook .df#addchannel .w-bg, #wide .df#editservice .w-bg { fill: #222020 !important; }
 #channelbook .df#addchannel .w-stroke, #wide .df#editservice .w-stroke { stroke: #000 !important; stroke-width: 1.8px !important; }
+#channelbook .df#addchannel .t-stroke, #wide .df#editservice .t-stroke { x: 0; y: 48.8px; }
+#channelbook .df#addchannel .t-bg, #channelbook .df#addchannel .t-stroke { width: 1063px; height: 46.1px; }
+#wide .df#editservice .t-bg, #wide .df#editservice .t-stroke { height: 46.1px; }
 
 .df #mb-txt { fill-opacity: 0.9; }
 
@@ -1588,7 +1592,7 @@
 
 .df #main-stroke { height: 781px; }
 
-.df .t-stroke { stroke: #222020 !important; clip-path: inset(0 1px); }
+.df .t-stroke { y: 130.5px; stroke: #222020 !important; clip-path: inset(0 1px); }
 .df #mb-stroke, .df #sb-stroke { stroke: #1d1c1c !important; }
 .df #menu-stroke { stroke: #fff !important; stroke-opacity: 0.09 !important; }
 .df #main-stroke { stroke: #fff !important; stroke-opacity: 0.09 !important; }

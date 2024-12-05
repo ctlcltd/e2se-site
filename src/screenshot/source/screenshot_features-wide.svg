@@ -159,7 +159,7 @@
   </g>
 
   <g id="editservice" class="m" transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
-    <rect class="w-bg" x="1" y="1" width="960" height="820" rx="15" style="fill:#f3f4f4;stroke:#a6bbb9;stroke-width:1px;filter: url(#modal-shadow-m)" />
+    <rect class="w-bg" x="1" y="1" width="960" height="820" rx="15" style="fill:#f3f4f4;stroke:#191919;stroke-width:1.088px;filter: url(#modal-shadow-m)" />
     <g class="titlebar">
       <rect class="t-bg" x="2" y="2" width="958" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
       <rect class="t-stroke" x="1" y="44" width="960" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
@@ -473,7 +473,7 @@
   </g>
 
   <g id="window" class="m" transform="matrix(1,0,0,1,1440,0)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
-    <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px" />
+    <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#191919;stroke-width:1px" />
     <g class="titlebar">
       <rect class="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
       <rect class="t-stroke" x="81" y="124" width="1718" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
@@ -501,9 +501,9 @@
         </g>
       </g>
       <g class="t-ctrs-l" style="display:none">
-        <rect x="1670" y="107" width="10.5" height="1" style="fill:none;stroke:#333;stroke-width:1.1px" />
+        <rect x="1670" y="107" width="10.5" height="0.8" style="fill:none;stroke:#333;stroke-width:1px" />
         <g transform="matrix(0.9,0,0,0.9,1715,100)">
-          <rect x="0" y="0" width="15" height="13" style="fill:none;stroke:#333;stroke-width:3px;clip-path:inset(0 0 2px)" />
+          <rect x="0" y="0" width="15" height="13" style="fill:none;stroke:#333;stroke-width:3px;clip-path:inset(0.8px 1.4px 2.6px)" />
           <rect x="1" y="4" width="13" height="7" style="fill:none;stroke:#333;stroke-width:1.7px" />
         </g>
         <g transform="matrix(1,0,0,1,1773,94)">
