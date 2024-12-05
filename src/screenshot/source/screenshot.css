@@ -1694,11 +1694,8 @@
 
 
 
-#piconseditor .list .sbh, #piconseditor .sbr { display: none !important; }
-
 .disabled { opacity: 0.25; }
 .w .disabled { opacity: 0.45; }
 
+#piconseditor .list .sbh, #piconseditor .sbr { display: none !important; }
 
-
-#test text { font-family: sans-serif; font-weight: bold; text-decoration: underline; cursor: pointer; }

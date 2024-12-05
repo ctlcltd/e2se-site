@@ -1,5 +1,5 @@
 <svg viewBox="0 0 1880 1300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="piconseditor">
-  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="svg_screenshot.css" type="text/css" />
+  <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="screenshot.css" type="text/css" />
   <defs>
     <symbol id="add">
       <path d="M37.75 37.75h18.127v-11.5h-18.127c0 0 0-18.127 0-18.127h-11.5v18.127c0 0-18.127 0-18.127 0v11.5h18.127c0 0 0 18.127 0 18.127h11.5v-18.127z" />
@@ -769,28 +769,10 @@
   <!--<image id="screen" href="../../../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" />-->
   <!--<image id="screen-flip" href="../../../test/screenshot.png" width="1880" height="1300" style="opacity:0.5" transform="matrix(-1,0,0,1,1880,0)" />-->
 
-  <g id="test" transform="matrix(1,0,0,1,50,1270)">
-    <text id="test_lm" dx="95">macx light</text>
-    <text id="test_dm" dx="200">macx dark</text>
-    <text id="test_lw" dx="320">win light</text>
-    <text id="test_dw" dx="420">win dark</text>
-    <text id="test_lf" dx="535">fusion light</text>
-    <text id="test_df" dx="650">fusion dark</text>
+  <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="flatten.js"></script>
+  <script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="screenshot.js"></script>
+  <g id="noscript">
+    <rect width="1880" height="1300" fill="#808080" />
+    <text x="80" y="120" font-family="sans-serif" font-size="42px" font-weight="bold">This composite image requires XHTML and JavaScript in order to display properly.</text>
   </g>
-
-  <!--<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" src="svg_flatten.js"></script>-->
-
-  <script type="text/javascript">
-    // <![CDATA[
-    if (document.getElementById('test')) {
-      document.getElementById('test').addEventListener('click', function(e) {
-        var id = e.target.getAttribute('id');
-        document.getElementById('window').setAttribute('class', id[id.length - 1] + ' ' + id.replace('test_', ''));
-        document.getElementById('dnd').setAttribute('class', id[id.length - 1] + ' ' + id.replace('test_', ''));
-        document.getElementsByTagName('svg')[0].setAttribute('transform', 'matrix(1,1,1,1,0,0)');
-        document.getElementsByTagName('svg')[0].setAttribute('transform', '');
-      });
-    }
-    // ]]>
-  </script>
 </svg>
