@@ -173,7 +173,7 @@
 
 .w .w-bg { fill: #f0f0f0 !important; stroke: #9bb3b3 !important; stroke-width: 1px !important; }
 .w .w-stroke { stroke: #1d3331 !important; stroke-width: 0.5px !important; }
-.w .t-bg { height: 56.5px; fill: #f7f7f7 !important; fill-opacity: 0.4; stroke: none !important; }
+.w .t-bg { height: 56.5px; fill: #f7f7f7 !important; fill-opacity: 0.37; stroke: none !important; }
 
 .w.w10 .t-bg { height: 92.5px; fill: #fff !important; }
 
@@ -784,7 +784,7 @@
 
 .dw .w-bg { fill: #1e1e1e !important; stroke: #a2b5ba !important; }
 .dw .w-stroke { stroke: #5c7377 !important; stroke-width: 1px !important; }
-.dw .t-bg { fill: #222 !important; fill-opacity: 0.7; }
+.dw .t-bg { fill: #222 !important; fill-opacity: 0.74; }
 
 #channelbook .dw#addchannel .w-bg, #wide .dw#editservice .w-bg { stroke: #303030 !important; }
 #channelbook .dw#addchannel .w-stroke, #wide .dw#editservice .w-stroke { stroke: #677073 !important; stroke-opacity: 0.5 !important; stroke-width: 1px !important; }
@@ -1109,6 +1109,7 @@
 .f #menu-bg { fill: #efefef !important; }
 .f #tree-tool .bg, .f #list-tool .bg { fill: #efefef !important; }
 #piconseditor .f #list-tool .bg { width: 1296px; }
+#piconseditor .f #list-tool .stroke { width: 1299px; }
 
 .f #menubar { transform: translate(0, 8px); }
 .f #mb-bg { height: 36px; }
@@ -1186,7 +1187,7 @@
 .f .box-title text { font-size: 19px !important; transform: translate(0, -1px); }
 .f .box-button { transform: translate(15px, -4px); }
 #piconseditor .f .box-button { transform: translate(11px, -4px); }
-.f #btn-collapse .box-button { transform: translate(-17px, 5.5px); }
+.f #btn-collapse .box-button { transform: translate(-18px, 5.5px); }
 .f #btn-collapse .bg { width: 138px; }
 .f #btn-collapse .txt { font-weight: normal !important; fill: #000 !important; transform: translate(-13px, -3px); }
 
@@ -1230,7 +1231,8 @@
 #editor .f #list-tool .bg { width: 1329px; }
 #editor .f #list-tool .stroke { width: 1333px; }
 
-.f #tree-tool .bg, .f #tree-tool .stroke, .f #list-tool .bg, .f #list-tool .stroke { height: 65px; transform: translate(0, 8px); }
+#editor .f .list-search .bg, #wide .f .list-search .bg { width: 1329px; height: 52px; }
+.f #tree-tool .bg, .f #tree-tool .stroke, .f #list-tool .bg, .f #list-tool .stroke { width: 1332px; height: 65px; transform: translate(0, 8px); }
 .f #list-tool .bg { width: 1330px; }
 .f #ti-items, .f #li-items { transform: translate(0, 4px); }
 .f .tool-txt { font-size: 20.5px !important; }
@@ -1290,7 +1292,9 @@
 .f .sbv .bg { width: 23px; }
 .f .sbh .xy { height: 22px; transform: translate(0, 0.5px); }
 .f .sbv .xy { width: 22px; transform: translate(0.5px, 0); }
-.f .sbr { display: block !important; x: 1780px; y: 930.5px; width: 24px; height: 24px; stroke-width: 2px; clip-path: inset(0 1px 1px 0); }
+.f .sbr { display: block !important; x: 1780.5px; y: 930.5px; width: 25px; height: 25px; stroke-width: 2px; clip-path: inset(0 4.2px 2.8px 0); }
+
+/*.f .sbr { display: block !important; x: 1780px; y: 930.5px; width: 24px; height: 24px; stroke-width: 2px; clip-path: inset(0 1px 1px 0); }*/
 
 .f #tree .sbv { transform: translate(-8px, -1px); }
 .f #tree .sbv .bg { height: 359px; }
@@ -1334,7 +1338,7 @@
 #channelbook .f .list .sbv .bg { height: 693px; }
 #channelbook .f .list .sbv .ve { y: 991px; }
 #channelbook .f .list .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1784, 988); }
-#channelbook .f .list .sbr { x: 1779px; y: 1011px; }
+#channelbook .f .list .sbr { x: 1779px; y: 1011px; width: 26px; }
 
 #channelbook .f #ch-start .sbv { transform: translate(-5px, 0); }
 #channelbook .f #ch-start .sbv .ve { transform: translate(0, -7px); }
@@ -1349,11 +1353,12 @@
 #channelbook .f #ch-end .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1047.7, 536); }
 
 #channelbook .f #ch-end .sbh { transform: translate(0, -8.5px); }
+#channelbook .f #ch-end .sbh .bg { width: 559px; }
 #channelbook .f #ch-end .sbh .he { transform: translate(-25.5px, 0.5px); }
 #channelbook .f #ch-end .sbh .xy { x: 523px; y: 568px; width: 204px; fill-opacity: 1 !important; }
 #channelbook .f #ch-end .sbh .arrow.as { transform: matrix(1, 0, 0, 1, 500.5, 568.2); }
 #channelbook .f #ch-end .sbh .arrow.ae { transform: matrix(1, 0, 0, 1, 1036.5, 568.2); }
-#channelbook .f #ch-end .sbr { x: 1040px; y: 560px; width: 23px; }
+#channelbook .f #ch-end .sbr { x: 1040.5px; y: 559.5px; height: 24px; }
 
 #wide .f .list .sbv { clip-path: inset(1px 1px 1px 0); }
 #wide .f .list .sbv .bg { height: 613px; }
@@ -1606,7 +1611,7 @@
 .df .menu-item .ico use { fill: #c4c4c4 !important; }
 .df #split-start .ico use { fill: #c4c4c4 !important; }
 .df #split-end .ico use, #piconseditor .df #main .ico use, .df .ch-item .ico use, .df #btn-collapse .arrow use { fill: #c4c4c4 !important; }
-.df #btn-collapse .box-button { transform: translate(-17px, 4.5px); }
+.df #btn-collapse .box-button { transform: translate(-18px, 4.5px); }
 .df #btn-collapse .txt { fill: #fff !important; }
 
 .df #tb-arrows { transform: translate(1px, 0); }
@@ -1647,7 +1652,9 @@
 .df .list .sbv { transform: matrix(0.997, 0, 0, 0.997, -0.5, 0.5); }
 .df .sbh .xy { transform: translate(2.5px, 0.5px); }
 .df .sbv .xy { transform: translate(0.5px, 2.5px); }
-.df .sbr { x: 1778px; y: 974px; width: 26px; height: 24px; stroke: none !important; }
+.df .sbr { x: 1778.5px; y: 931px; width: 26px; height: 26px; stroke: none !important; }
+
+/*.df .sbr { x: 1778px; y: 974px; width: 26px; height: 24px; stroke: none !important; }*/
 
 #channelbook .df .list .sbh { transform: translate(0, 15.5px); clip-path: inset(0.5px 3.5px 0 0) !important }
 #channelbook .df .list .sbh .he { x: 1756px; }
@@ -1655,7 +1662,9 @@
 
 #channelbook .df #ch-start .sbv { transform: matrix(0.994, 0, 0, 0.994, -4, 2.5); }
 #channelbook .df #ch-end .sbh { transform: matrix(0.994, 0, 0, 0.994, 3, -5); }
+#channelbook .df #ch-end .sbh .bg { width: 562px; }
 #channelbook .df #ch-end .sbv { transform: matrix(0.994, 0, 0, 0.994, -3, 2.5); }
+#channelbook .df #ch-end .sbr { x: 1039px; y: 559px; height: 26px; }
 
 #wide .df .qt-item .sbv { transform: matrix(0.994, 0, 0, 0.994, 16, -2.5); }
 #wide .df .qt-item .sbv .xy { stroke-opacity: 1 !important; }
