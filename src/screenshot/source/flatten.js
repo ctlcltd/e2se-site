@@ -7,7 +7,7 @@
  * @license MIT License
  */
 
-const excluded = [ 'block-size', 'd', 'inline-size', 'overflow-x', 'overflow-y', 'perspective-origin', 'text-decoration-line', 'text-wrap', 'transform-origin', 'zoom', '-webkit-text-decorations-in-effect' ];
+const excluded = [ 'block-size', 'd', 'inline-size', 'overflow-x', 'overflow-y', 'perspective-origin', 'text-decoration-line', 'text-wrap', 'text-wrap-mode', 'transform-origin', 'zoom', '-webkit-text-decorations-in-effect' ];
 const attributes = [ 'x', 'y', 'cx', 'cy', 'dx', 'dy', 'width', 'height', 'rx', 'ry', 'transform', 'style' ];
 const ordered = [ 'display', 'x', 'y', 'width', 'height', 'rx', 'ry', 'font-family', 'font-weight', 'font-size', 'letter-spacing', 'word-spacing', 'fill', 'fill-opacity', 'stroke', 'stroke-opacity', 'stroke-width', 'stroke-dasharray', 'text-decoration', 'text-shadow', 'transform', 'clip-path', 'filter', 'opacity' ];
 
@@ -80,11 +80,11 @@ function flatten() {
   svg.removeAttribute('id');
 
   var f = svg.cloneNode(true);
+  f.removeAttribute('transform');
   f.setAttribute('style', 'pointer-events:none;user-select:none');
 
   if (/f/.test(classname)) {
-    svg.style = 'text-rendering:geometricprecision';
-    f.style += ';text-rendering:geometricprecision';
+    f.setAttribute('style', f.getAttribute('style') + ';text-rendering:geometricprecision');
   }
 
   var elements = f.querySelectorAll(':scope > *');
@@ -103,7 +103,7 @@ function flatten() {
   console.info('src size', src_size);
   console.info('dst size', dst_size);
 
-  console.log(f.outerHTML);
+  console.log(f.outerHTML.replace(/<!--.+-->/g, ''));
 }
 
 
@@ -181,10 +181,16 @@ function flatten_style() {
             }
           } else if (prop == 'font-family') {
             if (/Sans-Serif/.test(css[prop])) {
-              css[prop] = css[prop].replace(/(Sans-Serif)/, '"Sans-Serif"');
+              css[prop] = css[prop].replace(/(Sans-Serif)/, '"$1"');
             }
           } else if (prop == 'text-decoration') {
             css[prop] = css[prop].split(' ')[0];
+          } else if (prop == 'text-shadow') {
+            css[prop] = css[prop].replace(/(#\w+) (.+)/, '$2 $1');
+          }
+
+          if (/\b0px\b/.test(css[prop])) {
+            css[prop] = css[prop].replace(/\b0px\b/, '0');
           }
         } else {
           atts[prop] = replace(value);
@@ -419,6 +425,7 @@ function flatten_resources() {
 
 function flatten_finalize() {
 
+  const classname = root.getAttribute('_class');
   var elements;
 
   for (var i = 0; i != 10; i++) {
@@ -455,6 +462,16 @@ function flatten_finalize() {
   for (const el of elements) {
     if (el.hasAttribute('style') && el.getAttribute('style') == 'fill:none') {
       el.remove();
+    }
+    if (el.nodeName == 'text' && ! /w/.test(classname)) {
+      if (el.textContent == 'New Tab') {
+        el.innerHTML = el.textContent;
+      } else if (el.textContent == 'Find…' && ! el.querySelector('tspan').hasAttribute('style')) {
+        const tspan = document.createElementNS(svg.namespaceURI, 'tspan');
+        tspan.innerHTML = '…';
+        tspan.setAttribute('style', 'font-size:15px');
+        el.innerHTML = el.textContent.replace('…', tspan.outerHTML.replace(/xmlns="[^"]+"/, ''));
+      }
     }
   }
 }
@@ -532,6 +549,34 @@ function fix_list_text() {
 
         matrix.e = pos.x + m.e + cm.e + tm.e;
         matrix.f = pos.y + m.f + cm.f + tm.f;
+
+        if (txt.nodeName == 'text') {
+          if (svg.getAttribute('id') === 'wide') {
+            matrix.e -= 1440;
+
+            if (/w/.test(root.getAttribute('class'))) {
+              if (parent.getAttribute('id') == 'split-start' && child.getAttribute('class') == 'list-cols') matrix.e -= 2;
+              else if (parent.getAttribute('id') == 'split-end' && child.getAttribute('class') == 'list-cols') matrix.e += 2;
+              else if (parent.getAttribute('id') == 'split-start') matrix.e += 8;
+              else if (parent.getAttribute('id') == 'split-end') matrix.e += 12;
+            } else if (/f/.test(root.getAttribute('class'))) {
+              if (parent.getAttribute('id') == 'split-start' && child.getAttribute('class') == 'list-cols') matrix.e += 6;
+              else if (parent.getAttribute('id') == 'split-end' && child.getAttribute('class') == 'list-cols') matrix.e += 10;
+              else if (parent.getAttribute('id') == 'split-start') matrix.e += 8;
+              else if (parent.getAttribute('id') == 'split-end') matrix.e += 12;
+            }
+          } else if (/w/.test(root.getAttribute('class'))) {
+            if (parent.getAttribute('id') == 'split-end' && child.getAttribute('class') == 'list-cols') matrix.e += 2;
+            else if (parent.getAttribute('id') == 'ch-end' && child.getAttribute('class') == 'list-cols') matrix.e -= 2;
+            else if (parent.getAttribute('id') == 'split-end') matrix.e += 12;
+            else if (parent.getAttribute('id') == 'ch-end') matrix.e += 6;
+          } else if (/f/.test(root.getAttribute('class'))) {
+            if (parent.getAttribute('id') == 'split-end' && child.getAttribute('class') == 'list-cols') matrix.e += 9;
+            else if (parent.getAttribute('id') == 'ch-end' && child.getAttribute('class') == 'list-cols') matrix.e += 4;
+            else if (parent.getAttribute('id') == 'split-end') matrix.e += 12;
+            else if (parent.getAttribute('id') == 'ch-end') matrix.e += 6;
+          }
+        }
 
         // console.debug(matrix.e, pos.x, m.e, cm.e, tm.e);
 
@@ -617,6 +662,7 @@ function fix_m_wide() {
     let x = parseFloat(el.getAttribute('cx'));
     x += 1440;
     el.setAttribute('cx', x);
+    el.removeAttribute('x');
   }
 
   root.removeAttribute('class');

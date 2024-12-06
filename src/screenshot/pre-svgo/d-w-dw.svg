@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3318 1300" style="pointer-events:none;user-select:none">
-
+  
   <defs>
     <symbol id="aad">
       <path d="M37.75 37.75h18.127v-11.5h-18.127c0 0 0-18.127 0-18.127h-11.5v18.127c0 0-18.127 0-18.127 0v11.5h18.127c0 0 0 18.127 0 18.127h11.5v-18.127z"/>
@@ -66,30 +66,23 @@
     
     
     
-    <linearGradient id="bpf" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" style="stop-color:#3d3c3b"/>
-      <stop offset="1" style="stop-color:#333332"/>
-    </linearGradient>
+    
     
 
     
     
 
-    <filter id="bqf" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="0" stdDeviation="0.75"/>
-      <feDropShadow dx="0" dy="0" stdDeviation="0.5"/>
-      <feDropShadow dx="0" dy="0" stdDeviation="1"/>
-    </filter>
+    
 
-    <filter id="trw" color-interpolation-filters="sRGB">
+    <filter id="tpw" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="0" stdDeviation="2" flood-opacity="0.15"/>
     </filter>
-    <filter id="tsw" color-interpolation-filters="sRGB">
+    <filter id="tqw" color-interpolation-filters="sRGB">
       <feColorMatrix type="saturate" values="0"/>
     </filter>
 
     
-    <filter id="mtw" color-interpolation-filters="sRGB">
+    <filter id="mrw" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="0" stdDeviation="4" flood-opacity="0.2"/>
       <feDropShadow dx="0" dy="6" stdDeviation="16" flood-opacity="0.25"/>
     </filter>
@@ -101,106 +94,106 @@
   
 
   <g transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Segoe UI',Tahoma,sans-serif">
-    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:#1e1e1e;stroke:#2b2b2b;stroke-width:1px;filter:url(#mtw)"/>
+    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:#1e1e1e;stroke:#303030;stroke-width:1px;filter:url(#mrw)"/>
     
-      <rect x="2" y="2" width="958" height="59.5" rx="0" style="fill:#000;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
+      <rect x="2" y="2" width="958" height="59.5" rx="0" style="fill:#222;fill-opacity:0.74;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
       
-      <text x="2" y="2.6" dx="41" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:19.1px;letter-spacing:-0.1px;fill:#fff">Edit Service</text>
+      <text x="-436" y="2.5" dx="478" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:18.6px;letter-spacing:-0.2px;fill:#fff">Edit Service</text>
       
-        <image x="13" y="11" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg=="/>
+        <image x="11.5" y="10.5" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg=="/>
       
       
       
-        
-          <g transform="matrix(0.707,0.707,-0.707,0.707,937,9)">
+        <g transform="matrix(0.97,0,0,0.97,937,9)">
+          <g transform="matrix(0.707,0.707,-0.707,0.707,0,0)">
             <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#fff;stroke-width:0.9px"/>
             <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#fff;stroke-width:0.9px"/>
           </g>
-        
+        </g>
       
       
     
     
-      <rect x="33" y="119" width="894" height="600" rx="0" style="fill:#262626;fill-opacity:1;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:1.7px"/>
+      <rect x="33" y="119" width="894" height="600" rx="0" style="fill:#393939;fill-opacity:1;stroke:#505050;stroke-opacity:1;stroke-width:1.2px"/>
       
         <g style="clip-path:none">
-          <rect x="32.2" y="82" width="98" height="40" rx="0" style="fill:#282828;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3px;clip-path:inset(1px 1px 3px)"/>
-          <text x="35.7" y="86" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff">Service</text>
+          <rect x="32.7" y="81.4" width="98" height="40" rx="2.2" style="fill:#414141;stroke:#4e4d4d;stroke-width:3px;clip-path:inset(1px 1px 3px)"/>
+          <text x="36" y="86" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff">Service</text>
         </g>
         <g style="clip-path:none">
-          <rect x="129.2" y="85" width="137" height="35.7" rx="0" style="fill:#222;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3px;clip-path:inset(1px 1px 3px 3px)"/>
-          <text x="117.7" y="87.5" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Transponder</text>
+          <rect x="129.5" y="84" width="137" height="35.7" rx="2.2" style="fill:#303030;stroke:#4e4d4d;stroke-width:3px;clip-path:inset(1px 1px 3px 3px)"/>
+          <text x="118" y="87.5" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Transponder</text>
         </g>
         <g style="clip-path:none">
-          <rect x="265.2" y="85" width="110" height="35.7" rx="0" style="fill:#222;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3px;clip-path:inset(1px 1px 3px 3px)"/>
-          <text x="254.7" y="87.5" dx="67" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Favourite</text>
+          <rect x="265.5" y="84" width="110" height="35.7" rx="2.2" style="fill:#303030;stroke:#4e4d4d;stroke-width:3px;clip-path:inset(1px 1px 3px 3px)"/>
+          <text x="255" y="87.5" dx="67" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Favourite</text>
         </g>
         
       
       
-        <rect x="50" y="167" width="437" height="316" rx="2.5" style="fill:none;fill-opacity:1;stroke:#4e4d4d;stroke-opacity:0.5;stroke-width:1.3px"/>
+        <rect x="50" y="167" width="437" height="316" rx="1.7" style="fill:#383838;fill-opacity:1;stroke:#444;stroke-opacity:1;stroke-width:1.3px"/>
         
         <text x="42" y="140" dx="10" dy="17" style="font-size:19px;letter-spacing:normal;fill:#fff">Service</text>
         
           
             <text x="65" y="181" dy="22" style="font-size:19px;fill:#fff">Service name</text>
             
-              <rect x="65" y="218" width="406" height="33" rx="0" style="fill:none;stroke:#5c5c5c;stroke-opacity:1;stroke-width:1.8px;clip-path:none"/>
-              <text x="65" y="219" dx="4" dy="23" style="font-size:19px;fill:#fff">HotBird 4K1</text>
+              <rect x="65" y="218" width="406" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+              <text x="65" y="222" dx="4" dy="23" style="font-size:19px;fill:#fff">HotBird 4K1</text>
             
           
           
-            <text x="65" y="270" dy="22" style="font-size:19px;fill:#fff">Service type</text>
+            <text x="65" y="276" dy="22" style="font-size:19px;fill:#fff">Service type</text>
             
               
-                <rect x="65" y="329" width="158" height="34" rx="0" style="fill:none;stroke:#5c5c5c;stroke-width:2px;filter:none"/>
-                <text x="60" y="331" dx="12" dy="22" style="font-size:19.5px;word-spacing:3px;fill:#fff">1 TV</text>
+                <rect x="65" y="332" width="158" height="38" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.8px;filter:none"/>
+                <text x="60" y="337" dx="12" dy="22" style="font-size:19.5px;word-spacing:3px;fill:#fff">1 TV</text>
                 
-                  <rect x="202.5" y="334" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
+                  <rect x="202.5" y="337" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                   
                     
                     
-                    <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,202,340)">
+                    <g style="fill:#c9c9c9" transform="matrix(0.23,0,0,0.23,202,343)">
                       <use href="#aol"/>
                     </g>
                   
                 
               
               
-                <rect x="235" y="330" width="234" height="33" rx="0" style="fill:none;stroke:#1d66eb;stroke-width:2.6px;filter:none"/>
+                <rect x="235" y="332" width="234" height="38" rx="3" style="fill:#2d2d2d;stroke:#41adff;stroke-width:1.5px;filter:none"/>
                 
-                <text x="297" y="333" dx="20" dy="20" style="font-size:19.5px;fill:#fff">custom</text>
+                <text x="297" y="339" dx="20" dy="20" style="font-size:19.5px;fill:#fff">custom</text>
               
             
           
           
-            <text x="65" y="394" dy="22" style="font-size:19px;fill:#fff">Service ID</text>
+            <text x="65" y="391" dy="22" style="font-size:19px;fill:#fff">Service ID</text>
             
-              <rect x="65" y="430" width="94" height="33" rx="0" style="fill:none;stroke:#5c5c5c;stroke-opacity:1;stroke-width:1.8px;clip-path:none"/>
+              <rect x="65" y="427" width="94" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
               <text x="65" y="431" dx="4" dy="23" style="font-size:19px;fill:#fff">1209</text>
-              <text x="169" y="432" dy="23" style="font-size:19.5px;fill:#fff">[SID]</text>
+              <text x="169" y="429" dy="23" style="font-size:19.5px;fill:#fff">[SID]</text>
             
           
         
       
       
-        <rect x="50" y="526" width="437" height="179" rx="2.5" style="fill:none;fill-opacity:1;stroke:#4e4d4d;stroke-opacity:0.5;stroke-width:1.3px"/>
+        <rect x="50" y="526" width="437" height="179" rx="1.7" style="fill:#383838;fill-opacity:1;stroke:#444;stroke-opacity:1;stroke-width:1.3px"/>
         
         <text x="42" y="499" dx="10" dy="17" style="font-size:19px;letter-spacing:normal;fill:#fff">Tuner</text>
         
           
-            <text x="69" y="546" dy="22" style="font-size:19px;fill:#fff">Satellite</text>
+            <text x="69" y="545" dy="22" style="font-size:19px;fill:#fff">Satellite</text>
             
-              <rect x="191" y="544" width="283" height="34" rx="0" style="fill:none;stroke:#5c5c5c;stroke-width:2px;filter:none"/>
+              <rect x="191" y="543" width="283" height="38" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.8px;filter:none"/>
               
-              <text x="186" y="546" dx="12" dy="22" style="font-size:19.5px;fill:#fff">Hot Bird</text>
+              <text x="186" y="548" dx="12" dy="22" style="font-size:19.5px;fill:#fff">Hot Bird</text>
               
               
-                <rect x="454.5" y="549" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
+                <rect x="454.5" y="548" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
                   
-                  <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,454,555)">
+                  <g style="fill:#c9c9c9" transform="matrix(0.23,0,0,0.23,454,554)">
                     <use href="#aol"/>
                   </g>
                 
@@ -208,18 +201,18 @@
             
           
           
-            <text x="69" y="601.5" dy="22" style="font-size:19px;fill:#fff">Transponder</text>
+            <text x="69" y="599.5" dy="22" style="font-size:19px;fill:#fff">Transponder</text>
             
-              <rect x="191" y="599" width="283" height="34" rx="0" style="fill:none;stroke:#5c5c5c;stroke-width:2px;filter:none"/>
+              <rect x="191" y="597" width="283" height="38" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.8px;filter:none"/>
               
-              <text x="186" y="601" dx="12" dy="22" style="font-size:19.5px;fill:#fff">12558/V/27500</text>
+              <text x="186" y="602" dx="12" dy="22" style="font-size:19.5px;fill:#fff">12558/V/27500</text>
               
               
-                <rect x="454.5" y="605" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
+                <rect x="454.5" y="603" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
                   
-                  <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,454,611)">
+                  <g style="fill:#c9c9c9" transform="matrix(0.23,0,0,0.23,454,609)">
                     <use href="#aol"/>
                   </g>
                 
@@ -228,103 +221,117 @@
           
           
             
-              <rect x="191.5" y="653" width="283" height="34" rx="0" style="fill:none;stroke:#5d5d5d;stroke-width:2.4px;filter:none"/>
-              <text x="236.5" y="657" dx="20" dy="21" style="font-size:19.5px;fill:#fff">New Transponder</text>
+              <rect x="191.5" y="653" width="283" height="38" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;filter:none"/>
+              <text x="236.5" y="659" dx="20" dy="21" style="font-size:19.5px;fill:#fff">New Transponder</text>
             
           
         
       
       
-        <rect x="499" y="167" width="410" height="538" rx="2.5" style="fill:none;fill-opacity:1;stroke:#4e4d4d;stroke-opacity:0.5;stroke-width:1.3px"/>
+        <rect x="499" y="167" width="410" height="538" rx="1.7" style="fill:#383838;fill-opacity:1;stroke:#444;stroke-opacity:1;stroke-width:1.3px"/>
         
         <text x="491" y="140" dx="10" dy="17" style="font-size:19px;letter-spacing:normal;fill:#fff">Parameters</text>
         
           
-            <rect x="516" y="189" width="376" height="33" style="fill:#2d2d2d;stroke:#5a5a5a;stroke-width:2.6px;opacity:0.98"/>
+            <rect x="511" y="185" width="350" height="50" style="fill:none;opacity:0.98"/>
+            
+              <rect x="512" y="185" width="327" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="864" y="215" width="32" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="230" y="-231" width="46" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)" transform="matrix(0.707,0.707,-0.707,0.707,511,185)"/>
             
             <text x="512" y="186.5" dx="8" dy="26" style="font-size:19.5px;fill:#fff">Package</text>
           
           
-            <rect x="516" y="234" width="376" height="33" style="fill:#2d2d2d;stroke:#5a5a5a;stroke-width:2.6px;opacity:0.98"/>
+            <rect x="511" y="230" width="350" height="50" style="fill:none;opacity:0.98"/>
+            
+              <rect x="512" y="230" width="327" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="864" y="260" width="32" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="230" y="-231" width="46" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)" transform="matrix(0.707,0.707,-0.707,0.707,511,230)"/>
             
             <text x="512" y="231.5" dx="8" dy="26" style="font-size:19.5px;fill:#fff">PIDs</text>
-            <g style="clip-path:inset(0px 0px 3.5px)">
-              <rect x="514" y="280" width="379" height="221" style="fill:#2d2d2d;fill-opacity:1"/>
+            <g style="clip-path:inset(0 0px 25.5px)">
+              <rect x="514" y="275" width="380" height="226" style="fill:#2d2d2d;fill-opacity:1"/>
               
-                <text x="527" y="297" dy="22" style="font-size:19.5px;fill:#fff">video</text>
+                <text x="527" y="295" dy="22" style="font-size:19.5px;fill:#fff">video</text>
                 
-                  <rect x="656" y="295" width="74" height="32" rx="0" style="fill:none;stroke:#5c5c5c;stroke-opacity:1;stroke-width:1.8px;clip-path:none"/>
-                  <text x="656" y="295" dx="4" dy="23" style="font-size:19px;fill:#fff">2091</text>
-                  <text x="742" y="295.5" dy="23" style="font-size:19px;fill:#fff">[VPID]</text>
-                
-              
-              
-                <text x="527" y="342" dy="22" style="font-size:19.5px;fill:#fff">mpeg-audio</text>
-                
-                  <rect x="656" y="340" width="74" height="32" rx="0" style="fill:none;stroke:#5c5c5c;stroke-opacity:1;stroke-width:1.8px;clip-path:none"/>
-                  <text x="656" y="340" dx="4" dy="23" style="font-size:19px;fill:#fff">8191</text>
-                  <text x="742" y="340.5" dy="23" style="font-size:19px;fill:#fff">[APID]</text>
+                  <rect x="656" y="290" width="74" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+                  <text x="656" y="294" dx="4" dy="23" style="font-size:19px;fill:#fff">2091</text>
+                  <text x="742" y="295" dy="23" style="font-size:19px;fill:#fff">[VPID]</text>
                 
               
               
-                <text x="527" y="386" dy="22" style="font-size:19.5px;fill:#fff">tp</text>
+                <text x="527" y="344" dy="22" style="font-size:19.5px;fill:#fff">mpeg-audio</text>
                 
-                  <rect x="656" y="384" width="74" height="32" rx="0" style="fill:none;stroke:#5c5c5c;stroke-opacity:1;stroke-width:1.8px;clip-path:none"/>
-                  <text x="742" y="384.5" dy="23" style="font-size:19px;fill:#fff">[TXTPID]</text>
-                
-              
-              
-                <text x="527" y="431" dy="22" style="font-size:19.5px;fill:#fff">pcr</text>
-                
-                  <rect x="656" y="429" width="74" height="32" rx="0" style="fill:none;stroke:#5c5c5c;stroke-opacity:1;stroke-width:1.8px;clip-path:none"/>
-                  <text x="656" y="429" dx="4" dy="23" style="font-size:19px;fill:#fff">2091</text>
-                  <text x="742" y="429.5" dy="23" style="font-size:19px;fill:#fff">[PCRPID]</text>
+                  <rect x="656" y="339" width="74" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+                  <text x="656" y="343" dx="4" dy="23" style="font-size:19px;fill:#fff">8191</text>
+                  <text x="742" y="344" dy="23" style="font-size:19px;fill:#fff">[APID]</text>
                 
               
               
-                <text x="527" y="475" dy="22" style="font-size:19.5px;fill:#fff">ac3</text>
+                <text x="527" y="393" dy="22" style="font-size:19.5px;fill:#fff">tp</text>
                 
-                  <rect x="656" y="473" width="74" height="32" rx="0" style="fill:none;stroke:#5c5c5c;stroke-opacity:1;stroke-width:1.8px;clip-path:none"/>
-                  <text x="742" y="473.5" dy="23" style="font-size:19px;fill:#fff">[AC3PID]</text>
+                  <rect x="656" y="388" width="74" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+                  <text x="742" y="393" dy="23" style="font-size:19px;fill:#fff">[TXTPID]</text>
+                
+              
+              
+                <text x="527" y="442" dy="22" style="font-size:19.5px;fill:#fff">pcr</text>
+                
+                  <rect x="656" y="437" width="74" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+                  <text x="656" y="441" dx="4" dy="23" style="font-size:19px;fill:#fff">2091</text>
+                  <text x="742" y="442" dy="23" style="font-size:19px;fill:#fff">[PCRPID]</text>
+                
+              
+              
+                <text x="527" y="491" dy="22" style="font-size:19.5px;fill:#fff">ac3</text>
+                
+                  <rect x="656" y="486" width="74" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+                  <text x="742" y="491" dy="23" style="font-size:19px;fill:#fff">[AC3PID]</text>
                 
               
             </g>
-            <g transform="matrix(0.92,0,0,0.92,77.5,28)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#bqf)">
-              <rect x="862" y="277" width="23" height="236" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0px 1px 0px 0px)"/>
-              <rect x="862.5" y="275.5" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e;stroke-width:2.4px" rx="0"/>
+            
+              <rect x="877" y="275" width="17" height="226" style="fill:#2d2d2d"/>
               
-                
-                <g transform="matrix(0.22,0,0,-0.22,866.3,294)">
-                  <use href="#aol" style="fill:#d3d2d2"/>
-                </g>
               
-              <rect x="862.5" y="491" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e;stroke-width:2.4px" rx="0"/>
               
-                
-                <g transform="matrix(0.22,0,0,0.22,866.3,495.5)">
-                  <use href="#aol" style="fill:#d3d2d2"/>
-                </g>
               
-              <rect x="862.5" y="300" width="22" height="58" rx="0" style="fill:url(#bpf);fill-opacity:1;stroke:#4f4f4e"/>
-            </g>
+              <rect x="884" y="296" width="3.5" height="47" rx="4" style="fill:#606060;fill-opacity:1"/>
+            
           
           
-            <rect x="516" y="514" width="376" height="33" style="fill:#2d2d2d;stroke:#5a5a5a;stroke-width:2.6px;opacity:0.98"/>
+            <rect x="511" y="510" width="350" height="50" style="fill:none;opacity:0.98"/>
+            
+              <rect x="512" y="510" width="327" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="864" y="540" width="32" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="230" y="-231" width="46" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)" transform="matrix(0.707,0.707,-0.707,0.707,511,510)"/>
             
             <text x="512" y="511.5" dx="8" dy="26" style="font-size:19.5px;fill:#fff">CAIDs</text>
           
           
-            <rect x="516" y="559" width="376" height="33" style="fill:#2d2d2d;stroke:#5a5a5a;stroke-width:2.6px;opacity:0.98"/>
+            <rect x="511" y="555" width="350" height="50" style="fill:none;opacity:0.98"/>
+            
+              <rect x="512" y="555" width="327" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="864" y="585" width="32" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="230" y="-231" width="46" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)" transform="matrix(0.707,0.707,-0.707,0.707,511,555)"/>
             
             <text x="512" y="556.5" dx="8" dy="26" style="font-size:19.5px;fill:#fff">Flags</text>
           
           
-            <rect x="516" y="604" width="376" height="33" style="fill:#2d2d2d;stroke:#5a5a5a;stroke-width:2.6px;opacity:0.98"/>
+            <rect x="511" y="600" width="350" height="50" style="fill:none;opacity:0.98"/>
+            
+              <rect x="512" y="600" width="327" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="864" y="630" width="32" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="230" y="-231" width="46" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)" transform="matrix(0.707,0.707,-0.707,0.707,511,600)"/>
             
             <text x="512" y="601.5" dx="8" dy="26" style="font-size:19.5px;fill:#fff">Custom</text>
           
           
-            <rect x="516" y="649" width="376" height="33" style="fill:#2d2d2d;stroke:#5a5a5a;stroke-width:2.6px;opacity:0.98"/>
+            <rect x="511" y="645" width="350" height="50" style="fill:none;opacity:0.98"/>
+            
+              <rect x="512" y="645" width="327" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="864" y="675" width="32" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)"/>
+              <rect x="230" y="-231" width="46" height="5" style="fill:#1b1b1b;stroke:#787878;stroke-width:4px;clip-path:inset(4px 4px 3px)" transform="matrix(0.707,0.707,-0.707,0.707,511,645)"/>
             
             <text x="512" y="646.5" dx="8" dy="26" style="font-size:19.5px;fill:#fff">Extras</text>
           
@@ -344,39 +351,39 @@
         <rect x="1" y="756" width="960" height="1.2" style="fill:#000"/>
       
     
-    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:none;stroke:#a0b6b4;stroke-opacity:0.55;stroke-width:2.8px"/>
+    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:none;stroke:#677073;stroke-opacity:0.5;stroke-width:1px"/>
     
   </g>
 
   <g style="font-family:'Segoe UI',Tahoma,sans-serif">
-    <rect x="1521" y="81" width="1718" height="1140" rx="0" style="fill:#1e1e1e;stroke:#2b2b2b;stroke-width:1px"/>
+    <rect x="1520" y="80" width="1720" height="1142" rx="0" style="fill:#1e1e1e;stroke:#a2b5ba;stroke-width:1px"/>
     
-      <rect x="1522" y="82" width="1716" height="92.5" rx="0" style="fill:#000;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
+      <rect x="1522" y="82" width="1716" height="56.5" rx="0" style="fill:#222;fill-opacity:0.74;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
       
-      <text x="1522" y="83.7" dx="41" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:19.1px;letter-spacing:-0.1px;fill:#fff">e2 SAT Editor</text>
+      <text x="1522" y="83" dx="45" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:18.6px;letter-spacing:-0.2px;fill:#fff">e2 SAT Editor</text>
       
-        <image x="1533" y="92" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg=="/>
+        <image x="1534" y="91.5" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg=="/>
       
       
       
-        <rect x="3062" y="102" width="14.5" height="0.6" style="fill:none;stroke:#fff;stroke-width:1px"/>
-        
-          <g transform="matrix(0,-1,1,0,3127,110)">
-            <rect x="0" y="0" width="13.7" height="13.7" style="fill:none;stroke:#fff;stroke-width:1.3px"/>
+        <rect x="3059" y="104" width="14.5" height="0.6" style="fill:none;stroke:#fff;stroke-width:1px"/>
+        <g transform="matrix(0.99,0,0,0.99,3127,110)">
+          <g transform="matrix(0,-1,1,0,0,0)">
+            <rect x="0" y="0" rx="1" width="13.7" height="13.7" style="fill:none;stroke:#fff;stroke-width:1.7px"/>
           </g>
-        
-        
-          <g transform="matrix(0.707,0.707,-0.707,0.707,3202,89)">
+        </g>
+        <g transform="matrix(0.97,0,0,0.97,3203,90)">
+          <g transform="matrix(0.707,0.707,-0.707,0.707,0,0)">
             <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#fff;stroke-width:0.9px"/>
             <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#fff;stroke-width:0.9px"/>
           </g>
-        
+        </g>
       
       
     
     
       
-      <text x="1520" y="128.1" dx="12" dy="24" style="font-size:19.3px;letter-spacing:-0.1px;word-spacing:17px;fill:#fff;opacity:0.97">File Edit Find Tools Editor Window Help</text>
+      <text x="1534" y="135" dx="12" dy="24" style="font-size:19.9px;letter-spacing:-0.1px;word-spacing:42.2px;fill:#fff;opacity:0.97">File Edit Find Tools Editor Window Help</text>
       
     
     
@@ -385,212 +392,212 @@
         
           
           
-            <rect x="1531" y="173" width="102" height="48" rx="0" style="fill:none;stroke:#5d5d5d;stroke-width:2.8px"/>
-            <g transform="matrix(0.26,0,0,0.26,1532,189)">
+            <rect x="1529" y="186" width="105" height="48" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.2px"/>
+            <g transform="matrix(0.26,0,0,0.26,1532,202)">
               <use href="#aad" style="fill:#c3c3c3" x="8" y="1"/>
             </g>
-            <text x="1526" y="171" dx="27" dy="33" style="font-weight:bold;font-size:18px;fill:#fff;opacity:0.96">New <tspan style="text-decoration:underline">T</tspan>ab</text>
+            <text x="1526" y="184" dx="27" dy="33" style="font-weight:bold;font-size:18px;fill:#fff;opacity:0.96">New <tspan style="text-decoration:underline">T</tspan>ab</text>
           
         
         
           
           
-            <rect x="1644" y="161" width="157" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
-            <text x="1644" y="162.5" dx="15" dy="41" style="font-size:19px;fill:#fff">enigma_db</text>
-            <g style="filter:url(#tsw);opacity:0.5">
-              <g style="filter:url(#trw)">
-                <rect rx="3" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="1769.5" y="185"/>
-                <g transform="matrix(0.15,0,0,0.15,1774.5,190)">
+            <rect x="1644" y="175" width="157" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
+            <text x="1644" y="176.5" dx="15" dy="41" style="font-size:19px;fill:#fff">enigma_db</text>
+            <g style="filter:url(#tqw);opacity:0.5">
+              <g style="filter:url(#tpw)">
+                <rect rx="2" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="1769.5" y="199"/>
+                <g transform="matrix(0.15,0,0,0.15,1774.5,204)">
                   <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
                 </g>
               </g>
             </g>
           
           
-            <rect x="1801" y="161" width="292" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
-            <g transform="matrix(0.38,0,0,0.38,1813,181)">
+            <rect x="1801" y="175" width="292" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
+            <g transform="matrix(0.38,0,0,0.38,1813,195)">
               <use href="#pkw" style="fill:#fff"/>
             </g>
-            <text x="1801" y="162.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Picons <tspan style="font-size:18.43px">…</tspan></text>
-            <g style="filter:url(#tsw);opacity:0.5">
-              <g style="filter:url(#trw)">
-                <rect rx="3" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2062.5" y="185"/>
-                <g transform="matrix(0.15,0,0,0.15,2067.5,190)">
+            <text x="1801" y="176.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Picons <tspan style="font-size:18.43px">…</tspan></text>
+            <g style="filter:url(#tqw);opacity:0.5">
+              <g style="filter:url(#tpw)">
+                <rect rx="2" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2062.5" y="199"/>
+                <g transform="matrix(0.15,0,0,0.15,2067.5,204)">
                   <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
                 </g>
               </g>
             </g>
           
           
-            <rect x="2093" y="161" width="154" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
-            <text x="2093" y="162.5" dx="15" dy="41" style="font-size:19px;fill:#fff">neutrino</text>
-            <g style="filter:url(#tsw);opacity:0.5">
-              <g style="filter:url(#trw)">
-                <rect rx="3" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2216.5" y="185"/>
-                <g transform="matrix(0.15,0,0,0.15,2221.5,190)">
+            <rect x="2093" y="175" width="154" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
+            <text x="2093" y="176.5" dx="15" dy="41" style="font-size:19px;fill:#fff">neutrino</text>
+            <g style="filter:url(#tqw);opacity:0.5">
+              <g style="filter:url(#tpw)">
+                <rect rx="2" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2216.5" y="199"/>
+                <g transform="matrix(0.15,0,0,0.15,2221.5,204)">
                   <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
                 </g>
               </g>
             </g>
           
           
-            <rect x="2247" y="161" width="292" height="69" style="fill:#0078d7;stroke:#0078d7;stroke-width:2px;clip-path:inset(1px 0px)"/>
-            <g transform="matrix(0.38,0,0,0.38,2259,181)">
+            <rect x="2247" y="175" width="292" height="69" style="fill:#0078d7;stroke:#0078d7;stroke-width:2px;clip-path:inset(1px 0px)"/>
+            <g transform="matrix(0.38,0,0,0.38,2259,195)">
               <use href="#tnw" style="fill:#fff"/>
             </g>
-            <text x="2247" y="162.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Edit Set<tspan style="font-size:18.43px">…</tspan></text>
+            <text x="2247" y="176.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Edit Set<tspan style="font-size:18.43px">…</tspan></text>
             
-              <g style="filter:url(#trw)">
-                <rect rx="3" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2509.5" y="185"/>
-                <g transform="matrix(0.15,0,0,0.15,2514.5,190)">
+              <g style="filter:url(#tpw)">
+                <rect rx="2" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2509.5" y="199"/>
+                <g transform="matrix(0.15,0,0,0.15,2514.5,204)">
                   <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
                 </g>
               </g>
             
           
           
-            <rect x="2539" y="161" width="293" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
-            <g transform="matrix(0.38,0,0,0.38,2552,181)">
+            <rect x="2539" y="175" width="293" height="69" style="fill:#3c3c3c;stroke:#2f2f2f;stroke-width:2px;clip-path:inset(1px 0px)"/>
+            <g transform="matrix(0.38,0,0,0.38,2552,195)">
               <use href="#cbw" style="fill:#fff"/>
             </g>
-            <text x="2539" y="162.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Channe<tspan style="font-size:18.43px">…</tspan></text>
-            <g style="filter:url(#tsw);opacity:0.5">
-              <g style="filter:url(#trw)">
-                <rect rx="3" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2801.5" y="185"/>
-                <g transform="matrix(0.15,0,0,0.15,2806.5,190)">
+            <text x="2539" y="176.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Channe<tspan style="font-size:18.43px">…</tspan></text>
+            <g style="filter:url(#tqw);opacity:0.5">
+              <g style="filter:url(#tpw)">
+                <rect rx="2" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="2801.5" y="199"/>
+                <g transform="matrix(0.15,0,0,0.15,2806.5,204)">
                   <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
                 </g>
               </g>
             </g>
           
-          <rect x="2831" y="162" width="1" height="67" style="fill:#2f2f2f"/>
+          <rect x="2831" y="176" width="1" height="67" style="fill:#2f2f2f"/>
         
       
       
         
         
           
-            <g transform="matrix(0.38,0,0,0.38,1546,251)">
+            <g transform="matrix(0.38,0,0,0.38,1544,265)">
               <use href="#fin" style="fill:#c4c4c4"/>
             </g>
-            <text x="1530" y="226" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Open</text>
+            <text x="1528" y="240" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Open</text>
           
           
-            <g transform="matrix(0.38,0,0,0.38,1694,251)">
+            <g transform="matrix(0.38,0,0,0.38,1693,265)">
               <use href="#fje" style="fill:#c4c4c4"/>
             </g>
-            <text x="1679" y="226" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Save</text>
+            <text x="1677" y="240" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Save</text>
           
           
-            <rect x="1829" y="251" width="4" height="50" style="fill:#242424;stroke:#1a1a1a;stroke-width:2px;clip-path:inset(1px 1px 1px 0px)"/>
+            <rect x="1831" y="268" width="4" height="40" style="fill:#2d2d2d;stroke:#151515;stroke-width:2px;clip-path:inset(1px 1px 1px 0)"/>
           
           
-            <g transform="matrix(0.38,0,0,0.38,1841,251)">
+            <g transform="matrix(0.38,0,0,0.38,1842,265)">
               <use href="#fgt" style="fill:#c4c4c4"/>
             </g>
-            <text x="1825" y="226" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Import</text>
+            <text x="1825" y="240" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Import</text>
           
           
-            <g transform="matrix(0.38,0,0,0.38,2005,251)">
+            <g transform="matrix(0.38,0,0,0.38,2007,265)">
               <use href="#fft" style="fill:#c4c4c4"/>
             </g>
-            <text x="1987" y="226" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Export</text>
+            <text x="1991" y="240" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Export</text>
           
           
-            <rect x="2159" y="251" width="4" height="50" style="fill:#242424;stroke:#1a1a1a;stroke-width:2px;clip-path:inset(1px 1px 1px 0px)"/>
+            <rect x="2166" y="268" width="4" height="40" style="fill:#2d2d2d;stroke:#151515;stroke-width:2px;clip-path:inset(1px 1px 1px 0)"/>
           
           
-            <g transform="matrix(0.38,0,0,0.38,2171,251)">
+            <g transform="matrix(0.38,0,0,0.38,2176,265)">
               <use href="#sms" style="fill:#c4c4c4"/>
             </g>
-            <text x="2156" y="226" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Settings</text>
+            <text x="2160" y="240" dx="69" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Settings</text>
           
           
             
-              <rect x="2554" y="257" width="100" height="32" rx="0" style="fill:none;stroke:#5c5c5c;stroke-width:1.5px;filter:none"/>
+              <rect x="2560" y="271" width="100" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;filter:none"/>
               
-                <rect x="2646.5" y="261" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
+                <rect x="2652.5" y="275" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
                   
-                  <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,2634,267)">
+                  <g style="fill:#c9c9c9" transform="matrix(0.23,0,0,0.23,2640,282)">
                     <use href="#aol"/>
                   </g>
                 
               
-              <text x="2549" y="259" dx="12" dy="22" style="font-size:19.5px;fill:#fff;opacity:0.96">Profile 1</text>
+              <text x="2555" y="275" dx="12" dy="22" style="font-size:19.5px;fill:#fff;opacity:0.96">Profile 1</text>
             
           
           
-            <text x="2656" y="226" dx="15" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Connect</text>
+            <text x="2663" y="240" dx="15" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Connect</text>
           
           
-            <text x="2784" y="226" dx="15" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Disconnect</text>
+            <text x="2788" y="240" dx="15" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Disconnect</text>
           
           
-            <rect x="2950" y="251" width="4" height="50" style="fill:#242424;stroke:#1a1a1a;stroke-width:2px;clip-path:inset(1px 1px 1px 0px)"/>
+            <rect x="2953" y="268" width="4" height="40" style="fill:#2d2d2d;stroke:#151515;stroke-width:2px;clip-path:inset(1px 1px 1px 0)"/>
           
           
-            <text x="2956" y="226" dx="15" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Upload</text>
+            <text x="2959" y="240" dx="15" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Upload</text>
           
           
-            <text x="3072" y="226" dx="15" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Download</text>
+            <text x="3073" y="240" dx="15" dy="59" style="font-size:26.5px;fill:#fff;opacity:0.96">Download</text>
           
         
-        <rect x="1520" y="229" width="1720" height="98" style="fill:none;stroke:#000;stroke-width:2.2px;clip-path:inset(0px 2px)"/>
+        <rect x="1520" y="243" width="1720" height="98" style="fill:none;stroke:#000;stroke-width:2.2px;clip-path:inset(0px 2px)"/>
       
       
-        <rect x="1522" y="322" width="1716" height="816" style="fill:#282828"/>
+        <rect x="1522" y="336" width="1716" height="773" style="fill:#282828"/>
         
           
           
             
               
-              <text x="1520" y="323" dx="10" dy="33" style="font-weight:bold;font-size:19px;fill:#fff">Satellites</text>
+              <text x="1520" y="337" dx="10" dy="33" style="font-weight:bold;font-size:19px;fill:#fff">Satellites</text>
               
                 
-                  <rect x="1861" y="326" width="38" height="32" rx="0" style="fill:none;stroke:#5d5d5d;stroke-width:2.8px"/>
-                  <g transform="matrix(0.38,0,0,0.38,1869,329)">
-                    <use href="#ees" style="fill:#b0b0b0"/>
+                  <rect x="1862" y="340" width="38" height="32" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.2px"/>
+                  <g transform="matrix(0.38,0,0,0.38,1870,343)">
+                    <use href="#ees" style="fill:#c3c3c3"/>
                   </g>
                 
               
             
             
               
-                <rect x="1522" y="373" width="380" height="36" style="fill:#1e1e1e;stroke-width:0px"/>
-                <text x="1522" y="380" dy="18" style="font-size:18.5px;fill:#fff"><tspan x="1530">Name</tspan> <tspan x="1827">Position</tspan></text>
-                <rect x="1819" y="372" width="3" height="37" style="fill:#797979;stroke:#000;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
+                <rect x="1522" y="387" width="380" height="36" style="fill:#1e1e1e;stroke:#333;stroke-width:3.5px;clip-path:inset(3.5px 3.5px 0)"/>
+                <text x="1522" y="394" dy="18" style="font-size:18.5px;fill:#fff"><tspan x="1530">Name</tspan> <tspan x="1827">Position</tspan></text>
+                <rect x="1820" y="386" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
               
               
-                <rect x="1522" y="409" width="380" height="687" style="fill:#1e1e1e"/>
+                <rect x="1522" y="423" width="380" height="623" style="fill:#1e1e1e"/>
                 
-                  <rect x="1522" y="494" width="380" height="44" style="fill:#181818"/>
-                  <text x="1522" y="412" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1533">Hispasat 30W</tspan> <tspan x="1825">30.0W</tspan></text>
-                  <text x="1522" y="453" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1533">Eutelsat 7W</tspan> <tspan x="1825">7.0W</tspan></text>
-                  <text x="1522" y="494" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1533">Hot Bird</tspan> <tspan x="1825">13.0E</tspan></text>
-                  <text x="1522" y="537" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1533">Badr 5/7/8 C</tspan> <tspan x="1825">26.0E</tspan></text>
-                  <text x="1522" y="577" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1533">Badr 5/7/8 Ku</tspan> <tspan x="1825">26.0E</tspan></text>
+                  <rect x="1522" y="509" width="380" height="42" style="fill:#3c3c3c"/>
+                  <text x="1522" y="426" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1533">Hispasat 30W</tspan> <tspan x="1825">30.0W</tspan></text>
+                  <text x="1522" y="467" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1533">Eutelsat 7W</tspan> <tspan x="1825">7.0W</tspan></text>
+                  <text x="1522" y="508" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1533">Hot Bird</tspan> <tspan x="1825">13.0E</tspan></text>
+                  <text x="1522" y="551" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1533">Badr 5/7/8 C</tspan> <tspan x="1825">26.0E</tspan></text>
+                  <text x="1522" y="591" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1533">Badr 5/7/8 Ku</tspan> <tspan x="1825">26.0E</tspan></text>
                 
               
             
           
           
-            <rect x="1522" y="1075" width="380" height="65" style="fill:#282828"/>
+            <rect x="1522" y="1048" width="380" height="65" style="fill:#282828"/>
             
             
               
-                <g transform="matrix(0.25,0,0,0.25,1541,1097)">
-                  <use href="#aad" style="fill:#b0b0b0" y="1"/>
+                <g transform="matrix(0.25,0,0,0.25,1541,1070)">
+                  <use href="#aad" style="fill:#c3c3c3" y="1"/>
                 </g>
-                <text x="1535" y="1081" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#fff">Position</text>
+                <text x="1535" y="1054" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#fff">Position</text>
               
               
-                <rect x="1778" y="1090" width="110" height="32" rx="0" style="fill:none;stroke:#5d5d5d;stroke-width:2.8px;filter:none"/>
-                <g transform="matrix(0.38,0,0,0.38,1786,1094)">
-                  <use href="#slh" style="fill:#b0b0b0" x="16" y="-1"/>
+                <rect x="1778" y="1061" width="110" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.2px;filter:none"/>
+                <g transform="matrix(0.38,0,0,0.38,1786,1065)">
+                  <use href="#slh" style="fill:#c3c3c3" x="16" y="4"/>
                 </g>
-                <text x="1766" y="1092" dx="54" dy="22" style="font-size:19.5px;fill:#fff">Find<tspan style="font-size:18.915px">…</tspan></text>
+                <text x="1766" y="1064.5" dx="54" dy="22" style="font-size:19.5px;fill:#fff">Find<tspan style="font-size:18.915px">…</tspan></text>
               
             
           
@@ -598,139 +605,146 @@
         
           
           
-          <rect x="1906.5" y="700" width="0.5" height="28" style="fill:none;stroke:#fff;stroke-opacity:0.37;stroke-width:2.5px;stroke-dasharray:0px,2px,0px"/>
+          <rect x="1906.5" y="714" width="0.5" height="28" style="fill:none;stroke:#fff;stroke-opacity:0.25;stroke-dasharray:0,2px,0px"/>
         
         
           
           
             
-            <text x="1907" y="323" dx="10" dy="32" style="font-weight:bold;font-size:19px;fill:#fff">Transponders</text>
+            <text x="1907" y="337" dx="10" dy="32" style="font-weight:bold;font-size:19px;fill:#fff">Transponders</text>
           
           
             
-              <rect x="1909" y="373" width="1325" height="36" style="fill:#1e1e1e;stroke-width:0px"/>
-              <text x="1909" y="380" dy="18" style="font-size:18.5px;fill:#fff"><tspan x="1918">Freq/Pol/SR</tspan> <tspan x="2154">Frequency</tspan> <tspan x="2273">Polarization</tspan> <tspan x="2392">Symbol Rate</tspan> <tspan x="2512">System</tspan> <tspan x="2613">FEC</tspan> <tspan x="2712">Modulation</tspan> <tspan x="2823">Inversion</tspan> <tspan x="2917">Roll offset</tspan> <tspan x="3018">Pilot</tspan></text>
-              <rect x="2145" y="372" width="3" height="37" style="fill:#797979;stroke:#000;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
-              <rect x="2264" y="372" width="3" height="37" style="fill:#797979;stroke:#000;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
-              <rect x="2382" y="372" width="3" height="37" style="fill:#797979;stroke:#000;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
-              <rect x="2503" y="372" width="3" height="37" style="fill:#797979;stroke:#000;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
-              <rect x="2604" y="372" width="3" height="37" style="fill:#797979;stroke:#000;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
-              <rect x="2703" y="372" width="3" height="37" style="fill:#797979;stroke:#000;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
-              <rect x="2814" y="372" width="3" height="37" style="fill:#797979;stroke:#000;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
-              <rect x="2908" y="372" width="3" height="37" style="fill:#797979;stroke:#000;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
-              <rect x="3009" y="372" width="3" height="37" style="fill:#797979;stroke:#000;stroke-width:1px;clip-path:inset(1px 1px 1px 0px)"/>
+              <rect x="1909" y="387" width="1325" height="36" style="fill:#1e1e1e;stroke:#333;stroke-width:3.5px;clip-path:inset(3.5px 3.5px 0)"/>
+              <text x="1909" y="394" dy="18" style="font-size:18.5px;fill:#fff"><tspan x="1918">Freq/Pol/SR</tspan> <tspan x="2154">Frequency</tspan> <tspan x="2273">Polarization</tspan> <tspan x="2392">Symbol Rate</tspan> <tspan x="2512">System</tspan> <tspan x="2613">FEC</tspan> <tspan x="2712">Modulation</tspan> <tspan x="2823">Inversion</tspan> <tspan x="2917">Roll offset</tspan> <tspan x="3018">Pilot</tspan></text>
+              <rect x="2146" y="386" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+              <rect x="2265" y="386" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+              <rect x="2383" y="386" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+              <rect x="2504" y="386" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+              <rect x="2605" y="386" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+              <rect x="2704" y="386" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+              <rect x="2815" y="386" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+              <rect x="2909" y="386" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+              <rect x="3010" y="386" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
             
             
-              <rect x="1909" y="409" width="1325" height="687" style="fill:#1e1e1e"/>
+              <rect x="1909" y="423" width="1325" height="623" style="fill:#1e1e1e"/>
               
-                <rect x="1909" y="622" width="1325" height="44" style="fill:#181818"/>
-                <text x="1909" y="412" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10719/V/27500</tspan> <tspan x="2151">10719</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
-                <text x="1909" y="453" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10728/H/30000</tspan> <tspan x="2151">10728</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
-                <text x="1909" y="494" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10758/V/27500</tspan> <tspan x="2151">10758</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
-                <text x="1909" y="537" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10775/H/27500</tspan> <tspan x="2151">10775</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="579" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10775/H/29900</tspan> <tspan x="2151">10775</tspan> <tspan x="2270">H</tspan> <tspan x="2389">29900</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="622" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10796/V/27500</tspan> <tspan x="2151">10796</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
-                <text x="1909" y="664" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10815/H/27500</tspan> <tspan x="2151">10815</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">5/6</tspan> <tspan x="2708">QPSK</tspan></text>
-                <text x="1909" y="708" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10834/V/27500</tspan> <tspan x="2151">10834</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="751" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10853/H/29900</tspan> <tspan x="2151">10853</tspan> <tspan x="2270">H</tspan> <tspan x="2389">29900</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="795" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10872/V/27500</tspan> <tspan x="2151">10872</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
-                <text x="1909" y="837" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10873/V/27500</tspan> <tspan x="2151">10873</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
-                <text x="1909" y="880" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10892/H/27500</tspan> <tspan x="2151">10892</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
-                <text x="1909" y="922" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10911/V/27500</tspan> <tspan x="2151">10911</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
-                <text x="1909" y="964" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10930/H/30000</tspan> <tspan x="2151">10930</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">2/3</tspan> <tspan x="2708">8PSK</tspan></text>
-                <text x="1909" y="1003" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10949/V/27500</tspan> <tspan x="2151">10949</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">2/3</tspan> <tspan x="2708">8PSK</tspan></text>
+                <rect x="1909" y="637" width="1325" height="42" style="fill:#3c3c3c"/>
+                <text x="1909" y="426" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10719/V/27500</tspan> <tspan x="2151">10719</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="467" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10728/H/30000</tspan> <tspan x="2151">10728</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="508" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10758/V/27500</tspan> <tspan x="2151">10758</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="551" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10775/H/27500</tspan> <tspan x="2151">10775</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="593" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10775/H/29900</tspan> <tspan x="2151">10775</tspan> <tspan x="2270">H</tspan> <tspan x="2389">29900</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="636" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10796/V/27500</tspan> <tspan x="2151">10796</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="678" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10815/H/27500</tspan> <tspan x="2151">10815</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">5/6</tspan> <tspan x="2708">QPSK</tspan></text>
+                <text x="1909" y="722" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10834/V/27500</tspan> <tspan x="2151">10834</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="765" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10853/H/29900</tspan> <tspan x="2151">10853</tspan> <tspan x="2270">H</tspan> <tspan x="2389">29900</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="809" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10872/V/27500</tspan> <tspan x="2151">10872</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="851" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10873/V/27500</tspan> <tspan x="2151">10873</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="894" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10892/H/27500</tspan> <tspan x="2151">10892</tspan> <tspan x="2270">H</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S</tspan> <tspan x="2610">Auto</tspan> <tspan x="2708">Auto</tspan></text>
+                <text x="1909" y="936" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10911/V/27500</tspan> <tspan x="2151">10911</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">3/4</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="978" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10930/H/30000</tspan> <tspan x="2151">10930</tspan> <tspan x="2270">H</tspan> <tspan x="2389">30000</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">2/3</tspan> <tspan x="2708">8PSK</tspan></text>
+                <text x="1909" y="1018" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="1916">10949/V/27500</tspan> <tspan x="2151">10949</tspan> <tspan x="2270">V</tspan> <tspan x="2389">27500</tspan> <tspan x="2507">DVB-S2</tspan> <tspan x="2610">2/3</tspan> <tspan x="2708">8PSK</tspan></text>
               
             
-            <g transform="matrix(0.997,0,0,0.997,1435.5,33.5)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#bqf)">
-              <rect x="1784" y="341" width="23" height="651" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0px 1px 0px 0px)"/>
-              <rect x="1784.5" y="341.5" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e" rx="0"/>
+            
+              <rect x="3221" y="387" width="17" height="607" style="fill:#1e1e1e"/>
               
-                
-                <g transform="matrix(0.22,0,0,-0.22,1788.3,359.5)">
-                  <use href="#aol" style="fill:#d3d2d2"/>
-                </g>
               
-              <rect x="1784.5" y="969.5" width="22" height="22" style="fill:url(#bpf);stroke:#4f4f4e" rx="0"/>
               
-                
-                <g transform="matrix(0.22,0,0,0.22,1788.3,974)">
-                  <use href="#aol" style="fill:#d3d2d2"/>
-                </g>
               
-              <rect x="1784.5" y="366" width="22" height="69" rx="0" style="fill:url(#bpf);stroke:#4f4f4e;stroke-opacity:0.8"/>
-            </g>
+              <rect x="3228" y="404" width="3.5" height="85" rx="4" style="fill:#606060"/>
+            
           
           
-            <rect x="1909" y="1023" width="1329" height="52" style="fill:#141414"/>
+            <rect x="1909" y="996" width="1329" height="52" style="fill:#3c3c3c"/>
             
-              <rect x="1919" y="1032" width="150" height="32" rx="0" style="fill:none;stroke:#5c5c5c;stroke-width:1.5px;filter:none"/>
-              <text x="1914" y="1034" dx="12" dy="22" style="font-size:19.5px;fill:#fff">Freq/Pol/SR</text>
+              <rect x="1919" y="1003" width="150" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;filter:none"/>
+              <text x="1914" y="1007" dx="12" dy="22" style="font-size:19.5px;fill:#fff">Freq/Pol/SR</text>
               
-                <rect x="2049.5" y="1036" width="1329" height="52" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
+                <rect x="2049.5" y="1009" width="1329" height="52" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
                   
-                  <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,2049,1042)">
+                  <g style="fill:#c9c9c9" transform="matrix(0.23,0,0,0.23,2049,1015)">
                     <use href="#aol"/>
                   </g>
                 
               
             
             
-              <rect x="2070" y="1030" width="352" height="36" rx="0" style="fill:none;stroke:#5c5c5c;stroke-width:1.5px;clip-path:none"/>
-              <text x="2070" y="1032" dx="4" dy="23" style="font-size:19px;fill:#fff">10796/V</text>
+              <rect x="2070" y="1003" width="352" height="36" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;clip-path:none"/>
+              <text x="2070" y="1006" dx="4" dy="23" style="font-size:19px;fill:#fff">10796/V</text>
             
             
-              <rect x="2436" y="1032" width="82" height="33" rx="4" style="fill:#3c3c3c"/>
-              <text x="2436" y="1032" dx="40" dy="23" text-anchor="middle" style="font-size:19px;fill:#fff;fill-opacity:0.89">Find</text>
+              <rect x="2436" y="1005" width="82" height="33" rx="4" style="fill:#4e4e4e"/>
+              <text x="2436" y="1005" dx="40" dy="23" text-anchor="middle" style="font-size:19px;fill:#fff;fill-opacity:0.89">Find</text>
             
             
-              <rect x="2527" y="1032" width="166" height="33" rx="4" style="fill:#3c3c3c"/>
-              <text x="2527" y="1032" dx="83" dy="23" text-anchor="middle" style="font-size:19px;fill:#fff;fill-opacity:0.89">Find Previous</text>
+              <rect x="2527" y="1005" width="166" height="33" rx="4" style="fill:#4e4e4e"/>
+              <text x="2527" y="1005" dx="83" dy="23" text-anchor="middle" style="font-size:19px;fill:#fff;fill-opacity:0.89">Find Previous</text>
             
             
-              <rect x="2702" y="1032" width="110" height="33" rx="4" style="fill:#3c3c3c"/>
-              <text x="2702" y="1032" dx="55" dy="23" text-anchor="middle" style="font-size:19px;fill:#fff;fill-opacity:0.89">Find All</text>
+              <rect x="2702" y="1005" width="110" height="33" rx="4" style="fill:#4e4e4e"/>
+              <text x="2702" y="1005" dx="55" dy="23" text-anchor="middle" style="font-size:19px;fill:#fff;fill-opacity:0.89">Find All</text>
             
             
-              <rect x="2825" y="1033" width="126" height="31" rx="4" style="fill:#40557f;stroke:#444;stroke-width:1px"/>
-              <text x="2825" y="1033" dx="62" dy="22" text-anchor="middle" style="font-size:18px;fill:#acd;fill-opacity:0.9">Highlight</text>
+              <rect x="2825" y="1006" width="126" height="31" rx="4" style="fill:#1f567f;stroke:#5a5a5a;stroke-width:1px"/>
+              <text x="2825" y="1006" dx="62" dy="22" text-anchor="middle" style="font-size:18px;fill:#fff;fill-opacity:0.9">Highlight</text>
             
-            <g transform="matrix(0.23,0,0,0.23,3200,1044)">
-              <use href="#cce" style="fill:#b0b0b0"/>
+            <g transform="matrix(0.23,0,0,0.23,3200,1017)">
+              <use href="#cce" style="fill:#c3c3c3"/>
             </g>
           
           
-            <rect x="1909" y="1075" width="1325" height="65" style="fill:#282828"/>
+            <rect x="1909" y="1048" width="1325" height="65" style="fill:#282828"/>
             
             
               
                 
-                <g transform="matrix(0.26,0,0,0.26,1933,1098)">
-                  <use href="#aad" style="fill:#b0b0b0" y="1"/>
+                <g transform="matrix(0.26,0,0,0.26,1933,1070)">
+                  <use href="#aad" style="fill:#c3c3c3" y="1"/>
                 </g>
-                <text x="1928" y="1082" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#fff">Transponder</text>
+                <text x="1928" y="1054" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#fff">Transponder</text>
               
               
-                <rect x="3113" y="1090" width="110" height="32" rx="0" style="fill:none;stroke:#5d5d5d;stroke-width:2.8px;filter:none"/>
-                <g transform="matrix(0.38,0,0,0.38,3120,1094)">
-                  <use href="#slh" style="fill:#b0b0b0" x="16" y="-1"/>
+                <rect x="3113" y="1063" width="110" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.2px;filter:none"/>
+                <g transform="matrix(0.38,0,0,0.38,3120,1067)">
+                  <use href="#slh" style="fill:#c3c3c3" x="16" y="4"/>
                 </g>
-                <text x="3108" y="1092" dx="46" dy="22" style="font-size:19.5px;fill:#fff"><tspan style="text-decoration:underline">F</tspan>ind<tspan style="font-size:18.915px">…</tspan></text>
+                <text x="3108" y="1066.5" dx="46" dy="22" style="font-size:19.5px;fill:#fff"><tspan style="text-decoration:underline">F</tspan>ind<tspan style="font-size:18.915px">…</tspan></text>
               
             
           
         
-        <rect x="1520" y="322" width="1720" height="818" style="fill:none;stroke:#000;stroke-width:2.2px;clip-path:inset(0px 2px)"/>
+        <rect x="1520" y="336" width="1720" height="775" style="fill:none;stroke:#000;stroke-width:2.2px;clip-path:inset(0px 2px)"/>
+      
+    
+    
+      
+      
+        
+          <text x="1534" y="1126" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Tools</text>
+        
+        
+          <rect x="1641" y="1137" width="4" height="25" style="fill:#2d2d2d;stroke:#151515;stroke-width:2px;clip-path:inset(1px 1px 1px 0)"/>
+        
+        
+          <text x="1631" y="1126" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Inspect</text>
+        
+        
+          <text x="3106" dx="11" y="1126" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">autofix</text>
+        
       
     
     
       <rect x="1522" y="1172" width="1716" height="48" rx="0" style="fill:none;clip-path:inset(15px 0px 0px)"/>
-      <rect x="1520" y="1187" width="1720" height="34" style="fill:none;stroke:#000;stroke-width:2.2px;clip-path:inset(0px 2px 2px)"/>
-      <text x="1509" y="1183" dx="29" dy="29" style="font-size:19px;fill:#fff;opacity:0.97"><tspan>Transponders: 102</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
+      <rect x="1520" y="1187" width="1720" height="34" style="fill:none;stroke:#000;stroke-width:2.2px;clip-path:inset(0 2px 2px)"/>
+      <text x="1520" y="1183" dx="29" dy="29" style="font-size:19px;fill:#fff;opacity:0.97"><tspan>Transponders: 102</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
       
       
-      <text x="1527" y="1184" dx="1535" dy="29" style="font-size:19px;fill:#fff;opacity:0.97"><tspan>Total: 251</tspan></text>
+      <text x="1526" y="1183" dx="1535" dy="29" style="font-size:19px;fill:#fff;opacity:0.97"><tspan>Total: 251</tspan></text>
       
       
       
@@ -739,12 +753,23 @@
           <use href="#fho" style="fill:#b0b0b0"/>
         </g>
       
-      <g style="clip-path:inset(0px 27px 27px 0px)">
+      <g style="clip-path:inset(0 27px 27px 0px)">
         <rect x="0" y="0" width="25" height="25" style="fill:#6c6c6c" transform="matrix(-0.8,-1,-1,1,3261,1219)"/>
       </g>
     
-    <rect x="1521" y="81" width="1718" height="1140" rx="0" style="fill:none;stroke:#8a9b9c;stroke-width:1px"/>
+    <rect x="1521" y="81" width="1718" height="1140" rx="0" style="fill:none;stroke:#5c7377;stroke-width:1px"/>
     
   </g>
 
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
 </svg>

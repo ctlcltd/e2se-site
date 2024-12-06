@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1880 1300" style="pointer-events:none;user-select:none">
-
+  
   <defs>
     <symbol id="aad">
       <path d="M37.75 37.75h18.127v-11.5h-18.127c0 0 0-18.127 0-18.127h-11.5v18.127c0 0-18.127 0-18.127 0v11.5h18.127c0 0 0 18.127 0 18.127h11.5v-18.127z"/>
@@ -84,7 +84,7 @@
     <rect x="0" y="0" width="1880" height="1330" style="fill:#000;fill-opacity:0.2"/>
 
     <g transform="matrix(1.41,0,0,1.41,-656,-271)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif;opacity:0.8">
-      <rect x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#a6bbb9;stroke-width:1px"/>
+      <rect x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#191919;stroke-width:1px"/>
       
         
           <rect x="82" y="192" width="1716" height="100" style="fill:#e7e8e8"/>
@@ -93,34 +93,34 @@
             
             
             
-              <text x="408" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
+              <text x="409" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Import</text>
             
             
-              <g transform="matrix(0.38,0,0,0.38,592,217)">
+              <g transform="matrix(0.38,0,0,0.38,594,217)">
                 <use href="#fbt" style="fill:#4c4c4c"/>
               </g>
-              <text x="574" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
+              <text x="578" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Export</text>
             
             
-              <rect x="756" y="212" width="1" height="61" style="fill:none;stroke:#000;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
+              <rect x="761" y="212" width="1" height="61" style="fill:none;stroke:#000;stroke-opacity:0.3;stroke-dasharray:1px,3px"/>
             
             
-              <g transform="matrix(0.38,0,0,0.38,773,217)">
+              <g transform="matrix(0.38,0,0,0.38,779,217)">
                 <use href="#ses" style="fill:#4c4c4c"/>
               </g>
-              <text x="758" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
+              <text x="763" y="192" dx="69" dy="59" style="font-size:26px;fill:#000">Settings</text>
             
             
               
-                <rect x="1049" y="224" width="125" height="30" rx="8" style="fill:#fff;stroke:url(#bhm);stroke-width:0.4px;filter:url(#bjm)"/>
+                <rect x="1045" y="222" width="125" height="32" rx="8" style="fill:#fff;stroke:url(#bhm);stroke-width:0.4px;filter:url(#bjm)"/>
                 
-                  <rect x="1146.5" y="227" width="24" height="24" rx="8" style="fill:url(#bim);stroke:url(#bhm);stroke-opacity:0.06;stroke-width:2px"/>
+                  <rect x="1140.6" y="225" width="26" height="26" rx="8" style="fill:url(#bim);stroke:url(#bhm);stroke-opacity:0.06;stroke-width:2px"/>
                   
                     
-                      <g transform="matrix(0.16,0,0,0.16,1153.4,229.7)">
+                      <g transform="matrix(0.19,0,0,0.19,1147.4,227.2)">
                         <use href="#afm" style="fill:#fff"/>
                       </g>
-                      <g transform="matrix(0.16,0,0,-0.16,1153.4,248.7)">
+                      <g transform="matrix(0.19,0,0,-0.19,1147.4,249.8)">
                         <use href="#afm" style="fill:#fff"/>
                       </g>
                     
@@ -128,11 +128,11 @@
                     
                   
                 
-                <text x="1049" y="224" dx="12" dy="22" style="font-size:20px;fill:#000">Profile 1</text>
+                <text x="1045" y="223" dx="12" dy="22" style="font-size:20px;fill:#000" transform="matrix(1,0,0,1,0,0)">Profile 1</text>
               
             
             
-              <text x="1196" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
+              <text x="1193" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Connect</text>
             
             
               <text x="1329" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Disconnect</text>
@@ -144,13 +144,13 @@
               <text x="1513" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Upload</text>
             
             
-              <text x="1632" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
+              <text x="1633" y="192" dx="15" dy="59" style="font-size:26px;fill:#000">Download</text>
             
           
           <rect x="80" y="192" width="1720" height="100" style="fill:none;stroke:#d0d0d0;stroke-width:2.4px;clip-path:inset(0px 2px)"/>
         
         
-          <rect x="82" y="291" width="1716" height="835" style="fill:#f3f4f4"/>
+          <rect x="82" y="291" width="1716" height="807" style="fill:#f3f4f4"/>
           
             
             
@@ -172,7 +172,7 @@
                 <rect x="571" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px"/>
               
               
-                <rect x="473" y="366" width="1325" height="687" style="fill:#fff"/>
+                <rect x="473" y="366" width="1325" height="659" style="fill:#fff"/>
                 
                   <rect x="473" y="707" width="1325" height="49" style="fill:#0044e2"/>
                   <text x="473" y="366" dy="31" style="font-size:19px;fill:#000"><tspan x="500">38</tspan> <tspan x="580">Giallo</tspan></text>
@@ -257,7 +257,7 @@
               
             
           
-          <rect x="80" y="291" width="1720" height="836" style="fill:none;stroke:#d5d6d6;stroke-width:2.4px;clip-path:inset(0px 2px)"/>
+          <rect x="80" y="291" width="1720" height="807" style="fill:none;stroke:#d5d6d6;stroke-width:2.4px;clip-path:inset(0px 2px)"/>
         
       
       <rect x="81" y="81" width="1718" height="1140" style="fill:#000;opacity:0.1"/>
@@ -265,7 +265,7 @@
   
 
   <g transform="matrix(1.41,0,0,1.41,321,189)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
-    <rect x="1" y="1" width="1061" height="650" rx="15" style="fill:#f3f4f4;stroke:#a6bbb9;stroke-width:1px;filter:url(#mkm)"/>
+    <rect x="1" y="1" width="1061" height="650" rx="15" style="fill:#f3f4f4;stroke:#191919;stroke-width:1.088px;filter:url(#mkm)"/>
     
       <rect x="2" y="2" width="1059" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
       <rect x="1" y="44" width="1061" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px"/>
@@ -313,7 +313,7 @@
           
             <rect x="228" y="75" width="263" height="507" style="fill:#fff"/>
             
-              <rect x="228" y="347" width="263" height="34" style="fill:#ebebeb" />
+              <rect x="228" y="347" width="263" height="34" style="fill:#ebebeb"/>
               <text x="255" y="75" dy="29" style="font-size:19.5px">M7 Group</text>
               <text x="255" y="108" dy="29" style="font-size:19.5px">MB Satellite</text>
               <text x="255" y="141" dy="29" style="font-size:19.5px">MCEU</text>
@@ -420,4 +420,13 @@
     <rect x="3" y="3" width="1057" height="646" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px"/>
   </g>
 
+  
+  
+  
+  
+  
+
+  
+  
+  
 </svg>

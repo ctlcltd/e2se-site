@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1880 1300" style="pointer-events:none;user-select:none;text-rendering:geometricprecision">
-
+  
   <defs>
     <symbol id="aad">
       <path d="M37.75 37.75h18.127v-11.5h-18.127c0 0 0-18.127 0-18.127h-11.5v18.127c0 0-18.127 0-18.127 0v11.5h18.127c0 0 0 18.127 0 18.127h11.5v-18.127z"/>
@@ -106,16 +106,16 @@
   <g style="font-family:'Sans-Serif',system-ui,sans-serif">
     <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:#171717;stroke:#acc6c3;stroke-width:1px"/>
     
-      <rect x="81" y="81" width="1718" height="48" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1px 0px)"/>
-      <rect x="81" y="127" width="1718" height="1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0px 1px)"/>
-      <text x="81" y="83.5" dx="855" dy="28" text-anchor="middle" style="font-family:'Sans-Serif',system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#aaa">e2 SAT Editor</text>
+      <rect x="81" y="81" width="1718" height="48" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
+      <rect x="81" y="130.5" width="1718" height="1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0 1px)"/>
+      <text x="79" y="83.5" dx="857" dy="28" text-anchor="middle" style="font-family:'Sans-Serif',system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#aaa">e2 SAT Editor</text>
       
       
       
       
-        <rect x="1670" y="107" width="10.5" height="1" style="fill:none;stroke:#fdfdfd;stroke-width:1.1px"/>
+        <rect x="1670" y="107" width="10.5" height="0.8" style="fill:none;stroke:#fdfdfd;stroke-width:1px"/>
         <g transform="matrix(0.9,0,0,0.9,1715,100)">
-          <rect x="0" y="0" width="15" height="13" style="fill:none;stroke:#fdfdfd;stroke-width:3px;clip-path:inset(0px 0px 2px)"/>
+          <rect x="0" y="0" width="15" height="13" style="fill:none;stroke:#fdfdfd;stroke-width:3px;clip-path:inset(0.8px 1.4px 2.6px)"/>
           <rect x="1" y="4" width="13" height="7" style="fill:none;stroke:#fdfdfd;stroke-width:1.7px"/>
         </g>
         
@@ -128,7 +128,7 @@
     
     
       <rect x="82" y="129" width="1716" height="36" style="fill:#222020"/>
-      <text x="83" y="131" dx="12" dy="24" style="font-size:20px;word-spacing:15px;fill:#fff;fill-opacity:0.9">File Edit Find Tools Editor Window Help</text>
+      <text x="85.5" y="130.5" dx="12" dy="24" style="font-size:20px;word-spacing:16px;fill:#fff;fill-opacity:0.9">File Edit Find Tools Editor Window Help</text>
       <rect x="81" y="165.5" width="1718" height="1" style="fill:#e2e2e2;stroke:#1d1c1c"/>
     
     
@@ -219,7 +219,7 @@
         
       
       
-        <rect x="82" y="234" width="1716" height="95" style="fill:#171717"/>
+        <rect x="82" y="234" width="1716" height="95" style="fill:#222020"/>
         
           
             <g transform="matrix(0.38,0,0,0.38,106,257)">
@@ -228,81 +228,81 @@
             <text x="88.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Open</text>
           
           
-            <g transform="matrix(0.38,0,0,0.38,251,257)">
+            <g transform="matrix(0.38,0,0,0.38,252,257)">
               <use href="#fie" style="fill:#c4c4c4"/>
             </g>
             <text x="234.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Save</text>
           
           
-            <rect x="388" y="262" width="4" height="44" style="fill:#252323;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
+            <rect x="390" y="260" width="4" height="42" style="fill:#252323;stroke:#090909;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
           
           
-            <g transform="matrix(0.38,0,0,0.38,400,257)">
+            <g transform="matrix(0.38,0,0,0.38,402,257)">
               <use href="#fft" style="fill:#c4c4c4"/>
             </g>
-            <text x="382.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Import</text>
+            <text x="383.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Import</text>
           
           
-            <g transform="matrix(0.38,0,0,0.38,560,257)">
+            <g transform="matrix(0.38,0,0,0.38,559,257)">
               <use href="#fet" style="fill:#c4c4c4"/>
             </g>
-            <text x="540.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Export</text>
+            <text x="541.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Export</text>
           
           
-            <rect x="714" y="262" width="4" height="44" style="fill:#252323;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
+            <rect x="713" y="260" width="4" height="42" style="fill:#252323;stroke:#090909;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
           
           
             <g transform="matrix(0.38,0,0,0.38,725,257)">
               <use href="#sos" style="fill:#c4c4c4"/>
             </g>
-            <text x="708.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Settings</text>
+            <text x="707.5" y="232" dx="69" dy="59" style="font-size:25.5px;fill:#fff">Settings</text>
           
           
             
-              <rect x="1134" y="264" width="100" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1px;filter:url(#buf)"/>
+              <rect x="1148" y="264" width="100" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
               
-                <rect x="1226.5" y="269" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
+                <rect x="1240.5" y="269" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
                   
-                  <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,1214,273)">
+                  <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,1228,273)">
                     <use href="#aql"/>
                   </g>
                 
               
-              <text x="1129" y="266" dx="12" dy="22" style="font-size:20px;fill:#fff">Profile 1</text>
+              <text x="1143" y="266" dx="12" dy="22" style="font-size:20px;fill:#fff">Profile 1</text>
             
           
           
-            <text x="1242.5" y="232" dx="15" dy="59" style="font-size:25.5px;fill:#fff">Connect</text>
+            <text x="1251.5" y="232" dx="15" dy="59" style="font-size:25.5px;fill:#fff">Connect</text>
           
           
-            <text x="1367.5" y="232" dx="15" dy="59" style="font-size:25.5px;fill:#fff">Disconnect</text>
+            <text x="1372.5" y="232" dx="15" dy="59" style="font-size:25.5px;fill:#fff">Disconnect</text>
           
           
-            <rect x="1527" y="262" width="4" height="44" style="fill:#252323;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
+            <rect x="1527" y="260" width="4" height="42" style="fill:#252323;stroke:#090909;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
           
           
-            <text x="1527.5" y="232" dx="15" dy="59" style="font-size:25.5px;fill:#fff">Upload</text>
+            <text x="1531.5" y="232" dx="15" dy="59" style="font-size:25.5px;fill:#fff">Upload</text>
           
           
-            <text x="1638.5" y="232" dx="15" dy="59" style="font-size:25.5px;fill:#fff">Download</text>
+            <text x="1639.5" y="232" dx="15" dy="59" style="font-size:25.5px;fill:#fff">Download</text>
           
         
         <rect x="80" y="234" width="1720" height="95" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:2px;clip-path:inset(0px 2px)"/>
       
       
-        <rect x="82" y="328" width="1716" height="820" style="fill:#222020"/>
+        <rect x="82" y="328" width="1716" height="779" style="fill:#222020"/>
         
-          <rect x="82" y="328" width="380" height="820" style="fill:#222020"/>
+          <rect x="82" y="328" width="380" height="779" style="fill:#222020"/>
           
             
               
-              <text x="82" y="328" dx="10" dy="33" style="font-weight:bold;font-size:19px;fill:#fff">Services</text>
+              <text x="82" y="327" dx="10" dy="33" style="font-weight:bold;font-size:19px;fill:#fff">Services</text>
               
                 
-                  <rect x="420" y="335" width="38" height="32" rx="3" style="fill:url(#brf);stroke:url(#btf);filter:url(#buf)"/>
-                  <g transform="matrix(0.38,0,0,0.38,427,338)">
+                  <rect x="420" y="333" width="38" height="32" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
+                  <g transform="matrix(0.38,0,0,0.38,427,336)">
                     <use href="#snu" style="fill:#c4c4c4"/>
                   </g>
                 
@@ -323,7 +323,7 @@
           
             
               
-              <text x="82" y="632" dx="10" dy="33" style="font-weight:bold;font-size:19px;fill:#fff">Bouquets</text>
+              <text x="82" y="631" dx="10" dy="33" style="font-weight:bold;font-size:19px;fill:#fff">Bouquets</text>
             
             
               
@@ -360,41 +360,41 @@
                 <text x="80" y="1055" dx="25" dy="34" style="font-size:19.5px;fill:#fff">Italy</text>
               
             
-            <g transform="matrix(0.997,0,0,0.997,-7.5,37)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#buf)">
-              <rect x="448" y="644" width="23" height="404" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0px 1px 0px 0px)"/>
-              <rect x="448.5" y="644.5" width="22" height="22" style="fill:url(#bsf);stroke:#4f4f4e;filter:url(#buf)" rx="0"/>
+            <g transform="matrix(0.997,0,0,0.997,-7.5,37)" style="clip-path:inset(0 0px 0px -2px);filter:url(#buf)">
+              <rect x="448" y="644" width="23" height="359" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0 1px 0px 0px)"/>
+              <rect x="448.5" y="644.5" width="22" height="22" style="fill:url(#bsf);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#buf)" rx="0"/>
               
                 
                 <g transform="matrix(0.22,0,0,-0.22,452.3,662.5)">
                   <use href="#aql" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="448.5" y="1025.5" width="22" height="22" style="fill:url(#bsf);stroke:#4f4f4e;filter:url(#buf)" rx="0"/>
+              <rect x="448.5" y="982.5" width="22" height="22" style="fill:url(#bsf);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#buf)" rx="0"/>
               
                 
-                <g transform="matrix(0.22,0,0,0.22,452.3,1030)">
+                <g transform="matrix(0.22,0,0,0.22,452.3,988)">
                   <use href="#aql" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="448.5" y="669.5" width="22" height="318" rx="0" style="fill:url(#bsf);fill-opacity:0.7;stroke:#4f4f4e;stroke-opacity:0.8"/>
+              <rect x="448.5" y="669.5" width="22" height="227" rx="0" style="fill:url(#bsf);fill-opacity:0.7;stroke:#4f4f4e;stroke-opacity:0.8;stroke-width:1.2px"/>
             </g>
           
           
-            <rect x="82" y="1084" width="380" height="65" style="fill:#3d3d3d"/>
-            <rect x="80" y="1083" width="384" height="65" style="fill:none;stroke:#4e4d4d;stroke-width:2px;clip-path:inset(0px 2px 2px)"/>
+            <rect x="82" y="1043" width="1332" height="65" style="fill:#222020"/>
+            <rect x="80" y="1042" width="1332" height="65" style="fill:none;stroke:#4e4d4d;stroke-width:2px;clip-path:inset(1px 2px 2px)"/>
             
               
-                <g transform="matrix(0.25,0,0,0.25,101,1106.5)">
+                <g transform="matrix(0.25,0,0,0.25,101,1065.5)">
                   <use href="#aad" style="fill:#c4c4c4"/>
                 </g>
-                <text x="95" y="1090.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Bouquet</text>
+                <text x="95" y="1049.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Bouquet</text>
               
               
-                <rect x="347" y="1099" width="100" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1px;filter:url(#buf)"/>
-                <g transform="matrix(0.38,0,0,0.38,352,1103)">
+                <rect x="347" y="1058" width="100" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
+                <g transform="matrix(0.38,0,0,0.38,352,1062)">
                   <use href="#slh" style="fill:#c4c4c4" x="15"/>
                 </g>
-                <text x="332" y="1101" dx="54" dy="22" style="font-size:20px;fill:#fff">Find<tspan style="font-size:15px">…</tspan></text>
+                <text x="332" y="1060" dx="54" dy="22" style="font-size:20px;fill:#fff">Find<tspan style="font-size:15px">…</tspan></text>
               
             
           
@@ -402,17 +402,17 @@
         
           
           
-          <rect x="465.5" y="706" width="0.5" height="28" style="fill:none;stroke:#fff;stroke-opacity:0.25;stroke-dasharray:0px,2px,0px"/>
+          <rect x="465.5" y="706" width="0.5" height="28" style="fill:none;stroke:#fff;stroke-opacity:0.25;stroke-dasharray:0,2px,0px"/>
         
         
           
           
             
-            <text x="469" y="328" dx="10" dy="32" style="font-weight:bold;font-size:19px;fill:#fff">Channels</text>
+            <text x="469" y="327" dx="10" dy="32" style="font-weight:bold;font-size:19px;fill:#fff">Channels</text>
             
               
-                <rect x="1755" y="335" width="38" height="32" rx="3" style="fill:url(#brf);stroke:url(#btf);filter:url(#buf)"/>
-                <g transform="matrix(0.38,0,0,0.38,1762,338)">
+                <rect x="1755" y="333" width="38" height="32" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
+                <g transform="matrix(0.38,0,0,0.38,1762,336)">
                   <use href="#lju" style="fill:#c4c4c4"/>
                 </g>
               
@@ -420,203 +420,220 @@
           
           
             
-              <rect x="469" y="377" width="1325" height="26" style="fill:url(#brf);stroke:#4e4d4d;stroke-width:2px;clip-path:inset(1px 1px 0px)"/>
-              <text x="469" y="379" dy="18" style="font-size:17px;fill:#fff"><tspan x="472">Index</tspan> <tspan x="571">Name</tspan> <tspan x="876">Parental</tspan> <tspan x="982">Service ID</tspan> <tspan x="1105">Transport ID</tspan> <tspan x="1227">Type</tspan> <tspan x="1356">CAS</tspan> <tspan x="1425">Provider</tspan> <tspan x="1695">System</tspan></text>
-              <rect x="564" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
-              <rect x="869" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
-              <rect x="975" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
-              <rect x="1098" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
-              <rect x="1219" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
-              <rect x="1349" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
-              <rect x="1418" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
-              <rect x="1689" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0px 1px 1px)"/>
+              <rect x="469" y="377" width="1325" height="26" style="fill:url(#brf);stroke:#4e4d4d;stroke-width:2px;clip-path:inset(1px 1px 0)"/>
+              <text x="459" y="379" dy="18" style="font-size:17px;fill:#fff"><tspan x="472">Index</tspan> <tspan x="571">Name</tspan> <tspan x="876">Parental</tspan> <tspan x="982">Service ID</tspan> <tspan x="1105">Transport ID</tspan> <tspan x="1227">Type</tspan> <tspan x="1356">CAS</tspan> <tspan x="1425">Provider</tspan> <tspan x="1695">System</tspan></text>
+              <rect x="564" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
+              <rect x="869" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
+              <rect x="975" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
+              <rect x="1098" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
+              <rect x="1219" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
+              <rect x="1349" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
+              <rect x="1418" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
+              <rect x="1689" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
             
             
               <rect x="469" y="403" width="1325" height="687" style="fill:#131312"/>
               
                 <rect x="473" y="707" width="1325" height="49" style="fill:#12608a" transform="matrix(1,0,0,0.996,-4,39.1)"/>
-                <text x="473" y="404" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">38</tspan> <tspan x="572">Giallo</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">TVN WBD</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="457" y="404" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">38</tspan> <tspan x="572">Giallo</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">TVN WBD</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,880,416)">
                   <use href="#smt" style="fill:#c4c4c4"/>
                 </g>
                 <g transform="matrix(0.38,0,0,0.38,1360,416)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="473" y="453" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">39</tspan> <tspan x="572">TOPcrime HD</tspan> <tspan x="982">132</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="457" y="453" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">39</tspan> <tspan x="572">TOPcrime HD</tspan> <tspan x="982">132</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,880,465)">
                   <use href="#smt" style="fill:#c4c4c4"/>
                 </g>
                 <g transform="matrix(0.38,0,0,0.38,1360,465)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="473" y="502" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">40</tspan> <tspan x="572">Boing HD</tspan> <tspan x="982">126</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1426">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="457" y="502" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">40</tspan> <tspan x="572">Boing HD</tspan> <tspan x="982">126</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1426">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,514)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="473" y="550" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">41</tspan> <tspan x="572">K2</tspan> <tspan x="982">15204</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Warner Bros. Discovery</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="457" y="550" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">41</tspan> <tspan x="572">K2</tspan> <tspan x="982">15204</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Warner Bros. Discovery</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,562)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="473" y="599" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">42</tspan> <tspan x="572">Rai Gulp HD</tspan> <tspan x="982">17712</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1392"/> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S2</tspan></text>
-                <text x="473" y="648" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">43</tspan> <tspan x="572">Rai YoYo HD</tspan> <tspan x="982">8511</tspan> <tspan x="1106">12400</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">RAI</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="457" y="599" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">42</tspan> <tspan x="572">Rai Gulp HD</tspan> <tspan x="982">17712</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1392"/> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="457" y="648" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">43</tspan> <tspan x="572">Rai YoYo HD</tspan> <tspan x="982">8511</tspan> <tspan x="1106">12400</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">RAI</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,660)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="473" y="696" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">44</tspan> <tspan x="572">Frisbee</tspan> <tspan x="982">15205</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Warner Bros. Discovery</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="457" y="696" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">44</tspan> <tspan x="572">Frisbee</tspan> <tspan x="982">15205</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Warner Bros. Discovery</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,708)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="473" y="745" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">45</tspan> <tspan x="572">NASA+</tspan> <tspan x="982">1958</tspan> <tspan x="1106">0</tspan> <tspan x="1227">STREAM</tspan> <tspan x="1695">[eservice]</tspan></text>
-                <text x="473" y="794" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">46</tspan> <tspan x="572">Cartoonito HD</tspan> <tspan x="982">133</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="457" y="745" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">45</tspan> <tspan x="572">NASA+</tspan> <tspan x="982">1958</tspan> <tspan x="1106">0</tspan> <tspan x="1227">STREAM</tspan> <tspan x="1695">[eservice]</tspan></text>
+                <text x="457" y="794" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">46</tspan> <tspan x="572">Cartoonito HD</tspan> <tspan x="982">133</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,806)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="473" y="843" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">47</tspan> <tspan x="572">Super!</tspan> <tspan x="982">55</tspan> <tspan x="1106">512</tspan> <tspan x="1227">H.264</tspan> <tspan x="1425">Persidera</tspan> <tspan x="1695">DVB-T</tspan></text>
-                <text x="473" y="892" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">48</tspan> <tspan x="572">Rai News 24 HD</tspan> <tspan x="982">17711</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S2</tspan></text>
-                <text x="473" y="940" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">49</tspan> <tspan x="572">Mediaset Italia2 HD</tspan> <tspan x="982">130</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="457" y="843" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">47</tspan> <tspan x="572">Super!</tspan> <tspan x="982">55</tspan> <tspan x="1106">512</tspan> <tspan x="1227">H.264</tspan> <tspan x="1425">Persidera</tspan> <tspan x="1695">DVB-T</tspan></text>
+                <text x="457" y="892" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">48</tspan> <tspan x="572">Rai News 24 HD</tspan> <tspan x="982">17711</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="457" y="940" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">49</tspan> <tspan x="572">Mediaset Italia2 HD</tspan> <tspan x="982">130</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,952)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="473" y="987" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">50</tspan> <tspan x="572">Sky TG24</tspan> <tspan x="982">90</tspan> <tspan x="1106">512</tspan> <tspan x="1227">H.264</tspan> <tspan x="1425">Persidera</tspan> <tspan x="1695">DVB-T</tspan></text>
+                <text x="457" y="987" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">50</tspan> <tspan x="572">Sky TG24</tspan> <tspan x="982">90</tspan> <tspan x="1106">512</tspan> <tspan x="1227">H.264</tspan> <tspan x="1425">Persidera</tspan> <tspan x="1695">DVB-T</tspan></text>
               
             
-            <g transform="matrix(0.997,0,0,0.997,-4.5,37.5)" style="clip-path:inset(0px 0px 0px -2px);filter:url(#buf)">
-              <rect x="1784" y="341" width="23" height="635.5" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0px 1px 0px 0px)"/>
-              <rect x="1784.5" y="341.5" width="22" height="22" style="fill:url(#bsf);stroke:#4f4f4e;filter:url(#buf)" rx="0"/>
+            <g transform="matrix(0.997,0,0,0.997,-4.5,37.5)" style="clip-path:inset(0 0px 0px -2px);filter:url(#buf)">
+              <rect x="1784" y="341" width="23" height="590.5" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0 1px 0px 0px)"/>
+              <rect x="1784.5" y="341.5" width="22" height="22" style="fill:url(#bsf);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#buf)" rx="0"/>
               
                 
                 <g transform="matrix(0.22,0,0,-0.22,1788.3,359.5)">
                   <use href="#aql" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="1784.5" y="954" width="22" height="22" style="fill:url(#bsf);stroke:#4f4f4e;filter:url(#buf)" rx="0"/>
+              <rect x="1784.5" y="909" width="22" height="22" style="fill:url(#bsf);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#buf)" rx="0"/>
               
                 
-                <g transform="matrix(0.22,0,0,0.22,1788.3,959)">
+                <g transform="matrix(0.22,0,0,0.22,1788.3,915)">
                   <use href="#aql" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="1784.5" y="498.5" width="22" height="70" rx="0" style="fill:url(#bsf);fill-opacity:0.7;stroke:#4f4f4e;stroke-opacity:0.8"/>
+              <rect x="1784.5" y="498.5" width="22" height="80" rx="0" style="fill:url(#bsf);fill-opacity:0.7;stroke:#4f4f4e;stroke-opacity:0.8;stroke-width:1.2px"/>
             </g>
-            <g transform="matrix(0.997,0,0,0.997,-2,17)" style="clip-path:inset(-1px 0px 0px);filter:url(#buf)">
-              <rect x="473" y="997" width="1308" height="23" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0px 0px 1px)"/>
-              <rect x="473.5" y="997.5" width="22" height="22" style="fill:url(#brf);stroke:#4f4f4e;filter:url(#buf)" rx="0"/>
+            <g transform="matrix(0.997,0,0,0.997,-3,-26)" style="clip-path:inset(-1px 0 0px);filter:url(#buf)">
+              <rect x="473" y="997" width="1308" height="23" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0 0px 1px)"/>
+              <rect x="473.5" y="997.5" width="22" height="22" style="fill:url(#brf);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#buf)" rx="0"/>
               
                 
                 <g transform="matrix(0,0.22,-0.22,0,490.5,1001.3)">
                   <use href="#aql" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="1758.5" y="997.5" width="22" height="22" style="fill:url(#brf);stroke:#4f4f4e;filter:url(#buf)" rx="0"/>
+              <rect x="1758.5" y="997.5" width="22" height="22" style="fill:url(#brf);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#buf)" rx="0"/>
               
                 
                 <g transform="matrix(0,0.22,0.22,0,1763.5,1001.3)">
                   <use href="#aql" style="fill:#d3d2d2"/>
                 </g>
               
-              <rect x="498.5" y="997.5" width="900" height="22" rx="0" style="fill:url(#brf);fill-opacity:0.7;stroke:#4f4f4e;stroke-opacity:0.8"/>
+              <rect x="498.5" y="997.5" width="900" height="22" rx="0" style="fill:url(#brf);fill-opacity:0.7;stroke:#4f4f4e;stroke-opacity:0.8;stroke-width:1.2px"/>
             </g>
-            <rect x="1774" y="1011" width="26" height="24" style="fill:#1d1c1c;stroke-width:2px;clip-path:inset(0px 1px 1px 0px)"/>
+            <rect x="1774.5" y="968" width="26" height="26" style="fill:#1d1c1c;stroke-width:2px;clip-path:inset(0 4.2px 2.8px 0px)"/>
           
           
-            <rect x="469" y="1034" width="1329" height="50" style="fill:#0c0b0b"/>
+            <rect x="469" y="991" width="1329" height="52" style="fill:#232222"/>
             
-              <rect x="477" y="1040" width="123" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1px;filter:url(#buf)"/>
-              <text x="474" y="1042" dx="12" dy="22" style="font-size:20px;fill:#fff">Name</text>
+              <rect x="477" y="997" width="123" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
+              <text x="474" y="999" dx="12" dy="22" style="font-size:20px;fill:#fff">Name</text>
               
-                <rect x="588.5" y="1045" width="1329" height="50" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
+                <rect x="588.5" y="1002" width="1329" height="52" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
                   
-                  <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,581,1049)">
+                  <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,581,1006)">
                     <use href="#aql"/>
                   </g>
                 
               
             
             
-              <rect x="607" y="1040" width="308" height="34" rx="3" style="fill:#131312;stroke:#4e4d4d;stroke-width:1px;clip-path:none"/>
-              <text x="608" y="1041" dx="4" dy="23" style="font-size:19px;fill:#fff">Nasa</text>
+              <rect x="607" y="997" width="308" height="34" rx="3" style="fill:#131312;stroke:#4e4d4d;stroke-width:1.2px;clip-path:none"/>
+              <text x="608" y="998" dx="4" dy="23" style="font-size:19px;fill:#fff">Nasa</text>
             
             
-              <rect x="927" y="1040" width="82" height="33" rx="4" style="fill:#2a2a29"/>
-              <text x="927" y="1041" dx="40" dy="23" text-anchor="middle" style="font-size:19.5px;fill:#fff;fill-opacity:0.89">Find</text>
+              <rect x="927" y="997" width="82" height="33" rx="4" style="fill:#323235"/>
+              <text x="927" y="998" dx="40" dy="23" text-anchor="middle" style="font-size:19.5px;fill:#fff;fill-opacity:0.89">Find</text>
             
             
-              <rect x="1018" y="1040" width="166" height="33" rx="4" style="fill:#2a2a29"/>
-              <text x="1018" y="1041" dx="83" dy="23" text-anchor="middle" style="font-size:19.5px;fill:#fff;fill-opacity:0.89">Find Previous</text>
+              <rect x="1018" y="997" width="166" height="33" rx="4" style="fill:#323235"/>
+              <text x="1018" y="998" dx="83" dy="23" text-anchor="middle" style="font-size:19.5px;fill:#fff;fill-opacity:0.89">Find Previous</text>
             
             
-              <rect x="1193" y="1040" width="110" height="33" rx="4" style="fill:#2a2a29"/>
-              <text x="1193" y="1041" dx="55" dy="23" text-anchor="middle" style="font-size:19.5px;fill:#fff;fill-opacity:0.89">Find All</text>
+              <rect x="1193" y="997" width="110" height="33" rx="4" style="fill:#323235"/>
+              <text x="1193" y="998" dx="55" dy="23" text-anchor="middle" style="font-size:19.5px;fill:#fff;fill-opacity:0.89">Find All</text>
             
             
-              <rect x="1333" y="1041" width="126" height="31" rx="4" style="fill:#0d4867;stroke:#2a2a29;stroke-width:1px"/>
-              <text x="1333" y="1042" dx="62" dy="22" text-anchor="middle" style="font-size:19.5px;fill:#fff;fill-opacity:0.9">Highlight</text>
+              <rect x="1333" y="998" width="126" height="31" rx="4" style="fill:#0d4867;stroke:#2a2a29;stroke-width:1px"/>
+              <text x="1333" y="999" dx="62" dy="22" text-anchor="middle" style="font-size:19.5px;fill:#fff;fill-opacity:0.9">Highlight</text>
             
-            <g transform="matrix(0.23,0,0,0.23,1767,1052)">
+            <g transform="matrix(0.23,0,0,0.23,1767,1009)">
               <use href="#cce" style="fill:#c4c4c4"/>
             </g>
           
           
-            <rect x="469" y="1084" width="1329" height="65" style="fill:#3d3d3d"/>
-            <rect x="467" y="1083" width="1333" height="65" style="fill:none;stroke:#4e4d4d;stroke-width:2px;clip-path:inset(0px 2px 2px)"/>
+            <rect x="469" y="1043" width="1329" height="65" style="fill:#222020"/>
+            <rect x="467" y="1042" width="1333" height="65" style="fill:none;stroke:#4e4d4d;stroke-width:2px;clip-path:inset(1px 2px 2px)"/>
             
               
-                <g transform="matrix(0.26,0,0,0.26,488,1106.5)">
+                <g transform="matrix(0.26,0,0,0.26,488,1065.5)">
                   <use href="#aad" style="fill:#c4c4c4"/>
                 </g>
-                <text x="483" y="1090.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Channel</text>
+                <text x="483" y="1049.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Channel</text>
               
               
-                <g transform="matrix(0.26,0,0,0.26,613,1106.5)">
+                <g transform="matrix(0.26,0,0,0.26,620,1065.5)">
                   <use href="#aad" style="fill:#c4c4c4"/>
                 </g>
-                <text x="609" y="1090.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Stream</text>
+                <text x="615" y="1049.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Stream</text>
               
               
-                <g transform="matrix(0.26,0,0,0.26,728,1106.5)">
+                <g transform="matrix(0.26,0,0,0.26,743,1065.5)">
                   <use href="#aad" style="fill:#c4c4c4"/>
                 </g>
-                <text x="724" y="1090.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Marker</text>
+                <text x="738" y="1049.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Marker</text>
               
               <g style="opacity:0.25">
-                <g transform="matrix(0.26,0,0,0.26,841,1106.5)">
+                <g transform="matrix(0.26,0,0,0.26,863,1065.5)">
                   <use href="#aad" style="fill:#c4c4c4"/>
                 </g>
-                <text x="836" y="1090.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Service</text>
+                <text x="858" y="1049.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Service</text>
               </g>
               
-                <rect x="967" y="1099" width="135" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1px;filter:url(#buf)"/>
-                <text x="967" y="1100.5" dx="22" dy="22" style="font-size:20px;fill:#fff">Reference</text>
+                <rect x="991" y="1058" width="135" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
+                <text x="991" y="1059.5" dx="22" dy="22" style="font-size:20px;fill:#fff">Reference</text>
               
               
-                <rect x="1115" y="1104" width="4" height="24" style="fill:#252323;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
+                <rect x="1136.5" y="1063" width="4" height="24" style="fill:#252323;stroke:#090909;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
               
               <g style="opacity:0.25">
-                <rect x="1129" y="1099" width="147" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1px;filter:url(#buf)"/>
-                <text x="1129" y="1100.5" dx="25" dy="22" style="font-size:20px;fill:#fff">Drag&amp;Drop</text>
+                <rect x="1146" y="1058" width="147" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
+                <text x="1146" y="1059.5" dx="24" dy="22" style="font-size:20px;fill:#fff">Drag&amp;Drop</text>
               </g>
               
-                <rect x="1681" y="1099" width="100" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1px;filter:url(#buf)"/>
-                <g transform="matrix(0.38,0,0,0.38,1683,1103)">
+                <rect x="1681" y="1058" width="100" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
+                <g transform="matrix(0.38,0,0,0.38,1683,1062)">
                   <use href="#slh" style="fill:#c4c4c4" x="15"/>
                 </g>
-                <text x="1671" y="1101.5" dx="46" dy="22" style="font-size:20px;fill:#fff">Find<tspan style="font-size:15px">…</tspan></text>
+                <text x="1671" y="1060.5" dx="46" dy="22" style="font-size:20px;fill:#fff">Find<tspan style="font-size:15px">…</tspan></text>
               
             
           
         
-        <rect x="80" y="328" width="1720" height="822" style="fill:none;stroke:#fff;stroke-opacity:0.05;stroke-width:1.5px;clip-path:inset(0px 2px)"/>
+        <rect x="80" y="328" width="1720" height="781" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1.8px;clip-path:inset(0px 2px)"/>
+      
+    
+    
+      <rect x="82" y="1109" width="1716" height="73" style="fill:#222020;stroke:#4e4d4d;clip-path:inset(0.5px 1px 0 0px)"/>
+      
+        
+          <text x="95" y="1120" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Tools</text>
+        
+        
+          <rect x="207" y="1133" width="4" height="25" style="fill:#252323;stroke:#090909;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
+        
+        
+          <text x="197" y="1120" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Inspect</text>
+        
+        
+          <text x="1665" dx="11" y="1120" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">autofix</text>
+        
       
     
     
       <rect x="82" y="1169" width="1716" height="51" rx="0" style="fill:#222020;clip-path:inset(15px 0px 0px)"/>
-      <rect x="80" y="1184" width="1720" height="37" style="fill:none;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(0px 2px 2px)"/>
-      <text x="76" y="1181" dx="29" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Channels: 143</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
+      <rect x="80" y="1184" width="1720" height="37" style="fill:none;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(0 2px 37.3px)"/>
+      <text x="85" y="1181" dx="29" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Channels: 143</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
       
       
-      <text x="129" y="1181" dx="1206" dy="29" style="font-size:19.5px;fill:#fff"><tspan>TV: 1240</tspan> <tspan dx="10">Radio: 304</tspan> <tspan dx="10">Data: 148</tspan> <tspan dx="10">Total: 1692</tspan></text>
+      <text x="112" y="1181" dx="1212" dy="29" style="font-size:19.5px;fill:#fff"><tspan>TV: 1240</tspan> <tspan dx="10">Radio: 304</tspan> <tspan dx="10">Data: 148</tspan> <tspan dx="10">Total: 1692</tspan></text>
       
       
       
@@ -629,8 +646,16 @@
         
       
     
-    <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:none;stroke:#a7bfba;stroke-width:1px"/>
+    <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:none;stroke:#96bfba;stroke-width:1px"/>
     
   </g>
 
+  
+  
+  
+  
+
+  
+  
+  
 </svg>
