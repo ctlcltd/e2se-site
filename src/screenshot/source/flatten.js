@@ -188,7 +188,7 @@ function flatten_style() {
           } else if (prop == 'text-decoration') {
             css[prop] = css[prop].split(' ')[0];
           } else if (prop == 'text-shadow') {
-            css[prop] = css[prop].replace(/(#\w+) ([^,]+)/g, '$2 $1');
+            css[prop] = css[prop].replace(/(#\w+) ([^,]+)/g, '$2 $1').replace(/, /g, ',');
           }
 
           if (/\b0px\b/.test(css[prop])) {
@@ -536,6 +536,16 @@ function fix_list_text() {
 
           if (svg.getAttribute('id') === 'wide') {
             tm.e += 1440;
+          } else if (svg.getAttribute('id') == 'editor') {
+            if (/w/.test(root.getAttribute('class'))) {
+              if (child.getAttribute('class') == 'list-cols') tm.e = 1;
+              else if (parent.getAttribute('id') == 'split-end') tm.e = -4;
+              else if (tm.e == 0) tm.e = -2;
+            } else if (/f/.test(root.getAttribute('class'))) {
+              if (child.getAttribute('class') == 'list-cols') tm.e = -3;
+              else if (parent.getAttribute('id') == 'split-end') tm.e = -4;
+              else if (tm.e == 0) tm.e = -3;
+            }
           } else if (svg.getAttribute('id') == 'channelbook') {
             if (/w/.test(root.getAttribute('class'))) {
               if (child.getAttribute('class') == 'list-cols') tm.e = 1;
@@ -574,7 +584,7 @@ function fix_list_text() {
             else if (parent.getAttribute('id') == 'split-end') matrix.e += 12;
             else if (parent.getAttribute('id') == 'ch-end') matrix.e += 6;
           } else if (/f/.test(root.getAttribute('class'))) {
-            if (parent.getAttribute('id') == 'split-end' && child.getAttribute('class') == 'list-cols') matrix.e += 9;
+            if (parent.getAttribute('id') == 'split-end' && child.getAttribute('class') == 'list-cols') matrix.e += 10;
             else if (parent.getAttribute('id') == 'ch-end' && child.getAttribute('class') == 'list-cols') matrix.e += 4;
             else if (parent.getAttribute('id') == 'split-end') matrix.e += 12;
             else if (parent.getAttribute('id') == 'ch-end') matrix.e += 6;

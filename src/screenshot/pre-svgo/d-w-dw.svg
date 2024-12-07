@@ -117,28 +117,28 @@
       <rect x="33" y="119" width="894" height="600" rx="0" style="fill:#393939;fill-opacity:1;stroke:#505050;stroke-opacity:1;stroke-width:1.2px"/>
       
         <g style="clip-path:none">
-          <rect x="32.7" y="81.4" width="98" height="40" rx="2.2" style="fill:#414141;stroke:#4e4d4d;stroke-width:3px;clip-path:inset(1px 1px 3px)"/>
+          <rect x="32.7" y="81.4" width="98" height="42" rx="4.2" style="fill:#414141;stroke:#4e4d4d;stroke-width:3px;clip-path:inset(1px 1px 5.2px)"/>
           <text x="36" y="86" dx="46" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff">Service</text>
         </g>
         <g style="clip-path:none">
-          <rect x="129.5" y="84" width="137" height="35.7" rx="2.2" style="fill:#303030;stroke:#4e4d4d;stroke-width:3px;clip-path:inset(1px 1px 3px 3px)"/>
+          <rect x="129.5" y="84" width="137" height="38" rx="4.2" style="fill:#303030;stroke:#4e4d4d;stroke-width:3px;clip-path:inset(1px 1px 5.2px 3px)"/>
           <text x="118" y="87.5" dx="80" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Transponder</text>
         </g>
         <g style="clip-path:none">
-          <rect x="265.5" y="84" width="110" height="35.7" rx="2.2" style="fill:#303030;stroke:#4e4d4d;stroke-width:3px;clip-path:inset(1px 1px 3px 3px)"/>
+          <rect x="265.5" y="84" width="110" height="38" rx="4.2" style="fill:#303030;stroke:#4e4d4d;stroke-width:3px;clip-path:inset(1px 1px 5.2px 3px)"/>
           <text x="255" y="87.5" dx="67" dy="22" text-anchor="middle" style="font-size:18.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Favourite</text>
         </g>
         
       
       
-        <rect x="50" y="167" width="437" height="316" rx="1.7" style="fill:#383838;fill-opacity:1;stroke:#444;stroke-opacity:1;stroke-width:1.3px"/>
+        <rect x="50" y="167" width="437" height="316" rx="1.7" style="fill:#383838;fill-opacity:1;stroke:#444;stroke-opacity:1;stroke-width:1.8px"/>
         
         <text x="42" y="140" dx="10" dy="17" style="font-size:19px;letter-spacing:normal;fill:#fff">Service</text>
         
           
             <text x="65" y="181" dy="22" style="font-size:19px;fill:#fff">Service name</text>
             
-              <rect x="65" y="218" width="406" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+              <rect x="65" y="218" width="406" height="39" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
               <text x="65" y="222" dx="4" dy="23" style="font-size:19px;fill:#fff">HotBird 4K1</text>
             
           
@@ -169,7 +169,7 @@
           
             <text x="65" y="391" dy="22" style="font-size:19px;fill:#fff">Service ID</text>
             
-              <rect x="65" y="427" width="94" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+              <rect x="65" y="427" width="94" height="39" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
               <text x="65" y="431" dx="4" dy="23" style="font-size:19px;fill:#fff">1209</text>
               <text x="169" y="429" dy="23" style="font-size:19.5px;fill:#fff">[SID]</text>
             
@@ -177,7 +177,7 @@
         
       
       
-        <rect x="50" y="526" width="437" height="179" rx="1.7" style="fill:#383838;fill-opacity:1;stroke:#444;stroke-opacity:1;stroke-width:1.3px"/>
+        <rect x="50" y="526" width="437" height="179" rx="1.7" style="fill:#383838;fill-opacity:1;stroke:#444;stroke-opacity:1;stroke-width:1.8px"/>
         
         <text x="42" y="499" dx="10" dy="17" style="font-size:19px;letter-spacing:normal;fill:#fff">Tuner</text>
         
@@ -228,7 +228,7 @@
         
       
       
-        <rect x="499" y="167" width="410" height="538" rx="1.7" style="fill:#383838;fill-opacity:1;stroke:#444;stroke-opacity:1;stroke-width:1.3px"/>
+        <rect x="499" y="167" width="410" height="538" rx="1.7" style="fill:#383838;fill-opacity:1;stroke:#444;stroke-opacity:1;stroke-width:1.8px"/>
         
         <text x="491" y="140" dx="10" dy="17" style="font-size:19px;letter-spacing:normal;fill:#fff">Parameters</text>
         
@@ -254,7 +254,7 @@
               
                 <text x="527" y="295" dy="22" style="font-size:19.5px;fill:#fff">video</text>
                 
-                  <rect x="656" y="290" width="74" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+                  <rect x="656" y="290" width="74" height="39" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
                   <text x="656" y="294" dx="4" dy="23" style="font-size:19px;fill:#fff">2091</text>
                   <text x="742" y="295" dy="23" style="font-size:19px;fill:#fff">[VPID]</text>
                 
@@ -262,7 +262,7 @@
               
                 <text x="527" y="344" dy="22" style="font-size:19.5px;fill:#fff">mpeg-audio</text>
                 
-                  <rect x="656" y="339" width="74" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+                  <rect x="656" y="339" width="74" height="39" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
                   <text x="656" y="343" dx="4" dy="23" style="font-size:19px;fill:#fff">8191</text>
                   <text x="742" y="344" dy="23" style="font-size:19px;fill:#fff">[APID]</text>
                 
@@ -270,14 +270,14 @@
               
                 <text x="527" y="393" dy="22" style="font-size:19.5px;fill:#fff">tp</text>
                 
-                  <rect x="656" y="388" width="74" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+                  <rect x="656" y="388" width="74" height="39" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
                   <text x="742" y="393" dy="23" style="font-size:19px;fill:#fff">[TXTPID]</text>
                 
               
               
                 <text x="527" y="442" dy="22" style="font-size:19.5px;fill:#fff">pcr</text>
                 
-                  <rect x="656" y="437" width="74" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+                  <rect x="656" y="437" width="74" height="39" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
                   <text x="656" y="441" dx="4" dy="23" style="font-size:19px;fill:#fff">2091</text>
                   <text x="742" y="442" dy="23" style="font-size:19px;fill:#fff">[PCRPID]</text>
                 
@@ -285,7 +285,7 @@
               
                 <text x="527" y="491" dy="22" style="font-size:19.5px;fill:#fff">ac3</text>
                 
-                  <rect x="656" y="486" width="74" height="39" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
+                  <rect x="656" y="486" width="74" height="39" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-opacity:1;stroke-width:1.6px;clip-path:none"/>
                   <text x="742" y="491" dy="23" style="font-size:19px;fill:#fff">[AC3PID]</text>
                 
               
@@ -351,7 +351,7 @@
         <rect x="1" y="756" width="960" height="1.2" style="fill:#000"/>
       
     
-    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:none;stroke:#677073;stroke-opacity:0.5;stroke-width:1px"/>
+    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:none;stroke:#677073;stroke-opacity:0.74;stroke-width:1px"/>
     
   </g>
 
@@ -674,7 +674,7 @@
               
             
             
-              <rect x="2070" y="1003" width="352" height="36" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;clip-path:none"/>
+              <rect x="2070" y="1003" width="352" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;clip-path:none"/>
               <text x="2070" y="1006" dx="4" dy="23" style="font-size:19px;fill:#fff">10796/V</text>
             
             

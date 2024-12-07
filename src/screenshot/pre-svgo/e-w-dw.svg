@@ -501,7 +501,7 @@
               
             </g>
             <g transform="matrix(1,0,0,1,0,0)">
-              <rect x="623" y="1003" width="352" height="36" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;clip-path:none"/>
+              <rect x="623" y="1003" width="352" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;clip-path:none"/>
               <text x="623" y="1006" dx="4" dy="23" style="font-size:19px;fill:#fff">riba</text>
             </g>
             
@@ -530,7 +530,7 @@
             
               
                 <text x="511" y="1063" dx="4" dy="23" style="font-size:19px;fill:#fff">Folder</text>
-                <rect x="579" y="1060" width="352" height="34" rx="0" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;clip-path:none"/>
+                <rect x="579" y="1060" width="352" height="34" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;clip-path:none"/>
                 <rect x="941" y="1059" width="112" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.2px;filter:none"/>
                 <text x="935" y="1063" dx="24" dy="22" style="font-size:19.5px;fill:#fff">Browse<tspan style="font-size:18.915px">…</tspan></text>
               
@@ -613,7 +613,7 @@
         </g>
       </g>
       
-      <text x="110" y="895" dx="116" dy="19" text-anchor="middle" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:24px;letter-spacing:normal;fill:#fff;text-shadow:1px 0.5px 1px #000, -1px 1px 1.5px #000, 0 1px 4px #000">picon.png</text>
+      <text x="110" y="895" dx="116" dy="19" text-anchor="middle" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:24px;letter-spacing:normal;fill:#fff;text-shadow:1px 0.5px 1px #000,-1px 1px 1.5px #000,0 1px 4px #000">picon.png</text>
     
     <g transform="matrix(0.8,-0.8,0.5,0.6,-192,686)">
       <g style="fill:none;stroke:#0bbbcc;stroke-width:22px">

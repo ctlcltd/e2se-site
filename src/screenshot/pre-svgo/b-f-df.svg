@@ -167,7 +167,7 @@
             
               
                 <rect x="469" y="335" width="1325" height="26" style="fill:url(#bhf);stroke:#4e4d4d;stroke-width:2px;clip-path:inset(1px 1px 0)"/>
-                <text x="469" y="337" dy="18" style="font-size:17px;fill:#fff"><tspan x="473">Index</tspan> <tspan x="572">Name</tspan></text>
+                <text x="469" y="337" dy="18" style="font-size:17px;fill:#fff"><tspan x="472">Index</tspan> <tspan x="571">Name</tspan></text>
                 <rect x="564" y="335" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
               
               
@@ -286,10 +286,10 @@
   
 
   <g transform="matrix(1.41,0,0,1.41,315,182)" style="font-family:'Sans-Serif',system-ui,sans-serif">
-    <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:#222020;stroke:#acc6c3;stroke-width:1.088px;filter:url(#mlf)"/>
+    <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:#222020;stroke:#acc6c3;stroke-width:1px;filter:url(#mlf)"/>
     
       <rect x="1" y="1" width="1061" height="46.1" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
-      <rect x="1" y="48.8" width="1061" height="46.1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0 1px)"/>
+      <rect x="1" y="48.8" width="1063" height="46.1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0 1px)"/>
       <text x="-1" y="3.5" dx="529" dy="28" text-anchor="middle" style="font-family:'Sans-Serif',system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#aaa">Add Channel</text>
       
       
@@ -469,7 +469,7 @@
       
     
     <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:none;stroke:#000;stroke-width:1.8px"/>
-    
+    <rect x="1.5" y="1.5" width="1060" height="649" rx="0" style="fill:none;stroke:#999;stroke-opacity:0.75;stroke-width:0.5px"/>
   </g>
 
   

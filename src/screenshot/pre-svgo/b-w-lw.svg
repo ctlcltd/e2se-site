@@ -158,7 +158,7 @@
                 <rect x="567" y="335" width="3" height="37" style="fill:#d9d9d9;stroke:none;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
               
               
-                <rect x="469" y="372" width="1325" height="623" style="fill:#fff"/>
+                <rect x="469" y="372" width="1325" height="638" style="fill:#fff"/>
                 
                   <rect x="469" y="716" width="1325" height="47" style="fill:#e5e5e5"/>
                   <text x="469" y="375" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">38</tspan> <tspan x="572">Giallo</tspan></text>
@@ -178,74 +178,74 @@
                 
               
               
-                <rect x="1781" y="336" width="17" height="678" style="fill:#f0f0f0"/>
+                <rect x="1781" y="336" width="17" height="692" style="fill:#f0f0f0"/>
                 
                 
                 
                 
-                <rect x="1788" y="494" width="3.5" height="32" rx="4" style="fill:#c8c8c8"/>
+                <rect x="1788" y="494" width="3.5" height="31" rx="4" style="fill:#c8c8c8"/>
               
               
-                <rect x="467" y="979" width="1330" height="17" style="fill:#f0f0f0"/>
+                <rect x="467" y="1010" width="1330" height="17" style="fill:#f0f0f0"/>
                 
                 
                 
                 
-                <rect x="475" y="986" width="775" height="3.5" rx="4" style="fill:#c8c8c8"/>
+                <rect x="475" y="1017" width="775" height="3.5" rx="4" style="fill:#c8c8c8"/>
               
-              <rect x="1782" y="980" width="17" height="17" style="fill:none;stroke:#c8c8c8;stroke-width:1.5px;clip-path:inset(0 1.5px 1.5px 0px)"/> 
+              <rect x="1782" y="1011" width="17" height="17" style="fill:none;stroke:#c8c8c8;stroke-width:1.5px;clip-path:inset(0 1.5px 1.5px 0px)"/> 
             
             
-              <rect x="469" y="997" width="1325" height="65" style="fill:#f0f0f0"/>
+              <rect x="469" y="1028" width="1325" height="65" style="fill:#f0f0f0"/>
               
               
                 
                   
-                  <g transform="matrix(0.26,0,0,0.26,493,1019)">
+                  <g transform="matrix(0.26,0,0,0.26,493,1050)">
                     <use href="#aad" style="fill:#505050" y="1"/>
                   </g>
-                  <text x="488" y="1003" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Channel</text>
+                  <text x="488" y="1034" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Channel</text>
                 
                 
-                  <g transform="matrix(0.26,0,0,0.26,621,1019)">
+                  <g transform="matrix(0.26,0,0,0.26,621,1050)">
                     <use href="#aad" style="fill:#505050" y="1"/>
                   </g>
-                  <text x="617" y="1003" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Stream</text>
+                  <text x="617" y="1034" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Stream</text>
                 
                 
-                  <g transform="matrix(0.26,0,0,0.26,737,1019)">
+                  <g transform="matrix(0.26,0,0,0.26,737,1050)">
                     <use href="#aad" style="fill:#505050" y="1"/>
                   </g>
-                  <text x="733" y="1003" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Marker</text>
+                  <text x="733" y="1034" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Marker</text>
                 
                 <g style="opacity:0.45">
-                  <g transform="matrix(0.26,0,0,0.26,853,1019)">
+                  <g transform="matrix(0.26,0,0,0.26,853,1050)">
                     <use href="#aad" style="fill:#505050" y="1"/>
                   </g>
-                  <text x="848" y="1003" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Service</text>
+                  <text x="848" y="1034" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Service</text>
                 </g>
                 
-                  <rect x="974" y="1011" width="118" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
-                  <text x="968" y="1014.5" dx="22" dy="22" style="font-size:19.5px;fill:#000" width="118">Reference</text>
+                  <rect x="974" y="1042" width="118" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                  <text x="968" y="1045.5" dx="22" dy="22" style="font-size:19.5px;fill:#000" width="118">Reference</text>
                 
                 
-                  <rect x="1102" y="1014" width="1.2" height="30" style="fill:#d0d0d0"/>
+                  <rect x="1102" y="1045" width="1.2" height="30" style="fill:#d0d0d0"/>
                 
                 <g style="opacity:0.45">
-                  <rect x="1110" y="1011" width="122" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
-                  <text x="1095" y="1014.5" dx="25" dy="22" style="font-size:19.5px;fill:#000" width="122">Drag&amp;Drop</text>
+                  <rect x="1110" y="1042" width="122" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                  <text x="1095" y="1045.5" dx="25" dy="22" style="font-size:19.5px;fill:#000" width="122">Drag&amp;Drop</text>
                 </g>
                 
-                  <rect x="1673" y="1010" width="110" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
-                  <g transform="matrix(0.38,0,0,0.38,1680,1014)">
+                  <rect x="1673" y="1041" width="110" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                  <g transform="matrix(0.38,0,0,0.38,1680,1045)">
                     <use href="#sdh" style="fill:#545454" x="16" y="4"/>
                   </g>
-                  <text x="1668" y="1013.5" dx="46" dy="22" style="font-size:19.5px;fill:#000"><tspan style="text-decoration:underline">F</tspan>ind<tspan style="font-size:18.915px">…</tspan></text>
+                  <text x="1668" y="1044.5" dx="46" dy="22" style="font-size:19.5px;fill:#000"><tspan style="text-decoration:underline">F</tspan>ind<tspan style="font-size:18.915px">…</tspan></text>
                 
               
             
           
-          <rect x="80" y="285" width="1720" height="773" style="fill:none;stroke:#d0d0d0;stroke-width:2.2px;clip-path:inset(0px 2px)"/>
+          <rect x="80" y="285" width="1720" height="810" style="fill:none;stroke:#d0d0d0;stroke-width:2.2px;clip-path:inset(0px 2px)"/>
         
       
       <rect x="81" y="81" width="1718" height="1140" style="fill:#000;opacity:0.1"/>
@@ -253,7 +253,7 @@
   
 
   <g transform="matrix(1.41,0,0,1.41,314,186)" style="font-family:'Segoe UI',Tahoma,sans-serif">
-    <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:#f0f0f0;stroke:#aaa;stroke-width:1px;filter:url(#mhw)"/>
+    <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:#f0f0f0;stroke:#5c5c5c;stroke-width:1px;filter:url(#mhw)"/>
     
       <rect x="2" y="2" width="1059" height="59.5" rx="0" style="fill:#f7f7f7;fill-opacity:0.37;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
       
@@ -388,7 +388,7 @@
         <rect x="1" y="568" width="1061" height="82" rx="0" style="fill:#f0f0f0;clip-path:inset(15px 0px 0px)"/>
         
           <g transform="matrix(0.9,0,0,0.9,14,605)">
-            <rect x="3" y="3" width="19.5" height="20" rx="0" style="fill:#fff;stroke:#949494;stroke-opacity:1;stroke-width:1.8px"/>
+            <rect x="3" y="3" width="19.5" height="20" rx="1" style="fill:#fff;stroke:#949494;stroke-opacity:1;stroke-width:1.8px"/>
             <g transform="matrix(0.23,0,0,0.32,5.5,2.5)">
               <use href="#cgk" style="fill:#000;stroke:#000;stroke-width:2.3px"/>
             </g>
@@ -407,7 +407,7 @@
         <rect x="1" y="582" width="1061" height="1.2" style="fill:#d0d0d0"/>
       
     
-    <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:none;stroke:#1c1c1c;stroke-opacity:0.5;stroke-width:0.5px"/>
+    <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:none;stroke:#fff;stroke-opacity:0.37;stroke-width:1px"/>
     
   </g>
 

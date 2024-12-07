@@ -96,10 +96,10 @@
   
 
   <g transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Sans-Serif',system-ui,sans-serif">
-    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:#efefef;stroke:#acc6c3;stroke-width:1.088px;filter:url(#mrf)"/>
+    <rect x="1" y="1" width="960" height="820" rx="0" style="fill:#efefef;stroke:#acc6c3;stroke-width:1px;filter:url(#mrf)"/>
     
       <rect x="1" y="1" width="960" height="48" rx="0" style="fill:#fafafa;stroke:#e8e8e8;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
-      <rect x="1" y="47" width="960" height="1" style="fill:none;stroke:#cbcdcc;stroke-width:2px;clip-path:inset(0 1px 1.1px)"/>
+      <rect x="1" y="47" width="962" height="1" style="fill:none;stroke:#cbcdcc;stroke-width:2px;clip-path:inset(0 1px 1.1px)"/>
       <text x="-1" y="3.5" dx="478" dy="28" text-anchor="middle" style="font-family:'Sans-Serif',system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#5a5a5a">Edit Service</text>
       
       
@@ -362,7 +362,7 @@
       
     
     <rect x="1" y="1" width="960" height="820" rx="0" style="fill:none;stroke:#808e8c;stroke-width:1.2px"/>
-    
+    <rect x="1.5" y="1.5" width="959" height="819" rx="0" style="fill:none;stroke:#ccc;stroke-opacity:0.75;stroke-width:0.5px"/>
   </g>
 
   <g style="font-family:'Sans-Serif',system-ui,sans-serif">
