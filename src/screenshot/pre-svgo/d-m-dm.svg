@@ -738,16 +738,16 @@
       
       
         
-          <text x="1538" y="1116" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Tools</text>
+          <text x="1538" y="1116" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Tools</text>
         
         
           <rect x="1651" y="1120" width="1" height="38" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1.4px,2.68px"/>
         
         
-          <text x="1647" y="1116" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Inspect</text>
+          <text x="1647" y="1116" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Inspect</text>
         
         
-          <text x="3100" dx="11" y="1116" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">autofix</text>
+          <text x="3100" dx="11" y="1116" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">autofix</text>
         
       
     

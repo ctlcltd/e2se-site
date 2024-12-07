@@ -281,8 +281,8 @@
   <g transform="matrix(1.41,0,0,1.41,315,182)" style="font-family:'Sans-Serif',system-ui,sans-serif">
     <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:#efefef;stroke:#acc6c3;stroke-width:1.088px;filter:url(#mjf)"/>
     
-      <rect x="2" y="1" width="1063" height="48" rx="0" style="fill:#fafafa;stroke:#e8e8e8;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
-      <rect x="1" y="47" width="1063" height="1" style="fill:none;stroke:#cbcdcc;stroke-width:2px;clip-path:inset(0 1px 1.1px)"/>
+      <rect x="1" y="1" width="1061" height="48" rx="0" style="fill:#fafafa;stroke:#e8e8e8;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
+      <rect x="1" y="47" width="1061" height="1" style="fill:none;stroke:#cbcdcc;stroke-width:2px;clip-path:inset(0 1px 1.1px)"/>
       <text x="-1" y="3.5" dx="529" dy="28" text-anchor="middle" style="font-family:'Sans-Serif',system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#5a5a5a">Add Channel</text>
       
       

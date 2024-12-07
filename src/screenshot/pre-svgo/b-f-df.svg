@@ -288,8 +288,8 @@
   <g transform="matrix(1.41,0,0,1.41,315,182)" style="font-family:'Sans-Serif',system-ui,sans-serif">
     <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:#222020;stroke:#acc6c3;stroke-width:1.088px;filter:url(#mlf)"/>
     
-      <rect x="2" y="1" width="1063" height="46.1" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
-      <rect x="1" y="48.8" width="1063" height="46.1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0 1px)"/>
+      <rect x="1" y="1" width="1061" height="46.1" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
+      <rect x="1" y="48.8" width="1061" height="46.1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0 1px)"/>
       <text x="-1" y="3.5" dx="529" dy="28" text-anchor="middle" style="font-family:'Sans-Serif',system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#aaa">Add Channel</text>
       
       

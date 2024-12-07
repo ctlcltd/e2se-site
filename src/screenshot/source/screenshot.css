@@ -74,7 +74,7 @@
 #channelbook .dm .w-shade { stroke-opacity: 0.09 !important; }
 
 .dm .tb-button text { fill-opacity: 0.89; }
-.dm .menu-item text, .dm .tool-txt { fill-opacity: 0.89; text-shadow: 0 0.5px 1px #090909; }
+.dm .menu-item text, .dm .tool-txt, .dm .toolbar-item .txt { fill-opacity: 0.89; text-shadow: 0 0.5px 1px #090909; }
 .dm .menu-item .btn-txt { text-shadow: none; }
 .dm .btn-txt, .dm .find-txt { fill-opacity: 0.78 !important; }
 .dm .btn-dropdown .btn-txt { fill-opacity: 0.92 !important; }
@@ -1294,8 +1294,6 @@
 .f .sbv .xy { width: 22px; transform: translate(0.5px, 0); }
 .f .sbr { display: block !important; x: 1780.5px; y: 930.5px; width: 25px; height: 25px; stroke-width: 2px; clip-path: inset(0 4.2px 2.8px 0); }
 
-/*.f .sbr { display: block !important; x: 1780px; y: 930.5px; width: 24px; height: 24px; stroke-width: 2px; clip-path: inset(0 1px 1px 0); }*/
-
 .f #tree .sbv { transform: translate(-8px, -1px); }
 .f #tree .sbv .bg { height: 359px; }
 .f #tree .sbv .vs { y: 646px; }
@@ -1653,8 +1651,6 @@
 .df .sbh .xy { transform: translate(2.5px, 0.5px); }
 .df .sbv .xy { transform: translate(0.5px, 2.5px); }
 .df .sbr { x: 1778.5px; y: 931px; width: 26px; height: 26px; stroke: none !important; }
-
-/*.df .sbr { x: 1778px; y: 974px; width: 26px; height: 24px; stroke: none !important; }*/
 
 #channelbook .df .list .sbh { transform: translate(0, 15.5px); clip-path: inset(0.5px 3.5px 0 0) !important }
 #channelbook .df .list .sbh .he { x: 1756px; }

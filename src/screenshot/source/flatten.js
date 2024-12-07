@@ -62,16 +62,18 @@ function flatten() {
   flatten_style();
   flatten_transform();
 
-  if (/w|f/.test(classname) || svg.getAttribute('id') === 'wide') {
+  if (/w|f/.test(classname)) {
     fix_list_text();
-
-    if (/m/.test(classname)) {
-      fix_m_wide();
-    }
   }
-
+  if (/m/.test(classname) && svg.getAttribute('id') === 'wide') {
+    fix_list_text();
+    fix_m_wide();
+  }
   if (/w/.test(classname)) {
     fix_w_ttext();
+  }
+  if (/f/.test(classname) && (svg.getAttribute('id') === 'channelbook' || svg.getAttribute('id') === 'wide')) {
+    fix_f_titlebar();
   }
 
   flatten_resources();
@@ -186,7 +188,7 @@ function flatten_style() {
           } else if (prop == 'text-decoration') {
             css[prop] = css[prop].split(' ')[0];
           } else if (prop == 'text-shadow') {
-            css[prop] = css[prop].replace(/(#\w+) (.+)/, '$2 $1');
+            css[prop] = css[prop].replace(/(#\w+) ([^,]+)/g, '$2 $1');
           }
 
           if (/\b0px\b/.test(css[prop])) {
@@ -540,7 +542,8 @@ function fix_list_text() {
               else if (parent.getAttribute('id') == 'split-end' && txt == txt.parentElement.lastElementChild) tm.e = -4;
               else if (tm.e == 0) tm.e = -3;
             } else if (/f/.test(root.getAttribute('class'))) {
-              if (child.getAttribute('class') == 'list-cols') tm.e = -2;
+              if (parent.getAttribute('id') == 'split-end' && child.getAttribute('class') == 'list-cols') tm.e = -3;
+              else if (child.getAttribute('class') == 'list-cols') tm.e = -2;
               else if (parent.getAttribute('id') == 'split-end' && txt == txt.parentElement.lastElementChild) tm.e = -4;
               else if (tm.e == 0) tm.e = -3;
             }
@@ -668,6 +671,32 @@ function fix_m_wide() {
   root.removeAttribute('class');
 }
 
+
+// 
+// fix titlebar  fusion
+// 
+// t-bg, t-stroke
+
+function fix_f_titlebar() {
+
+  root.setAttribute('class', root.getAttribute('_class'));
+
+  var elements = svg.querySelector('g[_id="addchannel"], g[_id="editservice"]').querySelectorAll('rect[_class="t-bg"], g[_class="t-stroke"]');
+
+  for (const el of elements) {
+    let width = parseFloat(el.getAttribute('width'));
+    width -= 2;
+    el.setAttribute('width', width);
+
+    if (el.getAttribute('_class') == 't-bg') {
+      let x = parseFloat(el.getAttribute('x'));
+      x -= 1;
+      el.setAttribute('x', x);   
+    }
+  }
+
+  root.removeAttribute('class');
+}
 
 
 flatten_defaults();

@@ -613,7 +613,7 @@
         </g>
       </g>
       
-      <text x="110" y="895" dx="116" dy="19" text-anchor="middle" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:24px;letter-spacing:normal;fill:#fff;text-shadow:1px 0.5px 1px, #000 -1px 1px 1.5px, #000 0 1px 4px #000">picon.png</text>
+      <text x="110" y="895" dx="116" dy="19" text-anchor="middle" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:24px;letter-spacing:normal;fill:#fff;text-shadow:1px 0.5px 1px #000, -1px 1px 1.5px #000, 0 1px 4px #000">picon.png</text>
     
     <g transform="matrix(0.8,-0.8,0.5,0.6,-192,686)">
       <g style="fill:none;stroke:#0bbbcc;stroke-width:22px">

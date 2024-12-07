@@ -554,16 +554,16 @@
       
       
         
-          <text x="518" y="1116" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Tools</text>
+          <text x="518" y="1116" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Tools</text>
         
         
           <rect x="631" y="1120" width="1" height="38" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1.4px,2.68px"/>
         
         
-          <text x="627" y="1116" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Inspect</text>
+          <text x="627" y="1116" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Inspect</text>
         
         
-          <text x="1660" dx="11" y="1116" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">autofix</text>
+          <text x="1660" dx="11" y="1116" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">autofix</text>
         
       
     
