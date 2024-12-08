@@ -65,15 +65,21 @@ function flatten() {
   if (/w|f/.test(classname)) {
     fix_list_text();
   }
-  if (/m/.test(classname) && svg.getAttribute('id') === 'wide') {
-    fix_list_text();
-    fix_m_wide();
+  if (/m/.test(classname)) {
+    if (svg.getAttribute('id') === 'wide') {
+      fix_list_text();
+      fix_m_ellipse_wide();
+    }
   }
   if (/w/.test(classname)) {
     fix_w_ttext();
   }
-  if (/f/.test(classname) && (svg.getAttribute('id') === 'channelbook' || svg.getAttribute('id') === 'wide')) {
-    fix_f_titlebar();
+  if (/f/.test(classname)) {
+    if (svg.getAttribute('id') === 'channelbook' || svg.getAttribute('id') === 'wide') {
+      fix_f_titlebar();
+    } else if (svg.getAttribute('id') === 'piconseditor') {
+      fix_f_picons();
+    }
   }
 
   flatten_resources();
@@ -661,11 +667,11 @@ function fix_w_ttext() {
 
 
 // 
-// fix wide  macx
+// fix ellipse wide  macx
 // 
-// split, t-ctrs-m
+// split ellipse, t-ctrs-m ellipse
 
-function fix_m_wide() {
+function fix_m_ellipse_wide() {
 
   root.setAttribute('class', root.getAttribute('_class'));
 
@@ -702,6 +708,27 @@ function fix_f_titlebar() {
       let x = parseFloat(el.getAttribute('x'));
       x -= 1;
       el.setAttribute('x', x);   
+    }
+  }
+
+  root.removeAttribute('class');
+}
+
+
+// 
+// fix picons  fusion
+// 
+// img
+
+function fix_f_picons() {
+
+  root.setAttribute('class', root.getAttribute('_class'));
+
+  var elements = svg.querySelectorAll('g[_class="img"], g[_id="img"]');
+
+  for (const el of elements) {
+    if (el.querySelector('text')) {
+      el.setAttribute('style', 'text-rendering:auto');
     }
   }
 

@@ -341,7 +341,7 @@
                 
                   <rect x="526" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#ddd;stroke-width:12px;stroke-dasharray:37px,21px,36px,0" transform="matrix(0.98,0,0,0.96,13,51)"/>
                   <rect x="570" y="433" width="130" height="75" rx="6" style="fill:url(#pug);stroke:#aaabbb;stroke-width:1.7px"/>
-                  <g transform="matrix(0.34,0,0,0.34,588,456)">
+                  <g transform="matrix(0.34,0,0,0.34,588,456)" style="text-rendering:auto">
                     <rect x="0" y="0" width="273" height="88" style="fill:#f5b4e4"/>
                     <rect x="188" y="0" width="85" height="88" style="fill:#ff9689"/>
                     <g style="font-family:Arial,Helvetica,sans-serif;font-weight:bold">
@@ -354,7 +354,7 @@
                 
                   <rect x="792" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#ddd;stroke-width:12px;stroke-dasharray:37px,21px,36px,0" transform="matrix(0.98,0,0,0.96,18,51)"/>
                   <rect x="837" y="433" width="130" height="75" rx="6" style="fill:url(#pug);stroke:#aaabbb;stroke-width:1.7px"/>
-                  <g transform="matrix(0.34,0,0,0.34,856,456)">
+                  <g transform="matrix(0.34,0,0,0.34,856,456)" style="text-rendering:auto">
                     <rect x="0" y="0" width="273" height="88" style="fill:#f5b4e4"/>
                     <rect x="188" y="0" width="85" height="88" style="fill:#ff9689"/>
                     <g style="font-family:Arial,Helvetica,sans-serif;font-weight:bold">
@@ -367,7 +367,7 @@
                 
                   <rect x="1058" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#ddd;stroke-width:12px;stroke-dasharray:37px,21px,36px,0" transform="matrix(0.98,0,0,0.96,23,51)"/>
                   <rect x="1103" y="433" width="130" height="75" rx="6" style="fill:url(#pug);stroke:#aaabbb;stroke-width:1.7px"/>
-                  <g transform="matrix(0.32,0,0,0.32,1111,454)">
+                  <g transform="matrix(0.32,0,0,0.32,1111,454)" style="text-rendering:auto">
                     <rect x="256" y="21" width="93" height="65" style="fill:#cb0000"/>
                     <text x="10" y="0" dx="112" dy="78" text-anchor="middle" style="font-family:cursive,serif;font-size:96px;fill:#cb0000">image</text>
                     <text x="262" y="0" dy="78" style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:50px;fill:#eee">4K</text>
@@ -377,7 +377,7 @@
                 
                   <rect x="1324" y="371" width="220" height="171" rx="16" style="fill:none;stroke:#ddd;stroke-width:12px;stroke-dasharray:37px,21px,36px,0" transform="matrix(0.98,0,0,0.96,28,51)"/>
                   <rect x="1369" y="433" width="130" height="75" rx="6" style="fill:url(#pug);stroke:#aaabbb;stroke-width:1.7px"/>
-                  <g transform="matrix(0.23,0,0,0.23,1401,449)">
+                  <g transform="matrix(0.23,0,0,0.23,1401,449)" style="text-rendering:auto">
                     <rect x="50" y="4" width="180" height="180" style="fill:#881"/>
                     <rect x="2" y="28" width="274" height="134" style="fill:#881"/>
                     <text x="50" y="38" dx="56" dy="80" text-anchor="middle" style="font-family:'Times New Roman',Times,sans-serif;font-weight:bold;font-size:122px;letter-spacing:-4px;fill:#fff;stroke:#fff;stroke-width:4px" transform="matrix(1.3,0,0,1.2,0,0)">22</text>
@@ -397,7 +397,7 @@
                   <rect x="792" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#ddd;stroke-width:11px;stroke-dasharray:37px,21px,36px,0" transform="matrix(0.98,0,0,0.96,18,60)"/>
                   
                   <rect x="837" y="643" width="130" height="75" rx="6" style="fill:url(#pug);stroke:#aaabbb;stroke-width:1.7px"/>
-                  <g transform="matrix(0.13,0,0,0.13,849,665)">
+                  <g transform="matrix(0.13,0,0,0.13,849,665)" style="text-rendering:auto">
                     <ellipse cx="186" cy="116" rx="178" ry="118" style="fill:#64d8b1"/>
                     <g style="font-family:Arial,Helvetica,sans-serif">
                       <text x="42" y="0" dy="140" style="font-weight:bold;font-size:102px;letter-spacing:-1px;stroke:#000;stroke-width:4px;font-style:italic" transform="matrix(1,0,0,1.2,0,0)">RIBA</text>
@@ -409,7 +409,7 @@
                 
                   <rect x="1058" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#ddd;stroke-width:11px;stroke-dasharray:37px,21px,36px,0" transform="matrix(0.98,0,0,0.96,23,60)"/>
                   <rect x="1103" y="643" width="130" height="75" rx="6" style="fill:url(#pug);stroke:#aaabbb;stroke-width:1.7px"/>
-                  <g transform="matrix(0.13,0,0,0.13,1109,665)">
+                  <g transform="matrix(0.13,0,0,0.13,1109,665)" style="text-rendering:auto">
                     <ellipse cx="186" cy="116" rx="178" ry="118" style="fill:#64d8b1"/>
                     <g style="font-family:Arial,Helvetica,sans-serif">
                       <text x="42" y="0" dy="140" style="font-weight:bold;font-size:102px;letter-spacing:-1px;stroke:#000;stroke-width:4px;font-style:italic" transform="matrix(1,0,0,1.2,0,0)">RIBA</text>
@@ -421,7 +421,7 @@
                 
                   <rect x="1324" y="580" width="220" height="171" rx="16" style="fill:none;stroke:#ddd;stroke-width:11px;stroke-dasharray:37px,21px,36px,0" transform="matrix(0.98,0,0,0.96,28,60)"/>
                   <rect x="1369" y="643" width="130" height="75" rx="6" style="fill:url(#pug);stroke:#aaabbb;stroke-width:1.7px"/>
-                  <g transform="matrix(0.21,0,0,0.21,1385,668)">
+                  <g transform="matrix(0.21,0,0,0.21,1385,668)" style="text-rendering:auto">
                     <rect x="0" y="0" width="462" height="120" rx="48" style="fill:#771"/>
                     <g style="font-family:Arial,Helvetica,sans-serif;font-size:96px">
                       <text x="32" y="0" dy="96" style="fill:#fff;stroke:#fff;stroke-width:6px" transform="matrix(0.9,0,0,1,0,0)">SERIAL</text>
@@ -434,7 +434,7 @@
                 
                   <rect x="526" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#ddd;stroke-width:11px;stroke-dasharray:37px,21px,36px,0" transform="matrix(0.98,0,0,0.96,13,69)"/>
                   <rect x="570" y="852" width="130" height="75" rx="6" style="fill:url(#pug);stroke:#aaabbb;stroke-width:1.7px"/>
-                  <g transform="matrix(0.31,0,0,0.31,592,871)">
+                  <g transform="matrix(0.31,0,0,0.31,592,871)" style="text-rendering:auto">
                     <rect x="0" y="0" width="275" height="102" rx="24" style="fill:#fff"/>
                     <rect x="0" y="0" width="106" height="102" rx="24" style="fill:#7ec6d6"/>
                     <text x="16" y="0" dy="102" style="font-family:'Times New Roman',Times,sans-serif;font-weight:bold;font-size:150px;fill:#333">Q</text>
@@ -445,7 +445,7 @@
                 
                   <rect x="792" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#ddd;stroke-width:11px;stroke-dasharray:37px,21px,36px,0" transform="matrix(0.98,0,0,0.96,18,69)"/>
                   <rect x="837" y="852" width="130" height="75" rx="6" style="fill:url(#pug);stroke:#aaabbb;stroke-width:1.7px"/>
-                  <g transform="matrix(0.21,0,0,0.21,846,880)">
+                  <g transform="matrix(0.21,0,0,0.21,846,880)" style="text-rendering:auto">
                     <rect x="433" y="0" width="96" height="96" style="fill:#099"/>
                     <text x="0" y="0" dx="208" dy="80" text-anchor="middle" style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:96px;letter-spacing:-3px;fill:#333">Shopping</text>
                     <text x="433" y="0" dx="8" dy="80" style="font-family:'Times New Roman',Times,sans-serif;font-weight:bold;font-size:99px;fill:#fff;stroke:#fff;stroke-width:5px">G</text>
@@ -462,7 +462,7 @@
                 
                   <rect x="1324" y="788" width="220" height="171" rx="16" style="fill:none;stroke:#ddd;stroke-width:11px;stroke-dasharray:37px,21px,36px,0" transform="matrix(0.98,0,0,0.96,28,69)"/>
                   <rect x="1369" y="852" width="130" height="75" rx="6" style="fill:url(#pug);stroke:#aaabbb;stroke-width:1.7px"/>
-                  <g transform="matrix(0.2,0,0,0.2,1377,878)">
+                  <g transform="matrix(0.2,0,0,0.2,1377,878)" style="text-rendering:auto">
                     <text x="0" y="0" dx="368" dy="96" text-anchor="middle" style="font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:97px;fill:#600900;stroke:#600900;stroke-width:3.5px" transform="matrix(0.76,0,0,1,0,0)">GLOBALFLARE</text>
                   </g>
                   <text x="1324" y="945" dx="109" dy="18" text-anchor="middle" style="font-size:18px">Globalflare HD</text>
@@ -611,7 +611,7 @@
       
       <g transform="matrix(0.9,0,0,0.9,174.5,766)">
         <rect x="0" y="0" width="114" height="39" style="fill:#fff"/>
-        <g transform="matrix(0.22,0,0,0.22,5,5)">
+        <g transform="matrix(0.22,0,0,0.22,5,5)"  style="text-rendering:auto">
           <rect x="-4" y="-4" width="483" height="141" style="fill:#0be"/>
           <ellipse cx="67" cy="67" rx="67" ry="67" style="fill:#fff"/>
           <text x="18" y="0" dy="107" style="font-family:Arial,Helvetica,sans-serif;font-size:122px;fill:#00afef;stroke:#00afef;stroke-width:10px" transform="matrix(1.3,0,0,1.2,1,0)">7</text>

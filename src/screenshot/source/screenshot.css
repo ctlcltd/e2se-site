@@ -1455,6 +1455,8 @@
 .f .toolbar-item:nth-child(3) { transform: translate(-10px, 4px); }
 .f .toolbar-item:nth-child(4) { transform: translate(5px, 4px); }
 
+#piconseditor .f .img, #piconseditor .f #img { text-rendering: auto; }
+
 #wide .f .ch-item:nth-child(2) { transform: translate(4px, 0); }
 #wide .f .ch-item:nth-child(3) { transform: translate(-3px, 0); }
 
