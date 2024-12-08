@@ -405,7 +405,7 @@
         
           <rect x="1642" y="125" width="1" height="67" style="fill:#3a5165"/>
           
-            <rect x="1643" y="124" width="157" height="69" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
+            <rect x="1643" y="124" width="157" height="69" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px;clip-path:inset(2px 0 1px)"/>
             <text x="1643" y="124" dx="15" dy="41" style="font-size:20px;fill:#fff">enigma_db</text>
             
               
@@ -417,7 +417,7 @@
             
           
           
-            <rect x="1800" y="124" width="292" height="69" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
+            <rect x="1800" y="124" width="292" height="69" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px;clip-path:inset(2px 0 1px)"/>
             <g transform="matrix(0.38,0,0,0.38,1812,144)">
               <use href="#pkw" style="fill:#fff"/>
             </g>
@@ -432,7 +432,7 @@
             
           
           
-            <rect x="2092" y="124" width="154" height="69" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
+            <rect x="2092" y="124" width="154" height="69" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px;clip-path:inset(2px 0 1px)"/>
             <text x="2092" y="124" dx="15" dy="41" style="font-size:20px;fill:#fff">neutrino</text>
             
               
@@ -444,7 +444,7 @@
             
           
           
-            <rect x="2246" y="124" width="292" height="69" style="fill:#2a4f7b;stroke:#234065;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
+            <rect x="2246" y="124" width="292" height="69" style="fill:#2a4f7b;stroke:#234065;stroke-width:1.5px;clip-path:inset(2px 0 1px)"/>
             <g transform="matrix(0.38,0,0,0.38,2258,144)">
               <use href="#tnw" style="fill:#fff"/>
             </g>
@@ -459,7 +459,7 @@
             
           
           
-            <rect x="2538" y="124" width="293" height="69" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px;clip-path:inset(1px 0px)"/>
+            <rect x="2538" y="124" width="293" height="69" style="fill:#323232;stroke:#3e3e3e;stroke-width:1.5px;clip-path:inset(2px 0 1px)"/>
             <g transform="matrix(0.38,0,0,0.38,2551,144)">
               <use href="#cbw" style="fill:#fff"/>
             </g>

@@ -4,6 +4,8 @@
 .m .toolbar-divid .divid { stroke-dasharray: 1.4px 2.68px; }
 .m #statusbar .divid { display: none; }
 
+.m .tb-tab .bg { clip-path: inset(1.76px 0 1px) !important; }
+
 .m .btn-bg { stroke-width: 0.4px !important; }
 .m .btn-dropdown .btn-bg { height: 32px !important; }
 .m .btn-dropdown .btn-txt { transform: translate(0, 1px); }
@@ -40,6 +42,8 @@
 #wide .dm#editservice .t-ctrs-m ellipse:nth-child(2), #wide .dm#editservice .t-ctrs-m ellipse:nth-child(3) { fill: #636766 !important; }
 
 #editor .dm #ss-bg, .dm #tb-corner .bg { fill: #485352 !important; }
+
+.dm .tb-tab .bg { clip-path: inset(2px 0 1px) !important; }
 
 .dm .list-view .bg { fill: #171717 !important; }
 

@@ -1,0 +1,5 @@
+multipass: true
+number precision: 1
+transform precision: 2 | 3 [ fl df ]
+cleanup ids: false
+shapes to (smaller) paths: false
