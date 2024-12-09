@@ -388,8 +388,8 @@
       <g class="t-ctrs-w" style="display:none">
         <g transform="matrix(.97,0,0,.97,1039,9)">
           <g transform="rotate(45)">
-            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:1px" />
-            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:1px" />
+            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:0.97px" />
+            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:0.97px" />
           </g>
         </g>
       </g>

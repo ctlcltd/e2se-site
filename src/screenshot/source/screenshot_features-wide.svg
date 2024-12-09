@@ -158,7 +158,7 @@
     <rect id="wallpaper" x="0" y="0" width="3318" height="1300" style="fill:#b4d0cd" />
   </g>
 
-  <g id="editservice" class="m" transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
+  <g id="editservice" class="w" transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Helvetica Neue',sans-serif-light,Helvetica,sans-serif">
     <rect class="w-bg" x="1" y="1" width="960" height="820" rx="15" style="fill:#f3f4f4;stroke:#191919;stroke-width:1.088px;filter: url(#modal-shadow-m)" />
     <g class="titlebar">
       <rect class="t-bg" x="2" y="2" width="958" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
@@ -175,8 +175,8 @@
       <g class="t-ctrs-w" style="display:none">
         <g transform="matrix(.97,0,0,.97,937,9)">
           <g transform="rotate(45)">
-            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:1px" />
-            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:1px" />
+            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:0.97px" />
+            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:0.97px" />
           </g>
         </g>
       </g>
@@ -336,7 +336,7 @@
         <text class="gbox-txt" x="508" y="109" dx="10" dy="17" style="font-size:17px;letter-spacing:0.4px;fill:#000">Parameters</text>
         <g class="gbox-inner">
           <g class="qt-item">
-            <rect class="qt-shape" x="526" y="178" width="350" height="50" style="fill:none" />
+            <rect class="qt-shape" x="526" y="178" rx="0" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,178)">
               <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
               <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
@@ -345,7 +345,7 @@
             <text class="qt-txt" x="526" y="178" dx="8" dy="26" style="font-size:19.5px;fill:#000">Package</text>
           </g>
           <g class="qt-item">
-            <rect class="qt-shape" x="526" y="227" width="350" height="50" style="fill:none" />
+            <rect class="qt-shape" x="526" y="227" rx="0" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,227)">
               <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
               <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
@@ -415,9 +415,10 @@
               </g>
               <rect class="xy" x="860" y="278" width="12" height="36" rx="7" style="fill:#000;fill-opacity:0.46" />
             </g>
+            <rect id="shape-w-clip-b" x="529" y="498" width="380" height="12" style="display:none" />
           </g>
           <g class="qt-item">
-            <rect class="qt-shape" x="526" y="457" width="350" height="50" style="fill:none" />
+            <rect class="qt-shape" x="526" y="457" rx="0" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,457)">
               <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
               <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
@@ -426,7 +427,7 @@
             <text class="qt-txt" x="526" y="457" dx="8" dy="26" style="font-size:19.5px;fill:#000">CAIDs</text>
           </g>
           <g class="qt-item">
-            <rect class="qt-shape" x="526" y="506" width="350" height="50" style="fill:none" />
+            <rect class="qt-shape" x="526" y="506" rx="0" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,506)">
               <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
               <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
@@ -435,7 +436,7 @@
             <text class="qt-txt" x="526" y="506" dx="8" dy="26" style="font-size:19.5px;fill:#000">Flags</text>
           </g>
           <g class="qt-item">
-            <rect class="qt-shape" x="526" y="555" width="350" height="50" style="fill:none" />
+            <rect class="qt-shape" x="526" y="555" rx="0" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,555)">
               <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
               <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
@@ -444,7 +445,7 @@
             <text class="qt-txt" x="526" y="555" dx="8" dy="26" style="font-size:19.5px;fill:#000">Custom</text>
           </g>
           <g class="qt-item">
-            <rect class="qt-shape" x="526" y="604" width="350" height="50" style="fill:none" />
+            <rect class="qt-shape" x="526" y="604" rx="0" width="350" height="50" style="fill:none" />
             <g class="qt-fold" transform="matrix(1,0,0,1,526,604)">
               <rect x="1" y="0" width="290" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px)" />
               <rect x="317" y="30" width="32" height="5" style="fill:#666;stroke:#fff;stroke-width:3px;clip-path:inset(3px 3px 1px 2px)" />
@@ -467,6 +468,7 @@
         </g>
         <rect id="tbar-stroke" x="1" y="756" width="960" height="1.4" style="fill:#e0e1e1" />
       </g>
+      <rect id="shape-w-clip-a" x="33.5" y="118" width="97" height="2.4" style="display:none" />
     </g>
     <rect class="w-stroke" x="1" y="1" width="960" height="820" rx="15" style="fill:none;stroke:#c1c1c1;stroke-width:1px" />
     <rect class="w-shade" x="3" y="3" width="956" height="816" rx="15" style="fill:none;stroke:#fff;stroke-opacity:0.09;stroke-width:1px" />
@@ -488,15 +490,15 @@
       </g>
       <g class="t-ctrs-w" style="display:none">
         <rect x="1619" y="104" width="14.5" height="0.6" style="fill:none;stroke:#000;stroke-width:1px" />
-        <g transform="matrix(.99,0,0,.99,1687,110)">
+        <g transform="matrix(1.02,0,0,1.02,1687,110)">
           <g transform="rotate(-90)">
-            <rect x="0" y="0" rx="1" width="13.7" height="13.7" style="fill:none;stroke:#000;stroke-width:1.7px" />
+            <rect x="0" y="0" width="13.7" height="13.7" style="fill:none;stroke:#000;stroke-width:1.37px" />
           </g>
         </g>
         <g transform="matrix(.97,0,0,.97,1763,90)">
           <g transform="rotate(45)">
-            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:1px" />
-            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:1px" />
+            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:0.97px" />
+            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:0.97px" />
           </g>
         </g>
       </g>

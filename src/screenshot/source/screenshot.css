@@ -177,7 +177,7 @@
 
 .w .w-bg { fill: #f0f0f0 !important; stroke: #9bb3b3 !important; stroke-width: 1px !important; }
 .w .w-stroke { stroke: #1d3331 !important; stroke-width: 0.5px !important; }
-.w .t-bg { height: 56.5px; fill: #f7f7f7 !important; fill-opacity: 0.37; stroke: none !important; }
+.w .t-bg { height: 41.5px; fill: #f7f7f7 !important; fill-opacity: 0.37; stroke: none !important; clip-path: none !important; }
 
 .w.w10 .t-bg { height: 92.5px; fill: #fff !important; }
 
@@ -185,7 +185,7 @@
 #piconseditor .w .w-bg { x: 500px; y: 80px; width: 1300px; height: 1142px; }
 #channelbook .w#addchannel .w-bg, #wide .w#editservice .w-bg { stroke: #5c5c5c !important; filter: url(#modal-shadow-w) !important; }
 #channelbook .w#addchannel .w-stroke, #wide .w#editservice .w-stroke { stroke: #fff !important; stroke-opacity: 0.37; stroke-width: 1px !important; }
-#channelbook .w#addchannel .t-bg, #wide .w#editservice .t-bg { height: 59.5px; }
+#channelbook .w#addchannel .t-bg, #wide .w#editservice .t-bg { height: 44.5px; }
 
 .w #sb-bg, .w #tb-bg, .w #tb-corner .bg, .w #menu-bg, .w #ss-bg { fill: none !important; }
 .w #main-bg, .w #tree-tool .bg, .w #list-tool .bg { fill: #f0f0f0 !important; }
@@ -240,8 +240,13 @@
 .w #sb-stroke, .w #menu-stroke, .w #main-stroke { stroke-width: 2.2px !important; }
 .w #sb-stroke, #menu-stroke, .w #main-stroke { stroke: #d0d0d0 !important; }
 
-.w #tbar-bg { rx: 0 !important; fill: #f0f0f0 !important; }
+.w #tbar-bg { rx: 0 !important; fill: #f0f0f0 !important; clip-path: none !important; }
 .w #tbar-stroke { height: 1.2px; fill: #d0d0d0 !important; }
+
+.w #addchannel-tbar #tbar-bg { x: 2px; y: 582px; width: 1059px; height: 68px;  }
+.w #addchannel-tbar #tbar-stroke { x: 2px; width: 1059px; }
+.w #editservice-tbar #tbar-bg { x: 2px; y: 756px; width: 958px; height: 64px;  }
+.w #editservice-tbar #tbar-stroke { x: 2px; width: 958px; }
 
 #channelbook .w #ch-list .bg { fill: none !important; }
 
@@ -250,8 +255,8 @@
 /* safari bug: radius undefined :workaround: rx="1" style="rx:0" */
 
 .w .btn-bg { filter: none !important; }
-.w .btn-bg, .w .tb-button rect, .w .box-button .bg { rx: 3px !important; fill: #fff !important; stroke: #ababab !important; stroke-width: 1.2px !important; }
-.w .input-bg { rx: 3px !important; stroke: #ababab !important; stroke-width: 1.5px !important; clip-path: none !important; }
+.w .btn-bg, .w .tb-button rect, .w .box-button .bg { rx: 3px !important; fill: #fff !important; stroke: #b0b0b0 !important; stroke-width: 1.2px !important; }
+.w .input-bg { rx: 3px !important; stroke: #b0b0b0 !important; stroke-width: 1.2px !important; clip-path: none !important; }
 .w .find-h-bg { fill: #3facff !important; }
 
 .w.w10 .btn-bg, .w.w10 .tb-button rect, .w.w10 .box-button .bg { rx: 0px !important; fill: #e1e1e1 !important; stroke: #a3a3a3 !important; stroke-width: 1.2px !important; }
@@ -446,7 +451,7 @@
 .w .list .sbh .xy { x: 481px; y: 1003px; width: 775px; }
 
 .w .list .sbv { transform: translate(1px, -1px); }
-.w .list .sbv .bg { height: 607px; }
+.w .list .sbv .bg { y: 343px; height: 607px; }
 .w .list .sbv .xy { x: 1790px; y: 499px; height: 32px; }
 
 #piconseditor .w .list .sbv { transform: translate(-3px, 24px); }
@@ -460,11 +465,11 @@
 
 #channelbook .w #ch-start .sbv { transform: translate(-3px, 0); }
 #channelbook .w #ch-start .sbv .xy { x: 483px; y: 313px; height: 97px; }
-#channelbook .w #ch-end .sbv { transform: translate(-3px, 0); }
+#channelbook .w #ch-end .sbv { transform: translate(-4px, 0); }
 #channelbook .w #ch-end .sbv .xy { x: 1054px; y: 92px; height: 50px; }
 #channelbook .w #ch-end .sbh { transform: translate(0, -3px); }
 #channelbook .w #ch-end .sbh .xy { x: 520px; y: 574px; }
-#channelbook .w #ch-end .sbr { x: 1046px; y: 566px; width: 16.5px; }
+#channelbook .w #ch-end .sbr { x: 1045px; y: 566px; width: 16.5px; }
 
 #wide .w .qt-item .sbv { transform: translate(30px, -5px); }
 #wide .w .qt-item .sbv .bg { height: 226px; }
@@ -625,19 +630,23 @@
 
 #wide .w.w10 .gbox-bg, #wide .w.w10 .tab-item rect { rx: 0 !important; }
 
+/* edge bug: clip-path scaling */
+
+#wide .w #shape-w-clip-a { display: block !important; fill: #fff; }
+
 #wide .w #editservice-tabs { transform: translate(-331px, 13px); }
 #wide .w .tab-item { clip-path: none !important; }
 #wide .w .tab-divid { display: none !important; }
-#wide .w .tab-item rect { fill: #f0f0f0 !important; stroke: #ccc !important; stroke-width: 1.9px !important; filter: none !important; clip-path: inset(0.5px 0.5px 4.6px 2.3px); }
-#wide .w .tab-item.active rect { fill: #fff !important; clip-path: inset(0.5px 0.5px 4.6px); }
+#wide .w .tab-item rect { fill: #f0f0f0 !important; stroke: #ccc !important; stroke-width: 1.2px !important; filter: none !important; clip-path: none !important; }
+#wide .w .tab-item.active rect { fill: #fff !important; }
 #wide .w .tab-item text { letter-spacing: 0 !important; fill: #000 !important; }
 
-#wide .w .tab-item:nth-child(1) rect { x: 363.2px; y: 67.4px; rx: 4.2px !important; width: 98px; height: 42px; }
-#wide .w .tab-item:nth-child(1) text { transform: translate(68px, 5px); }
-#wide .w .tab-item:nth-child(2) rect { x: 460px; y: 70px; rx: 4.2px !important; width: 137px; height: 38px; }
-#wide .w .tab-item:nth-child(2) text { transform: translate(62px, 6.5px); }
-#wide .w .tab-item:nth-child(3) rect { x: 596px; y: 70px; rx: 4.2px !important; width: 110px; height: 38px; }
-#wide .w .tab-item:nth-child(3) text { transform: translate(61px, 6.5px); }
+#wide .w .tab-item:nth-child(1) rect { x: 363.4px; y: 67.4px; rx: 4.2px !important; width: 98px; height: 42.2px; }
+#wide .w .tab-item:nth-child(1) text { transform: translate(68.4px, 5px); }
+#wide .w .tab-item:nth-child(2) rect { x: 461.4px; y: 70px; rx: 4.2px !important; width: 137px; height: 38px; }
+#wide .w .tab-item:nth-child(2) text { transform: translate(63.4px, 6.5px); }
+#wide .w .tab-item:nth-child(3) rect { x: 598.4px; y: 70px; rx: 4.2px !important; width: 110px; height: 38px; }
+#wide .w .tab-item:nth-child(3) text { transform: translate(63.4px, 6.5px); }
 
 #wide .w .gbox-bg { rx: 1.7px !important; fill: #f9f9f9 !important; stroke: #d2d2d2 !important; stroke-width: 1.3px !important; }
 #wide .w .gbox-shape { fill: #fff !important; }
@@ -673,7 +682,7 @@
 #wide .w .gbox:nth-child(4) .fg-item:nth-child(2) .txt { transform: translate(9px, 1.5px); }
 
 #wide .w#editservice .input-bg { stroke-width: 1.6px !important; stroke-opacity: 1 !important; }
-#wide .w#editservice .btn-bg { stroke-width: 1.8px !important; }
+#wide .w#editservice .btn-bg { stroke-width: 1.6px !important; }
 
 #wide .w .gbox:nth-child(3) .fg-item:nth-child(2) > g { transform: translate(0, -3px); }
 #wide .w .gbox:nth-child(3) .input-bg { height: 39px; }
@@ -698,9 +707,9 @@
 #wide .w.w10 .gbox:nth-child(3) .btn-txt { transform: translate(-13px, 6px); }
 #wide .w.w10 .gbox:nth-child(4) .btn-txt { transform: translate(-5px, 2px); }
 
-#wide .w #editservice-custom .btn-bg { width: 234px; height: 38px; stroke: #41adff !important; stroke-width: 1.5px !important; transform: translate(9px, 1px); }
+#wide .w #editservice-custom .btn-bg { width: 234px; height: 38px; stroke: #41adff !important; stroke-width: 1.6px !important; transform: translate(9px, 1px); }
 #wide .w #editservice-custom .btn-txt { fill: #000 !important; transform: translate(71px, 8px); }
-#wide .w #editservice-transponder .btn-bg { fill: #fff !important; stroke-width: 1.5px !important; transform: translate(3.5px, 1px); }
+#wide .w #editservice-transponder .btn-bg { fill: #fff !important; stroke-width: 1.6px !important; transform: translate(3.5px, 1px); }
 #wide .w #editservice-transponder .btn-txt { transform: translate(48.5px, 7px); }
 
 #wide .w.w10 #editservice-custom .btn-bg { width: 234px; height: 33px; fill: none !important; stroke: #1d66eb !important; stroke-width: 3px !important; transform: translate(9px, 2px); }
@@ -708,10 +717,23 @@
 #wide .w.w10 #editservice-transponder .btn-bg { fill: #e1e1e1 !important; stroke-width: 1.5px !important; transform: translate(3.5px, 1px); }
 #wide .w.w10 #editservice-transponder .btn-txt { transform: translate(48.5px, 5px); }
 
-#wide .w:not(.w10) .qt-fold rect { fill: #6b6b6b !important; stroke: #fff !important; stroke-width: 4px !important; clip-path: inset(4px 4px 3px 4px) !important; }
-#wide .w:not(.w10) .qt-fold rect:nth-child(1) { width: 327px; }
-#wide .w:not(.w10) .qt-fold rect:nth-child(2) { x: 353px; }
-#wide .w:not(.w10) .qt-fold rect:nth-child(3) { x: 230px; y: -231px; }
+/* edge bug: clip-path scaling */
+
+#wide .w #shape-w-clip-b { display: block !important; fill: #f9f9f9; }
+
+#wide .w .qt-fold { display: none !important; }
+#wide .w .qt-shape { x: 530px; rx: 3px; width: 378px; height: 38px; fill: #f0f0f0 !important; stroke: #a3a3a3; stroke-width: 1.6px; }
+#wide .w .qt-txt { transform: translate(2px, 2.5px); }
+
+#wide .w.w10 .qt-shape { width: 382px; height: 40px; fill: #f0f0f0 !important; stroke: #a3a3a3; stroke-width: 3px; clip-path: inset(3px 0.5px 0.5px 3px); }
+#wide .w.w10 .qt-txt { transform: translate(1px, 2.5px); }
+
+#wide .qt.w .qt-fold rect { fill: #6b6b6b !important; stroke: #fff !important; stroke-width: 4px !important; clip-path: inset(4px 4px 3px 4px) !important; }
+#wide .qt.w .qt-fold rect:nth-child(1) { width: 327px; }
+#wide .qt.w .qt-fold rect:nth-child(2) { x: 353px; }
+#wide .qt.w .qt-fold rect:nth-child(3) { x: 230px; y: -231px; }
+
+#wide .qt.w .qt-txt { transform: translate(1px, 1.5px); }
 
 #wide .w .qt-item:nth-child(2) { transform: translate(0, -1px); }
 #wide .w .qt-item:nth-child(3) { transform: translate(0, 48px); }
@@ -719,7 +741,7 @@
 #wide .w .qt-item:nth-child(5) { transform: translate(0, 45px); }
 #wide .w .qt-item:nth-child(6) { transform: translate(0, 44px); }
 
-#wide .w .qt-inner { transform: translate(0, -5px); clip-path: inset(0 0 25.5px) !important; }
+#wide .w .qt-inner { transform: translate(0, -5px); clip-path: none !important; }
 #wide .w .qt-inner .fg-item:nth-child(2) { transform: translate(-20px, -2px); }
 #wide .w .qt-inner .fg-item:nth-child(3) { transform: translate(-20px, 2px); }
 #wide .w .qt-inner .fg-item:nth-child(4) { transform: translate(-20px, 7px); }
@@ -734,10 +756,6 @@
 #wide .w .qt-item .input-bg { width: 74px; height: 39px; }
 #wide .w .qt-item .input-txt { transform: translate(0, 4px); }
 #wide .w .qt-item .input-xr { transform: translate(2px, 5px); }
-
-#wide .w.w10 .qt-fold { display: none !important; }
-#wide .w.w10 .qt-shape { width: 382px; height: 40px; fill: #f0f0f0 !important; stroke: #a3a3a3; stroke-width: 3px; clip-path: inset(3px 0.5px 0.5px 3px); }
-#wide .w.w10 .qt-txt { transform: translate(1px, 2.5px); }
 
 #wide .w.w10 .qt-inner { transform: translate(0, 0); clip-path: inset(0 0 3.5px) !important; }
 #wide .w.w10 .qt-inner .fg-item { transform: translate(-20px, -2px) !important; }
@@ -768,8 +786,6 @@
 
 #wide .w:not(.w10) .gbox-shape { display: none; }
 
-#wide .w:not(.w10) .qt-txt { transform: translate(1px, 1.5px); }
-
 #wide .w:not(.w10) .qt-item:nth-child(2) { transform: translate(0, -4px); }
 #wide .w:not(.w10) .qt-item:nth-child(3) { transform: translate(0, 46px); }
 #wide .w:not(.w10) .qt-item:nth-child(4) { transform: translate(0, 42px); }
@@ -777,6 +793,8 @@
 #wide .w:not(.w10) .qt-item:nth-child(6) { transform: translate(0, 34px); }
 
 #piconseditor .w .list-view .focused { y: 578px; }
+
+#piconseditor .w .list-items g:nth-child(3) .img text:first-of-type { font-family: 'Times New Roman', cursive, serif !important; font-style: italic; }
 
 
 .dw #statusbar .divid { display: none; }
@@ -1027,9 +1045,11 @@
 
 #wide .w10.dw #editservice-tabs { transform: translate(-331.3px, 13px);  }
 
+#wide .dw #shape-w-clip-a { fill: #414141; }
+
 #wide .dw .tab-item text { fill: #fff !important; }
-#wide .dw .tab-item rect { fill: #303030 !important; stroke: #4e4d4d !important; stroke-opacity: 1 !important; stroke-width: 3px !important; clip-path: inset(1px 1px 5.2px 3px); }
-#wide .dw .tab-item.active rect { fill: #414141 !important; clip-path: inset(1px 1px 5.2px); }
+#wide .dw .tab-item rect { fill: #303030 !important; stroke: #4e4d4d !important; stroke-opacity: 1 !important; clip-path: none !important; }
+#wide .dw .tab-item.active rect { fill: #414141 !important; }
 
 #wide .dw .gbox-bg { fill: #383838 !important; stroke: #444 !important; stroke-opacity: 1 !important; stroke-width: 1.8px !important; }
 
@@ -1048,11 +1068,16 @@
 #wide .w10.dw .gbox:nth-child(4) .btn-bg { fill: none !important; }
 #wide .w10.dw #editservice-transponder .btn-bg { fill: none !important; }
 
-#wide .dw .qt-inner .bg { fill: #2d2d2d !important; }
+#wide .dw .qt-inner .bg { fill: #3c3c3c !important; }
 #wide .dw .qt-item .input-bg { stroke-width: 1.8px !important; }
 
-#wide .dw:not(.w10) .qt-fold rect { fill: #1b1b1b !important; stroke: #787878 !important; }
+#wide .dw #shape-w-clip-b { fill: #393939; }
 
+#wide .dw .qt-shape { fill: #3c3c3c !important; stroke: #787878 !important; }
+
+#wide .qt.dw .qt-fold rect { fill: #1b1b1b !important; stroke: #787878 !important; }
+
+#wide .w10.dw .qt-inner .bg { fill: #2d2d2d !important; }
 #wide .w10.dw .qt-shape { width: 376px; height: 33px; fill: #2d2d2d !important; stroke: #5a5a5a !important; stroke-width: 2.6px; transform: translate(5px, 4px); clip-path: none; }
 #wide .w10.dw .qt-txt { transform: translate(1px, 1.5px); }
 

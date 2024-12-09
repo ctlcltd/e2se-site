@@ -174,15 +174,15 @@
       </g>
       <g class="t-ctrs-w" style="display:none">
         <rect x="1619" y="104" width="14.5" height="0.6" style="fill:none;stroke:#000;stroke-width:1.1px" />
-        <g transform="matrix(.99,0,0,.99,1687,110)">
+        <g transform="matrix(1.02,0,0,1.02,1687,110)">
           <g transform="rotate(-90)">
-            <rect x="0" y="0" rx="1" width="13.7" height="13.7" style="fill:none;stroke:#000;stroke-width:1.7px" />
+            <rect x="0" y="0" width="13.7" height="13.7" style="fill:none;stroke:#000;stroke-width:1.37px" />
           </g>
         </g>
         <g transform="matrix(.97,0,0,.97,1763,90)">
           <g transform="rotate(45)">
-            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:1px" />
-            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:1px" />
+            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:0.97px" />
+            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:0.97px" />
           </g>
         </g>
       </g>

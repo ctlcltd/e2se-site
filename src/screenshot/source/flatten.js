@@ -73,6 +73,10 @@ function flatten() {
   }
   if (/w/.test(classname)) {
     fix_w_ttext();
+
+    if (svg.getAttribute('id') === 'wide') {
+      fix_w_editservice();
+    }
   }
   if (/f/.test(classname)) {
     if (svg.getAttribute('id') === 'channelbook' || svg.getAttribute('id') === 'wide') {
@@ -661,6 +665,26 @@ function fix_w_ttext() {
       txt.removeAttribute('class');
     }
   }
+
+  root.removeAttribute('class');
+}
+
+
+// 
+// fix editservice  win
+// 
+// editservice-tabs, editservice-frame
+
+function fix_w_editservice() {
+
+  root.setAttribute('class', root.getAttribute('_class'));
+
+  const inner = svg.querySelector('g[_id="editservice-inner"]');
+  const tabs = svg.querySelector('g[_id="editservice-tabs"]');
+  const frame = svg.querySelector('rect[_id="editservice-frame"]');
+
+  tabs.remove();
+  inner.insertBefore(tabs, frame);
 
   root.removeAttribute('class');
 }
