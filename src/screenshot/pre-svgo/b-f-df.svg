@@ -226,7 +226,7 @@
                 
                 <rect x="494.5" y="1008" width="900" height="22" rx="0" style="fill:url(#bhf);fill-opacity:0.7;stroke:#4f4f4e;stroke-opacity:0.8;stroke-width:1.2px"/>
               </g>
-              <rect x="1775" y="1006" width="26" height="26" style="fill:#1d1c1c;stroke-width:2px;clip-path:inset(0 4.2px 2.8px 0px)"/> 
+              <rect x="1775" y="1006" width="26" height="24.5" style="fill:#1d1c1c;stroke-width:2px;clip-path:inset(0 2px 2px 0px)"/> 
             
             
               <rect x="469" y="1031" width="1330" height="65" style="fill:#222020"/>
@@ -288,8 +288,8 @@
   <g transform="matrix(1.41,0,0,1.41,315,182)" style="font-family:'Sans-Serif',system-ui,sans-serif">
     <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:#222020;stroke:#acc6c3;stroke-width:1px;filter:url(#mlf)"/>
     
-      <rect x="1" y="1" width="1061" height="46.1" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
-      <rect x="1" y="48.8" width="1063" height="46.1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0 1px)"/>
+      <rect x="0" y="1" width="1062" height="46.1" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
+      <rect x="1" y="48.8" width="1059" height="1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0 1px)"/>
       <text x="-1" y="3.5" dx="529" dy="28" text-anchor="middle" style="font-family:'Sans-Serif',system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#aaa">Add Channel</text>
       
       
@@ -407,7 +407,7 @@
             
           
           <g transform="matrix(0.994,0,0,0.994,-3,4.5)" style="clip-path:inset(0 0px 0px -2px);filter:url(#bkf)">
-            <rect x="1048" y="75" width="23" height="511" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0 1px 0px 0px)"/>
+            <rect x="1048" y="75" width="23" height="505" style="fill:#1d1c1c;stroke:#2e2d2c;stroke-width:2px;clip-path:inset(0 1px 0px 0px)"/>
             <rect x="1048.5" y="73.5" width="22" height="22" style="fill:url(#bif);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#bkf)" rx="0"/>
             
               
@@ -415,10 +415,10 @@
                 <use href="#afl" style="fill:#d3d2d2"/>
               </g>
             
-            <rect x="1048.5" y="537" width="22" height="22" style="fill:url(#bif);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#bkf)" rx="0"/>
+            <rect x="1048.5" y="536" width="22" height="22" style="fill:url(#bif);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#bkf)" rx="0"/>
             
               
-              <g transform="matrix(0.22,0,0,0.22,1052,542)">
+              <g transform="matrix(0.22,0,0,0.22,1052,541)">
                 <use href="#afl" style="fill:#d3d2d2"/>
               </g>
             
@@ -429,24 +429,24 @@
             <rect x="500.5" y="568.5" width="22" height="22" style="fill:url(#bhf);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#bkf)" rx="0"/>
             
               
-              <g transform="matrix(0,0.22,-0.22,0,518,572.5)">
+              <g transform="matrix(0,0.22,-0.22,0,517.5,572.5)">
                 <use href="#afl" style="fill:#d3d2d2"/>
               </g>
             
             <rect x="1018.5" y="568.5" width="22" height="22" style="fill:url(#bhf);stroke:#4f4f4e;stroke-width:1.2px;filter:url(#bkf)" rx="0"/>
             
               
-              <g transform="matrix(0,0.22,0.22,0,1023,572.5)">
+              <g transform="matrix(0,0.22,0.22,0,1023.5,572.5)">
                 <use href="#afl" style="fill:#d3d2d2"/>
               </g>
             
             <rect x="525.5" y="568.5" width="204" height="22" rx="0" style="fill:url(#bhf);fill-opacity:1;stroke:#4f4f4e;stroke-opacity:0.8;stroke-width:1.2px"/>
           </g>
-          <rect x="1039" y="561" width="26" height="26" style="fill:#1d1c1c;stroke-width:2px;clip-path:inset(0 4.2px 2.8px 0px)"/>
+          <rect x="1039.5" y="561.5" width="22.5" height="24.5" style="fill:#1d1c1c;stroke-width:2px;clip-path:inset(0 2px 2px 0px)"/>
         
       
       
-        <rect x="1" y="570" width="1061" height="80" rx="0" style="fill:#171717;clip-path:inset(15px 0px 0px)"/>
+        <rect x="2" y="584" width="1059" height="66" rx="0" style="fill:#171717;clip-path:none"/>
         
           <g transform="matrix(0.9,0,0,0.9,13,606.5)">
             <rect x="1.5" y="3" width="21" height="21" rx="0" style="fill:#131312;stroke:#4e4d4d;stroke-opacity:1;stroke-width:2.3px"/>
@@ -465,7 +465,7 @@
           </g>
           <text x="955" y="592" dx="28" dy="34" style="font-size:23px;fill:#fff">Add</text>
         
-        <rect x="1" y="584" width="1061" height="1.6" style="fill:#131312"/>
+        <rect x="2" y="584" width="1059" height="1.6" style="fill:#131312"/>
       
     
     <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:none;stroke:#000;stroke-width:1.8px"/>

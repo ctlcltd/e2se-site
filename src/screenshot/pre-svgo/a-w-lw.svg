@@ -97,7 +97,7 @@
   <g style="font-family:'Segoe UI',Tahoma,sans-serif">
     <rect x="80" y="80" width="1720" height="1142" rx="0" style="fill:#f0f0f0;stroke:#9bb3b3;stroke-width:1px"/>
     
-      <rect x="82" y="82" width="1716" height="56.5" rx="0" style="fill:#f7f7f7;fill-opacity:0.37;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
+      <rect x="82" y="82" width="1716" height="41.5" rx="0" style="fill:#f7f7f7;fill-opacity:0.37;stroke:none;stroke-width:1px;clip-path:none"/>
       
       <text x="82" y="83" dx="45" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:18.6px;letter-spacing:-0.2px;fill:#000">e2 SAT Editor</text>
       
@@ -106,15 +106,15 @@
       
       
         <rect x="1619" y="104" width="14.5" height="0.6" style="fill:none;stroke:#000;stroke-width:1.1px"/>
-        <g transform="matrix(0.99,0,0,0.99,1687,110)">
+        <g transform="matrix(1.02,0,0,1.02,1687,110)">
           <g transform="matrix(0,-1,1,0,0,0)">
-            <rect x="0" y="0" rx="1" width="13.7" height="13.7" style="fill:none;stroke:#000;stroke-width:1.7px"/>
+            <rect x="0" y="0" width="13.7" height="13.7" style="fill:none;stroke:#000;stroke-width:1.37px"/>
           </g>
         </g>
         <g transform="matrix(0.97,0,0,0.97,1763,90)">
           <g transform="matrix(0.707,0.707,-0.707,0.707,0,0)">
-            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:1px"/>
-            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:1px"/>
+            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:0.97px"/>
+            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:0.97px"/>
           </g>
         </g>
       
@@ -131,7 +131,7 @@
         
           
           
-            <rect x="89" y="186" width="105" height="48" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px"/>
+            <rect x="89" y="186" width="105" height="48" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px"/>
             <g transform="matrix(0.26,0,0,0.26,92,202)">
               <use href="#aad" style="fill:#505050" x="8" y="1"/>
             </g>
@@ -253,7 +253,7 @@
           
           
             
-              <rect x="1120" y="271" width="100" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+              <rect x="1120" y="271" width="100" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;filter:none"/>
               
                 <rect x="1212.5" y="275" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
@@ -295,7 +295,7 @@
               <text x="80" y="337" dx="10" dy="33" style="font-weight:bold;font-size:19px;fill:#000">Services</text>
               
                 
-                  <rect x="422" y="340" width="38" height="32" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px"/>
+                  <rect x="422" y="340" width="38" height="32" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px"/>
                   <g transform="matrix(0.38,0,0,0.38,429,343)">
                     <use href="#snu" style="fill:#505050"/>
                   </g>
@@ -374,7 +374,7 @@
                 <text x="95" y="1054" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Bouquet</text>
               
               
-                <rect x="338" y="1061" width="110" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                <rect x="338" y="1061" width="110" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;filter:none"/>
                 <g transform="matrix(0.38,0,0,0.38,346,1065)">
                   <use href="#slh" style="fill:#545454" x="16" y="4"/>
                 </g>
@@ -395,7 +395,7 @@
             <text x="467" y="337" dx="10" dy="32" style="font-weight:bold;font-size:19px;fill:#000">Channels</text>
             
               
-                <rect x="1757" y="340" width="38" height="32" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px"/>
+                <rect x="1757" y="340" width="38" height="32" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px"/>
                 <g transform="matrix(0.38,0,0,0.38,1764,343)">
                   <use href="#lju" style="fill:#505050"/>
                 </g>
@@ -465,7 +465,7 @@
               
             
             
-              <rect x="1781" y="387" width="17" height="607" style="fill:#f0f0f0"/>
+              <rect x="1781" y="389" width="17" height="607" style="fill:#f0f0f0"/>
               
               
               
@@ -485,7 +485,7 @@
           
             <rect x="469" y="996" width="1329" height="52" style="fill:#fafafa"/>
             
-              <rect x="479" y="1003" width="110" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+              <rect x="479" y="1003" width="110" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;filter:none"/>
               <text x="474" y="1007" dx="12" dy="22" style="font-size:19.5px;fill:#000">Name</text>
               
                 <rect x="569.5" y="1009" width="1329" height="52" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
@@ -499,7 +499,7 @@
               
             
             
-              <rect x="590" y="1003" width="352" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.5px;clip-path:none"/>
+              <rect x="590" y="1003" width="352" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;clip-path:none"/>
               <text x="590" y="1006" dx="4" dy="23" style="font-size:19px;fill:#000">Nasa</text>
             
             
@@ -551,18 +551,18 @@
                 <text x="870" y="1054" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Service</text>
               </g>
               
-                <rect x="998" y="1062" width="118" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                <rect x="998" y="1062" width="118" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;filter:none"/>
                 <text x="992" y="1065.5" dx="22" dy="22" style="font-size:19.5px;fill:#000" width="118">Reference</text>
               
               
                 <rect x="1126" y="1065" width="1.2" height="30" style="fill:#d0d0d0"/>
               
               <g style="opacity:0.45">
-                <rect x="1135" y="1062" width="122" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                <rect x="1135" y="1062" width="122" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;filter:none"/>
                 <text x="1120" y="1065.5" dx="24" dy="22" style="font-size:19.5px;fill:#000" width="122">Drag&amp;Drop</text>
               </g>
               
-                <rect x="1673" y="1061" width="110" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                <rect x="1673" y="1061" width="110" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;filter:none"/>
                 <g transform="matrix(0.38,0,0,0.38,1680,1065)">
                   <use href="#slh" style="fill:#545454" x="16" y="4"/>
                 </g>
@@ -592,7 +592,7 @@
       
     
     
-      <rect x="82" y="1172" width="1716" height="48" rx="0" style="fill:none;clip-path:inset(15px 0px 0px)"/>
+      
       <rect x="80" y="1187" width="1720" height="34" style="fill:none;stroke:#d0d0d0;stroke-width:2.2px;clip-path:inset(0 2px 2px)"/>
       <text x="80" y="1184" dx="29" dy="29" style="font-size:19px;fill:#000"><tspan>Channels: 143</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
       

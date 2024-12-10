@@ -103,7 +103,7 @@
             
             
               
-                <rect x="1125" y="220" width="100" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                <rect x="1125" y="220" width="100" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;filter:none"/>
                 
                   <rect x="1217.5" y="224" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                   
@@ -144,7 +144,7 @@
               <text x="467" y="286" dx="10" dy="32" style="font-weight:bold;font-size:19px;fill:#000">Channels</text>
               
                 
-                  <rect x="1757" y="289" width="38" height="32" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px"/>
+                  <rect x="1757" y="289" width="38" height="32" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px"/>
                   <g transform="matrix(0.38,0,0,0.38,1764,292)">
                     <use href="#lcu" style="fill:#505050"/>
                   </g>
@@ -178,7 +178,7 @@
                 
               
               
-                <rect x="1781" y="336" width="17" height="692" style="fill:#f0f0f0"/>
+                <rect x="1781" y="338" width="17" height="692" style="fill:#f0f0f0"/>
                 
                 
                 
@@ -225,18 +225,18 @@
                   <text x="848" y="1034" dx="28" dy="33" style="font-weight:bold;font-size:21px;fill:#000">Service</text>
                 </g>
                 
-                  <rect x="974" y="1042" width="118" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                  <rect x="974" y="1042" width="118" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;filter:none"/>
                   <text x="968" y="1045.5" dx="22" dy="22" style="font-size:19.5px;fill:#000" width="118">Reference</text>
                 
                 
                   <rect x="1102" y="1045" width="1.2" height="30" style="fill:#d0d0d0"/>
                 
                 <g style="opacity:0.45">
-                  <rect x="1110" y="1042" width="122" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                  <rect x="1110" y="1042" width="122" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;filter:none"/>
                   <text x="1095" y="1045.5" dx="25" dy="22" style="font-size:19.5px;fill:#000" width="122">Drag&amp;Drop</text>
                 </g>
                 
-                  <rect x="1673" y="1041" width="110" height="36" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;filter:none"/>
+                  <rect x="1673" y="1041" width="110" height="36" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px;filter:none"/>
                   <g transform="matrix(0.38,0,0,0.38,1680,1045)">
                     <use href="#sdh" style="fill:#545454" x="16" y="4"/>
                   </g>
@@ -255,7 +255,7 @@
   <g transform="matrix(1.41,0,0,1.41,314,186)" style="font-family:'Segoe UI',Tahoma,sans-serif">
     <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:#f0f0f0;stroke:#5c5c5c;stroke-width:1px;filter:url(#mhw)"/>
     
-      <rect x="2" y="2" width="1059" height="59.5" rx="0" style="fill:#f7f7f7;fill-opacity:0.37;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
+      <rect x="2" y="2" width="1059" height="44.5" rx="0" style="fill:#f7f7f7;fill-opacity:0.37;stroke:none;stroke-width:1px;clip-path:none"/>
       
       <text x="-487" y="2.5" dx="529" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:18.6px;letter-spacing:-0.2px;fill:#000">Add Channel</text>
       
@@ -265,8 +265,8 @@
       
         <g transform="matrix(0.97,0,0,0.97,1039,9)">
           <g transform="matrix(0.707,0.707,-0.707,0.707,0,0)">
-            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:1px"/>
-            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:1px"/>
+            <rect x="0" y="9.3" width="19.7" height="1" style="fill:none;stroke:#000;stroke-width:0.97px"/>
+            <rect x="9.3" y="0" width="1" height="19.7" style="fill:none;stroke:#000;stroke-width:0.97px"/>
           </g>
         </g>
       
@@ -275,7 +275,7 @@
     
       <g transform="matrix(0.94,0,0,0.94,947,45)">
         
-          <rect x="-16" y="4" width="136" height="26" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px"/>
+          <rect x="-16" y="4" width="136" height="26" rx="3" style="fill:#fff;stroke:#b0b0b0;stroke-width:1.2px"/>
           
             
             
@@ -366,12 +366,12 @@
             
           
           
-            <rect x="1045" y="75" width="17" height="511" style="fill:#f0f0f0"/>
+            <rect x="1044" y="75" width="17" height="511" style="fill:#f0f0f0"/>
             
             
             
             
-            <rect x="1052" y="92" width="3.5" height="50" rx="4" style="fill:#c8c8c8;fill-opacity:1"/>
+            <rect x="1051" y="92" width="3.5" height="50" rx="4" style="fill:#c8c8c8;fill-opacity:1"/>
           
           
             <rect x="502" y="565" width="559" height="17" style="fill:#f0f0f0"/>
@@ -381,11 +381,11 @@
             
             <rect x="520" y="572" width="257" height="3.5" rx="4" style="fill:#c8c8c8;fill-opacity:1"/>
           
-          <rect x="1046" y="566" width="16.5" height="17" style="fill:none;stroke:#c8c8c8;stroke-width:1.5px;clip-path:inset(0 1.5px 1.5px 0px)"/>
+          <rect x="1045" y="566" width="16.5" height="17" style="fill:none;stroke:#c8c8c8;stroke-width:1.5px;clip-path:inset(0 1.5px 1.5px 0px)"/>
         
       
       
-        <rect x="1" y="568" width="1061" height="82" rx="0" style="fill:#f0f0f0;clip-path:inset(15px 0px 0px)"/>
+        <rect x="2" y="582" width="1059" height="68" rx="0" style="fill:#f0f0f0;clip-path:none"/>
         
           <g transform="matrix(0.9,0,0,0.9,14,605)">
             <rect x="3" y="3" width="19.5" height="20" rx="1" style="fill:#fff;stroke:#949494;stroke-opacity:1;stroke-width:1.8px"/>
@@ -404,7 +404,7 @@
           </g>
           <text x="960" y="592" dx="28" dy="34" style="font-size:23px;fill:#000">Add</text>
         
-        <rect x="1" y="582" width="1061" height="1.2" style="fill:#d0d0d0"/>
+        <rect x="2" y="582" width="1059" height="1.2" style="fill:#d0d0d0"/>
       
     
     <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:none;stroke:#fff;stroke-opacity:0.37;stroke-width:1px"/>

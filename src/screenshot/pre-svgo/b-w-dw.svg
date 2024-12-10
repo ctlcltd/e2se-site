@@ -178,7 +178,7 @@
                 
               
               
-                <rect x="1781" y="336" width="17" height="692" style="fill:#1e1e1e"/>
+                <rect x="1781" y="338" width="17" height="692" style="fill:#1e1e1e"/>
                 
                 
                 
@@ -255,7 +255,7 @@
   <g transform="matrix(1.41,0,0,1.41,314,186)" style="font-family:'Segoe UI',Tahoma,sans-serif">
     <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:#1e1e1e;stroke:#303030;stroke-width:1px;filter:url(#mhw)"/>
     
-      <rect x="2" y="2" width="1059" height="59.5" rx="0" style="fill:#222;fill-opacity:0.74;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
+      <rect x="2" y="2" width="1059" height="44.5" rx="0" style="fill:#222;fill-opacity:0.74;stroke:none;stroke-width:1px;clip-path:none"/>
       
       <text x="-487" y="2.5" dx="529" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:18.6px;letter-spacing:-0.2px;fill:#fff">Add Channel</text>
       
@@ -366,12 +366,12 @@
             
           
           
-            <rect x="1045" y="75" width="17" height="511" style="fill:#282828"/>
+            <rect x="1044" y="75" width="17" height="511" style="fill:#282828"/>
             
             
             
             
-            <rect x="1052" y="92" width="3.5" height="50" rx="4" style="fill:#606060;fill-opacity:1"/>
+            <rect x="1051" y="92" width="3.5" height="50" rx="4" style="fill:#606060;fill-opacity:1"/>
           
           
             <rect x="502" y="565" width="559" height="17" style="fill:#282828"/>
@@ -381,11 +381,11 @@
             
             <rect x="520" y="572" width="257" height="3.5" rx="4" style="fill:#606060;fill-opacity:1"/>
           
-          <rect x="1046" y="566" width="16.5" height="17" style="fill:none;stroke:#060606;stroke-width:1.5px;clip-path:inset(0 1.5px 1.5px 0px)"/>
+          <rect x="1045" y="566" width="16.5" height="17" style="fill:none;stroke:#060606;stroke-width:1.5px;clip-path:inset(0 1.5px 1.5px 0px)"/>
         
       
       
-        <rect x="1" y="568" width="1061" height="82" rx="0" style="fill:#1e1e1e;clip-path:inset(15px 0px 0px)"/>
+        <rect x="2" y="582" width="1059" height="68" rx="0" style="fill:#1e1e1e;clip-path:none"/>
         
           <g transform="matrix(0.9,0,0,0.9,14,605)">
             <rect x="1.5" y="1" width="22.5" height="23" rx="1" style="fill:#3c3c3c;stroke:#101010;stroke-opacity:1;stroke-width:2.4px"/>
@@ -404,7 +404,7 @@
           </g>
           <text x="960" y="592" dx="28" dy="34" style="font-size:23px;fill:#fff;opacity:0.96">Add</text>
         
-        <rect x="1" y="582" width="1061" height="1.2" style="fill:#000"/>
+        <rect x="2" y="582" width="1059" height="1.2" style="fill:#000"/>
       
     
     <rect x="1" y="1" width="1061" height="650" rx="0" style="fill:none;stroke:#677073;stroke-opacity:0.74;stroke-width:1px"/>

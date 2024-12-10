@@ -129,7 +129,7 @@
     
       <rect x="82" y="129" width="1716" height="36" style="fill:#222020"/>
       <text x="85.5" y="130.5" dx="12" dy="24" style="font-size:20px;word-spacing:16px;fill:#fff;fill-opacity:0.9">File Edit Find Tools Editor Window Help</text>
-      <rect x="81" y="165.5" width="1718" height="1" style="fill:#e2e2e2;stroke:#1d1c1c"/>
+      <rect x="81" y="165.5" width="1717" height="1" style="fill:#e2e2e2;stroke:#1d1c1c"/>
     
     
       
@@ -516,7 +516,7 @@
               
               <rect x="498.5" y="997.5" width="900" height="22" rx="0" style="fill:url(#brf);fill-opacity:0.7;stroke:#4f4f4e;stroke-opacity:0.8;stroke-width:1.2px"/>
             </g>
-            <rect x="1774.5" y="968" width="26" height="26" style="fill:#1d1c1c;stroke-width:2px;clip-path:inset(0 4.2px 2.8px 0px)"/>
+            <rect x="1774.5" y="968.5" width="22.5" height="24.5" style="fill:#1d1c1c;stroke-width:2px;clip-path:inset(0 2px 2px 0px)"/>
           
           
             <rect x="469" y="991" width="1329" height="52" style="fill:#232222"/>
@@ -611,7 +611,7 @@
       
     
     
-      <rect x="82" y="1109" width="1716" height="73" style="fill:#222020;stroke:#4e4d4d;clip-path:inset(0.5px 1px 0 0px)"/>
+      <rect x="82" y="1109" width="1716" height="73" style="fill:#222020;stroke:#4e4d4d;clip-path:inset(0.5px 1px 0)"/>
       
         
           <text x="95" y="1120" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Tools</text>
@@ -628,7 +628,7 @@
       
     
     
-      <rect x="82" y="1169" width="1716" height="51" rx="0" style="fill:#222020;clip-path:inset(15px 0px 0px)"/>
+      <rect x="82" y="1184" width="1716" height="36.4" rx="0" style="fill:#222020;clip-path:none"/>
       <rect x="80" y="1184" width="1720" height="37" style="fill:none;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(0 2px 37.3px)"/>
       <text x="85" y="1181" dx="29" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Channels: 143</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
       

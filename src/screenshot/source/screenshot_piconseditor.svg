@@ -526,8 +526,8 @@
                   <g class="img" transform="matrix(0.21,0,0,0.21,1385,634)">
                     <rect x="0" y="0" width="462" height="120" rx="48" style="fill:#771" />
                     <g style="font-family:Arial,Helvetica,sans-serif;font-size:96px">
-                      <text class="color" x="32" y="0" dy="96" style="fill:#fff;stroke:#fff;stroke-width:6px" transform="matrix(0.9,0,0,1,0,0)">SERIAL</text>
-                      <text class="color" x="412" y="0" dy="96" style="letter-spacing:8px;fill:#fff;stroke:#fff;stroke-width:6px" transform="matrix(0.8,0,0,1,0,-0.9)">TV</text>
+                      <text class="color" x="32" y="0" dx="171" dy="96" text-anchor="middle" style="fill:#fff;stroke:#fff;stroke-width:6px" transform="matrix(0.9,0,0,1,0,0)">SERIAL</text>
+                      <text class="color" x="412" y="0" dx="71" dy="96" text-anchor="middle" style="letter-spacing:8px;fill:#fff;stroke:#fff;stroke-width:6px" transform="matrix(0.8,0,0,1,0,-0.9)">TV</text>
                     </g>
                   </g>
                   <text class="txt" x="1324" y="701" dx="106" dy="18" text-anchor="middle" style="font-size:18px">Serial TV</text>

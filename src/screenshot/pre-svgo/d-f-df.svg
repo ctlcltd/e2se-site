@@ -105,8 +105,8 @@
   <g transform="matrix(1.19,0,0,1.19,102,161)" style="font-family:'Sans-Serif',system-ui,sans-serif">
     <rect x="1" y="1" width="960" height="820" rx="0" style="fill:#222020;stroke:#acc6c3;stroke-width:1px;filter:url(#mtf)"/>
     
-      <rect x="1" y="1" width="960" height="46.1" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
-      <rect x="1" y="48.8" width="962" height="46.1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0 1px)"/>
+      <rect x="0" y="1" width="961" height="46.1" rx="0" style="fill:#3a3a3a;stroke:#131312;stroke-width:2px;clip-path:inset(1px 1.5px 0)"/>
+      <rect x="1" y="48.8" width="958" height="1" style="fill:none;stroke:#222020;stroke-width:2px;clip-path:inset(0 1px)"/>
       <text x="-1" y="3.5" dx="478" dy="28" text-anchor="middle" style="font-family:'Sans-Serif',system-ui,sans-serif;font-weight:bold;font-size:19px;fill:#aaa">Edit Service</text>
       
       
@@ -124,16 +124,16 @@
       <rect x="33" y="124" width="894" height="601" rx="0" style="fill:#363635;fill-opacity:1;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:1.8px"/>
       
         <g style="clip-path:none">
-          <rect x="32" y="79.5" width="106" height="48" rx="3" style="fill:#363635;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3.8px;clip-path:inset(1.5px 1.5px 4.2px)"/>
-          <text x="38.5" y="87.5" dx="46" dy="22" text-anchor="middle" style="font-size:19.5px;letter-spacing:normal;fill:#fff">Service</text>
+          <rect x="33" y="80.5" width="106" height="48" rx="3" style="fill:#363635;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:1.8px;clip-path:inset(0 0px 4.2px)"/>
+          <text x="37.5" y="87.5" dx="46" dy="22" text-anchor="middle" style="font-size:19.5px;letter-spacing:normal;fill:#fff">Service</text>
         </g>
         <g style="clip-path:none">
-          <rect x="136" y="83.5" width="151" height="42" rx="3" style="fill:#303029;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3.8px;clip-path:inset(1.5px 1.5px 4.2px 4.2px)"/>
-          <text x="131.5" y="89.5" dx="80" dy="22" text-anchor="middle" style="font-size:19.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Transponder</text>
+          <rect x="139" y="84.5" width="151" height="42" rx="3" style="fill:#303029;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:1.8px;clip-path:inset(0 0px 4.2px)"/>
+          <text x="135.5" y="89.5" dx="80" dy="22" text-anchor="middle" style="font-size:19.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Transponder</text>
         </g>
         <g style="clip-path:none">
-          <rect x="285" y="83.5" width="121" height="42" rx="3" style="fill:#303029;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:3.8px;clip-path:inset(1.5px 1.5px 4.2px 4.2px)"/>
-          <text x="278.5" y="89.5" dx="67" dy="22" text-anchor="middle" style="font-size:19.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Favourite</text>
+          <rect x="290" y="84.5" width="121" height="42" rx="3" style="fill:#303029;stroke:#4e4d4d;stroke-opacity:0.75;stroke-width:1.8px;clip-path:inset(0 0px 4.2px)"/>
+          <text x="283.5" y="89.5" dx="67" dy="22" text-anchor="middle" style="font-size:19.5px;letter-spacing:normal;fill:#fff;fill-opacity:0.9">Favourite</text>
         </g>
         
       
@@ -315,6 +315,7 @@
               
               <rect x="862.5" y="300" width="22" height="58" rx="0" style="fill:url(#bqf);fill-opacity:1;stroke:#4f4f4e;stroke-width:1.2px"/>
             </g>
+            
           
           
             
@@ -355,7 +356,7 @@
         
       
       
-        <rect x="1" y="739" width="960" height="81" rx="0" style="fill:#171717;clip-path:inset(15px 0px 0px)"/>
+        <rect x="2" y="756" width="958" height="64" rx="0" style="fill:#171717;clip-path:none"/>
         
           <text x="727" y="764" dx="26" dy="34" style="font-size:23.5px;fill:#fff">Cancel</text>
         
@@ -365,7 +366,8 @@
           </g>
           <text x="848" y="764" dx="26" dy="34" style="font-size:23.5px;fill:#fff">Save</text>
         
-        <rect x="1" y="754" width="960" height="1.6" style="fill:#131312"/>
+        <rect x="2" y="756" width="958" height="1.6" style="fill:#131312"/>
+      
       
     
     <rect x="1" y="1" width="960" height="820" rx="0" style="fill:none;stroke:#000;stroke-width:1.8px"/>
@@ -398,7 +400,7 @@
     
       <rect x="1522" y="129" width="1716" height="36" style="fill:#222020"/>
       <text x="1525.5" y="130.5" dx="12" dy="24" style="font-size:20px;word-spacing:16px;fill:#fff;fill-opacity:0.9">File Edit Find Tools Editor Window Help</text>
-      <rect x="1521" y="165.5" width="1718" height="1" style="fill:#e2e2e2;stroke:#1d1c1c"/>
+      <rect x="1521" y="165.5" width="1717" height="1" style="fill:#e2e2e2;stroke:#1d1c1c"/>
     
     
       
@@ -746,7 +748,7 @@
       
     
     
-      <rect x="1522" y="1109" width="1716" height="73" style="fill:#222020;stroke:#4e4d4d;clip-path:inset(0.5px 1px 0 0px)"/>
+      <rect x="1522" y="1109" width="1716" height="73" style="fill:#222020;stroke:#4e4d4d;clip-path:inset(0.5px 1px 0)"/>
       
         
           <text x="1535" y="1120" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Tools</text>
@@ -763,7 +765,7 @@
       
     
     
-      <rect x="1522" y="1169" width="1716" height="51" rx="0" style="fill:#222020;clip-path:inset(15px 0px 0px)"/>
+      <rect x="1522" y="1184" width="1716" height="36.4" rx="0" style="fill:#222020;clip-path:none"/>
       <rect x="1520" y="1184" width="1720" height="37" style="fill:none;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(0 2px 37.3px)"/>
       <text x="1525" y="1181" dx="29" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Transponders: 102</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
       

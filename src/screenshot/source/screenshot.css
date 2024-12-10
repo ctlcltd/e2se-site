@@ -16,11 +16,14 @@
 .m #icon-txt { fill: #545454; text-shadow: none !important; }
 
 /* toolbar */
+
 .m #tree-tool, .m #list-search, .m #list-tool, .m .list-search { transform: translate(0, -28px); }
 
 .m #main-bg, .m #main-stroke, .m #ss-bg, .m #se-bg { height: 807px; }
 .m#window #split .bg { height: 808px; }
 .m#window .list-view .bg { height: 659px; }
+
+.m .toolbar-item .txt { transform: translate(0, -0.5px); }
 
 .m .menu-item:nth-child(8) { transform: translate(0, -1px); }
 
@@ -160,7 +163,7 @@
 .w.w10 .arrow-l { display: none !important; }
 
 .w #menubar { display: block !important; }
-.w .w-shade, .w #mb-bg, .w #split ellipse, .w #ch-split ellipse, .w .arrow-m { display: none !important; }
+.w .w-shade, .w #mb-bg, .w #sb-bg, .w #split ellipse, .w #ch-split ellipse, .w .arrow-m { display: none !important; }
 
 .w .sbh .arrow-w, .w .sbv .arrow-w, .w .sbh .arrow-l, .w .sbv .arrow-l { display: none !important; }
 
@@ -216,6 +219,8 @@
 .w #tb-start { fill: none !important; }
 .w #tb-end { fill: #ddd !important; transform: translate(1px, 0); }
 
+.w #tb-arrows { transform: translate(0, -0.7px); }
+
 .w .tb-tab.active .bg { fill: #0078d7 !important; stroke: #0078d7 !important; }
 .w .tb-tab.active text { fill: #fff !important; }
 
@@ -227,7 +232,7 @@
 .w .tb-tab.active .tb-close { filter: none; opacity: 1; }
 
 .w #statusbar { transform: translate(0, 8px); }
-.w #sb-bg { height: 48px; }
+.w #sb-bg { y: 1179px; height: 33px; }
 .w #sb-stroke { height: 34px; clip-path: inset(0 2px 2px) !important; }
 .w #statusbar text { font-size: 19px !important; transform: translate(-2px, -3px); }
 .w #statusbar #sbte { transform: translate(32px, -3px); }
@@ -794,7 +799,7 @@
 
 #piconseditor .w .list-view .focused { y: 578px; }
 
-#piconseditor .w .list-items g:nth-child(3) .img text:first-of-type { font-family: 'Times New Roman', cursive, serif !important; font-style: italic; }
+#piconseditor .w .list-items g:nth-child(3) .img text:first-of-type { x: 12.5px; font-family: 'Times New Roman', serif !important; font-style: italic;  letter-spacing: -4px; }
 
 
 .dw #statusbar .divid { display: none; }
@@ -1123,9 +1128,11 @@
 #channelbook .f#addchannel .w-bg, #wide .f#editservice .w-bg { fill: #efefef !important; filter: url(#modal-shadow-f) !important; }
 #channelbook .f#addchannel .w-stroke, #wide .f#editservice .w-stroke { stroke: #808e8c !important; stroke-width: 1.2px !important; }
 #channelbook .f#addchannel .t-bg, #wide .f#editservice .t-bg { x: 0; y: 1px; }
-#channelbook .f#addchannel .t-stroke, #wide .f#editservice .t-stroke { x: 0; y: 47px; }
-#channelbook .f#addchannel .t-bg, #channelbook .f#addchannel .t-stroke { width: 1063px; }
-#wide .f#editservice .t-bg, #wide .f#editservice .t-stroke { width: 962px; }
+#channelbook .f#addchannel .t-stroke, #wide .f#editservice .t-stroke { x: 2px; y: 47px; }
+#channelbook .f#addchannel .t-bg { width: 1062px; }
+#channelbook .f#addchannel .t-stroke { width: 1059px; }
+#wide .f#editservice .t-bg { width: 961px; }
+#wide .f#editservice .t-stroke { width: 958px; }
 
 .f .w-shade { stroke: #ccc !important; stroke-opacity: .75 !important; stroke-width: 0.5px !important; }
 #channelbook .f#addchannel .w-shade, #wide .f#editservice .w-shade { display: block !important; }
@@ -1155,8 +1162,11 @@
 .f #mb-txt { font-size: 20px !important; word-spacing: 16px; fill-opacity: 0.75; transform: translate(3.5px, 1.5px); }
 .f #mb-stroke { fill: #e2e2e2 !important; stroke: #dcdddd; stroke-width: 1px; transform: translate(0, 3.5px); }
 
+.f #mb-stroke { width: 1717px; }
+#piconseditor .f #mb-stroke { width: 1297px; }
+
 .f #statusbar { transform: translate(0, 5px); }
-.f #sb-bg { height: 51px; }
+.f #sb-bg { y: 1179px; height: 36.4px; clip-path: none !important; }
 .f #sb-stroke { height: 37px; stroke: #d5d6d6 !important; clip-path: inset(0 2px 37.3px) !important; }
 .f #statusbar text { font-size: 19.5px !important; transform: translate(3px, -3px); }
 .f #statusbar #sbte { transform: translate(30px, -3px); }
@@ -1177,6 +1187,8 @@
 .f .tb-tab.active text { fill: #fff !important; }
 .f .focused, .f .tb-tab.active .bg, #piconseditor .f #icon-canvas { fill: #308cc6 !important; }
 
+.f #tb-arrows { transform: translate(-1px, -0.8px); }
+
 .f .tb-close .o { transform: matrix(0.9, 0, 0, 0.9, -2, 1.5); }
 .f .tb-close rect { x: -4.5px; y: -4.5px; width: 22px; height: 22px; rx: 11px; fill: #000 !important; fill-opacity: 0.33; }
 .f .tb-close .ico { transform: matrix(0.17, 0, 0, 0.17, 1.2, 1.2) !important; }
@@ -1187,11 +1199,13 @@
 .f #ch-list, .f #ch-tree { transform: translate(0, 2px); }
 .f #addchannel-tbar { transform: translate(0, 2px); }
 
-.f #tbar-bg { height: 80px; rx: 0 !important; fill: #f9f9f9 !important; }
-.f #tbar-stroke { height: 1.1px; fill: #d7d7d9 !important; }
+.f #tbar-bg { height: 80px; rx: 0 !important; fill: #f9f9f9 !important; clip-path: none !important; }
+.f #tbar-stroke { height: 1.2px; fill: #d7d7d9 !important; }
 
-#wide .f #tbar-bg { height: 81px; }
-#wide .f #tbar-stroke { fill: #d7d7d9 !important; transform: translate(0, -2px); }
+.f #addchannel-tbar #tbar-bg { x: 2px; y: 582px; width: 1059px; height: 66px;  }
+.f #addchannel-tbar #tbar-stroke { x: 2px; width: 1059px; }
+.f #editservice-tbar #tbar-bg { x: 2px; y: 756px; width: 958px; height: 64px;  }
+.f #editservice-tbar #tbar-stroke { x: 2px; width: 958px; }
 
 #channelbook .f #ch-list .bg { fill: none !important; }
 
@@ -1331,7 +1345,7 @@
 .f .sbv .bg { width: 23px; }
 .f .sbh .xy { height: 22px; transform: translate(0, 0.5px); }
 .f .sbv .xy { width: 22px; transform: translate(0.5px, 0); }
-.f .sbr { display: block !important; x: 1780.5px; y: 930.5px; width: 25px; height: 25px; stroke-width: 2px; clip-path: inset(0 4.2px 2.8px 0); }
+.f .sbr { display: block !important; x: 1780.5px; y: 930.5px; width: 22.5px; height: 24.5px; stroke-width: 2px; clip-path: inset(0 2px 2px 0); }
 
 .f #tree .sbv { transform: translate(-8px, -1px); }
 .f #tree .sbv .bg { height: 359px; }
@@ -1383,19 +1397,20 @@
 #channelbook .f #ch-start .sbv .arrow.as { transform: matrix(1, 0, 0, 1, 476.6, 73); }
 #channelbook .f #ch-start .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 476.6, 560); }
 
-#channelbook .f #ch-end .sbv { transform: translate(-8px, 1.5px); }
-#channelbook .f #ch-end .sbv .ve { transform: translate(0.5px, -31px); }
+#channelbook .f #ch-end .sbv { transform: translate(-9px, 1.5px); }
+#channelbook .f #ch-end .sbv .bg { height: 505px; }
+#channelbook .f #ch-end .sbv .ve { transform: translate(0.5px, -32px); }
 #channelbook .f #ch-end .sbv .xy { x: 1048px; y: 96px; height: 46px; fill-opacity: 1 !important; }
 #channelbook .f #ch-end .sbv .arrow.as { transform: matrix(1, 0, 0, 1, 1047.7, 73); }
-#channelbook .f #ch-end .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1047.7, 536); }
+#channelbook .f #ch-end .sbv .arrow.ae { transform: matrix(1, 0, 0, 1, 1047.7, 535); }
 
-#channelbook .f #ch-end .sbh { transform: translate(0, -8.5px); }
-#channelbook .f #ch-end .sbh .bg { width: 559px; }
+#channelbook .f #ch-end .sbh { transform: translate(-1px, -8.5px); }
+#channelbook .f #ch-end .sbh .bg { width: 539px; }
 #channelbook .f #ch-end .sbh .he { transform: translate(-25.5px, 0.5px); }
 #channelbook .f #ch-end .sbh .xy { x: 523px; y: 568px; width: 204px; fill-opacity: 1 !important; }
-#channelbook .f #ch-end .sbh .arrow.as { transform: matrix(1, 0, 0, 1, 500.5, 568.2); }
-#channelbook .f #ch-end .sbh .arrow.ae { transform: matrix(1, 0, 0, 1, 1036.5, 568.2); }
-#channelbook .f #ch-end .sbr { x: 1040.5px; y: 559.5px; height: 24px; }
+#channelbook .f #ch-end .sbh .arrow.as { transform: matrix(1, 0, 0, 1, 500, 568.2); }
+#channelbook .f #ch-end .sbh .arrow.ae { transform: matrix(1, 0, 0, 1, 1037, 568.2); }
+#channelbook .f #ch-end .sbr { x: 1040.5px; y: 560.5px; }
 
 #wide .f .list .sbv { clip-path: inset(1px 1px 1px 0); }
 #wide .f .list .sbv .bg { height: 613px; }
@@ -1495,16 +1510,16 @@
 #wide .f #editservice-tabs { transform: translate(-331.5px, 12px); }
 #wide .f .tab-item { clip-path: none !important; }
 #wide .f .tab-divid { display: none !important; }
-#wide .f .tab-item rect { rx: 3px !important; fill: #efefef !important; stroke-width: 3.8px !important; filter: none !important; transform: translate(0.5px, 0.5px) !important; clip-path: inset(1.5px 1.5px 4.2px 4.2px); }
-#wide .f .tab-item.active rect { fill: #f9f9f9 !important; clip-path: inset(1.5px 1.5px 4.2px); }
+#wide .f .tab-item rect { rx: 3px !important; fill: #efefef !important; stroke-width: 1.8px !important; filter: none !important; transform: translate(0.5px, 0.5px) !important; clip-path: inset(0 0 4.2px); }
+#wide .f .tab-item.active rect { fill: #f9f9f9 !important; clip-path: inset(0 0 4.2px); }
 #wide .f .tab-item text { font-size: 19.5px !important; letter-spacing: 0 !important; fill: #000 !important; }
 
-#wide .f .tab-item:nth-child(1) rect { x: 363px; y: 67px; width: 106px; height: 48px;  }
-#wide .f .tab-item:nth-child(1) text { transform: translate(71px, 7.5px); }
-#wide .f .tab-item:nth-child(2) rect { x: 467px; y: 71px; width: 151px; height: 42px; }
-#wide .f .tab-item:nth-child(2) text { transform: translate(76px, 9.5px); }
-#wide .f .tab-item:nth-child(3) rect { x: 616px; y: 71px; width: 121px; height: 42px; }
-#wide .f .tab-item:nth-child(3) text { transform: translate(85px, 9.5px); }
+#wide .f .tab-item:nth-child(1) rect { x: 364px; y: 68px; width: 106px; height: 48px;  }
+#wide .f .tab-item:nth-child(1) text { transform: translate(70px, 7.5px); }
+#wide .f .tab-item:nth-child(2) rect { x: 470px; y: 72px; width: 151px; height: 42px; }
+#wide .f .tab-item:nth-child(2) text { transform: translate(80px, 9.5px); }
+#wide .f .tab-item:nth-child(3) rect { x: 621px; y: 72px; width: 121px; height: 42px; }
+#wide .f .tab-item:nth-child(3) text { transform: translate(90px, 9.5px); }
 
 #wide .f .gbox-bg { rx: 2.5px !important; fill: #000 !important; fill-opacity: 0.015 !important; stroke: #000 !important; stroke-opacity: 0.15 !important; stroke-width: 1.2px !important; }
 #wide .f .gbox-txt { font-size: 20px !important; letter-spacing: 0 !important; transform: translate(-8px, 4px); }
@@ -1591,6 +1606,8 @@
 #wide .f .qt-fold rect:nth-child(2) { x: 340px; }
 #wide .f .qt-fold rect:nth-child(3) { x: 222px; y: -222px; }
 
+#piconseditor .f .list-items g:nth-child(3) .img text:first-of-type { font-size: 102px !important; }
+
 
 .df .t-ctrs-l rect { stroke: #fdfdfd !important; }
 .df .t-ctrs-l g g rect { stroke-width: 1.3px !important; }
@@ -1607,8 +1624,8 @@
 #channelbook .df#addchannel .w-bg, #wide .df#editservice .w-bg { fill: #222020 !important; }
 #channelbook .df#addchannel .w-stroke, #wide .df#editservice .w-stroke { stroke: #000 !important; stroke-width: 1.8px !important; }
 #channelbook .df#addchannel .t-stroke, #wide .df#editservice .t-stroke { x: 0; y: 48.8px; }
-#channelbook .df#addchannel .t-bg, #channelbook .df#addchannel .t-stroke { width: 1063px; height: 46.1px; }
-#wide .df#editservice .t-bg, #wide .df#editservice .t-stroke { height: 46.1px; }
+#channelbook .df#addchannel .t-bg { height: 46.1px; }
+#wide .df#editservice .t-bg { height: 46.1px; }
 
 .df .w-shade { stroke: #999 !important; }
 
@@ -1644,7 +1661,7 @@
 .df #main-stroke { stroke: #fff !important; stroke-opacity: 0.09 !important; }
 .df #tree-tool .stroke, .df #list-tool .stroke { stroke: #4e4d4d !important; clip-path: inset(1px 2px 2px) !important; }
 
-.df #toolbar-bg { height: 73px; fill: #222020 !important; stroke: #4e4d4d; stroke-width: 1px; clip-path: inset(0.5px 1px 0 0); }
+.df #toolbar-bg { height: 73px; fill: #222020 !important; stroke: #4e4d4d; stroke-width: 1px; clip-path: inset(0.5px 1px 0 1px); }
 
 .df .tb-button .ico use { fill: #c3c3c3 !important; }
 .df .tb-tab .tb-ico use { fill: #fff !important; }
@@ -1655,7 +1672,7 @@
 .df #btn-collapse .box-button { transform: translate(-18px, 4.5px); }
 .df #btn-collapse .txt { fill: #fff !important; }
 
-.df #tb-arrows { transform: translate(1px, 0); }
+.df #tb-arrows { transform: translate(-2px, -0.8px); }
 
 .df .btn-flag .bg { fill: #131312 !important; stroke: #4e4d4d !important; stroke-width: 2.3px !important; }
 .df .btn-flag .checkmark use { fill: #fff !important; stroke: #fff !important; }
@@ -1693,7 +1710,7 @@
 .df .list .sbv { transform: matrix(0.997, 0, 0, 0.997, -0.5, 0.5); }
 .df .sbh .xy { transform: translate(2.5px, 0.5px); }
 .df .sbv .xy { transform: translate(0.5px, 2.5px); }
-.df .sbr { x: 1778.5px; y: 931px; width: 26px; height: 26px; stroke: none !important; }
+.df .sbr { x: 1778.5px; y: 931.5px; stroke: none !important; }
 
 #channelbook .df .list .sbh { transform: translate(0, 15.5px); clip-path: inset(0.5px 3.5px 0 0) !important }
 #channelbook .df .list .sbh .he { x: 1756px; }
@@ -1703,12 +1720,10 @@
 #channelbook .df #ch-end .sbh { transform: matrix(0.994, 0, 0, 0.994, 3, -5); }
 #channelbook .df #ch-end .sbh .bg { width: 562px; }
 #channelbook .df #ch-end .sbv { transform: matrix(0.994, 0, 0, 0.994, -3, 2.5); }
-#channelbook .df #ch-end .sbr { x: 1039px; y: 559px; height: 26px; }
+#channelbook .df #ch-end .sbr { x: 1039.5px; y: 559.5px; }
 
 #wide .df .qt-item .sbv { transform: matrix(0.994, 0, 0, 0.994, 16, -2.5); }
 #wide .df .qt-item .sbv .xy { stroke-opacity: 1 !important; }
-
-.df #tb-arrows { transform: translate(-1px, 0); }
 
 #piconseditor .df .list .sbv { transform: matrix(0.997, 0, 0, 0.997, -4.5, 29); }
 

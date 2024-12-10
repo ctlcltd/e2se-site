@@ -97,7 +97,7 @@
   <g style="font-family:'Segoe UI',Tahoma,sans-serif">
     <rect x="80" y="80" width="1720" height="1142" rx="0" style="fill:#1e1e1e;stroke:#a2b5ba;stroke-width:1px"/>
     
-      <rect x="82" y="82" width="1716" height="56.5" rx="0" style="fill:#222;fill-opacity:0.74;stroke:none;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
+      <rect x="82" y="82" width="1716" height="41.5" rx="0" style="fill:#222;fill-opacity:0.74;stroke:none;stroke-width:1px;clip-path:none"/>
       
       <text x="82" y="83" dx="45" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:18.6px;letter-spacing:-0.2px;fill:#fff">e2 SAT Editor</text>
       
@@ -106,9 +106,9 @@
       
       
         <rect x="1619" y="104" width="14.5" height="0.6" style="fill:none;stroke:#fff;stroke-width:1.1px"/>
-        <g transform="matrix(0.99,0,0,0.99,1687,110)">
+        <g transform="matrix(1.02,0,0,1.02,1687,110)">
           <g transform="matrix(0,-1,1,0,0,0)">
-            <rect x="0" y="0" rx="1" width="13.7" height="13.7" style="fill:none;stroke:#fff;stroke-width:1.7px"/>
+            <rect x="0" y="0" width="13.7" height="13.7" style="fill:none;stroke:#fff;stroke-width:1.37px"/>
           </g>
         </g>
         <g transform="matrix(0.97,0,0,0.97,1763,90)">
@@ -465,7 +465,7 @@
               
             
             
-              <rect x="1781" y="387" width="17" height="607" style="fill:#1e1e1e"/>
+              <rect x="1781" y="389" width="17" height="607" style="fill:#1e1e1e"/>
               
               
               
@@ -499,7 +499,7 @@
               
             
             
-              <rect x="590" y="1003" width="352" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;clip-path:none"/>
+              <rect x="590" y="1003" width="352" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.2px;clip-path:none"/>
               <text x="590" y="1006" dx="4" dy="23" style="font-size:19px;fill:#fff">Nasa</text>
             
             
@@ -592,7 +592,7 @@
       
     
     
-      <rect x="82" y="1172" width="1716" height="48" rx="0" style="fill:none;clip-path:inset(15px 0px 0px)"/>
+      
       <rect x="80" y="1187" width="1720" height="34" style="fill:none;stroke:#000;stroke-width:2.2px;clip-path:inset(0 2px 2px)"/>
       <text x="80" y="1183" dx="29" dy="29" style="font-size:19px;fill:#fff;opacity:0.97"><tspan>Channels: 143</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
       

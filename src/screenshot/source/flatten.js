@@ -721,18 +721,10 @@ function fix_f_titlebar() {
 
   root.setAttribute('class', root.getAttribute('_class'));
 
-  var elements = svg.querySelector('g[_id="addchannel"], g[_id="editservice"]').querySelectorAll('rect[_class="t-bg"], g[_class="t-stroke"]');
+  var elements = svg.querySelector('g[_id="addchannel"], g[_id="editservice"]').querySelectorAll('rect[_class="t-bg"]');
 
   for (const el of elements) {
-    let width = parseFloat(el.getAttribute('width'));
-    width -= 2;
-    el.setAttribute('width', width);
-
-    if (el.getAttribute('_class') == 't-bg') {
-      let x = parseFloat(el.getAttribute('x'));
-      x -= 1;
-      el.setAttribute('x', x);   
-    }
+    el.setAttribute('x', 0);
   }
 
   root.removeAttribute('class');

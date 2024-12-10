@@ -122,7 +122,7 @@
     
       <rect x="82" y="129" width="1716" height="36" style="fill:#eee"/>
       <text x="85.5" y="130.5" dx="12" dy="24" style="font-size:20px;word-spacing:16px;fill:#000;fill-opacity:0.75">File Edit Find Tools Editor Window Help</text>
-      <rect x="81" y="165.5" width="1718" height="1" style="fill:#e2e2e2;stroke:#dcdddd"/>
+      <rect x="81" y="165.5" width="1717" height="1" style="fill:#e2e2e2;stroke:#dcdddd"/>
     
     
       
@@ -509,7 +509,7 @@
               
               <rect x="492" y="968.2" width="900" height="22" rx="0" style="fill:url(#brf);fill-opacity:0.8;stroke:#ababab;stroke-opacity:0.6;stroke-width:1.2px"/>
             </g>
-            <rect x="1776.5" y="967.5" width="25" height="25" style="fill:#e6e6e6;stroke:#bcbcbc;stroke-width:2px;clip-path:inset(0 4.2px 2.8px 0px)"/>
+            <rect x="1776.5" y="967.5" width="22.5" height="24.5" style="fill:#e6e6e6;stroke:#bcbcbc;stroke-width:2px;clip-path:inset(0 2px 2px 0px)"/>
           
           
             <rect x="469" y="991" width="1329" height="52" style="fill:#fafafa"/>
@@ -621,7 +621,7 @@
       
     
     
-      <rect x="82" y="1169" width="1716" height="51" rx="0" style="fill:#efefef;clip-path:inset(15px 0px 0px)"/>
+      <rect x="82" y="1184" width="1716" height="36.4" rx="0" style="fill:#efefef;clip-path:none"/>
       <rect x="80" y="1184" width="1720" height="37" style="fill:none;stroke:#d5d6d6;stroke-width:2px;clip-path:inset(0 2px 37.3px)"/>
       <text x="85" y="1181" dx="29" dy="29" style="font-size:19.5px;fill:#000"><tspan>Channels: 143</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
       
