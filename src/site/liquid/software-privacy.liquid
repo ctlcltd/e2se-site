@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+{% render '_doc-head.liquid' %}
+<body>
+{% render '_page-head.liquid' %}
+<div id="page">
+  <main id="privacy" class="page">
+    <h1>Software Privacy</h1>
+    <p>Information about user privacy related to &quot;e2 SAT Editor&quot; software.</p>
+    <div>
+      <p>Privacy, in brief, for &quot;e2 SAT Editor&quot; Software.</p>
+      <ul>
+        <li>The Software does <b>NOT</b> use and <b>NOT</b> trade User data.</li>
+        <li>The Software does <b>NOT</b> use tracking mechanisms, does <b>NOT</b> use analytics.</li>
+      </ul>
+    </div>
+    <div>
+      <p class="lead">User privacy is important.</p>
+      <p>In the Software, User data is <b>NOT</b> traded. Sensitive data or User informations are <b>NOT</b> used and <b>NOT</b> exchanged.</p>
+      <p>Specifically to exchanged data when using the functionality <strong>Check for updates</strong>, for obligations and/or protection aspects, technical informations must necessarily be sent to third parties. For example, this happens when you visit a website, the visit will be recorded on logs of your ISP provider, logs of your DNS provider, logs of the hosting used by the website, and any other third parties involved, necessarily.</p>
+      <div>
+        <p>Below are technical informations of exchanged data, between machines and User devices.</p>
+      </div>
+    </div>
+    <div>
+      <h2>Third Parties involved in the Software</h2>
+      <p>The Software uses third-party, free software and/or open-source libraries.</p>
+      <p><em>&quot;Qt framework&quot;</em> for the GUI and <em>&quot;Curl library&quot;</em> for the connectivity (HTTP, FTP, Telnet, Webif).</p>
+      <div>
+        <p>There are no known uses of User data by these libraries.</p>
+      </div>
+      <div>
+        <p>The functionality <strong>Check for updates</strong> will connect to GitHub servers to the repository address, host name: <em>github.com</em> <br>The feature <i>Do Not Track</i> is used, but there is no warranty it will be applied.</p>
+        <p>Anyway, the preference <b>&quot;Check for updates on launch&quot;</b> is turned <b>OFF</b> by default.</p>
+      </div>
+    </div>
+    <div>
+      <h2>Legal obligations</h2>
+      <p>Due to global nature of the Internet, is not possible to specify an absolute law on privacy for the Software. For the Software, please refer to prominent Privacy Law in Italy, known as <em>GDPR</em>, and any existing agreements between countries and Italy for Privacy.</p>
+      <p>The Software is distributed, maintained and given free of charge by an individual person, coinciding with the Data Controller, according to the terms described in the software licenses used.</p>
+      <div>
+        <p>That said, the Software is provided free of charge without any warranties, as licensed.</p>
+      </div>
+      <div>
+        <p>Below the contact information of the <strong>Data Controller</strong>.</p>
+      </div>
+    </div>
+    <div>
+      <h2>Data Controller</h2>
+      <div>
+        <p>Leonardo Laureti</p>
+        <p><a href="mailto:&#108;&#114;&#116;&#108;&#110;&#114;&#100;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;?subject=Data%20controller%20request%20e2%20SAT%20Editor">&#108;&#114;&#116;&#108;&#110;&#114;&#100;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;</a></p>
+      </div>
+    </div>
+    <div>
+      <p>This page will be updated for revisions to the state of the privacy.</p>
+      <p>Last update (d/m/y): <strong>{{ software_privacy_rev | date: "%d/%m/%Y" }}</strong></p>
+    </div>
+  </main>
+{% render '_page-foot.liquid' %}
+</div>
+{% render '_page-vars.liquid' %}
+</body>
+</html>
