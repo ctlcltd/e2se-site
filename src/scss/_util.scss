@@ -4,13 +4,13 @@
 @use "sass:color";
 
 @function color-hex-str($color) {
-	$r: color.channel($color, "red", $space: rgb);
-	$g: color.channel($color, "green", $space: rgb);
-	$b: color.channel($color, "blue", $space: rgb);
+  $r: color.channel($color, "red", $space: rgb);
+  $g: color.channel($color, "green", $space: rgb);
+  $b: color.channel($color, "blue", $space: rgb);
 
-	$r: math.round($r);
-	$g: math.round($g);
-	$b: math.round($b);
+  $r: math.round($r);
+  $g: math.round($g);
+  $b: math.round($b);
 
-	@return color.scale(rgb($r, $g, $b));
+  @return color.scale(rgb($r, $g, $b));
 }

@@ -1,6 +1,7 @@
 /* scss/_light.scss */
 
 @use "sass:color";
+@use "sass:string";
 @use "util";
 
 $variant-name: 'light';
@@ -28,7 +29,7 @@ $tr-background-highlight: #dff;
 $input-color: #000;
 $input-background: #fff;
 $input-border-color: #505050;
-$input-shadow-color: transparent;
+$input-shadow-color: string.unquote("transparent");
 $input-shadow-color-hover: rgba(0, 0, 0, .2);
 $input-shadow-color-focus: rgba(0, 0, 0, .15);
 
@@ -37,7 +38,7 @@ $input-shadow-color-focus: rgba(0, 0, 0, .15);
 
 $button-color: #4b4b4b;
 $button-background: #fff;
-$button-shadow-color: transparent;
+$button-shadow-color: string.unquote("transparent");
 $button-shadow-color-hover: rgba(0, 0, 0, .25);
 $button-shadow-color-focus: rgba(0, 0, 0, .2);
 

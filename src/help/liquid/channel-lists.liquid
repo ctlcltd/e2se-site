@@ -84,7 +84,7 @@
         <h3>Import and Export</h3>
         <p>To selectively import and export parts of channel lists and merge with the opened channel list, use Import and Export features.</p>
         <div class="l2">
-          <h5>Import</h5>
+          <h4>Import</h4>
           <div class="l3">
             <p><b>From quick menu</b>, click on <b>&quot;Import&quot;</b></p>
             <p><b>From main menu</b>, click menu <b>File</b> &gt; <b>Import</b></p>
@@ -92,7 +92,7 @@
           <p>In <b>File dialog</b>, select files to import. In dialog you can select the type of file (or directory, eg. Enigma2 folder) to import from File type selector.</p>
         </div>
         <div class="l2">
-          <h5>Export</h5>
+          <h4>Export</h4>
           <p>The current selected service channel list or bouquet will be exported.</p>
           <div class="l3">
             <p><b>From quick menu</b>, click on <b>&quot;Export&quot;</b></p>
@@ -100,6 +100,25 @@
             <p><b>From bouquet</b> you want to export, open the context menu and click on <b>&quot;Export&quot;</b></p>
           </div>
           <p>In <b>File dialog</b>, select the location where you want to export. In dialog you can select the type of file to export from the File type selector.</p>
+        </div>
+      </div>
+      <div id="parental" class="l1">
+        <h3>Lock channels <span class="type">[Parental]</span></h3>
+        <p>The Parental lock feature is available with both blacklist and whitelist, this preference is found in <b>&quot;Settings&quot;</b> &gt; <b>Preferences</b>.</p>
+        <div class="l2">
+          <h4>Single channel lock</h4>
+          <p>To lock a channel, select the channel, open the context menu and click on <b>&quot;Set Parental lock&quot;</b>.</p>
+          <p>To unlock a previously locked channel, select the channel, open the contextual menu and click on <b>&quot;Unset Parental lock&quot;</b>.</p>
+          <div class="l3">
+            <p>Note: <i>Multiple selection is not available to lock channels.</i></p>
+          </div>
+        </div>
+        <div class="l2">
+          <h4>Channel group lock</h4>
+          <p>Bouquets can be created with channels to lock [blacklist] or unlock [whitelist].</p>
+          <p>Create a bouquet with the channels to lock/unlock.</p>
+          <p>Select the bouquet in the <b>Bouquets</b> area, open the context menu and click on <b>&quot;Set Parental lock&quot;</b>.</p>
+          <p>To restore service channels to their previous state, open the context menu and click on <b>&quot;Unset Parental lock&quot;</b>.</p>
         </div>
       </div>
       <hr>
@@ -370,25 +389,6 @@
         <h3>Delete bouquet</h3>
         <p>To delete a bouquet, select the bouquet, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
         <p><i>The bouquet will be deleted with all the contained channels.</i></p>
-      </div>
-      <div id="parental" class="l1">
-        <h3>Lock channels <span class="type">[Parental]</span></h3>
-        <p>The Parental lock feature is available with both blacklist and whitelist, this preference is found in <b>&quot;Settings&quot;</b> &gt; <b>Preferences</b>.</p>
-        <div class="l2">
-          <h5>Single channel lock</h5>
-          <p>To lock a channel, select the channel, open the context menu and click on <b>&quot;Set Parental lock&quot;</b>.</p>
-          <p>To unlock a previously locked channel, select the channel, open the contextual menu and click on <b>&quot;Unset Parental lock&quot;</b>.</p>
-          <div class="l3">
-            <p>Note: <i>Multiple selection is not available to lock channels.</i></p>
-          </div>
-        </div>
-        <div class="l2">
-          <h5>Channel group lock</h5>
-          <p>Bouquets can be created with channels to lock [blacklist] or unlock [whitelist].</p>
-          <p>Create a bouquet with the channels to lock/unlock.</p>
-          <p>Select the bouquet in the <b>Bouquets</b> area, open the context menu and click on <b>&quot;Set Parental lock&quot;</b>.</p>
-          <p>To restore service channels to their previous state, open the context menu and click on <b>&quot;Unset Parental lock&quot;</b>.</p>
-        </div>
       </div>
 {% render '_page-dist.liquid', help_rev: help_rev %}
     </main>

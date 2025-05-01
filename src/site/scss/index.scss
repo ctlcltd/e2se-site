@@ -12,6 +12,10 @@
 @use "custom";
 @use "landing";
 
+.translated-rtl {
+  direction: rtl;
+}
+
 @include variant.print($name: "dark");
 
 @include custom.end;

@@ -1,6 +1,7 @@
 /* scss/_dark.scss */
 
 @use "sass:color";
+@use "sass:string";
 @use "util";
 
 $variant-name: 'dark';
@@ -28,7 +29,7 @@ $tr-background-highlight: #034;
 $input-color: #fff;
 $input-background: #141414;
 $input-border-color: #3a3a3a;
-$input-shadow-color: transparent;
+$input-shadow-color: string.unquote("transparent");
 $input-shadow-color-hover: rgba(80, 80, 80, .7);
 $input-shadow-color-focus: rgba(50, 50, 50, .5);
 
@@ -37,7 +38,7 @@ $input-shadow-color-focus: rgba(50, 50, 50, .5);
 
 $button-color: #fff;
 $button-background: #1e1e1e;
-$button-shadow-color: transparent;
+$button-shadow-color: string.unquote("transparent");
 $button-shadow-color-hover: rgba(150, 150, 150, .4);
 $button-shadow-color-focus: rgba(0, 0, 0, 1);
 

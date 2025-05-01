@@ -1,11 +1,12 @@
 /* scss/_dropdown.scss */
 
+@use "sass:string";
 @use "variant" as *;
 
 .toggler {
   position: relative;
-  padding: .75rem 1rem .75rem;
-  padding-inline-end: 1.5rem;
+  padding: .75rem 0 .75rem;
+  padding-inline: 1rem 1.5rem;
   font-size: .8rem;
   z-index: 0;
 
@@ -14,12 +15,12 @@
     position: absolute;
     margin: 0 4px;
     margin-top: 5px;
-    border: 5px solid transparent;
+    border: 5px solid string.unquote("transparent");
     border-top-color: currentColor;
   }
   &.opened:after {
     margin-top: 0;
-    border-top-color: transparent;
+    border-top-color: string.unquote("transparent");
     border-bottom-color: currentColor;
   }
 }

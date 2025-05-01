@@ -76,9 +76,10 @@ function offCanvas(evt) {
       }, 50);
       setTimeout(function() {
         body._side.classList.remove('on');
+        body._current.ariaExpanded = false;
         body.classList.remove('offcanvas');
         body.classList.remove('off');
-        delete body._side;
+        delete body._side, body._current;
       }, 100);
     }
   }
@@ -108,9 +109,12 @@ function offCanvas(evt) {
 
         setTimeout(function() {
           body._side.classList.remove('on');
+          body._current.ariaExpanded = false;
           body.classList.add('offcanvas');
           side.classList.add('on');
+          el.ariaExpanded = true;
           body._side = side;
+          body._current = el;
         }, 100);
       } else {
         backdrop(false);
@@ -119,15 +123,18 @@ function offCanvas(evt) {
         }, 50);
         setTimeout(function() {
           body._side.classList.remove('on');
+          body._current.ariaExpanded = false;
           body.classList.remove('offcanvas');
           body.classList.remove('off');
-          delete body._side;
+          delete body._side, body._current;
         }, 100);
       }
     } else {
       body._side = side;
+      body._current = el;
       body.classList.toggle('offcanvas');
       side.classList.toggle('on');
+      el.ariaExpanded = ! el.ariaExpanded != 'true';
       backdrop(true);
     }
 
@@ -135,6 +142,33 @@ function offCanvas(evt) {
       el.blur();
     }, 100);
   }
+}
+
+function navmq() {
+  const mq = matchMedia('(min-width:992px)');
+
+  function change(evt) {
+    if (evt.matches) {
+      body.classList.remove('offcanvas');
+      body.classList.remove('off');
+
+      const backdrop = body.querySelector('.backdrop');
+      if (backdrop) {
+        backdrop.remove();
+      }
+
+      for (const el of head.querySelectorAll('[data-target]')) {
+        const query = el.getAttribute('data-target');
+        const side = doc.querySelector(query);
+        el.removeAttribute('aria-expanded');
+        side.classList.remove('on');
+      }
+
+      delete body._side, body._current, body._backdrop;
+    }
+  }
+
+  mq.addEventListener('change', change);
 }
 
 function abbrbox() {
@@ -196,7 +230,7 @@ function platform_detect() {
   return (test(navigator.platform) ?? test(navigator.useragent)) ?? 'f';
 }
 
-function load_images(evt) {
+function loadImages(evt) {
   let color = sessionStorage.getItem('preferred-color');
   color = color == 'light' || color == 'dark' ? color[0] : null;
   let i = 0;
@@ -241,6 +275,7 @@ preferredColor();
 head.addEventListener('click', switchColor);
 head.addEventListener('click', fundRaise);
 head.addEventListener('click', offCanvas);
-load_images();
-window.addEventListener('appearance-changed', load_images);
+navmq();
+loadImages();
+window.addEventListener('appearance-changed', loadImages);
 abbrbox();

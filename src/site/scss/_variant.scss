@@ -1,6 +1,7 @@
 /* site/_variant.scss */
 
 @use "sass:color";
+@use "sass:string";
 @use "../../scss/variant" as *;
 @use "../../scss/util";
 
@@ -71,7 +72,7 @@
   .btn-pp .s { stroke: #eee; }
 
   @media (min-width: 992px) {
-    #head { background: #181818; }
+    #head { background: string.unquote("transparent"); }
   }
 
 

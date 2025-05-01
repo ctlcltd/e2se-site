@@ -1,6 +1,7 @@
 /* translate/_custom.scss */
 
 @use "sass:color";
+@use "sass:string";
 @use "../../scss/util";
 
 #page {
@@ -258,14 +259,14 @@ body {
     width: 0;
     margin: 1px 0;
     border-width: 0 9px;
-    border-right-color: transparent;
+    border-right-color: string.unquote("transparent");
     border-left-color: currentColor;
   }
 }
 .dark {
   #btn-color:after {
     border-right-color: currentColor;
-    border-left-color: transparent;
+    border-left-color: string.unquote("transparent");
   }
 }
 
@@ -481,7 +482,8 @@ span.revised {
   }
 
   .ctrbar {
-    position: static;
+    position: absolute;
+    height: 40.5px;
     padding: 0;
   }
   .ctrbar > div {
@@ -510,27 +512,6 @@ span.revised {
 
   .what-this-area {
     min-width: 33vw;
-  }
-}
-
-@media (min-width: 2440px) {
-  body {
-    zoom: 1.25;
-  }
-}
-@media (min-width: 2848px) {
-  body {
-    zoom: 1.5;
-  }
-}
-@media (min-width: 3088px) {
-  body {
-    zoom: 1.75;
-  }
-}
-@media (min-width: 3840px) {
-  body {
-    zoom: 2;
   }
 }
 

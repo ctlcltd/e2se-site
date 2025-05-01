@@ -59,7 +59,7 @@
   max-width: 1920px;
   margin: auto;
 
-  h2, h3, h4 {
+  h2, h3, .dh {
     display: inline-block;
     width: fit-content;
     max-width: 89%;
@@ -67,6 +67,11 @@
     font-weight: bold;
     transform: matrix(1.21, 0, .01, 1.02, -1, -1);
     transform-origin: left;
+  }
+  [dir="rtl"] & h2, .translated-rtl & h2,
+  [dir="rtl"] & h3, .translated-rtl & h3,
+  [dir="rtl"] & .dh, .translated-rtl & .dh {
+    transform-origin: right;
   }
 
   h2 {
@@ -79,12 +84,12 @@
     letter-spacing: -.016em;
     word-spacing: -.01em;
   }
-  h4 {
+  .dh {
     font-size: 1.49rem;
     letter-spacing: -.018em;
     word-spacing: -.01em;
   }
-  h4 em {
+  .dh em {
     font-size: 78%;
     font-style: normal;
   }
@@ -118,8 +123,7 @@
     margin: 1.5em 0 0;
   }
 }
-body,
-.dark {
+body {
   .cnt .button {
     color: #464646;
     background: #cff;
@@ -135,20 +139,22 @@ body,
   }
 }
 body {
-  .cnt .button {
-    filter: drop-shadow(4px 4px 0 #0cc);
+  --x: 2px;
+  --y: 2px;
+  --c: #0cc;
 
-    &:focus {
-      filter: drop-shadow(2px 2px 0 #0cc);
-    }
+  .dark {
+    --c: #088;
   }
-}
-.dark {
+  [dir="rtl"] &, .translated-rtl & {
+    --x: -2px;
+  }
+
   .cnt .button {
-    filter: drop-shadow(4px 4px 0 #088);
+    filter: drop-shadow(calc(2*var(--x)) calc(2*var(--y)) 0 var(--c));
 
     &:focus {
-      filter: drop-shadow(2px 2px 0 #088);
+      filter: drop-shadow(var(--x) var(--y) 0 var(--c));
     }
   }
 }
@@ -169,13 +175,15 @@ body {
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  inset-inline-start: unset;
   inset-inline-end: 0;
   display: block;
   height: 100%;
   width: 9vw;
-  background: linear-gradient(90deg, transparent, #b4d0cd);
+  background: linear-gradient(90deg, string.unquote("transparent"), #b4d0cd);
+
+  [dir="rtl"] &, .translated-rtl & {
+    background: linear-gradient(-90deg, string.unquote("transparent"), #b4d0cd);
+  }
 }
 .img img {
   display: block;
@@ -270,6 +278,7 @@ body {
 #epf .img div {
   height: 39vw;
   overflow-x: hidden;
+  direction: ltr;
 }
 
 #lsb .img:after,
@@ -421,6 +430,16 @@ body {
     padding: 1.2rem 3rem 1.5rem;
   }
 
+  #lsa img {
+    width: 124%;
+  }
+  #sbd img {
+    width: 151%;
+  }
+  #dde img {
+    width: 138%;
+  }
+
   #hwi .txt {
     display: inline-block;
     padding: 0;
@@ -471,14 +490,14 @@ body {
     h3 {
       font-size: 1.71rem;
     }
-    h4 {
+    .dh {
       font-size: 1.58rem;
     }
   }
 
   .txt {
     display: inline-block;
-    float: left;
+    float: inline-start;
   }
   .txt div {
     padding: 1.5rem 2.2rem 1rem;
@@ -538,7 +557,8 @@ body {
     padding: 1.6em 0 1em;
   }
   #lsa .txt div {
-    padding: 1.2rem 3rem 1.1rem 1.9rem;
+    padding: 1.2rem 0 1.1rem;
+    padding-inline: 1.9rem 3rem;
   }
   #lsa .img {
     order: 0;
@@ -556,10 +576,11 @@ body {
   }
   #lsb .txt div {
     margin: 0 0 2.6rem;
-    padding: 1.2rem 3rem 1.1rem .8rem;
+    padding: 1.2rem 0 1.1rem;
+    padding-inline: .8rem 3rem;
   }
   #lsb .img {
-    // 
+    //TODO TEST
     top: 4em;
     width: 52%;
   }
@@ -576,9 +597,10 @@ body {
   }
 
   #dde .txt {
-    float: right;
+    float: inline-end;
     width: 44%;
-    padding: 4em 0 0 2em;
+    padding: 4em 0 0;
+    padding-inline: 2em 0;
   }
   #dde .img {
     width: 56%;
@@ -598,10 +620,12 @@ body {
     margin: 3em 0 0;
   }
   #sbd .txt:nth-child(1) {
-    padding: 0 1.75em 0 2em;
+    padding: 0;
+    padding-inline: 2em 1.75em;
   }
   #sbd .txt:nth-child(2) {
-    padding: 0 2em 0 1.75em;
+    padding: 0;
+    padding-inline: 1.75em 2em;
   }
   #sbd .img {
     width: 100%;
@@ -619,20 +643,22 @@ body {
   }
 
   #epf .txt {
-    padding: 0 0 2em 8em;
+    padding: 0 0 2em;
+    padding-inline: 8em 0;
   }
   #epf .img {
     padding: 0 3.03vw 3vw 0;
   }
   #epf .img div {
-    float: left;
+    float: inline-start;
     width: 50%;
     height: 19.2vmax;
-    max-height: 36vh;
+    // max-height: 36vh;
   }
 
   #lwg .txt {
-    padding: 0 1.5em .5em 4em;
+    padding: 0 0 .5em;
+    padding-inline: 4em 1.5em;
   }
 
   #req {
@@ -682,7 +708,7 @@ body {
       font-size: 2.051rem;
       letter-spacing: -.013em;
     }
-    h4 {
+    .dh {
       font-size: 1.86rem;
       letter-spacing: -.0022em;
     }
@@ -707,7 +733,8 @@ body {
   }
   #lsa .txt {
     width: 42%;
-    padding: 9em 5em 0 1.1em;
+    padding: 9em 0 0;
+    padding-inline: 1.1em 5em;
     line-height: 1.9;
   }
   #lsa .txt div {
@@ -722,7 +749,8 @@ body {
 
   #lsb .txt {
     width: 54%;
-    padding: 9em 6em 0 2em;
+    padding: 9em 0 0;
+    padding-inline: 2em 6em;
   }
   #lsb .txt div {
     max-width: 750px;
@@ -734,7 +762,8 @@ body {
 
   #dde .txt {
     width: 48%;
-    padding: 4em 2em 0 4em;
+    padding: 4em 0;
+    padding-inline: 4em 2em;
   }
   #dde .img {
     width: 52%;
@@ -745,10 +774,10 @@ body {
     margin: auto;
   }
   #sbd .txt:nth-child(1) {
-    padding-left: 4em;
+    padding-inline-start: 4em;
   }
   #sbd .txt:nth-child(2) {
-    padding-right: 4em;
+    padding-inline-end: 4em;
   }
   #sbd .img div {
     text-align: center;
@@ -766,6 +795,7 @@ body {
   #sbd .img div {
     min-height: unset;
     aspect-ratio: 150/59;
+    //TODO TEST safari
   }
 
   #dde .txt div {
@@ -774,7 +804,8 @@ body {
   }
 
   #epf .txt {
-    padding: 0 0 4em 8em;
+    padding: 0 0 4em;
+    padding-inline: 8em 0;
   }
   #epf .txt div {
     padding-bottom: 1.9rem;

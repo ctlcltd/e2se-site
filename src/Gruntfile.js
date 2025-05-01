@@ -57,7 +57,7 @@ module.exports = function(grunt) {
             origin: REMOTE_ORIGIN
           },
           data: {
-            site_privacy_rev: new Date('2024-12-10')
+            site_privacy_rev: new Date('2024-12-10'),
             software_privacy_rev: new Date('2024-12-10')
           }
         },
@@ -285,23 +285,23 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-terser');
 
   // site tasks
-  grunt.registerTask('build.site', ['liquid:site', 'concat:site', 'terser:site', 'sass:site', 'cssmin:site']);
-  grunt.registerTask('watch.site', ['build.site', 'watch:site']);
+  grunt.registerTask('build:site', ['liquid:site', 'concat:site', 'terser:site', 'sass:site', 'cssmin:site']);
+  grunt.registerTask('watch:site', ['build:site', 'watch:site']);
 
   // help tasks
-  grunt.registerTask('build.help', ['liquid:help', 'sass:help', 'cssmin:help']);
-  grunt.registerTask('watch.help', ['build.help', 'watch:help']);
-  grunt.registerTask('dist.help', ['concat:dist_help', 'terser:dist_help', 'sass:dist_help', 'cssmin:dist_help', 'liquid:dist_help', 'clean:dist_help']);
+  grunt.registerTask('build:help', ['liquid:help', 'sass:help', 'cssmin:help']);
+  grunt.registerTask('watch:help', ['build:help', 'watch:help']);
+  grunt.registerTask('dist:help', ['concat:dist_help', 'terser:dist_help', 'sass:dist_help', 'cssmin:dist_help', 'liquid:dist_help', 'clean:dist_help']);
 
   // translate tasks
-  grunt.registerTask('build.translate', ['liquid:translate', 'concat:translate', 'terser:translate', 'sass:translate', 'cssmin:translate']);
-  grunt.registerTask('watch.translate', ['build.translate', 'watch:translate']);
+  grunt.registerTask('build:translate', ['liquid:translate', 'concat:translate', 'terser:translate', 'sass:translate', 'cssmin:translate']);
+  grunt.registerTask('watch:translate', ['build:translate', 'watch:translate']);
 
   // backend tasks
-  grunt.registerTask('build.backend', ['liquid:backend', 'concat:backend', 'terser:backend', 'sass:backend', 'cssmin:backend']);
-  grunt.registerTask('watch.backend', ['build.backend', 'watch:backend']);
+  grunt.registerTask('build:backend', ['liquid:backend', 'concat:backend', 'terser:backend', 'sass:backend', 'cssmin:backend']);
+  grunt.registerTask('watch:backend', ['build:backend', 'watch:backend']);
 
-  grunt.registerTask('build.bunch', ['sass:bunch']);
-  grunt.registerTask('default', ['build.site', 'build.help', 'build.translate', 'build.backend']);
+  grunt.registerTask('build:bunch', ['sass:bunch']);
+  grunt.registerTask('default', ['build:site', 'build:help', 'build:translate', 'build:backend']);
 
 };

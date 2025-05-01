@@ -18,6 +18,7 @@ button {
   border-radius: 0;
   cursor: pointer;
   -webkit-appearance: none;
+  appearance: none;
 
   box-shadow: 0 0 .18rem $button-shadow-color;
   &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
@@ -131,9 +132,10 @@ mark {
   }
 
   #head {
-    position: static;
+    position: absolute;
+    height: 40.5px;
     padding: 0;
-    background: #fff;
+    background: string.unquote("transparent") !important;
   }
   #head > div {
     position: fixed;

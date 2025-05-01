@@ -36,10 +36,14 @@
   padding-bottom: 0;
 }
 
+.l2 h4, .l3 h4 {
+  font-size: 1rem;
+}
+
 #side {
   position: fixed;
-  inset: 40.5px auto 0;
-  inset-inline-end: 0;
+  inset: 40.5px 0 0;
+  inset-inline: auto 0;
   width: 0;
   background: #f9f9f9;
   transition: width linear 150ms;
@@ -94,7 +98,7 @@
     bottom: 0;
     width: 100%;
     height: 2ch;
-    background: linear-gradient(0deg, #f9f9f9, transparent);
+    background: linear-gradient(0deg, #f9f9f9, string.unquote("transparent"));
   }
 }
 
@@ -133,11 +137,11 @@
 }
 
 .toc a {
+  display: block;
   margin: .1rem 0;
   padding: .2rem 1rem;
 }
 .toc > li > a {
-  display: block;
   margin: 0;
   padding: .5em 1rem;
   border: 1px solid;
@@ -213,7 +217,7 @@ kbd .symbol {
   overflow-x: auto;
   overflow-y: hidden;
 
-  div {
+  > div {
     width: auto;
     overflow-x: auto;
     overflow-y: hidden;
@@ -223,13 +227,14 @@ kbd .symbol {
     content: "";
     position: absolute;
     top: 0;
-    right: 0;
-    inset-inline-start: unset;
     inset-inline-end: 0;
     display: block;
     height: 100%;
     width: 5vw;
-    background: linear-gradient(90deg, transparent, #f9f9f9);
+    background: linear-gradient(90deg, string.unquote("transparent"), #f9f9f9);
+  }
+  [dir="rtl"] &:after, .translated-rtl &:after {
+    background: linear-gradient(-90deg, string.unquote("transparent"), #f9f9f9);
   }
   svg {
     display: block;

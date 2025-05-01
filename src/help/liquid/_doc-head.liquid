@@ -1,11 +1,11 @@
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">{% unless distributable %}
-<link rel="stylesheet" href="{{ '../style.css' | asset: deploy }}">
-<link rel="stylesheet" href="{{ '../help.css' | asset: deploy }}">{% endunless %}
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{% unless distributable %}{% assign titleSuffix = "Online Help" %}{% else %}{% assign titleSuffix = "User Manual" %}{% endunless %}{% unless templateName == "index" %}{{ toc[templateName].title | append: " - " | append: titleSuffix | escape }}{% else %}{{ toc[templateName].title | escape }}{% endunless %}</title>
 <meta name="description" content="{{ toc[templateName].description | escape }}">{% if distributable %}
 <meta name="robots" content="noindex,noarchive">
 <style>{% render "{{ stylesheet }}" %}</style>{% endif %}{% if deploy %}
-<link rel="canonical" href="{% canonicalUrl %}">{% endif %}
+<link rel="canonical" href="{% canonicalUrl %}">{% endif %}{% unless distributable %}
+<link rel="stylesheet" href="{{ '../style.css' | asset: deploy }}">
+<link rel="stylesheet" href="{{ '../help.css' | asset: deploy }}">{% endunless %}
 </head>

@@ -40,12 +40,17 @@ select,
   background: $input-background;
   border: 1px solid $input-border-color;
   border-radius: 0;
-  -webkit-appearance: none;
   box-sizing: border-box;
 
   box-shadow: 0 0 .11rem $input-shadow-color; opacity: .97;
   &:hover { box-shadow: 0 0 .11rem $input-shadow-color-hover; }
   &:focus { box-shadow: 0 .022rem .18rem $input-shadow-color-focus; opacity: 1; }
+}
+input,
+textarea,
+.input {
+  -webkit-appearance: none;
+  appearance: none;
 }
 input[placeholder],
 textarea[placeholder] {

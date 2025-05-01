@@ -1,5 +1,6 @@
 /* scss/_table.scss */
 
+@use "sass:string";
 @use "variant" as *;
 
 table {
@@ -48,14 +49,13 @@ th[data-sort-column] button:after {
   position: absolute;
   inset-inline-end: 0;
   display: inline-block;
-  margin: 0;
-  margin-top: 6px;
-  margin-inline-end: 3px;
-  border: 6px solid transparent;
+  margin: 6px 0 0;
+  margin-inline: 0 3px;
+  border: 6px solid string.unquote("transparent");
 }
 th[data-sort-column="0"] button:after {
   margin-top: 0;
-  border-top-color: transparent;
+  border-top-color: string.unquote("transparent");
   border-bottom-color: currentColor;
 }
 th[data-sort-column="1"] button:after {

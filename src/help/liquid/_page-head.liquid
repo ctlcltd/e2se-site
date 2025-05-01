@@ -1,14 +1,14 @@
 <div id="head">
   <div>
-    <button type="button" id="btn-menu" title="Contents" data-target="#toc">
+    <button type="button" id="btn-menu" title="Menu" aria-controls="toc" aria-label="Contents menu" data-target="#toc">
       <svg width="32" height="32"><use href="#menu" fill="currentColor"/></svg>
     </button>
-    <button type="button" id="btn-l10n" title="Language" data-target="#language">
+    <button type="button" id="btn-l10n" title="Language" aria-controls="language" aria-label="Language" data-target="#language">
       <svg width="32" height="32"><use href="#l10n" fill="currentColor"/></svg>
     </button>
   </div>{% unless distributable %}
   <div>
-    <button type="button" id="btn-color">
+    <button type="button" id="btn-color" aria-label="Color switcher">
       <svg width="22" height="22"><use href="#tone" fill="currentColor"/></svg>
       <span class="d">switch to light</span>
       <span class="l">switch to dark</span>

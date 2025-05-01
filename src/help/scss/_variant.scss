@@ -1,5 +1,6 @@
 /* help/_variant.scss */
 
+@use "sass:string";
 @use "../../scss/variant" as *;
 
 @mixin styles {
@@ -43,7 +44,7 @@
   }
   .nav-side {
     &:after {
-      background: linear-gradient(0deg, #0a0a0a, transparent);
+      background: linear-gradient(0deg, #0a0a0a, string.unquote("transparent"));
     }
   }
 
@@ -65,7 +66,10 @@
       background: #0a0a0a;
     }
     &:after {
-      background: linear-gradient(90deg, transparent, #0a0a0a);
+      background: linear-gradient(90deg, string.unquote("transparent"), #0a0a0a);
+    }
+    [dir="rtl"] &:after, .translated-rtl &:after {
+      background: linear-gradient(-90deg, string.unquote("transparent"), #0a0a0a);
     }
     [stroke] {
       stroke: #fff;

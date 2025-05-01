@@ -10,6 +10,10 @@
 @use "custom";
 @use "help";
 
+.translated-rtl {
+  direction: rtl;
+}
+
 @include custom.l10n-note;
 
 @media (prefers-color-scheme: dark) {
