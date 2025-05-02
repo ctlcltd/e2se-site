@@ -89,8 +89,7 @@ abbr:after {
   content: "?";
   position: relative;
   top: -.5em;
-  //TODO FIX rtl
-  inset-inline: .2em 0;
+  margin: 0 .2em;
   display: inline-block;
   width: 1.2em;
   height: 1.2em;
@@ -105,6 +104,7 @@ abbr:after {
 }
 .abbrbox {
   position: absolute;
+  inset-inline: auto;
   display: block;
   margin: 0 !important;
   padding: .5em 1em !important;
@@ -119,6 +119,9 @@ abbr:after {
     padding: 0 !important;
     background: none !important;
   }
+
+  #lsa & { width: 80vw; max-width: 354px !important; }
+  #epf & { width: 90vw; max-width: 346px !important; }
 }
 
 #footer {
@@ -304,8 +307,7 @@ abbr:after {
   }
 
   .abbrbox {
-    margin: 0 -5em !important;
-    // transform: translate(86%, -33%);
+    inset-inline: 0 auto;
   }
 
   #footer {
@@ -384,6 +386,12 @@ abbr:after {
 @media (min-width: 3840px) {
   body {
     zoom: 2;
+  }
+}
+
+[dir="rtl"], .translated-rtl {
+  a[target] {
+    unicode-bidi: plaintext;
   }
 }
 

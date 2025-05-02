@@ -1,7 +1,8 @@
-{% if distributable %}      <div id="foot">
+{% if distributable %}      <div id="foot" role="contentinfo">
         <div>
           <p>Help revision (d/m/y): {{ help_rev | date: "%d/%m/%Y" }} | <a href="{{ helpBaseUrl | escape }}">{{ helpBaseUrl }}</a></p>
-          <p>Copyright &copy; <span translate="no">e2 SAT Editor Team</span> <span class="whoiam">[Leonardo Laureti]</span></p>
+          <p translate="no">Copyright &copy; <span>e2 SAT Editor Team</span> <span class="whoiam">[Leonardo Laureti]</span></p>
         </div>
-      </div>{% else %}      <!-- Help revision (d/m/y): {{ help_rev | date: "%d/%m/%Y" }} -->
+      </div>{% else %}
+      <!-- Help revision (d/m/y): {{ help_rev | date: "%d/%m/%Y" }} -->
 {% endif %}

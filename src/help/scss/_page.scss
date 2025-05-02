@@ -147,6 +147,12 @@ mark {
   }
 }
 
+[dir="rtl"], .translated-rtl {
+  a[target] {
+    unicode-bidi: plaintext;
+  }
+}
+
 @media print {
   main { min-height: unset; }
   #head { display: none; }

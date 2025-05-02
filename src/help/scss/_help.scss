@@ -217,7 +217,7 @@ kbd .symbol {
   overflow-x: auto;
   overflow-y: hidden;
 
-  > div {
+  div {
     width: auto;
     overflow-x: auto;
     overflow-y: hidden;
@@ -298,13 +298,6 @@ td {
   opacity: .85;
 }
 
-@media screen {
-  .toc > li > a {
-    border-color: #fff;
-    background: #eee;
-  }
-}
-
 @media (min-width: 672px) {
   .image {
     &:after {
@@ -379,11 +372,24 @@ td {
   }
 }
 
+@media screen {
+  .toc > li > a {
+    border-color: #fff;
+    background: #eee;
+  }
+}
+
 @media print {
   #help main {
     max-width: unset;
   }
   #side {
     display: none;
+  }
+}
+
+[dir="rtl"], .translated-rtl {
+  samp, code {
+    unicode-bidi: plaintext;
   }
 }

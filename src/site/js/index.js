@@ -3,12 +3,27 @@
 const doc = document;
 const body = doc.body;
 const head = doc.getElementById('head');
+var theme;
 // var platform;
+
+function colorScheme() {
+  const mq = matchMedia('(prefers-color-scheme: dark)');
+  theme = mq.matches;
+
+  function change(evt) {
+    theme = evt.matches;
+
+    preferredColor();
+    loadImages();
+  }
+
+  mq.addEventListener('change', change);
+}
 
 function preferredColor() {
   let color = sessionStorage.getItem('preferred-color');
   color = color == 'light' || color == 'dark' ? color : null;
-  color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  color = color ?? (theme ? 'dark' : 'light');
 
   if (color) {
     body.setAttribute('data-color', color);
@@ -42,7 +57,7 @@ function switchColor(evt) {
       }, 100);
 
       sessionStorage.setItem('preferred-color', switched);
-      load_images();
+      loadImages();
     }
   }
 }
@@ -260,7 +275,7 @@ function loadImages(evt) {
       } else if (id == 'e') {
         img += 'picons-editor-sat';
       }
-      color = color ?? (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'd' : 'l');
+      color = color ?? (theme ? 'd' : 'l');
     } else {
       return;
     }
@@ -271,11 +286,11 @@ function loadImages(evt) {
   }
 }
 
+colorScheme();
 preferredColor();
 head.addEventListener('click', switchColor);
 head.addEventListener('click', fundRaise);
 head.addEventListener('click', offCanvas);
-navmq();
 loadImages();
-window.addEventListener('appearance-changed', loadImages);
 abbrbox();
+navmq();

@@ -71,6 +71,9 @@ module.exports = function(grunt) {
             origin: REMOTE_ORIGIN,
             helpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
             toc: grunt.file.readJSON('help/toc.json')
+          },
+          data: {
+            help_rev: new Date()
           }
         },
         src: ['help/liquid/*.liquid'],
@@ -121,7 +124,7 @@ module.exports = function(grunt) {
         options: {
           stripBanners: true,
           banner: grunt.file.read('site/js/_banner.js') + '\n(function() {\n\n',
-          footer: '\n})();\n'
+          footer: '\n})();\n',
         },
         src: ['site/js/index.js'],
         dest: '../public/script.js'

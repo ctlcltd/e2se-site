@@ -4,7 +4,7 @@ const grunt = require('grunt');
 const { Liquid } = require('liquidjs');
 
 function filter_asset(src, deploy) {
-  return deploy ? (/^\//.test(src) ? '' : '/') + src.replace(/(\.\w+)$/, '.min$1') : src;
+  return deploy ? (/^[\/\.]/.test(src) ? '' : '/') + src.replace(/(\.\w+)$/, '.min$1') : src;
 }
 
 const tag_canonicalUrl = {

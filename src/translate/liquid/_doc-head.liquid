@@ -8,5 +8,5 @@
 <title>Add language - Translations</title>
 <meta name="description" content="Add a new language to translations">{% endcase %}{% if deploy %}
 <link rel="canonical" href="{% canonicalUrl %}">{% endif %}
-<link rel="stylesheet" href="/translate/style.min.css">
+<link rel="stylesheet" href="{{ '/translate/style.css' | asset: deploy }}">
 </head>

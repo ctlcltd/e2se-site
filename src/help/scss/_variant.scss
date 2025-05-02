@@ -48,13 +48,6 @@
     }
   }
 
-  @media screen {
-    .toc > li > a {
-      border-color: #101010;
-      background: #222;
-    }
-  }
-
   samp,
   code,
   .icon {
@@ -85,6 +78,13 @@
     }
     text {
       fill: #fff;
+    }
+  }
+
+  @media screen {
+    .toc > li > a {
+      border-color: #101010;
+      background: #222;
     }
   }
 }

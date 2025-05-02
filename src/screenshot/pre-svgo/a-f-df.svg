@@ -435,7 +435,7 @@
               <rect x="469" y="403" width="1325" height="687" style="fill:#131312"/>
               
                 <rect x="473" y="707" width="1325" height="49" style="fill:#12608a" transform="matrix(1,0,0,0.996,-4,39.1)"/>
-                <text x="469" y="404" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">38</tspan> <tspan x="572">Giallo</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">TVN WBD</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="404" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">38</tspan> <tspan x="572">Giallo HD HD</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">TVN WBD</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,880,416)">
                   <use href="#smt" style="fill:#c4c4c4"/>
                 </g>

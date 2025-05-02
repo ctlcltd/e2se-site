@@ -419,7 +419,7 @@
               <rect x="469" y="423" width="1325" height="623" style="fill:#fff"/>
               
                 <rect x="469" y="767" width="1325" height="47" style="fill:#0078d7"/>
-                <text x="469" y="426" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">38</tspan> <tspan x="572">Giallo</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN WBD</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="426" dy="31" style="font-size:19.5px;fill:#000"><tspan x="492">38</tspan> <tspan x="572">Giallo HD HD</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:18.915px">...</tspan> <tspan x="1425">TVN WBD</tspan> <tspan x="1695">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,880,438)">
                   <use href="#smt" style="fill:#545454"/>
                 </g>

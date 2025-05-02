@@ -515,6 +515,28 @@ span.revised {
   }
 }
 
+
+@media (min-width: 2440px) {
+  body {
+    zoom: 1.25;
+  }
+}
+@media (min-width: 2848px) {
+  body {
+    zoom: 1.5;
+  }
+}
+@media (min-width: 3088px) {
+  body {
+    zoom: 1.75;
+  }
+}
+@media (min-width: 3840px) {
+  body {
+    zoom: 2;
+  }
+}
+
 @media print {
   main { min-height: unset; }
   .ctrbar { display: none; }

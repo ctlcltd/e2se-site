@@ -10,5 +10,5 @@
 @use "help";
 
 .dark {
-	@include variant.dist_styles_dark;
+  @include variant.dist_styles_dark;
 }
