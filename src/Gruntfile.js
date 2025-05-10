@@ -124,7 +124,7 @@ module.exports = function(grunt) {
         options: {
           stripBanners: true,
           banner: grunt.file.read('site/js/_banner.js') + '\n(function() {\n\n',
-          footer: '\n})();\n',
+          footer: '\n})();\n'
         },
         src: ['site/js/index.js'],
         dest: '../public/script.js'

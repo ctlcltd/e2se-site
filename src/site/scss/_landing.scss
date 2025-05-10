@@ -62,7 +62,9 @@
   h2, h3, .dh {
     display: inline-block;
     width: fit-content;
-    max-width: 89%;
+    max-width: 85%;
+    line-height: 1.15;
+    padding: .1em 0 .25em;
     font-family: sans-serif-condensed, HelveticaNeue-CondensedBold, "Franklin Gothic", sans-serif;
     font-weight: bold;
     transform: matrix(1.21, 0, .01, 1.02, -1, -1);
@@ -302,6 +304,9 @@
 #lwg .txt div:last-child p:last-child a {
   font-weight: bold;
   white-space: nowrap;
+}
+#lwg .txt mark:not(:last-of-type) + font {
+  margin: 0;
 }
 
 #req {

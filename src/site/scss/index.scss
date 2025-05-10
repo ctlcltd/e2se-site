@@ -15,6 +15,13 @@
 .translated-rtl {
   direction: rtl;
 }
+.translated-ltr,
+.translated-rtl {
+  font ~ [translate="no"],
+  [translate="no"] ~ font {
+    margin-inline: .25em 0;
+  }
+}
 
 @include variant.print($name: "dark");
 
