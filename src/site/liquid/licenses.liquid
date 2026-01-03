@@ -8,27 +8,36 @@
     <h1>Software Licenses</h1>
     <p>Information about software licenses related to &quot;e2 SAT Editor&quot;.</p>
     <div>
-      <p>Source code of the Software &quot;e2 SAT Editor&quot; is available under the terms of the <b>GNU GPLv3 License</b> and the <b>MIT License</b>.</p>
+      <p>Source code of the Software &quot;e2 SAT Editor&quot; is available under the terms of the <b>MIT License</b> and the <b>GNU GPLv3 License</b>.</p>
       <p>The Software &quot;e2 SAT Editor&quot; is distributed under the terms of the <a href="https://www.gnu.org/licenses/gpl-3.0.html" rel="nofollow" target="_blank">GNU GPLv3 License</a>.</p>
       <p>The source code of the Software &quot;e2 SAT Editor&quot; is available here: <a href="https://github.com/ctlcltd/e2-sat-editor" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor</a></p>
     </div>
     <div>
-      <h2>Third Parties software libraries</h2>
-      <p>The Software &quot;e2 SAT Editor&quot; contains or depends on third-party software libraries:</p>
-      <ul>
-        <li><em>&quot;Qt framework&quot;</em> (Qt Community Edition) library for the GUI</li>
-        <li><em>&quot;Curl library&quot;</em> (libcurl) library for the connectivity (FTP, telnet, Webif)</li>
-      </ul>
+      <h2>Third Party Software Libraries</h2>
+      <p>The Software &quot;e2 SAT Editor&quot; will be distribuited along with third party software.</p>
+      <p>Third party software libraries are <em>open-source</em> and/or <em>free software</em>.</p>
     </div>
     <div>
-      <h3>Qt Community Edition</h3>
-      <div>
-        <p>&quot;Qt framework&quot; contains third-party code and dependencies, detailed in the Qt documentation page <b>&quot;Licenses Used in Qt&quot;</b>.</p>
-        <p>Licenses used in Qt 6 (Qt website): <a href="https://doc.qt.io/qt-6/licenses-used-in-qt.html" rel="nofollow" target="_blank">https://doc.qt.io/qt-6/licenses-used-in-qt.html</a></p>
-        <p>Licenses used in Qt 5 (Qt website): <a href="https://doc.qt.io/qt-5/licenses-used-in-qt.html" rel="nofollow" target="_blank">https://doc.qt.io/qt-5/licenses-used-in-qt.html</a></p>
-      </div>
-      <p>GNU GPLv3 License</p>
-      <div class="license">
+      <h2>Libraries</h2>
+      <p>The main libraries for the Software &quot;e2 SAT Editor&quot; are: Qt, libcurl.</p>
+      <ul>
+        <li><em>&quot;Qt Toolkit&quot;</em> (Qt Community Edition, Qt for WebAssembly) library for the GUI</li>
+        <li><em>&quot;Curl Library&quot;</em> (libcurl) library for the connectivity (HTTP, FTP, telnet, Webif)</li>
+      </ul>
+      <p>Libraries depend on other third party software libraries (dependencies).</p>
+    </div>
+    <div>
+<h3 translate="no">Qt Toolkit</h3>
+<div>
+<p>
+Library: <span translate="no">Qt Toolkit (Qt Community Edition, Qt for WebAssembly)</span><br>
+Copyright: <span translate="no">Copyright (C) 2018-2026 The Qt Company Ltd. and other contributors.</span><br>
+License (SPDX): <span translate="no">GPL-3.0-only</span> <span translate="no">Qt-GPL-exception-1.0</span><br>
+License Link (URL): <a href="https://doc.qt.io/qt-6/gpl.html" rel="nofollow" target="_blank">https://doc.qt.io/qt-6/gpl.html</a>
+</p>
+</div>
+<p translate="no">GNU GPL 3.0 License | Qt GPL exception 1.0</p>
+<div class="license">
 <pre>
 This is the GNU General Public License version 3, annotated with The
 Qt Company GPL Exception 1.0:
@@ -735,16 +744,109 @@ Public License instead of this License.  But first, please read
 &lt;http://www.gnu.org/philosophy/why-not-lgpl.html&gt;.
 
 </pre>
-      </div>
+</div>
+<div>
+<details open>
+<summary translate="no">Qt Community Edition</summary>
+<p>The list of libraries in brief:</p>
+<table>
+<tbody translate="no">
+<tr><td>qt-core</td></tr>
+<tr><td>qt-gui</td></tr>
+<tr><td>qt-widgets</td></tr>
+<tr><td>qt-printsupport</td></tr>
+<tr><td>qt-dbus</td></tr>
+<tr><td>qminimal</td></tr>
+<tr><td>qoffscreen</td></tr>
+<tr><td>qwindows</td></tr>
+<tr><td>qmodernwindowsstyle</td></tr>
+<tr><td>qcocoa</td></tr>
+<tr><td>qmacstyle</td></tr>
+<tr><td>qxcb</td></tr>
+<tr><td>qwayland</td></tr>
+</tbody>
+</table>
+
+<p>The list of dependencies in brief:</p>
+<table>
+<thead>
+<tr><th>Library</th><th>Description</th><th>License (SPDX)</th></tr>
+</thead>
+<tbody>
+<tr><td>libglib</td><td>GLib system helper library</td><td>LGPL-2.1-or-later</td></tr>
+<tr><td>libgthread</td><td>GLib system threads helper library</td><td>LGPL-2.1-or-later</td></tr>
+<tr><td>libdbus</td><td>D-Bus message bus system library</td><td>GPL-2.0-or-later, AFL-2.1</td></tr>
+<tr><td>libfreetype</td><td>Font rendering library</td><td>FTL, GPL-2.0-or-later</td></tr>
+<tr><td>libharfbuzz</td><td>Text shaping library</td><td>MIT</td></tr>
+<tr><td>libgraphite</td><td>Font rendering library</td><td>GPL-2.0-or-later, LGPL-2.1-or-later, MPL-2.0</td></tr>
+<tr><td>libicu</td><td>Unicode support library</td><td>Unicode-3.0, ICU</td></tr>
+<tr><td>libdouble-conversion</td><td>IEEE doubles helper library</td><td>BSD-3-Clause</td></tr>
+<tr><td>libjpeg-turbo</td><td>JPEG image codec</td><td>BSD-3-Clause, IJG</td></tr>
+<tr><td>libpng</td><td>PNG image codec</td><td>libpng-2.0</td></tr>
+<tr><td>libiconv</td><td>GNU libiconv Character encoding library</td><td>GPL-3.0-or-later, LGPL-2.1-or-later</td></tr>
+<tr><td>libintl</td><td>GNU gettext Internationalization library</td><td>GPL-3.0-or-later, LGPL-2.1-or-later</td></tr>
+<tr><td>libpcre2</td><td>PCRE regular expression library</td><td>BSD-3-Clause PCRE2-exception</td></tr>
+<tr><td>libmd4c</td><td>Markdown parser library for C</td><td>MIT</td></tr>
+<tr><td>libb2</td><td>BLAKE2 hash functions library for C</td><td>CC0-1.0</td></tr>
+<tr><td>libbrotli</td><td>Brotli compression library</td><td>MIT</td></tr>
+<tr><td>libzlib</td><td>Deflate compression library</td><td>Zlib</td></tr>
+<tr><td>libzip2</td><td>Data compression library</td><td>bzip2-1.0.6</td></tr>
+<tr><td>libzstd</td><td>Zstandard compression library</td><td>BSD-3-Clause, GPL-2.0-only</td></tr>
+</tbody>
+</table>
+</details>
+<details>
+<summary translate="no">Qt for WebAssembly</summary>
+<p>The list of libraries in brief:</p>
+<table>
+<tbody translate="no">
+<tr><td>qt-core</td></tr>
+<tr><td>qt-gui</td></tr>
+<tr><td>qt-widgets</td></tr>
+<tr><td>qt-imageformats</td></tr>
+<tr><td>qt-svg</td></tr>
+<tr><td>qwasm</td></tr>
+<tr><td>qtloader.js</td></tr>
+</tbody>
+</table>
+
+<p>The list of dependencies in brief:</p>
+<table>
+<thead>
+<tr><th>Library</th><th>Description</th><th>License (SPDX)</th></tr>
+</thead>
+<tbody>
+<tr><td>emscripten</td><td>Emscripten runtime</td><td>MIT, NCSA</td></tr>
+<tr><td>libfreetype</td><td>Font rendering library</td><td>FTL, GPL-2.0-or-later</td></tr>
+<tr><td>libharfbuzz</td><td>Text shaping library</td><td>MIT</td></tr>
+<tr><td>libjpeg-turbo</td><td>JPEG image codec</td><td>BSD-3-Clause, IJG</td></tr>
+<tr><td>libpng</td><td>PNG image codec</td><td>libpng-2.0</td></tr>
+<tr><td>libpcre2</td><td>PCRE regular expression library</td><td>BSD-3-Clause PCRE2-exception</td></tr>
+<tr><td>libzlib</td><td>Deflate compression library</td><td>Zlib</td></tr>
+<tr><td translate="no">Bitstream Vera Sans</td><td>font</td><td>Bitstream-Vera</td></tr>
+<tr><td translate="no">DejaVu Sans</td><td>font</td><td translate="no">custom (DejaVu font license)</td></tr>
+<tr><td translate="no">DejaVu Sans Mono</td><td>font</td><td translate="no">custom (DejaVu font license)</td></tr>
+</tbody> 
+</table>
+</details>
+</div>
+<div>
+<p>For third party code used in Qt, refer to:</p>
+<p>Third party code used in Qt 6 (Qt website): <a href="https://doc.qt.io/qt-6/licenses-used-in-qt.html" rel="nofollow" target="_blank">https://doc.qt.io/qt-6/licenses-used-in-qt.html</a></p>
+<p>Third party code used in Qt 5 (Qt website): <a href="https://doc.qt.io/qt-5/licenses-used-in-qt.html" rel="nofollow" target="_blank">https://doc.qt.io/qt-5/licenses-used-in-qt.html</a></p>
+</div>
     </div>
     <div>
-      <h3>libcurl</h3>
-      <div>
-        <p>&quot;Curl library&quot; contains third-party code and dependencies, detailed in the Curl documentation page <b>&quot;Project Documentation&quot;</b>.</p>
-        <p>Project documentation (Curl website): <a href="https://curl.se/docs/projdocs.html" rel="nofollow" target="_blank">https://curl.se/docs/projdocs.html</a></p>
-      </div>
-      <p>Curl License</p>
-      <div class="license">
+<h3 translate="no">Curl Library</h3>
+<div>
+<p>
+Library: <span translate="no">Curl (libcurl)</span><br>
+Copyright: <span translate="no">Copyright (c) 1996 - 2025, Daniel Stenberg, daniel@haxx.se, and many contributors.</span><br>
+License (SPDX): <span translate="no">curl</span><br>
+License Link (URL): <a href="https://curl.se/docs/copyright.html" rel="nofollow" target="_blank">https://curl.se/docs/copyright.html</a>
+</p>
+<p>Curl License</p>
+<div class="license">
 <pre>
 COPYRIGHT AND PERMISSION NOTICE
 
@@ -759,18 +861,68 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.
 
 </pre>
-      </div>
+</div>
+<div>
+<p>The list of dependencies in brief:</p>
+<table>
+<thead>
+<tr><th>Library</th><th>Description</th><th>License (SPDX)</th></tr>
+</thead>
+<tbody>
+<tr><td>libssl3</td><td>OpenSSL TLS/SSL security library</td><td>Apache-2.0</td></tr>
+<tr><td>libcrypto3</td><td>OpenSSL TLS/SSL security library</td><td>Apache-2.0</td></tr>
+<tr><td>libnghttp2</td><td>HTTP/2 library for C</td><td>MIT</td></tr>
+<tr><td>libnghttp3</td><td>HTTP/3 library for C</td><td>MIT</td></tr>
+<tr><td>libngtcp2</td><td>QUIC library for C</td><td>MIT</td></tr>
+<tr><td>libssh2</td><td>SSH2 library for C</td><td>BSD-3-Clause </td></tr>
+<tr><td>libpsl</td><td>Domain TLDs collection library for C</td><td>MIT</td></tr>
+<tr><td>libidn2</td><td>GNU libidn2 Domain names encoding support library</td><td>GPL-2.0-or-later, LGPL-3.0-or-later</td></tr>
+<tr><td>libiconv</td><td>GNU libiconv Character encoding library</td><td>GPL-3.0-or-later, LGPL-2.1-or-later</td></tr>
+<tr><td>libintl</td><td>GNU gettext Internationalization library</td><td>GPL-3.0-or-later, LGPL-2.1-or-later</td></tr>
+<tr><td>libunistring</td><td>GNU libunistring C string processing library</td><td>GPL-3.0-or-later, LGPL-3.0-or-later</td></tr>
+<tr><td>libbrotli</td><td>Brotli compression library</td><td>MIT</td></tr>
+<tr><td>libzlib</td><td>Deflate compression library</td><td>Zlib</td></tr>
+<tr><td>libzip2</td><td>Data compression library</td><td>bzip2-1.0.6</td></tr>
+<tr><td>libzstd</td><td>Zstandard compression library</td><td>BSD-3-Clause, GPL-2.0-only</td></tr>
+</tbody> 
+</table>
+</div>
+<div>
+  <p>Project documentation (Curl website): <a href="https://curl.se/docs/projdocs.html" rel="nofollow" target="_blank">https://curl.se/docs/projdocs.html</a></p>
+</div>
+    </div>
+    <div>
+<h3>Other Dependencies</h3>
+<div>
+<p>The list of (optional) other distribuited software libraries:</p>
+<table>
+<thead>
+<tr><th>Library</th><th>Description</th><th>License (SPDX)</th></tr>
+</thead>
+<tbody>
+<tr><td>libgcc</td><td>GNU GCC runtime library</td><td>GPL-3.0-or-later GCC-exception-3.1</td></tr>
+<tr><td>libstdc++</td><td>GNU GCC C++ runtime library</td><td>GPL-3.0-or-later GCC-exception-3.1</td></tr>
+<tr><td>libwinpthread</td><td>MinGW-w64 POSIX threading library</td><td>MIT, BSD-3-Clause-Clear</td></tr>
+<tr><td>ca-certificates</td><td>Common CA certificates from Mozilla</td><td>MPL-2.0</td></tr>
+<tbody>
+</div>
     </div>
     <hr>
     <div>
-      <h2>Software Licenses</h2>
-      <p>The Software &quot;e2 SAT Editor&quot; is distributed under the terms of the <b>GNU GPLv3 License</b>.</p>
-      <p>The source code of the Software &quot;e2 SAT Editor&quot; is dual licensed under the terms of the <b>GNU GPLv3 License</b> and the <b>MIT License</b>.</p>
-    </div>
-    <div>
-      <h3 translate="no">e2 SAT Editor</h3>
-      <p>GNU GPLv3 License</p>
-      <div class="license">
+<h2 translate="no">e2 SAT Editor</h2>
+<p>The Software &quot;e2 SAT Editor&quot; is distributed under the terms of the <b>GNU GPLv3 License</b>.</p>
+<p>The source code of the Software &quot;e2 SAT Editor&quot; is dual licensed under the terms of the <b>MIT License</b> and the <b>GNU GPLv3 License</b>.</p>
+<div>
+<p>
+Software: <span translate="no">e2 SAT Editor</span><br>
+Copyright: <span translate="no">Copyright 2022-2026 (C) e2 SAT Editor Team [Leonardo Laureti]</span><br>
+License (SPDX): <span translate="no">GPL-3.0-or-later</span><br>
+License Link (URL): <a href="https://github.com/ctlcltd/e2-sat-editor/blob/main/LICENSE-GPL-3.0-or-later" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/blob/main/LICENSE-GPL-3.0-or-later</a>
+</p>
+</div>
+<div>
+<p translate="no">GNU GPL 3.0 License</p>
+<div class="license">
 <pre>
 Copyright 2022-2026 (C) e2 SAT Editor Team [Leonardo Laureti]
 
@@ -1463,38 +1615,18 @@ Public License instead of this License.  But first, please read
 &lt;https://www.gnu.org/licenses/why-not-lgpl.html&gt;.
 
 </pre>
-      </div>
-    </div>
-    <div>
-      <h3 translate="no">e2 SAT Editor</h3>
-      <p>MIT License</p>
-      <div class="license">
-<pre>
-The MIT License (MIT)
-
-Copyright (C) e2 SAT Editor Team [Leonardo Laureti]
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-</pre>
-      </div>
+</div>
+</div>
+<div>
+<h3>Online demo</h3>
+<p>Online demo is using Qt for WebAssembly and is published under the terms of the <b>GNU GPLv3 License</b>.</p>
+<p>
+Software: <span translate="no">e2se-wasm-demo</span><br>
+Copyright: <span translate="no">Copyright 2022-2026 (C) e2 SAT Editor Team [Leonardo Laureti]</span><br>
+License (SPDX): <span translate="no">GPL-3.0-only</span><br>
+License Link (URL): <a href="https://github.com/ctlcltd/e2se-wasm-demo/blob/main/LICENSE-GPL-3.0-only" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2se-wasm-demo/blob/main/LICENSE-GPL-3.0-only</a>
+</p>
+</div>
     </div>
   </main>
 {% render '_page-foot.liquid' %}
