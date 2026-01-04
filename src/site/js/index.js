@@ -225,7 +225,7 @@ function abbrbox() {
     }
   }
 
-  for (const el of doc.querySelectorAll('abbr')) {
+  for (const el of doc.querySelectorAll('abbr[title]')) {
     el._title = el.title;
     el.setAttribute('title', '');
     el.addEventListener('click', event);

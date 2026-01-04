@@ -40,7 +40,7 @@ Copy all the assets to `public` path.
 Then build needed files and assets.
 ```
 npm run copy
-npm run build.all
+npm run build:all
 ```
 
 Setup with the script `setup.sh` to install needed translation files from **e2-sat-editor** repository.
@@ -68,9 +68,9 @@ Serve from `public` root.
 
 ### Build the User Manual
 
-To make distributable User Manual (Online Help), use `dist.help` Grunt task.
+To make distributable User Manual (Online Help), use `dist:help` Grunt task.
 ```
-npm run dist.help -- --dest=out/
+npm run dist:help -- --dest=out/
 ```
 
 ### License

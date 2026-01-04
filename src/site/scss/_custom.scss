@@ -81,11 +81,11 @@ mark, .lead {
   word-break: break-all;
 }
 
-abbr {
+abbr[title] {
   position: relative;
   cursor: help;
 }
-abbr:after {
+abbr[title]:after {
   content: "?";
   position: relative;
   top: -.5em;
@@ -240,8 +240,68 @@ abbr:after {
 }
 
 #licenses {
+  .s1 {
+    margin: 2.5rem 0;
+  }
+  .s2 {
+    margin: 0 0 2.5rem;
+  }
+  .s3 {
+    margin: 2.5rem 0 1.2rem;
+  }
+
+  dl {
+    line-height: 1.9;
+  }
+  dt {
+    font-size: 93%;
+  }
+  abbr {
+    font-size: 97%;
+    padding: .1rem .2rem;
+    background: string.unquote("#aaa3");
+    border-radius: 1.5px;
+  }
+
+  summary {
+    font-size: 108%;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  summary + .list {
+    margin-top: .8rem;
+  }
+  details,
+  .list {
+    margin: 0 0 1.5rem;
+  }
+  .list p {
+    margin: 0 0 .5rem;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  th {
+    text-align: start;
+  }
+  th,
+  td {
+    padding-block: .3rem;
+    padding-inline-end: 1rem;
+  }
+  tbody th {
+    font-size: 102%;
+    font-weight: normal;
+  }
+
   .license {
     position: relative;
+
+    p {
+      font-size: 102%;
+    }
 
     pre {
       max-width: 640px;

@@ -57,7 +57,7 @@
     display: none;
   }
 
-  abbr:after {
+  abbr[title]:after {
     color: #aaa;
     background: #444;
   }
