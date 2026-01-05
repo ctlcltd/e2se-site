@@ -57,9 +57,9 @@ module.exports = function(grunt) {
             origin: REMOTE_ORIGIN
           },
           data: {
-            site_privacy_rev: new Date('2026-01-04'),
-            software_privacy_rev: new Date('2026-01-04'),
-            software_licenses_rev: new Date('2026-01-04')
+            site_privacy_rev: new Date('2026-01-05'),
+            software_privacy_rev: new Date('2026-01-05'),
+            software_licenses_rev: new Date('2026-01-05')
           }
         },
         src: ['site/liquid/*.liquid'],
