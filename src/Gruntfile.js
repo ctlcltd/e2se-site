@@ -13,7 +13,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     watch: {
       site: {
-        files: ['site/liquid/*.liquid', 'site/js/*.js', 'scss/*.scss', 'translate/scss/*.scss'],
+        files: ['site/liquid/*.liquid', 'site/js/*.js', 'scss/*.scss'],
         tasks: ['liquid:site', 'concat:site', 'sass:site'],
         options: {
           spawn: false
@@ -27,27 +27,26 @@ module.exports = function(grunt) {
         }
       },
       translate: {
-        files: ['translate/liquid/*.liquid', 'scss/*.scss', 'translate/scss/*.scss', 'translate/js/*.js'],
-        tasks: ['liquid:translate', 'sass:translate', 'concat:translate'],
-        options: {
-          spawn: false
-        }
-      },
-      backend: {
-        files: ['backend/liquid/*.liquid', 'backend/js/*.js', 'scss/*.scss', 'backend/scss/*.scss'],
-        tasks: ['liquid:backend', 'concat:backend', 'sass:backend'],
+        files: ['translate/liquid/*.liquid'],
+        tasks: ['liquid:translate'],
         options: {
           spawn: false
         }
       }
     },
     copy: {
-      public: {
+      site: {
         files: [
           {src: 'img/*', dest: '../public/'},
           {src: 'favicon/favicon.ico', dest: '../public/favicon.ico'}
         ]
-      }
+      },
+      translate: {
+        files: [
+          {expand: true, flatten: true, src: '../translate/ts/*.ts', dest: '../public/translate/sources/'},
+          {expand: true, flatten: true, src: '../translate/po/*.po', dest: '../public/translate/sources/'},
+        ]
+      },
     },
     liquid: {
       site: {
@@ -84,21 +83,16 @@ module.exports = function(grunt) {
         options: {
           globals: {
             deploy: DEPLOY,
-            origin: REMOTE_ORIGIN
+            origin: REMOTE_ORIGIN,
+            languages: grunt.file.readJSON('translate/languages.json'),
+            sources: grunt.file.readJSON('../translate/sources.json')
+          },
+          data: {
+            translate_sources_ver: '1.8.1'
           }
         },
         src: ['translate/liquid/*.liquid'],
         dest: '../public/translate'
-      },
-      backend: {
-        options: {
-          globals: {
-            deploy: DEPLOY,
-            origin: REMOTE_ORIGIN
-          }
-        },
-        src: ['backend/liquid/*.liquid'],
-        dest: '../public/backend'
       },
       dist_help: {
         options: {
@@ -110,7 +104,7 @@ module.exports = function(grunt) {
             helpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
             stylesheet: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/style.min.css'),
             script: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/script.min.js'),
-            toc: { ...grunt.file.readJSON('help/toc.json'), ...grunt.file.readJSON('help/toc-dist.json') }
+            toc: {...grunt.file.readJSON('help/toc.json'), ...grunt.file.readJSON('help/toc-dist.json')}
           },
           data: {
             help_rev: new Date()
@@ -129,24 +123,6 @@ module.exports = function(grunt) {
         },
         src: ['site/js/index.js'],
         dest: '../public/script.js'
-      },
-      translate: {
-        options: {
-          stripBanners: true,
-          banner: grunt.file.read('translate/js/_banner.js') + '\n(function() {\n\n',
-          footer: '\n})();\n'
-        },
-        src: ['translate/js/config.js', 'translate/js/main.js', 'translate/js/edit_translate.js', 'translate/js/add_language.js', 'translate/js/send_translation.js', 'translate/js/resume_translation.js', 'translate/js/misc.js', 'translate/js/api_request.js', 'translate/js/source_request.js', 'translate/js/route.js', 'translate/js/init.js'],
-        dest: '../public/translate/script.js'
-      },
-      backend: {
-        options: {
-          stripBanners: true,
-          banner: grunt.file.read('backend/js/_banner.js') + '\n(function() {\n\n',
-          footer: '\n})();\n'
-        },
-        src: ['backend/js/config.js', 'backend/js/main.js', 'backend/js/list.js', 'backend/js/edit.js', 'backend/js/service.js', 'backend/js/signin.js', 'backend/js/signout.js', 'backend/js/api_request.js', 'backend/js/api_test.js', 'backend/js/nav.js', 'backend/js/route.js', 'backend/js/init.js'],
-        dest: '../public/backend/script.js'
       },
       dist_help: {
         options: {
@@ -167,16 +143,6 @@ module.exports = function(grunt) {
       site: {
         files: {
           '../public/script.min.js': ['../public/script.js']
-        }
-      },
-      translate: {
-        files: {
-          '../public/translate/script.min.js': ['../public/translate/script.js']
-        }
-      },
-      backend: {
-        files: {
-          '../public/backend/script.min.js': ['../public/backend/script.js']
         }
       },
       dist_help: {
@@ -209,16 +175,6 @@ module.exports = function(grunt) {
           '../public/help.css': 'help/scss/index.scss'
         }
       },
-      translate: {
-        files: {
-          '../public/translate/style.css': 'translate/scss/index.scss'
-        }
-      },
-      backend: {
-        files: {
-          '../public/backend/style.css': 'backend/scss/index.scss'
-        }
-      },
       dist_help: {
         files: [
           {src: 'help/scss/dist.scss', dest: DIST_HELP_BASE_DEST + '/temp_files/style.css'}
@@ -238,16 +194,6 @@ module.exports = function(grunt) {
       help: {
         files: {
           '../public/help.min.css': ['../public/help.css']
-        }
-      },
-      translate: {
-        files: {
-          '../public/translate/style.min.css': ['../public/translate/style.css']
-        }
-      },
-      backend: {
-        files: {
-          '../public/backend/style.min.css': ['../public/backend/style.css']
         }
       },
       dist_help: {
@@ -277,7 +223,6 @@ module.exports = function(grunt) {
     grunt.config('liquid.site.src', filepath);
     grunt.config('liquid.help.src', filepath);
     grunt.config('liquid.translate.src', filepath);
-    grunt.config('liquid.backend.src', filepath);
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');
@@ -298,14 +243,10 @@ module.exports = function(grunt) {
   grunt.registerTask('dist:help', ['concat:dist_help', 'terser:dist_help', 'sass:dist_help', 'cssmin:dist_help', 'liquid:dist_help', 'clean:dist_help']);
 
   // translate tasks
-  grunt.registerTask('build:translate', ['liquid:translate', 'concat:translate', 'terser:translate', 'sass:translate', 'cssmin:translate']);
+  grunt.registerTask('build:translate', ['liquid:translate']);
   grunt.registerTask('watch:translate', ['build:translate', 'watch:translate']);
 
-  // backend tasks
-  grunt.registerTask('build:backend', ['liquid:backend', 'concat:backend', 'terser:backend', 'sass:backend', 'cssmin:backend']);
-  grunt.registerTask('watch:backend', ['build:backend', 'watch:backend']);
-
   grunt.registerTask('build:bunch', ['sass:bunch']);
-  grunt.registerTask('default', ['build:site', 'build:help', 'build:translate', 'build:backend']);
+  grunt.registerTask('default', ['build:site', 'build:help', 'build:translate']);
 
 };

@@ -1,39 +1,36 @@
-## e2se-site
+# e2se-site
 
 Website for [e2-sat-editor](https://github.com/ctlcltd/e2-sat-editor).
 
-Contains all the website parts: translation app, landing site, online help, backend.
+Contains all the website parts: main site, online help.
 
- 
-
-### Requirements
-
-* PHP 8
-* PHP PDO
-* webserver
-* database
-
-
-### Get started
+## Get Started
 
 First clone this repository.
 ```
 git clone https://github.com/ctlcltd/e2se-site.git
 ```
 
-Then install Node.js, npm, and all required packages, from `src` path.
+Then from `src` path, install all the required packages, using `npm`.
 ```
 npm install
 ```
 
-Most files are served statically.
+The project use these JavaScript modules to generate static files:
+- `grunt`
+- `liquidjs`
+- `sass`
+- `clean-css`
+- `terser`
 
-The project use these JS libraries to generate static files:
-- grunt
-- liquidjs
-- sass
-- clean-css
-- terser
+## Build the User Manual
+
+To make distributable User Manual (Online Help), use `dist:help` Grunt task.
+```
+npm run dist:help -- --dest=out/
+```
+
+## Build the Website
 
 Copy all the assets to `public` path.
 
@@ -43,37 +40,28 @@ npm run copy
 npm run build:all
 ```
 
-Setup with the script `setup.sh` to install needed translation files from **e2-sat-editor** repository.
-```
-chmod +x setup.sh
-sh setup.sh
-```
-
-Needs a database started from `sample.sql` source file.
+All files are served statically.
 
 To run the website use a webserver, as the PHP built-in for example:
 ```
 php -S localhost:8000 -t public/
 ```
 
-
-### Configuration
-
-Rename `config-example.php` or use with your custom settings.
-
-Sample configuration files are `config.phps` and `app/routes.phps`.
-
 Serve from `public` root.
 
+## Build the Translations page
 
-### Build the User Manual
+The translations page has static resource files, Qt translation sources (.ts) and GNU Gettext localization files (.po, .pot).
 
-To make distributable User Manual (Online Help), use `dist:help` Grunt task.
+First, you need to install the Qt translation tools, Qt Linguist.
+
+Use the pre-build script from `translate` path, then build the translations page.
 ```
-npm run dist:help -- --dest=out/
+sh pre-build.sh
+npm run build:translate
 ```
 
-### License
+## License
 
 Source code licensed under the terms of the [MIT License](https://github.com/ctlcltd/e2se-site/blob/main/LICENSE).
 

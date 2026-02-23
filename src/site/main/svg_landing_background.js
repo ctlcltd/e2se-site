@@ -1,5 +1,5 @@
 /*!
- * src/site/landing/svg_landing_background.js
+ * src/site/main/svg_main_background.js
  *
  * SVG image transform
  *

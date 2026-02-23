@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="en" translate="no">
+<html lang="en">
 {% render '_doc-head.liquid' %}
 <body>
 {% render '_page-head.liquid' %}
 <div id="page">
-{% render '_layout.liquid', part: 'main' %}
-{% render '_layout.liquid', part: 'edit-translate' %}
-{% render '_layout.liquid', part: 'add-language' %}
-{% render '_layout.liquid', part: 'send-translation' %}
+  <main id="translate" class="page">
+    <h1>Translations</h1>
+        <p>Welcome to <strong>e2 SAT Editor translations page</strong>.</p>
+    <div>
+      <p>To translate e2 SAT Editor software, download translation source files from this page.</p>
+      <p>Translation source files are in <strong>Qt translation sources (.ts)</strong> and <strong>GNU Gettext localization files (.po, .pot)</strong> file formats.</p>
+      <ul>
+        <li>To edit <b>Qt translation sources</b> <strong>(.ts)</strong>, you need the Qt translation tools, <a href="https://doc.qt.io/qt-6/qtlinguist-index.html" rel="nofollow" target="_blank">Qt Linguist (external link)</a>.</li>
+        <li>To edit <b>GNU Gettext localization files</b> <strong>(.po, .pot)</strong>, you need a translation tool like <a href="https://poedit.net" rel="nofollow" target="_blank">Poedit (external link)</a>.</li>
+      </ul>
+      <div>
+        <p>Use the <b>Template [en_EN]</b> for new languages that could be considered.</p>
+      </div>
+    </div>
+    <div>
+      <h2>Download translation source files</h2>
+      <ul class="translation-sources" translate="no">{% for lang in languages %}
+        <li><span class="lang-name" title="{{ lang[1].tr_name }}">{{ lang[1].name }}</span> <span class="locale-name">[{{ lang[1].locale }}]</span>{% if lang[0] in sources.ts and lang[0] in sources.po %} download: (<a href="{{ "/translate/sources/" | append: sources.ts[lang[0]].file }}" data-hash="{{ sources.ts[lang[0]].hash | prepend: "sha256:" }}">ts</a>) (<a href="{{ "/translate/sources/" | append: sources.po[lang[0]].file }}" data-hash="{{ sources.po[lang[0]].hash | prepend: "sha256:" }}">{% unless sources.po[lang[0]].file contains ".pot" %}po{% else %}pot{% endunless %}</a>){% endif %}</li>{% endfor %}
+      </ul>
+      <div>
+        <p>File sources: <strong>{{ translate_sources_ver }} version</strong></p>
+      </div>
+    </div>
+    <div>
+      <h2>Send translation files</h2>
+      <p>When you complete the translation, send the file:</p>
+      <ul>
+        <li>via issue ticket to the repository: <a href="https://github.com/ctlcltd/e2-sat-editor/issue/new/choose">https://github.com/ctlcltd/e2-sat-editor/issue/new/choose</a></li>
+        <li>via e-mail: <a href="mailto:&#108;&#114;&#116;&#108;&#110;&#114;&#100;&#064;&#104;&#111;&#116;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;?subject=Send%20translation%20e2%20SAT%20Editor">contact me</a></li>
+      </ul>
+      <p>Useful new and corrected translation strings will be included on next releases.</p>
+    </div>
+  </main>
 {% render '_page-foot.liquid' %}
 </div>
 {% render '_page-vars.liquid' %}
