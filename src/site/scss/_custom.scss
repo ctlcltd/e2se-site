@@ -32,8 +32,8 @@ em {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-ul, ol, dl {
-  margin: -.3rem 0 1rem;
+ul, ol {
+  margin: -.15rem 0 1rem;
 }
 ul, ol {
   padding: 0;
@@ -44,12 +44,19 @@ ul {
 li {
   margin: .3rem 1em 0;
 }
+
+dl {
+  display: grid;
+  grid-template-columns: auto;
+  gap: .25rem 0;
+  justify-content: start;
+  margin: -.5rem 0 0;
+}
 dt {
-  float: inline-start;
-  margin: 0 .4rem 0 0;
+  margin: .5rem 0 0;
 }
 dd {
-  padding: 0;
+  margin: 0;
 }
 
 hr {
@@ -82,30 +89,35 @@ mark, .lead {
 }
 
 abbr[title] {
-  position: relative;
   cursor: help;
+
+  &:after {
+    content: "?";
+    position: relative;
+    top: -.5em;
+    margin: 0 .2em;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 70%;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    border-radius: 1em;
+    color: #888;
+    background: #fff;
+    z-index: 0;
+  }
 }
-abbr[title]:after {
-  content: "?";
+
+[data-tooltip] {
   position: relative;
-  top: -.5em;
-  margin: 0 .2em;
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  font-size: 70%;
-  font-weight: bold;
-  line-height: 1.2;
-  text-align: center;
-  border-radius: 1em;
-  color: #888;
-  background: #fff;
-  z-index: 0;
 }
-.abbrbox {
+.tooltip {
   position: absolute;
   inset-inline: auto;
   display: block;
+  width: max-content;
   margin: 0 !important;
   padding: .5em 1em !important;
   font-size: .8rem;
@@ -118,6 +130,7 @@ abbr[title]:after {
     margin: 0 !important;
     padding: 0 !important;
     background: none !important;
+    text-transform: none !important;
   }
 
   #lsa & { width: 80vw; max-width: 354px !important; }
@@ -223,8 +236,12 @@ abbr[title]:after {
 }
 
 .page {
-  > p {
+  > p,
+  li {
     font-size: .97rem;
+  }
+  ul {
+    line-height: 1.65;
   }
 
   > div {
@@ -250,9 +267,6 @@ abbr[title]:after {
     margin: 2.5rem 0 1.2rem;
   }
 
-  dl {
-    line-height: 1.9;
-  }
   dt {
     font-size: 93%;
   }
@@ -355,6 +369,62 @@ abbr[title]:after {
   max-width: 100%;
 }
 
+.sources {
+  width: min-content;
+  margin: -1rem 0 2rem;
+  padding: .5rem 0;
+  list-style: none;
+
+  dt, dd {
+    display: flex;
+    align-items: baseline;
+  }
+  dt {
+    margin: 1rem 0 0;
+  }
+  .locale-name {
+    margin-block: auto;
+    margin-inline: .4rem .6rem;
+    font-size: 89%;
+    font-weight: bold;
+    opacity: .85;
+  }
+  .lang-name,
+  .file-link {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  .file-link {
+    margin-inline: .4rem auto;
+  }
+  .file-hash {
+    margin: 0 .6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  dl {
+    grid-template-columns: repeat(2, auto);
+    gap: .5rem .8rem;
+    margin: 0;
+  }
+  dt {
+    margin: 0;
+  }
+
+  .sources {
+    width: auto;
+    grid-template-columns: repeat(3, auto);
+    gap: .5rem 2.2rem;
+    margin: 1rem 0 2rem;
+
+    dt {
+      margin: 0;
+      margin-inline: 0 .4rem;
+    }
+  }
+}
+
 @media (min-width: 992px) {
   #page {
     padding: 2.5rem 0 0;
@@ -364,7 +434,7 @@ abbr[title]:after {
     padding: 2.5rem 5rem 4rem;
   }
 
-  .abbrbox {
+  .tooltip {
     inset-inline: 0 auto;
   }
 
@@ -416,6 +486,10 @@ abbr[title]:after {
   .btn-pp-d {
     width: 320px;
     height: 60px;
+  }
+
+  #translate > div {
+    padding-bottom: 1.8rem;
   }
 }
 

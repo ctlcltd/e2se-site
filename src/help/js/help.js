@@ -1,128 +1,131 @@
 /* help/help.js */
 
-const doc = document;
-const body = doc.body;
-const head = doc.getElementById('head');
+const $document = document;
+const $body = $document.body;
+const $head = $document.getElementById('head');
 
-function offCanvas(evt) {
-  let el = evt.target;
-  el = el.hasAttribute('data-target') ? el : el.closest('[data-target]');
+function offCanvas(event) {
+  const element = event.currentTarget;
 
-  function close(evt) {
-    const el = evt.target;
+  const close = (event) => {
+    const element = event.currentTarget;
 
-    if (el.className == 'backdrop') {
+    if (element.className === 'backdrop') {
       backdrop(false);
-      setTimeout(function() {
-        body.classList.add('off');
+      setTimeout(() => {
+        $body.classList.add('off');
       }, 50);
-      setTimeout(function() {
-        body._side.classList.remove('on');
-        body._current.ariaExpanded = false;
-        body.classList.remove('offcanvas');
-        body.classList.remove('off');
-        delete body._side, body._current;
+      setTimeout(() => {
+        $body._side.classList.remove('on');
+        $body._current.ariaExpanded = false;
+        $body.classList.remove('offcanvas');
+        $body.classList.remove('off');
+        delete $body._side;
+        delete $body._current;
       }, 100);
     }
-  }
-
-  function backdrop(toggle) {
+  };
+  const backdrop = (toggle) => {
     if (toggle) {
-      const el = document.createElement('div');
-      el.className = 'backdrop';
-      body._backdrop = el;
-      body.append(el);
-      el.addEventListener('click', close);
+      const element = document.createElement('div');
+      element.className = 'backdrop';
+      $body._backdrop = element;
+      $body.append(element);
+      element.addEventListener('click', close);
     } else {
-      const el = body._backdrop;
-      el.removeEventListener('click', close);
-      el.remove();
-      delete body._backdrop;
+      const element = $body._backdrop;
+      element.removeEventListener('click', close);
+      element.remove();
+      delete $body._backdrop;
     }
-  }
+  };
 
-  if (el) {
-    const query = el.getAttribute('data-target');
-    const side = doc.querySelector(query);
+  if (element) {
+    const query = element.getAttribute('data-target');
+    const side = $document.querySelector(query);
 
-    if (body.classList.contains('offcanvas')) {
-      if (side != body._side) {
-        body.classList.remove('offcanvas');
-
-        setTimeout(function() {
-          body._side.classList.remove('on');
-          body._current.ariaExpanded = false;
-          body.classList.add('offcanvas');
+    if ($body.classList.contains('offcanvas')) {
+      if (side !== $body._side) {
+        $body.classList.remove('offcanvas');
+        setTimeout(() => {
+          $body._side.classList.remove('on');
+          $body._current.ariaExpanded = false;
+          $body.classList.add('offcanvas');
           side.classList.add('on');
-          el.ariaExpanded = true;
-          body._side = side;
-          body._current = el;
+          element.ariaExpanded = true;
+          $body._side = side;
+          $body._current = element;
         }, 100);
       } else {
         backdrop(false);
-        setTimeout(function() {
-          body.classList.add('off');
+        setTimeout(() => {
+          $body.classList.add('off');
         }, 50);
-        setTimeout(function() {
-          body._side.classList.remove('on');
-          body._current.ariaExpanded = false;
-          body.classList.remove('offcanvas');
-          body.classList.remove('off');
-          delete body._side, body._current;
+        setTimeout(() => {
+          $body._side.classList.remove('on');
+          $body._current.ariaExpanded = false;
+          $body.classList.remove('offcanvas');
+          $body.classList.remove('off');
+          delete $body._side;
+          delete $body._current;
         }, 100);
       }
     } else {
-      body._side = side;
-      body._current = el;
-      body.classList.toggle('offcanvas');
+      $body._side = side;
+      $body._current = element;
+      $body.classList.toggle('offcanvas');
       side.classList.toggle('on');
-      el.ariaExpanded = ! el.ariaExpanded != 'true';
+      element.ariaExpanded = ! element.ariaExpanded !== 'true';
       backdrop(true);
     }
-
-    setTimeout(function() {
-      el.blur();
+    setTimeout(() => {
+      element.blur();
     }, 100);
   }
 }
 
-function navmq() {
+function navigation() {
   const mq = matchMedia('(min-width:992px)');
 
-  function change(evt) {
-    if (evt.matches) {
-      body.classList.remove('offcanvas');
-      body.classList.remove('off');
+  const change = (event) => {
+    if (event.matches) {
+      $body.classList.remove('offcanvas');
+      $body.classList.remove('off');
 
-      const backdrop = body.querySelector('.backdrop');
+      const backdrop = $body.querySelector('.backdrop');
       if (backdrop) {
         backdrop.remove();
       }
-
-      for (const el of head.querySelectorAll('[data-target]')) {
-        const query = el.getAttribute('data-target');
-        const side = doc.querySelector(query);
-        el.removeAttribute('aria-expanded');
+      for (const element of $head.querySelectorAll('[data-target]')) {
+        const query = element.getAttribute('data-target');
+        const side = $document.querySelector(query);
+        element.removeAttribute('aria-expanded');
         side.classList.remove('on');
       }
-
-      delete body._side, body._current, body._backdrop;
+      delete $body._side;
+      delete $body._current;
+      delete $body._backdrop;
     }
-  }
+  };
 
+  for (const button of $head.querySelectorAll('[data-target]')) {
+    button.addEventListener('click', offCanvas);
+  }
   mq.addEventListener('change', change);
 }
 
-function inet() {
-  if (navigator.onLine) {
-    body.classList.add('online');
-  } else {
-    body.classList.remove('online');
+function sidebar() {
+  const connected = () => {
+    if (navigator.onLine) {
+      $body.classList.add('online');
+    } else {
+      $body.classList.remove('online');
+    }
   }
+
+  window.addEventListener('online offline', connected);
+  connected();
 }
 
-head.addEventListener('click', offCanvas);
-navmq();
-window.addEventListener('online', inet);
-window.addEventListener('offline', inet);
-inet();
+navigation();
+sidebar();

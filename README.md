@@ -1,4 +1,4 @@
-# e2se-site
+## e2se-site
 
 Website for [e2-sat-editor](https://github.com/ctlcltd/e2-sat-editor).
 
@@ -42,7 +42,7 @@ npm run build:all
 
 All files are served statically.
 
-To run the website use a webserver, as the PHP built-in for example:
+Run the website on localhost using a webserver, for example:
 ```
 php -S localhost:8000 -t public/
 ```

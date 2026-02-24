@@ -57,11 +57,13 @@
     display: none;
   }
 
-  abbr[title]:after {
-    color: #aaa;
-    background: #444;
+  [data-tooltip] {
+    &:after {
+      color: #aaa;
+      background: #444;
+    }
   }
-  .abbrbox {
+  .tooltip {
     color: #000;
     background: #ddd !important;
   }

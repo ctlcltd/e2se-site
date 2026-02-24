@@ -2,8 +2,8 @@
 .project
 src/node_modules
 src/package-lock.json
-/out
+out
+public/**/*
 translate/**/*
 !translate/pre-build.sh
-public/**/*
 !.empty
