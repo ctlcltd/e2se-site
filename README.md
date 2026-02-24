@@ -1,4 +1,4 @@
-## e2se-site
+# e2se-site
 
 Website for [e2-sat-editor](https://github.com/ctlcltd/e2-sat-editor).
 

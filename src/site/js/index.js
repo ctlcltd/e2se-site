@@ -281,7 +281,7 @@ function loadImages(event) {
     const platform = $body._platform ?? getPlatform();
     $body._platform = platform;
  
-    let id = element.parentElement.className.substring(-1);
+    let id = element.parentElement.className.substring(4);
     let name = 'screenshot-';
 
     if (id === 'f') {

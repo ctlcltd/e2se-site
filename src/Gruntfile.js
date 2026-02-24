@@ -43,8 +43,8 @@ module.exports = function(grunt) {
       },
       translate: {
         files: [
-          {expand: true, flatten: true, src: '../translate/ts/*.ts', dest: '../public/translate/sources/'},
-          {expand: true, flatten: true, src: '../translate/po/*.po', dest: '../public/translate/sources/'},
+          {expand: true, flatten: true, src: '../translate/ts/*', dest: '../public/translate/sources/'},
+          {expand: true, flatten: true, src: '../translate/po/*', dest: '../public/translate/sources/'},
         ]
       },
     },
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
             origin: REMOTE_ORIGIN
           },
           data: {
-            site_privacy_rev: new Date('2026-01-05'),
+            site_privacy_rev: new Date('2026-02-24'),
             software_privacy_rev: new Date('2026-01-05'),
             software_licenses_rev: new Date('2026-01-05')
           }
