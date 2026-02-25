@@ -79,13 +79,13 @@ function offCanvas(event) {
       backdrop(true);
     }
     setTimeout(() => {
-      element.blur();
-    }, 100);
+      element.blur && element.blur();
+    }, 135);
   }
 }
 
 function navigation() {
-  const mq = matchMedia('(min-width:992px)');
+  const mq = matchMedia('(min-width: 992px)');
 
   const change = (event) => {
     if (event.matches) {

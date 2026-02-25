@@ -7,7 +7,7 @@ const $head = $document.getElementById('head');
 function getPreferredColor(event) {
   let color = sessionStorage.getItem('preferred-color');
   color = color === 'light' || color === 'dark' ? color : null;
-  color = color ?? (event && event.matches === 'dark' ? 'dark' : 'light');
+  color = color ?? (event && event.matches ? 'dark' : 'light');
   return color;
 }
 
@@ -16,11 +16,10 @@ function colorScheme() {
 
   const change = (event) => {
     colorTheme(event);
-    loadImages(event);
   };
 
   mq.addEventListener('change', change);
-  colorTheme();
+  colorTheme(mq);
 }
 
 function colorTheme(event) {
@@ -28,11 +27,13 @@ function colorTheme(event) {
 
   if (color) {
     $body.setAttribute('data-color', color);
+
     if (color === 'dark') {
       $body.classList.add('dark');
     } else {
       $body.classList.remove('dark');
     }
+    loadImages(event);
   }
 }
 
@@ -47,19 +48,12 @@ function colorButton() {
 
       if (color === 'light' || color === 'dark') {
         const preferred = color === 'light' ? 'dark' : 'light';
-        $body.setAttribute('data-color', preferred);
 
-        if (color == 'light') {
-          $body.classList.add('dark');
-        } else {
-          $body.classList.remove('dark');
-        }
-
-        setTimeout(() => {
-          element.blur();
-        }, 100);
         sessionStorage.setItem('preferred-color', preferred);
-        loadImages();
+        colorTheme();
+        setTimeout(() => {
+          element.blur && element.blur();
+        }, 135);
       }
     }
   };
@@ -75,8 +69,8 @@ function fundButton() {
 
     if (element) {
       setTimeout(() => {
-        element.blur();
-      }, 100);
+        element.blur && element.blur();
+      }, 135);
       setTimeout(() => {
         window.location.href = '/donate.html';
       }, 300);
@@ -84,6 +78,22 @@ function fundButton() {
   };
 
   button && button.addEventListener('click', click);
+}
+
+function downloadButton() {
+  const button = $body.querySelector('.cnt .button');
+
+  const mousedown = (event) => {
+    const element = event.currentTarget;
+
+    if (element) {
+      setTimeout(() => {
+        element.blur && element.blur();
+      }, 135);
+    }
+  };
+
+  button && button.addEventListener('mousedown', mousedown);
 }
 
 function offCanvas(event) {
@@ -161,8 +171,8 @@ function offCanvas(event) {
       backdrop(true);
     }
     setTimeout(() => {
-      element.blur();
-    }, 100);
+      element.blur && element.blur();
+    }, 135);
   }
 }
 
@@ -195,10 +205,13 @@ function navigation() {
   mq.addEventListener('change', change);
   colorButton();
   fundButton();
+  downloadButton();
 }
 
 function tooltips() {
-  const AUTOHIDE_TIME = 7e3;
+  const AUTOHIDE_TIME = 5555;
+  const THRESHOLD_TIME = 65;
+  let time = 0;
   const tooltips = [];
 
   const tip = (element) => {
@@ -223,9 +236,12 @@ function tooltips() {
     }
   };
   const tipEvent = (event) => {
-    const element = event.target;
+    const {target: element, currentTarget, timeStamp} = event;
 
-    if (element === event.currentTarget && ! element._tooltip) {
+    if (timeStamp < time) {
+      return;
+    }
+    if (element === currentTarget && ! element._tooltip) {
       for (const element of tooltips) {
         close.call(this, element);
       }
@@ -233,15 +249,23 @@ function tooltips() {
     } else if (element._tooltip) {
       close.call(this, element);
     }
+    time = timeStamp + THRESHOLD_TIME;
+    setTimeout(() => {
+      element.blur && element.blur();
+    }, 135);
   };
   const bodyEvent = (event) => {
-    const element = event.target;
+    const {target: element, timeStamp} = event;
 
+    if (timeStamp < time) {
+      return;
+    }
     if (! element._tooltip) {
       for (const element of tooltips) {
         close.call(this, element);
       }
     }
+    time = timeStamp + THRESHOLD_TIME;
   };
 
   for (const element of $document.querySelectorAll('[data-tooltip]')) {
@@ -258,15 +282,22 @@ function tooltips() {
 }
 
 function getPlatform() {
-  const test = (ua) => {
-    if (/win/i.test(ua)) {
+  const test = () => {
+    const ua = navigator.userAgent;
+
+    if (/windows/i.test(ua)) {
       return 'w';
-    } else if (/mac/i.test(ua) || /safari/i.test(ua)) {
+    } else if (/mac/i.test(ua) && /safari/i.test(ua)) {
       return 'm';
+    } else {
+      return 'f';
     }
   };
 
-  return test(navigator.userAgent) ?? 'f';
+  let platform = $body._platform;
+  $body._platform = platform && /[wmf]/.test(platform[0]) ? platform[0] : test();
+  platform = $body._platform;
+  return platform;
 }
 
 function loadImages(event) {
@@ -278,38 +309,35 @@ function loadImages(event) {
     element.disabled = true;
     element.removeAttribute('src');
 
-    const platform = $body._platform ?? getPlatform();
-    $body._platform = platform;
- 
+    const platform = getPlatform();
     let id = element.parentElement.className.substring(4);
-    let name = 'screenshot-';
+    let name;
 
     if (id === 'f') {
       id = 'a';
-      name += 'sat-list-editor';
+      name = 'sat-list-editor';
       variation = i++ ? 'd' : 'l';
     } else if (id === 'a' || id === 'b' || id === 'd' || id === 'e') {
       if (id === 'a') {
-        name += 'sat-list-editor';
+        name = 'sat-list-editor';
       } else if (id === 'b') {
-        name += 'sat-channel-book';
+        name = 'sat-channel-book';
       } else if (id === 'd') {
-        name += 'edit-service-transponders-sat';
+        name = 'edit-service-transponders-sat';
       } else if (id === 'e') {
-        name += 'picons-editor-sat';
+        name = 'picons-editor-sat';
       }
       variation = variation ?? (color === 'dark' ? 'd' : 'l');
     } else {
       return;
     }
 
-    const src = 'img/' + name + '_' + id + platform + variation + platform + '.svg';
+    const src = `img/screenshot-${name}_${id}${platform}${variation}${platform}.svg`;
     element.setAttribute('src', src);
     element.disabled = false;
   }
 }
 
 colorScheme();
-loadImages();
 navigation();
 tooltips();

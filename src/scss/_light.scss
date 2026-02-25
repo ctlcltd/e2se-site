@@ -29,18 +29,18 @@ $tr-background-highlight: #dff;
 $input-color: #000;
 $input-background: #fff;
 $input-border-color: #505050;
-$input-shadow-color: string.unquote("transparent");
-$input-shadow-color-hover: rgba(0, 0, 0, .2);
-$input-shadow-color-focus: rgba(0, 0, 0, .15);
+$input-shadow-color: rgba(0, 0, 0, .35);
+$input-shadow-color-hover: rgba(0, 0, 0, .5);
+$input-shadow-color-focus: rgba(0, 0, 0, .25);
 
 
 // buttons
 
 $button-color: #4b4b4b;
 $button-background: #fff;
-$button-shadow-color: string.unquote("transparent");
-$button-shadow-color-hover: rgba(0, 0, 0, .25);
-$button-shadow-color-focus: rgba(0, 0, 0, .2);
+$button-shadow-color: rgba(0, 0, 0, .3);
+$button-shadow-color-hover: rgba(0, 0, 0, .35);
+$button-shadow-color-focus: rgba(0, 0, 0, .3);
 
 $button-primary-color: #fff;
 $button-primary-background: util.color-hex-str(color.adjust(dodgerblue, $lightness: 2%));

@@ -22,7 +22,7 @@
     <div>
       <h2>Download translation sources</h2>
       <dl class="sources" translate="no">{% for lang in languages %}
-        <dt><span class="lang-name" title="{{ lang[1].tr_name }}" data-tooltip>{{ lang[1].name }}</span> <span class="locale-name">[{{ lang[1].locale }}]</span>{% if lang[0] in sources.ts and lang[0] in sources.po %} download:</dt>
+        <dt><span class="lang-name" title="{{ lang[1].tr_name }}" data-tooltip>{{ lang[1].name }}</span> <span class="locale-name">[{% unless lang[0] == "template" %}{{ lang[0] }}{% else %}{{ lang[1].locale }}{% endunless %}]</span>{% if lang[0] in sources.ts and lang[0] in sources.po %} download:</dt>
         <dd><strong>(.ts)</strong> <a class="file-link" href="{% assign qs = sources.ts[lang[0]].hash | truncate: 16, "" %}{{ "/translate/sources/" | append: sources.ts[lang[0]].file | append: "?i=" | append: qs | urlencode }}">{{ sources.ts[lang[0]].file }}</a> <button class="file-hash tiny text" data-tooltip="{{ sources.ts[lang[0]].hash | prepend: "SHA256:" }}">hash</button></dd>
         <dd><strong>(.{% unless sources.po[lang[0]].file contains ".pot" %}po{% else %}pot{% endunless %})</strong> <a class="file-link" href="{% assign qs = sources.ts[lang[0]].hash | truncate: 16, "" %}{{ "/translate/sources/" | append: sources.po[lang[0]].file | append: "?i=" | append: qs | urlencode }}">{{ sources.po[lang[0]].file }}</a> <button class="file-hash tiny text" data-tooltip="{{ sources.po[lang[0]].hash | prepend: "SHA256:" }}">hash</button>{% endif %}</dd>{% endfor %}
       </dl>

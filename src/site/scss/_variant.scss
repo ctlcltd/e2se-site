@@ -18,8 +18,10 @@
     background: $button-background;
 
     box-shadow: 0 0 .18rem $button-shadow-color;
-    &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
-    &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
+    @media (hover: hover) {
+      &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
+    }
+    &:active, &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
 
     &[type="submit"],
     &.primary {
@@ -41,8 +43,10 @@
     nav a,
     button.text {
       color: util.color-hex-str(color.adjust(lightgray, $lightness: 11%));
-      &:hover { color: #eee; }
-      &:focus { color: #fff; }
+      @media (hover: hover) {
+        &:hover { color: #eee; }
+      }
+      &:active, &:focus { color: #fff; }
     }
   }
 

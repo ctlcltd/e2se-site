@@ -11,6 +11,8 @@ nav > a {
   color: $color;
 
   opacity: .9;
-  &:hover { opacity: .95; }
-  &:focus { opacity: .97; }
+  @media (hover: hover) {
+    &:hover { opacity: .95; }
+  }
+  &:active, &:focus { opacity: .97; }
 }

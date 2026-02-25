@@ -18,9 +18,11 @@ button,
   -webkit-appearance: none;
   appearance: none;
 
-  box-shadow: 0 0 .18rem $button-shadow-color;
-  &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
-  &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
+  box-shadow: 0 .02rem .12rem $button-shadow-color;
+  @media (hover: hover) {
+    &:hover { box-shadow: 0 .07rem .18rem $button-shadow-color-hover; }
+  }
+  &:active, &:focus { box-shadow: 0 .11rem .3rem $button-shadow-color-focus; }
 
   &.tiny {
     padding: .5rem .75rem;

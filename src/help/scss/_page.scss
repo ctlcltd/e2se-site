@@ -21,8 +21,10 @@ button {
   appearance: none;
 
   box-shadow: 0 0 .18rem $button-shadow-color;
-  &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
-  &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
+  @media (hover: hover) {
+    &:hover { box-shadow: 0 0 .18rem $button-shadow-color-hover; }
+  }
+  &:active, &:focus { box-shadow: 0 .03rem .3rem $button-shadow-color-focus; }
 }
 
 #page {
@@ -80,6 +82,7 @@ mark {
   top: 0;
   right: 0;
   left: 0;
+  height: 42px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
