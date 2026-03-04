@@ -17,14 +17,14 @@
       <div id="download" class="l1">
         <h3>Download</h3>
         <p>The original release files can be downloaded only in one place, the GitHub Releases page of the official repository at <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a></p>
-        <p>There are 5 release files available to download: Windows 64-bit (x86_64), Windows 32-bit (x86), macOS 64-bit (Intel), macOS 64-bit (Silicon), Linux 64-bit (x86_64).</p>
-        <p>All executables are not digitally signed, except the Linux AppImage one. The software is distributed free of charge and it is free software. Software signing is not currently planned.</p>
+        <p>There are 4 release files available to download: Windows (win64), macOS (Silicon) (Intel), Linux (AppImage x86_64).</p>
+        <p>All executables are not digitally signed, except the Linux AppImage one. The software is distributed free of charge and it is <i>free software</i>. Software signing is not currently planned.</p>
         <div class="l2">
-          <p>You can verify the checksum of the downloaded files, MD5 and SHA-256 hashes are available in <samp>&quot;MD5SUMS.txt&quot;</samp> and <samp>&quot;SHA256SUMS.txt&quot;</samp> files, from the same page Releases of the official repository.</p>
+          <p>You can verify the checksum of the downloaded files, SHA-256 and MD5 hashes are available in <samp>&quot;SHA256SUMS.txt&quot;</samp> and <samp>&quot;MD5SUMS.txt&quot;</samp> files, from the same page Releases of the official repository.</p>
         </div>
-        <p><b>Windows</b> For newer versions of Windows (for example Windows 11), download the 64-bit release. For older versions of Windows (for example Windows 7), download the 32-bit release.</p>
-        <p><b>macOS</b> The releases distributed for macOS are not digitally signed. macOS Silicon <i>testing</i> release, requires at least version 14.0 (Sonoma). macOS Intel release, requires at least version 12.0 (Monterey).</p>
-        <p><b>Linux</b> The release distributed for GNU/Linux distributions is an AppImage executable (x86_64). The software is also distributed in software stores: Snap Store, Flathub, and also in AUR (Arch Linux).</p>
+        <p><b>Windows</b> The release distributed for Windows is not digitally signed. The release is for newer versions of Windows.</p>
+        <p><b>macOS</b> The releases distributed for macOS are not digitally signed. The required minimum version is macOS 14.0 (Sonoma).</p>
+        <p><b>Linux</b> The release distributed for GNU/Linux distributions is an AppImage executable. The software is also distributed in software stores: Snap Store, Flathub, and also in AUR (Arch Linux User Repository).</p>
         <div class="info">
           <p>In case of incompatibility it is recommended to use the software in a virtual machine.</p>
         </div>
@@ -32,15 +32,17 @@
       <div class="l1">
         <div id="windows" class="l2">
           <h3 translate="no">Windows</h3>
-          <p>Download the zip file for Windows, the file name has the following nomenclature <samp>&quot;e2-sat-editor-VERSION-unsigned-SYSTEM.zip&quot;</samp></p>
-          <p><samp>SYSTEM</samp> is <span translate="no"><i>win64</i></span> or <span translate="no"><i>win32</i></span></p>
+          <p>Download the zip file for Windows, the file name has the following nomenclature <samp>&quot;e2-sat-editor-VERSION-unsigned-win64.zip&quot;</samp></p>
           <p>The Zip package contains a portable version of the software, without the installer.</p>
           <ul>
             <li>Uncompress the Zip package by double-clicking on it, or by right-clicking on the file and selecting <b>&quot;Extract here&quot;</b> from the context menu.</li>
-            <li>Place the directory created by File Explorer, for example <samp>&quot;e2-sat-editor-1.0.0-unsigned-win64&quot;</samp>, where you prefer.</li>
+            <li>Place the directory created by File Explorer, for example <samp>&quot;e2-sat-editor-1.9.0-unsigned-win64&quot;</samp>, where you prefer.</li>
             <li>Launch the software, the name of the executable file is <b>&quot;e2-sat-editor&quot; [.exe]</b></li>
           </ul>
           <p>If a warning message show up, confirm the execution and allow the software to run normally.</p>
+          <div class="info">
+            <p>Windows for ARM (aarch64) is not currently supported.</p>
+          </div>
           <div class="info">
             <p>For S editions of Windows, which allow the installation of software exclusively from the Windows Store, refer to the Windows documentation to disable &quot;S mode&quot;, or use the software in a virtual machine.</p>
           </div>
@@ -48,24 +50,24 @@
         <div id="macos" class="l2">
           <h3 translate="no">macOS</h3>
           <p>Download the zip file, the file name has the following nomenclature <samp>&quot;e2-sat-editor-VERSION-unsigned-SYSTEM-macos.zip&quot;</samp></p>
-          <p><samp>SYSTEM</samp> is <span translate="no"><i>intel</i></span> or <span translate="no"><i>test-silicon</i></span></p>
+          <p><samp>SYSTEM</samp> is <span translate="no"><i>silicon</i></span> or <span translate="no"><i>intel</i></span</p>
           <p>The Zip package contains the software application [.app], without the installer.</p>
           <ul>
             <li>Uncompress the Zip package by double-clicking on it.</li>
-            <li>Place the directory created by Finder utility, for example <samp>&quot;e2-sat-editor-1.0.0-unsigned-intel-macos&quot;</samp>, where you prefer.</li>
+            <li>Place the directory created by Finder utility, for example <samp>&quot;e2-sat-editor-1.9.0-unsigned-silicon-macos&quot;</samp>, where you prefer.</li>
             <li>Launch the software, the name of the executable application file is <b>&quot;e2 SAT Editor&quot; [.app]</b></li>
           </ul>
           <div class="info">
-            <p>Macs launched after 2020 could have an M processor (Silicon). There is a Silicon <i>testing</i> release available, it could be compatible with macOS 14.0 and upper.</p>
+            <p>Please note, there are restrictions on run not signed and not notarized software on macOS.</p>
+            <p>If you are restricted to running applications from the App Store only and Identified developers only, you can try to follow the istructions below, or use the software in a virtual machine.</p>
+          </div>
+          <div class="info">
+            <p>Macs launched after 2020 could have an M processor (Silicon). There is a Silicon release available, compatible with macOS 14.0 (Sonoma) and upper.</p>
           </div>
           <p>Depending on your system settings, a warning message may be shown.</p>
-          <p>Please note, could be restrictions on run not signed software on macOS, report any issue to the official repository at <a href="https://github.com/ctlcltd/e2-sat-editor" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor</a></p>
           <p>If your system is restricted to running applications from Identified developers only, you can manually authorize the application. <br><em>Recommendation: Do not do this if you do not understand what you are doing.</em> <br>To manually authorize the execution of the application, launch the software by holding down <kbd>Option</kbd> and <kbd><span class="symbol">&#8679;</span> Shift</kbd> keys on the keyboard and double-clicking on the <b>&quot;e2 SAT Editor&quot; [.app]</b> application file.</p>
           <div class="info">
-            <p>If you are restricted to running applications from the App Store only, temporarily change the system setting, or use the software in a virtual machine.</p>
-          </div>
-          <div class="info">
-            <p>Files downloaded from the internet are quarantined by default. You may need to remove the quarantine attribute from the [.app] application file and its contents, then move the [.app] application file in the <em>Applications</em> folder.</p>
+            <p>Files downloaded from the internet are quarantined by default. You may need to remove the quarantine attribute from the [.app] application file and its contents. Next, it might be necessary to move the [.app] application file to the <em>Applications</em> folder.</p>
           </div>
           <p>To recursively remove the quarantine extended attribute. <br><em>Recommendation: Do not do this if you do not understand what you are doing.</em> <br>Open a terminal at the location of the [.app] file and use the following command: <code>xattr -r -d com.apple.quarantine e2\ SAT\ Editor.app</code></p>
         </div>
@@ -73,16 +75,20 @@
           <h3 translate="no">Linux</h3>
           <div class="l3">
             <h4>AppImage</h4>
-            <p>Download the AppImage 64-bit file, the file name has the following nomenclature <samp>&quot;e2-sat-editor-VERSION-x86_64-linux.AppImage&quot;</samp></p>
+            <p>Download the Linux AppImage x86_64 file, the file name has the following nomenclature <samp>&quot;e2-sat-editor-VERSION-x86_64-linux.AppImage&quot;</samp></p>
             <p>The downloaded file is the executable software [.AppImage], no installation is required.</p>
             <ul>
-              <li>Place the binary, for example <samp>&quot;e2-sat-editor-1.0.0-x86_64-linux.AppImage&quot;</samp>, where you prefer.</li>
+              <li>Place the binary, for example <samp>&quot;e2-sat-editor-1.9.0-x86_64-linux.AppImage&quot;</samp>, where you prefer.</li>
               <li>Launch the software, by double-clicking on the binary.</li>
             </ul>
             <p>You may need to give permissions to run the binary file. Refer to your Linux distribution documentation, or open a terminal and give permission to run the binary file. <br><em>Recommendation: Do not do this if you do not understand what you are doing.</em> <br>Open a terminal at the location of the [.AppImage] file, give the execution permission with the following command: <code>chmod +x e2-sat-editor-VERSION-x86_64-linux.AppImage</code></p>
             <div class="info">
-              <p>To run AppImage Linux binaries, dependencies are required: FUSE 2, GCC >= 11, GLIBC >= 2.35</p>
+              <p>To run AppImage Linux binaries, the following dependencies are required: FUSE 2, GCC >= 11, GLIBC >= 2.35</p>
               <p>Depending on the Linux distribution you are using, these may already be present on your system.</p>
+            </div>
+            <div class="info">
+              <p>Linux AppImage ARM64 (aarch64) is not currently supported.</p>
+              <p>For ARM64 support please refer to the next sections: Snap Store, Flathub and AUR (Arch Linux User Repository).</p>
             </div>
           </div>
           <div class="l3">
@@ -110,7 +116,7 @@
           <p>The software is compatible with BSD-like distributions, such as FreeBSD and OpenBSD.</p>
           <p>Follow the instructions to compile, in the official repository at <a href="https://github.com/ctlcltd/e2-sat-editor/blob/main/BUILD.md" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/blob/main/BUILD.md</a></p>
           <p>The software may also be compatible with other systems, but not tested.</p>
-          <p>Some systems may have emulation capabilities and allow you to run software distributed for Linux. For example, ChromeOS and the &quot;Crostini&quot; project, refer to the page at: <a href="https://chromeos.dev/linux" rel="noreferer noopener" target="_blank">https://chromeos.dev/linux</a></p>
+          <p>Some systems may have emulation capabilities and allow you to run software distributed for Linux. <br>For example, ChromeOS and the &quot;Crostini&quot; project, refer to the page at: <a href="https://chromeos.dev/linux" rel="noreferer noopener" target="_blank">https://chromeos.dev/linux</a></p>
           <p>Please refer to the documentation of the system in use for more information about Linux binary compatibility.</p>
         </div>
       </div>

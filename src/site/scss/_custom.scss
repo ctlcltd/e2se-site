@@ -371,6 +371,7 @@ abbr[title] {
 .btn-pp {
   display: block;
   max-width: 100%;
+  shape-rendering: geometricPrecision;
 }
 
 .sources {
@@ -487,7 +488,9 @@ abbr[title] {
       padding: .5rem 0 2rem;
     }
   }
-
+  .btn-pp {
+    shape-rendering: auto;
+  }
   .btn-pp-d {
     width: 320px;
     height: 60px;

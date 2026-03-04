@@ -13,17 +13,14 @@
       <div id="options" class="l1">
         <h3>Command line options</h3>
         <p>The software runs from the command line also, optionally with a file name or option.</p>
-        <div class="l3">
-          <p>Note: <i>Command line options are available since software version 1.2</i></p>
-        </div>
         <div class="l2">
-          <p>Open a terminal and launch the software &ndash; from its current location &ndash; eg. <samp>cd e2-sat-editor-directory</samp>, followed by a <samp>[FILE]</samp>name or <samp>[OPTION]</samp>.</p>
+          <p>Open a terminal and launch the software &ndash; from its current location, eg. <samp>cd e2-sat-editor-directory</samp> &ndash; followed by a <samp>[FILE]</samp> path or <samp>[OPTION]</samp>.</p>
           <p><b>Windows PowerShell</b> <code>.\e2-sat-editor.exe [FILE] [OPTION]</code></p>
           <p><b>Windows CMD</b> <code>e2-sat-editor.exe [FILE] [OPTION]</code></p>
           <p><b>macOS</b> <code>./e2\ SAT\ Editor.app/Contents/MacOS/e2\ SAT\ Editor [FILE] [OPTION]</code></p>
-          <p><b>Linux (AppImage)</b> <code>./e2-sat-editor-VERSION-x86_64-linux.AppImage [FILE] [OPTION]</code></p>
-          <p><b>Linux (Snap)</b> <code>snap run e2-sat-editor -- [FILE] [OPTION]</code></p>
-          <p><b>Linux (Flatpak)</b> <code>flatpak run io.github.ctlcltd.e2se -- [FILE] [OPTION]</code></p>
+          <p><b>Linux (AppImage)</b> <code>./e2-sat-editor-VERSION-x86_64-linux.AppImage -- [FILE] [OPTION]</code></p>
+          <p><b>Linux (Snap)</b> <code>snap run e2-sat-editor [FILE] [OPTION]</code></p>
+          <p><b>Linux (Flatpak)</b> <code>flatpak run io.github.ctlcltd.e2se [FILE] [OPTION]</code></p>
           <p><b>Other shell</b> <code>./e2-sat-editor [FILE] [OPTION]</code></p>
         </div>
         <div class="l3">
@@ -44,7 +41,7 @@
             <p>Another way to show debug info using enviroment variable <samp>DEBUG</samp>.</p>
             <p><b>Windows PowerShell</b> eg. <code>$env:QT_WIN_DEBUG_CONSOLE="new"; $env:DEBUG=1; .\e2-sat-editor.exe [FILE] [OPTION]</code></p>
             <p><b>macOS</b> eg. <code>DEBUG=1 ./e2\ SAT\ Editor.app/Contents/MacOS/e2\ SAT\ Editor [FILE] [OPTION]</code></p>
-            <p><b>Linux (AppImage)</b> eg. <code>DEBUG=1 ./e2-sat-editor-VERSION-x86_64-linux.AppImage [FILE] [OPTION]</code></p>
+            <p><b>Linux (AppImage)</b> eg. <code>DEBUG=1 ./e2-sat-editor-VERSION-x86_64-linux.AppImage -- [FILE] [OPTION]</code></p>
             <p><b>Other shell</b> eg. <code>DEBUG=1 ./e2-sat-editor [FILE] [OPTION]</code></p>
           </div>
         </div>
@@ -54,14 +51,14 @@
         <p>Command line interface is provided by <em>e2se-cli</em> application binary.</p>
         <p>It offers an interactive shell with almost the same features of the software GUI counterpart.</p>
         <div class="l2">
-          <p>Note: <i>e2se-cli is not ultimated yet</i></p>
+          <p>Note: <i>e2se-cli is a beta utility</i></p>
         </div>
         <div class="l2">
-          <p>Open a terminal and launch the software &ndash; from its current location &ndash; eg. <samp>cd e2-sat-editor-directory/cli</samp>, optionally followed by <samp>[OPTION]</samp>.</p>
+          <p>Open a terminal and launch the software &ndash; from its current location, eg. <samp>cd e2-sat-editor-directory/cli</samp> &ndash; optionally followed by <samp>[OPTION]</samp>.</p>
           <p><b>Windows PowerShell</b> <code>.\e2se-cli.exe [OPTION]</code></p>
           <p><b>Windows CMD</b> <code>e2se-cli.exe [OPTION]</code></p>
           <p><b>macOS</b> <code>./e2se-cli [OPTION]</code></p>
-          <p><b>Linux (AppImage)</b> <code>./e2se-cli-VERSION-x86_64-linux.AppImage [OPTION]</code></p>
+          <p><b>Linux (AppImage)</b> <code>./e2se-cli-VERSION-x86_64-linux.AppImage -- [OPTION]</code></p>
           <p><b>Other shell</b> <code>./e2se-cli [OPTION]</code></p>
         </div>
         <div class="l3">
@@ -74,6 +71,7 @@
           <p>To show usage help.</p>
           <p><samp>-h</samp> <samp>--help</samp> eg. <code>e2se-cli --help</code></p>
           <p><b>From interactive shell</b>, type <samp>help</samp></p>
+          <p><b>From interactive shell</b>, for <samp>[COMMAND]</samp> usage help, eg. <samp>help edit</samp></p>
         </div>
         <div class="l3">
           <h4>Show software version</h4>

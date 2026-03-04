@@ -88,7 +88,7 @@ module.exports = function(grunt) {
             sources: grunt.file.readJSON('../translate/sources.json')
           },
           data: {
-            translate_sources_ver: '1.8.1'
+            translate_sources_ver: '1.9.0'
           }
         },
         src: ['translate/liquid/*.liquid'],

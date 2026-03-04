@@ -92,9 +92,6 @@
             <div class="l3">
               <p><b>Turn off reload</b></p>
               <p>To turn off Webif reload and/or Telnet reload type <samp>-</samp> on related custom reload parameter.</p>
-              <div class="l2">
-                <p>Note: <i>Turn off reload available since software version 1.3</i></p>
-              </div>
             </div>
           </div>
         </div>
@@ -186,12 +183,21 @@
           <p><b>Picons editor</b> group contains settings related to the behavior of Picons Editor.</p>
           <ul>
             <li><b>Backup picon when replaced</b>, on / off</li>
+            <li><b>Allow external batch command</b>, on / off</li>
           </ul>
           <p>Filename format, choice:</p>
           <ul>
             <li><b>Use reference ID</b>, will generate picon using Reference ID, eg. <span translate="no">1_1_0_10_1234_13E_820000_0_0_0.png</span></li>
             <li><b>Use service name</b>, will generate picon using channel Service Name, eg. <span translate="no">ribasports.png</span></li>
           </ul>
+          <p>External batch command.</p>
+          <ul>
+            <li><b>Command</b>, the command to execute, with specifiers: <samp translate="no">%piconFile%</samp> picon file full-path, <samp translate="no">%piconFilename%</samp> picon filename</li>
+            <li><b>Reload picons after batch command</b>, on / off</li>
+          </ul>
+          <div class="l2">
+            <p>Note: <i>External batch command available since software version 1.9</i></p>
+          </div>
         </div>
       </div>
       <div id="engine" class="l1">
@@ -260,10 +266,10 @@
         <p>The next time the software is opened it will be reset to factory defaults.</p>
       </div>
       <div class="info">
-        <p><b>macOS</b> Preferences are stored in the user Library, with the identifiers: <i>com.io-github-ctlcltd.e2se</i> (software settings), <i>io.github.ctlcltd.e2se</i> (OS related preferences)</p>
-        <p><b>Windows</b> Since software version 1.2, preferences are stored in the software executable directory, with the identifier: <i>e2 SAT Editor Team/e2se.ini</i></p>
-        <p><b>Other (XDG specification)</b> Preferences are stored in the default XDG preference folder, with the identifier: <i>e2 SAT Editor Team</i></p>
-        <p>To manually edit the settings file, please refer to the Qt toolkit documentation at: <a href="https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes" rel="nofollow noopener" target="_blank">https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes</a></p>
+        <p><b>macOS</b> Preferences are stored in the user Library, with the identifiers: <i>com.io-github-ctlcltd.e2se</i> (software preferences), <i>io.github.ctlcltd.e2se</i> (OS related preferences)</p>
+        <p><b>Windows</b> Preferences are stored in the software executable directory, with the identifier: <i>e2 SAT Editor Team/e2se.ini</i></p>
+        <p><b>others (XDG specification)</b> Preferences are stored in the default XDG preference folder, with the identifier: <i>e2 SAT Editor Team</i></p>
+        <p>To manually edit the preferences file, please refer to the Qt toolkit documentation at: <a href="https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes" rel="nofollow noopener" target="_blank">https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes</a></p>
       </div>
 {% render '_page-dist.liquid', help_rev: help_rev %}
     </main>

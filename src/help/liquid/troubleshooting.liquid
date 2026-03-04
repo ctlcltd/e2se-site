@@ -30,14 +30,11 @@
             <td colspan="2"><strong>Common issues</strong></td>
           </tr>
           <tr id="software-issue">
-            <td rowspan="3">Software crashes, freezes or does not work correctly</td>
+            <td rowspan="2">Software crashes, freezes or does not work correctly</td>
             <td>Report an issue on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/issues" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/issues</a> <br>Attach a log if possible, refer to <a href="#view-software-logs">View software logs</a></td>
           </tr>
           <tr>
             <td>Check any error messages displayed</td>
-          </tr>
-          <tr>
-            <td>Check that the version you are using is the latest, refer to <a href="#check-version">Check the version</a></td>
           </tr>
           <tr>
             <td colspan="2">
@@ -51,15 +48,15 @@
           </tr>
           <tr id="stb-reload-issue">
             <td>STB reload displayed as done, even with errors</td>
-            <td>Known issue, affecting software version 1.8 &ndash; Fixed since software version 1.8.1</td>
+            <td>Known issue, affecting old software versions &ndash; Fixed since software version 1.8.1</td>
           </tr>
           <tr id="stream-url-issue">
             <td>Stream URL is not parsed</td>
-            <td>Known issue, affecting software version 1.7 &ndash; Fixed since software version 1.8</td>
+            <td>Known issue, affecting old software versions &ndash; Fixed since software version 1.8</td>
           </tr>
           <tr id="profiles-issue">
             <td rowspan="2">Connection profile is buggy after deleting profiles</td>
-            <td>Known issue, affecting software version 1.5 and up &ndash; Fixed since software version 1.7</td>
+            <td>Known issue, affecting old software versions &ndash; Fixed since software version 1.7</td>
           </tr>
           <tr>
             <td>As possible workaround, rearrange profiles from <b>Settings</b>, <b>Advanced</b> tab, or <a href="#reset-settings">reset settings</a>; do not delete &quot;Default&quot; profile and reuse existing profiles</td>
@@ -70,27 +67,6 @@
           </tr>
           <tr>
             <td>As workaround, open a new tab using <b>&quot;<span class="symbolic">+</span> New Tab&quot;</b> and close it, menu items will become visible again</td>
-          </tr>
-          <tr id="counters-issue">
-            <td rowspan="2">Channel numbers and counters are not visually updated</td>
-            <td>Known issue, affecting old software versions &ndash; Fixed since software version 1.6</td>
-          </tr>
-          <tr>
-            <td>As workaround, take an action on current bouquet</td>
-          </tr>
-          <tr id="highlight-issue">
-            <td rowspan="2">Tree views highlight color is malfunctioning</td>
-            <td>Known issue, affecting software version 1.5 on Windows 11, when using light appearance &ndash; Fixed since software version 1.6</td>
-          </tr>
-          <tr>
-            <td>As possible workaround, run the software with <samp>-style</samp> argument from PowerShell: <code>./e2-sat-editor.exe -style fusion</code></td>
-          </tr>
-          <tr id="ctxmenu-issue">
-            <td rowspan="2">Context menu is interfering with Drag and Drop</td>
-            <td>Known issue, affecting software version 1.4 on macOS &ndash; Fixed since software version 1.5</td>
-          </tr>
-          <tr>
-            <td>As workaround, uncheck &quot;Enable experimental features&quot; under software Preferences, in <b>&quot;Settings&quot;</b>, in the <b>Preferences</b> tab, section <b>Theme</b></td>
           </tr>
           <tr>
             <td colspan="2">
@@ -104,7 +80,7 @@
           </tr>
           <tr id="ftp-connect">
             <td rowspan="10">FTP not connecting</td>
-            <td>Check the status bar at the window bottom corner for "FTP connected successfully." message, after press the <b>&quot;Connect&quot;</b> button.</td>
+            <td>Check the status bar at the window bottom corner for "FTP connected successfully." message, after press the <b>&quot;Connect&quot;</b> button &ndash; Fixed since software version 1.9</td>
           </tr>
           <tr>
             <td>Check the cables connecting the Decoder (STB) to the local network</td>
@@ -259,7 +235,6 @@
         <h3>Enable FTP debug</h3>
         <p>FTP debugging is disabled by default to avoid slowing down execution.</p>
         <p>It can be useful to solve problems and report issues on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a></p>
-        <p>Note: <i>FTP debugging may not be available on Windows, in software versions lesser then 1.2 <b>**</b></i></p>
         <div class="l2">
           <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
           <div class="l3">
@@ -268,10 +243,9 @@
             <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
           </div>
           <div class="l3">
-            <p>Open a terminal window and launch the software &ndash; from its current location &ndash; eg. <samp>cd e2-sat-editor-directory</samp></p>
-            <p><b>Windows PowerShell <i>*</i> (win64)</b> <code>$env:QT_WIN_DEBUG_CONSOLE="new"; .\e2-sat-editor.exe</code></p>
-            <p><b>Windows PowerShell <i>**</i></b> <code>.\e2-sat-editor.exe | tee log.txt</code></p>
-            <p><b>Windows CMD <i>**</i></b> <code>e2-sat-editor.exe 2>&1 > log.txt</code></p>
+            <p>Open a terminal window and launch the software &ndash; from its current location, eg. <samp>cd e2-sat-editor-directory</samp> &ndash;</p>
+            <p><b>Windows PowerShell</b> <code>$env:QT_WIN_DEBUG_CONSOLE="new"; .\e2-sat-editor.exe</code></p>
+            <p><b>Windows CMD</b> <code>e2-sat-editor.exe 2>&1 > log.txt</code></p>
             <p><b>macOS</b> <code>./e2\ SAT\ Editor.app/Contents/MacOS/e2\ SAT\ Editor</code></p>
             <p><b>Linux (AppImage)</b> <code>./e2-sat-editor-VERSION-x86_64-linux.AppImage</code></p>
             <p><b>Linux (Snap)</b> <code>snap run e2-sat-editor</code></p>
