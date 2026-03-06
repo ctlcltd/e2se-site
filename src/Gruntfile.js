@@ -58,7 +58,7 @@ module.exports = function(grunt) {
           data: {
             site_privacy_rev: new Date('2026-02-25'),
             software_privacy_rev: new Date('2026-02-25'),
-            software_licenses_rev: new Date('2026-02-25')
+            software_licenses_rev: new Date('2026-03-07')
           }
         },
         src: ['site/liquid/*.liquid'],
