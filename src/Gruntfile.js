@@ -85,7 +85,7 @@ module.exports = function(grunt) {
             deploy: DEPLOY,
             origin: REMOTE_ORIGIN,
             languages: grunt.file.readJSON('translate/languages.json'),
-            sources: grunt.file.readJSON('../translate/sources.json')
+            sources: grunt.file.exists('../translate/sources.json') ? grunt.file.readJSON('../translate/sources.json') : {}
           },
           data: {
             translate_sources_ver: '1.9.0'
