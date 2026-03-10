@@ -56,7 +56,7 @@ module.exports = function(grunt) {
             origin: REMOTE_ORIGIN
           },
           data: {
-            site_privacy_rev: new Date('2026-02-25'),
+            site_privacy_rev: new Date('2026-03-10'),
             software_privacy_rev: new Date('2026-02-25'),
             software_licenses_rev: new Date('2026-03-09')
           }
