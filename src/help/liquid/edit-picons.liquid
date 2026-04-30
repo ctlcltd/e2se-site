@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% render '_doc-head.liquid' %}
+<body>
+{% render '_page-head.liquid' %}
+<div id="page">
+  <div id="help">
+    <main>
+{% unless distributable %}      <h1>Online Help</h1>
+{% else %}      <h1>User Manual</h1>{% endunless %}
+      <h2>Edit Picons</h2>
+      <p>How to edit picons through the built-in picons editor.</p>
+      <div class="info info-read">
+        <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
+        <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
+      </div>
+      <div class="info">
+        <p>Note: <i>the software does not currently upload / download picon images, these must be uploaded manually to the STB.</i></p>
+      </div>
+      <div id="picons" class="l1">
+        <h3>Picons</h3>
+      </div>
+      <div id="browse-picons" class="l1">
+        <h3>Browse picons</h3>
+      </div>
+      <div id="change-picon" class="l1">
+        <h3>Change picon</h3>
+      </div>
+      <div id="edit-picon" class="l1">
+        <h3>Edit picon</h3>
+      </div>
+      <div class="l1">
+      </div>
+      <div id="batch-command" class="l1">
+        <h3>Batch command</h3>
+      </div>
+{% render '_page-dist.liquid', help_rev: help_rev %}
+    </main>
+{% render '_page-side.liquid' %}
+  </div>{% unless distributable %}
+{% render '_page-foot.liquid' %}{% endunless %}
+</div>
+{% render '_page-vars.liquid' %}
+</body>
+</html>

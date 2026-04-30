@@ -17,8 +17,8 @@
       <div id="download" class="l1">
         <h3>Download</h3>
         <p>The original release files can be downloaded only in one place, the GitHub Releases page of the official repository at <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a></p>
-        <p>There are 4 release files available to download: Windows (win64), macOS (Silicon) (Intel), Linux (AppImage x86_64).</p>
-        <p>All executables are not digitally signed, except the Linux AppImage one. The software is distributed free of charge and it is <i>free software</i>. Software signing is not currently planned.</p>
+        <p>There are 6 release files available to download: Windows (win64) <em>(arm64)</em>, macOS (Silicon) (Intel), Linux  (AppImage x86_64) <em>(AppImage aarch64)</em>.</p>
+        <p>All executables are not digitally signed, except the Linux (AppImage x86_64) one. The software is distributed free of charge and it is <i>free software</i>. Software signing is not currently planned.</p>
         <div class="l2">
           <p>You can verify the checksum of the downloaded files, SHA-256 and MD5 hashes are available in <samp>&quot;SHA256SUMS.txt&quot;</samp> and <samp>&quot;MD5SUMS.txt&quot;</samp> files, from the same page Releases of the official repository.</p>
         </div>
@@ -36,7 +36,7 @@
           <p>The Zip package contains a portable version of the software, without the installer.</p>
           <ul>
             <li>Uncompress the Zip package by double-clicking on it, or by right-clicking on the file and selecting <b>&quot;Extract here&quot;</b> from the context menu.</li>
-            <li>Place the directory created by File Explorer, for example <samp>&quot;e2-sat-editor-1.9.0-unsigned-win64&quot;</samp>, where you prefer.</li>
+            <li>Place the directory created by File Explorer, for example <samp>&quot;e2-sat-editor-2.0.0-unsigned-win64&quot;</samp>, where you prefer.</li>
             <li>Launch the software, the name of the executable file is <b>&quot;e2-sat-editor&quot; [.exe]</b></li>
           </ul>
           <p>If a warning message show up, confirm the execution and allow the software to run normally.</p>
@@ -54,7 +54,7 @@
           <p>The Zip package contains the software application [.app], without the installer.</p>
           <ul>
             <li>Uncompress the Zip package by double-clicking on it.</li>
-            <li>Place the directory created by Finder utility, for example <samp>&quot;e2-sat-editor-1.9.0-unsigned-silicon-macos&quot;</samp>, where you prefer.</li>
+            <li>Place the directory created by Finder utility, for example <samp>&quot;e2-sat-editor-2.0.0-unsigned-silicon-macos&quot;</samp>, where you prefer.</li>
             <li>Launch the software, the name of the executable application file is <b>&quot;e2 SAT Editor&quot; [.app]</b></li>
           </ul>
           <div class="info">
@@ -78,12 +78,12 @@
             <p>Download the Linux AppImage x86_64 file, the file name has the following nomenclature: <br><samp>&quot;e2-sat-editor-VERSION-x86_64-linux.AppImage&quot;</samp></p>
             <p>The downloaded file is the executable software [.AppImage], no installation is required.</p>
             <ul>
-              <li>Place the binary, for example <samp>&quot;e2-sat-editor-1.9.0-x86_64-linux.AppImage&quot;</samp>, where you prefer.</li>
+              <li>Place the binary, for example <samp>&quot;e2-sat-editor-2.0.0-x86_64-linux.AppImage&quot;</samp>, where you prefer.</li>
               <li>Launch the software, by double-clicking on the binary.</li>
             </ul>
             <p>You may need to give permissions to run the binary file. Refer to your Linux distribution documentation, or open a terminal and give permission to run the binary file. <br><em>Recommendation: Do not do this if you do not understand what you are doing.</em> <br>Open a terminal at the location of the [.AppImage] file, give the execution permission with the following command: <code>chmod +x e2-sat-editor-VERSION-x86_64-linux.AppImage</code></p>
             <div class="info">
-              <p>To run AppImage Linux binaries, the following dependencies may be required: Bash, GLIBC >= 2.38, GCC >= 13</p>
+              <p>To run AppImage Linux binaries, the following dependencies may be required: GLIBC >= 2.38, GCC >= 13</p>
               <p>Depending on the Linux distribution you are using, these may already be present on your system.</p>
             </div>
             <div class="info">

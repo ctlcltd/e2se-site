@@ -9,7 +9,30 @@
 {% unless distributable %}      <h1>Online Help</h1>
 {% else %}      <h1>User Manual</h1>{% endunless %}
       <h2>Command line</h2>
-      <p>How to use command line options or <em>e2se-cli</em> command line interface.</p>
+      <p>How to use prompt-like Console, command line options and <em>e2se-cli</em> command line interface.</p>
+      <div id="console" class="l1">
+        <h3>Console</h3>
+        <p>Console is a prompt-like util and offers a typical step-by-step, question and answer, textual approach editing.</p>
+        <div class="l2">
+          <p>Note: <i>Console is a beta util.</i></p>
+        </div>
+        <div class="l2">
+          <p>To open the Console, click <b>Console</b>.</p>
+          <div class="l2">
+            <p><b>From main menu</b>, click menu <b>Tools</b> &gt; <b>Console</b></p>
+            <p><b>From bottom toolbar</b>, click <b>&quot;Console&quot;</b></p>
+            <p><b>From bottom toolbar</b>, click on <b>&quot;Tools&quot;</b> &gt; <b>Console</b></p>
+          </div>
+          <div class="l3">
+            <p>To display console help, type <samp>help</samp> and press <kbd>Enter</kbd> key.</p>
+            <p>To display console usage hints, type <samp>help [COMMAND]</samp> followed by <kbd>Enter</kbd> key.</p>
+          </div>
+          <div class="l2">
+            <p>The Console is dockable on current tab and tab children.</p>
+            <p>Note: <i>Console available since software version 2.0</i></p>
+          </div>
+        </div>
+      </div>
       <div id="options" class="l1">
         <h3>Command line options</h3>
         <p>The software runs from the command line also, optionally with a file name or option.</p>
@@ -51,7 +74,7 @@
         <p>Command line interface is provided by <em>e2se-cli</em> application binary.</p>
         <p>It offers an interactive shell with almost the same features of the software GUI counterpart.</p>
         <div class="l2">
-          <p>Note: <i>e2se-cli is a beta utility</i></p>
+          <p>Note: <i>e2se-cli is a beta util.</i></p>
         </div>
         <div class="l2">
           <p>Open a terminal and launch the software &ndash; from its current location, eg. <samp>cd e2-sat-editor-directory/cli</samp> &ndash; optionally followed by <samp>[OPTION]</samp>.</p>

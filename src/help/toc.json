@@ -26,6 +26,39 @@
     "title": "Quick Start",
     "description": "A useful quick guide on using the software"
   },
+  "settings": {
+    "href": "settings.html",
+    "title": "Settings",
+    "description": "How to change software preferences, handle connection profiles and engine",
+    "anchors": [
+      {
+        "#settings": "Settings",
+        "#connection": "Connection settings",
+        "#presets": "Presets",
+        "#import-export": "Profile Import and Export",
+        "#preferences": "Preferences settings",
+        "#engine": "Engine settings",
+        "#advanced": "Advanced settings"
+      },
+      {
+        "#reset-settings": "Reset settings"
+      }
+    ]
+  },
+  "file-transfers-stb": {
+    "href": "file-transfers-stb.html",
+    "title": "Transfers from and to Decoder",
+    "description": "How to transfer files from and to Decoder STB",
+    "anchors": [
+      {
+        "#profiles": "Connection profiles",
+        "#connection": "Connect and Disconnect",
+        "#download": "Download files",
+        "#upload": "Upload files",
+        "#troubleshooting": "Troubleshooting"
+      }
+    ]
+  },
   "channel-lists": {
     "href": "channel-lists.html",
     "title": "Channel List operations",
@@ -77,20 +110,6 @@
       }
     ]
   },
-  "edit-service": {
-    "href": "edit-service.html",
-    "title": "Edit Services",
-    "description": "How to edit service channels, edit all service parameters",
-    "anchors": [
-      {
-        "#howto": "How to edit",
-        "#properties": "Properties",
-        "#parameters": "Parameters",
-        "#transponder": "Transponder",
-        "#favourite": "Favourite [Bouquet]"
-      }
-    ]
-  },
   "transponders": {
     "href": "transponders.html",
     "title": "Transponder operations",
@@ -120,65 +139,6 @@
       }
     ]
   },
-  "edit-transponder": {
-    "href": "edit-transponder.html",
-    "title": "Edit Transponders",
-    "description": "How to edit transponders, edit all transponder parameters",
-    "anchors": [
-      {
-        "#howto": "How to edit",
-        "#properties": "Properties",
-        "#parameters": "Parameters [Type]",
-        "#channel": "Edit from channel"
-      }
-    ]
-  },
-  "edit-favourite": {
-    "href": "edit-favourite.html",
-    "title": "Edit Favourites",
-    "description": "How to edit favourite channels, channel reference, stream type",
-    "anchors": [
-      {
-        "#howto": "How to edit",
-        "#reference": "Properties [Reference]",
-        "#stream": "Properties [Stream]",
-        "#channel": "Edit from channel [Bouquet]"
-      }
-    ]
-  },
-  "file-transfers-stb": {
-    "href": "file-transfers-stb.html",
-    "title": "Transfers from and to Decoder",
-    "description": "How to transfer files from and to Decoder STB",
-    "anchors": [
-      {
-        "#profiles": "Connection profiles",
-        "#connection": "Connect and Disconnect",
-        "#download": "Download files",
-        "#upload": "Upload files",
-        "#troubleshooting": "Troubleshooting"
-      }
-    ]
-  },
-  "settings": {
-    "href": "settings.html",
-    "title": "Settings",
-    "description": "How to change software preferences, handle connection profiles and engine",
-    "anchors": [
-      {
-        "#settings": "Settings",
-        "#connection": "Connection settings",
-        "#presets": "Presets",
-        "#import-export": "Profile Import and Export",
-        "#preferences": "Preferences settings",
-        "#engine": "Engine settings",
-        "#advanced": "Advanced settings"
-      },
-      {
-        "#reset-settings": "Reset settings"
-      }
-    ]
-  },
   "file-interop": {
     "href": "file-interop.html",
     "title": "File interoperability",
@@ -188,18 +148,6 @@
         "#csv": "Import and Export [CSV]",
         "#m3u": "Import and Export [M3U]",
         "#html": "Export [HTML]"
-      }
-    ]
-  },
-  "command-line": {
-    "href": "command-line.html",
-    "title": "Command line",
-    "description": "How to use the command line options or e2se-cli",
-    "anchors": [
-      {
-        "#options": "Command line options",
-        "#debug": "Debugging option",
-        "#cli": "CLI [e2se-cli]"
       }
     ]
   },
@@ -221,6 +169,73 @@
         "#enable-ftp-debug": "Enable FTP debug",
         "#view-logs": "View software logs",
         "#reset-settings": "Reset settings"
+      }
+    ]
+  },
+  "edit-service": {
+    "href": "edit-service.html",
+    "title": "Edit Services",
+    "description": "How to edit service channels, edit all service parameters",
+    "anchors": [
+      {
+        "#howto": "How to edit",
+        "#properties": "Properties",
+        "#parameters": "Parameters",
+        "#transponder": "Transponder",
+        "#favourite": "Favourite [Bouquet]"
+      }
+    ]
+  },
+  "edit-favourite": {
+    "href": "edit-favourite.html",
+    "title": "Edit Favourites",
+    "description": "How to edit favourite channels, channel reference, stream type",
+    "anchors": [
+      {
+        "#howto": "How to edit",
+        "#reference": "Properties [Reference]",
+        "#stream": "Properties [Stream]",
+        "#channel": "Edit from channel [Bouquet]"
+      }
+    ]
+  },
+  "edit-transponder": {
+    "href": "edit-transponder.html",
+    "title": "Edit Transponders",
+    "description": "How to edit transponders, edit all transponder parameters",
+    "anchors": [
+      {
+        "#howto": "How to edit",
+        "#properties": "Properties",
+        "#parameters": "Parameters [Type]",
+        "#channel": "Edit from channel"
+      }
+    ]
+  },
+  "edit-picons": {
+    "href": "edit-picons.html",
+    "title": "Edit Picons",
+    "description": "How to edit picons through the built-in picons editor",
+    "anchors": [
+      {
+        "@picons": "Picons",
+        "#browse-picons": "Browse picons",
+        "#change-picon": "Change picon",
+        "#edit-picon": "Edit picon",
+        "#batch-command": "Batch command"
+      }
+    ]
+  },
+  "command-line": {
+    "href": "command-line.html",
+    "title": "Command line",
+    "description": "How to use prompt-like Console, command line options and e2se-cli CLI",
+    "anchors": [
+      {
+        "#console": "Console",
+        "#options": "Command line options",
+        "#debug": "Debugging option",
+        "#cli": "CLI [e2se-cli]"
       }
     ]
   }
