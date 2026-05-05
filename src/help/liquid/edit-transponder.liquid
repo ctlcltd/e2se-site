@@ -13,7 +13,9 @@
       <div id="howto" class="l1">
         <h3>How to edit</h3>
         <p>Select the transponder to edit, open the context menu and click on <b>&quot;Edit Transponder&quot;</b>.</p>
-        <p>In <b>dialog</b>, edit the transponder parameters, then press <b>&quot;Save&quot;</b>.</p>
+        <div class="l3">
+          <p>In <b>dialog</b>, edit the transponder parameters, then press <b>&quot;Save&quot;</b>.</p>
+        </div>
         <div class="l2">
           <p>Transponder can be quickly edited by <b>double-click</b>ing on selected service channel.</p>
           <p>Note: <i>Transponder parameters will be changed for any service associated with the transponder.</i></p>
@@ -36,9 +38,9 @@
         <div class="l2">
           <h4>Parameters for Satellite</h4>
           <ul>
-            <li><b>Frequency</b>, expressed in KHz</li>
+            <li><b>Frequency</b>, expressed in KHz (8 digits) or MHz (5 digits)</li>
             <li><b>Polarization</b>, with values: H = horizontal, V = vertical, L = circular left, R = circular right</li>
-            <li><b>Symbol Rate</b>, expressed in bit/s</li>
+            <li><b>Symbol Rate</b>, expressed in S/s (8 digits) or kS/s (5 digits)</li>
             <li><b>FEC</b>, acronym for Forward Error Control</li>
             <li><b>System</b>, with values: auto = automatic selection, DVB-S, DVB-S2, DVB-S/S2</li>
             <li><b>Modulation</b></li>
@@ -58,7 +60,7 @@
         <div class="l2">
           <h4>Parameters for Terrestrial</h4>
           <ul>
-            <li><b>Frequency</b>, expressed in KHz</li>
+            <li><b>Frequency</b>, expressed in KHz x100 (8 digits) or KHz (6 digits)</li>
             <li><b>Constellation</b>, synonym for modulation</li>
             <li><b>Bandwidth</b></li>
             <li><b>HP FEC</b>, acronym for High-Pass Forward Error Control</li>
@@ -76,9 +78,9 @@
         <div class="l2">
           <h4>Parameters for Cable</h4>
           <ul>
-            <li><b>Frequency</b>, expressed in KHz</li>
+            <li><b>Frequency</b>, expressed in KHz x100 (8 digits) or KHz (6 digits)</li>
             <li><b>Modulation</b></li>
-            <li><b>Symbol Rate</b>, expressed in bit/s</li>
+            <li><b>Symbol Rate</b>, expressed in S/s (8 digits) or kS/s (5 digits)</li>
             <li><b>Inner FEC</b>, acronym for Forward Error Control</li>
             <li><b>Inversion</b></li>
           </ul>
@@ -86,7 +88,7 @@
         <div class="l2">
           <h4>Parameters for ATSC</h4>
           <ul>
-            <li><b>Frequency</b>, expressed in KHz</li>
+            <li><b>Frequency</b>, expressed in KHz x100 (8 digits) or KHz (6 digits)</li>
             <li><b>Modulation</b></li>
             <li><b>System</b>, with values: empty = automatic selection, ATSC, <span translate="no">DVB-C ANNEX B</span></li>
           </ul>
@@ -100,10 +102,12 @@
         <ul>
           <li><b>Satellite</b>, position selection</li>
           <li><b>Transponder</b>, transponder selection</li>
-          <li>to create a transponder, press <b>&quot;New Transponder&quot;</b></li>
+          <li>to create a transponder, press <b>&quot;sponder&quot;</b></li>
         </ul>
         <p>To change the transponder parameters, go to <b>Transponder</b> tab.</p>
-        <p>Edit the transponder parameters, then return to <b>Service</b> tab or press <b>&quot;Save&quot;</b>.</p>
+        <div class="l3">
+          <p>Edit the transponder parameters, then return to <b>Service</b> tab or press <b>&quot;Save&quot;</b>.</p>
+        </div>
         <div class="l2">
           <p><i>The service will be changed in every position where found.</i></p>
           <p>Note: <i>The transponder parameters will be changed for any service associated with the transponder.</i></p>

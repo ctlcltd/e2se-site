@@ -11,7 +11,7 @@
       <h2>Channel List operations</h2>
       <p>How to edit and create channel lists, edit and move services and bouquets.</p>
       <p>Create, edit, import, export, convert, check, fix, channel lists.</p>
-      <p>Move, edit, delete and lock channels.<br>Move, modify, delete bouquets (group of channels).</p>
+      <p>Move, edit, delete and lock channels.<br>Move, edit, delete bouquets (group of channels).</p>
       <div class="info info-read">
         <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
         <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
@@ -48,8 +48,10 @@
         </div>
         <p>In <b>File dialog</b> select the directory where you want to save.</p>
         <p>You may see a message about overwriting of existing files, choose <b>&quot;Save&quot;</b> or <b>&quot;Cancel&quot;</b>.</p>
-        <div class="l2">
+        <div class="info">
           <p>Note: When create a new file you need to create a new directory or select an existing directory from <b>File dialog</b>.</p>
+        </div>
+        <div class="l3">
           <p>For more information about File dialog and creating new directories, please refer to the instruction manual of the system you are using.</p>
         </div>
       </div>
@@ -57,7 +59,9 @@
         <h3>Sort by column</h3>
         <p>The channel list tree can be visually sorted according to the column name (eg. sorted by <i>Name A-Z</i> or <i>Name Z-A</i>) in ascending and descending order.</p>
         <p>To use the sort click on <b>column name</b> in the tree view, inside the <b>Channels</b> area.</p>
-        <p>When using sort by column, Drag and Drop is not available, to quickly re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
+        <div class="l2">
+          <p>When using sort by column, Drag and Drop is not available, to quick re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
+        </div>
       </div>
       <div id="convert-list" class="l1">
         <h3>Convert channel lists</h3>
@@ -110,7 +114,7 @@
           <p>To lock a channel, select the channel, open the context menu and click on <b>&quot;Set Parental lock&quot;</b>.</p>
           <p>To unlock a previously locked channel, select the channel, open the contextual menu and click on <b>&quot;Unset Parental lock&quot;</b>.</p>
           <div class="l3">
-            <p>Note: <i>Multiple selection is not available to lock channels.</i></p>
+            <p>Note: <i>Channels cannot be locked/unlocked with multiple selection.</i></p>
           </div>
         </div>
         <div class="l2">
@@ -178,8 +182,8 @@
           </li>
           <li><b>Error Checker</b> &mdash; <i>checks channel list for errors</i>, see <a href="#error-checker">Error Checker</a> chapter, on this page.</li>
           <li><b>Autofix</b> &mdash; <i>automatic fixes channel list</i>, see <a href="#autofix">Autofix</a> chapter, on this page.</li>
-          <li><b>Import</b> &mdash; <i>imports from list formats or CSV, M3U files</i>, see also <a href="file-interop.html">File interoperability</a> page.</li>
-          <li><b>Export</b> &mdash; <i>exports to list formats or CSV, M3U, HTML files</i>, see also <a href="file-interop.html">File interoperability</a> page.</li>
+          <li><b>Import</b> &mdash; <i>imports from list formats or CSV, M3U files</i>, see <a href="file-interop.html">File interoperability</a> page.</li>
+          <li><b>Export</b> &mdash; <i>exports to list formats or CSV, M3U, HTML files</i>, see <a href="file-interop.html">File interoperability</a> page.</li>
           <li><b>Log Inspector</b> &mdash; <i>inspects logs</i>, see <a href="troubleshooting.html#view-logs">View software logs</a> chapter, on <a href="troubleshooting.html#view-logs">Troubleshooting</a> page.</li>
         </ul>
       </div>
@@ -220,7 +224,7 @@
           <p>For <b>multiple selection</b> press <kbd>Ctrl</kbd> on keyboard, or <kbd><span class="symbol">&#8984;</span> command</kbd> on a Mac keyboard, for <b>continuous selection</b> press <kbd><span class="symbol">&#8679;</span> Shift</kbd> on keyboard, and select services, channels, markers with the mouse or touchpad, then drag them into channel item or bouquet item onto the <b>Bouquets</b> area.</p>
         </div>
         <div class="l2">
-          <p>When using channel sort, Drag and Drop is not available, to quickly re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
+          <p>When using channel sort, Drag and Drop is not available, to quick re-enable Drag and Drop click on <b>&quot;Drag&Drop&quot;</b> button.</p>
         </div>
       </div>
       <div id="sort-channels" class="l1">
@@ -237,7 +241,7 @@
           </div>
           <div class="l3">
             <p>Repeat <b>last Sort</b></p>
-            <p>To quickly repeat the last sort options when calling <b>&quot;Sort&hellip;&quot;</b> from the context menu, check the option &quot;Recall this set when Sort from context menu&quot; from the Sort dialog.</p>
+            <p>To quick repeat last sort options when calling <b>&quot;Sort&hellip;&quot;</b> from the context menu, check the option &quot;Recall this set when Sort from context menu&quot; from the Sort dialog.</p>
           </div>
         </div>
       </div>
@@ -265,7 +269,9 @@
         <h3>Add channels</h3>
         <p>To add channels click on <b>&quot;<span class="symbolic">+</span> Channel&quot;</b>.</p>
         <p>The channel selector, with filters, will be shown in the pop-up window.</p>
-        <p>Select the channels to add and press <b>&quot;Add&quot;</b>.</p>
+        <div class="l3">
+          <p>Select the channels to add and press <b>&quot;<span class="symbolic">+</span> Add&quot;</b>.</p>
+        </div>
         <p><i>When you done, close the pop-up window.</i></p>
         <div class="l2">
           <p>Note: <i>Channels cannot be added to the Services lists: All services, TV, Radio, Data.</i></p>
@@ -275,24 +281,28 @@
       <div id="edit-channel" class="l1">
         <h3>Edit channel</h3>
         <p>Select the service channel to edit, open the context menu and click on <b>&quot;Edit Service&quot;</b>.</p>
-        <p>In <b>dialog</b>, edit the service parameters, then press <b>&quot;Save&quot;</b>.</p>
+        <div class="l3">
+          <p>In <b>dialog</b>, edit the service parameters, then press <b>&quot;Save&quot;</b>.</p>
+        </div>
         <p><i>The service will be modified in every position where found.</i></p>
+        <p>Service can be quickly edited by <b>double-click</b>ing on selected service channel.</p>
         <div class="ls">
           <p>For further information, see <a href="edit-service.html">Edit Services</a> page of online help.</p>
         </div>
-        <p>Service can be quickly edited by <b>double-click</b>ing on selected service channel.</p>
       </div>
       <div id="delete-channel" class="l1">
         <h3>Delete channel</h3>
         <p>To delete a channel, select the channels, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
         <p><i>The service channel will be deleted in the current bouquet.</i></p>
-        <p>Channel can also be deleted with keyboard by clicking on <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
+        <p>Channel can also be deleted with keyboard by pressing <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
       </div>
       <hr id="favourites">
       <div id="create-favourite" class="l1">
         <h3>Create favourite</h3>
         <p>To create a favourite, click <b>&quot;<span class="symbolic">+</span> Favourite&quot;</b>.</p>
-        <p>In <b>dialog</b>, enter parameters for favourite, then press <b>&quot;Save&quot;</b>.</p>
+        <div class="l3">
+          <p>In <b>dialog</b>, enter parameters for favourite, then press <b>&quot;Save&quot;</b>.</p>
+        </div>
         <p><i>The favourite will be created in the current bouquet.</i></p>
         <div class="l2">
           <p>Note: <i>Favourites cannot be created in the Services lists: All services, TV, Radio, Data.</i></p>
@@ -305,7 +315,9 @@
       <div id="edit-favourite" class="l1">
         <h3>Edit favourites</h3>
         <p>Select a favourite to edit, open the context menu and click on <b>&quot;Edit Favourite&quot;</b>.</p>
-        <p>In <b>dialog</b>, change the parameters of the favourite, then press <b>&quot;Save&quot;</b>.</p>
+        <div class="l3">
+          <p>In <b>dialog</b>, change the parameters of the favourite, then press <b>&quot;Save&quot;</b>.</p>
+        </div>
         <p><i>The favourite will be changed in the current bouquet.</i></p>
         <p>Favourite can be quickly edited by <b>double-click</b>ing on selected favourite.</p>
       </div>
@@ -313,13 +325,15 @@
         <h3>Delete favourite</h3>
         <p>To delete favourite, select favourites, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
         <p><i>Favourites will be deleted from the current bouquet.</i></p>
-        <p>Favourite can also be deleted with keyboard by pressing on <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
+        <p>Favourite can also be deleted with keyboard by pressing <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
       </div>
       <hr id="markers">
       <div id="create-marker" class="l1">
         <h3>Create marker</h3>
         <p>To create a marker, click <b>&quot;<span class="symbolic">+</span> Marker&quot;</b>.</p>
-        <p>In <b>dialog</b>, enter a name for marker, then press <b>&quot;Save&quot;</b>.</p>
+        <div class="l3">
+          <p>In <b>dialog</b>, enter a name for marker, then press <b>&quot;Save&quot;</b>.</p>
+        </div>
         <p><i>The marker will be created in the current bouquet.</i></p>
         <div class="l2">
           <p>Note: <i>Markers cannot be created in the Services lists: All services, TV, Radio, Data.</i></p>
@@ -329,7 +343,9 @@
       <div id="edit-marker" class="l1">
         <h3>Edit marker</h3>
         <p>Select a marker to edit, open the context menu and click on <b>&quot;Edit Marker&quot;</b>.</p>
-        <p>In <b>dialog</b>, change the name of the marker, then press <b>&quot;Save&quot;</b>.</p>
+        <div class="l3">
+          <p>In <b>dialog</b>, change the name of the marker, then press <b>&quot;Save&quot;</b>.</p>
+        </div>
         <p><i>The marker will be changed in the current bouquet.</i></p>
         <p>Marker can be quickly edited by <b>double-click</b>ing on selected marker.</p>
       </div>
@@ -337,7 +353,7 @@
         <h3>Delete marker</h3>
         <p>To delete marker, select markers, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
         <p><i>Markers will be deleted from the current bouquet.</i></p>
-        <p>Marker can also be deleted with keyboard by pressing on <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
+        <p>Marker can also be deleted with keyboard by pressing <kbd><span class="symbol">&#8676;</span> Backspace</kbd>, <kbd>Del</kbd>, <kbd>Delete</kbd>, depending on system and keyboard used.</p>
       </div>
       <hr id="bouquets">
       <div id="move-bouquets" class="l1">
@@ -346,7 +362,7 @@
         <div class="l2">
           <p>Select bouquets then drag them with the mouse cursor to the desired position.</p>
           <div class="l3">
-            <p>Note: <i>Multiple selection is not available for moving bouquets.</i></p>
+            <p>Note: <i>Bouquets cannot be moved with multiple selection.</i></p>
           </div>
         </div>
       </div>
@@ -359,26 +375,30 @@
             <p><b>From bottom toolbar</b>, click on <b>&quot;Tools&quot;</b>, then click on menu <b>Sort</b> &gt; <b>Sort userbouquets&hellip;</b></p>
           </div>
           <div class="l3">
-            <p>Note: <i>Multiple selection is not available for sorting bouquets.</i></p>
+            <p>Note: <i>Bouquets cannot be sorted with multiple selection.</i></p>
           </div>
         </div>
       </div>
       <div id="create-bouquet" class="l1">
         <h3>Create bouquet</h3>
         <p>To create a bouquet, click on <b>&quot;<span class="symbolic">+</span> Bouquet&quot;</b>.</p>
-        <p>In <b>dialog</b>, enter a name for bouquet, then press <b>&quot;Save&quot;</b>.</p>
+        <div class="l3">
+          <p>In <b>dialog</b>, enter a name for bouquet, then press <b>&quot;Save&quot;</b>.</p>
+        </div>
         <p><i>The bouquet will be created below the current parent group of channels, TV or Radio.</i></p>
       </div>
       <div id="edit-bouquet" class="l1">
         <h3>Edit bouquet</h3>
         <p>Select the bouquet to edit, open the context menu and click on <b>&quot;Edit Userbouquet&quot;</b>.</p>
-        <p>In <b>dialog</b>, change the name of the bouquet, then press <b>&quot;Save&quot;</b>.</p>
+        <div class="l3">
+          <p>In <b>dialog</b>, change the name of the bouquet, then press <b>&quot;Save&quot;</b>.</p>
+        </div>
         <p>Bouquet can be quickly edited by <b>double-click</b>ing on selected bouquet.</p>
       </div>
       <div id="delete-bouquet" class="l1">
         <h3>Delete bouquet</h3>
         <p>To delete a bouquet, select the bouquet, open the context menu and click <b>&quot;Delete&quot;</b>.</p>
-        <p><i>The bouquet will be deleted with all the contained channels.</i></p>
+        <p><i>The bouquet will be deleted with all the channels within.</i></p>
       </div>
 {% render '_page-dist.liquid', help_rev: help_rev %}
     </main>

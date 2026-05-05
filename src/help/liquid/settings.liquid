@@ -18,7 +18,9 @@
           <p><b>From quick menu</b>, click on <b>&quot;Settings&quot;</b></p>
           <p><b>From main menu</b>, click on <b>File</b> &gt; <b>Settings</b>, on Mac click menu <b>&quot;e2 SAT Editor&quot;</b> &gt; <b>Preferences&hellip;</b></p>
         </div>
-        <p>A <b>dialog</b> will open, to save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        <div class="l3">
+          <p>A <b>dialog</b> will open, to save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        </div>
         <div class="l2">
           <p>Note: <i>Not all the settings are changed real-time, in some cases it might necessary to restart the software.</i></p>
         </div>
@@ -26,7 +28,9 @@
       <div id="connection" class="l1">
         <h3>Connection settings</h3>
         <p><b>Connections</b> tab contains all the parameters for connecting to Decoder (STB).</p>
-        <p>To save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        <div class="l3">
+          <p>To save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        </div>
         <div class="l2">
           <h4>Profiles</h4>
           <p>Connection profiles are found in the side panel.</p>
@@ -44,7 +48,7 @@
           <p>The software automatically creates a profile with default settings, named <b>&quot;Default&quot;</b>.</p>
           <div class="info">
             <p>Most common STB parameters are available through the <a href="#presets">Connection Presets</a> feature.</p>
-            <p><em>Parameters, Username, Password, vary by STB, rely on specialistic forum on the internet.</em></p>
+            <p><em>Parameters, Username, Password, vary by STB model and STB software images. <br>Please refer to forums on the internet for parameters and paths.</em></p>
           </div>
           <div class="l3">
             <h4>Connection</h4>
@@ -67,7 +71,7 @@
           </div>
           <div class="l3">
             <h4>Configuration</h4>
-            <p><b>Configuration</b> group contains the following properties for interfacing with STB:</p>
+            <p><b>Configuration</b> group contains the following properties to interfacing with STB:</p>
             <ul>
               <li><b>Transponders</b>, path containing XML settings (satellites.xml, ...) related to transponders, eg. <span translate="no">/etc/tuxbox</span></li>
               <li><b>Services</b>, path containing service channel lists (lamedb, blacklist, ...), eg. <span translate="no">/etc/enigma2</span></li>
@@ -77,8 +81,8 @@
             <div class="l3">
               <p><b>Picons</b> common paths for channel logo (picons)</p>
               <p>eg. <samp>/usr/share/enigma2/picon</samp> <samp>/usr/share/enigma2/picon_oled</samp> <samp>/media/usb/picons</samp> <samp>/media/hdd/picons</samp> <samp>/data/picon</samp></p>
-              <div class="l2">
-                <p>Note: <i>the software does not currently upload / download picon images, these must be uploaded manually to the STB.</i></p>
+              <div class="info">
+                <p>Note: <i>the software does not currently upload / download picon images, they should be uploaded manually to the STB.</i></p>
               </div>
             </div>
           </div>
@@ -135,7 +139,9 @@
       <div id="preferences" class="l1">
         <h3>Preferences settings</h3>
         <p><b>Preferences</b> tab contains all the settings related to the appearance and behavior of the software.</p>
-        <p>To save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        <div class="l3">
+          <p>To save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        </div>
         <div class="l2">
           <h4>General</h4>
           <p><b>General</b> group contains the following preferences:</p>
@@ -154,7 +160,7 @@
           <p>System detected language is selected by default.</p>
           <ul>
             <li><b>&quot;Default (system language)&quot;</b>, <i>auto</i>, selected by default</li>
-            <li>...</li>
+            <li>[...]</li>
           </ul>
         </div>
         <div class="l2">
@@ -203,13 +209,15 @@
       <div id="engine" class="l1">
         <h3>Engine settings</h3>
         <p>The <b>&quot;Engine&quot;</b> tab contains all preferences related to the behavior of the engine contained in the software.</p>
-        <p>To save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        <div class="l3">
+          <p>To save settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
+        </div>
         <div class="l2">
           <h4>Settings</h4>
           <p><b>Settings</b> group contains preferences related to settings.</p>
           <ul>
             <li><b>Default format</b>, selector</li>
-            <li><b>Parental lock whitelist (exclusion instead inclusion list)</b>, on / off</li>
+            <li><b>Parental lock whitelist (exclusion instead of inclusion list)</b>, on / off</li>
           </ul>
           <p>Select a default format with which new channel lists will be created.</p>
           <p><b>&quot;Default format&quot;</b> selector contains these options:</p>
@@ -246,10 +254,12 @@
         <h3>Advanced settings</h3>
         <p><b>&quot;Advanced&quot;</b> tab gives access to the advanced settings of the software.</p>
         <p>A cautionary warning will be shown, you should [confirm] to access advanced settings.</p>
-        <div class="l2">
+        <div class="l3">
           <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
           <p>In the editable table, <b>double-click</b> on the cell in the <span translate="no">VALUE</span> column to change the value.</p>
           <p>For boolean values (<span translate="no">TRUE</span> or <span translate="no">FALSE</span>), input text: <samp translate="no">true</samp> or <samp translate="no">false</samp>.</p>
+        </div>
+        <div class="l3">
           <p>To save the settings press <b>&quot;Save&quot;</b>, to cancel <b>&quot;Cancel&quot;</b>.</p>
         </div>
       </div>
@@ -257,13 +267,15 @@
         <h3>Reset settings</h3>
         <p>The software can be reset to factory settings.</p>
         <p><b>All settings previously saved will be erased.</b></p>
-        <div class="l2">
+        <div class="l3">
           <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
           <p>To reset to factory settings, go to <b>&quot;Settings&quot;</b> &gt; <b>Advanced</b> &gt; [confirm].</p>
           <p>Change the <samp translate="no">settings.reset</samp> line from <span translate="no">FALSE</span> to <span translate="no">TRUE</span>, typing <samp translate="no">true</samp>.</p>
+        </div>
+        <div class="l3">
           <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
         </div>
-        <p>The next time the software is opened it will be reset to factory defaults.</p>
+        <p><i>The next time the software is opened it will be reset to factory defaults.</i></p>
       </div>
       <div class="info">
         <p><b>macOS</b> Preferences are stored in the user Library, with the identifiers: <i>com.io-github-ctlcltd.e2se</i> (software preferences), <i>io.github.ctlcltd.e2se</i> (OS related preferences)</p>

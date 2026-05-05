@@ -34,7 +34,7 @@
             <td>Report an issue on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/issues" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/issues</a> <br>Attach a log if possible, refer to <a href="#view-software-logs">View software logs</a></td>
           </tr>
           <tr>
-            <td>Check any error messages displayed</td>
+            <td>Check any error message displayed</td>
           </tr>
           <tr>
             <td colspan="2">
@@ -116,7 +116,7 @@
             <td>Press <b>&quot;Connect&quot;</b> and <b>&quot;Disconnect&quot;</b> in quick menu to attempt an FTP connection</td>
           </tr>
           <tr>
-            <td>Note: <i>the software does not currently Upload/Download picon images, these must be uploaded manually to the STB</i></td>
+            <td>Note: <i>the software does not currently Upload/Download picon images, they should be uploaded manually to the STB</i></td>
           </tr>
           <tr id="stb-notice">
             <td rowspan="5">Errors occurred during STB reload operations</td>
@@ -136,10 +136,10 @@
           </tr>
           <tr id="stb-update">
             <td rowspan="3">Decoder (STB) does not update the channel list</td>
-            <td>Try to restart the STB manually, or if you have the specific parameters for your STB, enter them, and follow the next steps</td>
+            <td>Try to restart the STB manually, or if you have the specific parameters for your STB, follow the next steps</td>
           </tr>
           <tr>
-            <td>Modify the parameters in the <b>Commands</b> group, in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
+            <td>Edit the parameters in the <b>Commands</b> group, in <b>&quot;Settings&quot;</b> in the <b>Connections</b> tab</td>
           </tr>
           <tr>
             <td>Enter the specific parameters for updating the STB: paths, <i>Webif reload</i> URL address and/or <i>Telnet reload</i> command</td>
@@ -156,7 +156,7 @@
           </tr>
           <tr id="file-open">
             <td rowspan="3">File does not open</td>
-            <td>Check error messages displayed</td>
+            <td>Check the error messages displayed</td>
           </tr>
           <tr>
             <td>Verify the compatibility of the channel list file</td>
@@ -166,7 +166,7 @@
           </tr>
           <tr id="file-save">
             <td rowspan="3">File not saved</td>
-            <td>Check error messages displayed</td>
+            <td>Check the error messages displayed</td>
           </tr>
           <tr>
             <td>Verify the compatibility of the channel list file</td>
@@ -204,14 +204,14 @@
       <div id="check-version" class="lh">
         <h3>Check the version</h3>
         <p>Check that the version you are using is the most recent.</p>
+        <div class="l3">
+          <p>To manually check for updates, click on <b>Help</b> &gt; <b>Check for updates</b>.</p>
+        </div>
         <div class="l2">
           <p><b>From main menu</b>, click menu <b>Help</b> &gt; <b>About e2 SAT Editor</b></p>
           <p>Check the version number and on the Releases page of the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a> for more recent updates.</p>
         </div>
-        <div class="l2">
-          <p>To manually check for updates, click on <b>Help</b> &gt; <b>Check for updates</b>.</p>
-        </div>
-        <p>With distributed installation (Snap Store, Flathub, Arch AUR), check for updates or reinstall the software. <br>See <a href="install.html">Installation</a> in online help.</p>
+        <p>With distributed installation (Snap Store, Flathub, Arch AUR), check for updates and upgrade from the software store util.</p>
         <div class="info">
           <p>Note: <b>Check for updates</b> will connect to GitHub servers to the repository address, host name: <em>github.com</em> <br>The feature <i>Do Not Track</i> is used, but there is no warranty it will be applied.</p>
           <p>The preference <b>&quot;Check for updates on launch&quot;</b> is turned off by default.</p>
@@ -266,20 +266,22 @@
         </div>
         <div class="l2">
           <p>The Log Inspector is dockable on every tabs and is persistent across all tabs.</p>
-          <p>Software logs are available also using debugging option, see <a href="command-line.html#debug">Command line</a> page of online help.</p>
+          <p>Software logs are available also using the debugging command line option, see <a href="command-line.html#debug">Command line</a> page of online help.</p>
         </div>
       </div>
       <div id="reset-settings" class="lh">
         <h3>Reset settings</h3>
         <p>The software can be reset to factory settings.</p>
         <p><b>All settings previously saved will be erased.</b></p>
-        <div class="l2">
+        <div class="l3">
           <p><em>Recommendation: Do not do this if you do not understand what you are doing.</em></p>
           <p>To reset to factory settings, go to <b>&quot;Settings&quot;</b> &gt; <b>Advanced</b> &gt; [confirm].</p>
           <p>Change the <samp translate="no">settings.reset</samp> line from <span translate="no">FALSE</span> to <span translate="no">TRUE</span>, typing <samp translate="no">true</samp>.</p>
+        </div>
+        <div class="l3">
           <p>Save your settings by pressing <b>&quot;Save&quot;</b> and close the software.</p>
         </div>
-        <p>The next time the software is opened it will be reset to factory defaults.</p>
+        <p><i>The next time the software is opened it will be reset to factory defaults.</i></p>
       </div>
 {% render '_page-dist.liquid', help_rev: help_rev %}
     </main>

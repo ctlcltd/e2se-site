@@ -12,7 +12,7 @@
       <p>How to use prompt-like Console, command line options and <em>e2se-cli</em> command line interface.</p>
       <div id="console" class="l1">
         <h3>Console</h3>
-        <p>Console is a prompt-like util and offers a typical step-by-step, question and answer, textual approach editing.</p>
+        <p>Console is a prompt-like util with step-by-step, question and answer, textual approach editing.</p>
         <div class="l2">
           <p>Note: <i>Console is a beta util.</i></p>
         </div>
@@ -24,11 +24,44 @@
             <p><b>From bottom toolbar</b>, click on <b>&quot;Tools&quot;</b> &gt; <b>Console</b></p>
           </div>
           <div class="l3">
-            <p>To display console help, type <samp>help</samp> and press <kbd>Enter</kbd> key.</p>
-            <p>To display console usage hints, type <samp>help [COMMAND]</samp> followed by <kbd>Enter</kbd> key.</p>
+            <h4>Command</h4>
+            <p>To execute command, type the command and press <kbd>Enter</kbd> key.</p>
+            <div class="l3">
+              <p>eg. for help, type <samp>help</samp> and press <kbd>Enter</kbd> key</p>
+              <p>eg. for usage hints, type <samp>help [COMMAND]</samp> and press <kbd>Enter</kbd> key, eg. <samp>help edit</samp></p>
+            </div>
+          </div>
+          <div class="l3">
+            <h4>Edit</h4>
+            <p>When using add and edit commands, will be prompted questions and answers to fill the data item.</p>
+            <div class="l3">
+              <p>eg. type <samp>add transponder</samp> and press <kbd>Enter</kbd> key</p>
+            </div>
+            <p><b>To interrupt edit</b>, press <kbd>Esc</kbd> key</p>
+          </div>
+          <div class="l3">
+            <h4>Navigation</h4>
+            <p>When using listing commands, will be prompted paginated list of items.</p>
+            <div class="l3">
+              <p>eg. type <samp>list services</samp> and press <kbd>Enter</kbd> key</p>
+              <p>eg. 15 item per page, type <samp>list services 15</samp> and press <kbd>Enter</kbd></p>
+            </div>
+            <p><b>For next page</b>, press <kbd>Page Down</kbd> key</p>
+            <p><b>For previous page</b>, press <kbd>Page Up</kbd> key</p>
+            <p><b>To interrupt listing</b>, press <kbd>Q</kbd> or <kbd>Esc</kbd> key</p>
+          </div>
+          <div class="l3">
+            <h4>Tab control</h4>
+            <p>To control current tab, type <samp>tab</samp> and press <kbd>Enter</kbd> key.</p>
+            <div class="l3">
+              <p>eg. to reload current tab views, type <samp>tab reload</samp> and press <kbd>Enter</kbd> key</p>
+              <p>eg. to clear current tab views, type <samp>tab clear</samp> and press <kbd>Enter</kbd> key</p>
+            </div>
           </div>
           <div class="l2">
             <p>The Console is dockable on current tab and tab children.</p>
+          </div>
+          <div class="l3">
             <p>Note: <i>Console available since software version 2.0</i></p>
           </div>
         </div>
@@ -37,31 +70,39 @@
         <h3>Command line options</h3>
         <p>The software runs from the command line also, optionally with a file name or option.</p>
         <div class="l2">
-          <p>Open a terminal and launch the software &ndash; from its current location, eg. <samp>cd e2-sat-editor-directory</samp> &ndash; followed by a <samp>[FILE]</samp> path or <samp>[OPTION]</samp>.</p>
-          <p><b>Windows PowerShell</b> <code>.\e2-sat-editor.exe [FILE] [OPTION]</code></p>
-          <p><b>Windows CMD</b> <code>e2-sat-editor.exe [FILE] [OPTION]</code></p>
-          <p><b>macOS</b> <code>./e2\ SAT\ Editor.app/Contents/MacOS/e2\ SAT\ Editor [FILE] [OPTION]</code></p>
-          <p><b>Linux (AppImage)</b> <code>./e2-sat-editor-VERSION-x86_64-linux.AppImage [FILE] [OPTION]</code></p>
-          <p><b>Linux (Snap)</b> <code>snap run e2-sat-editor [FILE] [OPTION]</code></p>
-          <p><b>Linux (Flatpak)</b> <code>flatpak run io.github.ctlcltd.e2se [FILE] [OPTION]</code></p>
-          <p><b>Other shell</b> <code>./e2-sat-editor [FILE] [OPTION]</code></p>
+          <p>Open a terminal and launch the software &ndash; from its current location, eg. <samp>cd e2-sat-editor-directory</samp> &ndash; followed by a directory <samp>[FILE]</samp> path or <samp>[OPTION]</samp>.</p>
+          <div class="l3">
+            <p><b>Windows PowerShell</b> <code>.\e2-sat-editor.exe [FILE] [OPTION]</code></p>
+            <p><b>Windows CMD</b> <code>e2-sat-editor.exe [FILE] [OPTION]</code></p>
+            <p><b>macOS</b> <code>./e2\ SAT\ Editor.app/Contents/MacOS/e2\ SAT\ Editor [FILE] [OPTION]</code></p>
+            <p><b>Linux (AppImage)</b> <code>./e2-sat-editor-VERSION-x86_64-linux.AppImage [FILE] [OPTION]</code></p>
+            <p><b>Linux (Snap)</b> <code>snap run e2-sat-editor [FILE] [OPTION]</code></p>
+            <p><b>Linux (Flatpak)</b> <code>flatpak run io.github.ctlcltd.e2se [FILE] [OPTION]</code></p>
+            <p><b>Other shell</b> <code>./e2-sat-editor [FILE] [OPTION]</code></p>
+          </div>
         </div>
         <div class="l3">
-          <h4>Open a file</h4>
-          <p>To open a file from command line.</p>
-          <p><samp>[FILE]</samp> eg. <code>e2-sat-editor [FILE]</code></p>
+          <h4>Open a directory file</h4>
+          <p>To open a directory path from command line.</p>
+          <div class="l3">
+            <p><samp>[FILE]</samp> eg. <code>e2-sat-editor [FILE]</code></p>
+          </div>
         </div>
         <div class="l3">
           <h4>Show software version</h4>
           <p>To show the software version from command line.</p>
-          <p><samp>--version</samp> eg. <code>e2-sat-editor --version</code></p>
+          <div class="l3">
+            <p><samp>--version</samp> eg. <code>e2-sat-editor --version</code></p>
+          </div>
         </div>
         <div id="debug" class="l3">
           <h4>Debugging option</h4>
           <p>To turn on software logs and show debug informations.</p>
-          <p><samp>--debug</samp> eg. <code>e2-sat-editor --debug</code></p>
           <div class="l3">
-            <p>Another way to show debug info using enviroment variable <samp>DEBUG</samp>.</p>
+            <p><samp>--debug</samp> eg. <code>e2-sat-editor --debug</code></p>
+          </div>
+          <p>Another way to show debug info using enviroment variable <samp>DEBUG</samp>.</p>
+          <div class="l3">
             <p><b>Windows PowerShell</b> eg. <code>$env:QT_WIN_DEBUG_CONSOLE="new"; $env:DEBUG=1; .\e2-sat-editor.exe [FILE] [OPTION]</code></p>
             <p><b>macOS</b> eg. <code>DEBUG=1 ./e2\ SAT\ Editor.app/Contents/MacOS/e2\ SAT\ Editor [FILE] [OPTION]</code></p>
             <p><b>Linux (AppImage)</b> eg. <code>DEBUG=1 ./e2-sat-editor-VERSION-x86_64-linux.AppImage [FILE] [OPTION]</code></p>
@@ -72,7 +113,7 @@
       <div id="cli" class="l1">
         <h3>Command line interface <span class="type">[e2se-cli]</span></h3>
         <p>Command line interface is provided by <em>e2se-cli</em> application binary.</p>
-        <p>It offers an interactive shell with almost the same features of the software GUI counterpart.</p>
+        <p>Interactive shell aims to have almost the same features of the software GUI counterpart.</p>
         <div class="l2">
           <p>Note: <i>e2se-cli is a beta util.</i></p>
         </div>
@@ -87,19 +128,50 @@
         <div class="l3">
           <h4>Typical usage</h4>
           <p>To open interactive shell.</p>
-          <p>eg. <code>e2se-cli</code></p>
+          <p>Open a terminal and launch the software: <code>e2se-cli</code></p>
+        </div>
+        <div class="l3">
+          <h4>Command <span class="type">[Interactive shell]</span></h4>
+          <p>To execute command, type the command and press <kbd>Enter</kbd> key.</p>
+          <div class="l3">
+            <p>eg. for help, type <samp>help</samp> and press <kbd>Enter</kbd> key</p>
+            <p>eg. to open directory path, type <samp>read [FILE]</samp> and press <kbd>Enter</kbd> key</p>
+            <p>eg. to save directory path, type <samp>write [FILE]</samp> and press <kbd>Enter</kbd> key</p>
+          </div>
+        </div>
+        <div class="l3">
+          <h4>Edit <span class="type">[Interactive shell]</span></h4>
+          <p>When using add and edit commands, will be prompted questions and answers to fill the data item.</p>
+          <div class="l3">
+            <p>eg. type <samp>add transponder</samp> and press <kbd>Enter</kbd> key</p>
+          </div>
+        </div>
+        <div class="l3">
+          <h4>Navigation <span class="type">[Interactive shell]</span></h4>
+          <p>When using listing commands, will be prompted paginated list of items.</p>
+          <div class="l3">
+            <p>eg. type <samp>list services</samp> and press <kbd>Enter</kbd> key</p>
+            <p>eg. 15 item per page, type <samp>list services 15</samp> and press <kbd>Enter</kbd> key</p>
+          </div>
+          <p><b>For next page</b>, press <kbd>Page Down</kbd> key</p>
+          <p><b>For previous page</b>, press <kbd>Page Up</kbd> key</p>
+          <p><b>To interrupt listing</b>, press <kbd>Q</kbd> key</p>
         </div>
         <div class="l3">
           <h4>Show help</h4>
           <p>To show usage help.</p>
-          <p><samp>-h</samp> <samp>--help</samp> eg. <code>e2se-cli --help</code></p>
-          <p><b>From interactive shell</b>, type <samp>help</samp></p>
-          <p><b>From interactive shell</b>, for <samp>[COMMAND]</samp> usage help, eg. <samp>help edit</samp></p>
+          <div class="l3">
+            <p><samp>-h</samp> <samp>--help</samp> eg. <code>e2se-cli --help</code></p>
+          </div>
+          <p><b>From interactive shell</b>, for help, type <samp>help</samp> and press <kbd>Enter</kbd> key</p>
+          <p><b>From interactive shell</b>, for usage hints, type <samp>help [COMMAND]</samp> and press <kbd>Enter</kbd> key, eg. <samp>help edit</samp></p>
         </div>
         <div class="l3">
           <h4>Show software version</h4>
           <p>To show the software version from command line.</p>
-          <p><samp>-v</samp> <samp>--version</samp> eg. <code>e2se-cli --version</code></p>
+          <div class="l3">
+            <p><samp>-v</samp> <samp>--version</samp> eg. <code>e2se-cli --version</code></p>
+          </div>
           <p><b>From interactive shell</b>, type <samp>version</samp></p>
         </div>
       </div>

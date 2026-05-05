@@ -15,24 +15,66 @@
         <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
       </div>
       <div class="info">
-        <p>Note: <i>the software does not currently upload / download picon images, these must be uploaded manually to the STB.</i></p>
+        <p>Note: <i>the software does not currently upload / download picon images, they should be uploaded manually to the STB.</i></p>
       </div>
       <div id="picons" class="l1">
         <h3>Picons</h3>
+        <p>Picons edit is managed on a separate tab from the main view.</p>
+        <div class="l2">
+          <p><b>From main menu</b>, click on menu <b>Editor</b> &gt; <b>Picons editor</b></p>
+        </div>
+        <p>Picons editor tab is always shown in the tab switcher.</p>
       </div>
       <div id="browse-picons" class="l1">
         <h3>Browse picons</h3>
+        <p>To browse picons pick a folder with picons from your local folders.</p>
+        <div class="l3">
+          <p>Click on <b>&quot;Browse&hellip;&quot;</b> field button, at tab bottom &quot;Folder&quot;, select the directory to browse.</p>
+          <p><i>Picon images will be showns in the tab.</i></p>
+        </div>
       </div>
       <div id="change-picon" class="l1">
         <h3>Change picon</h3>
+        <p>Select the picon image to change, open the context menu and click on <b>&quot;Change picon&quot;</b>.</p>
+        <div class="l3">
+          <p>In <b>File dialog</b>, select the image that will replace the selected picon.</p>
+          <p><i>Selected picon image will be replaced with the new image.</i></p>
+        </div>
+        <div class="l2">
+          <p>Picons can be changed also with <b>Drag and Drop</b>, by drag image on <em>File manager</em> and dropping to the picon on the tab.</p>
+        </div>
       </div>
       <div id="edit-picon" class="l1">
         <h3>Edit picon</h3>
-      </div>
-      <div class="l1">
+        <p>Select the picon image to edit, open the context menu and click on <b>&quot;Open picon&quot;</b> or <b>&quot;Reveal on <em>File manager</em>&quot;</b>.</p>
+        <div class="l3">
+          <p><i>By clicking on &quot;Open picon&quot; the selected picon image will be opened in the default image editor.</i></p>
+          <p><i>By clicking on &quot;Reveal on <em>File manager</em>&quot; the selected picon image will be shown in the default File manager.</i></p>
+        </div>
+        <div class="info">
+          <p>Note: <i>Reveal on File manager availability depends on the channel distribution of the software release.</i></p>
+        </div>
+        <div class="l2">
+          <p>Note: <i>Open picon available since software version 2.0</i></p>
+        </div>
       </div>
       <div id="batch-command" class="l1">
         <h3>Batch command</h3>
+        <p>Batch command can be used to add the batch power to picons editor, executing your own batch scripts.</p>
+        <p><i>&quot;External batch command&quot; should be enabled and properly configured from Settings.</i></p>
+        <div class="l3">
+          <p>To execute the configured batch command, select the picons, open the context menu and click on <b>&quot;Execute batch command&quot;</b>.</p>
+          <p><i>Batch command will be executed, the batch progress will be displayed in the status bar.</i></p>
+        </div>
+        <div class="info">
+          <p>Note: <i>External batch command availability on sandboxed context, depends on your sandbox permissions configuration.</i></p>
+        </div>
+        <div class="ls">
+          <p>To configure External batch command, see <a href="settings.html#preferences-picons">Picons editor</a> chapter, on <a href="settings.html">Settings</a> page.</p>
+        </div>
+        <div class="l2">
+          <p>Note: <i>External batch command available since software version 1.9</i></p>
+        </div>
       </div>
 {% render '_page-dist.liquid', help_rev: help_rev %}
     </main>
