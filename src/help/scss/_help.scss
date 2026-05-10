@@ -158,22 +158,17 @@ samp,
 code,
 .icon {
   background: #ddd;
-  border-radius: 3px;
-}
-samp,
-code {
-  padding: .1rem .2rem;
+  border-radius: 2px;
 }
 samp {
+  padding: .2rem .3rem;
   font-family: inherit;
   font-size: 96%;
 }
 code {
   display: inline-block;
+  padding: .15rem .5rem;
   font-size: 78%;
-}
-code:before {
-  content: "~$ ";
 }
 .icon {
   display: inline-block;

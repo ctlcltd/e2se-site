@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+{% render '_doc-head.liquid' %}
+<body>
+{% render '_page-head.liquid' %}
+<div id="page">
+  <div id="help">
+    <main>
+      <h1>{{ distName }}</h1>
+      <h2>Update</h2>
+      <p>How to receive updates for &quot;e2 SAT Editor&quot; software.</p>
+      <div id="check-version" class="l1">
+        <h3>Check the version</h3>
+        <p>Check that the version you are using is the most recent.</p>
+        <div class="l3">
+          <p>To manually check for updates, click on <b>Help</b> &gt; <b>Check for updates</b>.</p>
+        </div>
+        <div class="l2">
+          <p><b>From main menu</b>, click menu <b>Help</b> &gt; <b>About e2 SAT Editor</b></p>
+          <p>Check the version number and on the Releases page of the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a> for more recent updates.</p>
+        </div>
+        <div class="l3">
+          <p>With distributed installation on Linux (Snap Store, Flathub, Arch AUR), check for updates and upgrade from the software store util.</p>
+          <p>To manually upgrade package (Snap Store, Flathub, Arch AUR), see <a href="#linux-apps">Linux</a> chapter, on this page.</p>
+        </div>
+        <div class="info">
+          <p>Note: <b>Check for updates</b> will connect to GitHub servers to the repository address, host name: <em>github.com</em> <br>The feature <i>Do Not Track</i> is used, but there is no warranty it will be applied.</p>
+          <p>The preference <b>&quot;Check for updates on launch&quot;</b> is turned off by default.</p>
+        </div>
+      </div>
+      <div id="download" class="l1">
+        <h3>Download</h3>
+        <p>The original release files can be downloaded only in one place, the GitHub Releases page of the official repository at <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a></p>
+        <p>There are 6 release files available to download:</p>
+        <ul>
+            <li>Windows (win64) <em>(winarm64)</em></li>
+            <li>macOS (Silicon) (Intel)</li>
+            <li>Linux (AppImage x86_64) <em>(AppImage aarch64)</em>.</li>
+        </ul>
+        <div class="l2">
+          <p>You can verify the checksum of the downloaded files, SHA-256 and MD5 hashes are available in <samp>&quot;SHA256SUMS.txt&quot;</samp> and <samp>&quot;MD5SUMS.txt&quot;</samp> files, from the same page Releases of the official repository.</p>
+        </div>
+        <div class="info">
+          <p>In case of incompatibility it is recommended to use the software in a virtual machine.</p>
+        </div>
+      </div>
+      <div id="windows" class="l1">
+        <h3 translate="no">Windows</h3>
+        <p>Download the zip file for Windows, the file name has the following nomenclature: <br><samp>&quot;e2-sat-editor-VERSION-unsigned-win64.zip&quot;</samp></p>
+        <p>The Zip package contains a portable version of the software, without the installer.</p>
+        <ul>
+          <li>Save the directory <b>&quot;e2 SAT Editor Team&quot;</b> from the current portable folder, it contains the software preferences.</li>
+          <li>Uncompress the Zip package by <b>double-click</b>ing on it, or by <b>right-click</b>ing on the file and selecting <b>&quot;Extract here&quot;</b> from the context menu.</li>
+          <li>Place the folder created by File Explorer, for example <samp>&quot;e2-sat-editor-{{ software_rel_ver }}-unsigned-win64&quot;</samp>, where you prefer.</li>
+        </ul>
+        <p>To replace the <em>old</em> folder with the <em>new</em> one:</p>
+        <ul>
+          <li>Rename the <em>old</em> portable folder, for example <samp>&quot;e2 SAT Editor&quot;</samp> to match the folder name and do a replacement.</li>
+          <li>Select the <em>new</em> portable folder and rename it with the same name of the <em>old</em> portable folder, for example <samp>&quot;e2 SAT Editor&quot;</samp>.</li> 
+          <li>Copy and Paste the <em>new</em> folder, or drag and drop it over the <em>old</em> one, and press on &quot;Yes&quot; button from the &quot;Confirm Folder Replace&quot; dialog.</li>
+        </ul>
+        <p>In alternative, to manually replace all files in the <em>new</em> portable folder:</p>
+        <ul>
+          <li>From the <em>old</em> portable folder, select all files and delete all, except the previously saved directory <b translate="no">&quot;e2 SAT Editor Team&quot;</b>.</li>
+          <li>Replace all with the new files from the <em>new</em> portable folder.</li>
+        </ul>
+        <p>Launch the software, the name of the executable file is <b translate="no">&quot;e2-sat-editor&quot; [.exe]</b></p>
+        <p><i>Software preferences will be updated on first run.</i></p>
+        <div class="info">
+          <p>If you are using Windows on ARM (arm64), the file has the following nomenclature: <br><samp>&quot;e2se-VERSION-unsigned-win64-arm64-testing.zip&quot;</samp></p>
+        </div>
+        <div class="ls">
+          <p>For information about application restrictions, see <a href="install.html#windows">Install</a> page of {{ distName | downcase }}.</p>
+        </div>
+      </div>
+      <div id="macos" class="l1">
+        <h3 translate="no">macOS</h3>
+        <p>Download the zip file, the file name has the following nomenclature: <br><samp>&quot;e2-sat-editor-VERSION-unsigned-SYSTEM-macos.zip&quot;</samp></p>
+        <p><samp>SYSTEM</samp> is <span translate="no"><i>silicon</i></span> or <span translate="no"><i>intel</i></span></p>
+        <p>The Zip package contains the software application [.app], without the installer.</p>
+        <ul>
+          <li>Uncompress the Zip package by <b>double-click</b>ing on it.</li>
+          <li>Place the folder created by Finder utility, for example <samp>&quot;e2-sat-editor-{{ software_rel_ver }}-unsigned-silicon-macos&quot;</samp>, where you prefer.</li>
+        </ul>
+        <p>To replace the <em>old</em> application file with the <em>new</em> one:</p>
+        <ul>
+          <li>Copy and Paste the <em>new</em> application file <b translate="no">&quot;e2 SAT Editor&quot; [.app]</b> replacing to the <em>old</em>, or drag and drop it over the <em>old</em> one, and confirm the replace.</li>
+        </ul>
+        <p>Launch the software, the name of the executable application file is <b translate="no">&quot;e2 SAT Editor&quot; [.app]</b></li>
+        <p><i>Software preferences will be updated on first run.</i></p>
+        <div class="ls">
+          <p>For information about application restrictions, see <a href="install.html#macos">Install</a> page of {{ distName | downcase }}.</p>
+        </div>
+      </div>
+      <div id="linux" class="l1">
+        <h3 translate="no">Linux</h3>
+        <div id="linux-appimage" class="l2">
+          <h4>AppImage</h4>
+          <p>Download the Linux AppImage x86_64 file, the file name has the following nomenclature: <br><samp>&quot;e2-sat-editor-VERSION-x86_64-linux.AppImage&quot;</samp></p>
+          <p>The downloaded file is the executable software [.AppImage], no installation is required.</p>
+          <p>To replace the <em>old</em> application binary with the <em>new</em> one:</p>
+          <ul>
+            <li>Copy and Paste the <em>new</em> application binary <samp>&quot;e2-sat-editor-{{ software_rel_ver }}-x86_64-linux.AppImage&quot;</samp> replacing to the <em>old</em>, or drag and drop it over the <em>old</em> one, and confirm the replace.</li>
+          </ul>
+          <p>Launch the software, by <b>double-click</b>ing on the application binary.</p>
+          <p><i>Software preferences will be updated on first run.</i></p>
+          <div class="info">
+            <p>If you are using Linux for ARM (aarch64), the file has the following nomenclature: <br><samp>&quot;e2se-VERSION-unsigned-linux-aarch64-testing.AppImage&quot;</samp></p>
+          </div>
+          <div class="l3">
+            <p>For information about application restrictions, see <a href="install.html#linux-appimage">Install</a> page of {{ distName | downcase }}.</p>
+          </div>
+        </div>
+        <div id="linux-apps" class="l2">
+          <h4 translate="no">Snap Store, Flathub</h4>
+          <p>Refer to the documentation of the Linux distribution you are using to find out whether the software is distributed by Snap Store or by Flathub.</p>
+          <p><i>Software installed through the package manager could be auto-updated, this depends on your system configuration.</i></p>
+          <div class="l3">
+            <p><strong>If you had installed via Snap Store:</strong></p>
+            <ul>
+              <li>To manually upgrade, open a terminal and update using the <b>snap</b> command-line util, with the command: <br><code>sudo snap refresh e2-sat-editor</code></li>
+              <li>Wait until the upgrade operation has finished.</li>
+            </ul>
+          </div>
+          <div class="l3">
+            <p><strong>If you had installed via Flathub:</strong></p>
+            <ul>
+              <li>To manually upgrade, open a terminal and update using the <b>flatpak</b> command-line util, with the command: <br><code>flatpak --user update io.github.ctlcltd.e2se</code></li>
+              <li>Wait until the upgrade operation has finished.</li>
+            </ul>
+          </div>
+          <p>Lauch the software, looking <i>&quot;e2 SAT Editor&quot;</i> in the application launcher.</p>
+          <div class="l3">
+            <p><i>Software preferences will be updated on first run.</i></p>
+          </div>
+          <ul>
+            <li>The &quot;e2 SAT Editor&quot; software page on Snap Store at: <a href="https://snapcraft.io/e2-sat-editor" rel="nofollow noopener" target="_blank">https://snapcraft.io/e2-sat-editor</a></li>
+            <li>The &quot;e2 SAT Editor&quot; software page on Flathub at: <a href="https://flathub.org/apps/io.github.ctlcltd.e2se" rel="nofollow noopener" target="_blank">https://flathub.org/apps/io.github.ctlcltd.e2se</a></li>
+          </ul>
+          <div class="l3">
+            <p>For information about application install, see <a href="install.html#linux-store">Install</a> page of {{ distName | downcase }}.</p>
+          </div>
+        </div>
+        <div id="linux-arch-aur" class="l2">
+          <h4 translate="no">AUR (Arch Linux User Repository)</h4>
+          <p>Refer to the Arch Linux documentation at: <a href="https://wiki.archlinux.org/title/Arch_User_Repository" rel="nofollow noopener" target="_blank">https://wiki.archlinux.org/title/Arch_User_Repository</a> for installing software from the AUR repository.</p>
+          <ul>
+            <li>Use <b>git</b> to download from the AUR repository, the command: <code>git pull</code> to pull last updates.</li>
+            <li>Build the package with the command: <code>makepkg</code></li>
+          </ul>
+          <p>Launch the software, run the software binary: <code>e2-sat-editor</code></p>
+          <div class="l3">
+            <p><i>Software preferences will be updated on first run.</i></p>
+          </div>
+          <ul>
+            <li>The &quot;e2 SAT Editor&quot; software repository page on the Arch Linux AUR at: <a href="https://aur.archlinux.org/packages/e2-sat-editor" rel="nofollow noopener" target="_blank">https://aur.archlinux.org/packages/e2-sat-editor</a></li>
+          </ul>
+          <div class="l3">
+            <p>For information about application install, see <a href="install.html#linux-arch-aur">Install</a> page of {{ distName | downcase }}.</p>
+          </div>
+        </div>
+      </div>
+      <div id="other-system" class="l1">
+        <h3>Other systems</h3>
+        <p>Follow the instructions to compile, in the official repository at <a href="https://github.com/ctlcltd/e2-sat-editor/blob/main/BUILD.md" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/blob/main/BUILD.md</a></p>
+        <ul>
+          <li>If you had used <b>git</b> to download from the software repository use <code>git pull</code> to pull last updates.</li>
+          <li>Fast re-compile through <b>CMake</b> or <b>qmake</b>.</li>
+        </ul>
+        <p>Launch the software, run the software binary: <code>e2-sat-editor</code></p>
+        <p><i>Software preferences will be updated on first run.</i></p>
+        <div class="l3">
+          <p>For information about software compatibility, see <a href="install.html#other">Install</a> page of {{ distName | downcase }}.</p>
+        </div>
+      </div>
+      <div id="preferences" class="l1">
+        <h3>Preferences</h3>
+        <div class="info">
+          <p><b translate="no">Windows</b> Preferences are stored in the software executable directory, with the identifier: <i translate="no">e2 SAT Editor Team/e2se.ini</i></p>
+          <p><b translate="no">macOS</b> Preferences are stored in the user Library, with the identifiers: <i translate="no">com.io-github-ctlcltd.e2se</i> (software preferences), <i translate="no">io.github.ctlcltd.e2se</i> (OS related preferences)</p>
+          <p><b>others (<span translate="no">XDG</span> specification)</b> Preferences are stored in the default <span translate="no">XDG</span> preference folder, with the identifier: <i translate="no">e2 SAT Editor Team</i></p>
+          <p>To manually edit the preferences file, please refer to the Qt toolkit documentation at: <a href="https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes" rel="nofollow noopener" target="_blank">https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes</a></p>
+        </div>
+      </div>
+      <hr>
+      <p>For information about software safety, see <a href="install.html#safety">Install</a> page of {{ distName | downcase }}.</p>
+{% render '_page-dist.liquid', help_rev: help_rev %}
+    </main>
+{% render '_page-side.liquid' %}
+  </div>{% unless distributable %}
+{% render '_page-foot.liquid' %}{% endunless %}
+</div>
+{% render '_page-vars.liquid' %}
+</body>
+</html>

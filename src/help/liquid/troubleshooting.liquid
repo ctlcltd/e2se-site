@@ -6,13 +6,12 @@
 <div id="page">
   <div id="help">
     <main>
-{% unless distributable %}      <h1>Online Help</h1>
-{% else %}      <h1>User Manual</h1>{% endunless %}
+      <h1>{{ distName }}</h1>
       <h2>Troubleshooting</h2>
       <p>How to solve problems, eg. dealing with FTP.</p>
       <div class="info info-read">
         <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
-        <p>Before using the software you could read <a href="quick-start.html">Quick Start</a> page of online help for a brief introduction.</p>
+        <p>Before using the software you could read <a href="quick-start.html">Quick Start</a> page of {{ distName | downcase }} for a brief introduction.</p>
       </div>
       <div class="table">
         <table>
@@ -21,7 +20,7 @@
           </tr>
           <tr id="software-open">
             <td rowspan="2">Software does not open</td>
-            <td>See <a href="install.html">Installation</a> in online help</td>
+            <td>See <a href="install.html">Installation</a> in {{ distName | downcase }}</td>
           </tr>
           <tr>
             <td>In case of incompatibility it is recommended to use the software in a virtual machine</td>
@@ -201,7 +200,7 @@
         </table>
       </div>
       <hr>
-      <div id="check-version" class="lh">
+      <div id="check-version" class="l1">
         <h3>Check the version</h3>
         <p>Check that the version you are using is the most recent.</p>
         <div class="l3">
@@ -211,13 +210,16 @@
           <p><b>From main menu</b>, click menu <b>Help</b> &gt; <b>About e2 SAT Editor</b></p>
           <p>Check the version number and on the Releases page of the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a> for more recent updates.</p>
         </div>
-        <p>With distributed installation (Snap Store, Flathub, Arch AUR), check for updates and upgrade from the software store util.</p>
+        <div class="l3">
+          <p>With distributed installation on Linux (Snap Store, Flathub, Arch AUR), check for updates and upgrade from the software store util.</p>
+          <p>To manually upgrade package (Snap Store, Flathub, Arch AUR), see <a href="update.html#linux-apps">Update</a> page of {{ distName | downcase }}.</p>
+        </div>
         <div class="info">
           <p>Note: <b>Check for updates</b> will connect to GitHub servers to the repository address, host name: <em>github.com</em> <br>The feature <i>Do Not Track</i> is used, but there is no warranty it will be applied.</p>
           <p>The preference <b>&quot;Check for updates on launch&quot;</b> is turned off by default.</p>
         </div>
       </div>
-      <div id="enable-ftp-debug" class="lh">
+      <div id="enable-ftp-debug" class="l1">
         <h3>Enable FTP debug</h3>
         <p>FTP debugging is disabled by default to avoid slowing down execution.</p>
         <p>It can be useful to solve problems and report issues on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/release" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/release</a></p>
@@ -249,7 +251,7 @@
           <p>Next, disable FTP debugging, change the <samp translate="no">ftpcom.debug</samp> line from <span translate="no">TRUE</span> to <span translate="no">FALSE</span> again, typing <samp translate="no">false</samp>.</p>
         </div>
       </div>
-      <div id="view-logs" class="lh">
+      <div id="view-logs" class="l1">
         <h3>View software logs</h3>
         <p>The software creates a log in memory.</p>
         <p>It can be useful to solve problems and report issues on the GitHub repository at <a href="https://github.com/ctlcltd/e2-sat-editor/issues" rel="nofollow" target="_blank">https://github.com/ctlcltd/e2-sat-editor/issues</a></p>
@@ -266,10 +268,10 @@
         </div>
         <div class="l2">
           <p>The Log Inspector is dockable on every tabs and is persistent across all tabs.</p>
-          <p>Software logs are available also using the debugging command line option, see <a href="command-line.html#debug">Command line</a> page of online help.</p>
+          <p>Software logs are available also using the debugging command line option, see <a href="command-line.html#debug">Command line</a> page of {{ distName | downcase }}.</p>
         </div>
       </div>
-      <div id="reset-settings" class="lh">
+      <div id="reset-settings" class="l1">
         <h3>Reset settings</h3>
         <p>The software can be reset to factory settings.</p>
         <p><b>All settings previously saved will be erased.</b></p>

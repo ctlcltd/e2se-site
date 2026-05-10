@@ -8,6 +8,8 @@ module.exports = function(grunt) {
   const REMOTE_ORIGIN = grunt.option('remote-origin') || 'http://localhost';
   const DEPLOY = grunt.option('deploy') && true || false;
 
+  const vars = grunt.file.readJSON('dist.json');
+
   grunt.registerMultiTask('liquid', liquidjsTask);
 
   grunt.initConfig({
@@ -56,9 +58,12 @@ module.exports = function(grunt) {
             origin: REMOTE_ORIGIN
           },
           data: {
-            site_privacy_rev: new Date('2026-03-10'),
-            software_privacy_rev: new Date('2026-02-25'),
-            software_licenses_rev: new Date('2026-03-09')
+            software_rel_ver: vars['software_rel_ver'] ?? vars['software_rel_ver'],
+            software_rel_date: vars['software_rel_date'] ?? new Date(vars['software_rel_date']),
+            software_rel_banner: vars['software_rel_banner'] ?? vars['software_rel_banner'],
+            site_privacy_rev: vars['site_privacy_rev'] ?? new Date(vars['site_privacy_rev']),
+            software_privacy_rev: vars['software_privacy_rev'] ?? new Date(vars['software_privacy_rev']),
+            software_licenses_rev: vars['software_licenses_rev'] ?? new Date(vars['software_licenses_rev'])
           }
         },
         src: ['site/liquid/*.liquid'],
@@ -70,10 +75,14 @@ module.exports = function(grunt) {
             deploy: DEPLOY,
             origin: REMOTE_ORIGIN,
             helpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
-            toc: grunt.file.readJSON('help/toc.json')
+            toc: grunt.file.readJSON('help/toc.json'),
+            distName: "Online Help"
           },
           data: {
-            help_rev: new Date()
+            software_rel_ver: vars['software_rel_ver'] ?? vars['software_rel_ver'],
+            software_rel_date: vars['software_rel_date'] ?? new Date(vars['software_rel_date']),
+            software_rel_banner: vars['software_rel_banner'] ?? vars['software_rel_banner'],
+            help_rev: vars['help_rev'] ?? new Date(vars['help_rev'])
           }
         },
         src: ['help/liquid/*.liquid'],
@@ -88,7 +97,10 @@ module.exports = function(grunt) {
             sources: grunt.file.exists('../translate/sources.json') ? grunt.file.readJSON('../translate/sources.json') : {}
           },
           data: {
-            translate_sources_ver: '1.9.0'
+            software_rel_ver: vars['software_rel_ver'] ?? vars['software_rel_ver'],
+            software_rel_date: vars['software_rel_date'] ?? new Date(vars['software_rel_date']),
+            software_rel_banner: vars['software_rel_banner'] ?? vars['software_rel_banner'],
+            translate_sources_ver: vars['translate_sources_ver'] ?? vars['translate_sources_ver']
           }
         },
         src: ['translate/liquid/*.liquid'],
@@ -104,10 +116,12 @@ module.exports = function(grunt) {
             helpBaseUrl: REMOTE_HELP_BASE_URL + (/\/$/.test(REMOTE_HELP_BASE_URL) ? '' : '/'),
             stylesheet: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/style.min.css'),
             script: path.relative('help/liquid', DIST_HELP_BASE_DEST + '/temp_files/script.min.js'),
-            toc: {...grunt.file.readJSON('help/toc.json'), ...grunt.file.readJSON('help/toc-dist.json')}
+            toc: {...grunt.file.readJSON('help/toc.json'), ...grunt.file.readJSON('help/toc-dist.json')},
+            distName: "User Manual"
           },
           data: {
-            help_rev: new Date()
+            software_rel_ver: vars['software_rel_ver'] ?? vars['software_rel_ver'],
+            help_rev: vars['help_rev'] ?? new Date(vars['help_rev'])
           }
         },
         src: ['help/liquid/*.liquid'],

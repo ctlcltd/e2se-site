@@ -6,15 +6,14 @@
 <div id="page">
   <div id="help">
     <main>
-{% unless distributable %}      <h1>Online Help</h1>
-{% else %}      <h1>User Manual</h1>{% endunless %}
+      <h1>{{ distName }}</h1>
       <h2>Channel List operations</h2>
       <p>How to edit and create channel lists, edit and move services and bouquets.</p>
       <p>Create, edit, import, export, convert, check, fix, channel lists.</p>
       <p>Move, edit, delete and lock channels.<br>Move, edit, delete bouquets (group of channels).</p>
       <div class="info info-read">
         <span class="read"><svg width="32" height="32"><use href="#read" fill="currentColor"/></svg></span>
-        <p>First you could read <a href="quick-start.html">Quick Start</a> page of online help for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
+        <p>First you could read <a href="quick-start.html">Quick Start</a> page of {{ distName | downcase }} for a quick introduction, with basic notions: context menu, Drag and Drop, multiple selection.</p>
       </div>
       <div id="channel-list" class="l1">
         <h3>Channel list</h3>
@@ -287,7 +286,7 @@
         <p><i>The service will be modified in every position where found.</i></p>
         <p>Service can be quickly edited by <b>double-click</b>ing on selected service channel.</p>
         <div class="ls">
-          <p>For further information, see <a href="edit-service.html">Edit Services</a> page of online help.</p>
+          <p>For further information, see <a href="edit-service.html">Edit Services</a> page of {{ distName | downcase }}.</p>
         </div>
       </div>
       <div id="delete-channel" class="l1">
@@ -309,7 +308,7 @@
         </div>
         <p>Make sure you have selected a bouquet in the <b>Bouquets</b> area or have created one and select it.</p>
         <div class="ls">
-          <p>For further information, see <a href="edit-favourite.html">Edit Favourites</a> page of online help.</p>
+          <p>For further information, see <a href="edit-favourite.html">Edit Favourites</a> page of {{ distName | downcase }}.</p>
         </div>
       </div>
       <div id="edit-favourite" class="l1">

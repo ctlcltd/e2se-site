@@ -6,8 +6,7 @@
 <div id="page">
   <div id="help">
     <main>
-{% unless distributable %}      <h1>Online Help</h1>
-{% else %}      <h1>User Manual</h1>{% endunless %}
+      <h1>{{ distName }}</h1>
       <h2>Settings</h2>
       <p>How to change software preferences, handle connection profiles and engine.</p>
       <p>Connections, contains connection profiles and connection parameters for Decoder STB. <br>Preferences, contains software appearance and behavior preferences. <br>Engine, contains built-in engine behavior preferences. <br>Advanced, contains access to advanced settings.</p>
@@ -278,9 +277,9 @@
         <p><i>The next time the software is opened it will be reset to factory defaults.</i></p>
       </div>
       <div class="info">
-        <p><b>macOS</b> Preferences are stored in the user Library, with the identifiers: <i>com.io-github-ctlcltd.e2se</i> (software preferences), <i>io.github.ctlcltd.e2se</i> (OS related preferences)</p>
-        <p><b>Windows</b> Preferences are stored in the software executable directory, with the identifier: <i>e2 SAT Editor Team/e2se.ini</i></p>
-        <p><b>others (XDG specification)</b> Preferences are stored in the default XDG preference folder, with the identifier: <i>e2 SAT Editor Team</i></p>
+        <p><b translate="no">Windows</b> Preferences are stored in the software executable directory, with the identifier: <i translate="no">e2 SAT Editor Team/e2se.ini</i></p>
+        <p><b translate="no">macOS</b> Preferences are stored in the user Library, with the identifiers: <i translate="no">com.io-github-ctlcltd.e2se</i> (software preferences), <i translate="no">io.github.ctlcltd.e2se</i> (OS related preferences)</p>
+        <p><b>others (<span translate="no">XDG</span> specification)</b> Preferences are stored in the default <span translate="no">XDG</span> preference folder, with the identifier: <i translate="no">e2 SAT Editor Team</i></p>
         <p>To manually edit the preferences file, please refer to the Qt toolkit documentation at: <a href="https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes" rel="nofollow noopener" target="_blank">https://doc.qt.io/qt-6/qsettings.html#platform-specific-notes</a></p>
       </div>
 {% render '_page-dist.liquid', help_rev: help_rev %}

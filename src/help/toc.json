@@ -10,7 +10,9 @@
     "description": "How to install the software",
     "anchors": [
       {
-        "#download": "Download",
+        "#download": "Download"
+      },
+      {
         "#windows": "Windows",
         "#macos": "macOS",
         "#linux": "Linux",
@@ -21,10 +23,51 @@
       }
     ]
   },
+  "update": {
+    "href": "update.html",
+    "title": "Update",
+    "description": "How to update the software",
+    "anchors": [
+      {
+        "#check-version": "Check the version",
+        "#download": "Download"
+      },
+      {
+        "#windows": "Windows",
+        "#macos": "macOS",
+        "#linux": "Linux",
+        "#other-system": "Other systems"
+      },
+      {
+        "#preferences": "Preferences"
+      }
+    ]
+  },
   "quick-start": {
     "href": "quick-start.html",
     "title": "Quick Start",
     "description": "A useful quick guide on using the software"
+  },
+  "troubleshooting": {
+    "href": "troubleshooting.html",
+    "title": "Troubleshooting",
+    "description": "How to solve problems, eg. dealing with FTP",
+    "anchors": [
+      {
+        "#installation": "Installation",
+        "#common-issues": "Common issues",
+        "#known-issues": "Known issues",
+        "#ftp": "FTP",
+        "#file": "File",
+        "#interop": "CSV / spreadsheet"
+      },
+      {
+        "#check-version": "Check the version",
+        "#enable-ftp-debug": "Enable FTP debug",
+        "#view-logs": "View software logs",
+        "#reset-settings": "Reset settings"
+      }
+    ]
   },
   "settings": {
     "href": "settings.html",
@@ -139,39 +182,6 @@
       }
     ]
   },
-  "file-interop": {
-    "href": "file-interop.html",
-    "title": "File interoperability",
-    "description": "How to use tools to import and export: CSV, M3U, HTML",
-    "anchors": [
-      {
-        "#csv": "Import and Export [CSV]",
-        "#m3u": "Import and Export [M3U]",
-        "#html": "Export [HTML]"
-      }
-    ]
-  },
-  "troubleshooting": {
-    "href": "troubleshooting.html",
-    "title": "Troubleshooting",
-    "description": "How to solve problems, eg. dealing with FTP",
-    "anchors": [
-      {
-        "#installation": "Installation",
-        "#common-issues": "Common issues",
-        "#known-issues": "Known issues",
-        "#ftp": "FTP",
-        "#file": "File",
-        "#interop": "CSV / spreadsheet"
-      },
-      {
-        "#check-version": "Check the version",
-        "#enable-ftp-debug": "Enable FTP debug",
-        "#view-logs": "View software logs",
-        "#reset-settings": "Reset settings"
-      }
-    ]
-  },
   "edit-service": {
     "href": "edit-service.html",
     "title": "Edit Services",
@@ -223,6 +233,18 @@
         "#change-picon": "Change picon",
         "#edit-picon": "Edit picon",
         "#batch-command": "Batch command"
+      }
+    ]
+  },
+  "file-interop": {
+    "href": "file-interop.html",
+    "title": "File interoperability",
+    "description": "How to use tools to import and export: CSV, M3U, HTML",
+    "anchors": [
+      {
+        "#csv": "Import and Export [CSV]",
+        "#m3u": "Import and Export [M3U]",
+        "#html": "Export [HTML]"
       }
     ]
   },

@@ -6,16 +6,15 @@
 <div id="page">
   <div id="help">
     <main>
-{% unless distributable %}      <h1>Online Help</h1>
-      <p>This is the online help for <strong>e2 SAT Editor</strong> software.</p>{% else %}      <h1>User Manual</h1>
-      <p>This is the user manual for <strong>e2 SAT Editor</strong> software.</p>{% endunless %}
+      <h1>{{ distName }}</h1>
+      <p>This is the {{ distName | downcase }} for <strong>e2 SAT Editor</strong> software.</p>
       <p>Here are all information for using the software.</p>
       <div class="info">
         <p>To get started and need quick help, refer to <a href="quick-start.html">Quick Start</a>.</p>
       </div>
       <div id="index" class="l1">
         <h2>Table of contents</h2>
-        <p>The contents of Online Help.</p>
+        <p>The contents of {{ distName }}.</p>
         <nav class="nav nav-index">
           <ul class="toc">{% for page in toc offset: 1 %}
             <li>
