@@ -49,16 +49,20 @@
           </ul>
           <p>extended:</p>
           <ul>
-            <li><b>isid</b></li>
-            <li><b>mts</b></li>
-            <li><b>plsmode</b></li>
+            <li><b translate="no">flags</b>, <span class="type">[Lamedb only]</span></li>
+            <li><b translate="no">plsn</b>, <span class="type">[XML only]</span></li>
+            <li><b translate="no">isid</b></li>
             <li><b>plscode</b></li>
-            <li><b>plsn</b></li>
+            <li><b>plsmode</b></li>
+            <li><b>mts</b></li>
+            <li><b>t2mi_plpid</b></li>
+            <li><b>t2mi_pid</b></li>
           </ul>
         </div>
         <div class="l2">
           <h4>Parameters for Terrestrial</h4>
           <ul>
+            <li><b>System</b>, <span class="type">[Lamedb only]</span>, with values: auto = automatic selection, DVB-T, DVB-T2</li>
             <li><b>Frequency</b>, expressed in KHz (6 digits) or Hz (9 digits)</li>
             <li><b>Constellation</b>, synonym for modulation</li>
             <li><b>Bandwidth</b></li>
@@ -69,9 +73,9 @@
             <li><b>Guard Interval</b></li>
             <li><b>Hierarchy</b></li>
           </ul>
-          <p><span class="type">[Lamedb only]</span>:</p>
+          <p>extended:</p>
           <ul>
-            <li><b>System</b>, with values: auto = automatic selection, DVB-T, DVB-T2</li>
+            <li><b translate="no">flags</b>, <span class="type">[Lamedb only]</span></li>
           </ul>
         </div>
         <div class="l2">
@@ -83,6 +87,11 @@
             <li><b>Inner FEC</b>, acronym for Forward Error Control</li>
             <li><b>Inversion</b></li>
           </ul>
+          <p>extended:</p>
+          <ul>
+            <li><b translate="no">flags</b>, <span class="type">[Lamedb only]</span></li>
+            <li><b translate="no">sys</b>, system</li>
+          </ul>
         </div>
         <div class="l2">
           <h4>Parameters for ATSC</h4>
@@ -90,6 +99,10 @@
             <li><b>Frequency</b>, expressed in KHz (6 digits) or Hz (9 digits)</li>
             <li><b>Modulation</b></li>
             <li><b>System</b>, with values: empty = automatic selection, ATSC, <span translate="no">DVB-C ANNEX B</span></li>
+          </ul>
+          <p>extended:</p>
+          <ul>
+            <li><b translate="no">flags</b>, <span class="type">[Lamedb only]</span></li>
           </ul>
         </div>
       </div>
