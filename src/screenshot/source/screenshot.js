@@ -32,6 +32,13 @@ function style(e) {
       g.setAttribute('class', sys + ' ' + name);
     }
 
+    if (svg.id === 'channelbook') {
+      const selector = document.getElementById('selector');
+      const controller = document.getElementById('controller');
+      selector.setAttribute('style', 'color: ' + (name[0] == 'd' ? '#fff' : '#000') + ';');
+      controller.setAttribute('style', 'color: ' + (name[0] == 'd' ? '#fff' : '#000') + ';');
+    }
+
     document.getElementsByTagName('svg')[0].setAttribute('transform', 'matrix(1,1,1,1,0,0)');
     document.getElementsByTagName('svg')[0].setAttribute('transform', '');
 
@@ -135,11 +142,13 @@ function screenshot_selector() {
   const g = document.createElementNS(svg.namespaceURI, 'g');
   g.setAttribute('id', 'selector');
   g.setAttribute('transform', 'matrix(1,0,0,1,50,1270)');
+  g.setAttribute('style', 'color: #000;');
 
   for (const style in screenshots) {
     const text = document.createElementNS(svg.namespaceURI, 'text');
     text.setAttribute('id', 'selector' + '_' + style);
     text.setAttribute('dx', sizes[i++]);
+    text.setAttribute('fill', 'currentColor');
     text.setAttribute('style', 'font-family:sans-serif;font-weight:bold;text-decoration:underline;cursor:pointer;');
     text.innerHTML = screenshots[style];
     g.append(text);
@@ -156,11 +165,13 @@ function screenshot_controller() {
 
   const g = document.createElementNS(svg.namespaceURI, 'g');
   g.setAttribute('id', 'controller');
-  g.setAttribute('transform', 'matrix(1,0,0,1,800,1270)');
+  g.setAttribute('transform', 'matrix(1,0,0,1,800,1270)')
+  g.setAttribute('style', 'color: #000;');
 
   const submit = document.createElementNS(svg.namespaceURI, 'text');
   submit.setAttribute('id', 'controller' + '_' + 'submit');
   submit.setAttribute('dx', sizes[i++]);
+  submit.setAttribute('fill', 'currentColor');
   submit.setAttribute('style', 'font-family:sans-serif;font-weight:bold;text-decoration:underline;cursor:pointer;');
   submit.innerHTML = 'FLATTEN';
   submit.addEventListener('click', flatten_trigger);
@@ -169,6 +180,7 @@ function screenshot_controller() {
   const reset = document.createElementNS(svg.namespaceURI, 'text');
   reset.setAttribute('id', 'controller' + '_' + 'reset');
   reset.setAttribute('dx', sizes[i++]);
+  reset.setAttribute('fill', 'currentColor');
   reset.setAttribute('style', 'font-family:sans-serif;font-weight:bold;text-decoration:underline;cursor:pointer;');
   reset.innerHTML = 'REVERT';
   reset.addEventListener('click', flatten_revert);

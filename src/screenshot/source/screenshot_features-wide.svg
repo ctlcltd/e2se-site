@@ -162,7 +162,7 @@
     <rect class="w-bg" x="1" y="1" width="960" height="820" rx="15" style="fill:#f3f4f4;stroke:#191919;stroke-width:1.088px;filter: url(#modal-shadow-m)" />
     <g class="titlebar">
       <rect class="t-bg" x="2" y="2" width="958" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
-      <rect class="t-stroke" x="1" y="44" width="960" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
+      <rect class="t-stroke" x="1" y="44" width="960" height="0.5" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
       <text class="t-txt" x="2" y="2" dx="478" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949;">Edit Service</text>
       <g class="t-ico-w" style="display:none">
         <image x="11.5" y="10.5" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg==" />
@@ -478,7 +478,7 @@
     <rect class="w-bg" x="81" y="81" width="1718" height="1140" rx="15" style="fill:#e7e8e8;stroke:#191919;stroke-width:1px" />
     <g class="titlebar">
       <rect class="t-bg" x="82" y="82" width="1716" height="57" rx="15" style="fill:#f8f9f9;stroke:#fff;stroke-width:1px;clip-path:inset(0 0 15px)" />
-      <rect class="t-stroke" x="81" y="124" width="1718" height="1" style="fill:none;stroke:#cdcece;stroke-width:0.5px" />
+      <rect class="t-stroke" x="81" y="124" width="1718" height="1" style="fill:none;stroke:#cdcece;stroke-width:1.5px" />
       <text class="t-txt" x="82" y="82" dx="857" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#494949;">e2 SAT Editor</text>
       <g class="t-ico-w" style="display:none">
         <image x="94" y="91.5" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg==" />
@@ -760,36 +760,37 @@
           <g class="list">
             <g class="list-cols">
               <rect class="bg" x="473" y="340" width="1325" height="26" style="fill:#ececec" />
-              <text x="473" y="340" dy="18" style="font-size:17px;fill:#000"><tspan x="481">Freq/Pol/SR</tspan> <tspan x="717">Frequency</tspan> <tspan x="836">Polarization</tspan> <tspan x="955">Symbol Rate</tspan> <tspan x="1075">System</tspan> <tspan x="1176">FEC</tspan> <tspan x="1275">Modulation</tspan> <tspan x="1386">Inversion</tspan> <tspan x="1480">Roll offset</tspan> <tspan x="1581">Pilot</tspan></text>
-              <rect class="ruler" x="710" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-              <rect class="ruler" x="829" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-              <rect class="ruler" x="947" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-              <rect class="ruler" x="1068" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-              <rect class="ruler" x="1169" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-              <rect class="ruler" x="1268" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-              <rect class="ruler" x="1379" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-              <rect class="ruler" x="1473" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
-              <rect class="ruler" x="1574" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
+              <text x="473" y="340" dy="18" style="font-size:17px;fill:#000"><tspan x="481">Index</tspan> <tspan x="562">Freq/Pol/SR</tspan> <tspan x="797">Frequency</tspan> <tspan x="912">Polarization</tspan> <tspan x="1034">Symbol Rate</tspan> <tspan x="1152">System</tspan> <tspan x="1269">FEC</tspan> <tspan x="1378">Modulation</tspan> <tspan x="1496">Inversion</tspan> <tspan x="1605">Roll offset</tspan> <tspan x="1715">Pilot</tspan></text>
+              <rect class="ruler" x="556" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
+              <rect class="ruler" x="791" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
+              <rect class="ruler" x="906" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
+              <rect class="ruler" x="1028" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
+              <rect class="ruler" x="1146" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
+              <rect class="ruler" x="1262" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
+              <rect class="ruler" x="1371" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
+              <rect class="ruler" x="1489" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
+              <rect class="ruler" x="1599" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
+              <rect class="ruler" x="1708" y="343" width="0.5" height="19" style="fill:none;stroke:#c7c7c7;stroke-width:1px" />
             </g>
             <g class="list-view">
               <rect class="bg" x="473" y="366" width="1325" height="687" style="fill:#fff" />
               <g class="items">
                 <rect class="focused" x="473" y="576" width="1325" height="44" style="fill:#ebebeb" />
-                <text x="473" y="366" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10719/V/27500</tspan> <tspan x="719">10719</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
-                <text x="473" y="407" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10728/H/30000</tspan> <tspan x="719">10728</tspan> <tspan x="838">H</tspan> <tspan x="957">30000</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
-                <text x="473" y="448" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10758/V/27500</tspan> <tspan x="719">10758</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
-                <text x="473" y="491" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10775/H/27500</tspan> <tspan x="719">10775</tspan> <tspan x="838">H</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="533" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10775/H/29900</tspan> <tspan x="719">10775</tspan> <tspan x="838">H</tspan> <tspan x="957">29900</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text class="active" x="473" y="576" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10796/V/27500</tspan> <tspan x="719">10796</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
-                <text x="473" y="618" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10815/H/27500</tspan> <tspan x="719">10815</tspan> <tspan x="838">H</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">5/6</tspan> <tspan x="1276">QPSK</tspan></text>
-                <text x="473" y="662" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10834/V/27500</tspan> <tspan x="719">10834</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="705" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10853/H/29900</tspan> <tspan x="719">10853</tspan> <tspan x="838">H</tspan> <tspan x="957">29900</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="749" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10872/V/27500</tspan> <tspan x="719">10872</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
-                <text x="473" y="791" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10873/V/27500</tspan> <tspan x="719">10873</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
-                <text x="473" y="834" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10892/H/27500</tspan> <tspan x="719">10892</tspan> <tspan x="838">H</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S</tspan> <tspan x="1178">Auto</tspan> <tspan x="1276">Auto</tspan></text>
-                <text x="473" y="876" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10911/V/27500</tspan> <tspan x="719">10911</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">3/4</tspan> <tspan x="1276">8PSK</tspan></text>
-                <text x="473" y="918" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10930/H/30000</tspan> <tspan x="719">10930</tspan> <tspan x="838">H</tspan> <tspan x="957">30000</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">2/3</tspan> <tspan x="1276">8PSK</tspan></text>
-                <text x="473" y="958" dy="29" style="font-size:19px;fill:#000"><tspan x="484">10949/V/27500</tspan> <tspan x="719">10949</tspan> <tspan x="838">V</tspan> <tspan x="957">27500</tspan> <tspan x="1075">DVB-S2</tspan> <tspan x="1178">2/3</tspan> <tspan x="1276">8PSK</tspan></text>
+                <text x="473" y="366" dy="29" style="font-size:19px;fill:#000"><tspan x="489">1</tspan> <tspan x="563">10719/V/27500</tspan> <tspan x="797">10719</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
+                <text x="473" y="407" dy="29" style="font-size:19px;fill:#000"><tspan x="489">2</tspan> <tspan x="563">10728/H/30000</tspan> <tspan x="797">10728</tspan> <tspan x="915">H</tspan> <tspan x="1035">30000</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
+                <text x="473" y="448" dy="29" style="font-size:19px;fill:#000"><tspan x="489">3</tspan> <tspan x="563">10758/V/27500</tspan> <tspan x="797">10758</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
+                <text x="473" y="491" dy="29" style="font-size:19px;fill:#000"><tspan x="489">4</tspan> <tspan x="563">10775/H/27500</tspan> <tspan x="797">10775</tspan> <tspan x="915">H</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">Auto</tspan> <tspan x="1380">Auto</tspan></text>
+                <text x="473" y="533" dy="29" style="font-size:19px;fill:#000"><tspan x="489">5</tspan> <tspan x="563">10775/H/29900</tspan> <tspan x="797">10775</tspan> <tspan x="915">H</tspan> <tspan x="1035">29900</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">Auto</tspan> <tspan x="1380">Auto</tspan></text>
+                <text class="active" x="473" y="576" dy="29" style="font-size:19px;fill:#000"><tspan x="489">6</tspan> <tspan x="563">10796/V/27500</tspan> <tspan x="797">10796</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
+                <text x="473" y="618" dy="29" style="font-size:19px;fill:#000"><tspan x="489">7</tspan> <tspan x="563">10815/H/27500</tspan> <tspan x="797">10815</tspan> <tspan x="915">H</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">5/6</tspan> <tspan x="1380">QPSK</tspan></text>
+                <text x="473" y="662" dy="29" style="font-size:19px;fill:#000"><tspan x="489">8</tspan> <tspan x="563">10834/V/27500</tspan> <tspan x="797">10834</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">Auto</tspan> <tspan x="1380">Auto</tspan></text>
+                <text x="473" y="705" dy="29" style="font-size:19px;fill:#000"><tspan x="489">9</tspan> <tspan x="563">10853/H/29900</tspan> <tspan x="797">10853</tspan> <tspan x="915">H</tspan> <tspan x="1035">29900</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">Auto</tspan> <tspan x="1380">Auto</tspan></text>
+                <text x="473" y="749" dy="29" style="font-size:19px;fill:#000"><tspan x="489">10</tspan> <tspan x="563">10872/V/27500</tspan> <tspan x="797">10872</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
+                <text x="473" y="791" dy="29" style="font-size:19px;fill:#000"><tspan x="489">11</tspan> <tspan x="563">10873/V/27500</tspan> <tspan x="797">10873</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
+                <text x="473" y="834" dy="29" style="font-size:19px;fill:#000"><tspan x="489">12</tspan> <tspan x="563">10892/H/27500</tspan> <tspan x="797">10892</tspan> <tspan x="915">H</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">Auto</tspan> <tspan x="1380">Auto</tspan></text>
+                <text x="473" y="876" dy="29" style="font-size:19px;fill:#000"><tspan x="489">13</tspan> <tspan x="563">10911/V/27500</tspan> <tspan x="797">10911</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
+                <text x="473" y="918" dy="29" style="font-size:19px;fill:#000"><tspan x="489">14</tspan> <tspan x="563">10930/H/30000</tspan> <tspan x="797">10930</tspan> <tspan x="915">H</tspan> <tspan x="1035">30000</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">2/3</tspan> <tspan x="1380">8PSK</tspan></text>
+                <text x="473" y="958" dy="29" style="font-size:19px;fill:#000"><tspan x="489">15</tspan> <tspan x="563">10949/V/27500</tspan> <tspan x="797">10949</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">2/3</tspan> <tspan x="1380">8PSK</tspan></text>
               </g>
             </g>
             <g class="sbv">
@@ -895,13 +896,16 @@
           <text class="txt" x="98" y="1116" dx="29" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Tools</text>
         </g>
         <g class="toolbar-divid">
-          <rect class="divid" x="211" y="1120" width="1" height="38" style="fill:none" />
+          <rect class="divid" x="214" y="1120" width="1" height="38" style="fill:none" />
         </g>
         <g class="toolbar-item">
-          <text class="txt" x="207" y="1116" dx="29" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Inspect</text>
+          <text class="txt" x="210" y="1116" dx="29" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Inspect</text>
         </g>
         <g class="toolbar-item">
-          <text class="txt" x="1660" dx="11" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">autofix</text>
+          <text class="txt" x="1526" dx="11" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">autofix</text>
+        </g>
+        <g class="toolbar-item">
+          <text class="txt" x="1642" dx="11" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Console</text>
         </g>
       </g>
     </g>
@@ -911,10 +915,12 @@
       <text id="sbts" x="82" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Transponders: 102</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
       <rect class="divid sbds-w" x="413" y="1184" width="1" height="25" style="fill:none" />
       <rect class="divid sbdl-w" x="1608" y="1184" width="1" height="25" style="fill:none" />
-      <text id="sbte" x="82" y="1179" dx="1535" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 251</tspan></text>
+      <text id="sbte" x="82" y="1179" dx="1378" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 251</tspan></text>
+      <rect id="sbdi" x="1584" y="1192" width="1.5" height="17" style="fill:#000;fill-opacity:0.3" />
+      <text id="sbti" x="82" y="1179" dx="1519" dy="29" style="font-size:20px;fill:#000">Lamedb 2.4</text>
       <rect class="divid sbdr-w" x="1721" y="1184" width="1" height="25" style="fill:none" />
       <rect class="divid sbdr-i" x="1770" y="1184" width="1" height="25" style="fill:none" />
-      <g id="sbnf" transform="matrix(1,0,0,1,1737,1184)">
+      <g id="sbnf" transform="matrix(1,0,0,1,1736,1184)">
         <rect x="-1.8" y="4" width="36" height="24" style="fill:none" />
         <g class="ico" transform="matrix(0.38,0,0,0.38,4,4)">
           <use href="#file-info" style="fill:#545454" />

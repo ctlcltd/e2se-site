@@ -20,7 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "clean-css": "^5.3.3",
-    "grunt": "^1.6.1",
+    "grunt": "^1.6.2",
     "grunt-contrib-clean": "^2.0.1",
     "grunt-contrib-concat": "^2.1.0",
     "grunt-contrib-copy": "^1.0.0",
@@ -28,8 +28,8 @@
     "grunt-contrib-sass": "^2.0.0",
     "grunt-contrib-watch": "^1.1.0",
     "grunt-terser": "^2.0.0",
-    "liquidjs": "^10.18.0",
-    "sass": "^1.80.2",
-    "terser": "^5.36.0"
+    "liquidjs": "^10.25.7",
+    "sass": "^1.99.0",
+    "terser": "^5.47.1"
   }
 }
