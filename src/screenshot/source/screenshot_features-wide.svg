@@ -775,13 +775,13 @@
             <g class="list-view">
               <rect class="bg" x="473" y="366" width="1325" height="687" style="fill:#fff" />
               <g class="items">
-                <rect class="focused" x="473" y="576" width="1325" height="44" style="fill:#ebebeb" />
+                <rect class="focused" x="473" y="576" width="1325" height="44" style="fill:#0044e2" />
                 <text x="473" y="366" dy="29" style="font-size:19px;fill:#000"><tspan x="489">1</tspan> <tspan x="563">10719/V/27500</tspan> <tspan x="797">10719</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
                 <text x="473" y="407" dy="29" style="font-size:19px;fill:#000"><tspan x="489">2</tspan> <tspan x="563">10728/H/30000</tspan> <tspan x="797">10728</tspan> <tspan x="915">H</tspan> <tspan x="1035">30000</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
                 <text x="473" y="448" dy="29" style="font-size:19px;fill:#000"><tspan x="489">3</tspan> <tspan x="563">10758/V/27500</tspan> <tspan x="797">10758</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
                 <text x="473" y="491" dy="29" style="font-size:19px;fill:#000"><tspan x="489">4</tspan> <tspan x="563">10775/H/27500</tspan> <tspan x="797">10775</tspan> <tspan x="915">H</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">Auto</tspan> <tspan x="1380">Auto</tspan></text>
                 <text x="473" y="533" dy="29" style="font-size:19px;fill:#000"><tspan x="489">5</tspan> <tspan x="563">10775/H/29900</tspan> <tspan x="797">10775</tspan> <tspan x="915">H</tspan> <tspan x="1035">29900</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">Auto</tspan> <tspan x="1380">Auto</tspan></text>
-                <text class="active" x="473" y="576" dy="29" style="font-size:19px;fill:#000"><tspan x="489">6</tspan> <tspan x="563">10796/V/27500</tspan> <tspan x="797">10796</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
+                <text class="active" x="473" y="576" dy="29" style="font-size:19px;fill:#fff"><tspan x="489">6</tspan> <tspan x="563">10796/V/27500</tspan> <tspan x="797">10796</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S2</tspan> <tspan x="1269">3/4</tspan> <tspan x="1380">8PSK</tspan></text>
                 <text x="473" y="618" dy="29" style="font-size:19px;fill:#000"><tspan x="489">7</tspan> <tspan x="563">10815/H/27500</tspan> <tspan x="797">10815</tspan> <tspan x="915">H</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">5/6</tspan> <tspan x="1380">QPSK</tspan></text>
                 <text x="473" y="662" dy="29" style="font-size:19px;fill:#000"><tspan x="489">8</tspan> <tspan x="563">10834/V/27500</tspan> <tspan x="797">10834</tspan> <tspan x="915">V</tspan> <tspan x="1035">27500</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">Auto</tspan> <tspan x="1380">Auto</tspan></text>
                 <text x="473" y="705" dy="29" style="font-size:19px;fill:#000"><tspan x="489">9</tspan> <tspan x="563">10853/H/29900</tspan> <tspan x="797">10853</tspan> <tspan x="915">H</tspan> <tspan x="1035">29900</tspan> <tspan x="1152">DVB-S</tspan> <tspan x="1269">Auto</tspan> <tspan x="1380">Auto</tspan></text>
@@ -902,10 +902,10 @@
           <text class="txt" x="210" y="1116" dx="29" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Inspect</text>
         </g>
         <g class="toolbar-item">
-          <text class="txt" x="1526" dx="11" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">autofix</text>
+          <text class="txt" x="1514" dx="29" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">autofix</text>
         </g>
         <g class="toolbar-item">
-          <text class="txt" x="1642" dx="11" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Console</text>
+          <text class="txt" x="1624" dx="29" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Console</text>
         </g>
       </g>
     </g>
@@ -915,7 +915,7 @@
       <text id="sbts" x="82" y="1179" dx="29" dy="29" style="font-size:20px;fill:#000"><tspan>Transponders: 102</tspan> <tspan dx="10">Position: 13.0E</tspan></text>
       <rect class="divid sbds-w" x="413" y="1184" width="1" height="25" style="fill:none" />
       <rect class="divid sbdl-w" x="1608" y="1184" width="1" height="25" style="fill:none" />
-      <text id="sbte" x="82" y="1179" dx="1378" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 251</tspan></text>
+      <text id="sbte" x="82" y="1179" dx="1387" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 251</tspan></text>
       <rect id="sbdi" x="1584" y="1192" width="1.5" height="17" style="fill:#000;fill-opacity:0.3" />
       <text id="sbti" x="82" y="1179" dx="1519" dy="29" style="font-size:20px;fill:#000">Lamedb 2.4</text>
       <rect class="divid sbdr-w" x="1721" y="1184" width="1" height="25" style="fill:none" />

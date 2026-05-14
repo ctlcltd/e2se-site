@@ -34,13 +34,19 @@
 
 .m .menu-item:nth-child(8) { transform: translate(0, -1px); }
 
+#channelbook .m#window .btn-dropdown .arrow use { fill: #000 !important; }
+#channelbook .m#window .btn-dropdown .btn-caret .bg { display: none; }
+#channelbook .m#window .sbv { display: none; }
+
 #wide .m#window .focused { height: 42px !important; transform: translate(0, 1px); }
 #piconseditor .m .list-view .focused { y: 578px; height: 173.5px; }
 
-#piconseditor .m .li-item .txt { font-size: 20px; transform: translate(0, -1px); }
-#piconseditor .m .li-item .input-bg { width: 334px !important; height: 30px !important; transform: translate(-1px, -1px); }
-#piconseditor .m .li-item:nth-child(1) .btn-browse .btn-bg { transform: translate(127px, -1px); }
-#piconseditor .m .li-item:nth-child(1) .btn-browse .btn-txt { transform: translate(127px, -1px); }
+#piconseditor .m .li-item .txt { font-size: 20.5px; transform: translate(2px, -1px); }
+#piconseditor .m .li-item .input-bg { width: 341px !important; height: 30px !important; transform: translate(4px, -1px); }
+#piconseditor .m .li-item:nth-child(1) .btn-browse .btn-bg { transform: translate(141px, -1px); }
+#piconseditor .m .li-item:nth-child(1) .btn-browse .btn-txt { transform: translate(141px, -1px); }
+#piconseditor .m .li-item:nth-child(1) .btn-reload .btn-bg { transform: translate(12px, -1px); }
+#piconseditor .m .li-item:nth-child(1) .btn-reload .btn-txt { transform: translate(12px, -1px); }
 
 
 .dm .t-stroke { stroke-width: 0.5px !important; }
@@ -104,6 +110,8 @@
 .dm .btn-dropdown .btn-txt { fill-opacity: 0.92 !important; }
 .dm .find-h-txt { fill: #323232 !important; }
 
+#channelbook .dm#window .btn-dropdown .arrow use { fill: #fff !important; }
+
 .dm .tb-button .ico use { fill: #dad4d6 !important; }
 .dm .tb-tab .ico use { fill: #646464 !important; }
 .dm .tb-tab .tb-ico use { fill: #fff !important; }
@@ -122,9 +130,9 @@
 
 .dm #split ellipse, .dm #ch-split ellipse { fill: #444646 !important; }
 #editor .dm #split-start .focused { fill: #596362 !important; }
-.dm #split-end .focused, #piconseditor .dm .list-view .focused, #piconseditor .dm #icon .focused, #channelbook .dm #ch-end .focused { fill: #023acd !important; }
+.dm #split-end .focused, #wide .dm .items .focused, #piconseditor .dm .list-view .focused, #piconseditor .dm #icon .focused, #channelbook .dm #ch-end .focused { fill: #023acd !important; }
 #channelbook .dm #ch-list .focused { fill: #444545 !important; }
-#channelbook .dm #ch-start .focused, #wide .dm #split-start .focused, #wide .dm #split-end .focused { fill: #303030 !important; }
+#channelbook .dm#window .focused, #channelbook .dm #ch-start .focused, #wide .dm #split-start .focused, #wide .dm #split-end .focused { fill: #303030 !important; }
 
 #piconseditor .dm .list .shape { stroke: #2d2f2d !important; }
 
@@ -257,8 +265,9 @@
 .w #statusbar #sbdi { width: 2px !important; fill: #000 !important; fill-opacity: 0.13 !important; transform: translate(19px, -3px); }
 .w #statusbar #sbnf { transform: matrix(1, 0, 0, 1, 1730, 1181); }
 .w #statusbar #sbnf .ico use { fill: #505050 !important; }
-#wide .w #statusbar #sbte { transform: translate(4px, -3px); }
-#wide .w #statusbar #sbti { transform: translate(-3px, -3px); }
+#wide .w #statusbar #sbte { transform: translate(31px, -3px); }
+#wide .w #statusbar #sbti { transform: translate(13px, -3px); }
+#wide .w #statusbar #sbdi { transform: translate(21px, -3px); }
 
 .w:not(.w10) #statusbar .divid { display: none !important; }
 
@@ -338,8 +347,10 @@
 #editor .w .list .focused, #channelbook .w#window .focused { height:47px; }
 #wide .w .focused { height: 42px; transform: translate(0, 1px); }
 
-#channelbook .w .focused, #wide .w #split-end .focused { fill: #e5e5e5 !important; fill-opacity: 0.67; }
-#editor .w .list .focused, #channelbook .w #ch-end .focused, #piconseditor .w .list .focused { fill: #0078d7 !important; fill-opacity: 1; }
+#channelbook .w .focused, #wide .w #split-start .focused { fill: #e5e5e5 !important; fill-opacity: 0.67; }
+#editor .w .list .focused, #channelbook .w #ch-end .focused, #wide .w #split-end .focused, #piconseditor .w .list .focused { fill: #0078d7 !important; fill-opacity: 1; }
+#wide .w .items text.active { fill: #000 !important; }
+#wide .w #split-end text.active { fill: #fff !important; }
 #channelbook .w#window text.active { fill: #000 !important; }
 
 #channelbook .w.w10 .focused, #wide .w.w10 #split-end .focused { fill: #ccc !important; }
@@ -406,8 +417,9 @@
 .w .qe-li .btn-bg { transform: translate(5px, -1px); }
 .w .qe .btn-ico use { x: 16px; y: 4px; }
 .w .qe text { transform: translate(0, 2.5px); }
-.w .menu-item .btn-bg { width: 100px; height: 36px; transform: translate(5px, -1px); }
-.w .menu-item .arrow { transform: translate(-12px, 1px); }
+.w .menu-item .btn-bg { width: 116px; height: 36px; transform: translate(-15px, -1px); }
+.w .menu-item .btn-txt { transform: translate(-16px, 3px); }
+.w .menu-item .arrow { transform: translate(-16px, 1px); }
 
 .w.w10 .btn-txt { transform: translate(0, 1px); }
 .w.w10 .qe-ti { transform: translate(12px, 2px); }
@@ -896,8 +908,9 @@
 .w10.dw text.find-h-txt { fill: #acd !important; }
 
 .dw .tree-group .focused { fill: #3c3c3c !important; fill-opacity: 1; }
-#channelbook .dw .focused, #wide .dw #split-end .focused { fill: #3c3c3c !important; fill-opacity: 1; }
-#channelbook .dw#window text.active { fill: #fff !important; }
+#channelbook .dw .focused, #wide .dw #split-start .focused { fill: #3c3c3c !important; fill-opacity: 1; }
+.dw .items text.active { fill: #fff !important; }
+#channelbook .dw#window text.active, #wide .dw #split-start text.active { fill: #fff !important; }
 
 .w10.dw .tree-group .focused { fill: #222 !important; }
 #channelbook .w10.dw .focused { fill: #202020 !important; }
@@ -1197,7 +1210,9 @@
 .f #statusbar #sbdi { width: 2px !important; fill: #000 !important; fill-opacity: 0.13 !important; transform: translate(16px, -3px); }
 .f #statusbar #sbnf { transform: matrix(1, 0, 0, 1, 1744, 1182); }
 .f #statusbar #sbnf .ico use { fill: #5c5c5c !important; }
-#wide .f #statusbar #sbte { transform: translate(24px, -3px); }
+#wide .f #statusbar #sbte { transform: translate(30px, -3px); }
+#wide .f #statusbar #sbti { transform: translate(15px, -3px); }
+#wide .f #statusbar #sbdi { transform: translate(23px, -3px); }
 
 .f #tb-corner .bg { width: 128px; }
 .f .tb-button { transform: translate(8px, 0); }
@@ -1249,8 +1264,9 @@
 .f #menu-bg, .f #menu-stroke { height: 95px; }
 .f #menu-stroke { stroke: #d1d2d2 !important; }
 .f .menu-item { transform: translate(0, -2px); }
-.f .menu-item .btn-bg { width: 100px; height: 34px; transform: translate(5px, -2px); }
-.f .menu-item .arrow { transform: translate(-12px, 0); }
+.f .menu-item .btn-bg { width: 110px; height: 34px; transform: translate(-1px, -2px); }
+.f .menu-item .btn-txt { transform: translate(-4px, 0); }
+.f .menu-item .arrow { transform: translate(-8px, 0); }
 .f .menu-item .txt { font-size: 25.5px !important; transform: translate(-1.5px, 0); }
 
 
@@ -1498,10 +1514,10 @@
 .f .li-item:nth-child(1) { transform: translate(0, 0.5px); }
 .f .li-item:nth-child(2) { transform: translate(-8px, 0.5px); }
 .f .li-item:nth-child(3) { transform: translate(-14px, 0.5px); }
-.f .li-item:nth-child(4) { transform: translate(-22px, 0.5px); opacity: 0.25 !important; }
+.f .li-item:nth-child(4) { transform: translate(-22px, 0.5px); opacity: 0.5 !important; }
 .f .li-item:nth-child(5) { transform: translate(-22px, 1px); }
 .f .li-divid:nth-child(6) { transform: translate(-30.5px, -5px); }
-.f .li-item:nth-child(7) { transform: translate(-32px, 1px); opacity: 0.25 !important; }
+.f .li-item:nth-child(7) { transform: translate(-32px, 1px); opacity: 0.5 !important; }
 #piconseditor .f .li-item:nth-child(2) { transform: translate(23px, 1px); }
 #wide .f .li-item:nth-child(2) { transform: translate(27px, 2px); opacity: 1 !important; }
 
@@ -1789,7 +1805,8 @@
 
 
 
-.disabled { opacity: 0.25; }
+.m .disabled { opacity: 0.25; }
+.f .disabled { opacity: 0.45; }
 .w .disabled { opacity: 0.45; }
 
 #piconseditor .list .sbh, #piconseditor .sbr { display: none !important; }

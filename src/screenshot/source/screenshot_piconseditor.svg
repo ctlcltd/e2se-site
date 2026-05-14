@@ -677,10 +677,9 @@
                   <rect class="btn-bg" x="800" y="1072" width="126" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
                   <text class="btn-txt" x="800" y="1072" dx="24" dy="22" style="font-size:20px;fill:#000">Browse<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
                 </g>
-                <!-- TODO -->
                 <g class="btn-reload">
-                  <rect class="btn-bg" x="1105" y="1072" width="108" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
-                  <text class="btn-txt" x="1105" y="1072" dx="22" dy="22" style="font-size:20px;fill:#000">Reload</text>
+                  <rect class="btn-bg" x="1108" y="1072" width="106" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
+                  <text class="btn-txt" x="1108" y="1072" dx="22" dy="22" style="font-size:20px;fill:#000">Reload</text>
                 </g>
               </g>
               <g class="li-item qe qe-li">
@@ -709,10 +708,10 @@
           <text class="txt" x="630" y="1116" dx="29" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Inspect</text>
         </g>
         <g class="toolbar-item">
-          <text class="txt" x="1526" dx="11" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">autofix</text>
+          <text class="txt" x="1514" dx="29" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">autofix</text>
         </g>
         <g class="toolbar-item">
-          <text class="txt" x="1642" dx="11" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Console</text>
+          <text class="txt" x="1624" dx="29" y="1116" dy="33" style="font-size:24px;font-weight:bold;fill:#000">Console</text>
         </g>
       </g>
     </g>
