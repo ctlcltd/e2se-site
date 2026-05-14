@@ -53,7 +53,7 @@
 #channelbook .dm#addchannel .t-stroke { width: 1061px !important; transform: none; }
 
 .dm .divid { stroke: #fff; }
-.dm #sbdi { fill: #fff !important; }
+.dm #sbdi { fill: #fff !important; fill-opacity: 0.7 !important; }
 
 .dm text:not(.color) { fill: #fff !important; }
 .dm text.t-txt { fill: #bcbebe !important; }
@@ -1207,7 +1207,7 @@
 .f #statusbar text { font-size: 19.5px !important; transform: translate(3px, -3px); }
 .f #statusbar #sbte { transform: translate(38px, -3px); }
 .f #statusbar #sbti { transform: translate(11px, -3px); }
-.f #statusbar #sbdi { width: 2px !important; fill: #000 !important; fill-opacity: 0.13 !important; transform: translate(16px, -3px); }
+.f #statusbar #sbdi { width: 2px !important; fill: #000 !important; fill-opacity: 0.25 !important; transform: translate(16px, -3px); }
 .f #statusbar #sbnf { transform: matrix(1, 0, 0, 1, 1744, 1182); }
 .f #statusbar #sbnf .ico use { fill: #5c5c5c !important; }
 #wide .f #statusbar #sbte { transform: translate(30px, -3px); }

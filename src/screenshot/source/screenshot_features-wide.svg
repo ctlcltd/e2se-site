@@ -916,7 +916,7 @@
       <rect class="divid sbds-w" x="413" y="1184" width="1" height="25" style="fill:none" />
       <rect class="divid sbdl-w" x="1608" y="1184" width="1" height="25" style="fill:none" />
       <text id="sbte" x="82" y="1179" dx="1387" dy="29" style="font-size:20px;fill:#000"><tspan>Total: 251</tspan></text>
-      <rect id="sbdi" x="1584" y="1192" width="1.5" height="17" style="fill:#000;fill-opacity:0.3" />
+      <rect id="sbdi" x="1584" y="1192" width="1.5" height="17" style="fill:#000;fill-opacity:0.2" />
       <text id="sbti" x="82" y="1179" dx="1519" dy="29" style="font-size:20px;fill:#000">Lamedb 2.4</text>
       <rect class="divid sbdr-w" x="1721" y="1184" width="1" height="25" style="fill:none" />
       <rect class="divid sbdr-i" x="1770" y="1184" width="1" height="25" style="fill:none" />
