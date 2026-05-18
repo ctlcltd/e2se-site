@@ -10,6 +10,10 @@
 @use "custom";
 @use "help";
 
+#foot p:first-child {
+  line-height: 2;
+}
+
 .translated-rtl {
   direction: rtl;
 }

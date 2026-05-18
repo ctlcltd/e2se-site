@@ -82,7 +82,7 @@ module.exports = function(grunt) {
             software_rel_ver: vars['software_rel_ver'] ?? vars['software_rel_ver'],
             software_rel_date: vars['software_rel_date'] ?? new Date(vars['software_rel_date']),
             software_rel_banner: vars['software_rel_banner'] ?? vars['software_rel_banner'],
-            help_rev: vars['help_rev'] ?? new Date(vars['help_rev'])
+            help_rev: vars['help_rev'] ? new Date(vars['help_rev']) : new Date()
           }
         },
         src: ['help/liquid/*.liquid'],
@@ -121,7 +121,7 @@ module.exports = function(grunt) {
           },
           data: {
             software_rel_ver: vars['software_rel_ver'] ?? vars['software_rel_ver'],
-            help_rev: vars['help_rev'] ?? new Date(vars['help_rev'])
+            help_rev: vars['help_rev'] ? new Date(vars['help_rev']) : new Date()
           }
         },
         src: ['help/liquid/*.liquid'],
