@@ -641,7 +641,7 @@
             
               <rect x="1913" y="366" width="1325" height="659" style="fill:#171717"/>
               
-                <rect x="1913" y="577" width="1325" height="42" style="fill:#303030"/>
+                <rect x="1913" y="577" width="1325" height="42" style="fill:#023acd"/>
                 <text x="1913" y="366" dy="29" style="font-size:19px;fill:#fff"><tspan x="1929">1</tspan> <tspan x="2003">10719/V/27500</tspan> <tspan x="2237">10719</tspan> <tspan x="2355">V</tspan> <tspan x="2475">27500</tspan> <tspan x="2592">DVB-S2</tspan> <tspan x="2709">3/4</tspan> <tspan x="2820">8PSK</tspan></text>
                 <text x="1913" y="407" dy="29" style="font-size:19px;fill:#fff"><tspan x="1929">2</tspan> <tspan x="2003">10728/H/30000</tspan> <tspan x="2237">10728</tspan> <tspan x="2355">H</tspan> <tspan x="2475">30000</tspan> <tspan x="2592">DVB-S2</tspan> <tspan x="2709">3/4</tspan> <tspan x="2820">8PSK</tspan></text>
                 <text x="1913" y="448" dy="29" style="font-size:19px;fill:#fff"><tspan x="1929">3</tspan> <tspan x="2003">10758/V/27500</tspan> <tspan x="2237">10758</tspan> <tspan x="2355">V</tspan> <tspan x="2475">27500</tspan> <tspan x="2592">DVB-S2</tspan> <tspan x="2709">3/4</tspan> <tspan x="2820">8PSK</tspan></text>

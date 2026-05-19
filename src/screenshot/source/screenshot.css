@@ -130,9 +130,9 @@
 
 .dm #split ellipse, .dm #ch-split ellipse { fill: #444646 !important; }
 #editor .dm #split-start .focused { fill: #596362 !important; }
-.dm #split-end .focused, #wide .dm .items .focused, #piconseditor .dm .list-view .focused, #piconseditor .dm #icon .focused, #channelbook .dm #ch-end .focused { fill: #023acd !important; }
+.dm #split-end .focused, #wide .dm .items .focused, #piconseditor .dm .list-view .focused, #piconseditor .dm #icon .focused, #channelbook .dm #ch-end .focused, #wide .dm #split-end .focused { fill: #023acd !important; }
 #channelbook .dm #ch-list .focused { fill: #444545 !important; }
-#channelbook .dm#window .focused, #channelbook .dm #ch-start .focused, #wide .dm #split-start .focused, #wide .dm #split-end .focused { fill: #303030 !important; }
+#channelbook .dm#window .focused, #channelbook .dm #ch-start .focused, #wide .dm #split-start .focused { fill: #303030 !important; }
 
 #piconseditor .dm .list .shape { stroke: #2d2f2d !important; }
 
