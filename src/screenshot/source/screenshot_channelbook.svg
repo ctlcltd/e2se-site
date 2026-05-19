@@ -124,10 +124,10 @@
       <feDropShadow dx="0" dy="0" stdDeviation="1" />
     </filter>
 
-    <filter id="tb-close-b-w" color-interpolation-filters="sRGB">
+    <filter id="tb-close-b-f" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="0" stdDeviation="2" flood-opacity="0.15" />
     </filter>
-    <filter id="tb-close-g-w" color-interpolation-filters="sRGB">
+    <filter id="tb-close-g-f" color-interpolation-filters="sRGB">
       <feColorMatrix type="saturate" values="0" />
     </filter>
 

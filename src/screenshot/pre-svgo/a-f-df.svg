@@ -91,8 +91,12 @@
       <feDropShadow dx="0" dy="0" stdDeviation="1"/>
     </filter>
 
-    
-    
+    <filter id="tvf" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="0" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <filter id="twf" color-interpolation-filters="sRGB">
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
 
     
     
@@ -150,10 +154,10 @@
             <rect x="211" y="166" width="157" height="69" style="fill:#12608a;stroke:#12608a;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <text x="211" y="165.5" dx="15" dy="41" style="font-size:19px;fill:#fff">enigma_db</text>
             
-              <g transform="matrix(0.9,0,0,0.9,341,195.5)">
-                <rect rx="11" style="fill:#aaa;fill-opacity:0.44" height="22" width="22" x="-4.5" y="-4.5"/>
-                <g transform="matrix(0.17,0,0,0.17,1.2,1.2)">
-                  <use href="#cce" style="fill:#fff"/>
+              <g style="filter:url(#tvf)">
+                <rect rx="2" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="336.5" y="190"/>
+                <g transform="matrix(0.15,0,0,0.15,341.5,195)">
+                  <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
                 </g>
               </g>
             
@@ -164,26 +168,26 @@
               <use href="#pkw" style="fill:#fff"/>
             </g>
             <text x="368" y="165.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Picons <tspan style="font-size:15px">…</tspan></text>
-            
-              <g transform="matrix(0.9,0,0,0.9,634,195.5)">
-                <rect rx="11" style="fill:#aaa;fill-opacity:0.44" height="22" width="22" x="-4.5" y="-4.5"/>
-                <g transform="matrix(0.17,0,0,0.17,1.2,1.2)">
-                  <use href="#cce" style="fill:#fff"/>
+            <g style="filter:url(#twf);opacity:0.5">
+              <g style="filter:url(#tvf)">
+                <rect rx="2" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="629.5" y="190"/>
+                <g transform="matrix(0.15,0,0,0.15,634.5,195)">
+                  <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
                 </g>
               </g>
-            
+            </g>
           
           
             <rect x="660" y="166" width="154" height="69" style="fill:#2a2a29;stroke:#363636;stroke-width:2px;clip-path:inset(1px 0px)"/>
             <text x="660" y="165.5" dx="15" dy="41" style="font-size:19px;fill:#fff">neutrino</text>
-            
-              <g transform="matrix(0.9,0,0,0.9,788,195.5)">
-                <rect rx="11" style="fill:#aaa;fill-opacity:0.44" height="22" width="22" x="-4.5" y="-4.5"/>
-                <g transform="matrix(0.17,0,0,0.17,1.2,1.2)">
-                  <use href="#cce" style="fill:#fff"/>
+            <g style="filter:url(#twf);opacity:0.5">
+              <g style="filter:url(#tvf)">
+                <rect rx="2" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="783.5" y="190"/>
+                <g transform="matrix(0.15,0,0,0.15,788.5,195)">
+                  <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
                 </g>
               </g>
-            
+            </g>
           
           
             <rect x="814" y="166" width="292" height="69" style="fill:#2a2a29;stroke:#363636;stroke-width:2px;clip-path:inset(1px 0px)"/>
@@ -191,14 +195,14 @@
               <use href="#tpw" style="fill:#fff"/>
             </g>
             <text x="814" y="165.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Edit Set<tspan style="font-size:15px">…</tspan></text>
-            
-              <g transform="matrix(0.9,0,0,0.9,1081,195.5)">
-                <rect rx="11" style="fill:#aaa;fill-opacity:0.44" height="22" width="22" x="-4.5" y="-4.5"/>
-                <g transform="matrix(0.17,0,0,0.17,1.2,1.2)">
-                  <use href="#cce" style="fill:#fff"/>
+            <g style="filter:url(#twf);opacity:0.5">
+              <g style="filter:url(#tvf)">
+                <rect rx="2" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="1076.5" y="190"/>
+                <g transform="matrix(0.15,0,0,0.15,1081.5,195)">
+                  <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
                 </g>
               </g>
-            
+            </g>
           
           
             <rect x="1106" y="166" width="293" height="69" style="fill:#2a2a29;stroke:#363636;stroke-width:2px;clip-path:inset(1px 0px)"/>
@@ -206,14 +210,14 @@
               <use href="#cbw" style="fill:#fff"/>
             </g>
             <text x="1106" y="165.5" dx="46" dy="41" style="font-size:19px;fill:#fff">enigma_db - Channe<tspan style="font-size:15px">…</tspan></text>
-            
-              <g transform="matrix(0.9,0,0,0.9,1373,195.5)">
-                <rect rx="11" style="fill:#aaa;fill-opacity:0.44" height="22" width="22" x="-4.5" y="-4.5"/>
-                <g transform="matrix(0.17,0,0,0.17,1.2,1.2)">
-                  <use href="#cce" style="fill:#fff"/>
+            <g style="filter:url(#twf);opacity:0.5">
+              <g style="filter:url(#tvf)">
+                <rect rx="2" style="fill:#e08759;stroke:#da4634;stroke-width:2px" height="20" width="20" x="1368.5" y="190"/>
+                <g transform="matrix(0.15,0,0,0.15,1373.5,195)">
+                  <use href="#cce" style="fill:#fff;stroke:#fff;stroke-width:10px"/>
                 </g>
               </g>
-            
+            </g>
           
           <rect x="1398" y="167" width="2" height="67" style="fill:#333"/>
         
@@ -259,18 +263,18 @@
           
           
             
-              <rect x="1148" y="264" width="100" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
+              <rect x="1142" y="264" width="110" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
               
                 <rect x="1240.5" y="269" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                 
                   
                   
-                  <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,1228,273)">
+                  <g style="fill:#b5b5b4" transform="matrix(0.23,0,0,0.23,1232,273)">
                     <use href="#aql"/>
                   </g>
                 
               
-              <text x="1143" y="266" dx="12" dy="22" style="font-size:20px;fill:#fff">Profile 1</text>
+              <text x="1139" y="266" dx="12" dy="22" style="font-size:20px;fill:#fff">Profile 1</text>
             
           
           
@@ -421,63 +425,63 @@
           
             
               <rect x="469" y="377" width="1325" height="26" style="fill:url(#brf);stroke:#4e4d4d;stroke-width:2px;clip-path:inset(1px 1px 0)"/>
-              <text x="469" y="379" dy="18" style="font-size:17px;fill:#fff"><tspan x="472">Index</tspan> <tspan x="571">Name</tspan> <tspan x="876">Parental</tspan> <tspan x="982">Service ID</tspan> <tspan x="1105">Transport ID</tspan> <tspan x="1227">Type</tspan> <tspan x="1356">CAS</tspan> <tspan x="1425">Provider</tspan> <tspan x="1695">System</tspan></text>
+              <text x="469" y="379" dy="18" style="font-size:17px;fill:#fff"><tspan x="472">Index</tspan> <tspan x="571">Name</tspan> <tspan x="876">Parental</tspan> <tspan x="983">Service ID</tspan> <tspan x="1105">Transport ID</tspan> <tspan x="1227">Type</tspan> <tspan x="1356">CAS</tspan> <tspan x="1425">Provider</tspan> <tspan x="1693">System</tspan></text>
               <rect x="564" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
               <rect x="869" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
               <rect x="975" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
               <rect x="1098" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
-              <rect x="1219" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
+              <rect x="1220" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
               <rect x="1349" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
               <rect x="1418" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
-              <rect x="1689" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
+              <rect x="1686" y="377" width="3" height="26" style="fill:#4e4d4d;stroke:#171717;stroke-width:1px;clip-path:inset(1px 0 1px 1px)"/>
             
             
               <rect x="469" y="403" width="1325" height="687" style="fill:#131312"/>
               
                 <rect x="473" y="707" width="1325" height="49" style="fill:#12608a" transform="matrix(1,0,0,0.996,-4,39.1)"/>
-                <text x="469" y="404" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">38</tspan> <tspan x="572">Giallo HD HD</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">TVN WBD</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="404" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">38</tspan> <tspan x="572">Giallo HD</tspan> <tspan x="982">4322</tspan> <tspan x="1106">1000</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">TVN WBD</tspan> <tspan x="1693">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,880,416)">
                   <use href="#smt" style="fill:#c4c4c4"/>
                 </g>
                 <g transform="matrix(0.38,0,0,0.38,1360,416)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="469" y="453" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">39</tspan> <tspan x="572">TOPcrime HD</tspan> <tspan x="982">132</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="453" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">39</tspan> <tspan x="572">TOPcrime HD</tspan> <tspan x="982">132</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1693">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,880,465)">
                   <use href="#smt" style="fill:#c4c4c4"/>
                 </g>
                 <g transform="matrix(0.38,0,0,0.38,1360,465)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="469" y="502" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">40</tspan> <tspan x="572">Boing HD</tspan> <tspan x="982">126</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1426">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="502" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">40</tspan> <tspan x="572">Boing HD</tspan> <tspan x="982">126</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1426">Mediaset</tspan> <tspan x="1693">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,514)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="469" y="550" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">41</tspan> <tspan x="572">K2</tspan> <tspan x="982">15204</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Warner Bros. Discovery</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="550" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">41</tspan> <tspan x="572">K2</tspan> <tspan x="982">15204</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Warner Bros. Discovery</tspan> <tspan x="1693">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,562)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="469" y="599" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">42</tspan> <tspan x="572">Rai Gulp HD</tspan> <tspan x="982">17712</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1392"/> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S2</tspan></text>
-                <text x="469" y="648" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">43</tspan> <tspan x="572">Rai YoYo HD</tspan> <tspan x="982">8511</tspan> <tspan x="1106">12400</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">RAI</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="599" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">42</tspan> <tspan x="572">Rai Gulp HD</tspan> <tspan x="982">17712</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1392"/> <tspan x="1426">Rai</tspan> <tspan x="1693">DVB-S2</tspan></text>
+                <text x="469" y="648" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">43</tspan> <tspan x="572">Rai YoYo HD</tspan> <tspan x="982">8511</tspan> <tspan x="1106">12400</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">RAI</tspan> <tspan x="1693">DVB-S</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,660)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="469" y="696" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">44</tspan> <tspan x="572">Frisbee</tspan> <tspan x="982">15205</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Warner Bros. Discovery</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="696" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">44</tspan> <tspan x="572">Frisbee</tspan> <tspan x="982">15205</tspan> <tspan x="1106">300</tspan> <tspan x="1227">H.264</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Warner Bros. Discovery</tspan> <tspan x="1693">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,708)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="469" y="745" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">45</tspan> <tspan x="572">NASA+</tspan> <tspan x="982">1958</tspan> <tspan x="1106">0</tspan> <tspan x="1227">STREAM</tspan> <tspan x="1695">[eservice]</tspan></text>
-                <text x="469" y="794" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">46</tspan> <tspan x="572">Cartoonito HD</tspan> <tspan x="982">133</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="745" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">45</tspan> <tspan x="572">NASA+</tspan> <tspan x="982">1958</tspan> <tspan x="1106">0</tspan> <tspan x="1227">STREAM</tspan> <tspan x="1693">[eservice]</tspan></text>
+                <text x="469" y="794" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">46</tspan> <tspan x="572">Cartoonito HD</tspan> <tspan x="982">133</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1693">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,806)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="469" y="843" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">47</tspan> <tspan x="572">Super!</tspan> <tspan x="982">55</tspan> <tspan x="1106">512</tspan> <tspan x="1227">H.264</tspan> <tspan x="1425">Persidera</tspan> <tspan x="1695">DVB-T</tspan></text>
-                <text x="469" y="892" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">48</tspan> <tspan x="572">Rai News 24 HD</tspan> <tspan x="982">17711</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1426">Rai</tspan> <tspan x="1695">DVB-S2</tspan></text>
-                <text x="469" y="940" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">49</tspan> <tspan x="572">Mediaset Italia2 HD</tspan> <tspan x="982">130</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1695">DVB-S2</tspan></text>
+                <text x="469" y="843" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">47</tspan> <tspan x="572">Super!</tspan> <tspan x="982">55</tspan> <tspan x="1106">512</tspan> <tspan x="1227">H.264</tspan> <tspan x="1425">Persidera</tspan> <tspan x="1693">DVB-T</tspan></text>
+                <text x="469" y="892" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">48</tspan> <tspan x="572">Rai News 24 HD</tspan> <tspan x="982">17711</tspan> <tspan x="1106">12500</tspan> <tspan x="1227">HD</tspan> <tspan x="1426">Rai</tspan> <tspan x="1693">DVB-S2</tspan></text>
+                <text x="469" y="940" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">49</tspan> <tspan x="572">Mediaset Italia2 HD</tspan> <tspan x="982">130</tspan> <tspan x="1106">1200</tspan> <tspan x="1227">HD</tspan> <tspan x="1392" style="font-size:15px">...</tspan> <tspan x="1425">Mediaset</tspan> <tspan x="1693">DVB-S2</tspan></text>
                 <g transform="matrix(0.38,0,0,0.38,1360,952)">
                   <use href="#cdd" style="fill:#c4c4c4"/>
                 </g>
-                <text x="469" y="987" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">50</tspan> <tspan x="572">Sky TG24</tspan> <tspan x="982">90</tspan> <tspan x="1106">512</tspan> <tspan x="1227">H.264</tspan> <tspan x="1425">Persidera</tspan> <tspan x="1695">DVB-T</tspan></text>
+                <text x="469" y="987" dy="31" style="font-size:20px;fill:#fff"><tspan x="492">50</tspan> <tspan x="572">Sky TG24</tspan> <tspan x="982">90</tspan> <tspan x="1106">512</tspan> <tspan x="1227">H.264</tspan> <tspan x="1425">Persidera</tspan> <tspan x="1693">DVB-T</tspan></text>
               
             
             <g transform="matrix(0.997,0,0,0.997,-4.5,37.5)" style="clip-path:inset(0 0px 0px -2px);filter:url(#buf)">
@@ -580,7 +584,7 @@
                 </g>
                 <text x="738" y="1049.5" dx="28" dy="33" style="font-weight:bold;font-size:20.5px;fill:#fff">Marker</text>
               
-              <g style="opacity:0.25">
+              <g style="opacity:0.5">
                 <g transform="matrix(0.26,0,0,0.26,863,1065.5)">
                   <use href="#aad" style="fill:#c4c4c4"/>
                 </g>
@@ -593,7 +597,7 @@
               
                 <rect x="1136.5" y="1063" width="4" height="24" style="fill:#252323;stroke:#090909;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
               
-              <g style="opacity:0.25">
+              <g style="opacity:0.5">
                 <rect x="1146" y="1058" width="147" height="34" rx="3" style="fill:url(#brf);stroke:url(#btf);stroke-width:1.2px;filter:url(#buf)"/>
                 <text x="1146" y="1059.5" dx="24" dy="22" style="font-size:20px;fill:#fff">Drag&amp;Drop</text>
               </g>
@@ -614,31 +618,36 @@
       <rect x="82" y="1109" width="1716" height="73" style="fill:#222020;stroke:#4e4d4d;clip-path:inset(0.5px 1px 0)"/>
       
         
-          <text x="95" y="1120" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Tools</text>
+          <text x="98" y="1120" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Tools</text>
         
         
-          <rect x="207" y="1133" width="4" height="25" style="fill:#252323;stroke:#090909;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
+          <rect x="210" y="1133" width="4" height="25" style="fill:#252323;stroke:#090909;stroke-width:2px;clip-path:inset(2px 2px 2px 0.5px)"/>
         
         
-          <text x="197" y="1120" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Inspect</text>
+          <text x="200" y="1120" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Inspect</text>
         
         
-          <text x="1665" dx="11" y="1120" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">autofix</text>
+          <text x="1522" dx="29" y="1120" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">autofix</text>
+        
+        
+          <text x="1629" dx="29" y="1120" dy="33" style="font-weight:bold;font-size:24px;fill:#fff">Console</text>
         
       
     
     
       <rect x="82" y="1184" width="1716" height="36.4" rx="0" style="fill:#222020;clip-path:none"/>
       <rect x="80" y="1184" width="1720" height="37" style="fill:none;stroke:#1d1c1c;stroke-width:2px;clip-path:inset(0 2px 37.3px)"/>
-      <text x="85" y="1181" dx="29" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Channels: 143</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
+      <text x="85" y="1181" dx="29" dy="29" style="font-size:19.5px;fill:#fff"><tspan>Channels: 141</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
       
       
-      <text x="112" y="1181" dx="1212" dy="29" style="font-size:19.5px;fill:#fff"><tspan>TV: 1240</tspan> <tspan dx="10">Radio: 304</tspan> <tspan dx="10">Data: 148</tspan> <tspan dx="10">Total: 1692</tspan></text>
+      <text x="120" y="1181" dx="1060" dy="29" style="font-size:19.5px;fill:#fff"><tspan>TV: 1229</tspan> <tspan dx="10">Radio: 288</tspan> <tspan dx="10">Data: 133</tspan> <tspan dx="10">Total: 1650</tspan></text>
+      <rect x="1600" y="1194" width="2" height="17" style="fill:#fff;fill-opacity:0.25"/>
+      <text x="93" y="1181" dx="1519" dy="29" style="font-size:19.5px;fill:#fff">Lamedb 2.4</text>
       
       
       
         
-        <g transform="matrix(0.38,0,0,0.38,1751,1191)">
+        <g transform="matrix(0.38,0,0,0.38,1748,1191)">
           <use href="#fgo" style="fill:#c4c4c4"/>
         </g>
       

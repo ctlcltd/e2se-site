@@ -44,9 +44,9 @@
 #piconseditor .m .li-item .txt { font-size: 20.5px; transform: translate(2px, -1px); }
 #piconseditor .m .li-item .input-bg { width: 341px !important; height: 30px !important; transform: translate(4px, -1px); }
 #piconseditor .m .li-item:nth-child(1) .btn-browse .btn-bg { transform: translate(141px, -1px); }
-#piconseditor .m .li-item:nth-child(1) .btn-browse .btn-txt { transform: translate(141px, -1px); }
+#piconseditor .m .li-item:nth-child(1) .btn-browse .btn-txt { transform: translate(141px, 0); }
 #piconseditor .m .li-item:nth-child(1) .btn-reload .btn-bg { transform: translate(12px, -1px); }
-#piconseditor .m .li-item:nth-child(1) .btn-reload .btn-txt { transform: translate(12px, -1px); }
+#piconseditor .m .li-item:nth-child(1) .btn-reload .btn-txt { transform: translate(12px, 0); }
 
 
 .dm .t-stroke { stroke-width: 0.5px !important; }
@@ -249,12 +249,11 @@
 .w .tb-tab.active .bg { fill: #0078d7 !important; stroke: #0078d7 !important; }
 .w .tb-tab.active text { fill: #fff !important; }
 
-.w .tb-close .o { filter: url(#tb-close-b-w); transform: translate(-2.5px, 0); }
-.w .tb-close rect { x: -4px; y: -4px; width: 20px; height: 20px; rx: 2px; fill: #e08759 !important; stroke: #da4634; stroke-width: 2px; }
-.w .tb-close .ico { transform: matrix(0.15, 0, 0, 0.15, 1, 1) !important; }
-.w .tb-close .ico use { fill: #fff !important; stroke: #fff; stroke-width: 10px; }
-.w .tb-close { filter: url(#tb-close-g-w); opacity: 0.5; }
-.w .tb-tab.active .tb-close { filter: none; opacity: 1; }
+.w .tb-close .o { transform: matrix(1.25, 0, 0, 1.25, 2.25, 0); }
+.w .tb-close rect { display: none; }
+.w .tb-close .ico { transform: matrix(0.17, 0, 0, 0.17, 1.2, 1.2) !important; }
+.w .tb-close .ico use { fill: #000 !important; stroke: #000; stroke-width: 1px; fill-opacity: 0.45; stroke-opacity: 0.45; }
+.w .tb-tab.active .ico use { fill-opacity: 1; stroke-opacity: 1; }
 
 .w #statusbar { transform: translate(0, 6.5px); }
 .w #sb-bg { y: 1179px; height: 33px; }
@@ -458,9 +457,11 @@
 .w .li-item:nth-child(5) .btn-bg, .w .li-item:nth-child(5) .btn-txt { width: 118px; }
 .w .li-item:nth-child(7) .btn-bg, .w .li-item:nth-child(7) .btn-txt { width: 122px; }
 #piconseditor .w .li-item:nth-child(1) .txt { transform: translate(-3px, 1px); }
-#piconseditor .w .li-item:nth-child(1) .input-bg { width: 352px; height: 34px; transform: translate(-6px, -2px); }
-#piconseditor .w .li-item:nth-child(1) .btn-browse .btn-bg { width: 112px; height: 36px; transform: translate(136px, -3px); }
-#piconseditor .w .li-item:nth-child(1) .btn-browse .btn-txt { transform: translate(130px, 1px); }
+#piconseditor .w .li-item:nth-child(1) .input-bg { width: 352px; height: 36px; transform: translate(-6px, -3px); }
+#piconseditor .w .li-item:nth-child(1) .btn-browse .btn-bg { width: 120px; height: 36px; transform: translate(136px, -3px); }
+#piconseditor .w .li-item:nth-child(1) .btn-browse .btn-txt { transform: translate(135px, 0); }
+#piconseditor .w .li-item:nth-child(1) .btn-reload .btn-bg { width: 112px; height: 36px; transform: translate(-8px, -1.5px); }
+#piconseditor .w .li-item:nth-child(1) .btn-reload .btn-txt { transform: translate(-4px, 2px); }
 
 .w.w10 .li-item:nth-child(5) .btn-bg, .w.w10 .li-item:nth-child(7) .btn-bg { height: 36px; }
 .w.w10 .li-item:nth-child(5) .btn-txt { transform: translate(-6px, 0); }
@@ -860,6 +861,8 @@
 
 .dw .ts-bg { fill: #3c3c3c !important; }
 
+.dw .tb-close .ico use { fill: #fff !important; }
+
 .dw .list-search .tb-close rect { fill: #fff !important; fill-opacity: 0.3; }
 
 .dw .tb-tab .bg, .dw #tb-arrows .bg { fill: #3c3c3c !important; stroke: #2f2f2f !important; }
@@ -1229,10 +1232,18 @@
 
 .f #tb-arrows { transform: translate(-1px, -0.8px); }
 
-.f .tb-close .o { transform: matrix(0.9, 0, 0, 0.9, -2, 1.5); }
+.f .tb-close .o { filter: url(#tb-close-b-f); transform: translate(-2.5px, 0); }
+.f .tb-close rect { x: -4px; y: -4px; width: 20px; height: 20px; rx: 2px; fill: #e08759 !important; stroke: #da4634; stroke-width: 2px; }
+.f .tb-close .ico { transform: matrix(0.15, 0, 0, 0.15, 1, 1) !important; }
+.f .tb-close .ico use { fill: #fff !important; stroke: #fff; stroke-width: 10px; }
+.f .tb-close { filter: url(#tb-close-g-f); opacity: 0.5; }
+.f .tb-tab.active .tb-close { filter: none; opacity: 1; }
+
+/*.f .tb-close .o { transform: matrix(0.9, 0, 0, 0.9, -2, 1.5); }
 .f .tb-close rect { x: -4.5px; y: -4.5px; width: 22px; height: 22px; rx: 11px; fill: #000 !important; fill-opacity: 0.33; }
 .f .tb-close .ico { transform: matrix(0.17, 0, 0, 0.17, 1.2, 1.2) !important; }
 .f .tb-close .ico use { fill: #fff !important; }
+.df .ts-bg { fill: #3c3c3c !important; }*/
 
 #piconseditor .f .list .shape { stroke: #ddd !important; }
 
@@ -1369,6 +1380,8 @@
 #piconseditor .f .li-item:nth-child(1) .input-bg { width: 308px; transform: translate(2px, 1px); }
 #piconseditor .f .li-item:nth-child(1) .btn-browse .btn-bg { width: 114px; transform: translate(97px, 0.5px); }
 #piconseditor .f .li-item:nth-child(1) .btn-browse .btn-txt { transform: translate(91px, 2.5px); }
+#piconseditor .f .li-item:nth-child(1) .btn-reload .btn-bg { width: 110px; transform: translate(-52px, 0.5px); }
+#piconseditor .f .li-item:nth-child(1) .btn-reload .btn-txt { transform: translate(-50px, 2.5px); }
 
 .f .sbh .bg, .f .sbv .bg, .f .sbh .btn-bg, .f .sbv .btn-bg, .f .sbh .xy, .f .sbv .xy, .f .sbr { display: block !important; }
 
@@ -1681,8 +1694,6 @@
 
 .df #tree-tool .bg, .df #list-tool .bg { fill: #222020 !important; }
 .df .ts-bg { fill: #232222 !important; }
-
-.df .tb-close rect { fill: #aaa !important; fill-opacity: 0.44; }
 
 .df .btn-bg, .df .tb-button rect, .df .box-button .bg { fill: url(#btn-bg-d-f) !important; stroke: url(#btn-stroke-d-f) !important; }
 .df .btn-bg, .df .tb-button rect, .df .box-button .bg { filter: url(#btn-shadow-d-f) !important; }

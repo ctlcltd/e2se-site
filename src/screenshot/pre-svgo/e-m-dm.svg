@@ -136,7 +136,7 @@
     <rect x="501" y="81" width="1298" height="1140" rx="15" style="fill:#313333;stroke:#191919;stroke-width:1px"/>
     
       <rect x="502" y="82" width="1296" height="57" rx="15" style="fill:#404242;stroke:#787979;stroke-width:1px;clip-path:inset(0px 0px 15px)"/>
-      <rect x="501" y="124" width="1298" height="1" style="fill:none;stroke:#000;stroke-opacity:0.89;stroke-width:0.5px"/>
+      <rect x="501" y="124.5" width="1298" height="1" style="fill:none;stroke:#000;stroke-opacity:0.89;stroke-width:0.5px"/>
       <text x="502" y="82" dx="649" dy="28" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:20px;fill:#bcbebe">e2 SAT Editor</text>
       
       
@@ -532,17 +532,23 @@
             <rect x="500" y="1025" width="1300" height="73" style="fill:none;stroke:#2d2e2e;stroke-width:2.4px;clip-path:inset(0px 2px 2px)"/>
             
               
-                <text x="509" y="1044" dx="4" dy="23" style="font-size:19px;fill:#fff">Folder</text>
-                <rect x="580" y="1044" width="208" height="33" rx="0" style="fill:#fff;fill-opacity:0;stroke:#fff;stroke-opacity:0.13;stroke-width:4px;clip-path:inset(2.8px 2.8px 0.4px)"/>
-                <rect x="800" y="1044" width="126" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
-                <text x="800" y="1044" dx="24" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Browse<tspan style="font-size:15px">…</tspan></text>
+                <text x="511" y="1043" dx="4" dy="23" style="font-size:19px;fill:#fff">Folder</text>
+                <rect x="584" y="1043" width="341" height="30" rx="0" style="fill:#fff;fill-opacity:0;stroke:#fff;stroke-opacity:0.13;stroke-width:4px;clip-path:inset(2.8px 2.8px 0.4px)"/>
+                
+                  <rect x="941" y="1043" width="126" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
+                  <text x="941" y="1044" dx="24" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78"><tspan>B</tspan>rowse<tspan style="font-size:15px">…</tspan></text>
+                
+                
+                  <rect x="1120" y="1043" width="106" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
+                  <text x="1120" y="1044" dx="22" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Reload</text>
+                
               
               
                 <rect x="1652" y="1044" width="128" height="32" rx="8" style="fill:#fff;fill-opacity:0.24;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
                 <g transform="matrix(0.38,0,0,0.38,1664,1047)">
                   <use href="#skh" style="fill:#c7c7c7"/>
                 </g>
-                <text x="1652" y="1044" dx="46" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Find<tspan style="font-size:15px">…</tspan></text>
+                <text x="1652" y="1044.5" dx="46" dy="22" style="font-size:20px;fill:#fff;fill-opacity:0.78">Find<tspan style="font-size:15px">…</tspan></text>
               
             
           
@@ -554,16 +560,19 @@
       
       
         
-          <text x="518" y="1115.5" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Tools</text>
+          <text x="521" y="1115.5" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Tools</text>
         
         
-          <rect x="631" y="1120" width="1" height="38" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1.4px,2.68px"/>
+          <rect x="634" y="1120" width="1" height="38" style="fill:none;stroke:#fff;stroke-opacity:0.3;stroke-dasharray:1.4px,2.68px"/>
         
         
-          <text x="627" y="1115.5" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Inspect</text>
+          <text x="630" y="1115.5" dx="29" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Inspect</text>
         
         
-          <text x="1660" dx="11" y="1115.5" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">autofix</text>
+          <text x="1514" dx="29" y="1115.5" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">autofix</text>
+        
+        
+          <text x="1624" dx="29" y="1115.5" dy="33" style="font-weight:bold;font-size:24px;fill:#fff;fill-opacity:0.89;text-shadow:0 0.5px 1px #090909">Console</text>
         
       
     
@@ -573,10 +582,12 @@
       <text x="502" y="1179" dx="29" dy="29" style="font-size:20px;fill:#fff">Filename: ribasports.png</text>
       
       
+      <rect x="1584" y="1193" width="1.5" height="15" style="fill:#fff;fill-opacity:0.7"/>
+      <text x="82" y="1179" dx="1519" dy="29" style="font-size:20px;fill:#fff">Lamedb 2.4</text>
       
       
         
-        <g transform="matrix(0.38,0,0,0.38,1741,1188)">
+        <g transform="matrix(0.38,0,0,0.38,1740,1188)">
           <use href="#ffo" style="fill:#fff;fill-opacity:0.76"/>
         </g>
       

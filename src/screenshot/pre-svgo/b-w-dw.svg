@@ -103,18 +103,18 @@
             
             
               
-                <rect x="1125" y="220" width="100" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;filter:none"/>
+                <rect x="1105" y="220" width="116" height="36" rx="3" style="fill:#2d2d2d;stroke:#787878;stroke-width:1.5px;filter:none"/>
                 
                   <rect x="1217.5" y="224" width="24" height="24" rx="8" style="fill:none;stroke:none;stroke-opacity:0.06;stroke-width:2px"/>
                   
                     
                     
-                    <g style="fill:#c9c9c9" transform="matrix(0.23,0,0,0.23,1205,231)">
+                    <g style="fill:#c9c9c9" transform="matrix(0.23,0,0,0.23,1201,231)">
                       <use href="#afl"/>
                     </g>
                   
                 
-                <text x="1120" y="224" dx="12" dy="22" style="font-size:19.5px;fill:#fff;opacity:0.96">Profile 1</text>
+                <text x="1104" y="224" dx="12" dy="22" style="font-size:19.5px;fill:#fff;opacity:0.96">Profile 1</text>
               
             
             
@@ -161,7 +161,7 @@
                 <rect x="469" y="372" width="1325" height="638" style="fill:#1e1e1e"/>
                 
                   <rect x="469" y="716" width="1325" height="47" style="fill:#3c3c3c"/>
-                  <text x="469" y="375" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">38</tspan> <tspan x="572">Giallo HD HD</tspan></text>
+                  <text x="469" y="375" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">38</tspan> <tspan x="572">Giallo HD</tspan></text>
                   <text x="469" y="424" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">39</tspan> <tspan x="572">TOPcrime HD</tspan></text>
                   <text x="469" y="473" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">40</tspan> <tspan x="572">Boing HD</tspan></text>
                   <text x="469" y="521" dy="31" style="font-size:19.5px;fill:#fff"><tspan x="492">41</tspan> <tspan x="572">K2</tspan></text>
@@ -259,7 +259,7 @@
       
       <text x="-487" y="2.5" dx="529" dy="28" style="font-family:'Segoe UI',Tahoma,sans-serif;font-weight:normal;font-size:18.6px;letter-spacing:-0.2px;fill:#fff">Add Channel</text>
       
-        <image x="11.5" y="10.5" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg=="/>
+        <image x="11.5" y="10.5" width="24" height="24" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABg1BMVEUAAAD/w4b//wD//wD//wD+/gD/mOn//wD//wD/lfD/m+P/rLz//wDHxU//xIX1x3XJx0z//wD//wD/oNf//wD//wD/rrb/sLL//wD//wD/vJf/vpL//wDlxmn//wDU0j3/wYv/xIbW1Tn/won//wD/j/8NDQ3//wCYlJQXFhTorKi8uWEUFBLd3QNzcg0QDw8WFQ8A/wD39wEgICANEQ0GggYFpAUEuQQZGRkyMjImJiYJWQkHdQcGlwYDwAMC3QIC2AI6Ojo4ODgoKCgUFBQKQwoKPQoJXwkHeQcGkgYGigYB8gEB6QEiMiIdHR0NUA0JbgkGjwYFqQUFnwUEsgQErwTm5gIC0wIB7gE9PT0ZNhkURRQeHg4yDw4qKg1oZwwMJgwMFgwLNAsIZQgGhwYEtgQC4gIA+wD/AAD3AAD/kPwVPxUbGhReFg49PQ17egx6bQwMGwwZDAx9fQuJcwsKTQplCAisrAaPBga9vQW+BASsBAQDzgMDygPp6QIC3gLw8AFUjKRGAAAAJXRSTlMANxMOIv3949L++9+PPyMbGxcI9+3r19ChmINuRj44NSwmFw0F+gRfewAAAblJREFUOMvN0OdT4kAYx/Goh3DqeafXu42fYotrSFESgkov0hF777338qcbHcDEScLoK79vdmf2M888s9RbqL5Cp4/PVUVtjV23mm/Navfrvd2w6t+qeYozkfUlWGs37XsJVpvDz0XXZDdvo7UA/3aWqfhJHzrK9Oml8H9XmVoK8F17mapeA3M9BuU08GbWYVjvnQrOdpt0qIJTQJhPzQELGT4IpeNl3gXAn+ETmHmC/TTYrHy1SdOTHpkTgTgry6IAH+u5TQp9augnLmCYGRwARDJHe5YB5c6PAaNDGugjgSIMkokRmX+Ebg/AaOG8m+WkmNcRS3Ms76SXwhwXZ5CQ0lxgUAMRdEdWJukFNhrJCoA3kc9LAfiXopG07o6pFUAYF5iBEYCLmuyYjSov417hAabyejvuX4shNuZd5MIhl4KYiWQyKEGUwqH4sx3nx0jEB7hWiRtKLCEhAIurJAMtBJx4yOmE+lQOFay09MGgg8uL6SlLG1XIOmMET9bWznZsVLEfp1sO/abX17fP60qw4UvPbq9+e0c5axVV6s/XdsOs/yhVDT9tFj1lsdUp87Q1VurUSL2B7gG6Wrw2dxreywAAAABJRU5ErkJggg==" style="overflow-block:hidden;overflow-inline:hidden"/>
       
       
       
@@ -304,22 +304,22 @@
           
             <rect x="228" y="85" width="263" height="507" style="fill:#1e1e1e"/>
             
-              <rect x="228" y="357" width="263" height="34" style="fill:#3c3c3c"/>
+              <rect x="228" y="258" width="263" height="34" style="fill:#3c3c3c"/>
               <text x="252" y="86" dy="29" style="font-size:19.5px;fill:#fff">M7 Group</text>
               <text x="252" y="119" dy="29" style="font-size:19.5px;fill:#fff">MB Satellite</text>
-              <text x="252" y="152" dy="29" style="font-size:19.5px;fill:#fff">MCEU</text>
-              <text x="252" y="186" dy="29" style="font-size:19.5px;fill:#fff">MTHREE SATCOM</text>
-              <text x="252" y="219" dy="29" style="font-size:19.5px;fill:#fff">Mediaset</text>
-              <text x="252" y="252" dy="29" style="font-size:19.5px;fill:#fff">NOVA</text>
-              <text x="252" y="285" dy="29" style="font-size:19.5px;fill:#fff">NURTS</text>
-              <text x="252" y="317" dy="29" style="font-size:19.5px;fill:#fff">Nimbus</text>
-              <text x="252" y="352" dy="29" style="font-size:19.5px;fill:#fff">NoName</text>
-              <text x="252" y="389" dy="29" style="font-size:19.5px;fill:#fff">Persidera</text>
-              <text x="252" y="423" dy="29" style="font-size:19.5px;fill:#fff">PlayBox Neo Suite</text>
-              <text x="252" y="457" dy="29" style="font-size:19.5px;fill:#fff">RAI</text>
-              <text x="252" y="490" dy="29" style="font-size:19.5px;fill:#fff">Radio RTR</text>
-              <text x="252" y="523" dy="29" style="font-size:19.5px;fill:#fff">Radio Television Suisse</text>
-              <text x="252" y="555" dy="29" style="font-size:19.5px;fill:#fff">Radio ZET Gold</text>
+              <text x="252" y="151" dy="29" style="font-size:19.5px;fill:#fff">MTHREE SATCOM</text>
+              <text x="252" y="184" dy="29" style="font-size:19.5px;fill:#fff">Mediaset</text>
+              <text x="252" y="217" dy="29" style="font-size:19.5px;fill:#fff">NOVA</text>
+              <text x="252" y="254" dy="29" style="font-size:19.5px;fill:#fff">NoName</text>
+              <text x="252" y="292" dy="29" style="font-size:19.5px;fill:#fff">PEOPLETV-RETE7</text>
+              <text x="252" y="326" dy="29" style="font-size:19.5px;fill:#fff">Persidera</text>
+              <text x="252" y="359" dy="29" style="font-size:19.5px;fill:#fff">RAI</text>
+              <text x="252" y="391" dy="29" style="font-size:19.5px;fill:#fff">Radio RTR</text>
+              <text x="252" y="425" dy="29" style="font-size:19.5px;fill:#fff">Radio Television Suisse</text>
+              <text x="252" y="458" dy="29" style="font-size:19.5px;fill:#fff">Radio ZET Gold</text>
+              <text x="252" y="492" dy="29" style="font-size:19.5px;fill:#fff">Radiotelevisione svizzera</text>
+              <text x="252" y="524" dy="29" style="font-size:19.5px;fill:#fff">Rai</text>
+              <text x="252" y="555" dy="29" style="font-size:19.5px;fill:#fff">SCP2100</text>
             
           
           
@@ -339,28 +339,28 @@
         
           
             <rect x="502" y="75" width="559" height="36" style="fill:#1e1e1e;stroke:#333;stroke-width:3.5px;clip-path:inset(3.5px 3.5px 0)"/>
-            <text x="502" y="82" dy="18" style="font-size:18.5px;fill:#fff"><tspan x="509">Index</tspan> <tspan x="597">Name</tspan> <tspan x="823">Type</tspan> <tspan x="938">Provider</tspan></text>
-            <rect x="589" y="74" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
-            <rect x="815" y="74" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
-            <rect x="929" y="74" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+            <text x="502" y="82" dy="18" style="font-size:18.5px;fill:#fff"><tspan x="509">Index</tspan> <tspan x="607">Name</tspan> <tspan x="833">Type</tspan> <tspan x="949">Provider</tspan></text>
+            <rect x="599" y="74" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+            <rect x="825" y="74" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
+            <rect x="941" y="74" width="3" height="37" style="fill:#3c3c3c;stroke:#222;stroke-width:1px;clip-path:inset(1px 1px 1px 0)"/>
           
           
             <rect x="502" y="111" width="559" height="481" style="fill:#1e1e1e"/>
             
               <rect x="502" y="481.5" width="559" height="34" style="fill:#0078d7"/>
-              <text x="502" y="108" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">26</tspan> <tspan x="594">CH4441</tspan> <tspan x="820">Data</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="141" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">27</tspan> <tspan x="594">CH4442</tspan> <tspan x="820">Data</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="175" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">28</tspan> <tspan x="594">CH4443</tspan> <tspan x="820">Data</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="208" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">29</tspan> <tspan x="594">CH4445</tspan> <tspan x="820">Data</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="241" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">30</tspan> <tspan x="594">CH4447</tspan> <tspan x="820">Data</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="275" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">31</tspan> <tspan x="594">CH4448</tspan> <tspan x="820">Data</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="309" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="525">39</tspan> <tspan x="594">Museum 4K</tspan> <tspan x="820">TV</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="343" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="525">40</tspan> <tspan x="594">MyZen 4K</tspan> <tspan x="820">TV</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="376" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="525">63</tspan> <tspan x="594">Fokus TV HD</tspan> <tspan x="820">TV</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="409" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">94</tspan> <tspan x="594">CH15790</tspan> <tspan x="820">Radio</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="441" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">95</tspan> <tspan x="594">CH15797</tspan> <tspan x="820">Data</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="477" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="525">130</tspan> <tspan x="594">HotBird 4K1</tspan> <tspan x="820">TV</tspan> <tspan x="935">NoName</tspan></text>
-              <text x="502" y="513" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">246</tspan> <tspan x="820">Data</tspan> <tspan x="935">NoName</tspan></text>
+              <text x="502" y="108" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">27</tspan> <tspan x="604">CH4441</tspan> <tspan x="831">Data</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="141" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">28</tspan> <tspan x="604">CH4442</tspan> <tspan x="831">Data</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="174" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">29</tspan> <tspan x="604">CH4443</tspan> <tspan x="831">Data</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="207" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">30</tspan> <tspan x="604">CH4445</tspan> <tspan x="831">Data</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="240" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">31</tspan> <tspan x="604">CH4447</tspan> <tspan x="831">Data</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="273" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">32</tspan> <tspan x="604">CH4448</tspan> <tspan x="831">Data</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="306" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">39</tspan> <tspan x="604">CH4491</tspan> <tspan x="831">Data</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="340" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="525">41</tspan> <tspan x="604">Museum 4K</tspan> <tspan x="831">TV</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="374" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="525">42</tspan> <tspan x="604">MyZen 4K</tspan> <tspan x="831">TV</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="407" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="525">44</tspan> <tspan x="604">GEB TV</tspan> <tspan x="831">TV</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="440" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="525">69</tspan> <tspan x="604">Fokus TV HD</tspan> <tspan x="831">TV</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="477" dy="29" style="font-size:19.5px;fill:#fff"><tspan x="525">130</tspan> <tspan x="604">HotBird 4K1</tspan> <tspan x="831">TV</tspan> <tspan x="946">NoName</tspan></text>
+              <text x="502" y="514" dy="29" style="font-size:19.5px;fill:#fff;opacity:0.45"><tspan x="525">134</tspan> <tspan x="604">CH15790</tspan> <tspan x="831">Radio</tspan> <tspan x="946">NoName</tspan></text>
               
               
             

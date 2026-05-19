@@ -133,10 +133,10 @@
       <feDropShadow dx="0" dy="0" stdDeviation="1" />
     </filter>
 
-    <filter id="tb-close-b-w" color-interpolation-filters="sRGB">
+    <filter id="tb-close-b-f" color-interpolation-filters="sRGB">
       <feDropShadow dx="0" dy="0" stdDeviation="2" flood-opacity="0.15" />
     </filter>
-    <filter id="tb-close-g-w" color-interpolation-filters="sRGB">
+    <filter id="tb-close-g-f" color-interpolation-filters="sRGB">
       <feColorMatrix type="saturate" values="0" />
     </filter>
 
@@ -675,7 +675,7 @@
                 <rect class="input-bg" x="580" y="1072" width="208" height="33" rx="1" style="rx:0;fill:#fff;stroke:#d1d2d2;stroke-width:2.8px;clip-path:inset(2px 2px 0.8px)" />
                 <g class="btn-browse">
                   <rect class="btn-bg" x="800" y="1072" width="126" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
-                  <text class="btn-txt" x="800" y="1072" dx="24" dy="22" style="font-size:20px;fill:#000">Browse<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
+                  <text class="btn-txt" x="800" y="1072" dx="24" dy="22" style="font-size:20px;fill:#000"><tspan class="ay">B</tspan>rowse<tspan class="ellipsis" style="font-size:15px">…</tspan></text>
                 </g>
                 <g class="btn-reload">
                   <rect class="btn-bg" x="1108" y="1072" width="106" height="32" rx="8" style="fill:#fff;stroke:url(#btn-stroke-m);stroke-width:1px;filter:url(#btn-shadow-m)" />
