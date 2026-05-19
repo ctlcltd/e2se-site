@@ -536,7 +536,7 @@
                 <rect x="584" y="1043" width="341" height="30" rx="0" style="fill:#fff;stroke:#d1d2d2;stroke-width:2.8px;clip-path:inset(2px 2px 0.8px)"/>
                 
                   <rect x="941" y="1043" width="126" height="32" rx="8" style="fill:#fff;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>
-                  <text x="941" y="1044" dx="24" dy="22" style="font-size:20px;fill:#000"><tspan>B</tspan>rowse<tspan style="font-size:15px">…</tspan></text>
+                  <text x="941" y="1044" dx="24" dy="22" style="font-size:20px;fill:#000">Browse<tspan style="font-size:15px">…</tspan></text>
                 
                 
                   <rect x="1120" y="1043" width="106" height="32" rx="8" style="fill:#fff;stroke:url(#brm);stroke-width:0.4px;filter:url(#btm)"/>

@@ -543,7 +543,7 @@
                 <rect x="582" y="1058.5" width="308" height="33" rx="3" style="fill:#fff;stroke:#ababab;stroke-width:1.2px;clip-path:none"/>
                 
                   <rect x="897" y="1058" width="114" height="34" rx="3" style="fill:url(#bqf);stroke:#ababab;stroke-width:1.2px;filter:none"/>
-                  <text x="891" y="1060" dx="24" dy="22" style="font-size:20px;fill:#000"><tspan>B</tspan>rowse<tspan style="font-size:15px">…</tspan></text>
+                  <text x="891" y="1060" dx="24" dy="22" style="font-size:20px;fill:#000">Browse<tspan style="font-size:15px">…</tspan></text>
                 
                 
                   <rect x="1056" y="1058" width="110" height="34" rx="3" style="fill:url(#bqf);stroke:#ababab;stroke-width:1.2px;filter:none"/>

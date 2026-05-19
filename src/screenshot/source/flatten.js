@@ -486,6 +486,21 @@ function flatten_finalize() {
       }
     }
   }
+
+  if (/m/.test(classname) || /f/.test(classname)) {
+    if (svg.getAttribute('id') === 'piconseditor') {
+      elements = svg.querySelectorAll('tspan');
+
+      for (const el of elements) {
+        if (! el.hasAttribute('style') && el.parentElement.textContent == 'Browse…') {
+          const text = el.parentElement;
+          const tspan = text.querySelector('tspan:last-of-type').cloneNode(true);
+          text.innerHTML = 'Browse';
+          text.append(tspan);
+        }
+      }
+    }
+  }
 }
 
 

@@ -550,7 +550,7 @@
                 <rect x="582" y="1058.5" width="308" height="33" rx="3" style="fill:#131312;stroke:#4e4d4d;stroke-width:1.2px;clip-path:none"/>
                 
                   <rect x="897" y="1058" width="114" height="34" rx="3" style="fill:url(#bqf);stroke:url(#bsf);stroke-width:1.2px;filter:url(#btf)"/>
-                  <text x="891" y="1060" dx="24" dy="22" style="font-size:20px;fill:#fff"><tspan>B</tspan>rowse<tspan style="font-size:15px">…</tspan></text>
+                  <text x="891" y="1060" dx="24" dy="22" style="font-size:20px;fill:#fff">Browse<tspan style="font-size:15px">…</tspan></text>
                 
                 
                   <rect x="1056" y="1058" width="110" height="34" rx="3" style="fill:url(#bqf);stroke:url(#bsf);stroke-width:1.2px;filter:url(#btf)"/>
