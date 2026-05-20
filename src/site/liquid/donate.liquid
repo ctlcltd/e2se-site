@@ -27,12 +27,13 @@
     </div>
     <div>
       <h2>Transparency report</h2>
-      <p>
-        <b>Spent amount Y (DESCRIPTION):</b> AMOUNT<br>
-        ...
+      <p>{% if donate_report.spent %}{% for line in donate_report.spent %}
+        <b>{{ line.text }}:</b> {{ line.amount | replace: ".", "," | append: " " | append: "EUR" }}<br>{% endfor %}{% else %}
+        <b>Spent amount description:</b> AMOUNT<br>
+        ...{% endif %}
       </p>
-      <p><b>Total Costs:</b> AMOUNT</p>
-      <p><b>Total Donations:</b> AMOUNT</p>
+      <p><b>Total Costs:</b> {% if donate_report.costs %}{{ donate_report.costs | replace: ".", "," | append: " " | append: "EUR" }}{% else %}AMOUNT{% endif %}</p>
+      <p><b>Total Donations:</b> {% if donate_report.donations %}{{ donate_report.donations | replace: ".", "," | append: " " | append: "EUR" }}{% else %}AMOUNT{% endif %}</p>
     </div>
   </main>
 {% render '_page-foot.liquid' %}

@@ -11,8 +11,8 @@
       <p>To translate e2 SAT Editor software, download translation source files from this page.</p>
       <p>Translation files are available in <strong>Qt translation sources (.ts)</strong> and <strong>GNU Gettext localization files (.po, .pot)</strong> file formats.</p>
       <ul>
-        <li>To edit from <b>Qt translation sources</b> <strong>(.ts)</strong>, you need the Qt translation tools, <a href="https://doc.qt.io/qt-6/qtlinguist-index.html" rel="nofollow" target="_blank">Qt Linguist (external link)</a>.</li>
-        <li>To edit from <b>GNU Gettext localization files</b> <strong>(.po, .pot)</strong>, you need a translation tool like <a href="https://poedit.net" rel="nofollow" target="_blank">Poedit (external link)</a>.</li>
+        <li>To edit from <b>Qt translation sources</b> <strong>(.ts)</strong>, you need the Qt translation tools, <a href="https://doc.qt.io/qt-6/qtlinguist-index.html" rel="nofollow noopener" target="_blank">Qt Linguist (external link)</a>.</li>
+        <li>To edit from <b>GNU Gettext localization files</b> <strong>(.po, .pot)</strong>, you need a translation tool like <a href="https://poedit.net" rel="nofollow noopener" target="_blank">Poedit (external link)</a>.</li>
       </ul>
       <div>
         <p>Use the <b>Template [en_EN]</b> for new languages that could be considered.</p>
@@ -27,7 +27,7 @@
         <dd><strong>(.{% unless sources.po[lang[0]].file contains ".pot" %}po{% else %}pot{% endunless %})</strong> <a class="file-link" href="{% assign qs = sources.ts[lang[0]].hash | truncate: 16, "" %}{{ "/translate/sources/" | append: sources.po[lang[0]].file | append: "?i=" | append: qs | urlencode }}">{{ sources.po[lang[0]].file }}</a> <button class="file-hash tiny text" data-tooltip="{{ sources.po[lang[0]].hash | prepend: "SHA256:" }}">hash</button>{% endif %}</dd>{% endfor %}
       </dl>
       <div>
-        <p>File sources: <strong>{{ translate_sources_ver }} version</strong></p>
+        <p>Source files version: <strong>{{ translate_sources_ver }}</strong></p>
       </div>
     </div>
     <div>

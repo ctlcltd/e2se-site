@@ -8,7 +8,7 @@ module.exports = function(grunt) {
   const REMOTE_ORIGIN = grunt.option('remote-origin') || 'http://localhost';
   const DEPLOY = grunt.option('deploy') && true || false;
 
-  const vars = grunt.file.readJSON('dist.json');
+  const vars = DEPLOY && grunt.file.exists('dist-pub.json') ? grunt.file.readJSON('dist-pub.json') : grunt.file.readJSON('dist.json');
 
   grunt.registerMultiTask('liquid', liquidjsTask);
 
@@ -63,7 +63,9 @@ module.exports = function(grunt) {
             software_rel_banner: vars['software_rel_banner'] ?? vars['software_rel_banner'],
             site_privacy_rev: vars['site_privacy_rev'] ?? new Date(vars['site_privacy_rev']),
             software_privacy_rev: vars['software_privacy_rev'] ?? new Date(vars['software_privacy_rev']),
-            software_licenses_rev: vars['software_licenses_rev'] ?? new Date(vars['software_licenses_rev'])
+            software_licenses_rev: vars['software_licenses_rev'] ?? new Date(vars['software_licenses_rev']),
+            site_privacy_rd: vars['site_privacy_rd'] ?? vars['site_privacy_rd'],
+            donate_report: vars['donate_report'] ?? vars['donate_report']
           }
         },
         src: ['site/liquid/*.liquid'],
