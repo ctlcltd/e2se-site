@@ -155,7 +155,7 @@
 
 
     <marker id="arrowhead" markerWidth="3" markerHeight="3" refX="1.75" refY="1.75" viewBox="0 0 3.5 3.5" orient="auto">
-      <polygon points="0.7,3.5 0,1.75 0.7,0 3.5,1.75" style="fill:#0bbbcc"></polygon>
+      <polygon points="0.7,3.5 0,1.75 0.7,0 3.5,1.75" style="fill:#0999aa"></polygon>
     </marker>
 
     <symbol id="picon">
@@ -730,7 +730,7 @@
           <use href="#file-info" style="fill:#545454" />
         </g>
       </g>
-      <g id="sbcb-w" transform="matrix(1,0,0,1,1769,1188)">
+      <g id="sbcb-w" transform="matrix(1,0,0,1,1770,1189)">
         <rect x="0" y="0" width="25" height="25" style="fill:none" />
       </g>
     </g>
@@ -769,7 +769,7 @@
       <text id="icon-txt" class="color" x="0" y="202" dx="116" dy="19" text-anchor="middle" style="font-family:'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;font-size:23px;letter-spacing:-0.5px;fill:#f5f6f7;text-shadow:0 0.5px 2px #333, 0 2px 13px #888">picon.png</text>
     </g>
     <g id="arrow" transform="matrix(0.8,-0.8,0.5,0.6,-192,686)">
-      <g style="fill:none;stroke:#0bbbcc;stroke-width:22px">
+      <g style="fill:none;stroke:#0999aa;stroke-width:22px">
         <path d="M290.5 341.28160095214844Q434.5 59.28160095214844 509.5 560.2816009521484" style="marker-end:url(#arrowhead)" />
       </g>
     </g>

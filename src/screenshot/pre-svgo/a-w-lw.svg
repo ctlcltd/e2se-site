@@ -592,7 +592,7 @@
     
     
       
-      <rect x="80" y="1185" width="1720" height="34" style="fill:none;stroke:#d0d0d0;stroke-width:2.2px;clip-path:inset(0 2px 2px)"/>
+      <rect x="80" y="1185" width="1720" height="36" style="fill:none;stroke:#d0d0d0;stroke-width:2.2px;clip-path:inset(0 2px 2px)"/>
       <text x="80" y="1182.5" dx="29" dy="29" style="font-size:19px;fill:#000"><tspan>Channels: 141</tspan> <tspan dx="10">Bouquet: userbouquet.dbe01.tv</tspan></text>
       
       
@@ -608,7 +608,7 @@
         </g>
       
       <g style="clip-path:inset(0 27px 27px 0px)">
-        <rect x="0" y="0" width="25" height="25" style="fill:#c5c5c5" transform="matrix(-0.8,-1,-1,1,1821,1217.5)"/>
+        <rect x="0" y="0" width="25" height="25" style="fill:#c5c5c5;fill-opacity:0.6" transform="matrix(-0.8,-1,-1,1,1822,1218.5)"/>
       </g>
     
     <rect x="81" y="81" width="1718" height="1140" rx="0" style="fill:none;stroke:#1d3331;stroke-width:0.5px"/>

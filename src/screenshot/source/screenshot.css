@@ -201,7 +201,7 @@
 .w .divid { width: 1.2px; fill: #d0d0d0 !important; stroke: none !important; }
 .w .menu-divid .divid { height: 40px; y: 217px; }
 .w #sbcb-w { clip-path: inset(0 27px 27px 0); }
-.w #sbcb-w rect { fill: #c5c5c5 !important; transform: matrix(-0.8, -1, -1, 1, 52, 23); }
+.w #sbcb-w rect { fill: #c5c5c5 !important; fill-opacity: 0.6; transform: matrix(-0.8, -1, -1, 1, 52, 23); }
 
 .w .w-bg { fill: #f1f1f1 !important; stroke: #9bb3b3 !important; stroke-width: 1px !important; }
 .w .w-stroke { stroke: #1d3331 !important; stroke-width: 0.5px !important; }
@@ -256,8 +256,8 @@
 .w .tb-tab.active .ico use { fill-opacity: 1; stroke-opacity: 1; }
 
 .w #statusbar { transform: translate(0, 6.5px); }
-.w #sb-bg { y: 1179px; height: 33px; }
-.w #sb-stroke { height: 34px; clip-path: inset(0 2px 2px) !important; transform: translate(0, -0.5px); }
+.w #sb-bg { y: 1164px; height: 50px; }
+.w #sb-stroke { height: 36px; clip-path: inset(0 2px 2px) !important; transform: translate(0, -0.5px); }
 .w #statusbar text { font-size: 19px !important; transform: translate(-2px, -3px); }
 .w #statusbar #sbte { transform: translate(55px, -3px); }
 .w #statusbar #sbti { transform: translate(12px, -3px); }
@@ -838,7 +838,7 @@
 
 .dw #statusbar .divid { display: none; }
 .dw .divid { width: 4px; fill: #2d2d2d !important; stroke: #151515 !important; stroke-width: 2px; clip-path: inset(1px 1px 1px 0); }
-.dw #sbcb-w rect { fill: #6c6c6c !important; }
+.dw #sbcb-w rect { fill: #6c6c6c !important; fill-opacity: 0.8; }
 
 .dw .t-ctrs-w rect { stroke: #fff !important; }
 .dw .t-ctrs-w g:last-child g rect { stroke-width: 0.9px !important; }
